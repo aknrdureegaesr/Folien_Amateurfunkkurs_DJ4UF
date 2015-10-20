@@ -1,0 +1,416 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse A 18: \\
+          Gerätetechnik \\[2em]}
+\date{Stand 09.07.2015}
+\input{texdata/titlepage}
+
+\section{Überblick}
+
+\begin{frame}
+    \frametitle{Überblick}
+
+    Themen aus dem Kapitel \emph{E15 - Sender- und Empfängertechnik} werden hier
+    weiterführend behandelt.
+
+    \bigskip
+
+    % TODO Drake Foto?
+
+    Woraus bestehen Sender und Empfänger und welche Haupteigenschaften fallen
+    euch ein?
+
+\end{frame}
+
+\section{Empfindlichkeit}
+
+\begin{frame}
+    \frametitle{Wiederholung SNR}
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{a18/Received_message.jpg}
+        \tiny \hyperlink{refs}{\cite{wc}}
+    \end{center}
+
+    \begin{center}
+    \includegraphics[width=0.8\textwidth]{a18/Analyse_thermo_gravimetrique_bruit.png}
+        \tiny \hyperlink{refs}{\cite{wc}}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Empfindlichkeit}
+
+    Empfindlichkeit gibt an, wie stark Eingangssignal sein muss um über dem
+    thermischen Eigenrauschen zu liegen. Einfacher: \\
+
+    Fähigkeit des Empfängers, schwache Signale zu empfangen.
+
+    \bigskip
+
+    Wahrnehmungsschwelle bei ca. $6 dB$
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Empfindlichkeit}
+
+    Rauschleistung (Formelsammlung): $P_R = k \cdot T_0 \cdot b$
+    \footnote{mit Boltzmannkonstante $k$, Temperatur $T_0$ und Bandbreite $b$}
+
+    \bigskip
+
+    Wichtig ist: Die Leistung eines gleichmäßig über einen Frequenzbereich
+    verteilten Rauschens ist proportional zur Bandbreite!
+
+    \bigskip
+
+    \begin{block}{Wie verhält sich bei sonst gleich bleibenden Bedingungen die
+                  Rauschleistung nach Umschaltung von SSB auf CW?}
+        \only<2>{$\frac{2,5 kHz}{0,5 kHz} \approx \frac{1}{5}$}
+    \end{block}
+
+\end{frame}
+
+\subsection{Rauschzahl}
+
+\begin{frame}
+    \frametitle{Rauschzahl}
+
+    Noise Figure $F$ bzw. Rauschzahl ist der Faktor um den theoretische
+    Rauschformeln gerätespezifisch erweitert werden.
+
+    \bigskip
+
+    Angaben sind als Faktor oder in $dB$ möglich.
+
+    \bigskip
+
+    Beispiele:
+
+    \begin{itemize}
+        \item $F=1,8 dB \rightarrow$ Ausgang $1,8dB$ geringeres SNR als das Eingang
+        \item $F=2 \rightarrow$ Ausgang \only<1>{\textbf{?}} \only<2>{$3dB$ geringeres} SNR als Eingang
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Rauschzahl}
+
+    Für Kurzwelle und niedrigere Frequenzen spielt die Noise Figure keine Rolle,
+    da QRN und QRM den SNR bestimmen.
+
+    \bigskip
+
+    Empfindlichkeiten werden bei HF z.B. mit $0,25 \mu V$ Eingangsspannung für
+    $S/N=10 dB$ angegeben.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Rauschzahl}
+
+    VHF-Vorverstärker möglichst direkt an der Antenne. Warum?
+
+    \bigskip
+
+    Empfindlichkeit kann auch durch starke HF-Signale auf einer nahen Frequenz
+    beeinträchtigt werden $\rightarrow$ Selektivität.
+
+\end{frame}
+
+\subsection{Selektivität}
+
+\begin{frame}
+    \frametitle{Selektivität}
+
+    Fähigkeit Signale mit steilen Filterflanken zu selektieren. Deshalb auch:
+    Trennschärfe.
+
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{a18/TF410.png}
+        \tiny (TF410/411)
+    \end{center}
+
+    Grenzbandbreite bei -60 dB? Für welche Signale geeignet?
+    \only<2>{A: 4 kHz, SSB}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Selektivität}
+
+    Für einen steilen und schmalen Bandpass eignen sich am besten
+    Quarzkristalle.
+
+    Welche Filterbandbreiten würdet ihr für J3E, F1B (RTTY Shift 170 Hz), F3E nutzen?
+    \only<2>{A: 2,2 kHz, 500 Hz, 12 kHz}
+
+\end{frame}
+
+\section{HF-Regelung}
+
+\subsection{AGC}
+
+\begin{frame}
+    \frametitle{AGC}
+
+    \emph{Automatic Gain Control} sorgt für konstante NF auch bei schwankendem
+    HF-Eingang.
+
+    \bigskip
+
+    $\rightarrow$ Bei starkem Eingang reduzieren der Verstärkung der HF-und ZF-Stufen.
+
+\end{frame}
+
+\subsection{Squelch}
+
+\begin{frame}
+    \frametitle{Squelch}
+
+    Steuert die ZF- oder NF-Signale, um Grundrauschen auszublenden.
+
+    \bigskip
+
+    Einstellung des Levels etwas über den Rauschen und unterhalb des erwarteten
+    Eingangssignals.
+
+\end{frame}
+
+\section[Störungsverm.]{Störungsverminderung}
+
+\begin{frame}
+    \frametitle{Störungsverminderung}
+
+    Es werden kurz Beispiele zur Störungsverminderung angerissen.
+
+    \bigskip
+
+    Prüfungsrelevant ist lediglich der Notchfilter.
+
+\end{frame}
+
+\subsection{Passband-Tuning}
+
+\begin{frame}
+    \frametitle{Passband-Tuning}
+
+    Durch IF/ZF-Shift wird die Filterkurve soweit verschoben, dass das
+    Störsignal ausgeblendet wird.
+
+    % FIXME Gutes Bild finden oder bauen
+
+\end{frame}
+
+\subsection{Bandwidth-Tuning}
+
+\begin{frame}
+    \frametitle{Bandwidth-Tuning}
+
+    Übereinanderschieben von steilflankigen Filtern, sodass der
+    Durchlassbereicht kleiner wird.
+
+    % FIXME Gutes Bild finden oder bauen
+    
+    \bigskip
+
+    Wie verhält sich der SNR?
+    \only<2>{Proportional zur Brandbreite. Remember?}
+
+\end{frame}
+
+\subsection{Notchfilter}
+
+\begin{frame}
+    \frametitle{Notchfilter}
+
+    Auch: Kerbfilter mit ''Loch'' im IF-Durchlassbereich zum Ausblenden
+    schmalbandiger Störungen. Frequenzverlauf:
+
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{a18/TF326A.png}
+        \tiny (TF326)
+    \end{center}
+
+\end{frame}
+
+\subsection{Störbegrenzer/-austaster}
+
+\begin{frame}
+    \frametitle{Störbegrenzer/-austaster}
+
+    Störbegrenzer schneidet Spitzenspannungen ab gewissem NF-Pegel ab
+    $\rightarrow$ Clipping.
+
+    \bigskip
+
+    Störaustaster regelt bei Störungen IF oder NF komplett herunter
+    $\rightarrow$ Noise Blanker.
+
+    % TODO Zeichnungen?
+
+\end{frame}
+
+\section{Großsignalfestigkeit}
+
+\begin{frame}
+    \frametitle{Großsignalfestigkeit}
+
+    Starke Signale führen zu Intermodulations- oder Kreuzmodulationsprodukten,
+    auch wenn sie außerhalb des Afu-Bandes liegen.
+
+    \bigskip
+
+    Entstehung: Nichtlinearität realer Bauteile.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Interception Point}
+
+    Ungeradzahlige Intermodulationsprodukte sollen so gering wie möglich
+    auftreten $\rightarrow$ Intermodulationsabstand. Aufhebung zu Null an den
+    ''Interception Points.''
+
+    % FIXME Skizze
+
+    Beurteilung Intermodulation: Meist mit Interception Point $IP_3$
+
+    \bigskip
+
+    Bei fehlender Großsignalfestigkeit kann Dämpfungsglied am
+    Empfängereingang helfen.
+
+\end{frame}
+
+\section{Transceiver}
+
+\begin{frame}
+    \frametitle{Transceiver}
+
+    In diesem Teil wird kurz auf praktische Merkmale von Transceivern
+    eingegangen.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Leistung}
+
+    \Large QRP ... QRO
+
+    % <10W ... 750W
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Betriebsarten}
+
+    USB, LSB, FM, RTTY, CW, ...
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Frequenzbereiche}
+
+    HF-TRX meist 160m - 10m
+
+    \bigskip
+
+    UKW-TRX meist 2m + 70cm, ggf. 23cm
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Frequenzanzeige}
+
+    Ältere Empfänger können mit einem einem quarzgesteuerten
+    Frequenzmarken-Generator geprüft werden - heute nicht mehr notwendig.
+
+    \bigskip
+
+    Ansonsten wie bei der Messtechnik immer an die Ambivalenz digitaler Anzeigen
+    denken: Auflösung $\neq$ Anzeigegenauigkeit.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{RIT}
+
+    Receiver Incremental Tuning zur geringfügigen Veränderung der
+    Empfangsfrequenz gegenüber der Sende-QRG.
+
+    \bigskip
+
+    z.B. TX-Drift oder Pile-Up.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Kompressor}
+
+    Audiokompression der Stimme, damit sie ''satter'' rüberkommt und
+    verständlicher wird, damit allerdings ihre Färbung verliert.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Clipper}
+
+    Signal wird voll ausgesteuert und vom Clipper begrenzt. Zu Vermeidung von
+    Oberwellen weitere Tiefpassfilterung.
+
+    \bigskip
+
+    Dies geschieht natürlich alles auf Kosten von Audioinformationen.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{DSP}
+
+    Digital Signal Processing als Überbegriff für jegliche digitale
+    Audioverarbeitung. Alle o.g. Beispiele werden heute durch DSPs umgesetzt.
+
+    \bigskip
+
+    Das Signal muss vor dem DSP digitalisiert und anschließend wieder in eine
+    analoges Signal umgeformt werden.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{PTT und VOX}
+
+    Push To Talk wurde bereits oft angesprochen - es handelt sich um eine
+    einfache Sende-/Empfangsumschaltung.
+
+    \bigskip
+
+    Mit einer Voice Control (VOX) lässt sich die Umschaltung durch den NF-Pegel
+    der eigenen Sprache auslösen. Nachteile: Störgeräusche können ggf. auch
+    umschalten und meist dadurch ein Delay.
+
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{darc}  DARC Online-Lehrgang Lektion A18:
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a18/}
+    \bibitem{wm}    Wikimedia:
+                    \url{https://commons.wikimedia.org/wiki/File:Received_message.jpg}
+                    \url{https://commons.wikimedia.org/wiki/File:Analyse_thermo_gravimetrique_bruit.png}
+\end{thebibliography} 
+
+\input{texdata/postamble}

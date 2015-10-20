@@ -1,0 +1,143 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Martin Deutschmann
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse E 07: \\
+          Schwingkreise \& Filter \\[2em]}
+\date{Stand 20.11.2014}
+\input{texdata/titlepage}
+
+\section*{Schwingungsvorgang}
+\begin{frame}
+\frametitle{Schwingungen, wo gibt es denn sowas?}
+	\begin{center}
+		\includegraphics[scale=1.4]{e07/Schwingkreise.png}\\
+		Abb.1: Serien- \& Paralellschwingkreise
+	\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Aber warum schwingt das denn jetzt?}
+\begin{center}
+	\includegraphics[scale=0.4]{e07/Schwingkreis.png}\\
+	Abb.2: Energie in einem LC-Schwingkreis \cite{wmde} \\
+	\vspace{3mm}
+	\begin{itemize}
+		\item durch Verluste kommt es zur gedämpfte Schwingung\\
+		\item animierte Darstellung (\url{http://en.wikipedia.org/wiki/File:Tuned_circuit_animation_3.gif})
+	\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resonanzfrequenz}
+\begin{center}
+	\Huge{$ f_{res} = \frac{1}{2 \cdot \pi \cdot \sqrt{L \cdot C}} $}
+\end{center}
+\end{frame}
+
+\section*{Reihenschwingkreis}
+\begin{frame}
+\frametitle{Reihenschwingkreis}
+\begin{center}
+	\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=0.8]{e07/Serirenschw.png}\\
+	\tiny{Abb.3: Serienschwingkreis \cite{wmen}}
+	\end{minipage}
+	\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=0.2]{e07/SerirenschwSig.png}\\
+	\tiny{Abb.4: Resonanzwiderstand \cite{wmen}} 
+	\end{minipage}
+\end{center}
+\begin{itemize}
+	\item Im Verlauf der Frequenzänderung ändert sich der Gesamtwellenwiderstand Z des Schwingkreises
+	\item Der Schwingkreis hat als minimale Impedanz seinen ohmschen Wert, da sich bei der Resonanzfrequenz $f_R$ die induktiven und kapazitiven Anteile gegenseitig aufheben
+\end{itemize}
+\end{frame}
+
+\section*{Parallelschwingkreis}
+\begin{frame}
+\frametitle{Parallelschwingkreis}
+\begin{center}
+	\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=1]{e07/Parallelschw.png}\\
+	\tiny{Abb.5: Parallelschwingkreis \cite{wmen}}
+	\end{minipage}
+	\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=0.2]{e07/ParallelschwSig.png}\\
+	\tiny{Abb.6: Resonanzwiderstand \cite{wmen}} 
+	\end{minipage}
+\end{center}
+\begin{itemize}
+	\item Der Parallelschwingkreis verhält sich genau entgegen gesetzt zum Reihenschwingkreis
+	\item Dieser zeigt bei niedrigen und hohen Frequenzen das Verhalten eines Leiters
+	\item Bei der Resonanzfrequenz hingegen steigt der Wellenwiderstand an, da hier nur noch der ohmsche Widerstand wirkt
+\end{itemize}
+\end{frame}
+
+\section*{Bandreite}
+\begin{frame}
+\frametitle{Bandbreite}
+\begin{center}
+	\includegraphics[scale=0.4]{e07/Bandbreite.png}\\
+	\tiny{Abb.7: Bandweite \cite{wmen}}
+\end{center}
+\end{frame}
+
+\section*{Tiefpass}
+\begin{frame}
+\frametitle{what does the Tiefpass say?}
+\begin{center}
+	\includegraphics[scale=1.2]{e07/LC-Tiefpass.png}\\
+	Abb.8: LC-Tiefpass
+\end{center}
+\begin{itemize}
+	\item Bei steigender Frequenz sinkt der Blindwiderstand $X_L$ und der Blindwiderstand $X_C$ steigt
+	\item Bei sinkender Frequenz hingegen steigt $X_L$ und $X_C$ sinkt
+	\item Dadurch werden nur niedrige Frequenzen durchgelassen 
+\end{itemize}
+\end{frame}
+
+
+\section*{Hochpass}
+\begin{frame}
+\frametitle{what does the Hochpass say?}
+\begin{center}
+	\includegraphics[scale=1.2]{e07/LC-Hochpass.png}\\
+	Abb.9: LC-Hochpass
+\end{center}
+\begin{itemize}
+	\item Bei steigender Frequenz steigt der Blindwiderstand $X_L$ und der Blindwiderstand $X_C$ sinkt
+	\item Bei sinkender Frequenz hingegen sinkt $X_L$ und $X_C$ steigt
+	\item Dadurch werden nur hohe Frequenzen durchgelassen 
+\end{itemize}
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{e03}   Moltrecht E 07: \\
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e07/}
+    \bibitem{wp}    Wikipedia DE: \\
+                    \url{http://de.wikipedia.org/wiki/Ohmsches_Gesetz}\\ 
+                    \url{http://de.wikipedia.org/wiki/Elektrische_Leistung}\\ 
+                    \url{http://de.wikipedia.org/wiki/lektrische_Energie#Elektrische_Energie_in_einem_elektrischen_Feld}\\ 
+    \bibitem{wmde}	Wikimedia DE:\\
+    				\url{http://commons.wikimedia.org/wiki/File:LC_circuit_4_times_new_version.svg?uselang=de}\\
+   	\bibitem{wmen}	Wikimedia EN:\\
+   					\url{http://en.wikipedia.org/wiki/File:Tuned_circuit_animation_3.gif}\\
+   					\url{http://commons.wikimedia.org/wiki/File:RLC_series_circuit_v1.svg}\\
+   					\url{http://commons.wikimedia.org/wiki/File:Resonanzwiderstand_serie.svg}\\
+   					\url{http://commons.wikimedia.org/wiki/File:KondiSpuleWiderstandParallel.svg}\\
+   					\url{http://commons.wikimedia.org/wiki/File:Resonanzwiderstand_parallel.svg}\\
+   					\url{http://commons.wikimedia.org/wiki/File:Bandlimited_3dB_LP.svg}\\
+   					
+\end{thebibliography} 
+
+\input{texdata/postamble}

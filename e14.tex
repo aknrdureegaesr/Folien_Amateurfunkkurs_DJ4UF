@@ -1,0 +1,278 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Martin Deutschmann
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse E 14: \\
+          Modulation \& Demodulation \\[2em]}
+\date{Stand 08.01.2015}
+\input{texdata/titlepage}
+
+%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
+
+\section*{Prinzip der Nachrichtenübertragung}
+\begin{frame}
+\frametitle{Prinzip der Nachrichtenübertragung}
+\begin{center}
+\includegraphics[scale=1.]{e14/Sender.png}\\
+Abb. 1: Sender\\
+\end{center}
+\begin{itemize}
+	\item Nachrichtentechnik in drahtgebundene und drahtlose eingeteilt
+	\item Sender muss NF-Signal in HF-Signal umwandeln
+	\item Dieser Vorgang wird Modulation genannt
+	\item Demodulation macht aus einem HF-Signal ein NF-Signal
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Sendearten}
+\begin{tiny}
+\begin{minipage}{\textwidth}
+
+\begin{minipage}{0.4\textwidth}
+	\begin{tabular}{|l|l|}
+	\hline
+		\multicolumn{2}{|c|}{\textbf{1. Symbol: Modulation des Haupträgers}}\\
+		\hline
+		A & Zweiseitenband AM \\ \hline
+		C & Restseitenband AM  \\ \hline
+		F & Frequenzmodulation  \\ 
+		G & Phasenmodulation\\ \hline
+		J & Einseitenband AM, unterdrückter Träger\\ \hline		
+	\end{tabular}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.4\textwidth}
+	\begin{tabular}{|l|l|}
+	\hline
+		\multicolumn{2}{|c|}{\textbf{2. Symbol: Signalmodulation}}\\
+		\hline
+		" " & Einkanal mit quantisierter oder \\
+		 1  & digitaler Information ohne \\
+		" " & Modulation des Hilfsträgers \\ \hline		
+		" " & Einkanal mit quantisierter oder\\
+		 2  & digitaler Information mittels \\
+		" " & eines modulierten Hilfsträgers \\ \hline	
+		 3  & Einkanal mit analoger Modulation  \\ \hline	
+	\end{tabular}
+\end{minipage}
+\end{minipage}
+\vspace{0.5cm}
+\begin{minipage}{0.4\textwidth}
+	\begin{tabular}{|l|l|}
+	\hline
+		\multicolumn{2}{|c|}{\textbf{3. Symbol: Art der auszusendenden Information}}\\
+		\hline
+		A & Tastung durch Morsetelegrafie\\ \hline
+		B & Fernschreiben \\ \hline
+	    C & Faksimile(Bildübertragung)\\ \hline		
+		D & Datenübertragung, Fernsteuerung\\ \hline
+		E & Sprechfunk \\ \hline
+		F & Fernsehen (Video)\\ \hline	
+	\end{tabular}
+\end{minipage}
+\end{tiny}
+\vspace{0.5cm}
+\begin{itemize}
+	\item Es gibt eine große Vielfalt von Sendearten
+	\item zum Beispiel: J3E, A1A, F3E, C3F
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{small}	
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\multicolumn{3}{|c|}{\textbf{TD501: Durch Modulation...}}\\
+		\hline
+		A & werden Informationen auf einen & ??? \\
+		" " &  oder mehrere Träger übertragen. & " " \\ \hline
+		B & werden einem oder mehreren & ??? \\ 
+		" " & Trägern Informationen entnommen.  & " " \\ \hline
+		C & werden Sprach- und CW-Signale kombiniert.  & ??? \\ \hline
+		D & werden dem Signal NF-Komponenten entnommen. & ??? \\ \hline 	
+	\end{tabular}
+	\end{small}
+\end{frame}
+
+\begin{frame}
+	\begin{small}	
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\multicolumn{3}{|c|}{\textbf{TD501: Durch Modulation...}}\\
+		\hline
+		A & werden Informationen auf einen & Richtig \\
+		" " &  oder mehrere Träger übertragen. & " " \\ \hline
+		B & werden einem oder mehreren & ??? \\ 
+		" " & Trägern Informationen entnommen.  & " " \\ \hline
+		C & werden Sprach- und CW-Signale kombiniert.  & ??? \\ \hline
+		D & werden dem Signal NF-Komponenten entnommen. & ??? \\ \hline 	
+	\end{tabular}
+	\end{small}
+\end{frame}
+
+\section*{Modulationsarten}
+\begin{frame}
+\frametitle{Modulationsarten}
+\begin{center}
+\includegraphics[scale=0.8]{e14/modulationen.jpg}\\
+	Abb. 2: verschiedene Arten der Modulation
+	\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}}\\
+	
+\begin{itemize}
+	\item grundsätzlich sind nur Amplitudenmodulation und Frequenzmodulation im Einsatz
+	\item der eingefügte Träger muss sinusförmig sein
+\end{itemize}
+\end{center}
+\end{frame}
+
+\section{Amplitudenmodulation}
+\begin{frame}
+\frametitle{Amplitudenmodulation}
+\begin{minipage}{0.4\textwidth}
+\includegraphics[scale=0.24]{e14/AM1.png}\\
+\end{minipage}
+\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/b/b8/Amplitudenmodulation3.png}}
+\hspace{0.5cm}
+\begin{minipage}{0.4\textwidth}	
+	\begin{itemize}
+		\item wird nur noch im Rundfunk angewendet
+		\item Information steckt in der Amplitude
+		\item \url{http://upload.wikimedia.org/wikipedia/commons/6/62/Am2_spec.gif}
+	\end{itemize}
+\end{minipage}
+\end{frame}
+
+\section*{Modulationsgrad}
+\begin{frame}
+\frametitle{Modulationsgrad}
+\begin{center}
+\includegraphics[scale=0.8]{e14/TE103.png}\\
+Abb. 3: Modulationsgrade bei AM
+
+\hspace{0.5cm}
+
+\begin{itemize}
+	\item	\LARGE{$m = \frac{\hat{U_{mod}}}{\hat{U_T}}$}
+\end{itemize}
+\end{center}
+\end{frame}
+
+\section*{Bandbreite bei AM}
+\begin{frame}
+\frametitle{Bandbreite bei AM}
+\begin{center}
+\includegraphics[scale=0.4]{e14/Bandbreite.png}\\
+\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/b/b9/Am_spek1.png}}
+	\begin{itemize}
+		\item Bandbreite ist die Differenz zwischen der höchsten und der niedrigsten Frequenz des HF-Signals
+		\item Formel: \LARGE{$b_{AM} = 2 \cdot f_{NF,max}$}
+	\end{itemize}
+\end{center}
+\end{frame}
+
+\section*{Leistung bei AM}
+\begin{frame}
+\frametitle{Leistung bei AM}
+\includegraphics[scale=0.8]{e14/AMP.png}
+\end{frame}
+
+\section{Trägerunterdrückung (DSB)}
+\begin{frame}
+\frametitle{Trägerunterdrückung (DSB)}
+\begin{itemize}
+	\item Um Leistung zu sparen, kann der Träger unterdrückt werden
+	\item Dies erfordert mehr Aufwand im Empfänger
+	\item Nach dem umwandeln in ein HF-Signal wird der Träger herausgefiltert
+	\item Die beiden Seitenbänder bleiben trotzdem als HF-Signal vorhanden
+	\item Wird auch Doppelseitenbandmodulation genannt
+	\item Im Amateurfunk nicht zulässig
+\end{itemize}
+\end{frame}
+
+\section*{Einseitenbandmodulation SSB}
+\begin{frame}
+\frametitle{Einseitenbandmodulation SSB}
+\begin{small}
+\begin{itemize}
+	\item \url{http://upload.wikimedia.org/wikipedia/commons/4/4e/Ssb_spec.gif}
+	\item Um weitere Leistung zu sparen, kann man zusätzlich noch eines der Seitenbänder unterdrücken
+	\item Dadurch wird die benötigte Bandbreite halbiert
+	\item dies ist möglich, da beide Seitenbänder die gleiche Information beinhalten
+	\item Im Amateurfunk wird unterhalb von 10 MHz das LSB und oberhalb von 10 MHz das USB genutzt	
+	\item Die Bandbreite eines SSB-Signals ist identisch mit der Bandbreite des NF-Signals, also etwas geringer als die Hälfte der Bandbreite von AM.
+	\item Bandbreite: $b_{SSB} = f_{NF,max} - f_{NF,min}$
+	\item da $f_{NF,min}$ wesentlich kleiner als $f_{NF,max}$ gilt vereinfacht:
+	\item $b_{SSB} = f_{NF,max}$
+\end{itemize}
+\end{small}
+\end{frame}
+
+\section*{Frequenzmodulation}
+\begin{frame}
+\frametitle{Frequenzmodulation}
+	\begin{center}
+\includegraphics[scale=0.8]{e14/modulationen.jpg}\\
+	Abb. 2: verschiedene Arten der Modulation
+	\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}}\\
+	\begin{itemize}
+		\item Wird im VHF / UHF Bereich angewandt
+		\item Vor allem bei mobilem Funkbetrieb
+		\item Findet auch bei Packet-Radio Anwendung
+		\item Information steckt in der Frequenz
+		\item Amplitude bleibt konstant
+	\end{itemize}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hub bei FM}
+\begin{center}
+\includegraphics[scale=0.6]{e14/Hub.png}
+\end{center}
+\end{frame}
+
+\section*{Bandbreite bei FM}
+\begin{frame}
+\frametitle{Bandbreite bei FM}
+\begin{itemize}
+	\item FM erzeugt Seitenbänder
+	\item Im Amateurfunk wird ein geringer Hub verwendet, der die höchste vorkommende Niederfrequenz nicht überschreitet
+	\item Dadurch gilt folgende Formel:
+	\item \LARGE{$b_{FM} = 2 \cdot (\Delta f + f_{NF,max})$}
+\end{itemize}
+\end{frame}
+
+
+\section*{FM pro \& contra}
+\begin{frame}
+\frametitle{FM Vor- \& Nachteile}
+\textbf{\Large{Vorteile}}
+\begin{itemize}
+	\item Störungsicher, da die Amplitude konstant bleibt 
+\end{itemize}
+\vspace{1cm}
+\textbf{\Large{Nachteile}}
+\begin{itemize}
+	\item benötigt mehr Bandbreite
+	\item nur der stärkste Sender kann empfangen werden
+\end{itemize}
+\end{frame}
+
+
+\section*{Referenzen}
+\begin{frame}
+    \frametitle{Referenzen/Links}
+    
+    \footnotesize
+    \begin{itemize}
+        \item Moltrecht E 14 : \\
+              \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e14/}
+		\item Fragenkatalog der BNetzA
+			\url{http://www.dk0tu.de/Kurse/AFu-Lizenz/docs/TechnikFragenkatalogKlasseE.2006-09.pdf}
+    \end{itemize}
+
+\end{frame}
+
+\input{texdata/postamble}

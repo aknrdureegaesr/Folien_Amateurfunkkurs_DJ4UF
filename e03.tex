@@ -1,0 +1,328 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Martin Deutschmann <martin.deutschmann@campus.tu-berlin.de>
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse E 03 \\
+          Ohmsches Gesetz, Leistung \& Arbeit \\[2em]}
+\date{Stand 30.10.2014}
+\input{texdata/titlepage}
+
+%fixme Referenzen, Link funktioniert auch nicht
+
+\section{das ohmsche Gesetz}
+
+\begin{frame}
+    \frametitle{Was ist das ohmsche Gesetz?}
+    \begin{itemize}
+    	\item Das ohmsche Gesetz ist folgendes:
+    \end{itemize}
+    \begin{center}
+ 		\includegraphics[scale=0.3]{e03/Ohm_law_triangle.png}
+ 		\footnote{Abb.1: das ohmsche Dreieck \cite{wmen}}
+ 	\end{center}
+ 	\begin{itemize}
+ 		\item	Aber was sagt uns das nun?
+ 	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Das ohmsche Gesetz}
+	\begin{itemize}
+		\item	Das ohmsche Gesetz gibt uns die Abhängigkeiten zwischen Spannung, Strom \& ohmschen Widerstand an
+		\item	Dadurch wissen wir, das sich zum Beispiel der Strom an einem konstanten Widerstand proportional zur Spannung ändert
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ein kleines Gedankenexperiment}
+	\begin{itemize}
+		\item	Wir stellen uns folgenden Aufbau vor:
+		\item	Der Widerstand der Lampe soll 1 $\Omega$ betragen
+	\end{itemize}
+	\begin{center}
+ 		\includegraphics[scale=1]{e03/Strom_Spannung_Abh.png}
+ 		\footnote{Abb.2: Helligkeit einer Lampe bei verschiedenen Spannungen}
+ 	\end{center}
+ 	\begin{itemize}
+ 		\item	Wird die Lampe heller oder dunkler, wenn man sie mit 1,5 Volt anstatt mit 4,5 Volt betreibt?
+ 	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{wie funktioniert das Ohmsche Dreieck}
+	\begin{itemize}
+		\item	Nun wollen wir wissen, wie viel Strom in beiden Fällen unseres Gedankenexperimentes fließt
+		\item	Dazu nehmen wir uns das Ohmsche Dreieck zu Hilfe
+	\end{itemize}
+	\begin{center}
+ 		\includegraphics[scale=0.2]{e03/Ohm_law_triangle.png}
+ 		\footnote{Abb.3: das ohmsche Dreieck \cite{wmen}}
+ 	\end{center}
+ 	\begin{itemize}
+ 		\item	Decken wir den Wert, den wir ermitteln wollen ab, so zeigt uns das Dreieck die Formel dafür
+ 		\item	So lautet die Formel für den Strom:
+ 	\end{itemize}
+ 	\begin{equation}
+ 		I = \frac{U}{R}
+ 		\label{equ:Strom}
+ 	\end{equation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Das Ergebnis unseres Experimentes}
+	\begin{itemize}
+		\item	Setzen wir nun die Werte in diese Formel ein, so erhalten wir
+	\end{itemize}
+	\begin{equation}
+		I_{4,5 V} = \frac{4,5 V}{1 \Omega} = 4,5 A
+	\end{equation}
+	\begin{itemize}
+		\item Sowie
+	\end{itemize}
+	\begin{equation}
+		I_{1,5 V} = \frac{1,5 V}{1 \Omega} = 1,5 A
+	\end{equation}
+	\begin{itemize}
+		\item	Womit bei 4,5 Volt angelegter Spannung der größere Strom durch die Lampe fließt
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Der Innenwiderstand}
+	\begin{itemize}
+		\item	Oftmals bemerken wir einen Spannungsabfall, zwischen einer Maschine im Leerlauf und der gleichen Maschine bei Belastung
+		\item	Dies führen wir auf den Innenwiderstand der Maschine zurück
+	\end{itemize}
+	\begin{center}
+ 		\includegraphics[scale=1.4]{e03/Innenwiderstand.png}
+ 		\footnote{Abb.4: Innenwidestand einer Batterie}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{der Innenwiderstand}
+	\begin{itemize}
+		\item	Um den Innenwiderstand zu ermitteln nutzen wir wieder das ohmsche Gesetz
+		\item	Dabei gilt es zu beachten, das diesmal die Differenzen der Spannungen und des Stromes zwischen dem Leerlauf und dem belasteten Fall verrechnet werden
+		\item	Es gilt:
+	\end{itemize}
+	\begin{equation}
+		R_{innen} = \frac{\Delta U}{\Delta I}
+	\end{equation}
+	\begin{itemize}
+		\item	Um den Wert nicht zu sehr zu verfälschen sollten Spannungsquellen einen niedrigen und Stromquellen einen hohen Innenwiderstand besitzen
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{small}	
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\multicolumn{3}{|c|}{\textbf{TD302:} Die Leerlaufspannung einer Gleichspannungsquelle}\\
+		\multicolumn{3}{|c|}{beträgt 13,5 V. Wenn die Spannungsquelle einen Strom von 1 A}\\
+		\multicolumn{3}{|c|}{abgibt, sinkt die Klemmenspannung auf 12,4 V. Wie groß ist der}\\			\multicolumn{3}{|c|}{Innenwiderstand der Spannungsquelle?}\\
+		\hline
+		A & $1,1 \Omega$ & ??? \\ \hline
+		B & $1,2 \Omega$ & ??? \\ \hline
+		C & $12,4 \Omega$ & ??? \\ \hline
+		D & $13,5 \Omega$ & ??? \\ \hline 		
+	\end{tabular}
+	\end{small}
+\end{frame}
+
+\begin{frame}
+	\begin{small}	
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\multicolumn{3}{|c|}{\textbf{TD302:} Die Leerlaufspannung einer Gleichspannungsquelle}\\
+		\multicolumn{3}{|c|}{beträgt 13,5 V. Wenn die Spannungsquelle einen Strom von 1 A}\\
+		\multicolumn{3}{|c|}{abgibt, sinkt die Klemmenspannung auf 12,4 V. Wie groß ist der}\\			\multicolumn{3}{|c|}{Innenwiderstand der Spannungsquelle?}\\
+		\hline
+		A & $1,1 \Omega$ & richtig \\ \hline
+		B & $1,2 \Omega$ & ??? \\ \hline
+		C & $12,4 \Omega$ & ??? \\ \hline
+		D & $13,5 \Omega$ & ??? \\ \hline 		
+	\end{tabular}
+	\end{small}
+	\vspace{1cm}
+	\begin{equation}
+		R = \frac{\Delta U}{\Delta I} = \frac{13,5V - 12,4V}{1A} = \frac{1,1V}{1A} = 1,1\Omega
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+	\begin{small}	
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\multicolumn{3}{|c|}{\textbf{TD301:} Welche Eigenschaften sollten Strom- und}\\
+		\multicolumn{3}{|c|}{Spannungsquellen aufweisen?}\\
+		\hline
+		A &  Strom- und Spannungsquellen sollten einen möglichst  & ??? \\
+		" " & niedrigen Innenwiderstand haben. & " "\\ \hline
+		B &  Strom- und Spannungsquellen sollten einen möglichst  & ??? \\
+		" " & hohen Innenwiderstand haben. & " "\\ \hline
+		C & Spannungsquellen sollten einen möglichst hohen & ??? \\
+		" " & Innenwiderstand und Stromquellen einen möglichst  & " " \\ 
+		" " & niedrigen Innenwiderstand haben.  & "" \\ \hline
+		D & Spannungsquellen sollten einen möglichst niedrigen & ??? \\
+		" " & Innenwiderstand und Stromquellen einen möglichst & " " \\ 
+		" " & hohen Innenwiderstand haben.  & " " \\ \hline 		
+	\end{tabular}
+	\end{small}
+\end{frame}
+
+\begin{frame}
+	\begin{small}	
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\multicolumn{3}{|c|}{\textbf{TD301:} Welche Eigenschaften sollten Strom- und}\\
+		\multicolumn{3}{|c|}{Spannungsquellen aufweisen?}\\
+		\hline
+		A &  Strom- und Spannungsquellen sollten einen möglichst  & ??? \\
+		" " & niedrigen Innenwiderstand haben. & " "\\ \hline
+		B &  Strom- und Spannungsquellen sollten einen möglichst  & ??? \\
+		" " & hohen Innenwiderstand haben. & " "\\ \hline
+		C & Spannungsquellen sollten einen möglichst hohen & ??? \\
+		" " & Innenwiderstand und Stromquellen einen möglichst  & " " \\ 
+		" " & niedrigen Innenwiderstand haben.  & "" \\ \hline
+		D & Spannungsquellen sollten einen möglichst niedrigen & richtig \\
+		" " & Innenwiderstand und Stromquellen einen möglichst & " " \\ 
+		" " & hohen Innenwiderstand haben.  & " " \\ \hline 		
+	\end{tabular}
+	\end{small}
+\end{frame}
+
+\section{die elektrische Leistung}
+\begin{frame}
+	\frametitle{die elektrische Leistung}
+	\begin{itemize}
+		\item	Fließt ein Strom durch einen Widerstand, so entsteht Verlustleistung in Form von Wärme an dem Widerstand
+		\item	Dies findet Anwendung bei Heizspiralen in Elektroherd, oder im Bügeleisen
+		\item	In einer elektronischen Schaltung sollte diese Wärmeleistung aber so gering wie möglich sein
+		\item	Um die Leistung zu ermitteln nutzen wir folgende Formel:
+	\end{itemize}
+	\begin{equation}
+		P = U \cdot I
+	\end{equation}
+	\begin{itemize}
+		\item	Die Einheit der Leistung ist das Watt
+	\end{itemize}
+	\begin{equation}
+		 1[W] = 1[V] \cdot 1[A]
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+	\begin{small}	
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\multicolumn{3}{|c|}{\textbf{TB906:} Eine Glühlampe hat einen Nennwert von 12 V }\\
+		\multicolumn{3}{|c|}{und 48 W. Bei einer 12-V-Versorgung beträgt die Stromentnahme}\\
+		\hline
+		A & $36 A $ & ??? \\ \hline
+		B & $250 mA $ & ??? \\ \hline
+		C & $750 mA $ & ??? \\ \hline
+		D & $4 A $ & ??? \\ \hline	
+	\end{tabular}
+	\end{small}
+\end{frame}
+
+\begin{frame}
+	\begin{small}	
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\multicolumn{3}{|c|}{\textbf{TB906:} Eine Glühlampe hat einen Nennwert von 12 V }\\
+		\multicolumn{3}{|c|}{und 48 W. Bei einer 12-V-Versorgung beträgt die Stromentnahme}\\
+		\hline
+		A & $36 A $ & ??? \\ \hline
+		B & $250 mA $ & ??? \\ \hline
+		C & $750 mA $ & ??? \\ \hline
+		D & $4 A $ & richtig \\ \hline	
+	\end{tabular}
+	\end{small}
+	\vspace{1cm}
+	\begin{equation}
+		I = \frac{P}{U} = \frac{48W}{12V} = 4A
+	\end{equation}
+\end{frame}
+
+\section{die elektrische Arbeit}
+
+\begin{frame}
+	\frametitle{die elektrische Arbeit}
+	\begin{itemize}
+		\item	Die elektrische Arbeit ist definiert als die Leistung, die in einer bestimmten Zeit erbracht wurde
+		\item	Es gilt also:
+	\end{itemize}
+	\begin{equation}
+		W = P \cdot t
+	\end{equation}
+	\begin{itemize}
+		\item	Wir können die Leistung auch als das Produkt von Strom und Spannung aufschreiben und erhalten dann:
+	\end{itemize}
+	\begin{equation}
+		W = U \cdot I \cdot t
+	\end{equation}
+	\begin{itemize}
+		\item	Die Einheit der elektrischen Arbeit ist die Wattsekunde [WS]
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{small}	
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\multicolumn{3}{|c|}{\textbf{TB905:} Eine Stromversorgung nimmt bei 230 Volt einen Strom }\\
+		\multicolumn{3}{|c|}{von 0,63 Ampere auf. Welche elektrische Arbeit  wird }\\
+		\multicolumn{3}{|c|}{bei einer Betriebsdauer von 7 Stunden verbraucht?}\\
+		\hline
+		A & $1,01 kWh$ & ??? \\ \hline
+		B & $0,1 kWh $ & ??? \\ \hline
+		C & $2,56 kWh$ & ??? \\ \hline
+		D & $20,7 kWh$ & ??? \\ \hline	
+	\end{tabular}
+	\end{small}
+\end{frame}
+
+\begin{frame}
+	\begin{small}	
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\multicolumn{3}{|c|}{\textbf{TB905:} Eine Stromversorgung nimmt bei 230 Volt einen Strom }\\
+		\multicolumn{3}{|c|}{von 0,63 Ampere auf. Welche elektrische Arbeit  wird }\\
+		\multicolumn{3}{|c|}{bei einer Betriebsdauer von 7 Stunden verbraucht?}\\
+		\hline
+		A & $1,01 kWh$ & richtig \\ \hline
+		B & $0,1 kWh $ & ??? \\ \hline
+		C & $2,56 kWh$ & ??? \\ \hline
+		D & $20,7 kWh$ & ??? \\ \hline	
+	\end{tabular}
+	\end{small}
+	\vspace{1cm}
+	\begin{equation}
+		W = P \cdot t = U \cdot I \cdot t = 230V \cdot 0,63A \cdot 7h = 1,01kWh
+	\end{equation}
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{e03}   Moltrecht E 03: \\
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e03/}
+    \bibitem{wp}    Wikipedia DE: \\
+                    \url{http://de.wikipedia.org/wiki/Ohmsches_Gesetz}\\ 
+                    \url{http://de.wikipedia.org/wiki/Elektrische_Leistung}\\ 
+                    \url{http://de.wikipedia.org/wiki/lektrische_Energie#Elektrische_Energie_in_einem_elektrischen_Feld}\\ 
+    \bibitem{wmde}	Wikimedia DE:\\
+    				\url{http://commons.wikimedia.org/wiki/File:Ohmsches_Gesetz.svg?uselang=de}\\
+   	\bibitem{wmen}	Wikimedia EN:\\
+   					\url{http://commons.wikimedia.org/wiki/File:Ohm\%27s_law_triangle.PNG}\\
+\end{thebibliography} 
+
+\input{texdata/postamble}

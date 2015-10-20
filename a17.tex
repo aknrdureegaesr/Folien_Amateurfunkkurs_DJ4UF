@@ -1,0 +1,330 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Martin Deutschmann DM7MD <martin.deutschmann@campus.tu-berlin.de>
+
+\input{texdata/preamble}
+\subtitle{Technik A17: \\
+           Schaltungstechnik \\[2em]}
+\date{Stand 22.06.2015}
+\input{texdata/titlepage}
+
+\section*{Röhren PA mit Pi-Filter}
+\begin{frame}
+    \frametitle{HF-Verstärker mit Röhren}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{a17/TG313.png}\\
+        \tiny TG313 \hyperlink{refs}{\cite{bna}}
+     	\begin{enumerate} \Large
+			\item Röhrenendstufe mit Pi-Filter am Ausgang
+    	\end{enumerate}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wissenswertes zu Röhren PAs mit Pi-Filtern}
+\begin{center}
+\begin{itemize}
+	\item	Haben höheren Wirkungsgrad als Transistorendstufen
+	\item	Da mit hohen Spannungen und geringen Strömen gearbeitet wird
+	\item	Die meisten Verluste treten durch Ströme in den Spulen auf
+	\item	Benötigt zur Arbeitspunkteinstellung am Gitter eine geringere Spannung als an der Katode
+	\item	Dafür kann eine Konstantspannungsquelle, oder ein Widerstand genutzt werden
+	\item	Pi-Filter dient der Impedanzanpassung
+\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Das Abstimmen einer Röhren PAs mit Pi-Filtern}
+\begin{center}
+\begin{itemize}
+	\item	$C_1$ ist für die Resonanz des Kreises verantwortlich
+	\item	Wird auch Abstimmkondensator, Plate oder Tune bezeichnet
+	\item	$C_2$ dient der Einstellung der Lastimpedanz (LOAD)
+	\item	Zuerst stellt man $C_1$ und $C_2$ auf max
+	\item	$C_1$ auf Dip im Anodenstrom stellen (Resonanz)
+	\item	Nun mit $C_2$ einen etwas höheren Anodenstrom einstellen (Leistung auskoppeln)
+	\item	Vorgang mit $C_1$ und $C_2$ wechselseitig wiederholen bis maximale Ausgangsleistung erreicht ist
+	\item	Nach dem Abstimmvorgang sollte noch ein Dip von ca. 10\% verbleiben 
+\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+    \begin{center} \Large
+        \begin{block}{TG310}
+		\large  LC-Schaltungen unmittelbar vor und hinter einem HF-Leistungsverstärker dienen\\
+    	\end{block}
+        \begin{tabular}{|c|c|}
+        \hline
+        A & zur Verringerung der rücklaufenden \\ 	
+        " " & Leistung bei Fehlanpassung. \\ \hline
+        B & zur optimalen Einstellung des \\ 
+        " " & Arbeitspunktes nach Betrag und Phase. \\ \hline
+        C & zur optimalen Anpassung der \\
+        " " & Ein- und Ausgangsimpedanzen.\\ \hline
+        D & zur Erhöhung des HF-Wirkungsgrades \\
+        " " & der Verstärkerstufe.\\ \hline
+        \end{tabular}
+    \end{center}
+\end{frame}
+\begin{frame}
+    \begin{center} \Large
+        \begin{block}{TG310}
+		\large  LC-Schaltungen unmittelbar vor und hinter einem HF-Leistungsverstärker dienen\\
+    	\end{block}
+        \begin{tabular}{|c|c|}
+        \hline
+        A & zur Verringerung der rücklaufenden \\ 	
+        " " & Leistung bei Fehlanpassung. \\ \hline
+        B & zur optimalen Einstellung des \\ 
+        " " & Arbeitspunktes nach Betrag und Phase. \\ \hline
+        C & zur optimalen Anpassung der \\
+        X & Ein- und Ausgangsimpedanzen.\\ \hline
+        D & zur Erhöhung des HF-Wirkungsgrades \\
+        " " & der Verstärkerstufe.\\ \hline
+        \end{tabular}
+    \end{center}
+\end{frame}
+
+\section*{2m-FM Endstufe}
+\begin{frame}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{a17/TG311.png}\\
+       $2m$-FM Endstufe{bna}
+    \end{center}
+\end{frame}
+\begin{frame}
+\frametitle{Wichtiges hier zu}
+\begin{itemize}
+	\item	Zur Abgleich des Verstärkers wird eine $50 \Omega$ Dummy-Load für UKW angeschlossen
+	\item	Dann wird die Eingangsleistung erhöht, bis der Strom etwas ansteigt
+	\item	Nun abwechselnd die Ausgangskondensatoren verstellen bis die Leistung etwa konstant bleibt
+	\item	Danach wird der Vorgang mit den Eingangskondensatoren wiederholt
+	\item	Dann wird die Eingangsleistung erhöht bis die Schaltung einen Strom von etwa $2,7 A$ aufnimmt (= Nennstrom der Schaltung)
+	\item	Anschließend wird der alles bei wiederholt
+	\item	Um Eigenschwingungen zu vermindern kann man die Eingangsimpedanz des Transistors  mit einem Widerstand dämpfen
+	\item	Oder den Emitteranschluss mit einer Ferritperle versehen.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Und noch ein paar Infos}
+\begin{itemize}
+	\item	Diese Schaltung sollte in ein Metallgehäuse montiert werden
+	\item	Am Besten noch mit Trennwand hinter dem Transistor
+	\item	Der Verstärker arbeitet im C-Betrieb
+	\item	Und kann nur CW und FM
+	\item	er kann \textbf{kein SSB} 
+\end{itemize}
+\end{frame}
+
+\section*{Linearverstärker}
+\begin{frame}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{a17/TG222.png}\\
+       Linearverstärker\cite{bna}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Good to know}
+\begin{itemize}
+	\item	HF-Verstärker sollen möglichst verzerrungsfrei(linear) verstärken
+	\item	Einen solchen Verstärker kann man mit zwei Transistoren im Gegentakt-B-Betrieb aufbauen
+	\item	Oder mit einem Transistor im AB-Betrieb
+	\item	Bei kleinen Signalen arbeitet der Transistor dann im A-Betrieb und bei größeren im B-Betrieb
+	\item	$R_1$ und $R_2$ bestimmen den Arbeitspunkt des Transistors
+	\item	Der Schwingkreis $L_1 - C_1 - C_2$ schafft eine doppelte Resonanztransformation
+	\item	Das Verhältnis von $C_1$ zu $C_2$ bestimmt die Anpassung an die Basis des Transistors
+	\item	Die Mittelanzapfung an $L_1$ erzeugt den üblichen $50 \Omega$ Eingangswiderstand
+	\item	Der Ausgang wird normal transformiert über $L_2$ zu $L_3$
+\end{itemize}
+\end{frame}
+
+\section*{Detektor-Empfänger}
+\begin{frame}
+\frametitle{Der Detektorempfänger}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{a17/TJ601.png}\\
+       Detektorempfänger \cite{bna}
+    \end{center}
+\end{frame}
+
+\section*{Aufbau von Oszillatoren}
+\begin{frame}
+\frametitle{Aufbau von Oszillatoren: Let's swing :)}
+\begin{itemize}
+	\item	Ls und Cs sind temperaturabhängig
+	\item	Spulen dehnen sich aus, dadurch steigt ihr Querschnitt und die Induktivität
+	\item	Deshalb nutzt man dafür Kondensatoren mit negativen Temperaturkoeffizienten
+	\item	wie z.B. Styroflexkondensatoren
+	\item	Dies alles beeinflusst die Frequenz
+	\item	Also Oszis weg von Wärmequellen ;)
+	\item	extra stabilisierte Spannungsversorgung verhindert ein verzerren der Frequenz durch den Transistor
+	\item	Und immer gut schirmen
+\end{itemize}
+\end{frame}
+
+\section*{Die Dummyload}
+
+\begin{frame}
+\frametitle{Die Dummie-Load}
+\begin{itemize}
+	\item	Im Prinzip ist die Dummy-Load ein Widerstand der für hohe Frequenzen und Leistungen gebaut wurde
+	\item	Dabei soll sie wenig kapazitive und noch wichtiger, wenig induktive Anteile haben
+	\item	Gut eignen sich Schichtwiderstände 
+\end{itemize}
+\end{frame}
+
+\section*{Netzteil und Stabilisierung}
+\begin{frame}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{a17/TD306.png}\\
+       Netzteil \cite{bna}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wie funzt das jetzt?}
+\begin{itemize}
+	\item	Fixe Ausgangspannung, Z-Spannung + $0,6V$ $U_{BE}$ für $T_2$
+	\item	$U_a$ sinkt $\rightarrow$	$I_{B,T2}$ sinkt $\rightarrow$ $U_{R_1,R_2}$ sinkt $\rightarrow$ $U_B$ steigt $\rightarrow$ $T_2$ leitet besser $\rightarrow$ $U_a$ steigt
+\end{itemize}
+\end{frame}
+
+\subsection*{Festpannungsregler}
+\begin{frame}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{a17/TD319.png}\\
+       Festpannungsregler \cite{bna}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lass uns das regeln wie echte Regler}
+\begin{itemize}
+	\item	Viel freundlicher im Umgang als z.B. die Z-Diodenschaltung
+	\item	Benötigen nur noch Kondensatoren drum herum
+	\item	brauchen etwa $15 \%$ mehr Spannung als sie stabilisieren sollen
+	\item	Sollte der Regler mal zu wenig Strom liefern, kann er mit einem Transistor erweitert werden
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{center} \Large
+        \begin{block}{TD319}
+		\large Welche Ausgangsspannung entsteht mit folgender Spannungsregler-Schaltung?\\
+		\begin{center}
+		\includegraphics[width=0.5\textwidth]{a17/TD319.png}\\
+		\end{center}
+    	\end{block}
+        \begin{tabular}{|c|c|}
+        \hline
+        A & 6V \\ \hline
+        B & 8,9V \\ \hline
+        C & 18V \\ \hline
+        D & 14,9V \\ \hline
+        \end{tabular}
+    \end{center}
+\end{frame}
+\begin{frame}
+    \begin{center} \Large
+        \begin{block}{TD319}
+		\large Welche Ausgangsspannung entsteht mit folgender Spannungsregler-Schaltung?\\
+		\begin{center}
+		\includegraphics[width=0.5\textwidth]{a17/TD319.png}\\
+		\end{center}
+    	\end{block}
+        \begin{tabular}{|c|c|}
+        \hline
+        A & 6V \\ \hline
+        X & 8,9V \\ \hline
+        C & 18V \\ \hline
+        D & 14,9V \\ \hline
+        \end{tabular}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \begin{center} \Large
+        \begin{block}{TD312}
+		\large Die Ausgangsspannung zwischen A und B in der Schaltung beträgt ungefähr?\\
+		\begin{center}
+		\includegraphics[width=1\textwidth]{a17/TD312.png}\\
+		\end{center}
+    	\end{block}
+        \begin{tabular}{|c|c|}
+        \hline
+        A & 5,6V \\ \hline
+        B & 11,2V \\ \hline
+        C & 6,2V \\ \hline
+        D & 5V \\ \hline
+        \end{tabular}
+    \end{center}
+\end{frame}
+\begin{frame}
+    \begin{center} \Large
+        \begin{block}{TD312}
+		\large Die Ausgangsspannung zwischen A und B in der Schaltung beträgt ungefähr?\\
+		\begin{center}
+		\includegraphics[width=1\textwidth]{a17/TD312.png}\\
+		\end{center}
+    	\end{block}
+        \begin{tabular}{|c|c|}
+        \hline
+        A & 5,6V \\ \hline
+        B & 11,2V \\ \hline
+        C & 6,2V \\ \hline
+        X & 5V \\ \hline
+        \end{tabular}
+    \end{center}
+\end{frame}
+
+\subsection*{Schaltnetzteil}
+\begin{frame}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{a17/TD317.png}\\
+       Schaltnetzteil \cite{bna}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{So einfach gehts}
+\begin{itemize}
+	\item	Will man den Trafo in einem Netzteil verkleinern, brauch man höhere Spannungen
+	\item	Lösung des Problems, man richtet die Wechselspannung gleich, zerhackstückelt diese dann per elektronischen Schalter, transformiert sie dann und richtet sie wieder gleich
+	\item	Schaltfrequenzen gehen bis in den MHz-Bereich
+	\item	Erzeugt dafür aber Oberwellen die auf KW stören können
+\end{itemize}
+\end{frame}
+
+\section*{Mechanik \& Sicherheit}
+\begin{frame}
+\frametitle{Was für die Bastler}
+\begin{itemize}
+	\item	Ich kann es nicht oft genug sagen: "Immer an die Abschirmung denken"
+	\item	Am Besten Metallgehäuse nutzten
+	\item	Braucht das Gerät Netzspannung, muss das gesamte Gehäuse geerdet werden
+	\item	Bei HF-Verstärkern in der Versorgung auch noch die HF rausfiltern
+\end{itemize}
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{darc}  DARC Online-Lehrgang Lektion A17:
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a17/}
+    \bibitem{wm} 	Wikimedia:
+	\bibitem{bna}   Fragenkatalog Bundesnetzargentur Technik Klasse A:                   
+                    \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
+    \bibitem{fi}    Freie Inhalte (DK0TU):
+                    \url{http://www.dk0tu.de/Projekte/Freie_Inhalte/}
+\end{thebibliography} 
+
+\input{texdata/postamble}

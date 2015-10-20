@@ -1,0 +1,199 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Felix Baum <baum@campus.tu-berlin.de>
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse E 04: \\
+          Der Widerstand und seine Schaltungsarten \\[2em]}
+\date{Stand 06.11.2014}
+\input{texdata/titlepage}
+
+%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
+
+\section*{Einleitung}
+
+\begin{frame}
+    \frametitle{Einleitung / Widerstand}
+    \begin{center}
+        \Large{Was ist das?} \\
+        \Large{Wie sieht er aus?}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Einleitung / Widerstand}
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{e04/Widerstaende.jpg}
+        \footnote{\tiny By Honina at de.wikipedia. Later version(s) were uploaded by Montauk at de.wikipedia.}
+    \end{center}
+ 	
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Einleitung / Widerstand}
+
+    \begin{center}
+        \includegraphics[width=.4\textwidth]{e04/Resistor_symbol_IEC.png}
+        \footnote{\tiny By Markus Kuhn (Made in Inkscape from scratch) [Public domain], via Wikimedia Commons}
+    \end{center}
+
+    \begin{center}
+        \includegraphics[width=.4\textwidth]{e04/R_LTspice.png}
+        \footnote{\tiny aus LTspice}
+    \end{center}
+ 	
+\end{frame}
+
+\section*{Besondere Widerstandsarten}
+\begin{frame}
+    \frametitle{Drehpotentiometer}
+
+    \begin{center}
+        \includegraphics[width=.5\textwidth]{e04/Potenziometer.jpg}
+        \footnote{\tiny „Potenziometer“ von Honina.Original uploader was Honina at de.wikipedia.Later version(s) were uploaded by Ulfbastel at de.wikipedia. Lizenziert unter Creative Commons Attribution-Share Alike 3.0 über Wikimedia Commons}
+    \end{center}
+ 	
+\end{frame}
+
+\begin{frame}
+    \frametitle{Besondere Widerstände}
+
+    \begin{center}
+        \includegraphics[width=.7\textwidth]{e04/bild-TC106.png}
+        \footnote{\tiny Technik Fragenkatalog KlasseE 2006-09 Frage TC106}
+ 	
+ 	\begin{tabular}{l||l}\hline
+        A & NTC - Negativer Temperaturkoeffizient \\ \hline
+        B & PTC - Positiver Temperaturkoeffizient \\ \hline
+        C & Lichteinfallgesteuerter Widerstand (Lichtsensor) \\ \hline
+        D & Spannungsgesteuerter Widerstand \\ \hline
+    \end{tabular}
+ 	    \end{center}
+\end{frame}
+
+\section*{Spezifischer Widerstand}
+
+\begin{frame}
+    \frametitle{Leitende Materialien}
+
+     \begin{tabular}{lr}
+  	Material & Spezifischer Widerstand\footnote{\tiny \url{de.wikipedia.org/wiki/Spezifischer_Widerstand}} \\ \hline
+  	Silber & $1,587 \cdot 10^{-2}$ \\
+  	Kupfer & $1,721 \cdot 10^{-2}$ \\
+  	Gold & $2,214 \cdot 10^{-2}$ \\
+  	Aluminium & $2,65 \cdot 10^{-2}$ \\
+  	Zinn & $1.15 \cdot 10^{-1}$ \\
+  	Blei & $2,08 \cdot 10^{-1}$ \\
+  	Quecksilber & $9.412 \cdot 10^{-1}$ \\
+  	Germanium & $4.6 \cdot 10^{5}$\\
+  	Porzellan & $1 \cdot 10^{18}$ \\
+ 	\end{tabular}
+ 	
+ 	$$R = \rho \cdot \frac{l}{A}$$
+ 	
+
+\end{frame}
+
+\section*{Widerstandswerte Ablesen}
+
+\begin{frame}
+	\begin{center}
+        \includegraphics[width=.74\textwidth]{e04/4-Ringe.png}
+        \footnote{\tiny By Wikipedia CC-BY-SA-3.0\url{https://de.wikipedia.org/wiki/Widerstand_(Bauelement)}]}
+\end{center}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+        \includegraphics[width=1\textwidth]{e04/5-Ringe.png}
+        \footnote{\tiny By Wikipedia CC-BY-SA-3.0\url{https://de.wikipedia.org/wiki/Widerstand_(Bauelement)}]}
+\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{SMD Widerstände}
+    \begin{center}
+        \includegraphics[width=.3\textwidth]{e04/Rsistor_SMD.jpg}
+        \footnote{\tiny By Haragayato CC-BY-SA-3.0 (\url{http://creativecommons.org/licenses/by-sa/3.0/)}], via Wikimedia Commons}
+    \end{center}
+    
+    \begin{center}
+    \begin{tabular}{l||l|l|l|l|l|l|l|l|l|l}\hline
+        1.Ziffer & - & 1 &2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
+        2.Ziffer & 0 & 1 &2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
+        3.Ziffer & 0 & 1 &2 & 3 & 4 & 5 & 6 & 7 &  &  \\ \hline
+    \end{tabular}
+    \end{center}
+    Zum Beispiel:
+    \begin{center}
+    \begin{tabular}{l||l}\hline
+        470 & $47 \cdot 10^{0} \Omega$ \\ \hline
+        223 & $22 \cdot 10^{3} \Omega$ \\ \hline
+        4R7 & $4,7 \Omega$ \\ \hline
+    \end{tabular}
+    \end{center}
+
+\end{frame}
+
+\section*{Rechnen mit Widerständen}
+
+\begin{frame}
+    \frametitle{Reihenschaltung}
+        
+    $$R_{gesamt} = R_1 + R_2 + R_3 + ...$$
+
+	\begin{center}
+        \includegraphics[width=.2\textwidth]{e04/Reihe.png}
+        \footnote{\tiny aus LTspice}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Parallelschaltung}
+        $$\frac{1}{R_{gesamt}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...$$
+        
+	\begin{center}
+        \includegraphics[width=.5\textwidth]{e04/Parallel.png}
+        \footnote{\tiny aus LTspice}
+    \end{center}
+    
+
+\end{frame}
+
+
+\section*{Übung}
+
+\begin{frame}
+
+	\begin{center}
+        Widerstandswerte aus Farbcode ablesen
+    \end{center}
+    
+\end{frame}
+
+\begin{frame}
+
+	\begin{center}
+        \includegraphics[width=.8\textwidth]{e04/URI.png}
+        \footnote{\tiny TU Wien \url{http://www.fet.at/twiki/pub/Homepage/OnlineFetzn/fetzn_ausgabe_maerz-2013_online.pdf}}
+    \end{center}
+    
+\end{frame}
+
+\section*{Referenzen}
+
+\begin{frame}
+    \frametitle{Referenzen/Links}
+    
+    \footnotesize
+    \begin{itemize}
+        \item Moltrecht E 04: \\
+              \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e04/}
+    \end{itemize}
+
+\end{frame}
+
+\input{texdata/postamble}

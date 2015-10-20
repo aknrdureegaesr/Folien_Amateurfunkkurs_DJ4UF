@@ -1,0 +1,178 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Martin Deutschmann
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse E 05: \\
+          Der Kondensator und seine Schaltungsarten \\[2em]}
+\date{Stand 5.11.2014}
+\input{texdata/titlepage}
+
+\section*{Einleitung}
+
+\begin{frame}
+    \frametitle{Einleitung / Kondensator}
+    \begin{center}
+        \Large{Wie sieht er aus?}\\
+        \Large{Was tut der?}         
+    \end{center}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Einleitung / Kondensator}
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{e05/Kondensator01.jpg}
+        \footnote{Abb.1: Verschiedene Kondensatoren \cite{wmen}}
+    \end{center}
+ 	
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Einleitung / Kondensator}
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{e05/Kondensator02.jpg}
+        \footnote{Abb.2: Verschiedene kleine Kondensatoren \cite{wmen}}
+    \end{center}
+ 	
+
+\end{frame}
+
+
+\section*{Kapazität}
+
+\begin{frame}
+    \frametitle{Kapazität}
+	
+	\begin{center}
+        \includegraphics[width=0.8\textwidth]{e05/c-aufbau.png}
+        \footnote{Abb.3: Interner Aufbau eines Plattenkondensators \cite{wp}}
+    \end{center}
+ 	
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{ein paar Formeln}
+	\begin{center}
+		\huge{$Q = C \cdot U$}\\
+		\vspace{2cm}
+		\huge{$C= \frac{\varepsilon_{0} \cdot \varepsilon_{r} \cdot A}{d}$}
+	\end{center}
+   
+   
+\end{frame}
+
+\section*{Parallelschaltung}
+
+\begin{frame}
+    \frametitle{Parallelschaltung von Kondensatoren}
+	
+	\begin{center}
+        \includegraphics[width=0.8\textwidth]{e05/c-parallel.png}
+        \footnote{\tiny By Martin Deutschmann mit Eagle}
+    \end{center}
+ 	\huge{$C_{ges} = C_{1} + C_{2} + C_{3} + C_{4} + C_{5}$} 
+
+\end{frame}
+	
+\begin{frame}
+	\begin{center}
+			\huge{TC206: Drei Kondensatoren mit den Kapazitäten $C1 = 0,1 \mu F, C2 = 150 nF$ und $C3 = 50000 pF$ werden parallel geschaltet. Wie groß ist die Gesamtkapazität?}
+	\end{center}
+\end{frame}
+
+\section*{Reihenschaltung}
+
+\begin{frame}
+    \frametitle{Reihenschaltung von Kondensatoren}
+    \begin{center}
+		\huge{$\frac{1}{C_{ges}} = \frac{1}{ C_{1}} + \frac{1}{C_{2}} + \frac{1}{C_{3}} + \frac{1}{C_{4}} + \frac{1}{C_{5}}$}\\
+		\vspace{1cm}
+		\huge{$C_{ges} = \frac{1}{\frac{1}{ C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \frac{1}{C_4} + \frac{1}{C_5}}$}\\
+		\vspace{1cm}	
+        \includegraphics[width=0.8\textwidth]{e05/c-reihe.png}
+        \footnote{\tiny By Martin Deutschmann mit Eagle}
+    \end{center}
+	
+    
+\end{frame}
+\begin{frame}
+	\begin{center}
+		\huge{Zwei Kondensatoren von 100 pF und 150 pF sind hintereinander (in Serie) geschaltet. Berechnen Sie die Gesamtkapazität.}
+	\end{center}
+\end{frame}
+
+\section*{Widerstand eines Kondensators}
+\begin{frame}
+    \frametitle{Widerstand eines Kondensators}
+	
+	\begin{center}
+     \huge{$X_c = \frac{1}{2 \cdot \pi \cdot f \cdot C}$}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+	\begin{small}
+	
+	
+	
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\multicolumn{3}{|c|}{\textbf{TC208: Mit zunehmender Frequenz...}}\\
+		\hline
+		A & steigt der Wechselstromwiderstand des Kondensators. & ??? \\ \hline
+		B & sinkt der Wechselstromwiderstand des Kondensators. & ??? \\ \hline
+		C & steigt der Wechselstromwiderstand des Kondensators  & ??? \\ 
+		" " & bis zu einem Maximum und sinkt dann wieder. & " " \\ \hline
+		D & sinkt der Wechselstromwiderstand des Kondensators & ??? \\
+		" " & bis zu einem Minimum und steigt dann wieder. & " " \\ \hline 	
+	
+	\end{tabular}
+	\end{small}
+\end{frame}
+
+\begin{frame}
+	\begin{small}
+	
+	
+	
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\multicolumn{3}{|c|}{\textbf{TC208: Mit zunehmender Frequenz...}}\\
+		\hline
+		A & steigt der Wechselstromwiderstand des Kondensators. & ??? \\ \hline
+		B & sinkt der Wechselstromwiderstand des Kondensators. & Right \\ \hline
+		C & steigt der Wechselstromwiderstand des Kondensators  & ??? \\ 
+		" " & bis zu einem Maximum und sinkt dann wieder. & " " \\ \hline
+		D & sinkt der Wechselstromwiderstand des Kondensators & ??? \\
+		" " & bis zu einem Minimum und steigt dann wieder. & " " \\ \hline 	
+	
+	\end{tabular}
+	\end{small}
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{e03}   Moltrecht E 05: \\
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e05/}
+    \bibitem{wp}    Wikipedia DE: \\
+                    \url{http://de.wikipedia.org/wiki/Kondensator_(Elektrotechnik)}\\ 
+    \bibitem{wmde}	Wikimedia DE:\\
+    				\url{http://de.wikipedia.org/wiki/Datei:Plate_Capacitor_DE.svg}\\
+   	\bibitem{wmen}	Wikimedia EN:\\
+   					\url{http://commons.wikimedia.org/wiki/File:Capacitors_(7189597135).jpg}\\
+   					\url{http://commons.wikimedia.org/wiki/File:Condensators.JPG}
+\end{thebibliography} 
+
+\input{texdata/postamble}

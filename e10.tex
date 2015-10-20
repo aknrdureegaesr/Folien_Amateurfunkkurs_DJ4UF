@@ -1,0 +1,369 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Martin Deutschmann
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse E 10: \\
+          Dezibel, D\"ampfung \& Kabel \\[2em]}
+\date{Stand 01.12.2014}
+\input{texdata/titlepage}
+
+%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
+
+\section*{D\"ampfungsfaktor}
+\begin{frame}
+\frametitle{D\"ampfungsfaktor}
+\begin{center}
+\begin{minipage}{0.3\textwidth}
+	\huge{$ D = \frac{P_{1}}{P_{2}}$}
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+\begin{itemize}
+	\item  D\"ampfungsfaktor D gibt Verh\"altnis zwischen Eingangsleistung $P_{1}$ und der Ausgangsleistung $P_{2}$.
+\end{itemize}	
+\end{minipage}
+\vspace{1cm}	
+\includegraphics[scale=0.35]{e10/ubertragung.png}\\
+Abb. 1: Übertragungswege einer Funkstation
+\end{center}
+\end{frame}
+
+
+
+\section*{D\"ampfungsma{\ss} dB}
+\begin{frame}
+\frametitle{D\"ampfungsma{\ss} dB}
+\begin{center}
+	\begin{itemize}
+		\item D\"ampfungsma{\ss} ist die logarithmierung des D\"ampfungsfaktor
+		\item logarithmische Werte kann man addieren
+	\end{itemize}
+	\vspace{0.5cm}
+	\fbox{
+		\Huge{$a_{P} = 10 \cdot log(\frac{P_{1}}{P_{2}})$ dB}
+	}
+\end{center}
+\end{frame}
+
+\section{Verst\"arkung in dB}
+\begin{frame}
+\frametitle{Verst\"arkung in dB}
+\begin{itemize}
+	\item im Amateurfunk wird mit Verstärkung und nicht mit D\"ampfung gerechnet
+	\item D\"ampfung ist eine negative Verst\"arkung
+\end{itemize}
+\vspace{1cm}
+	\fbox{
+		\Huge{$g = 10 \cdot log(\frac{P_{2}}{P_{1}})$ dB}
+	}
+\end{frame}
+
+\begin{frame}
+\frametitle{Verst\"arkung in dB}
+\begin{center}
+	\begin{Large}
+	\begin{tabular}{|c|c|}
+		\hline
+		dB & Leistungsfaktor \\
+		\hline \hline
+		0    & 1                 \\ \hline
+		1,5  & $\sqrt{2}$ = 1,41 \\ \hline
+		2,15 & 1,64              \\ \hline
+		3    & 2                 \\ \hline
+		6    & 4                 \\ \hline
+		10   & 10                \\ \hline
+		20   & 100               \\ \hline
+	\end{tabular}
+	\end{Large}		
+	\end{center}
+\end{frame}
+
+\section*{Spannungsd\"ampfungsma{\ss}}
+\begin{frame}
+\frametitle{Spannungsd\"ampunfgsma{\ss}}
+\fbox{
+		\Huge{$a_{U} = 20 \cdot log(\frac{U_{1}}{U_{2}})$ dB}
+	}
+\vspace{2cm}
+\begin{itemize}
+	\item Wird in der A-Technik n\"aher erl\"autert.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Spannungsfaktor \& Leistungsfaktor}
+\begin{center}
+\begin{Huge}
+\begin{minipage}{0.3\textwidth}
+	\begin{tabular}{|c|c|}
+		\hline
+		dB & $a_{U}$ \\
+		\hline \hline
+		6dB  & 2  \\ \hline
+		12dB & 4  \\ \hline
+		20dB & 10 \\ \hline
+	\end{tabular}
+\end{minipage}
+\hspace{2cm}
+\begin{minipage}{0.3\textwidth}
+	\begin{tabular}{|c|c|}
+		\hline
+		dB & $a_{P}$ \\
+		\hline \hline
+		3dB  & 2  \\ \hline
+		6dB  & 4  \\ \hline
+		10dB & 10 \\ \hline
+	\end{tabular}
+\end{minipage}
+\end{Huge}
+\end{center}
+\end{frame}
+
+\section*{S-Stufen}
+\begin{frame}
+\frametitle{S-Stufen}
+\begin{center}
+\includegraphics[scale=1.2]{e10/S-Meter.jpg}\\
+Abb. 2: S-Meter
+\footnote{\url{http://commons.wikimedia.org/wiki/File:S-Meter.jpg}}
+\begin{itemize}
+	\item eine S-Stufe entspricht 6 dB
+	\item Wird beim RST-System verwendet
+	\item gibt einen bestimmten Spannungswert an einem 50$\Omega$ Widerstand an
+	\item Kurzwelle: S9 = 50$\mu$V bei 50$\Omega$
+	\item UKW: S9 = 5$\mu$V bei 50$\Omega$
+\end{itemize}
+\end{center}
+\end{frame}
+
+\section*{Pegel}
+\begin{frame}
+\frametitle{Pegel}
+\begin{center}
+\begin{large}
+\begin{minipage}{0.3\textwidth}
+	\begin{tabular}{|c|c|}
+		\hline
+		dBm & mW \\
+		\hline \hline
+		20dBm  & 100mW  \\ \hline
+		10dBm  & 10mW   \\ \hline
+		0dBm   & 1mW    \\ \hline
+		-10dBm & 0,1mW  \\ \hline
+	\end{tabular}
+\end{minipage}
+\hspace{2cm}
+\begin{minipage}{0.3\textwidth}
+	\begin{tabular}{|c|c|}
+		\hline
+		dBpW & mW \\
+		\hline \hline
+		20dBpW  & 100pW  \\ \hline
+		10dBpW  & 10pW   \\ \hline
+		0dBpW   & 1pW    \\ \hline
+		-10dBpW & 0,1pW  \\ \hline
+	\end{tabular}
+\end{minipage}
+\vspace{0.5cm}
+\end{large}
+\begin{itemize}
+	\item Pegel ist auf einen bestimmten Grundwert bezogen
+	\item Grundwert wird auch Normal oder Nullwert genannt
+\end{itemize}
+\end{center}
+\end{frame}
+
+
+\section*{Hochfrequenzleitung}
+\begin{frame}
+\frametitle{Hochfrequenzleitungen}
+\begin{center}
+%\begin{minipage}{0.4\textwidth}
+\includegraphics[scale=0.25]{e10/parallel.png}\\
+\footnote{\url{http://de.wikipedia.org/wiki/Datei:Twin-lead_cable_dimension.svg}}
+Abb. 3: Paralleldrahtleitung
+%\end{minipage}\\
+\\
+%\begin{minipage}{0.4\textwidth}
+\includegraphics[scale=0.4]{e10/coax.png}\\
+\footnote{\url{http://commons.wikimedia.org/wiki/File:Coaxial_cable_cutaway_new.svg}}
+Abb. 4: Koaxialkabel
+%\end{minipage}
+\end{center}
+\end{frame}
+
+\section*{Hochfrequenzleitung}
+\begin{frame}
+\frametitle{Hochfrequenzleitungen}
+\begin{center}
+\includegraphics[scale=0.4]{e10/hohl.jpg}\\
+\footnote{\url{http://de.wikipedia.org/wiki/Datei:Elli_holl.jpg}}
+Abb. 5: Hohlleiter
+%\end{minipage}
+\end{center}
+\end{frame}
+
+\section*{Wellenwiderstand}
+\begin{frame}
+\frametitle{Wellenwiderstand}
+\includegraphics[scale=0.8]{e10/wellenesb.png}\\
+Abb. 6: ESB 
+\vspace{1cm}\\
+\includegraphics[scale=0.65]{e10/wellenesbex.png}\\
+Abb. 7: Genaues Ersatzschaltbild eines Koxialkabels
+\end{frame}
+
+\begin{frame}
+\frametitle{Wellenwiderstand}
+\begin{itemize}
+	\item \Huge{ $Z_W = \sqrt{\frac{L'}{C'}}$}
+	 \normalsize \item Paralleldrahtleitungen: Zw = 150 $\Omega$ bis 600 $\Omega$
+	\item Koaxialleitungen: Zw =  50 $\Omega$ bis 95 $\Omega$
+	\item Der Wellenwiderstand entspricht dem Abschlusswiderstand einer Leitung, bei dem keine stehenden Wellen auftreten.
+\end{itemize}
+\end{frame}
+
+\section*{D\"ampfungsberechnung}
+\begin{frame}
+\frametitle{D\"ampfungsberechnung}
+\begin{Large}
+Ich hoffe ihr habt eure Formelsammlung dabei C:
+\end{Large}
+\end{frame}
+
+\begin{frame}
+\frametitle{Let's calculate together}
+ \begin{itemize}
+ 	\item RG58\\
+ 	\item 40 m\\
+ 	\item 28 MHz
+ \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Let's calculate together}
+ \begin{itemize}
+ 	\item Aircell7\\
+ 	\item 40 m\\
+ 	\item 28 MHz
+ \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Let's calculate together}
+ \begin{itemize}
+ 	\item RG174\\
+ 	\item 40 m\\
+ 	\item 28 MHz
+ \end{itemize}
+\end{frame}
+
+
+\section*{Anpassung}
+\begin{frame}
+\frametitle{Anpassung}
+\includegraphics[scale=0.35]{e10/Anpassung.png}\\
+Abb. 8: Anpassung
+\footnote{\url{http://de.wikipedia.org/wiki/Datei:EingangswiderstandAusgangswiderstandA.svg}}
+\end{frame}
+
+\section*{Stehwellenverh\"altnis}
+\begin{frame}
+\frametitle{Stehwellenverh\"altnis}
+\begin{Large}
+\begin{itemize}
+	\item ist ein Maß für die Anpassung
+	\item \Huge $SWR = \frac{u_{v}+u_{r}}{u_{v}-u_{r}}$ \Large
+	\item ist das Verhältnis von vorlaufender zu zurücklaufender Welle
+	\item \href{http://commons.wikimedia.org/wiki/File:Stehwelle_(Animation).gif}{Animierte Darstellung}
+\end{itemize}
+\end{Large}
+\end{frame}
+
+\section*{Symmetrierung}
+\begin{frame}
+\frametitle{Symmetrierung}
+\begin{minipage}{0.3\textwidth}
+	\includegraphics[scale=0.5]{e10/balun.png}\\
+	Abb. 9: Balun
+
+\end{minipage}
+	\footnote{\url{http://commons.wikimedia.org/wiki/File:Cdbalun2.svg}}
+\begin{minipage}{0.6\textwidth}
+	\begin{itemize}
+		\item Wird bei Verbindungen zwischen symmetrischen und unsymmetrischen Punkten verwendet
+		\item Koaxialkabel ist unsymmetrisch
+		\item Paralleldraht ist symmetrisch
+		\item Alle Dipole sind symmetrisch
+		\item Alle Antennen die gegen Erde erregt werden sind unsymmetrisch
+	\end{itemize}
+\end{minipage}
+\end{frame}
+
+\section*{Stecker und Adapter}
+\begin{frame}
+\frametitle{Stecker und Adapter}
+\begin{center}
+	\includegraphics[scale=0.25]{e10/pl.jpg}\\
+	Abb. 10: PL-Stecker
+	\begin{itemize}
+		\item UHF
+		\item Kurzwelle,auch 2-Meter-Band
+	\end{itemize}
+	\footnote{\url{http://de.wikipedia.org/wiki/Datei:UHF_PL_Connector.jpg}}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Stecker und Adapter}
+\begin{center}
+	\includegraphics[scale=0.3]{e10/n.jpg}\\
+	Abb. 11: N-Stecker
+	\begin{itemize}
+		\item N
+		\item 70-cm-Band, auch 2-Meter-Band
+	\end{itemize}	 
+	\footnote{\url{http://de.wikipedia.org/wiki/	Datei:Male_type_N_connector.jpg}}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Stecker und Adapter}
+\begin{center}
+	\includegraphics[scale=0.5]{e10/bnc.jpg}\\
+	Abb. 12: BNC-Stecker und -Buchse
+	\begin{itemize}
+		\item BNC
+		\item Kurzwelle,auch 2-Meter-Band
+	\end{itemize}	
+	\footnote{\url{http://commons.wikimedia.org/wiki/File:BNC_50_75_Ohm.jpg}}
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Stecker und Adapter}
+\begin{center}
+	\includegraphics[scale=0.25]{e10/sma.jpg}\\
+	Abb. 13: SMA-Stecker
+	\begin{itemize}
+		\item SMA
+		\item VHF-/UHF- Handfunkgeräte
+	\end{itemize}	 
+	\footnote{\url{http://de.wikipedia.org/wiki/Datei:Reverse_sma_stecker.jpg}}
+\end{center}
+\end{frame}
+
+\section*{Referenzen}
+\begin{frame}
+    \frametitle{Referenzen/Links}
+    
+    \footnotesize
+    \begin{itemize}
+        \item Moltrecht E 08 : \\
+              \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e08/}      
+    \end{itemize}
+
+\end{frame}
+
+\input{texdata/postamble}

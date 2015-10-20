@@ -1,0 +1,364 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+
+\input{texdata/preamble}
+\subtitle{Betriebstechnik/Vorschriften 09: \\
+          Betriebsarten, Sendearten, Frequenzen \\[2em]}
+\date{Stand 11.12.2014}
+\input{texdata/titlepage}
+
+%todo Struktur nach Moltrecht, aber sehr komisch
+%     Besser Top-Down: ITU ... AFuV ... HAM Conventions
+
+\section{Einleitung}
+
+\begin{frame}
+    \frametitle{Einleitung: International}
+
+    Internationaler Frequenzbereichszuweisungsplan: \emph{ITU
+    \footnote{International Telecommunication Union. Gesetzesgrundlagen siehe
+    Lektion \texttt{BV06}: ITU, CEPT, AFuV...} Frequency Allocation Table}
+
+    \begin{itemize}
+        \item enthält die Frequenzbereichszuweisungen aller Funkdienste in
+              verschiedenen Funkregionen der Erde
+              \footnote{Regionen siehe Lektion \texttt{BV06}}
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Einleitung: National}
+
+    National geltendes Recht (in DL \texttt{AFuV}):
+
+    \begin{itemize}
+        \item Anlage 1 der \texttt{AFuV} regelt Nutzungsbedingungen und Frequenzbereiche
+        \item welche Bereiche von wem wie genutzt? \\
+              Frequenzen, Bandbreiten, Leistung, ...
+        \item folglich: Nicht alle Bereiche der RR (VO Funk) dürfen automatisch
+              verwendet werden
+        \item Bandgrenzen HF bis 13cm muss man lernen %todo Tabelle
+              \footnote{bei vielen Prüfungsfragen hilft einfache Fausformel
+                        $MHz = \frac{300}{Meter}$}
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Einleitung: Vereinbarungen der HAMs}
+
+    International:
+
+    \begin{itemize}
+        \item IARU \footnote{International Amateur Radio Union} legt
+              Nutzungs\emph{empfehlungen} der Funkamateure untereinander fest
+    \end{itemize}
+
+    Lokale Absprachen, z.B.:
+
+    \begin{itemize}
+        \item Club QRGs
+        \item Lokalrunden
+        \item Rundsprüche
+        \item ...
+    \end{itemize}
+
+\end{frame}
+
+\section[Übertragungstechn.]{Übertragungstechnik}
+
+\begin{frame}
+    \frametitle{Übertragungstechnik}
+        
+    \begin{center}
+        Modulationsarten, Betriebsarten $\Rightarrow$ Sendearten
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Modulationsarten}
+
+    Radio Regulations verwendet offizielle Codierung von Aussendungen als
+    neunstelligen Code \texttt{BBBBMSIDX}: \\[2em]
+
+    \begin{itemize}
+        \item BBBB: vier Stellen Bandbreite
+        \item MSI: drei Stellen Sendeart (Modulationsart, Signalart,
+                   Informationsgehalt)
+        \item DX: ggf. zwei weitere Stellen für Signaleinzelheiten
+                  (Detaillierung, Multiplexverfahren)
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Sendearten: Amateurfunk}
+
+    Amateurfunk: drei Kennzeichen für die Modulationsart ausreichend
+
+    %todo enumerate color broken
+    \begin{enumerate}
+        \item Modulationsart
+        \item Signalart, die den Hauptträger moduliert
+        \item Art der Informationen
+    \end{enumerate}
+
+    %todo Tabellen http://de.wikipedia.org/wiki/Modulationsart
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Sendearten: Schlüsselzeichen}
+
+    \begin{itemize}
+        \item Modulationsart des Hauptträgers
+    \end{itemize}
+
+    %\begin{center}
+    \begin{tabular}{|l|l|}\hline
+        A & Amplitudenmodulation \\ \hline
+        J & SSB (AM, Seitenband mit unterdrücktem Träger) \\ \hline
+        F & Winkelmodulation, Frequenzmodulation \\ \hline
+    \end{tabular}
+    %\end{center}
+
+    \begin{itemize}
+        \item Signalart
+    \end{itemize}
+    
+    %\begin{center}
+    \begin{tabular}{|l|l|}\hline
+        1 & Einkanaliges quantisiertes Signal ohne Hilfsträger \\ \hline
+        2 & Einkanaliges quantisiertes Signal mit einem Hilfsträger \\ \hline
+        3 & Einkanaliges Analogsignal \\ \hline
+    \end{tabular}
+    %\end{center}
+
+    \begin{itemize}
+        \item Informationsart
+    \end{itemize}
+ 
+    %\begin{center}
+    \begin{tabular}{|l|l|}\hline
+        A & Morsetelegrafie \\ \hline
+        B & Telegrafie für maschinellen Empfang (Teletype) \\ \hline
+        C & Fax \\ \hline
+        D & Daten, Telemetrie, Fernsteuerung \\ \hline
+        E & Telefonie, Rundfunk \\ \hline
+        F & Fernsehsignal \\ \hline
+    \end{tabular}
+    %\end{center}
+   
+\end{frame}
+
+\begin{frame}
+    \frametitle{Sendearten: Beispiele}
+
+    \begin{itemize}
+        \item A1A: CW
+        \item F2A: CW via FM-Hilfsträger
+        \item F3E: FM
+        \item J3E: SSB
+        \item J2B: RTTY
+        \item J2B: Pactor
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Bandbreiten}
+
+    %todo Tabelle hier auch?
+    \begin{itemize}
+        \item A1A: 0,1... 0,5 kHz 
+        \item F1B: 0,5 kHz 
+        \item A3E: 5 kHz 
+        \item F3E: 12 kHz 
+        \item J3E: 2,4 kHz (2,7 kHz)
+    \end{itemize}
+
+    Weitere Einschränkungen, z.B. 160m-Band kein FM.
+
+\end{frame}
+
+
+\section{IARU-Bandplan (Kurzwelle)}
+
+\begin{frame}
+    \frametitle{IARU-Bandplan (Kurzwelle)}
+
+    % todo Bandplan vorher drucken
+    
+    \begin{itemize}
+        \item Bei uns Region 1 - remember?
+        \item Aufteilung: Vereinbarung der HAMs untereinander mit ''Charakter
+              einer Empfehlung''
+        \item CW überall erlaubt, aber am Bandanfang exklusiv
+        \item auch hier: Frequenzen kann man sich etwas herleiten, aber im
+              Prinzip muss man Lernen, sorry
+        \item Ansonsten: Lösung ist immer ''Ich schaue im aktuellen HF-Bandplan
+              der IARU nach ...'' ;-)
+    \end{itemize}
+
+\end{frame}
+
+% todo Fiese Frage?
+%  Aus welchem Grund sollten Sie in der Dunkelheit und im Winter auch tagsüber im
+%  Bereich von 3500-3510 kHz keine innerdeutschen oder innereuropäischen
+%  Telegrafie-QSOs durchführen?
+%    * Im IARU-Region-1-Kurzwellenbandplan ist dieser Bereich als "CW DX"
+%      ausgewiesen und sollte für interkontinentale Verbindungen freigehalten
+%      werden. 
+
+\subsection{Aktivitätszentren}
+
+\begin{frame}
+    \frametitle{Aktivitätszentren}
+
+    \begin{itemize}[<+->]
+        \item QRP - wozu?
+        \item anbei: Verwendung von \texttt{/qrp} nicht offiziell, aber geduldet
+        \item Bildübertragung
+        \item Notfunk
+        \item Frequenzbereichen bevorzugt Funkverkehr in digitalen Betriebsarten 
+    \end{itemize}
+
+\end{frame}
+
+\subsection{Seitenbänder}
+
+\begin{frame}
+    \frametitle{Seitenbänder}
+
+    $<10 MHz$ LSB \\[1em]
+    $>10 MHz$ USB \\[3em]
+
+    Nicht mit deutschen Abkürzungen (USB, OSB) verwechseln!
+
+\end{frame}
+
+\subsection{Betriebstechniken}
+
+\begin{frame}
+    \frametitle{Betriebstechniken}
+
+    \begin{itemize}
+        \item QRGs werden ''occupied'' - man fragt vorher, ob sie frei sind
+        \item für höhere Bänder gibt es Anruffrequenzen, weil diese groß sind und oft mit
+              Richtantennen gearbeitet wird
+        \begin{itemize}
+            \item nach Kontaktaufnahme sofort QSY
+        \end{itemize}
+        \item Satellitenfunkbetrieb
+        \begin{itemize}
+            \item Uplink/Downlink-Bereiche
+            \item auch mit HFGs frei halten!
+            \item auch hier: Bereiche leider Lernstoff
+        \end{itemize}
+    \end{itemize}
+
+\end{frame}
+
+\section[FRQ-Nutzungsplan]{Frequenznutzungsplan}
+
+\begin{frame}
+    \frametitle{Frequenznutzungsplan}
+
+    in Anlage 1 der \texttt{AFuV}\cite{afuv}: \\[1em]
+
+    %todo Frequenznutzungsplan ggf. in die Folien mit einbinden
+
+    Ausführlichen Nutzungsbedingungen und die ausgewiesenen Frequenzbereiche für
+    den Amateurfunkdienst.
+
+    \begin{itemize}
+        \item maximal zulässigen Sender- bzw. Strahlungsleistungen
+        \item erlaubte Frequenzbereiche
+        \item aufgegliedert nach Zeugnisklassen
+        \item Einzelheiten über Aufteilung und Nutzung im
+              Frequenznutzungsplan und im Frequenzbereichszuweisungsplan
+    \end{itemize}
+   
+\end{frame}
+
+\begin{frame}
+    \frametitle{Frequenznutzungsplan: Lesehilfen}
+
+    \begin{itemize}[<+->]
+        \item Status: Der (S)ekundärfunkdienst hat im Störungsfall gegenüber einem
+              (P)rimärfunkdienst eingeschränkte Nutzungsrechte.
+        \item ISM: Dieser Frequenzbereich wird für industrielle,
+              wissenschaftliche, medizinische, häusliche oder ähnliche Anwendungen mitbenutzt.
+        \begin{itemize}
+            \item Welche ISM-Dienste kennt ihr?
+        \end{itemize}
+        \item richtige Anfangs- und Endfrequenzen und Bandbreiten muss man
+              leider teilweise lernen
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Frequenznutzungsplan: Fragen}
+
+    ''Funfacts'':
+    
+    \begin{itemize}
+        %\item Bei 135,7-137,8 kHz und 1810-1850 kHz beträgt die zulässige maximale
+        %      Bandbreite nur 800 Hz
+        \item CB-Funkverkehr darf nur mit speziell für diesen Frequenzbereich
+              hergestellten Geräten durchgeführt werden, für die eine
+              Konformitätsbewertung oder Zulassung vorliegt.
+        \item Betriebsfunk: Nein. Außerhalb des Amateurfunks dürfen nur zugelassene Geräte oder
+              konformitätsbewertete Geräte benutzt werden.
+    \end{itemize}
+
+\end{frame}
+
+\section{Lernhinweise}
+
+\begin{frame}
+    \frametitle{Lernhinweise}
+
+    Die Frequenzbereiche gehören leider mit zu dem stupidesten Lernstoff für die
+    Prüfung. Tips:
+
+    \begin{itemize}
+        \item Don't Panic! ;-)
+        \item bei der Prüfungssimulation am Anfang die Frequenzfragen mit Hilfe
+              der Bandpläne beantworten und sacken lassen
+        \item viele Fragen sind auch über die ''Faustformel'' zu lösen
+        \item Antworten mit ''ich schau in Regelwerken nach'' sind immer gut
+    \end{itemize}
+
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\begin{frame}
+    \frametitle{Referenzen/Links}
+    \hypertarget{refs}{}
+    \footnotesize
+
+    \begin{thebibliography}{}
+        \bibitem{dj4uf} Moltrecht B/V 09: \\
+                        \url{http://www.amateurfunkpruefung.de/lehrg/bv09/bv09.html}
+        \bibitem{wp}    Wikipedia DE: \\
+                        \url{http://de.wikipedia.org/wiki/Frequenzzuteilung} \\
+                        \url{http://de.wikipedia.org/wiki/Amateurfunkband} \\
+                        \url{http://de.wikipedia.org/wiki/Betriebsart_\%28Amateurfunk\%29} \\
+                        \url{http://de.wikipedia.org/wiki/Modulationsart}
+        \bibitem{frqs}  Frequenzplan der BRD von der BNetzA: \\
+                        \url{http://www.bundesnetzagentur.de/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Grundlagen/Frequenzplan/frequenzplan-node.html}
+        \bibitem{darc}  Kurzwellenbandpläne der IARU Region 1: \\
+                        \url{http://www.darc.de/referate/hf/bandplaene/}
+        \bibitem{afuv}  Verordnung zum Gesetz über den Amateurfunk: \\
+                        \url{http://www.gesetze-im-internet.de/afuv_2005/}
+    \end{thebibliography} 
+   
+\end{frame}
+
+\input{texdata/postamble}

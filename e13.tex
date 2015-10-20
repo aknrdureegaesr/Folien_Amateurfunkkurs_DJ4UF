@@ -1,0 +1,182 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Martin Deutschmann
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse E 13: \\
+          Transistor \& Verstärker \\[2em]}
+\date{Stand 08.12.2014}
+\input{texdata/titlepage}
+
+%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
+
+\section*{Bipolarer Transistor}
+\begin{frame}
+\frametitle{Bipolarer Transistor}
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=0.2]{e13/NPN_hlb.png}\\
+	Abb. 1: Schichten eines NPN-Transistors
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=0.2 ]{e13/PNP_hlb.png}\\
+	Abb. 2: Schichten eines PNP-Transistors
+\end{minipage}
+\vspace{0.5cm}
+\begin{center}
+\begin{itemize}
+	\item Transistoren bestehen aus drei Halbleiterschichten
+	\item Anschlüsse: Basis (B), Kollektor (C), Emitter (E)
+\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ersatzschaltbild}
+
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=1.4]{e13/NPN_esb.png}\\
+	Abb. 3: ESB eines NPN-Transistors
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=1.4]{e13/PNP_esb.png}\\
+	Abb. 4: ESB eines PNP-Transistors
+\end{minipage}
+
+\end{frame}
+
+
+\section*{Feldeffekt Transistor (FET)}
+\begin{frame}
+\frametitle{Feldeffekt Transistor (FET)}
+\begin{center}
+	\includegraphics[scale=0.2]{e13/FET-aufbau.png}\\
+	Abb. 5: Aufbau eines J-FET
+	\footnote{\url{http://de.wikipedia.org/wiki/Datei:Scheme_of_n-junction_field-effect_transistor_de.svg}}\\
+	
+\begin{itemize}
+	\item Gate steuert Kanalbreite durch Spannung
+	\item Je dünner der Kanal, desto höher ist der Kanalwiderstand
+\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Feldeffekt Transistor (FET)}
+\begin{center}
+	\includegraphics[scale=0.35]{e13/FET-overview.png}\\
+	Abb. 6: Übersicht über FETs
+	\footnote{\url{http://de.wikipedia.org/wiki/Datei:FET-Typen_(mit_Schaltbildern).svg}}\\
+\end{center}
+\end{frame}
+
+\section{Verstärker}
+\begin{frame}
+\frametitle{Verstärker}
+\begin{center}
+\begin{Large}
+\begin{itemize}
+	\item \textbf{Es ist nur dann eine Verstärkung, wenn die Leistung am Ausgang größer ist, als die am Eingang}
+
+\end{itemize}
+\end{Large}
+\end{center}
+\end{frame}
+
+\section*{Operationsverstärker}
+\begin{frame}
+\frametitle{Operationsverstärker}
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=0.6]{e13/OPV.png}\\
+	Abb. 7: OPV nach ANSI
+\end{minipage}
+\footnote{\url{http://de.wikipedia.org/wiki/Datei:Op-amp_symbol.svg}}
+\hspace{0.5cm}
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=0.2 ]{e13/OPV-ger.png}\\
+	Abb. 8: OPV nach DIN
+\end{minipage}
+\footnote{\url{http://de.wikipedia.org/wiki/Datei:Normsymbol_OPV.svg}}
+\vspace{0.5cm}
+\begin{center}
+\begin{itemize}
+	\item Transistoren bestehen aus drei Halbleiterschichten
+	\item Anschlüsse: Basis (B), Kollektor (C), Emitter (E)
+\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Operationsverstärker}
+\begin{center}
+	\includegraphics[scale=0.35]{e13/OPV-intern.png}\\
+	Abb. 9: Innerer Aufbau eines OPVs
+	\footnote{\url{http://de.wikipedia.org/wiki/Datei:OpAmpTransistorLevel_Colored_DE.svg}}
+\end{center}
+\end{frame}
+
+\section*{Integierte Schaltung}
+\begin{frame}
+\frametitle{Integierte Schaltung}
+\begin{minipage}{0.3\textwidth}
+	\includegraphics[scale=0.15]{e13/IC.jpg}\\
+	Abb. 10: IC auf einer Platine
+\end{minipage}
+\footnote{\url{http://de.wikipedia.org/wiki/Datei:Chips_3_bg_102602.jpg}}
+\hspace{0.5cm}
+\begin{minipage}{0.5\textwidth}
+	\begin{itemize}
+		\item Heutzutage komplexe Schaltungen auf einem Halbleiterkristall
+	\end{itemize}
+\end{minipage}\\
+\vspace{0.5cm}
+\begin{center}
+\includegraphics[scale=0.4 ]{e13/IC2.jpg}\\
+	Abb. 11: Offener IC
+	\footnote{\url{http://en.wikipedia.org/wiki/File:Intel_8742_153056995.jpg}}
+\end{center}
+\end{frame}
+
+\section*{Die Röhre}
+\begin{frame}
+\frametitle{Die Röhre}
+\begin{minipage}{0.3\textwidth}
+	\includegraphics[scale=0.35]{e13/ERohre.png}\\
+	Abb. 12: Symbol einer Triode
+\end{minipage}
+\footnote{\url{http://de.wikipedia.org/wiki/Datei:Triode-Symbol_de.svg}}
+\hspace{0.5cm}
+\begin{minipage}{0.5\textwidth}
+\begin{small}
+	\begin{itemize}
+		\item Heizung löst Elektronen aus Kathode
+		\item Elektronen werden Richtung Anode beschleunigt
+		\item Gitter verändert elektrisches Feld
+		\item Gitterspannung steuert Anodenstrom
+	\end{itemize}
+	\end{small}
+\end{minipage}\\
+%\vspace{0.1cm}
+\begin{center}
+\includegraphics[scale=0.4 ]{e13/Triode.jpg}\\
+	Abb. 13: Triode aus alten Fabfernsehern
+	\footnote{\url{http://de.wikipedia.org/wiki/Datei:Strahltriode.jpg}}
+\end{center}
+\end{frame}
+
+\section*{Referenzen}
+\begin{frame}
+    \frametitle{Referenzen/Links}
+    
+    \footnotesize
+    \begin{itemize}
+        \item Moltrecht E 08 : \\
+              \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e08/}
+		\item Elektronik Kompendium:
+			\url{http://www.elektronik-kompendium.de/sites/bau/index.htm}
+    \end{itemize}
+
+\end{frame}
+
+\input{texdata/postamble}

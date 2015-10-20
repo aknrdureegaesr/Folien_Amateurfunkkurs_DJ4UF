@@ -1,0 +1,214 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse E 01: \\
+          Mathematische Grundlagen und Einheiten \\[2em]}
+\date{Stand 30.10.2014}
+\input{texdata/titlepage}
+
+\section{Einleitung}
+
+\begin{frame}
+    \frametitle{Einleitung}
+
+    Zu Beginn kurze Wiederholung der benötigten mathem. Grundlagen um das
+    Schulwissen kurz aufzufrischen.
+
+\end{frame}
+
+\section{Größen und Einheiten}
+
+\subsection{SI-Basissystem}
+
+\begin{frame}
+    \frametitle{SI-Basissystem}
+
+    SI\footnote{Système international d’unités, ab 1790 von franz. Akademie der
+    Wissenschaften entwickelt, immer wieder erweitert}-Einheiten weitest
+    verbreitetes System seit \emph{Meterkonvention} 1875 durch 17 Staaten.
+    \\[1em]
+
+    Eigenschaften:
+
+    \begin{itemize}
+        \item basiert auf metrischen Größen
+        \item dezimal (Basis 10)
+        \item kohärentes Einheitensystem\footnote{alles aus Basiseinheiten
+              ableitbar ohne zusätzliche Faktoren}
+        \item sieben Basiseinheiten - Welche?
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{SI-Basissystem}
+
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{e01/SI_base_unit.png}
+        \tiny \hyperlink{refs}{\cite{wc}}
+    \end{center}
+
+    Kleiner Ausflug: SI vs. Imperial System...
+
+\end{frame}
+
+\begin{frame}
+
+    \begin{center}
+        \includegraphics[height=1\textheight]{e01/imperial_vs_metric.jpeg}
+        \tiny \hyperlink{refs}{\cite{soup}}
+    \end{center}
+
+\end{frame}
+
+\subsection{Abgeleitete Einheiten}
+
+\begin{frame}
+    \frametitle{Abgeleitete Einheiten}
+
+    \begin{center}
+    \footnotesize
+    \begin{tabular}{|c|l|c|}\hline
+        \textbf{Formelzeichen} & \textbf{Maßeinheit} & \textbf{Größe} \\ \hline \hline
+        $Q$ & $C = As$                & \textbf{?} \\ \hline
+        $U$ & $V$                     & \textbf{?} \\ \hline
+        $P$ & $W = VA$                & \textbf{?} \\ \hline
+        $E$ & $\frac{V}{m}$           & \textbf{?} \\ \hline
+        $H$ & $\frac{A}{m}$           & \textbf{?} \\ \hline
+        $f$ & $Hz = \frac{1}{s}$      & \textbf{?} \\ \hline
+        $R$ & $\Omega = \frac{V}{A}$  & \textbf{?} \\ \hline
+        $G$ & $S = \frac{1}{\Omega}$  & \textbf{?} \\ \hline
+        $C$ & $F = \frac{As}{V}$      & \textbf{?} \\ \hline
+        $L$ & $H = \frac{Vs}{A}$      & \textbf{?} \\ \hline
+    \end{tabular}
+    \end{center}
+
+    Vorsicht: Einheit vs. Formelzeichen vs. Zehnerpotenzen!
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Abgeleitete Einheiten}
+
+    \begin{center}
+    \footnotesize
+    \begin{tabular}{|c|l|l|}\hline
+        \textbf{Formelzeichen} & \textbf{Maßeinheit} & \textbf{Größe} \\ \hline \hline
+        $Q$ & $C = As$                & Ladung          \\ \hline
+        $U$ & $V$                     & Spannung        \\ \hline
+        $P$ & $W = VA$                & Leistung        \\ \hline
+        $E$ & $\frac{V}{m}$           & El. Feldstärke  \\ \hline
+        $H$ & $\frac{A}{m}$           & Magn. Feldstärke\\ \hline
+        $f$ & $Hz = \frac{1}{s}$      & Frequenz        \\ \hline
+        $R$ & $\Omega = \frac{V}{A}$  & Widerstand      \\ \hline
+        $G$ & $S = \frac{1}{\Omega}$  & Leitwert        \\ \hline
+        $C$ & $F = \frac{As}{V}$      & Kapazität       \\ \hline
+        $L$ & $H = \frac{Vs}{A}$      & Induktivität    \\ \hline
+    \end{tabular}
+    \end{center}
+
+    %todo ggf. Frage/Antwort-Spiel mit Beispielen
+
+    Und weil es so schön war ein weiterer Ausflug: SI vs. Imperial System...
+
+\end{frame}
+
+\begin{frame}
+
+    \begin{center}
+        \includegraphics[height=1\textheight]{e01/imperial_vs_metric++.png}
+        \tiny \hyperlink{refs}{\cite{devi}}
+    \end{center}
+
+\end{frame}
+
+\section{Zehnerpotenzen}
+
+\begin{frame}
+    \frametitle{Zehnerpotenzen}
+
+    Zur einfacheren Anwendung Verwendung von Einheitenpräfixe als Potenzen zur Basis 10
+
+    \begin{center}
+    \footnotesize
+    \begin{tabular}{|c|l|}\hline
+        \textbf{Symbol} & \textbf{Potenz} \\ \hline \hline
+        $T$   & $10^{12}$  \\ \hline
+        $G$   & $10^{09}$  \\ \hline
+        $M$   & $10^{06}$  \\ \hline
+        $k$   & $10^{03}$  \\ \hline
+        $h$   & $10^{02}$  \\ \hline
+        $da$  & $10^{01}$  \\ \hline
+        $d$   & $10^{-01}$ \\ \hline
+        $c$   & $10^{-02}$ \\ \hline
+        $m$   & $10^{-03}$ \\ \hline
+        $\mu$ & $10^{-06}$ \\ \hline
+        $n$   & $10^{-09}$ \\ \hline
+        $p$   & $10^{-12}$ \\ \hline
+    \end{tabular}
+    \end{center}
+
+    Einheiten und ihre Präfixe ''case insensitive'' und Basis 10?
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Zehnerpotenzen / Zum Nachdenken}
+
+    \begin{block}{\begin{center}\Large Mb vs. MB vs. MiB vs. mb\end{center}}
+        \only<2>{
+        \begin{itemize}
+            \item Mb = Megabit, Basis $10$
+            \item MB = Megabyte, Basis $10$
+            \item MiB = Mebibyte, Basis $2^{(10)}$
+            \item mb = Millibit!? ;-)
+        \end{itemize}
+        }
+    \end{block}
+
+    \vspace{2em}
+
+    \only<2>{Auch nochmal zur Erinnerung: Einheiten, Formelzeichen und Präfixe nicht
+    durcheinanderwürfeln!}
+
+    % todo ggf. Beispiele mit Zehnerpotenzen
+
+\end{frame}
+
+
+\section{Formeln umstellen}
+
+\begin{frame}
+    \frametitle{Formeln umstellen}
+
+    ...sollte grob beherrscht werden. \\[2em]
+    
+    Für \emph{Klasse E} geht es nicht über einfache Umstellungen\footnote{es
+    gibt eine umfangreiche Formelsammlung für die Prüfung} die man sich über ein
+    ''U=RI''- oder ''P=UI''-Dreieck herleiten kann hinaus.
+
+    %todo Beispiele - ernsthaft?
+
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{dj4uf} Moltrecht E 01: \\
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e01/}
+    \bibitem{wp}    Wikipedia DE: \\
+                    \url{https://de.wikipedia.org/wiki/Internationales_Einheitensystem}\\
+    \bibitem{wc}    Wikimedia Commons \\
+                    \url{https://commons.wikimedia.org/wiki/File:SI_base_unit.svg}\\
+    \bibitem{soup}  \url{http://asset-f.soup.io/asset/2816/7317_fb37.jpeg}
+    \bibitem{devi}  \url{http://th03.deviantart.net/fs70/PRE/i/2012/358/1/f/imperial_vs__metric_by_nekit1234007-d5p0ou5.png}
+\end{thebibliography} 
+
+\input{texdata/postamble}

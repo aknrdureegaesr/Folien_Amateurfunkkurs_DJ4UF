@@ -1,0 +1,490 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Martin Deutschmann <martin.deutschmann@campus.tu-berlin.de>
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse A 06: \\
+          Transistor \& Verstärker \\[2em]}
+\date{Stand \today}
+\input{texdata/titlepage}
+
+%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
+
+\section*{Bipolarer Transistor}
+\begin{frame}
+\frametitle{Bipolarer Transistor}
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=0.2]{a06/NPN_hlb.png}\\
+	Abb. 1: Schichten eines NPN-Transistors
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=0.2 ]{a06/PNP_hlb.png}\\
+	Abb. 2: Schichten eines PNP-Transistors
+\end{minipage}
+\vspace{0.5cm}
+\begin{center}
+\begin{itemize}
+	\item Transistoren bestehen aus drei Halbleiterschichten
+	\item Anschlüsse: Basis (B), Kollektor (C), Emitter (E)
+\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ersatzschaltbild}
+
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=1.4]{a06/NPN_esb.png}\\
+	Abb. 3: ESB eines NPN-Transistors
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=1.4]{e13/PNP_esb.png}\\
+	Abb. 4: ESB eines PNP-Transistors
+\end{minipage}
+\vspace{2mm}
+\begin{itemize}
+	\item	Basis-Emitterübergang muss in Durchlassrichtung gepolt sein
+	\item	Basis braucht ein um etwa 0,6 V höheres Potential als der Emitter
+\end{itemize}
+
+\end{frame}
+
+
+\section*{Feldeffekt Transistor (FET)}
+\begin{frame}
+\frametitle{Feldeffekt Transistor (FET)}
+\begin{center}
+	\includegraphics[scale=0.2]{a06/FET-aufbau.png}\\
+	Abb. 5: Aufbau eines J-FET \cite{wp}	
+\begin{itemize}
+	\item Gate steuert Kanalbreite durch Spannung
+	\item Je dünner der Kanal, desto höher ist der Kanalwiderstand
+\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Feldeffekt Transistor (FET)}
+\begin{center}
+	\includegraphics[scale=0.35]{a06/FET-overview.png}\\
+	Abb. 6: Übersicht über FETs \cite{wp}
+\end{center}
+\end{frame}
+
+\section{Verstärker}
+\begin{frame}
+\frametitle{Verstärker}
+\begin{center}
+\begin{Large}
+\begin{itemize}
+	\item \textbf{Es ist nur dann eine Verstärkung, wenn die Leistung am Ausgang größer ist, als die am Eingang}
+
+\end{itemize}
+\end{Large}
+\end{center}
+\end{frame}
+
+\section*{Der Isolierschicht-FET (IG-FET, MOSFET)}
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=0.4 ]{a06/Isolierschicht-FET-intern.png}\\
+		ABB.7: MOSFET in Planartechnologie \cite{wmde}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=0.3 ]{a06/MOSFET-Symbole.png}\\
+		ABB.8: Schaltzeichen des MOSFETS \cite{wmde}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=3 ]{a06/Dual-Gate-MOSFET.png}\\
+		ABB.9: Schaltzeichen eines Dual-Gate-MOSFETs
+	\end{center}
+	\begin{itemize}
+		\item	Besitzt zwei Gateanschlüsse
+		\item	Wird für Mischerschaltungen genutzt
+	\end{itemize}
+\end{frame}
+
+\section*{Transistor als Schalter}
+\begin{frame}
+	\begin{minipage}{0.4\textwidth}
+		\begin{center}
+			\includegraphics[scale=0.8]{a06/Transistor-Schalter.png}\\
+		\end{center}	
+	\end{minipage}
+	\hspace{3mm}
+	\begin{minipage}{0.4\textwidth}
+		\begin{center}
+			\includegraphics[scale=0.8]{a06/Transistor-Verstaerker.png}\\
+		\end{center}	
+	\end{minipage}\\
+	\vspace{3mm}
+	Abb.10: Verwendungsmöglichkeiten von Transistoren \cite{bnetza}
+	\begin{itemize}
+		\item	Transistoren können als Schalter und als Verstärker genutzt werden
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Transistor als Schalter}
+	\begin{center}
+			\includegraphics[scale=1.2]{a06/Transistor-Schalter.png}\\
+			Abb.11: Transistor als Schalter \cite{bnetza}
+		\end{center}
+		\begin{itemize}
+			\item	$U_e = 0 V \rightarrow$ Transistor sperrt $\rightarrow U_a = U_B$
+			\item	$U_e \gg 0,6 V \rightarrow$ Transistor leitet $\rightarrow U_a \approx 0.1 V$
+			\item	Der Transistor erfüllt hier die Funktion eines Inverters
+		\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Transistor mit Koppelkondensator als Schalter}
+	\begin{center}
+			\includegraphics[scale=0.5]{a06/Transistor-Schalter+C.png}\\
+			Abb.12: Transistor mit Koppelkondensator als Schalter \cite{bnetza}
+		\end{center}
+		\begin{itemize}
+			\item	Ausgangssignal ist ähnlich dem aus Abb. XX
+			\item	Der Kondensator blockt die Gleichspannung und bildet den Mittelwert der Wechselspannung
+		\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Transistor mit Koppelkondensator als Schalter}
+	\begin{center}
+		\includegraphics[scale=0.5]{a06/Transistor-Schalter+L.png}\\
+		Abb.13: Transistor als Schalter einer Induktiven Last \cite{bnetza}
+	\end{center}
+	\begin{itemize}
+		\item	Durch plötzliches Abschalten baut sich eine hohe Induktionsspannung auf
+		\item	Diese kann den Transistor zerstören
+		\item	Um das zu verhindern wird eine Diode wie in Abb. XX zu sehen parallel zum Transistor eingebaut
+		\item	Diese lässt führt die Induktionsspannung an dem Transistor vorbei ab
+	\end{itemize}
+\end{frame}
+
+\section*{Transistor als Verstärker}
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=1.2]{a06/Transistor-Verstaerker.png}\\
+		Abb.14: Transistor als Spannungsverstärker \cite{bnetza}
+	\end{center}
+	\begin{itemize}
+		\item	Benötigt einen richtig eingestellten Arbeitspunkt um vernünftig zu funktionieren
+		\item	Dazu wird die Basis-Emitter-Spannung $U_{BE}$ auf einen definierten Wert größer $0,6 V$ gesetzt
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{ein paar Details zum Transistor als Spannungsverstärker}
+	\begin{itemize}
+		\item	Dem durch den Arbeitspunkt eingestellten Ruhestrom überlagert sich die eingekoppelte Wechselspannung
+		\item	Dadurch wird der Kollektorstrom je nach Eingangsgröße größer oder kleiner
+		\item	Die Kondensatoren $C_2$ und $C_3$ entkoppeln das Eingangssignal und das Ausgangssignal
+		\item	Da der Bipolartransistor nur den Strom verstärkt, wird die Stromverstärkung mittels eines Widerstandes $R_1$ in eine Spannungsverstärkung umgewandelt
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Funktionsweise}
+	\begin{itemize}
+		\item	Ändert man die Eingangsspannung $U_e$ der Schaltung, verändert sich auch der Basisstrom
+		\item	Dies ruft eine Veränderung des Kollektorstromes $I_C$ hervor, die um die Stromverstärkung des Transistors größer ist als der Basisstrom
+		\item	Die Spannung über $R_1$ verhält sich bei änderungen genauso wie der Kollektorstrom $I_C$
+		\item	Dadurch sinkt die Kollektorspannung $U_{CE}$ des Transistors
+		\item	Der Gleichspannungsanteil dieser Mischspannung wird dann noch durch $C_3$ ausgekoppelt 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Eine kleine Übung dazu}
+	\begin{center}
+		\includegraphics[scale=0.6]{a06/Transistor-Diagramm.png}\\
+		Abb.15: Eingangssignal eines Verstärkers \cite{bnetza}
+	\end{center}
+	\begin{itemize}
+		\item	Überlegt euch, wie $I_B$, $I_C$, $U_{CE}$ und $U_a$ in Phase und Amplitude aussehen 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Eine kleine Übung dazu - Auflösung}
+	\begin{center}
+		\includegraphics[scale=0.6]{a06/Transistor-Diagramm-compl.png}\\
+		Abb.16: Signale eines Verstärkers \cite{bnetza}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Verstärkungen eines Transistors}
+	\begin{itemize}
+		\item	Spannungsverstärkung:\\
+		\hspace{3mm}
+		\begin{center}
+				$v_u = \frac{\Delta U_{CE}}{\Delta U_{BE}}$
+		\end{center}
+		\hspace{3mm}	
+		\item	Stromverstärkung:	\\
+		\hspace{3mm}
+		\begin{center}
+				$v_i = \frac{\Delta I_C}{\Delta I_C}$
+		\end{center}		
+		\hspace{3mm}		
+		\item	Leistungsverstärkung:	\\
+		\hspace{3mm}
+		\begin{center}
+				$v_p = v_u \cdot v_i$
+		\end{center}		
+	\end{itemize}
+\end{frame}
+
+\section*{Generieren der Basisvorspannung}
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=0.8]{a06/Transistor-Verstaerker.png}
+		\vspace{3mm}
+		\includegraphics[scale=0.8]{a06/Transistor-Verstaerker-C.png}\\
+		Abb.17: Möglichkeiten die Basisvospannung erzeugen 
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Basisvorspannung, warum eigentlich?}
+	\begin{itemize}
+		\item	Will man eine Wechselspannung verstärken, muss man den Mittelpunkt des Signals in den Aussteuerbereich verschieben
+		\item	Da sonst die obere oder untere Halbwelle nicht originalgetreu wiedergegeben wird
+		\item	Dazu überlagert man die Wechselspannung mit einer mittleren Gleichspannung
+		\item	Das Erzeugen der mittleren Gleichspannung nennt man einstellen des Arbeitspunktes oder der Basisvorspannung 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Einstellen des Arbeitspunktes}
+	\begin{itemize}
+		\item	Will man den Arbeitspunkt eines Transistors mit per Vorspannung einstellen, muss man zwei Spannungen dimensionieren
+		\item	Zum einen muss die Basisspannung eingestellt werden und zum anderen die Kollektorspannung
+		\item	Die Kollektorspannung bestimmen wir, indem wir einen Spannungsteiler über $R_1$ und dem Kollektor-Emitter-Widerstand $R_{CE}$ berechnen
+		\item	Für eine symmetrische Aussteuerung nehmen wir an, das sowohl über $R_1$ als auch über $R_{CE}$  $\frac{V_{DD}}{2}$ anliegen
+		\item	Danach wählt man einen Kollektorstrom den der Transistor verkraften kann
+		\item	Dann berechnen man mittels ohm'schen Gesetz den Lastwiderstand $R_1$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item	Um die Basisvorspannung zu erzeugen, gibt es zwei Möglichkeiten
+		\item	Zum einen die Basisvorspannungserzeugung mit einem Widerstand oder mit einem Spannungsteiler siehe Abb.17
+	\end{itemize}
+\end{frame}
+
+\section*{Arbeitspunktstabilisierung durch Stromgegekopplung}
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=1.2]{a06/Transistor-Verstaerker-APstab1.png}\\
+		Abb.18: Transistor als Spannungsverstärker \cite{bnetza}
+	\end{center}
+	\begin{itemize}
+		\item	$U_2$ = konstant
+		\item	$I_C$ steigt $\rightarrow I_E$ steigt $\rightarrow U_{R3}$ steigt $\rightarrow U_{R2} = U_{R3} + U_{BE} \rightarrow U_{BE}$ sinkt $\rightarrow $Transistor sperrt$ \rightarrow I_C sinkt$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item	Der Kondensator am Emitter überbrückt Wechselstromsignale
+		\item	Baut man am Emitter keinen Kondensator ein, fällt die Verstärkung des Transistors stark ab
+		\item	Sie liegt dann bei dem Verhältnis aus Kollektor- zu Emitterwiderstand
+		\item	Querstrom $I_{quer}$ durch $R_2$ wird 3 bis 10 mal so groß wie der Basisstrom dimensioniert
+		\item	$I_{quer} = 3 ... 10 \cdot I_B$
+	\end{itemize}
+\end{frame}
+
+\section*{Arbeitspunktstabilisierung durch Spannungsgegenkopplung}
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=0.8]{a06/Transistor-Verstaerker-APstab2a.png}
+		\vspace{3mm}
+		\includegraphics[scale=0.8]{a06/Transistor-Verstaerker-APstab2b.png}\\
+		Abb.19: Möglichkeiten zur Arbeitspunktstabilisierung via Spannungsgegenkopplung 
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=1.2]{a06/Transistor-Verstaerker-APstab2a.png}\\
+		Abb.20: Transistor als Spannungsverstärker \cite{bnetza}
+	\end{center}
+	\begin{itemize}
+		\item	$I_C$ steigt $\rightarrow U_{CE}$ sinkt $\rightarrow U_{BE}$ sinkt Transistor sperrt$ \rightarrow I_C sinkt$
+	\end{itemize}
+\end{frame}
+
+\section*{Grundschaltungen des Transistors}
+\begin{frame}
+	\begin{small}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	" " &Emitterschaltung & Kollektorschaltung & Basisschaltung \\ \hline
+	" " &\includegraphics[scale=0.4]{a06/Emitterschaltung.png} & \includegraphics[scale=0.4]{a06/Kollektorschaltung.png} & \includegraphics[scale=0.4]{a06/Basisschaltung.png} \\ \hline
+	$r_e$ & mittel z.B. $1k\Omega$ & klein z.B. $50\Omega$ & groß z.B. $100k\Omega$ \\ \hline
+	$r_a$ & mittel z.B. $10k\Omega$ & groß z.B. $100k\Omega$ & klein z.B. $50\Omega$ \\ \hline
+	$v_i$ & groß z.B. $100$ & <1 z.B. $0,9$ & groß z.B. $100$ \\ \hline
+	$v_u$ & groß z.B. $100$ & groß z.B. $100$ & <1 z.B. $0,99$ \\ \hline
+	$v_p$ & sehr groß z.B. $1k\Omega$ & groß z.B. $100$ & groß z.B. $100$ \\ \hline
+	$\varphi_u$ & gegenphasig $180^{\circ}$ & gleichphasig $0^{\circ}$ & gleichphasig $0^{\circ}$ \\ \hline
+	\end{tabular}
+	\end{small}
+\end{frame}
+
+\section*{Integierte Schaltung}
+\begin{frame}
+\frametitle{Integierte Schaltung}
+\begin{minipage}{0.3\textwidth}
+	\includegraphics[scale=0.15]{a06/IC.jpg}\\
+	Abb. 21: IC auf einer Platine \cite{wp}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}{0.5\textwidth}
+	\begin{itemize}
+		\item Heutzutage komplexe Schaltungen auf einem Halbleiterkristall
+	\end{itemize}
+\end{minipage}\\
+\vspace{0.5cm}
+\begin{center}
+\includegraphics[scale=0.4 ]{a06/IC2.jpg}\\
+	Abb. 22: Offener IC \cite{wpen}
+\end{center}
+\end{frame}
+
+\section*{Operationsverstärker}
+
+
+\begin{frame}
+\frametitle{Operationsverstärker}
+\begin{center}
+	\includegraphics[scale=0.35]{a06/OPV-intern.png}\\
+	Abb. 23: Innerer Aufbau eines OPVs \cite{wp}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Invertierender Verstärker}
+	\begin{center}
+	\includegraphics[scale=1]{a06/OPV-Inverter.png}\\
+	Abb.24: OPV als invertierender Verstärker
+	\end{center}
+	\begin{itemize}
+		\item	$v_u = -\frac{U_A}{U_E} = \frac{R_2}{R_1}$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Nichtinvertierender Verstärker}
+	\begin{center}
+	\includegraphics[scale=1]{a06/OPV-nonInverter.png}\\
+	Abb.25: OPV als nicht-invertierender Verstärker
+	\end{center}
+	\begin{itemize}
+		\item	$v_u = \frac{U_A}{U_E} = 1+\frac{R_2}{R_1}$
+		\hspace{3mm}
+		\item	Wird häufig als Impedanzwandler eingesetzt
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Impedanzwandler}
+	\begin{center}
+	\includegraphics[scale=1]{a06/Impedanzwandler.png}\\
+	Abb.26: OPV als Impedanzwandler
+	\end{center}
+	\begin{itemize}
+		\item	Besitzt sehr großen Eingangswiderstand und sehr kleinen Ausgangswiderstand
+		\item	Ist quasi ein nicht-invertierender Verstärker mit $R_2 = 0 \Omega$ und $R_1 = \infty$
+	\end{itemize}
+\end{frame}
+
+
+\section*{Die Elektronenröhre}
+
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=0.35]{a06/Roehren.jpg}\\
+		Abb.27: Verschiedene Elektronenröhren \cite{wmde}
+	\end{center}
+	\begin{itemize}
+		\item	Arbeiten mit hohen Spannungen und geringen Strömen
+		\item	Ist ein gepoltes Bauteil
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Die Röhre}
+\begin{minipage}{0.3\textwidth}
+	\includegraphics[scale=0.35]{a06/ERohre.png}\\
+	Abb.28: Symbol einer Triode \cite{wp}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}{0.5\textwidth}
+\begin{small}
+	\begin{itemize}
+		\item Heizung löst Elektronen aus Kathode
+		\item Elektronen werden Richtung Anode beschleunigt
+		\item Gitter verändert elektrisches Feld
+		\item Gitterspannung steuert Anodenstrom
+	\end{itemize}
+	\end{small}
+\end{minipage}\\
+%\vspace{0.1cm}
+\begin{center}
+\includegraphics[scale=0.4 ]{a06/Triode.jpg}\\
+	Abb.29: Triode aus alten Fabfernsehern \cite{wp}
+\end{center}
+\end{frame}
+
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{e03}   Moltrecht A 06: \\
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a06/}
+                    
+	\bibitem{bnetza}	Fragenkatalog Technik Klasse A der Bundesnetzagentur:\\
+		\url{http://snh.rp-online.de/download/technika.pdf}                    
+                    
+    \bibitem{wp}    Wikipedia DE: \\
+    	\url{http://de.wikipedia.org/wiki/Datei:Scheme_of_n-junction_field-effect_transistor_de.svg}
+    	\url{http://de.wikipedia.org/wiki/Datei:FET-Typen_(mit_Schaltbildern).svg}
+        \url{http://de.wikipedia.org/wiki/Datei:Op-amp_symbol.svg}
+        \url{http://de.wikipedia.org/wiki/Datei:Normsymbol_OPV.svg}      
+        \url{http://de.wikipedia.org/wiki/Datei:OpAmpTransistorLevel_Colored_DE.svg}  
+        \url{http://de.wikipedia.org/wiki/Datei:Chips_3_bg_102602.jpg}
+        \url{http://de.wikipedia.org/wiki/Datei:Triode-Symbol_de.svg}
+        \url{http://de.wikipedia.org/wiki/Datei:Strahltriode.jpg}
+                    
+    \bibitem{wpen}	Wikipedia EN:\\
+    	\url{http://en.wikipedia.org/wiki/File:Intel_8742_153056995.jpg}
+    	
+    \bibitem{wmde}	Wikimedia DE:\\
+    	\url{http://commons.wikimedia.org/wiki/File:Scheme_of_metal_oxide_semiconductor_field-effect_transistor.svg?uselang=de}
+    	\url{http://commons.wikimedia.org/wiki/File:MISFET-Transistor_Symbole.svg?uselang=de}
+    	\url{http://commons.wikimedia.org/wiki/File:Elektronenroehren-auswahl.jpg}
+    	
+    \bibitem{wmen} Wikimedia EN:\\
+    	\url{http://commons.wikimedia.org/wiki/File:Transistorgrundschaltungen.svg}\
+    				
+\end{thebibliography} 
+
+\input{texdata/postamble}

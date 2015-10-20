@@ -1,0 +1,325 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse A 01: \\
+          Mathematische Grundkenntnisse \\[2em]}
+\date{Stand 16.04.2015}
+\input{texdata/titlepage}
+
+\section{Einleitung}
+
+\begin{frame}
+    \frametitle{Einleitung}
+
+    Diese Lektion baut auf dem Kapitel ''Mathematische Grundlagen und Einheiten
+    (E01)''\footnote{vgl. \emph{Curriculum Klasse E}\hyperlink{refs}{\cite{curr}}} auf.
+   
+    \begin{columns}[c]
+        \column[c]{5cm}
+            Was bisher geschah: \\[1em]
+            \begin{itemize}
+                \item SI-Basissystem
+                \begin{itemize}
+                    \item abgeleitete Einheiten
+                \end{itemize}
+                \item Präfixe/Zehnerpotenzen
+                \item Formeln umstellen
+            \end{itemize}
+        \column{5cm}
+            \begin{center}
+                \includegraphics[width=1\textwidth]{e01/SI_base_unit.png}
+                \tiny \hyperlink{refs}{\cite{wc}}
+            \end{center}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Einleitung / Unterschiede E und A}
+
+    Was kommt dazu? \\[1em]
+
+    \begin{itemize}
+        \item im Prinzip: nichts
+        \item jedoch tieferes Verständnis der Zusammenhänge und damit der
+              Herangehensweise an den Rechenweg benötigt
+        \item mathematische Grundlagen sollten ein sicheres Werkzeug sein
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Einleitung / Unterschiede E und A (vereinfacht!)}
+
+    \vspace{1em}
+    Klasse E:
+
+    \begin{itemize}
+        \item Formel finden
+        \item Werte einsetzen
+        \item lösen
+    \end{itemize}
+
+    \visible<2-3>{
+        Klasse A:
+    
+        \begin{itemize}
+            \item Zusammenhänge erkennen
+            \item Formel(n) finden
+            \item ggf. ineinander einsetzen oder mit Werten Teillösungen errechnen
+            \item lösen
+        \end{itemize}
+    }
+
+    \visible<3>{\begin{center}\Large Don't Panic!\end{center}}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Einleitung / Reminder}
+
+    Für die Prüfung bekommt man wie bei Klasse E die
+    \textbf{Formelsammlung}\hyperlink{refs}{\cite{mat}} aus dem
+    Anhang\footnote{S.131-138 (PDF-Seiten 133-140)} des Prüfungskataloges.\\[1em]
+    
+    Mitzubringen ist ein \textbf{nichtprogrammierbarer Taschenrechner}. \\[3em]
+
+    $\Rightarrow$ Beides sollte man auch während des Kurses nutzen!
+
+\end{frame}
+
+\section{Wiederholung}
+
+\subsection{Auffrischungsquiz}
+
+\begin{frame}
+    \frametitle{Auffrischungssquiz}
+
+    \begin{block}{
+        \only<1-2>{Was ist das \emph{MKSA}- bzw. \emph{MKSA-KMC}-System?}
+        \only<3-4>{Welche Bedeutung haben die sieben Größen?}
+        \only<5-6>{Zahlenbasis der SI-Einheiten?}
+        \only<7-8>{Wie kann man $1337 \mu V$ auf 0,0001 $V$ genau/grundet besser ausdrücken?}
+        \only<9-10>{Rund wieviel $daW$ sind $\pi 10^{-3} kW$?}
+        \only<11-12>{In welchen Größenordnungen liegen $\%$, $\permil$ und $ppm$?}
+        \only<13-14>{Formel $20 lg \frac{x_1}{x_2} = y$ nach $x_2$ umstellen und berechnen.\\
+                     Gegeben: $x_1 = 8$ und $y = 12$}
+        \only<15-16>{Was wurde mit der letzten Formel berechnet?}
+        \only<17-18>{Gibt es einen einfacheren Weg?}
+    }
+        \only<2>{SI-Einheitensystem aus: Meter, Kilogramm, Sekunde, Ampere, Kelvin, Mol, Candela}
+        \only<4>{Länge, Masse, Zeit, Stromstärke, Temperatur, Stoffmenge, Lichtstärke}
+        \only<6>{10}
+        \only<8>{$1 \mu V= 10^{-6}V$, \\
+                 $0,0001V = 0,1mV = 0,1 \cdot 10^{-3}V$ \\[1em]
+                 $\Rightarrow 1337 \mu V \approx 1,3 mV$}
+        \only<10>{$3,1416 \cdot \frac{10^{-3} \cdot 10^3}{10^1}W \approx 0,31 daW$
+                  \tiny $\leftarrow (Deka = \frac{1}{Dezi})$}
+        \only<12>{$10^{-2} \rightarrow$ Prozent ($c$) \\
+                  $10^{-3} \rightarrow$ Promille ($m$) \\
+                  $10^{-6} \rightarrow$ parts per million ($\mu$)}
+        \only<14>{$lg\frac{8}{x_2} = \frac{12}{20}$ \\
+                  $\frac{8}{x_2} = 10^{0,6}$
+                  $\Rightarrow x_2 = \frac{8}{10^{0,6}} \approx \frac{8}{4}$}
+        \only<16>{Die Eingangs\textbf{feldgröße} eines Systems mit $8$ am Ausgang und einer Verstärkung von $12dB$}
+        \only<18>{$12dB = 6dB + 6dB \approx$ Faktor $2 \cdot 2 \Rightarrow \frac{8}{2 \cdot 2}$}
+    \end{block}
+
+\end{frame}
+
+\subsection{Dezibel}
+
+\begin{frame}
+    \frametitle{Dezibel-Rechnung}
+
+    ... wurde bereits im Kapitel \emph{E10}\footnote{Dezibel, Dämpfung, Kabel} und
+    bezogen auf die S-Stufen im Kapitel \emph{BV13}\footnote{RST-System, UTC, Logbuch, QSL-Karte}
+    behandelt (vgl. \emph{Curriculum Klasse E}\hyperlink{refs}{\cite{curr}}). \\[2em]
+    
+    Für die Klasse A braucht man das etwas öfter. Daher eine kleine
+    Wiederholung.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Dezibel / Motivation}
+
+    Das Bel ist Einheitenlos. Es deutet nur auf eine ''Transformation'' in den
+    dekadisch logarithmischen Bereich hin. Warum der Aufwand?
+
+    \visible<2>{
+        \begin{itemize}
+            \item große Wertebereiche können schnell überblickt werden
+            \item im Gegensatz zu $ln$ einfach in Zehnerpotenzen
+                  kopfrechenbar\footnote{überschlagsweise}
+            \item Rechenregel: Multiplikationen werden zu einfachen
+                  Additionen\footnote{damit auch Divisionen zu Subtraktionen}, z.B.
+            \begin{itemize}
+                \item Aufaddieren von Teilen einer Funkanlage
+                \item Zerlegung einer Verstärkung in seine Faktoren
+            \end{itemize}
+        \end{itemize}
+    }
+
+\end{frame}
+
+\subsubsection{Leistungsgrößen}
+
+\begin{frame}
+    \frametitle{Dezibel / Leistungsgrößen}
+
+    Gewinn/Dämpfung:
+
+    \begin{center}
+        $g = 10 \cdot lg \frac{P_{out}}{P_{in}} [dB]$
+    \end{center}
+
+    \vspace{2em}
+
+    Werte die man (für die Praxis) im Kopf haben sollte:
+
+    \begin{center}
+    \footnotesize
+    \begin{tabular}{|r|r|}\hline
+        \textbf{Leistungsfaktor} & \textbf{Dezibel} \\ \hline \hline
+         2                       &  3               \\ \hline
+        10                       & 10               \\ \hline
+    \end{tabular}
+    \end{center}
+
+\end{frame}
+
+\subsubsection{Feldgrößen}
+
+\begin{frame}
+    \frametitle{Dezibel / Feldgrößen}
+
+    %todo math. Zusammenhang?
+
+    Gewinn/Dämpfung:
+
+    \begin{center}
+        $g = 20 \cdot lg \frac{U_{out}}{U_{in}} [dB]$
+    \end{center}
+
+    \vspace{2em}
+    
+    Werte die man (für die Praxis) im Kopf haben sollte:
+
+    \begin{center}
+    \footnotesize
+    \begin{tabular}{|r|r|}\hline
+        \textbf{Leistungsfaktor} & \textbf{Dezibel} \\ \hline \hline
+         2                       &  6               \\ \hline
+        10                       & 20               \\ \hline
+    \end{tabular}
+    \end{center}
+
+\end{frame}
+
+\subsubsection{Leistungspegel}
+
+\begin{frame}
+    \frametitle{Dezibel / Leistungspegel}
+
+    Meist benutzt:
+
+    \begin{itemize}
+        \item $dBm$ bezogen auf $1 mW$ an $P_{in}$
+        \item $dBW$ bezogen auf $1 W$ an $P_{in}$
+    \end{itemize}
+
+    \begin{center}
+        Warum?
+    \end{center}
+
+    \visible<2>{
+        Gewinne und Verluste in einer Kette können ab TX direkt miteinander
+        verrechnet werden.
+    }
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Dezibel / Leistungspegel-Beispiel}
+
+    \includedia{a01/TX-Pfad}
+    \includegraphics[width=1\textwidth]{a01/TX-Pfad_diatmp}
+
+    \vspace{3em}
+
+    \visible<2-4>{$20dBW - 8dB - 2dB + 17dB = 27dBW$ (in $W$?)\\}
+    \visible<3-4>{$\Rightarrow$ Zerlege und Rechne: $30dBW - 3dB = $}
+    \only<3>{$?$\footnote{genauer als naheliegendes $27dB \approx 20dB + 3dB + 3dB$}}
+    \only<4>{$1000W \cdot \frac{1}{2}$}
+
+\end{frame}
+
+\subsubsection{Spannungspegel}
+
+\begin{frame}
+    \frametitle{Dezibel / Spannungspegel}
+
+    Meist benutzt:
+
+    \begin{itemize}
+        \item $dB \mu V$ bezogen auf $1 \mu V$ an $U_{in}$
+    \end{itemize}
+
+    \begin{center}
+        Warum?
+    \end{center}
+
+    \visible<2>{
+        Gewinne und Verluste in einer Kette können ab \textbf{RX} direkt miteinander
+        verrechnet werden.
+    }
+
+\end{frame}
+
+\subsubsection{S-Stufen}
+
+\begin{frame}
+    \frametitle{Dezibel / S-Stufen}
+
+    Wurde ausfühlich in den Kapiteln \emph{E10}\footnote{Dezibel, Dämpfung,
+    Kabel} und \emph{BV13}\footnote{RST-System, UTC, Logbuch, QSL-Karte}
+    behandelt (siehe \emph{Curriculum Klasse E}\hyperlink{refs}{\cite{curr}})
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{e10/S-Meter.jpg}
+        \tiny \hyperlink{refs}{\cite{wc}}
+    \end{center}
+
+    Erinnerungstest:
+
+    \begin{block}{Was sind S-Stufen (Definition?) und ''Wie groß ist der
+                  Unterschied von S4 nach S7 in dB?'' (TA109)}
+        \only<2>{Definition $S9$: $5 \mu V$ (UKW) bzw. $50 \mu V$ (KW) an $50 \Omega$ \\[0.5em]
+                 $S4 .. S7 \equiv 3 \cdot 6dB = 18 dB$} %oder auch $\hat{=}$
+    \end{block}
+
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{dj4uf} Moltrecht A 01: \\
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a01/}
+    \bibitem{curr}  Curriculum Klasse E: \\
+                    \url{http://www.dk0tu.de/Kurse/AFu-Lizenz/Curriculum/Klasse_E/}
+    \bibitem{mat}   Material und Dokumente für den Kurs: \\
+                    \url{http://www.dk0tu.de/Kurse/AFu-Lizenz#material}
+    \bibitem{wc}    Wikimedia Commons \\
+                    \url{https://commons.wikimedia.org/wiki/File:SI_base_unit.svg}\\
+                    \url{https://commons.wikimedia.org/wiki/File:S-Meter.jpg}
+\end{thebibliography} 
+
+\input{texdata/postamble}

@@ -1,0 +1,488 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+
+\input{texdata/preamble}
+\subtitle{Betriebstechnik/Vorschriften 13: \\
+          RST-System, UTC, Logbuch, QSL-Karte \\[2em]}
+\date{Stand 29.01.2015}
+\input{texdata/titlepage}
+
+\section{Einleitung}
+
+\begin{frame}
+    \frametitle{Einleitung}
+
+    Für den eigentlichen Spaß des Funkbetriebes braucht es etwas ''back
+    office'': 
+
+    \begin{itemize}
+        \item Logbuchführung
+        \item QSL-Karten
+    \end{itemize}
+
+    \vspace{1cm}
+
+    Benötigt: \emph{RST}-System und Umgang mit \emph{UTC}...
+
+\end{frame}
+
+\section{RST-System}
+
+\begin{frame}
+    \frametitle{RST-System}
+
+    \textbf{R}eadability, Signal \textbf{S}trength, \textbf{T}one
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{e10/S-Meter.jpg}
+        \tiny \hyperlink{refs}{\cite{wc}}
+    \end{center}
+
+    \begin{itemize}
+        \item Zweck: Empfangsbeurteilung
+        \item \emph{T} nur in Telegrafie
+        \item Verwendung seit 1930er
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{RST-System / Tabelle}
+
+    \begin{center}
+    \footnotesize
+    \begin{tabular}{|l|l|l|l|}\hline
+          & \textbf{R}eadability        & \textbf{S}trength & \textbf{T}one \\ \hline \hline
+        1 & nicht lesbar                & $-48 dB$          & äußerst roh   \\ \hline
+        2 & zeitweise lesbar            & $-42 dB$          & sehr roh      \\ \hline
+        3 & mit Schwierigkeiten lesbar  & $-36 dB$          & roh           \\ \hline
+        4 & ohne Schwierigkeiten lesbar & $-30 dB$          & leicht roh    \\ \hline
+        5 & einwandfrei lesbar          & $-24 dB$          & musikalisch   \\ \hline
+        6 &                             & $-18 dB$          & moduliert     \\ \hline
+        7 &                             & $-12 dB$          & instabil      \\ \hline
+        8 &                             & $-6 dB$           & etwas Brumm   \\ \hline
+        9 &                             & $0dB$             & rein          \\ \hline
+        9+x &                           & $+x dB$ über S9   &               \\ \hline
+    \end{tabular}
+    \end{center}
+
+    S-Stufe 9 als Referenzspannung am $50 \Omega$-Antenneneingang:
+    \begin{itemize}
+        \item KW: $50\mu V$
+        \item UKW: $5\mu V$
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{RST-System / Abgeleitete Systeme}
+
+    \begin{itemize}
+        \item R: Sprechfunk (Relais)
+        \item RS: Sprechfunk (p2p)
+        \item RSV: \textbf{V}ideo - SSTV/ATV
+        \item RSQ: \textbf{Q}uality - digitalen Betriebsarten
+        \item RSA: \textbf{A}urora - Tonrapport wäre quatsch $\rightarrow$ ''A'' geben
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{RST-System / S-Stufe}
+
+    Bedenke: Eine S-Stufe = $6 dB$
+
+    \begin{itemize}
+        \item gemessen an Spannung (Feldgröße) $\rightarrow$ Verdopplung
+        \item Leistungsgröße $\rightarrow$ Vervierfachung!
+    \end{itemize}
+
+    \vspace{1cm}
+
+    Beispiel\footnote{Prüfungskatalog Frage BB303}:    
+
+    \begin{block}{Um wie viel S-Stufen müsste die S-Meter- Anzeige Ihres
+                  Empfängers steigen, wenn Ihr Partner die Sendeleistung von 100
+                  Watt auf 400 Watt erhöht?}
+        \only<2>{$\rightarrow$ Um eine S-Stufe}
+    \end{block}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{RST-System / S-Stufe}
+
+    Noch ein Beispiel\footnote{Prüfungskatalog Frage BB307}:    
+
+    \begin{block}{Durch ''Fading'' sinkt die S-Meter-Anzeige von S9 auf S8. Auf
+                  welchen Wert sinkt dabei die Empfänger-Eingangsspannung ab,
+                  wenn bei S9 am Empfängereingang $50\mu V$ anliegen? Die
+                  Empfänger-Eingangsspannung sinkt auf}
+        \only<2>{$\rightarrow 25\mu V$}
+    \end{block}
+
+\end{frame}
+
+\section{UTC}
+
+\begin{frame}
+    \frametitle{UTC}
+
+    \textbf{U}niversal \textbf{T}ime, \textbf{C}oordinated
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{bv13/Standard_time_zones_of_the_world.png}
+        \tiny \hyperlink{refs}{\cite{wc}}
+    \end{center}
+
+    \begin{itemize}
+        \item Bezugsachse: lokale ''Sonnenzeit'' am Nullmeridian durch
+              London-Greenwich\footnote{früher übliche Bezeichnung
+              \emph{Greenwich Mean Time (GMT)}}
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{UTC}
+
+    \begin{center}
+        \includegraphics[width=0.9\textwidth]{bv13/Standard_time_zones_of_the_world.png}
+        \tiny \hyperlink{refs}{\cite{wc}}
+    \end{center}
+
+    \begin{itemize}
+        \item weit mehr als 24 Zeitzonen: UTC-12 bis UTC+14 (Kartenzoom lohnt sich)
+              - nicht immer volle Stunden
+        \item Deutschland:
+        \begin{itemize}
+            \item UTC+1 = CET/MEZ
+            \item UTC+2 = CEST/MESZ
+        \end{itemize}
+    \end{itemize}
+
+    Da AFu international $\rightarrow$ alleinige Verwendung von UTC!
+
+\end{frame}
+
+\section{Logbook}
+
+\begin{frame}
+    \frametitle{Logbook}
+
+    ''Stationstagebuch, das ein Funkamateur freiwillig führt oder in besonderen
+    Fällen führen muss.''
+
+    %todo aktuelles Papierlogbild?
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
+        \tiny \footnote{DK0TU Kurzwellenlog Feb. 1972 (Auszug, nach Wasserschaden)}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Logbook}
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
+    \end{center}
+
+    Je Aussendung:
+    
+    \begin{itemize}
+        \item Tag, Uhrzeit (immer UTC!)
+        \item Frequenz
+        \item Rufzeichen
+        \item Rapporte
+        \item ggf. Aufzeichnungen über Bedingungen, Sendeleistung, Antenne, ...
+    \end{itemize}
+
+    Praktisch für sich selbst oder auch einen \emph{EMV}-Fall.
+
+\end{frame}
+
+\subsection{Digitallog}
+
+\begin{frame}
+    \frametitle{Logbook / Digitallog}
+
+    Papierlog oder Computerlog: Minimalistisch vs. einfache Handhabung und
+    Katalogisierung:
+
+    \begin{center}
+        \includegraphics[width=1\textwidth]{bv13/tucnak_Hf-10.png}
+        \tiny \footnote{Tucnak Contest-Log \hyperlink{refs}{\cite{tucn}}}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Logbook / Digitallog}
+
+    \begin{center}
+        \includegraphics[height=0.25\textheight]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
+        $\rightarrow$
+        \includegraphics[height=0.25\textheight]{bv13/tucnak_Hf-10.png}
+    \end{center}
+    %\begin{center}
+    %    \includegraphics[width=0.5\textwidth]{bv13/tucnak_Hf-10.png}
+    %    \tiny \hyperlink{refs}{\cite{tucn}}
+    %\end{center}
+
+    \begin{itemize}
+        \item Uhrzeit automatisch
+        \item QRG vom TRX übertragen
+        \item QTF\footnote{Antennenrichtung}-Anzeige oder -Steuerung
+        \item Call-Datenbanken
+        \item DX-Cluster
+        \item Sync im LAN/WAN für Multi-Op
+        \item ...
+    \end{itemize}
+
+\end{frame}
+
+\subsection{Beispiele}
+
+\begin{frame}
+    \frametitle{Beispiel: Papierlog}
+
+    \begin{center}
+        \includegraphics[width=1\textwidth]{bv13/dk0tu_log_kw.png}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Beispiele: Software}
+    
+    \begin{center}
+
+    \Large Demo... \\[3em]
+
+    \normalsize $\Rightarrow$ Export: \url{http://www.dk0tu.de/Logbook}
+
+    \end{center}
+
+\end{frame}
+
+\subsection{Angeordnete Logbuchführung}
+
+\begin{frame}
+    \frametitle{Logbuchführung / Angeordnete Logbuchführung}
+
+    Heutzutage ist die Logbuchführung freiwillig - im Falle einer Störung nicht.
+    Die ''zuständigen Behörde'' (\emph{BNetzA}) kann das anordnen.
+
+    \begin{center}
+        \includegraphics[width=0.3\textwidth]{bv13/Bundesnetzagentur_logo_709px.png}
+        \tiny \hyperlink{refs}{\cite{wp}}
+    \end{center}
+
+    \begin{itemize}
+        \item Log muss angeordnete Zeit aufgehoben werden
+        \item digitales Log zulässig
+        \item bei Softwarewechsel muss die alte verfügbar bleiben
+    \end{itemize}
+
+\end{frame}
+
+\section{QSL-Karte}
+
+\begin{frame}
+    \frametitle{QSL-Karte}
+
+    \emph{QSL} - wir erinnern uns aus \texttt{BV03} - Empfangsbestätigung \\[1em]
+
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{bv13/DK0TU_1.jpg}
+    \end{center}
+
+    $\rightarrow$ traditionell auch mit einer ''Ansichtskarte'' bei KW oder UKW-DX
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{QSL-Karte}
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{bv13/DK0TU_0.jpg}
+    \end{center}
+
+    \begin{itemize}
+        \item für SWL lange Zeit einziger Rückkanal
+        \item schriftl. Bestätigung der Angaben
+        %\item Beantragung Amateurfunk-Diplome
+        \item individuell sehr verschieden gestaltet
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{QSL-Karte / Informationen}
+
+    \begin{block}{Welche Angaben sollten mind. enthalten sein?}
+        \only<1>{$\rightarrow$ Tafel} 
+        \only<2>{
+        Im Prinzip Daten aus dem \textbf{Logbook}:
+        \begin{itemize}
+            \item Rufzeichen
+            \item Rufzeichen der Gegenstation
+            \item Datum
+            \item Uhrzeit (UTC)
+            \item Frequenz
+            \item Betriebsart
+            \item Signal-Rapport
+            \item Unterschrift des Op
+        \end{itemize}
+        }
+    \end{block}
+
+    \only<2>{
+        Besonderheit\footnote{z.B. bei \emph{DXpeditionen}}:
+        \emph{''QSL via [Call]''} $\rightarrow$ QSL-Manager
+    }
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{QSL-Karte / Informationen}
+
+    \begin{center}
+        \includegraphics[width=1\textwidth]{bv13/dk0tu_qsl2.pdf}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{QSL-Karte / Versand}
+
+    \begin{itemize}
+        \item kostenfrei \emph{''via bureau''}
+        \item direkte Zusendung durch Adresse aus \emph{int. Callbook} oder Internet
+    \end{itemize}
+
+    Für besonders Eilige oder Länder ohne Radio Clubs: Mit Versand der Karte
+    Antwortbriefumschlag (\emph{SAE}\footnote{Self-Addressed Envelope}) und
+    \emph{IRC}\footnote{International Reply Coupon}s zwei 1\$-Noten beilegen. \\[2em]
+
+\end{frame}
+
+\subsection{eQSL}
+
+\begin{frame}
+    \frametitle{QSL-Karte / eQSL}
+
+    im Prinzip wie \textbf{e}Mail
+
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{bv13/eQSL_DK0TU-EA3ARE.jpg}
+        \tiny \hyperlink{refs}{\cite{wc}}
+    \end{center}
+
+    \begin{itemize}
+        \item minimaler Kostenaufwand
+        \item Ausdruck nur bei Bedarf
+        \item weniger ''Flair''
+    \end{itemize}
+
+    Wie bei E-Mail gibt es diverse Webdienste oder Programme.
+
+\end{frame}
+
+\subsection{SSTV}
+
+\begin{frame}
+    \frametitle{QSL-Karte / SSTV}
+
+    Manchmal wird das empfangene SSTV-Bild zur Bestätigung per E-Mail
+    zurückgesendet.
+
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{bv13/QSL_SSTV_2014-11-24_162753.png}
+    \end{center}
+
+\end{frame}
+
+\section{Sonderstationen}
+
+\begin{frame}
+    \frametitle{Sonderstationen}
+
+    Einige HAMs sammeln besondere Stationen:
+
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{bv13/DK0TU_SDOK_FSB13.jpg}
+    \end{center}
+
+    \begin{itemize}
+        \item Calls zu bestimmten Veranstaltungen, z.B.
+              \emph{DK0IFA}\footnote{zur Internationale Funkausstellung (IFA)}
+        \item Sonder-DOK\footnote{Distrikts-Ortsverbands-Kenner}s, z.B.
+              \emph{FSB13}\footnote{zum Jubiläum der ehemaligen Field Station
+              Berlin (Teufelsberg)}
+    \end{itemize}
+
+\end{frame}
+
+\section{Diplome}
+
+\begin{frame}
+    \frametitle{Diplome}
+
+    %todo Foto ARRL Diplom
+
+    Auszeichnung\footnote{meist Urkundenpapier, aber auch diverse andere
+    Gegenstände} für besondere Leistungen im Amateurfunk.
+
+    Herausgeber z.B.
+
+    \begin{itemize}
+        \item Radioclubs
+        \item Ortsverbände
+        \item Länder
+    \end{itemize}
+    
+\end{frame}
+
+\begin{frame}
+    \frametitle{Diplome / Beispiele}
+
+    Bekannteste Diplome z.B.
+
+    \begin{itemize}
+        \item DXCC\footnote{DX century club}-Diplom für $>100$ Länder
+        \item DLD\footnote{Deutschland Diplom} für $>100$ \emph{OV}s
+        \item ... ''All \$Achievement Award''
+    \end{itemize}
+
+    Beantragung vom Operator selbst. Nachweis: QSL-Karten, relevante
+    Logbuchauszüge oder Bestätigung durch andere \emph{HAM}s.
+
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+
+    \bibitem{dj4uf} Moltrecht B/V 13: \\
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/betriebstechnikvorschriften/kapitel-bv13/}
+    \bibitem{wp}    Wikipedia DE: \\
+                    \url{https://de.wikipedia.org/wiki/RST-System}\\
+                    \url{https://de.wikipedia.org/wiki/RSQ-System}\\
+                    \url{https://de.wikipedia.org/wiki/Koordinierte_Weltzeit}\\
+                    \url{https://de.wikipedia.org/wiki/Bundesnetzagentur}\\
+    %\bibitem{we}    Wikipedia EN: \\
+    \bibitem{wc}    Wikimedia Commons: \\
+                    \url{https://commons.wikimedia.org/wiki/File:S-Meter.jpg}\\
+                    \url{https://commons.wikimedia.org/wiki/File:Standard_time_zones_of_the_world.png}\\
+    \bibitem{tucn}  \url{http://tucnak.nagano.cz/wiki/File:Hf-10.png}\\
+\end{thebibliography} 
+
+\input{texdata/postamble}

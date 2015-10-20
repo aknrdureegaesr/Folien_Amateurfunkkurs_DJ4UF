@@ -1,0 +1,242 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>
+
+\input{texdata/preamble}
+\subtitle{Technik 02: \\
+          Spannung und Strom, Wechselspannung \\[2em]}
+\date{Stand 23.2.2015}
+\input{texdata/titlepage}
+
+%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
+
+\section*{Einleitung}
+
+\begin{frame}
+    \frametitle{Strom - Spannung}
+    \begin{itemize}
+		\item Was ist Spannung/Strom (elektrische)?
+		\item Woher bekommt man Spannung/Strom?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Spannung}
+    \begin{center}
+    Elektrische Spannung wird erzeugt durch die Trennung von Ladungen
+		\includegraphics[width=.8\textwidth]{e02/ladung.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}}
+  	\end{center}
+\end{frame}
+
+
+\section*{Spannung}
+
+\begin{frame}
+    \frametitle{Spannung}
+    \begin{center}
+        Elektrische Spannung $U$ gemessen in [$V$] Volt
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Batterie}
+    \begin{center}
+    Schaltungszeichen einer Batterie / Batteriezelle\\
+        \includegraphics[width=.99\textwidth]{e02/batterieEagle.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{9V Batterie}
+    \begin{center}
+    Schaltungszeichen einer 9V Batterie\\
+    Pro Zelle $1.8V$\\
+    Werden bei Reihenschaltung addiert\\
+        \includegraphics[width=.99\textwidth]{e02/9vBatEagle.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Spannung bestimmen}
+    \begin{center}
+        \includegraphics[width=.85\textwidth]{e02/Spannung.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Digitales Multimeter}
+    \begin{center}
+        \includegraphics[width=.35\textwidth]{e02/digitalmultimeter.jpg}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Was wo anschließen?}
+	\begin{minipage}{0.4\textwidth}
+        \includegraphics[width=1\textwidth]{e02/digitalmultimeterMess.jpg}
+	\end{minipage}
+	\begin{minipage}{0.4\textwidth}	
+	\begin{itemize}
+		\item Was kann alles gemessen werden?
+		\item Wo anschließen zum Strom messen?
+		\item Wo anschließen zum Spannung messen?
+		\item Welcher Messbereich?
+	\end{itemize}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Spannung bestimmen}
+    \begin{center}
+    Was Zeigt das Messgertät an beim Messen von $A$ nach $C$?\\
+    (Abb. Ähnlich)
+        \includegraphics[width=.75\textwidth]{e02/SpannungMess.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Potential}
+    \begin{center}
+    Spannung ist der Potentialunterschied an 2 Punkten\\
+    Ein Multimeter misst den Potentialunterschied\\
+    Nullpotential ist ein theoretisches Modell.
+	\end{center}
+\end{frame}
+
+\section*{Strom}
+
+\begin{frame}
+    \frametitle{Strom}
+    \begin{center}
+        Elektrischer Strom ist die gerichtete Bewegung von Ladungsträgern.\\
+        Elektischer Strom $I$ in [$A$] Ampare
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Physikalische vs. Technische Stromrichtung}
+	\begin{center}
+		Nur Elektronen können sich bewegen
+	    \includegraphics[width=.8\textwidth]{e02/Current_notation.png}\\
+	    \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Current_notation.svg}}
+	 \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Strom Messen}
+    \begin{center}
+    	Strom messen in Reihe
+        \includegraphics[width=.8\textwidth]{e02/reiheAmpare.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Wie sollte gemessen werden?}
+        \includegraphics[width=1\textwidth]{e02/stromSpannung.png}
+        \footnote{\tiny Fragenkatalog Bundesnetzargentur Klasse E}
+\end{frame}
+
+\section*{Ladung}
+
+\begin{frame}
+    \frametitle{Ladung}
+    \begin{center}
+    		$$Q = I \cdot t$$
+        \includegraphics[width=.8\textwidth]{e02/ladung.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage}
+    \begin{center}
+    \begin{tabular}{l||l}\hline
+        TB205 & Wie lange könnte man mit einem voll geladenen\\
+        " " & Akku mit 55 Ah einen Amateurfunk-Empfänger\\ 
+        " " & betreiben, der einen Strom von\\ 
+        " " & 0,8 Ampere aufnimmt?\\ \hline\hline
+         A & 68 Stunden und 75 Minuten \\ \hline
+         B & Genau 44 Stunden \\ \hline
+         C & 6 Stunden 52 min und 30 s \\\hline
+         D & 68 Stunden und 45 Minuten \\\hline
+    \end{tabular}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage}
+    \begin{center}
+    \begin{tabular}{l||l}\hline
+        TB205 & Wie lange könnte man mit einem voll geladenen\\
+        " " & Akku mit 55 Ah einen Amateurfunk-Empfänger\\ 
+        " " & betreiben, der einen Strom von\\ 
+        " " & 0,8 Ampere aufnimmt?\\ \hline\hline
+         " " & 68 Stunden und 75 Minuten \\ \hline
+         " " & Genau 44 Stunden \\ \hline
+         " " & 6 Stunden 52 min und 30 s \\\hline
+         X & 68 Stunden und 45 Minuten \\\hline
+    \end{tabular}
+        \begin{align} 
+			t = \frac{Q}{I} = \frac{55Ah}{0.8A} = 68.75
+		\end{align}
+ 	\end{center}
+ 	
+\end{frame}
+
+\section*{Wechselspannung}
+
+\begin{frame}
+    \frametitle{Wechselspannungen}
+	\begin{minipage}{0.4\textwidth}
+        \includegraphics[width=.8\textwidth]{e02/Wechselspannungsformen.png}
+	\end{minipage}
+	\footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Wechselspannungsformen.svg}}
+	\begin{minipage}{0.4\textwidth}	
+	\begin{itemize}
+		\item Verschiedene Formen von Wechselspannung
+		\item Beim Morsen bestenfalls ein Sinus
+		\item Ganz verschiedene Frequenzen
+		\item Stromnetz im Hause: $50Hz$ 
+		\item $70cm$ AFu Band $435.000.000Hz$
+	\end{itemize}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Effektivwert vs Spitzen Wert}
+    \begin{align} 
+		\int \! sin^2(w t) \, \mathrm{d}t & = \frac{t}{2} - \frac{1}{4w}sin^2(2wt) + c \\
+		U_{eff}^2 \cdot \int_0^T \! sin^2(w t) \, \mathrm{d}t & = \frac{T}{2} \cdot \frac{u_{spitze}^2}{T} \\
+		U_{eff} & = \frac{1}{\sqrt{2}} u_{spitze}
+	\end{align}
+	    \begin{center}
+	    \includegraphics[width=.69\textwidth]{e02/EffektivwertSinus.png}\\
+	    \footnote{\tiny \url{https://de.wikipedia.org/wiki/Datei:Effektivwert-Sinus.svg}}
+	 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Effektivwert vs Spitzen Wert}
+    \begin{align} 
+		U_{eff} & = \frac{1}{\sqrt{2}} u_{spitze}
+	\end{align}
+	    \begin{center}
+	    Aufgabe: Berechnet den Spitzenwert des "Hausstoms" mit $U_{eff} = 230V$
+	 	\end{center}
+\end{frame}
+
+\section*{Referenzen}
+
+\begin{frame}
+    \frametitle{Referenzen/Links}
+    
+    \footnotesize
+    \begin{itemize}
+        \item Moltrecht E 02: \\
+              \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e02/}
+    \end{itemize}
+
+\end{frame}
+
+\input{texdata/postamble}

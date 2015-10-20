@@ -1,0 +1,311 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>
+
+\input{texdata/preamble}
+\subtitle{Technik E 17: \\
+          Messtechnik \\[2em]}
+\date{Stand 26.1.2015}
+\input{texdata/titlepage}
+
+%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
+
+\section*{Einleitung}
+
+\begin{frame}
+    \frametitle{Messgeräte}
+    \begin{itemize}
+		\item Was kann alles beim Funken gemessen werden?
+    \end{itemize}
+\end{frame}
+  
+\section*{Analog}
+
+\begin{frame}
+    \frametitle{Drehspulenmessgerät (Antik)}
+	\begin{minipage}{0.4\textwidth}
+	    \includegraphics[width=.95\textwidth]{e17/drehspulenMess.png}\\
+	\end{minipage}
+	        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Moving_coil_instrument_principle.png}}
+		\hspace{0.5cm}
+	\begin{minipage}{0.4\textwidth}	
+	\begin{itemize} \tiny
+		\item \tiny 1) Weicheisenkern der Drehspule
+		\item 2) Permanentmagnet
+		\item 3) Polschuh zur Bündelung des Magnetfeldes
+		\item 4) Skala
+		\item 5) Hilfsspiegel zur genauen Ablesung
+		\item 6) Rückstellfeder
+		\item 7) Drehspule
+		\item 8) Drehspule in Nulllage
+		\item 9) Drehspule bei Maximalausschlag
+		\item 10) Joch der Spule
+		\item 11) Stellschraube für Nullpunktseinstellung
+		\item 12) Zeiger
+		\item 13) Zeiger in Nulllage
+		\item 14) Zeiger bei Maximalausschlag
+	\end{itemize}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage}
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{e17/messbereich.png}
+        \footnote{\tiny Fragenkatalog Bundesnetzargentur Klasse E}
+	\end{center}
+\end{frame}
+
+\section*{Digital}
+
+\begin{frame}
+    \frametitle{Digitales Multimeter}
+    \begin{center}
+        \includegraphics[width=.35\textwidth]{e17/digitalmultimeter.jpg}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Was wo anschließen?}
+	\begin{minipage}{0.4\textwidth}
+        \includegraphics[width=1\textwidth]{e17/digitalmultimeterMess.jpg}
+	\end{minipage}
+	\begin{minipage}{0.4\textwidth}	
+	\begin{itemize}
+		\item Was kann alles gemessen werden?
+		\item Wo anschließen zum Strom messen?
+		\item Wo anschließen zum Spannung messen?
+		\item Welcher Messbereich?
+	\end{itemize}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Wie sollte gemessen werden?}
+        \includegraphics[width=1\textwidth]{e17/stromSpannung.png}
+        \footnote{\tiny Fragenkatalog Bundesnetzargentur Klasse E}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Messfehler}
+    \begin{center}
+    		\begin{itemize}
+				\item Nullpunktsabweichung
+				\item Empfindlichkeitsabweichung
+				\item Linearitätsabweichung
+    		\end{itemize}
+        \includegraphics[width=1\textwidth]{e17/werMisstMisst.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:AMT_Fehler.svg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage}
+    \begin{center}
+    \begin{tabular}{l||l}\hline
+        TJ102 & Die Auflösung eines Messinstrumentes entspricht... \\  \hline\hline
+         A  & der Genauigkeit des Instrumentes \\
+         " " & in Bezug auf den tatsächlichen Wert. \\ \hline
+         B & der Genauigkeit des Instrumentes. \\ \hline
+         C & der kleinsten Einteilung der Anzeige. \\\hline
+         D & dem Vollausschlag der Instrumentenanzeige. \\\hline
+    \end{tabular}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage}
+    \begin{center}
+    \begin{tabular}{l||l}\hline
+        TJ102 & Die Auflösung eines Messinstrumentes entspricht... \\ \hline\hline
+         " " & der Genauigkeit des Instrumentes \\
+         " " & in Bezug auf den tatsächlichen Wert. \\ \hline
+         " " & der Genauigkeit des Instrumentes. \\ \hline
+         X & der kleinsten Einteilung der Anzeige. \\\hline
+         " " & dem Vollausschlag der Instrumentenanzeige. \\\hline
+    \end{tabular}
+ 	\end{center}
+\end{frame}
+
+\section*{Oszilloscope}
+
+\begin{frame}
+    \frametitle{Oszilloscope}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{e17/osziModern.jpg}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Modernes_Speicheroszilloskop.jpg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Oszilloscope}
+    \begin{center}
+        \includegraphics[width=.8\textwidth]{e17/WTPCOscilloscopeBeschreiben.jpg}
+        \footnote{\tiny \url{https://en.wikipedia.org/wiki/File:WTPC_Oscilloscope-1.jpg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Oszilloscope - Ablesen}
+    \begin{center}
+        $100mV / Div$ und $0.1ms / Div$
+        \includegraphics[width=.8\textwidth]{e17/OsziTon.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Oszi_Ton.svg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Spannungen}
+    \begin{center}
+    \begin{itemize}
+			\item PEP - Peak to Peak
+			\item RMS - Effektivwert
+			\item $u_{Spitze} = sqrt{2} \cdot U_{eff}$ \\
+			\item Aufgabe: Berechnet Spitzen-Spitzen Spannung vom Netzstrom 
+    \end{itemize}
+	\end{center}
+\end{frame}
+
+\section*{Dipmeter}
+
+\begin{frame}
+    \frametitle{Dipmeter}
+    \begin{center}
+        \includegraphics[width=0.55\textwidth]{e17/Dipmeter.jpg}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Dipmeter_and_its_probe_coils.jpg}}
+	\end{center}
+\end{frame}
+
+\section*{SWR-Meter}
+
+\begin{frame}
+    \frametitle{Stehwellenmessgerät}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{e17/RS_SWR.jpg}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:RS_SWR.jpg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Interner Aufbau}
+    \begin{center}
+    $$s = \frac{U_{max}}{U_{min}} = \frac{U_v + U_r}{U_v - U_r}$$
+        \includegraphics[width=.8\textwidth]{e17/SWRMeterInnen.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:SWR_Meter.svg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{VSWR-Rechnen}
+    \begin{center}
+    $$s = \frac{U_{max}}{U_{min}} = \frac{U_v + U_r}{U_v - U_r}$$
+    $$s = \frac{1V + 0.5V}{1V - 0.5V} = \frac{1.5V}{0.5V} = 3$$
+	$$s = \frac{1V + 0V}{1V - 0V} = \frac{1V}{1V} = 1$$
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage}
+    \begin{center}
+    \begin{tabular}{l||l}\hline
+        TH401&Eine Antenne hat ein Stehwellenverhältnis (VSWR)\\
+         " "  &von 3. Wie viel Prozent der Sendeleistung\\
+         " "  &wird von der Antenne abgestrahlt, wenn sonst\\
+         " "  &keine Verluste auftreten?\\ \hline\hline
+         A & $50 \%$ \\\hline
+         B & $29 \%$ \\\hline
+         C & $25 \%$ \\ \hline
+         D & $75 \%$\\\hline
+    \end{tabular}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage}
+    \begin{center}
+    \begin{tabular}{l||l}\hline
+        TH401&Eine Antenne hat ein Stehwellenverhältnis (VSWR)\\
+         " "  &von 3. Wie viel Prozent der Sendeleistung\\
+         " "  &wird von der Antenne abgestrahlt, wenn sonst\\
+         " "  &keine Verluste auftreten?\\ \hline\hline
+         " " & $50 \%$ \\\hline
+         " " & $29 \%$ \\\hline
+         " " & $25 \%$ \\ \hline
+         X & $75 \%$\\\hline
+    \end{tabular}
+    $50 \%$ der Spannung sind $25 \%$ der Leistung.
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Wo das SWR-Meter einschleifen?}
+        \includegraphics[width=.97\textwidth]{e17/SWROrt.png}
+        \footnote{\tiny Fragenkatalog Bundesnetzargentur Klasse E}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Wo das SWR-Meter einschleifen?}
+        \includegraphics[width=.97\textwidth]{e17/SWROrt.png}
+        \footnote{\tiny Fragenkatalog Bundesnetzargentur Klasse E}
+    Am Besten in 1, da alles dahinter zur Antenne bzw. Antennenanlage gehört.
+\end{frame}
+
+
+\section*{Dummy Load}
+
+\begin{frame}
+    \frametitle{Messen}
+    \begin{center}
+        \includegraphics[width=.99\textwidth]{e17/DummyLoad.jpg}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Dummy_load.jpg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Zu Beachten}
+    \begin{itemize}
+		\item Aufbau als Widerstandsdekade
+		\item Lastwiderstände
+		\item Außer bei besonderem Genau $50 \Omega$ Realer Widerstand
+		\item Am besten Metalloxid Widerstände
+		\item Große Kühlkörper
+		\item selbstbau: \url{http://der-bastelbunker.blogspot.de/2011/04/qro-dummy-load-von-kw-bis-vhf-fur-1.html}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Dummy in Nauen}
+	\begin{minipage}{0.4\textwidth}
+	\begin{center}
+	    \includegraphics[width=.9\textwidth]{e17/DummyNauen.jpg}
+	\end{center}
+	\end{minipage}
+	        \footnote{\tiny Bild DB4UM}
+		\hspace{0.5cm}
+	\begin{minipage}{0.4\textwidth}	
+	\begin{itemize}
+		\item Dummyload in Nauen
+		\item Auch als Wattmeter nutzbar
+		\item Temperaturanstieg pro Zeiteinheit
+	\end{itemize}
+	\end{minipage}
+\end{frame}
+
+\section*{Referenzen}
+
+\begin{frame}
+    \frametitle{Referenzen/Links}
+    
+    \footnotesize
+    \begin{itemize}
+        \item Moltrecht E 17: \\
+              \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e17/}
+         \item SWR-Meter Selbstbau \\
+         	\url{http://www.nogaqrp.org/projects/NOGAwatt/nogawattwithnewschematic2.pdf}
+         \item Dummy Selbstbau \\
+         	\url{http://der-bastelbunker.blogspot.de/2011/04/qro-dummy-load-von-kw-bis-vhf-fur-1.html}
+    \end{itemize}
+
+\end{frame}
+
+\input{texdata/postamble}

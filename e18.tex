@@ -1,0 +1,264 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Martin Deutschmann <martin.deutschmann@campus.tu-berlin.de>
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse E 18 \& Betriebstechnik/Vorschriften 14: \\
+          EMV, EMVG, EMVU, Sicherheit \& Störungen  \\[2em]}
+\date{Stand 05.02.2015}
+\input{texdata/titlepage}
+
+%fixme Bildreferenzen aus den Folien raus und in den Anhang
+
+\section{Einleitung}
+
+\begin{frame}
+    \frametitle{Einleitung / Umleitung}
+
+    Aufgrund sehr großer inhaltlicher Überschneidungen der beiden
+    \emph{Moltrecht}-Lektionen, ist die Lektion
+    \texttt{BV14}\hyperlink{refs}{\cite{bv14}} in diesen Foliensatz der Lektion
+    \texttt{Technik E18}\hyperlink{refs}{\cite{e18}} integriert. \\[2em]
+\end{frame}
+
+\begin{frame}
+	\frametitle{Einleitung}
+	In diesem Kapitel geht es um Elektromagnetische Verträglichkeit (EMV) von Geräten(EMVG) und 	der Umwelt (EMVU), Störungen und Sicherheit während des Funkes im Rahmen der gesetzlichen 		Vorgaben zu halten.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Warum kümmert uns EMV eigentlich?}
+	\begin{itemize}
+		\item Unsere Sendeanlagen erzeugen elektromagnetische Strahlung
+		\item Diese kann Geräte in der Nähe stören (z.B. Fernseher des Nachbarn)
+		\item Aber auch unsere Geräte können gestört werden
+		\item Deswegen müssen diese geschützt werden
+	\end{itemize}
+\end{frame}
+
+\section{EMVG}
+\begin{frame}
+	\frametitle{\textbf{E}lektro-\textbf{M}agnetische \textbf{V}erträglichkeit von \textbf{G}eräten}
+	\Large{\textbf{EMVG §3 Schutzanforderungen}}
+	\begin{normalsize}
+	(1) Geräte müssen so beschaffen sein, dass bei vorschriftsgemäßer Installierung, 				angemessener Wartung und bestimmungsgemäßem Betrieb gemäß den Angaben des Herstellers in 		der Gebrauchsanweisung	
+	\begin{itemize}
+		\item 1. die Erzeugung elektromagnetischer Störungen begrenzt wird, dass ein 							bestimmungsfähiger Betrieb von Funk und Telekommunikationsgeräten sowie 						sonstigen Geräten möglich ist, 
+		\item 2. die Geräte eine angemessene Festigkeit gegen elektromagnetische Störungen 						aufweisen, so dass ein bestimmungsgemäßer Betrieb möglich ist.
+	\end{itemize}
+	\end{normalsize}
+\end{frame}
+
+\section{EMV \& EMVU}
+
+\begin{frame}
+	\frametitle{EMV \& EMVU}
+	\begin{itemize}
+		\item Im §7 des AFuG steht etwas zu den Schutzanforderungen und EMV geschrieben
+		\item Genaueres dazu findet sich auch im §17 des AFuV
+	\end{itemize}
+\end{frame}
+
+\section{Störungen}
+
+\begin{frame}
+	\frametitle{Was sind Störungen? und was hilft dagegen?}
+	\begin{itemize}
+		\item Störungen sind unerwünschte Ausstrahlung (wie z.B. Oberwellen oder 								Nebenaussendungen)
+		\item Um Störungen zu vermeiden, kann man Filter verwenden
+		\item Man kann auch mit Filtern gegen Störungen vorgehen
+	\end{itemize}
+	\vspace{0.5cm}
+	\begin{center}
+	\begin{tabular}{|c|c|}
+		\hline
+		Bis 25 W & über 25 W \\ \hline
+		\multicolumn{2}{|l|}{Kurzwellensender:} \\ \hline
+		max. +4 dBm & $>$ 40 dB gedämpft	\\ \hline
+		\multicolumn{2}{|l|}{VHF-/UHF-Sender:} \\ \hline
+		max. -16 dBm & $>$ 60 dB gedämpft \\ \hline
+	\end{tabular}
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Wo störts denn?}
+	\Large{Aber wo stört es denn nun?}
+\end{frame}
+
+\begin{frame}
+ 	\frametitle{Wo störts denn?}
+ 	\includegraphics[scale=0.2]{e18/Stoerungen.png}\\
+ 	\tiny{Quelle: DM7MD} 	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Was stört uns?}
+	\begin{itemize}
+		\item Intermodulationen (Übersteuern der Mischstufe durch mehrere, zu starke Signale)
+		\item Diese erzeugen dann Phantomsignale
+		\item Zustopfeffekte
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Vorbeugende Maßnahmen}
+	\begin{itemize}
+		\item Sendeanlage so weit weg von Empfangsantennen wie möglich aufbauen
+		\item Eine Richtantenne mit geringem vertikalen Öffnungswinkel auf dem Dach ist ein 					guter Anfang 
+		\item Anpassen der Sendeleistung
+	\end{itemize}
+\end{frame}
+
+\section{Personenschutz (EMVU)}
+
+\begin{frame}
+	\frametitle{Personenschutz (EMVU)}
+	\begin{itemize}
+		\item Es gilt zwei Bereiche zu beachten:
+			\begin{itemize}
+				\item Expositionsbereich 1 (Vom Funker kontrollierbarer Bereich) und 
+				\item Expositionsbereich 2 (Öffentlicher Bereich)
+			\end{itemize}
+		\item Es gibt festgelegte Grenzwerte und Formeln der BNetzA zur Berechnung des 						Sicherheitsabstandes
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Sicherheitsabstand}
+	\begin{center}
+	\begin{LARGE}
+		$r = \frac{\sqrt{30 \cdot P_{EIRP}[W]}}{E[\frac{V}{m}]}$
+	\end{LARGE}
+	\vspace{0.5cm}
+	
+	\begin{tabular}{|c|c|}
+	\hline
+	\multicolumn{2}{|l|}{Grenzwerte für Personenschutz} \\ \hline
+	Frequenzbereich & Elektrische Feldstärke \\ \hline
+	unter 10 MHz & $E = 87 / \sqrt{f(MHz)} V/m$ \\ \hline
+	10 - 40 MHz & $E = 27,5 V/m$ \\ \hline
+	40 - 2000 MHz & $E = 1,375 \cdot \sqrt{f(MHz)} V/m$ \\ \hline
+	über 2000 MHz & $E = 61 V/m$ \\ \hline
+	\end{tabular}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Leistungsgewinnfaktoren und Reduzierungsfaktoren}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{2}{|l|}{Leistungsgewinnfaktoren} & oder in dBi \\ \hline
+		Dipol & 1,64 & 2,15 dbi \\ \hline
+		$\lambda / 4$ - Strahler & 3,28 & 5,15 dBi \\ \hline
+	\end{tabular}
+	\vspace{0.5cm}
+	
+	\begin{tabular}{|c|c|}
+		\hline
+		Bstriebsart & Reduzierungsfaktor \\ \hline
+		SSB & $1 : 6 = 0,167$ \\ \hline
+		CW & $1 : 4 = 0,25$ \\ \hline
+		FM (RTTY, SSTV) & 1 \\ \hline		
+	\end{tabular}
+	\begin{itemize}
+		\item	Reduzierungsfaktoren sind Effektivwerte der maximalen Feldstärke gemittelt über 		einen 6-Minuten Intervall
+	\end{itemize}
+\end{frame}
+
+\section{Sicherheit}
+
+\begin{frame}
+	\frametitle{Gesetze und Vorschriften, wohin man schaut}
+	\begin{itemize}
+		\item Selbstgebaute Geräte müssen den VDE-Bestimmungen entsprechen
+		\item Für den Bau von Antennenanlagen gelten die Bauverordnungen des jeweiligen Landes
+		\item Des Weiteren sind die Blitzschutzbestimmungen zu beachten
+	\end{itemize}
+\end{frame}
+
+\subsection{elektrische Sicherheit}
+
+\begin{frame}
+	\frametitle{elektrische Sicherheit}
+	\begin{itemize}
+		\item	Sicherheitsanforderungen
+		\item	Berührungsschutz
+		\item	Schutzkleinspannung \& Funktionskleinspannung
+		\item	Schutzisolierung
+		\item	Schutztrennung
+		\item	Schutz durch Abschalten
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Antennenerdung}
+	\begin{itemize}
+		\item	Alle leitfähigen Teile der Antennenanlage müssen geerdet werden
+	\end{itemize}
+	\begin{tabular}{|c|c|}
+		\hline
+		Werkstoff & Abmessungen oder Art \\ \hline
+		Kupfer & $16 mm^2$ , blank oder isoliert \\ \hline
+		Aluminium & $25 mm^2$ , isoliert, in Innenräumen auch blank \\ \hline
+		Stahl & $50 mm^2$ , verzinkt, z.B. Band $20mm \cdot 2,5mm$ \\ \hline
+		\multicolumn{2}{|l|}{Volldraht oder mehrdrähtig, aber nicht feindrähtig} \\
+		\multicolumn{2}{|l|}{Kennzeichnung der Erdleiter: grün-gelb} \\ \hline 	
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Blitzschutz}
+	\begin{itemize}
+		\item	Antennenanlagen müssen gegen Blitze geschützt werden
+		\item	Der Mast muss auf dem kürzesten Weg mit einer fachlich korrekt installierten 					Gebäudeblitzschutzanlage verbunden werden
+		\item	Als Blitzschutzerder darf jeder ordnungsgemäß verlegter Fundamenterder 							verwendet werden
+		\item	Außenleiter von Koaxkabeln (Abschirmung) müssen über einen 										Potentialausgleichsleiter ordnungsgemäß mit Erde verbunden werden 
+ 	\end{itemize}
+ 	\begin{center}
+ 		\includegraphics[scale=0.2]{e18/Funkenstrecke}
+ 		\footnote{\url{http://de.wikipedia.org/wiki/Datei:Suspension_insulators_with_arcing_horns.jpg}}
+ 	\end{center}
+ 
+\end{frame}
+
+\subsection{mechanische Sicherheit}
+
+\begin{frame}
+	\frametitle{mechanische Sicherheit}
+	\begin{itemize}
+		\item	Sendeanlage muss mechanisch gesichert werden
+		\item	Windlast ist zu beachten
+	\end{itemize}
+	\begin{center}
+		\Large{$F_{A} = p \cdot A$}
+	\end{center}	
+	\begin{normalsize}
+	
+	\end{normalsize}
+	\begin{itemize}
+		\item	Sendeanlagen dürfen im KFZ installiert werden
+		\item	Dafür immer Herstellerangaben beachten
+		\item	Um Störungen zu vermeiden, Antenne und Antennenkabel möglichst weit weg von 					Fahrzeugelektronik installieren
+	\end{itemize}
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{bv14}  Moltrecht B/V 14: \\
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/betriebstechnikvorschriften/kapitel-bv14/}
+    \bibitem{e18}   Moltrecht E 18: \\
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e18/}
+    \bibitem{wp}    Wikipedia DE: \\
+                    \url{http://de.wikipedia.org/wiki/Blitzschutz}\\ 
+                    \url{http://de.wikipedia.org/wiki/Funkenstrecke}\\  
+\end{thebibliography} 
+
+\input{texdata/postamble}

@@ -1,0 +1,309 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse A 13: \\
+          Frequenzaufbereitung \\[2em]}
+\date{Stand 18.06.2015}
+\input{texdata/titlepage}
+
+
+% FIXME Blockschaltbilder sollten in Klasse E schon irgendwo rein
+
+\section{Überblick}
+
+\begin{frame}
+    \frametitle{Überblick}
+
+    Wozu Frequenzaufbereitung? Wo liegen die klassischen Kurzwellenbänder und
+    was fällt dabei auf?
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Überblick}
+
+    Bereits bekannt aus Kapitel \emph{E 15}: \\[2em]
+
+    Signal im Basisband muss für die Übertragung auf einen HF-Träger
+    ''aufgeprägt'' werden.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Überblick}
+
+    Kurzwellenbänder: \\[2em]
+
+    3,5 - 7 - 14 - 21 - 28 MHz (80m, 40m, 20m, 15m, 10m)
+
+\end{frame}
+
+\section{Sender}
+
+\subsection{Vervielfacher}
+
+\begin{frame}
+    \frametitle{Frequenzvervielfacher}
+
+    Neben Vermeidung von Oberwellenstörungen kommerzieller Funkdienste,
+    besser für Senderbau durch Vervielfacher:
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{a13/TG103a.png}
+        \tiny (TG103)
+    \end{center}
+
+    Welches Band mit VFO auf $3,51 MHz$? \only<2>{14,04 MHz (20m)}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Frequenzvervielfacher}
+
+    Bei FM darauf achten, dass sich auch der Hub vervielfacht!
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{a13/TG102.png}
+        \tiny (TG102)
+    \end{center}
+
+    ... z.B. durch Antiparallelschaltung von Dioden.\footnote{Einstellung durch
+    den Widerstand}
+
+\end{frame}
+
+\subsection{Mischer}
+
+\subsubsection{Einfachmischer}
+
+\begin{frame}
+    \frametitle{Einfachmischer}
+
+    Vervielfachung ist nur bei CW und FM sinnvoll. Hub zeigt, dass Modulation
+    ''auseinandergezogen wird'' - die NF in SSB würde viel zu breit werden.
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{a13/TG226.png}
+        \tiny (TG226)
+    \end{center}
+
+    Mischer sind bereits aus der Modulation bekannt. Anwendung hier:
+    Up-/Downconversion.
+    
+    \only<2>{\vspace{2em} \textbf{Lösung:} 10,7 und 52,7 MHz}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Einfachmischer}
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{a13/TG226.png}
+        \tiny (TG226)
+    \end{center}
+
+    Es entstehen immer zwei Frequenzen, sodass immer eine Filterung notwendig
+    ist.
+
+\end{frame}
+
+\subsubsection{Balance-Mischer}
+
+\begin{frame}
+    \frametitle{Balance-Mischer}
+
+    SSB-Aufbereitung mit einem 9-MHz-Quarzfilter (balancierter Ringmischer)
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{a13/TG106.png}
+        \tiny (TG106)
+    \end{center}
+
+    Für USB: 8,9985 MHz
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Balance-Mischer}
+
+    Der gesamte Sendepfad würde so aussehen:
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{a13/TG101.png}
+        \tiny (TG101)
+    \end{center}
+
+    Was wird nach der SSB-Mischstufe benötigt?
+    
+    \only<2>{\vspace{2em} Ein Quarzfilter als Seitenbandsperre.}
+
+\end{frame}
+
+\subsection{VCO-PLL}
+
+\begin{frame}
+    \frametitle{VCO-PLL}
+
+    Phasenregelschleifen dienen zum Angleichen zweier Phasen.
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{a13/TD701.png}
+        \tiny (TD701)
+    \end{center}
+
+    Stabiler Zustand: Die Frequenzen an A und B sind gleich.
+
+    A = 12,5 kHz. Ausgang 12 bis 14 MHz. Teilerfaktor?
+    \only<2>{960 bis 1120}
+
+\end{frame}
+
+\subsubsection{Mehrfach-Mischer}
+
+\begin{frame}
+    \frametitle{Mehrfach-Mischer}
+
+    % TODO Muendl. oder Folien warum Mehrfachmischung
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{a13/TG110.png}
+        \tiny (TG110)
+    \end{center}
+
+    Frage: Welche Frequenz erzeugt der Sender, wenn VCO1 auf 2,651 MHz
+    eingestellt und VCO2 auf 6 MHz eingerastet ist? \only<2>{3,651 MHz}
+
+\end{frame}
+
+\section{Empfänger}
+
+\begin{frame}
+    \frametitle{Empfängerprinzipien}
+
+    Doppelsuper: Niedrige zweite ZF gute Trennschärfe. \\[2em]
+
+    Bei heutigen TRX: Die 1. ZF liegt höher als das Doppelte der maximalen
+    Empfangsfrequenz. Nach der Filterung im Roofing-Filter (1. ZF) wird auf die
+    2. ZF im Bereich um 9 bis 10 MHz heruntergemischt. \\[2em]
+
+    Erste ZF-Filterbandbreite mind. so groß wie höchste benötigte Bandbreite.
+
+\end{frame}
+
+\subsection{Doppelsuper}
+
+\begin{frame}
+    \frametitle{Doppelsuper}
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{a13/TF206.png}
+        \tiny (TF206)
+    \end{center}
+
+    RX 145,6 MHz, CO 134,9 MHz. Wo mögliche Spiegelstörungen?
+    
+    \only<2>{124,2 MHz - deshalb Vorselektion wichtig}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Doppelsuper}
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{a13/TF205b.png}
+        \tiny (TF205b)
+    \end{center}
+
+    Erste ZF von 10,7 MHz und zweite ZF von 460 kHz. Empfangsfrequenz 28 MHz
+    sein. VFO, CO?
+    
+    \only<2>{Der VFO muss bei 38,70 MHz und der CO bei 11,16 MHz schwingen.}
+    % FIXME Slide 15: 17,3 und 10,24 moeglich
+
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Doppelsuper}
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{a13/TF209b.png}
+        \tiny (TF209b)
+    \end{center}
+
+    Vorteil von Kurzwellen-Empfängern mit sehr hoher ZF-Frequenz (z.B. 50 MHz):
+    Spiegelfrequenz liegt sehr weit außerhalb des Empfangsbereichs.
+
+\end{frame}
+
+
+\subsection{Direktüberlagerungsempfänger}
+
+\begin{frame}
+    \frametitle{Direktüberlagerungsempfänger}
+
+    Auch Produktdetektor genannt. \\[2em]
+
+    Prinzip wie der Einfachmischer beim TX. Eine Mischstufe mit VFO in nächster
+    Nähe zur Empfangsfrequenz.
+
+\end{frame}
+
+\subsection{PLL}
+
+\begin{frame}
+    \frametitle{PLL}
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{a13/TF213.png}
+        \tiny (TF213)
+    \end{center}
+
+    PLL-Frequenzaufbereitung: \\
+    VCO1: 67,5 MHz, VCO2: 85,5 MHz
+
+\end{frame}
+
+\subsection{Converter}
+
+\begin{frame}
+    \frametitle{Converter}
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{a13/TF204.png}
+        \tiny (TF204)
+    \end{center}
+
+    2-m-Konverter für einen KW-Empfänger
+
+\end{frame}
+
+\subsection{Transverter}
+
+\begin{frame}
+    \frametitle{Transverter}
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{a13/TF209.png}
+        \tiny (TF209)
+    \end{center}
+
+    Transverter für das 2-m-Band
+
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{darc}  DARC Online-Lehrgang Lektion A13:
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a13/}
+\end{thebibliography} 
+
+\input{texdata/postamble}

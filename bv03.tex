@@ -1,0 +1,146 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+
+\input{texdata/preamble}
+\subtitle{Betriebstechnik/Vorschriften 03: \\
+          Der "Q-Schlüssel"                \\[2em]}
+\date{Stand 30.10.2014}
+\input{texdata/titlepage}
+
+%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
+
+\section*{Einleitung}
+
+\begin{frame}
+    \frametitle{Einleitung / Q Code}
+    \begin{center}
+        \Large{Was ist das?} \\
+        \Large{Kennt ihr ggf. welche?}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Einleitung / Q Code}
+
+    Bekannt aus Film und Fernsehen: \emph{QAM} \\[2em]
+
+    Ursprung: Seit 1912 organisationsübergreifende Vereinfachung von Nachrichten
+    in Morsetelegrafie, eingeführt durch \emph{International Radiotelegraph
+    Convention}.\footnote{\tiny Heute geregelt durch die Radio Regulations (RR)}
+    \\[2em]
+    
+    Heute $>$250 Schlüssel:
+
+    \begin{itemize}
+        \item QAA bis QNZ: Flugfunkdienst
+        \item QOA bis QQZ: Seefunkdienst
+        \item QRA bis QUZ: allen Funkdienste
+        \item QVA bis QZZ: andere, teilw. militärisch
+    \end{itemize}
+
+\end{frame}
+
+\section*{Anwendung}
+
+\begin{frame}
+    \frametitle{Q Code / Verwendung}
+
+    \begin{itemize}
+        \item außer im AFu heute kaum noch genutzt
+        \item Verwendung in der Morsetelegrafie \\
+              (umgangssprachlich teilw. im Sprechfunk, sollte vermieden werden)
+        \item Fragen einfach durch angehängtes Fragezeichen
+        \item beliebige Ergänzungen durch Ziffern (1..5), Zahlen, Orte, Rufzeichen, ...
+        \item Uhrzeiten grundsätzlich in UTC
+              \footnote{\tiny Universal Time, Coordinated}
+    \end{itemize}
+    
+\end{frame}
+
+\begin{frame}
+    \frametitle{Q Code / Beispiele}
+
+    \only<1>{Statt \emph{Wie lautet das Rufzeichen?} \\[2em]
+             \emph{QRZ?}}
+
+    \only<2>{Statt \emph{Soll ich die Sendeleistung verringern?} \\[2em]
+             \emph{QRP?}}
+
+    \only<3>{Statt \emph{Mein Standort ist Berlin.} \\[2em]
+             \emph{QTH Berlin}}
+
+    \only<4>{Statt \emph{Ich werde stark durch eine andere Station gestört.} \\[2em]
+             \emph{QRM 4}}
+    
+    \only<5>{Q Codes teils beliebige Buchstabengruppen - \\
+             es gibt aber \emph{Eselsbrücken}}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Q Code / Amateurfunk {\small (grau: prüfungsrelevant)}}
+  
+    %todo schlecht lesbar :-(
+
+    \only<1>{
+    \begin{center}
+        \includegraphics[height=0.85\textheight]{bv03/Q-1.png}
+        \footnote{\tiny \url{http://www.amateurfunkpruefung.de/lehrg/bv03/bv03.html}}
+    \end{center}}
+
+    \only<2>{
+    \begin{center}
+        \includegraphics[height=0.85\textheight]{bv03/Q-2.png}
+        \footnote{\tiny \url{http://www.amateurfunkpruefung.de/lehrg/bv03/bv03.html}}
+    \end{center}}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Noch mehr Beispiele}
+
+    \only<1>{\emph{QRX 1500 UTC} - bis 15 Uhr Pause}
+
+    \only<2>{\emph{QRX 5 min} - ?}
+    
+    \only<3>{\emph{QTF 240} - Richtantenne: 240 Grad}
+    
+    \only<4>{\emph{QTR 1225 UTC} - Es ist ...}
+
+    \only<5>{\emph{QSP DJ4UF} - Weiterleitung an ...}
+
+\end{frame}
+
+\section*{Lernhilfen}
+
+\begin{frame}
+    \frametitle{Lernhilfen}
+
+    Baut euch am Anfang möglichst \emph{Eselsbrücken}. Am Besten selbst
+    ausdenken, aber Anregungen findet man auch bei anderen HAMs, z.B. hier: \\[2em]
+
+    \url{http://www.funkwelle.com/amateurfunk/q-schluessel-fuer-amateurfunkpruefung.html}
+
+\end{frame}
+
+\section*{Referenzen}
+
+\begin{frame}
+    \frametitle{Referenzen/Links}
+    
+    \footnotesize
+    \begin{itemize}
+        \item Moltrecht B/V 03: \\
+              \url{http://www.amateurfunkpruefung.de/lehrg/bv03/bv03.html}
+        \item Wikipedia DE: \\
+              \url{http://de.wikipedia.org/wiki/Q-Schl\%C3\%BCssel}
+        \item Wikipedia EN: \\
+              \url{http://en.wikipedia.org/wiki/Q_code}
+        \item List of Q-codes: \\
+              \url{http://www.kloth.net/radio/qcodes.php}
+    \end{itemize}
+
+\end{frame}
+
+\input{texdata/postamble}

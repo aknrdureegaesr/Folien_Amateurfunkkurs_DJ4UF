@@ -1,0 +1,269 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>
+
+\input{texdata/preamble}
+\subtitle{Technik A08: \\
+            EMV und Sicherheit \\[2em]}
+\date{Stand 25.5.2015}
+\input{texdata/titlepage}
+
+\section*{Störungen}
+
+\begin{frame}
+    \frametitle{Funkwagen von der Bundesnetzagentur}
+    \begin{center}
+		\includegraphics[width=1\textwidth]{a19/FunkwagenBNetz.jpg}\\
+        \tiny \hyperlink{refs}{\cite{wm}} \\[1em]
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Störung}
+    \begin{center}
+	\begin{block}{Verordnung zum Gesetz über den Amateurfunk (Amateurfunkverordnung - AFuV) \\
+§ 16 Technische und betriebliche Rahmenbedingungen für Amateurfunkstellen}
+	   (4) Unerwünschte Aussendungen sind auf das geringst mögliche Maß zu beschränken. Erforderliche Richtwerte für Funkanlagen nach § 1 Abs. 3 Nr. 1 des Gesetzes über Funkanlagen und Telekommunikationsendeinrichtungen vom 31. Januar 2001 werden nach Anhörung der betroffenen Kreise im Amtsblatt der Regulierungsbehörde veröffentlicht.
+	\end{block}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Elektrisches Feld}
+    \begin{center}
+	\begin{block}{Grenzen für Geräte von Funkamateuren}
+		 \begin{tabular}{p{1.7cm}|p{4cm}|p{3cm}}
+  		Frequenz- bereich & Erforderliche Dämpfung unerwünschter Aussendungen gegenüber der maximalen PEP des Senders & Alternativ maximal zulässige Leistung unerwünschter Aussendungen \\ \hline \hline
+  		$150kHz - 1.7MHz$ & $60dB$ & $0.25 \mu W$ \\ \hline
+  		$1.7MHZ - 35MHZ$ & $40dB$ & $0.25 \mu W$ \\ \hline
+  		$35MHZ - 50MHZ$ & $40dB + 129.1 \cdot log \frac{f}{35}dB $ & $0.25 \mu W$ \\ \hline
+  		$50MHZ - 1000MHZ$ & $60dB$ & $0.25 \mu W$ \\ \hline
+  		$1GHZ - 40GHZ$ & $50dB$ & $1 \mu W$
+ \end{tabular}
+	\end{block}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Oberwelle}
+    \begin{center}
+		\includegraphics[width=1\textwidth]{a19/oberwelle.png}\\
+        \tiny von DB4UM mit Audacity \\[1em]
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Oberwelle}
+    \begin{center}
+		\includegraphics[width=0.8\textwidth]{a19/oberwelle.png}\\ [3em] \large
+        Abhilfe bei zu starken Oberwellen schafft ein Tiefpass oder noch besser ein Bandpassfilter.
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Störung - Bandgrenzen}
+    \begin{center}
+	\begin{block}{Senden innerhalb der Bandgrenzen}
+		Beim Funken ist immer auf die Bandgrenzen zu achten. So ist z.B. SSB $3kHz$ breit und oberhalb der eingestellten Frequenz. Ist also bei $14.350MHz$ das Band zu Ende darf dort nur bis $14.347MHz$ gesendet werden bei SSB.
+	\end{block}
+    \end{center}
+\end{frame}
+
+\section*{Störungen}
+
+\begin{frame}
+    \frametitle{EMV Probleme}
+    \begin{center}
+		\includegraphics[width=1\textwidth]{a19/EMI_coupling_modes.png}\\
+        \tiny \hyperlink{refs}{\cite{wm}} \\[1em]
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{EMV}
+    \begin{center}
+	\begin{block}{Einströmungen und Einstrahlungen}
+Einströmung : Elektromagnetische Energie koppelt in die Kabel ein. \\
+Einstrahlung : Elektromagnetische Energie koppelt direkt ins Gerät.
+	\end{block}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{EMV}
+    \begin{center}
+	\begin{block}{Einströmungen und Einstrahlungen}
+		Ist das knacken in den Lautsprechern, wenn das Handy daneben liegt, eine Einströmung oder eine Einstrahlung?
+	\end{block}
+    \end{center}
+\end{frame}
+
+\section*{Beseitigung von Störungen}
+
+\begin{frame}
+    \frametitle{Beseitigung von Störungen}
+    \begin{center}
+		\includegraphics[height=0.87\textheight]{a19/2Filter.jpg}\\
+        \tiny Lautsprecher im Shack von DK0TU \\[1em]
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Beseitigung von Störungen}
+    \begin{center}
+	\begin{block}{Ferrit zum Entstören als Mantelwellendrossel}
+		Mit Klapferriten oder Ferritkernen können Kabel TP-Gefiltert werden und somit von HF-Einstrahlung entstört werden. Sei es Lautsprecherkabel oder Stromversorgung.
+	\end{block}
+	\begin{block}{Abblock-Kondensatoren}
+		Innerhalb der Schaltung neben ICs und anderen Bauteilen die eine stabile Gleichspannung benötigen Abblock-Kondensatoren einbauen.
+	\end{block}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Beseitigung von Störungen}
+    \begin{center}
+	\begin{block}{Metallgehäuse gegen Einstrahlung}
+		Oftmals sind auch innerhalb von HF-Schaltungen Schaltungsteile wie VHF Oszillatoren mit einem extra Metallkasten umgeben um nicht in andere Schaltungsteile einzustrahlen. Das Gehäuse am besten auch noch erden.
+	\end{block}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Beseitigung von Störungen}
+    \begin{center}
+	\begin{block}{TK119}
+	Während einer ATV-Aussendung erscheint das Bild auch auf dem Fernsehgerät der Nachbarn. Eine mögliche Abhilfe der Störung wäre die ... \\[3em]
+	... Verminderung der Ausgangsleistung.
+	\end{block}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{DIN VDE 0100 auch DIN 57100}
+    \begin{center}
+		\includegraphics[height=0.9\textheight]{a19/ElectricWireGrounded.jpg}\\
+        \tiny \hyperlink{refs}{\cite{wm}} \\[1em]
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{DIN VDE 0100 auch DIN 57100}
+    \begin{center} \large
+	\begin{tabular}{c|c|c}
+  		Schutzleiter & Außenleiter & Neutralleiter \\ \hline \hline
+  		Grüngelb & Braun & Blau \\
+ 	\end{tabular}
+    \end{center}
+\end{frame}
+
+\section*{Die Erdung von Antennen}
+
+\begin{frame}
+    \frametitle{Die Erdung von Antennen}
+    \begin{center}
+	\begin{block}{DIN VDE 0855 Teil 300}
+		Antennenanlagen außerhalb von Gebäuden müssen geerdet werden. Dazu müssen sie mit dem Erdungsleiter des Gebäudes Verbunden werden. \\ Als geeigneter Erdungsleiter gilt ein Einzelmassivdraht mit einem Mindestquerschnitt von $16 mm^2$ Kupfer, isoliert oder blank, oder $25 mm^2$ Aluminium isoliert oder $50 mm^2$ Stahl.
+	\end{block}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Erdungsschelle}
+    \begin{center}
+		\includegraphics[height=0.9\textheight]{a19/AntenneErden.jpg}\\
+        \tiny Erdungsschelle \url{http://www.kabel-kusch.de/ERDUNG/erdung.htm} \\[1em]
+    \end{center}
+\end{frame}
+
+\section*{Sendeanlage im KFZ}
+
+\begin{frame}
+    \frametitle{Sendeanlage im KFZ}
+    \begin{center}
+	\begin{block}{TL306}
+		Beim Einbau von Sende und/oder Empfangseinrichtungen sind die Anweisungen des KFZ-Herstellers zu beachten
+	\end{block}
+	\begin{block}{TL307}
+		Das Antennenkabel ist möglichst weit entfernt von der Fahrzeugverkabelung zu führen.
+	\end{block}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Gut zu Wissen}
+    \begin{center}
+	\begin{block}{Nichtanwendbarkeit des Handyverbots nach StVO §23 Abs. 1a auf lizenzierte Funkamateure}
+		Die StVO §23 Abs. 1a (Verbot der Handybenutzung während der Fahrt ohne Freisprecheinrichtung) bezieht sich nur auf Mobilfunkbenutzer und auf öffentliche Netze. Gemäß aktuellen deutschen Telekommunikationsgesetzen zählen Benutzer von Betriebsfunksystemen wie auch Funkamateure nicht zu diesem Personenkreis. Die StVO §23 Abs. 1a ist somit nicht auf Amateurfunkgeräte anwendbar.
+	\end{block}
+    \end{center}
+\end{frame}
+
+\section*{Personenschutz}
+
+\begin{frame}
+    \frametitle{Sicherheitsabstand}
+    \begin{center}
+	\begin{block}{Sicherheitsabstand zu Antennen in $m$}   
+		$$d = \frac{\sqrt{30\Omega \cdot P_{EIRP}}}{E}$$ \\[3em]     \begin{center}
+		$E$ nach ICNIRP DIN VDE 0848 \\[1em]
+	\begin{tabular}{c|c}
+  		Frequenz & $E$ \\ \hline \hline
+  		unter $10MHz$ & $E = 87 / \sqrt{f_{MHz}}$ \\ \hline
+  		$10MHz - 400 MHz$ & $E = 27.5$ \\ \hline
+  		$400MHz - 2GHz$ & $E = 1.375 \cdot \sqrt{f_{MHz}}$ \\ \hline
+  		über $2GHz$ & $E = 61$ 
+ 	\end{tabular} \end{center}
+	\end{block}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Sicherheitsabstand}
+    \begin{center}
+	\begin{block}{Reduzierungsfaktor}   
+    \begin{center}
+	\begin{tabular}{c|c}
+  		Betriebsart & Faktor \\ \hline \hline
+  		SSB & $1:6 = 0.167$ \\ \hline
+  		CW & $1:4 = 0.25$ \\ \hline
+  		FM & $1$ \\ \hline
+  		Digimodes & $1$ 
+ 	\end{tabular} \end{center}
+	\end{block}
+    \end{center}
+\end{frame}
+
+\section*{Große Station}
+
+\begin{frame}
+    \frametitle{Blockschaltbild}
+    \begin{center}
+		\includegraphics[height=0.9\textheight]{a19/BsB.png}\\
+        \tiny Tromelin DX \url{https://twitter.com/DX_World/status/527936113197858817?s=03}
+    \end{center}
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{darc}  DARC Online-Lehrgang Lektion A19:
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a19/}
+    \bibitem{wm} 	Wikimedia:
+                    \url{https://commons.wikimedia.org/wiki/File:Regtp_Antennenwagen.jpg}
+                    \url{https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/EMI_coupling_modes.svg/1024px-EMI_coupling_modes.svg.png}
+                    \url{https://commons.wikimedia.org/wiki/File:ElectricWireGrounded.jpg}
+    \bibitem{beam}  Youtube:
+                    \url{https://www.youtube.com/watch?v=yLpVnguqwLY}
+    \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
+                    \url{https://de.wikipedia.org/wiki/Elektrisches_Feld}
+	\bibitem{bna}   Fragenkatalog Bundesnetzargentur Technik Klasse A:                   
+                    \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
+\end{thebibliography} 
+
+\input{texdata/postamble}

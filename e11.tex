@@ -1,0 +1,318 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Felix Baum <baum@campus.tu-berlin.de>
+
+\input{texdata/preamble}
+\subtitle{Technik 11: \\
+           Antennentechnik \\[2em]}
+\date{Stand 30.11.2014}
+\input{texdata/titlepage}
+
+%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
+
+\section*{Einleitung}
+
+\begin{frame}
+    \frametitle{Antenne}
+      \begin{center}
+        \includegraphics[width=.5\textwidth]{e11/Traqueur_acquisition.JPG}
+        \footnote{\tiny \url{https://upload.wikimedia.org/wikipedia/commons/3/32/Traqueur_acquisition.JPG}}
+    \end{center}
+\end{frame}
+  
+
+\begin{frame}
+    \frametitle{Allgemeines}
+	\begin{itemize}
+		\item Jeder ungeschirmte Draht ist eine Antenne
+        \item Grundsätzlich sind Sende und Emfangsantennen ähnlich
+        \item Alle guten KW Sendeantennen sind auch gute Emfangsantennen
+       	\item Umgekehrt nicht immer der Fall (z.B. Ferritantenne)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Vorstellung}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{e11/dipol_entstehung.png}
+        \footnote{\tiny by DB4UM}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{E- und H-Feld}
+    \begin{center}
+        \includegraphics[width=0.85\textwidth]{e11/Felder_um_Dipol.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Felder_um_Dipol.jpg}}
+	\end{center}
+\end{frame}
+
+
+\section*{Dipol}
+
+\begin{frame}
+    \frametitle{Strom und Spannungsverteilung}
+	\begin{itemize}
+		\item Stahlerlänge $\lambda / 2$
+		\item Stromknoten und Spannungsbauch an den Enden (Unendlich großer Widerstand)
+        \item Spannungsknoten und Strombauch in der Mitte (fast $0 \Omega$ Widerstand)
+    \end{itemize}
+    \begin{center}
+        \includegraphics[width=0.85\textwidth]{e11/DipolUI.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Lineare_antennen.svg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Fußpunktwiderstand}
+    \begin{center}
+	\begin{itemize}
+		\item Fußpunktwiderstand/Impedanz/Speisewiderstand
+		\item Beim Dipol im Freien Raum: $70 \Omega$
+		\item je nach Dipolhöhe zwischen $40  \Omega$ und $80  \Omega$
+		\item  Bei $0.15 \lambda$ Höhe $50  \Omega$ Speisewiderstand 
+    \end{itemize}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage}
+
+    \begin{center}
+    \begin{tabular}{l||l}\hline
+        TH206 & Ein Halbwellendipol wird auf der  \\
+         " "  & Grundfrequenz in der Mitte \\ \hline\hline
+         A & spannungsgespeist.\\\hline
+         B & stromgespeist. \\\hline
+         C & endgespeist. \\ \hline
+         D & parallel gespeist.\\\hline
+    \end{tabular}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage}
+
+    \begin{center}
+    \begin{tabular}{l||l}\hline
+        TH206 & Ein Halbwellendipol wird auf der  \\
+         " "  & Grundfrequenz in der Mitte \\ \hline\hline
+         " " & spannungsgespeist.\\\hline
+         X & stromgespeist. \\\hline
+         " " & endgespeist. \\ \hline
+         " " & parallel gespeist.\\\hline
+    \end{tabular}
+        \includegraphics[width=0.85\textwidth]{e11/DipolUI.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Lineare_antennen.svg}}
+ 	\end{center}
+\end{frame}
+    
+\begin{frame}
+    \frametitle{$\lambda / 2$ Dipol berechnen}
+    \begin{center}
+	\begin{itemize}
+		\item Aufgabe:
+		\item Theoretische Strahlerlänge eines $\lambda / 2$ Dipols für 7MHz berechnen
+		\item Warum in der Praxis Verkürzungsfaktor?
+    \end{itemize}
+        \includegraphics[width=0.75\textwidth]{e11/Dipole_Antenna.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Dipole_Antenna.svg}}
+ 	\end{center}
+\end{frame}
+
+\section*{Richtdiagramm}
+
+\begin{frame}
+    \frametitle{Richtdiagramm Dipol}
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{e11/Richt-Dipol.png}
+        \footnote{\tiny DB4UM Programm: cocoaNec 2.0}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Richtdiagramm Yagi}
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{e11/yagi_gain.png}
+        \footnote{\tiny DK0TU 10m Yagi 28.2 MHz von DL2JAS Programm: EZNEC}
+	\end{center}
+\end{frame}
+
+\section*{Gewinn}
+
+\begin{frame}
+    \frametitle{EIRP und ERP}
+    \begin{itemize}
+    	\item ERP
+		    \begin{itemize}
+				\item Effektive Radiated Power
+       		 	\item Bezug auf Dipol
+       		 	\item $P_{ERP} = G_{Dipol} \cdot (P_{Sender} - P_{Verlust})$
+ 		   	\end{itemize}
+		\item EIRP
+		    \begin{itemize}
+				\item Effektive Isotropic Radiated Power
+       		 	\item Bezug auf Isotropstrahler
+       		 	\item $dB_{ERP} = 2.15 + dB_{EIRP}$
+       		 	\item $P_{EIRP} = 1.64 \cdot P_{ERP}$
+ 		   	\end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Isotropstrahler}
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{e11/Spherical_wave2.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Spherical_wave2.gif}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage}
+
+    \begin{center}
+    \begin{tabular}{l||l}\hline
+        TL205 & Ein Sender mit 5 Watt Ausgangsleistung ist über\\
+        " "  & eine Antennenleitung, die 2 dB Kabelverluste hat,\\
+        " "  & an eine Antenne mit 5 dB Gewinn (auf Dipol\\
+        " "  & bezogen) angeschlossen. Welche EIRP wird von \\
+        " "  &  der Antenne maximal abgestrahlt?\\\hline\hline
+         A 	  & 32,8 Watt \\\hline
+         B 	  & 10,0 Watt \\\hline
+         C	  & 6,1 Watt \\\hline
+         D 	  & 16,4 Watt\\\hline
+    \end{tabular}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage}
+
+    \begin{center}
+    \begin{tabular}{l||l}\hline
+        TL205 & Ein Sender mit 5 Watt Ausgangsleistung ist über\\
+        " "  & eine Antennenleitung, die 2 dB Kabelverluste hat,\\
+        " "  & an eine Antenne mit 5 dB Gewinn (auf Dipol\\
+        " "  & bezogen) angeschlossen. Welche EIRP wird von \\
+        " "  &  der Antenne maximal abgestrahlt?\\\hline\hline
+         " " 	  & 32,8 Watt \\\hline
+         " " 	  & 10,0 Watt \\\hline
+         " "	  & 6,1 Watt \\\hline
+         X 	  & 16,4 Watt\\\hline
+    \end{tabular}
+ 	\end{center}
+\end{frame}
+
+\section*{Multiband}
+
+\begin{frame}
+    \frametitle{Multiband Dipol}
+    \begin{center}
+        \includegraphics[width=0.9\textwidth]{e11/Multiband.jpg}
+        \footnote{\tiny Antenne EA-1015204080 von EAntenna}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{G5RV}
+    \begin{center}
+        \includegraphics[width=0.9\textwidth]{e11/G5RV_Antenna.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:G5RV_Antenna.svg}}
+	\end{center}
+\end{frame}
+
+\section*{Endgespeist}
+
+\begin{frame}
+    \frametitle{Fuchskreis}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{e11/1000px-Endgespeiste_Antenne.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Endgespeiste_Antenne.svg}}
+	\end{center}
+\end{frame}
+
+\section*{Yagi-Uda}
+
+\begin{frame}
+    \frametitle{Yagi-Uda}
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{e11/Yagi_3_element.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Yagi_3_element.svg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Yagi - Richtung erkennen}
+    \begin{center}
+        \includegraphics[width=.9\textwidth]{e11/yagi.jpg}
+        \footnote{\tiny 10M Yagi bei DK0TU von DK9GD}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Richtdiagramm Yagi}
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{e11/yagi_gain.png}
+        \footnote{\tiny DK0TU 10m Yagi 28.1 MHz von DL2JAS Programm: EZNEC}
+	\end{center}
+\end{frame}
+
+\section*{Groundplane}
+
+\begin{frame}
+    \frametitle{Groundplane}
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{e11/GP-DB4UM.png}
+        \footnote{\tiny DB4UM mit cocoaNec 2.0}
+	\end{center}
+\end{frame}
+
+\section*{Magnetic Loop}
+
+\begin{frame}
+    \frametitle{Magnetic Loop}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{e11/Magloop.jpg}
+        \footnote{\tiny Magloop bei DK0TU von DB4UM}
+	\end{center}
+\end{frame}
+
+\section*{Polarisierung}
+
+\begin{frame}
+    \frametitle{Polarisierung}
+    	\begin{itemize}
+		\item Welche Antennen sind Vertikal, welche Horizontal Polarisiert?
+		\item Wie ist die Antenne unten polarisiert?
+    \end{itemize}
+    \begin{center}
+        \includegraphics[width=.4\textwidth]{e11/kreutzYagi.jpg}
+        \footnote{\tiny DK0TU Fildday 2014 von DL7BUR}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Welche Antenne ist was?}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{e11/Abstrahl.png}
+        \footnote{\tiny Bnetz-A Katalog Klasse E Prüfungsfrage TH202 }
+	\end{center}
+\end{frame}
+
+
+\section*{Referenzen}
+
+\begin{frame}
+    \frametitle{Referenzen/Links}
+    
+    \footnotesize
+    \begin{itemize}
+        \item Moltrecht E 09: \\
+              \url{http://www.dj4uf.de/lehrg/e11/e11.html}
+        \item Strahlungsdiagramm (Youtube): \\
+              \url{https://www.youtube.com/watch?v=gBqqp7rnZ64}
+    \end{itemize}
+
+\end{frame}
+
+\input{texdata/postamble}

@@ -1,0 +1,320 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Martin Deutschmann
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse A 04: \\
+          Schwingkreise \& Filter \\[2em]}
+\date{Stand \today}
+\input{texdata/titlepage}
+
+%fixme Links zur bibliography einfuegen
+
+\section*{Schwingungsvorgang}
+\begin{frame}
+\frametitle{Schwingkreise}
+	\begin{center}
+		\includegraphics[scale=0.4]{a04/Schwingkreis_reihe.png}
+		\includegraphics[scale=0.4]{a04/Schwingkreis_parallel.png}\\
+		Abb.1: Serien- \& Paralellschwingkreise
+	\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Schwingungserzeugung}
+\begin{center}
+	\includegraphics[scale=0.35]{a04/Schwingkreis.png}\\
+	Abb.2: Energie in einem LC-Schwingkreis \cite{wmde} \\
+	\vspace{3mm}
+	\begin{itemize}
+		\item durch Verluste kommt es zur gedämpfte Schwingung\\
+		\item animierte Darstellung (\url{http://en.wikipedia.org/wiki/File:Tuned_circuit_animation_3.gif})
+	\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resonanzfrequenz}
+	\begin{itemize}
+		\item Wir benötigen die Blindwiderstände $X_C$ und $X_L$
+	\end{itemize}
+
+	\begin{LARGE}
+		$X_C = \frac{1}{j \omega C}$ 
+		\hspace{3cm}
+		$X_L = j \omega L$ \\
+		\vspace{1cm}
+		$X_C = \frac{j}{j^2 \omega C}$ \\
+		\vspace{1cm}
+		$X_C = \frac{-j}{\omega C}$ \\
+	\end{LARGE}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resonanzfrequenz}
+\begin{itemize}
+	\item Für Resonanz muss gelten $X_L = X_C$
+\end{itemize}
+\begin{LARGE}
+\begin{center}
+	$j \omega L = \frac{-j}{\omega C}$
+\end{center}
+\end{LARGE}
+\begin{itemize}
+	\item Nun stellen wir nach $\omega$ um
+\end{itemize}
+\begin{LARGE}
+\begin{center}
+	$\omega^2 = \frac{-j}{j L C}$
+\end{center}
+\end{LARGE}
+\begin{itemize}
+	\item	Nun lösen wir noch das Quadrat auf und mult mit $\frac{j}{j}$
+\end{itemize}
+\begin{LARGE}
+\begin{center}
+	$\omega = \frac{-1}{1 \cdot \sqrt{L C}}$
+\end{center}
+\end{LARGE}
+\begin{itemize}
+	\item	Nachdem wir $\omega$ durch $2 \pi f$ ersetzt und durch $2 \pi$ geteilt haben, erhalten wir die entgültige Form:
+\end{itemize}
+\begin{center}
+	\LARGE{$ |f_{res}| = \frac{1}{2 \pi \sqrt{L C}} $}
+\end{center}
+\end{frame}
+
+\section*{Reihenschwingkreis}
+\begin{frame}
+\frametitle{Reihenschwingkreis}
+\begin{center}
+	\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=0.8]{a04/Serirenschw.png}\\
+	\tiny{Abb.3: Serienschwingkreis \cite{wmen}}
+	\end{minipage}
+	\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=0.2]{a04/SerirenschwSig.png}\\
+	\tiny{Abb.4: Resonanzwiderstand \cite{wmen}} 
+	\end{minipage}
+\end{center}
+\begin{itemize}
+	\item Im Verlauf der Frequenzänderung ändert sich der Gesamtwellenwiderstand Z des Schwingkreises
+	\item Der Schwingkreis hat als minimale Impedanz seinen ohmschen Wert, da sich bei der Resonanzfrequenz $f_R$ die induktiven und kapazitiven Anteile gegenseitig aufheben
+\end{itemize}
+\end{frame}
+
+\section*{Parallelschwingkreis}
+\begin{frame}
+\frametitle{Parallelschwingkreis}
+\begin{center}
+	\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=1]{a04/Parallelschw.png}\\
+	\tiny{Abb.5: Parallelschwingkreis \cite{wmen}}
+	\end{minipage}
+	\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=0.2]{a04/ParallelschwSig.png}\\
+	\tiny{Abb.6: Resonanzwiderstand \cite{wmen}} 
+	\end{minipage}
+\end{center}
+\begin{itemize}
+	\item Der Parallelschwingkreis verhält sich genau entgegen gesetzt zum Reihenschwingkreis
+	\item Dieser zeigt bei niedrigen und hohen Frequenzen das Verhalten eines Leiters
+	\item Bei der Resonanzfrequenz hingegen steigt der Wellenwiderstand an, da hier nur noch der ohmsche Widerstand wirkt
+\end{itemize}
+\end{frame}
+
+\section*{Bandreite}
+\begin{frame}
+\frametitle{Bandbreite}
+\begin{center}
+	\includegraphics[scale=0.3]{a04/bandwidth.png}\\
+	\tiny{Abb.7: Bandweite \cite{wmen}}
+\end{center}
+\end{frame}
+
+\section*{Die Güte}
+
+\begin{frame}
+\frametitle{Die Güte}
+\begin{itemize}
+	\item Bandbreite hängt von der Güte des Schwingkreises ab
+	\item Güte hängt von der Widerstand der Spule $X_L$ ab
+	\item	Kondensatorverluste sind bei niedrigen und mittleren Frequenzen vernachlässigbar klein
+\end{itemize}
+\vspace{3mm}
+\begin{itemize}
+	\item	Für den Reihenschwingkreis gilt:
+\end{itemize}
+\begin{Large}
+	\begin{center}
+		$Q = \frac{X_L}{R_S}$
+	\end{center}
+\end{Large}
+\begin{itemize}
+	\item	Für den Parallelschwingkreis gilt:
+\end{itemize}
+\begin{Large}
+	\begin{center}
+		$Q = \frac{R_P}{X_L}$
+	\end{center}
+\end{Large}
+\begin{itemize}
+	\item	Kennt man die Güte und die Resonanzfrequenzg $f_0$ eines Schwingkreises, so lässt sich die Bandbreite bestimmen:
+\end{itemize}
+\begin{Large}
+	\begin{center}
+		$B = \frac{f_0}{Q}$
+	\end{center}
+\end{Large}
+\end{frame}
+
+\section*{Der Quartz als Schwingkreis}
+\begin{frame}
+\frametitle{Der Quartz als Schwingkreis}
+\begin{center}
+	\includegraphics[scale=0.3]{a04/Quartz.jpg}\\
+	Abb.8: Verschiedene Bauformen von Quartzen
+\end{center}
+\begin{itemize}
+	\item	Besteht aus reinem Siliziumdioxid und wird aus einem Quarzkristall als dünnes Plätchen herausgeschnitten
+	\item	Verhalten ist du den umgekehrten piezoelektrischen Effekt gekennzeichnet
+	\item	Ist ein Schwingkreis von hoher Güte
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{ESB eines Quartzes}
+\begin{center}
+	\includegraphics[scale=0.3]{a04/Quartz-ESB.png}\\
+	Abb.9: ESB eines Quartzes \cite{wpde}
+\end{center}
+\begin{itemize}
+	\item	Für den Serienschwingkreis gilt:
+\end{itemize}
+\begin{Large}
+	\begin{center}
+		$f_S = \frac{1}{2 \pi \sqrt{L C_{s}}}$
+	\end{center}
+\end{Large}
+\begin{itemize}
+	\item	Für den Parallelschwingkreis gilt:
+\end{itemize}
+\begin{Large}
+	\begin{center}
+		$f_P = \frac{1}{2 \pi \sqrt{L C_{ges}}}$
+	\end{center}
+\end{Large}
+\end{frame}
+
+\section*{Tiefpass}
+\begin{frame}
+\frametitle{Tiefpass}
+\begin{center}
+	\includegraphics[scale=1.2]{a04/LC-Tiefpass.png}\\
+	Abb.10: LC-Tiefpass
+\end{center}
+\begin{itemize}
+	\item Bei steigender Frequenz sinkt der Blindwiderstand $X_L$ und der Blindwiderstand $X_C$ steigt
+	\item Bei sinkender Frequenz hingegen steigt $X_L$ und $X_C$ sinkt
+	\item Dadurch werden nur niedrige Frequenzen durchgelassen 
+\end{itemize}
+\end{frame}
+
+\section*{Hochpass}
+\begin{frame}
+\frametitle{Hochpass}
+\begin{center}
+	\includegraphics[scale=1.2]{a04/LC-Hochpass.png}\\
+	Abb.11: LC-Hochpass
+\end{center}
+\begin{itemize}
+	\item Bei steigender Frequenz steigt der Blindwiderstand $X_L$ und der Blindwiderstand $X_C$ sinkt
+	\item Bei sinkender Frequenz hingegen sinkt $X_L$ und $X_C$ steigt
+	\item Dadurch werden nur hohe Frequenzen durchgelassen 
+\end{itemize}
+\end{frame}
+
+\section*{Der Bandpass}
+\begin{frame}
+\frametitle{Der Bandpass}
+\begin{center}
+	\includegraphics[scale=0.5]{a04/BandpassSpulen.png}\\
+	Abb.12: Bandpass aus induktiv gekoppelten Schwingkreisen \cite{wpde}
+\end{center}
+\begin{itemize}
+	\item	Mehrere Parallelschwingkreise können zu Bandpässen gekoppelt werden
+	\item	Je nachdem wie fest/ lose die Schwingkreise gekoppelt sind, ändert sich die Bandbreite des Bandpasses
+\end{itemize}
+\end{frame}
+
+\section*{Resonanztranzformation}
+\begin{frame}
+\frametitle{Resonanztransformation}
+\begin{center}
+	\includegraphics[scale=0.2]{a04/Pi-Filter.png}\\
+	Abb.13: Pi- oder auch Collinsfilter \cite{wpde}
+\end{center}
+\begin{itemize}
+	\item	Schwingkreise in Resonanz eignen sich gut zum Anpassen von Impedanzen
+	\item	Nicht die Induktivität, sondern die Kapazitäten sind für die Anpassung verantwortlich
+	\item	Oft werden Drehkondensatoren benutzt, um stufenlos anpassen zu können
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{ein kleines Beispiel}
+\begin{itemize}
+	\item	$R_2$ sei der Ausgangswiderstand
+	\item	Es soll gelten Eingangsleistung $P_1$ gleich Ausgangsleistung $P_2$
+\end{itemize}
+\begin{Large}
+	\begin{center}
+		$P_1 = P_2 \rightarrow \frac{U^2_1}{R_1} = \frac{U^2_2}{R_2} \rightarrow \frac{U_1}{U_2} = \sqrt{\frac{R_1}{R_2}} $
+	\end{center}
+\end{Large}
+\begin{itemize}
+	\item	Außerdem verhalten sich im abgestimmten Schwingkreis die Spannungen wie die Wechselstromwiderstände
+\end{itemize}
+\begin{Large}
+	\begin{center}
+		$\frac{U_1}{U_2} = \frac{X_{C1}}{X_{C2}} = \sqrt{\frac{R_1}{R_2}} \rightarrow \frac{C_2}{C_1} = \sqrt{\frac{R_1}{R_2}}$
+	\end{center}
+\end{Large}
+\begin{itemize}
+	\item	Kapazitäten verhalten sich umgekehrt proportional zu den zu transformierenden Widerständen
+\end{itemize}
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{a04}   Moltrecht A 04: \\
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a04/}
+    
+    \bibitem{wpde}    Wikipedia DE: \\
+                    \url{http://de.wikipedia.org/wiki/lektrische_Energie#Elektrische_Energie_in_einem_elektrischen_Feld}\\ 
+                    \url{http://de.wikipedia.org/wiki/Datei:Verschiedene_Schwingquarze.jpg}\\
+                    \url{http://de.wikipedia.org/wiki/Datei:Schwingquarz-Ersatzschaltbild.png}\\
+                    \url{http://de.wikipedia.org/wiki/Datei:BandpassSpulen.png}\\
+    				\url{http://de.wikipedia.org/wiki/Datei:ResoTrafo_3.svg}\\
+    				
+    \bibitem{wpen}	Wikipedia EN:\\
+    				\url{http://en.wikipedia.org/wiki/File:Tuned_circuit_animation_3.gif}\\
+    				
+    \bibitem{wmde}	Wikimedia DE:\\
+    				\url{http://commons.wikimedia.org/wiki/File:LC_circuit_4_times_new_version.svg?uselang=de}\\
+   \vspace{1cm}
+   \bibitem{wmen}	Wikimedia EN:\\
+   					\url{http://commons.wikimedia.org/wiki/File:RLC_series_circuit_v1.svg}\\
+   					\url{http://commons.wikimedia.org/wiki/File:Resonanzwiderstand_serie.svg}\\
+   					\url{http://commons.wikimedia.org/wiki/File:KondiSpuleWiderstandParallel.svg}\\
+   					\url{http://commons.wikimedia.org/wiki/File:Resonanzwiderstand_parallel.svg}\\
+   				  					
+\end{thebibliography} 
+
+\input{texdata/postamble}

@@ -1,0 +1,351 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>
+
+\input{texdata/preamble}
+\subtitle{Technik A05: \\
+           Die Diode und ihre Anwendungen \\[2em]}
+\date{Stand 4.5.2015}
+\input{texdata/titlepage}
+
+%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
+
+\section*{Wiederholung}
+
+\begin{frame}
+    \frametitle{Halbleiter}
+      	\begin{itemize}
+			\item Was ist ein Halbleiter? (Erinnern aus alter Technik)
+			\item Wann leitet eine Siliziumdiode?
+			\item Wann leitet eine Germaniumdiode?
+			\item Was bedeutet p-Dotiert?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Leitet die Siliziumdiode?}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{a05/Leit_Diode.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Diode RLZ}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{a05/diode_with_electrical_symbol.png}
+        \tiny \hyperlink{refs}{\cite{wm}} \\[3em]
+     \large Wie, Wo und Warum bildet sich eine Raumladungszone in der pn-Diode aus?
+     \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Leitet die Siliziumdiode?}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{a05/Pn_Junction_Diffusion_and_Drift.pdf}\\
+     \emph{Durch Ausgleichsbewegungen (Diffusionsstrom) zwischen dem p- und dem n-Gebiet wird die RLZ gebildet.\\
+     		Dort gibt es keine frei beweglichen Ladungsträger mehr.}\
+     \end{center}
+\end{frame}
+  
+\section*{Verschiedene Spezialdioden}
+
+\begin{frame}
+    \frametitle{Schottky-Diode}
+    \begin{columns}[c]
+        \column[c]{5cm}
+        \begin{center}
+            \includegraphics[width=1\textwidth]{a05/Diode-Schottky-EN_A-K.png}\\
+            \includegraphics[width=0.8\textwidth]{a05/AusfuerungsformenSchottkyDiode.png}
+            \tiny \hyperlink{refs}{\cite{wm}}
+        \end{center}
+        \column{5cm}
+    \begin{itemize}
+			\item Sehr gut geeignet für HF-Schaltungen
+			\item Raumladungszone baut sich schneller auf und ab
+			\item RLZ zwischen Metall und N-gebiet
+			\item Geringe Durchlassspannung ($0.25V$)
+    \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Kapazitätsdiode}
+        \begin{columns}[c]
+        \column[c]{5cm}
+        \begin{center}
+            \includegraphics[width=1\textwidth]{a05/Varicap_symbol.png}\\
+            \includegraphics[width=0.73\textwidth]{a05/Varactor_function.png}
+            \tiny \hyperlink{refs}{\cite{wm}}
+        \end{center}
+        \column{5cm}
+    \begin{itemize}
+			\item auch Varicap, Varaktor oder Abstimmdiode
+			\item Kapazität sinkt mit steigender Spannung
+			\item in fast allen VCOs verbaut
+    \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Z-Diode}
+	\begin{columns}[c]
+        \column[c]{5cm}
+        \begin{center}
+        \includegraphics[width=.8\textwidth]{a05/z-diode.png}
+        \end{center}
+        \column{5cm}
+    \begin{itemize}
+			\item Meist zur Spannungsstabilisierung
+			\item Einbau in Sperrichtung
+			\item Zur Sicherheit immer mit Vorwiderstand einbauen
+    \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Z-Diode}
+    \begin{center}
+        \includegraphics[width=.7\textwidth]{a05/Kennlinie_Z-Diode.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Kennlinie_Z-Diode.svg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage TC517}
+    \begin{center}
+            \includegraphics[width=1\textwidth]{a05/TC517.png}\\
+            \tiny \hyperlink{refs}{\cite{bna}} \\[1em] \large
+	Der Strom durch die Z-Diode soll $25 mA$ betragen und der Laststrom ist $20 mA$.\\ Wie groß muss der Vorwiderstand gewählt werden?
+        \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Fotodiode}
+    \begin{columns}[c]
+        \column[c]{5cm}
+        \begin{center}
+            \includegraphics[width=1\textwidth]{a05/Symbol_Photodiode.png}\\
+            \includegraphics[width=0.8\textwidth]{a05/Fotodio.jpg}
+            \tiny \hyperlink{refs}{\cite{wm}}
+        \end{center}
+        \column{5cm}
+    \begin{itemize}
+			\item Ändert Widerstand abhängig von Lichteinfall 
+			\item Wird z.B. als Helligkeitssensor verwendet
+    \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Solarzelle}
+        \begin{center}
+            \includegraphics[width=1\textwidth]{a05/Solarzelle_Funktionsprinzip2.png}\\
+            \tiny \hyperlink{refs}{\cite{wm}}
+        \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Kennlinie Solar + Fotodiode}
+        \begin{center}
+            \includegraphics[width=1\textwidth]{a05/Kennlinie_Photodiode_1.png}\\
+            \tiny \hyperlink{refs}{\cite{wm}}
+        \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Leuchtdiode (LED)}
+    \begin{columns}[c]
+        \column[c]{5cm}
+        \begin{center}
+            \includegraphics[width=1\textwidth]{a05/Symbol_LED.png}\\
+            \includegraphics[width=0.8\textwidth]{a05/Verschiedene_LEDs.jpg}
+            \tiny \hyperlink{refs}{\cite{wm}}
+        \end{center}
+        \column{5cm}
+    \begin{itemize}
+			\item Leuchtet wenn in Durchlassrichtung betrieben
+			\item Betriebsspannung je nach LED-Farbe von etwa $1.5V$ - $3.2V$
+    \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Optokoppler}
+    \begin{columns}[c]
+        \column[c]{5cm}
+        \begin{center}
+            \includegraphics[width=1\textwidth]{a05/Optokoppler_Aus.png}\\
+            \includegraphics[width=1\textwidth]{a05/Optokoppler_An.png}
+            \tiny \hyperlink{refs}{\cite{wm}}
+        \end{center}
+        \column{5cm}
+    \begin{itemize}
+			\item LED und Photodiode in einem Bauelement
+			\item Galvanische Trennung von 2 Schaltkreisen
+			\item Probleme bei Hochfrequenzschaltungen
+    \end{itemize}
+    \end{columns}
+\end{frame}
+
+\section*{Anwendungen der Diode}
+
+\begin{frame}
+    \frametitle{Spannungsbegrenzung}
+    \begin{columns}[c]
+        \column[c]{5cm}
+        \begin{center}
+            \includegraphics[width=1\textwidth]{a05/spannungsBegrenz.png}\\
+            \tiny \hyperlink{refs}{\cite{wm}}
+        \end{center}
+        \column{5cm}
+    \begin{itemize}
+			\item Schneidet Signale überhalb und unterhalb der Durchlassspannung ab
+			\item Gut als Überspannungsschutz
+    \end{itemize}
+    \end{columns}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Entkopplung - Prüfungsfrage TC527}
+    \begin{columns}[c]
+        \column[c]{5cm}
+        \begin{center}
+            \includegraphics[width=1\textwidth]{a05/TC527.png}\\
+            \tiny \hyperlink{refs}{\cite{bna}}
+    \end{center}
+    \column{5cm}
+	Der Sonnenkollektor liefert $U_1 = 14.9V$. \\Der Akkumulator hat $U_2 = 13.9V$. \\Das Netzteil ist auf $U_3 = 13.5V$ eingestellt. \\
+	Welche Dioden Leiten und welche nicht
+    \end{columns}
+\end{frame}
+
+\section*{Gleichrichter}
+
+\begin{frame}
+    \frametitle{Gleichrichter}
+    \begin{columns}[c]
+        \column[c]{5cm}
+        \begin{center}
+            \includegraphics[width=1\textwidth]{a05/Brueckengleichrichter_Bilder.jpg}\\
+            \tiny \hyperlink{refs}{\cite{wm}}
+        \end{center}
+        \column{5cm}
+    \begin{itemize}
+			\item Gleichrichter machen aus Wechselspannung Gleichspannung
+			\item Mithilfe von Dioden wird die obere und untere Halbwelle getrennt
+			\item Ohne Dioden sehr schwierig
+    \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Einweggleichrichtung}
+    \begin{center}
+    	\includegraphics[width=1\textwidth]{a05/Halfwave_rectifier.png}\\
+        \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+        \begin{itemize}
+			\item Nur obere Halbwelle, also sehr hohe Verluste
+			\item Einfach aufzubauen
+			\item Wäre mit Kondensator ein AM-Hüllkurvendemodulator
+    	\end{itemize}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Vollweggleichrichtung}
+    \begin{center}
+    	\includegraphics[width=1\textwidth]{a05/Fullwave_rectifier.png}\\
+        \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+        \begin{itemize}
+			\item Obere und untere Halbwelle, also deutlich weniger Verluste
+			\item Schwieriger aufzubauen
+			\item Verdoppelt Frequenz
+			\item \huge Benötigt Transformator mit Mittelpunktanzapfung
+    	\end{itemize}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Brückengleichrichtung}
+    \begin{center}
+    	\includegraphics[width=1\textwidth]{a05/Gratz_rectifier.png}\\
+        \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+        \begin{itemize}
+			\item Obere und untere Halbwelle, also deutlich weniger Verluste
+			\item Schwieriger aufzubauen
+			\item Verdoppelt Frequenz
+			\item Benötigt 4 Dioden
+    	\end{itemize}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Siebung}
+    \begin{columns}[c]
+        \column[c]{5cm}
+        \begin{center}
+            \includegraphics[width=1\textwidth]{a05/Smoothed_ripple.png}\\
+            \tiny \hyperlink{refs}{\cite{wm}}
+        \end{center}
+        \column{5cm}
+    \begin{itemize}
+			\item Glättung durch Tiefpass hinter dem Gleichrichter
+			\item Durch verdoppelte Frequenz noch einfacher umzusetzen
+			\item LC-TP oder RC-TP nutzbar
+			\item In der Realität oft Elektrolytkondensatoren mit mehreren $mF$
+    \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Gleichspannungsrückgewinnung}
+    \begin{center}
+    	\includegraphics[width=1\textwidth]{a05/Positive_Voltage_Clamping_Circuit.png}\\
+        \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+        \begin{itemize}
+			\item Wird benutzt um das Signal anzuheben
+			\item Wird z.B. bei Verstärkerschaltungen benötigt
+    	\end{itemize}
+ 	\end{center}
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{darc}  DARC Online-Lehrgang Lektion A05:
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a05/}
+    \bibitem{wm} 	Wikimedia:
+                    \url{https://en.wikipedia.org/wiki/File:PN_diode_with_electrical_symbol.svg}
+                    \url{https://commons.wikimedia.org/wiki/File:Pn_Junction_Diffusion_and_Drift.svg}
+                    \url{http://commons.wikimedia.org/wiki/File:AusfuerungsformenSchottkyDiode.png}
+                    \url{http://de.wikipedia.org/wiki/Datei:Diode-Schottky-EN_A-K.svg}
+                    \url{http://commons.wikimedia.org/wiki/File:Varicap_symbol.svg}
+                    \url{http://commons.wikimedia.org/wiki/File:Varactor_function.svg}
+                    \url{http://commons.wikimedia.org/wiki/File:Solarzelle_Funktionsprinzip2.svg}
+                    \url{https://commons.wikimedia.org/wiki/File:Kennlinie_Photodiode_1.png}
+                    \url{https://commons.wikimedia.org/wiki/File:Verschiedene_LEDs.jpg}
+                    \url{http://commons.wikimedia.org/wiki/File:Optokoppler.gif}
+                    \url{https://commons.wikimedia.org/wiki/File:Brueckengleichrichter_IMGP5380.jpg}
+                    \url{https://de.wikipedia.org/wiki/Datei:Halfwave.rectifier.en.svg}
+                    \url{https://commons.wikimedia.org/wiki/File:Gratz.rectifier.en.svg}
+                    \url{https://commons.wikimedia.org/wiki/File:Smoothed_ripple.svg}
+                    \url{https://en.wikipedia.org/wiki/File:Positive_Voltage_Clamping_Circuit.svg}
+                    \url{}
+                    \url{}
+    \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
+                    \url{https://de.wikipedia.org/wiki/Gleichrichter}
+	\bibitem{bna}   Fragenkatalog Bundesnetzargentur Technik Klasse A:                   
+                    \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
+    \bibitem{fi}    Freie Inhalte (DK0TU):
+                    \url{http://www.dk0tu.de/Projekte/Freie_Inhalte/}
+     \bibitem{yu}    Youtube Video:                   
+                    \url{https://www.youtube.com/watch?v=IcrBqCFLHIY}
+\end{thebibliography} 
+
+\input{texdata/postamble}
