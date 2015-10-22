@@ -1,0 +1,7 @@
+*.aux
+*.log
+*.out
+*.toc
+/Kurse/AFu-Lizenz/a*.pdf
+/Kurse/AFu-Lizenz/bv*.pdf
+/Kurse/AFu-Lizenz/e*.pdf
