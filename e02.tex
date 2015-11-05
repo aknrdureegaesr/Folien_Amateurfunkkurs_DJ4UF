@@ -1,11 +1,11 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>
+% Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>, Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik 02: \\
           Spannung und Strom, Wechselspannung \\[2em]}
-\date{Stand 23.2.2015}
+\date{Stand 28.10.2015}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -13,7 +13,7 @@
 \section*{Einleitung}
 
 \begin{frame}
-    \frametitle{Strom - Spannung}
+    \frametitle{Strom -- Spannung}
     \begin{itemize}
 		\item Was ist Spannung/Strom (elektrische)?
 		\item Woher bekommt man Spannung/Strom?
@@ -24,9 +24,9 @@
     \frametitle{Spannung}
     \begin{center}
     Elektrische Spannung wird erzeugt durch die Trennung von Ladungen
-		\includegraphics[width=.8\textwidth]{e02/ladung.png}
+		\includegraphics[width=.6\textwidth]{e02/ladung.png}
         \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}}
-  	\end{center}
+    \end{center}
 \end{frame}
 
 
@@ -35,16 +35,16 @@
 \begin{frame}
     \frametitle{Spannung}
     \begin{center}
-        Elektrische Spannung $U$ gemessen in [$V$] Volt
-	\end{center}
+        Elektrische Spannung $U$ wird in [$V$] Volt angegeben
+    \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Batterie}
     \begin{center}
     Schaltungszeichen einer Batterie / Batteriezelle\\
-        \includegraphics[width=.99\textwidth]{e02/batterieEagle.png}
-	\end{center}
+	\includegraphics[width=.7\textwidth]{e02/batterieEagle.png}
+    \end{center}
 \end{frame}
 
 \begin{frame}
@@ -53,22 +53,22 @@
     Schaltungszeichen einer 9V Batterie\\
     Pro Zelle $1.8V$\\
     Werden bei Reihenschaltung addiert\\
-        \includegraphics[width=.99\textwidth]{e02/9vBatEagle.png}
-	\end{center}
+	\includegraphics[width=.99\textwidth]{e02/9vBatEagle.png}
+    \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Spannung bestimmen}
     \begin{center}
-        \includegraphics[width=.85\textwidth]{e02/Spannung.png}
-	\end{center}
+	\includegraphics[width=.5\textwidth]{e02/Spannung.png}
+    \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Digitales Multimeter}
     \begin{center}
-        \includegraphics[width=.35\textwidth]{e02/digitalmultimeter.jpg}
-	\end{center}
+        \includegraphics[width=.25\textwidth]{e02/digitalmultimeter.jpg}
+    \end{center}
 \end{frame}
 
 \begin{frame}
@@ -79,8 +79,8 @@
 	\begin{minipage}{0.4\textwidth}	
 	\begin{itemize}
 		\item Was kann alles gemessen werden?
-		\item Wo anschließen zum Strom messen?
-		\item Wo anschließen zum Spannung messen?
+		\item Wo zum Strom messen anschließen?
+		\item Wo zum Spannung messen anschließen?
 		\item Welcher Messbereich?
 	\end{itemize}
 	\end{minipage}
@@ -91,17 +91,21 @@
     \begin{center}
     Was Zeigt das Messgertät an beim Messen von $A$ nach $C$?\\
     (Abb. Ähnlich)
-        \includegraphics[width=.75\textwidth]{e02/SpannungMess.png}
-	\end{center}
+        \includegraphics[width=.4\textwidth]{e02/SpannungMess.png}
+    \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Potential}
-    \begin{center}
-    Spannung ist der Potentialunterschied an 2 Punkten\\
-    Ein Multimeter misst den Potentialunterschied\\
-    Nullpotential ist ein theoretisches Modell.
-	\end{center}
+    \begin{block}{}
+      Spannung ist der Potentialunterschied an zwei Punkten.
+    \end{block}
+    \begin{block}{}
+      Ein Multimeter misst den Potentialunterschied.
+    \end{block}
+    \begin{block}{}
+      Nullpotential ist ein theoretisches Modell.
+    \end{block}
 \end{frame}
 
 \section*{Strom}
@@ -109,32 +113,36 @@
 \begin{frame}
     \frametitle{Strom}
     \begin{center}
-        Elektrischer Strom ist die gerichtete Bewegung von Ladungsträgern.\\
-        Elektischer Strom $I$ in [$A$] Ampare
-	\end{center}
+    \begin{block}{}
+        Elektrischer Strom ist die gerichtete Bewegung von Ladungsträgern.
+    \end{block}
+    \begin{block}{}
+        Elektrischer Strom $I$ wird in [$A$] Ampere angegeben
+    \end{block}
+    \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Physikalische vs. Technische Stromrichtung}
 	\begin{center}
 		Nur Elektronen können sich bewegen
-	    \includegraphics[width=.8\textwidth]{e02/Current_notation.png}\\
+	    \includegraphics[width=.7\textwidth]{e02/Current_notation.png}\\
 	    \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Current_notation.svg}}
-	 \end{center}
+       \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Strom Messen}
     \begin{center}
-    	Strom messen in Reihe
-        \includegraphics[width=.8\textwidth]{e02/reiheAmpare.png}
-	\end{center}
+    	Strom wird in Reihe gemessen
+        \includegraphics[width=.5\textwidth]{e02/reiheAmpare.png}
+      \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Wie sollte gemessen werden?}
-        \includegraphics[width=1\textwidth]{e02/stromSpannung.png}
-        \footnote{\tiny Fragenkatalog Bundesnetzargentur Klasse E}
+        \includegraphics[width=.8\textwidth]{e02/stromSpannung.png}
+        \footnote{\tiny Fragenkatalog Bundesnetzargentur Klasse E TJ201}
 \end{frame}
 
 \section*{Ladung}
@@ -143,7 +151,7 @@
     \frametitle{Ladung}
     \begin{center}
     		$$Q = I \cdot t$$
-        \includegraphics[width=.8\textwidth]{e02/ladung.png}
+        \includegraphics[width=.5\textwidth]{e02/ladung.png}
         \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}}
 	\end{center}
 \end{frame}
@@ -178,18 +186,18 @@
          X & 68 Stunden und 45 Minuten \\\hline
     \end{tabular}
         \begin{align} 
-			t = \frac{Q}{I} = \frac{55Ah}{0.8A} = 68.75
+			t = \frac{Q}{I} = \frac{55 Ah}{0,8 A} = 68,75 h = 68 h 45 min
 		\end{align}
  	\end{center}
  	
 \end{frame}
 
-\section*{Wechselspannung}
+\section*{Wechsel\-spannung}
 
 \begin{frame}
     \frametitle{Wechselspannungen}
 	\begin{minipage}{0.4\textwidth}
-        \includegraphics[width=.8\textwidth]{e02/Wechselspannungsformen.png}
+        \includegraphics[width=.5\textwidth]{e02/Wechselspannungsformen.png}
 	\end{minipage}
 	\footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Wechselspannungsformen.svg}}
 	\begin{minipage}{0.4\textwidth}	
@@ -206,24 +214,24 @@
 \begin{frame}
     \frametitle{Effektivwert vs Spitzen Wert}
     \begin{align} 
-		\int \! sin^2(w t) \, \mathrm{d}t & = \frac{t}{2} - \frac{1}{4w}sin^2(2wt) + c \\
-		U_{eff}^2 \cdot \int_0^T \! sin^2(w t) \, \mathrm{d}t & = \frac{T}{2} \cdot \frac{u_{spitze}^2}{T} \\
+		\int \! sin^2(\omega t) \, \mathrm{d}t & = \frac{t}{2} - \frac{1}{4\omega}sin^2(2\omega t) + c \\
+		U_{eff}^2 \cdot \int_0^T \! sin^2(\omega t) \, \mathrm{d}t & = \frac{T}{2} \cdot \frac{u_{spitze}^2}{T} \\
 		U_{eff} & = \frac{1}{\sqrt{2}} u_{spitze}
 	\end{align}
 	    \begin{center}
-	    \includegraphics[width=.69\textwidth]{e02/EffektivwertSinus.png}\\
+	    \includegraphics[width=.6\textwidth]{e02/EffektivwertSinus.png}\\
 	    \footnote{\tiny \url{https://de.wikipedia.org/wiki/Datei:Effektivwert-Sinus.svg}}
-	 	\end{center}
+	    \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Effektivwert vs Spitzen Wert}
+    \frametitle{Effektivwert vs. Spitzenwert}
     \begin{align} 
 		U_{eff} & = \frac{1}{\sqrt{2}} u_{spitze}
 	\end{align}
-	    \begin{center}
-	    Aufgabe: Berechnet den Spitzenwert des "Hausstoms" mit $U_{eff} = 230V$
-	 	\end{center}
+	\begin{alertblock}{Hausaufgabe}
+	    Aufgabe: Berechne den Spitzenwert des ``Hausstroms'' mit $U_{eff} = 240V$
+	\end{alertblock}
 \end{frame}
 
 \section*{Referenzen}

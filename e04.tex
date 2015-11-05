@@ -1,11 +1,11 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Felix Baum <baum@campus.tu-berlin.de>
+% Autoren: Felix Baum <baum@campus.tu-berlin.de>, Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 04: \\
           Der Widerstand und seine Schaltungsarten \\[2em]}
-\date{Stand 06.11.2014}
+\date{Stand 27.10.2014}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -42,7 +42,7 @@
 
     \begin{center}
         \includegraphics[width=.4\textwidth]{e04/R_LTspice.png}
-        \footnote{\tiny aus LTspice}
+        \footnote{\tiny aus LTspice, Freeware zur Schaltungssimulation \url{http://www.linear.com/designtools/software/\#Spice}}
     \end{center}
  	
 \end{frame}
@@ -56,22 +56,6 @@
         \footnote{\tiny „Potenziometer“ von Honina.Original uploader was Honina at de.wikipedia.Later version(s) were uploaded by Ulfbastel at de.wikipedia. Lizenziert unter Creative Commons Attribution-Share Alike 3.0 über Wikimedia Commons}
     \end{center}
  	
-\end{frame}
-
-\begin{frame}
-    \frametitle{Besondere Widerstände}
-
-    \begin{center}
-        \includegraphics[width=.7\textwidth]{e04/bild-TC106.png}
-        \footnote{\tiny Technik Fragenkatalog KlasseE 2006-09 Frage TC106}
- 	
- 	\begin{tabular}{l||l}\hline
-        A & NTC - Negativer Temperaturkoeffizient \\ \hline
-        B & PTC - Positiver Temperaturkoeffizient \\ \hline
-        C & Lichteinfallgesteuerter Widerstand (Lichtsensor) \\ \hline
-        D & Spannungsgesteuerter Widerstand \\ \hline
-    \end{tabular}
- 	    \end{center}
 \end{frame}
 
 \section*{Spezifischer Widerstand}
@@ -138,6 +122,22 @@
 
 \end{frame}
 
+\begin{frame}
+    \frametitle{Besondere Widerstände}
+
+    \begin{center}
+        \includegraphics[width=.7\textwidth]{e04/bild-TC106.png}
+        \footnote{\tiny Technik Fragenkatalog KlasseE 2006-09 Frage TC106}
+ 	
+ 	\begin{tabular}{l||l}\hline
+        A & NTC - Negativer Temperaturkoeffizient \\ \hline
+        B & PTC - Positiver Temperaturkoeffizient \\ \hline
+        C & Lichteinfallgesteuerter Widerstand (Lichtsensor) \\ \hline
+        D & Spannungsgesteuerter Widerstand \\ \hline
+    \end{tabular}
+ 	    \end{center}
+\end{frame}
+
 \section*{Rechnen mit Widerständen}
 
 \begin{frame}
@@ -172,6 +172,65 @@
         Widerstandswerte aus Farbcode ablesen
     \end{center}
     
+\end{frame}
+
+\begin{frame}
+  \frametitle{Übungen}
+  \pause
+  \begin{center}
+    Einfühung Steckbrett
+  \end{center}
+\end{frame}
+
+\subsection*{Übung 1}
+\begin{frame}
+  \begin{columns}
+    \column{0.4\textwidth}
+    \begin{center}
+      \includegraphics[width=1\textwidth]{e04/Uebung1_Schaltplan.pdf}
+    \end{center}
+    \column{0.55\textwidth}
+    \begin{alertblock}{Aufgabe 1}
+      Baue die Schaltung auf dem Steckbrett auf.\\
+      Berechne den Ersatzwiderstand. Miss zur Überprüfung den Gesamtwiderstand.
+    \end{alertblock}
+    \begin{alertblock}{Aufgabe 2}
+      Berechne die Spannung über $R_1$, $R_2$, $R_3$ und $R_4$. Miss zur Überprüfung nach.\\
+      Miss und erkläre die Spannungen über $A$---$B$, $A$---$C$ und $A$---$D$.
+    \end{alertblock}
+   \end{columns}
+  \begin{alertblock}{Aufgabe 3}
+    Berechne die Ströme durch $R_1$, $R_2$, $R_3$, $R_4$ und den Gesamtstrom. Miss zur Überprüfung nach.
+  \end{alertblock}
+\end{frame}
+
+\subsection*{Übung 2}
+\begin{frame}
+  \begin{columns}
+    \column{0.4\textwidth}
+    \begin{center}
+      \includegraphics[width=1\textwidth]{e04/Uebung2_Schaltplan.pdf}
+    \end{center}
+    \column{0.55\textwidth}
+    \begin{alertblock}{Aufgabe 1}
+      Baue die Schaltung auf dem Steckbrett auf.
+      Berechne den Ersatzwiderstand. Miss zur Überprüfung den Gesamtwiderstand.
+    \end{alertblock}
+    \begin{alertblock}{Aufgabe 2}
+      Berechne die Spannung über $R_1$, $R_2$ und $R_3$. Miss zur Überprüfung nach.\\
+      Miss und erkläre die Spannungen über $A$---$B$, $A$---$C$ und $B$---$C$.
+    \end{alertblock}
+  \end{columns}
+  \begin{alertblock}{Aufgabe 3}
+    Berechne die Ströme durch $R_1$, $R_2$, $R_3$ und den Gesamtstrom. Miss zur Überprüfung nach.
+  \end{alertblock}
+\end{frame}
+
+\subsection*{Übung 3}
+\begin{frame}
+  \begin{alertblock}{Aufgabe 1}
+    Die rote Leuchtdiode benötigt einen Strom von $20mA$. Für die Aufgabe sei erstmal angenommen, dass keine Spannung über die Leuchtdiode abfällt. Dimensioniere einen Spannungsteiler so, dass mit der gegebenen Batterie von 6V an der Leuchtdiode eine Spannung von 3V bis 5V anliegt. Gegeben sind die Widerstände in der Größe $4\times100\Omega$, $2\times180\Omega$, $4\times470\Omega$ und $2\times510\Omega$. Berechne zuerst den Spannungsteiler und zeichne einen Schaltplan.
+  \end{alertblock}
 \end{frame}
 
 \begin{frame}
