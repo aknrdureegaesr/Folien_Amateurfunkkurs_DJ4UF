@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="600"
+   viewBox="0 0 800 600"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="Sinus_Voltage_and_Current_of_a_Capacitor.svg"
+   version="1.1">
+  <metadata
+     id="metadata195">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="746"
+     inkscape:window-width="1024"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="1.3669002"
+     inkscape:cx="616.47307"
+     inkscape:cy="541.60525"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:current-layer="svg2"
+     showgrid="false"
+     inkscape:window-maximized="0">
+    <sodipodi:guide
+       orientation="horizontal"
+       position="500.72886"
+       id="guide2063" />
+    <sodipodi:guide
+       orientation="horizontal"
+       position="163.20052"
+       id="guide2065" />
+    <sodipodi:guide
+       orientation="vertical"
+       position="97.086761"
+       id="guide2103" />
+  </sodipodi:namedview>
+  <desc
+     id="desc4">Produced by GNUPLOT 4.0 patchlevel 0 </desc>
+  <defs
+     id="defs6">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 300 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="800 : 300 : 1"
+       inkscape:persp3d-origin="400 : 200 : 1"
+       id="perspective127" />
+    <linearGradient
+       id="linearGradient2990">
+      <stop
+         style="stop-color:black;stop-opacity:0.10778443;"
+         offset="0"
+         id="stop2992" />
+      <stop
+         style="stop-color:black;stop-opacity:0;"
+         offset="1"
+         id="stop2994" />
+    </linearGradient>
+    <circle
+       id="gpDot"
+       r="1" />
+    <path
+       id="gpPt0"
+       style="stroke-width:0.133"
+       d="M-1,0 h2 M0,-1 v2" />
+    <path
+       id="gpPt1"
+       style="stroke-width:0.133"
+       d="M-1,-1 L1,1 M1,-1 L-1,1" />
+    <path
+       id="gpPt2"
+       style="stroke-width:0.133"
+       d="M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1" />
+    <rect
+       id="gpPt3"
+       style="stroke-width:0.133"
+       x="-1"
+       y="-1"
+       width="2"
+       height="2" />
+    <use
+       xlink:href="#gpPt3"
+       id="gpPt4"
+       style="fill:currentColor; stroke:none" />
+    <circle
+       id="gpPt5"
+       style="stroke-width:0.133"
+       cx="0"
+       cy="0"
+       r="1" />
+    <use
+       xlink:href="#gpPt5"
+       id="gpPt6"
+       style="fill:currentColor; stroke:none" />
+    <path
+       id="gpPt7"
+       style="stroke-width:0.133"
+       d="M0,-1.33 L-1.33,0.67 L1.33,0.67 z" />
+    <use
+       xlink:href="#gpPt7"
+       id="gpPt8"
+       style="fill:currentColor; stroke:none" />
+    <use
+       xlink:href="#gpPt7"
+       id="gpPt9"
+       transform="rotate(180)" />
+    <use
+       xlink:href="#gpPt9"
+       id="gpPt10"
+       style="fill:currentColor; stroke:none" />
+    <use
+       xlink:href="#gpPt3"
+       id="gpPt11"
+       transform="rotate(45)" />
+    <use
+       xlink:href="#gpPt11"
+       id="gpPt12"
+       style="fill:currentColor; stroke:none" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2990"
+       id="linearGradient2996"
+       x1="569.28864"
+       y1="25.5"
+       x2="263.30078"
+       y2="510.5"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="pad" />
+  </defs>
+  <g
+     style="fill:url(#linearGradient2996);color:black;stroke:currentColor;stroke-width:1.00;fill-opacity:1.0"
+     id="g190">
+    <path
+       d="M97,510 L759,510 L759,26 L97,26 L97,510 "
+       id="path192"
+       style="fill-opacity:1.0;fill:url(#linearGradient2996)" />
+  </g>
+  <g
+     style="fill:none; color:black; stroke:currentColor; stroke-width:1.00"
+     id="g22">
+    <path
+       d="M97,26 L112,26 M759,26 L744,26 "
+       id="path24" />
+    <g
+       transform="translate(84,33)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:end"
+       id="g26">
+      <text
+         id="text28">
+        <tspan
+           y="0.00"
+           id="tspan30" />
+      </text>
+    </g>
+    <path
+       d="M97,99 L112,99 M759,99 L744,99 "
+       id="path32" />
+    <g
+       transform="translate(84,106)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:end"
+       id="g34">
+      <text
+         id="text36">
+        <tspan
+           id="tspan38" />
+      </text>
+    </g>
+    <path
+       d="M97,268 L112,268 M759,268 L744,268 "
+       id="path40" />
+    <g
+       transform="translate(84,275)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:end"
+       id="g42">
+      <text
+         id="text44">
+        <tspan
+           id="tspan46"> 0</tspan>
+      </text>
+    </g>
+    <path
+       d="M759,510 L759,495 M759,26 L759,41 "
+       id="path48" />
+    <g
+       transform="translate(759,547)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:middle"
+       id="g50">
+      <text
+         id="text52">
+        <tspan
+           id="tspan54"> 2</tspan>
+      </text>
+    </g>
+    <path
+       d="M676,510 L676,495 M676,26 L676,41 "
+       id="path56" />
+    <g
+       transform="translate(676,547)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:middle"
+       id="g58">
+      <text
+         id="text60">
+        <tspan
+           id="tspan62">1,75</tspan>
+      </text>
+    </g>
+    <path
+       d="M594,510 L594,495 M594,26 L594,41 "
+       id="path64" />
+    <g
+       transform="translate(594,547)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:middle"
+       id="g66">
+      <text
+         id="text68">
+        <tspan
+           id="tspan70">1,5</tspan>
+      </text>
+    </g>
+    <path
+       d="M511,510 L511,495 M511,26 L511,41 "
+       id="path72" />
+    <g
+       transform="translate(511,547)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:middle"
+       id="g74">
+      <text
+         id="text76">
+        <tspan
+           id="tspan78">1,25</tspan>
+      </text>
+    </g>
+    <path
+       d="M428,510 L428,495 M428,26 L428,41 "
+       id="path80" />
+    <g
+       transform="translate(428,547)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:middle"
+       id="g82">
+      <text
+         id="text84">
+        <tspan
+           id="tspan86"> 1</tspan>
+      </text>
+    </g>
+    <path
+       d="M345,510 L345,495 M345,26 L345,41 "
+       id="path88" />
+    <g
+       transform="translate(345,547)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:middle"
+       id="g90">
+      <text
+         id="text92">
+        <tspan
+           id="tspan94">0,75</tspan>
+      </text>
+    </g>
+    <path
+       d="M263,510 L263,495 M263,26 L263,41 "
+       id="path96" />
+    <g
+       transform="translate(263,547)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:middle"
+       id="g98">
+      <text
+         id="text100">
+        <tspan
+           id="tspan102">0,5</tspan>
+      </text>
+    </g>
+    <path
+       d="M180,510 L180,495 M180,26 L180,41 "
+       id="path104" />
+    <g
+       transform="translate(180,547)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:middle"
+       id="g106">
+      <text
+         id="text108">
+        <tspan
+           id="tspan110">0,25</tspan>
+      </text>
+    </g>
+    <path
+       d="M97,510 L97,495 M97,26 L97,41 "
+       id="path112" />
+    <g
+       transform="translate(97,547)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:middle"
+       id="g114">
+      <text
+         id="text116">
+        <tspan
+           id="tspan118"> 0</tspan>
+      </text>
+    </g>
+    <path
+       id="path2101"
+       d="M 97,437 L 112,437 M 759,437 L 744,437" />
+  </g>
+  <g
+     style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00"
+     id="g120">
+    <path
+       d="M97,268 L759,268 "
+       id="path122" />
+  </g>
+  <g
+     id="g128"
+     style="font-size:20px;text-anchor:middle;color:black;fill:black;stroke:none;stroke-width:1;font-family:Arial"
+     transform="matrix(0,-1,1,0,37,268)">
+    <text
+       id="text130">
+      <tspan
+         id="tspan132" />
+    </text>
+  </g>
+  <g
+     id="g134"
+     style="font-size:20px;text-anchor:middle;color:black;fill:black;stroke:none;stroke-width:1;font-family:Arial"
+     transform="translate(428,592)">
+    <text
+       id="text136">
+      <tspan
+         id="tspan138">t / T</tspan>
+    </text>
+  </g>
+  <g
+     style="fill:none; color:black; stroke:currentColor; stroke-width:2.00"
+     id="g162" />
+  <g
+     style="fill:none; color:red; stroke:currentColor; stroke-width:2.00"
+     id="g164" />
+  <g
+     style="fill:none; color:black; stroke:currentColor; stroke-width:2.00"
+     id="g166">
+    <g
+       transform="translate(653,63)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:end"
+       id="g168">
+      <text
+         id="text170">u(t)</text>
+    </g>
+  </g>
+  <g
+     style="fill:none; color:red; stroke:currentColor; stroke-width:2.00"
+     id="g172">
+    <path
+       d="M666,56 L733,56 M97,26 L104,28 L110,34 L117,43 L124,57 L130,73 L137,93 L144,115    L150,140 L157,168 L164,196 L171,226 L177,257 L184,287 L191,318 L197,347 L204,376 L211,402    L217,427 L224,448 L231,467 L237,483 L244,496 L251,504 L257,509 L264,510 L271,507 L278,500    L284,490 L291,476 L298,458 L304,438 L311,415 L318,389 L324,362 L331,333 L338,303 L344,272    L351,241 L358,211 L364,182 L371,154 L378,128 L385,104 L391,83 L398,64 L405,49 L411,38    L418,30 L425,26 L431,26 L438,30 L445,38 L451,49 L458,64 L465,83 L471,104 L478,128    L485,154 L492,182 L498,211 L505,241 L512,272 L518,303 L525,333 L532,362 L538,389 L545,415    L552,438 L558,458 L565,476 L572,490 L578,500 L585,507 L592,510 L599,509 L605,504 L612,496    L619,483 L625,467 L632,448 L639,427 L645,402 L652,376 L659,347 L665,318 L672,287 L679,257    L685,226 L692,196 L699,168 L706,140 L712,115 L719,93 L726,73 L732,57 L739,43 L746,34    L752,28 L759,26 "
+       id="path174" />
+  </g>
+  <g
+     style="fill:none; color:green; stroke:currentColor; stroke-width:2.00"
+     id="g176" />
+  <g
+     style="fill:none; color:black; stroke:currentColor; stroke-width:2.00"
+     id="g178">
+    <g
+       transform="translate(653,93)"
+       style="stroke:none; fill:black; font-family:Arial; font-size:20.00; text-anchor:end"
+       id="g180">
+      <text
+         id="text182">i(t)</text>
+    </g>
+  </g>
+  <g
+     style="fill:none; color:green; stroke:currentColor; stroke-width:2.00"
+     id="g184">
+    <path
+       d="M666,86 L733,86 M97,268 L104,290 L110,311 L117,331 L124,350 L130,369 L137,385 L144,400    L150,412 L157,422 L164,430 L171,435 L177,437 L184,437 L191,434 L197,428 L204,420 L211,409    L217,396 L224,381 L231,364 L237,346 L244,326 L251,305 L257,284 L264,263 L271,241 L278,220    L284,200 L291,181 L298,163 L304,147 L311,133 L318,121 L324,112 L331,105 L338,100 L344,99    L351,100 L358,103 L364,110 L371,119 L378,130 L385,144 L391,159 L398,176 L405,195 L411,215    L418,236 L425,257 L431,279 L438,300 L445,321 L451,341 L458,360 L465,377 L471,393 L478,406    L485,417 L492,426 L498,433 L505,436 L512,437 L518,436 L525,431 L532,424 L538,415 L545,403    L552,389 L558,373 L565,355 L572,336 L578,316 L585,295 L592,273 L599,252 L605,231 L612,210    L619,190 L625,172 L632,155 L639,140 L645,127 L652,116 L659,108 L665,102 L672,99 L679,99    L685,101 L692,106 L699,114 L706,124 L712,137 L719,151 L726,168 L732,186 L739,205 L746,226    L752,247 L759,268 "
+       id="path186" />
+  </g>
+  <g
+     style="fill:none; color:green; stroke:currentColor; stroke-width:1.00"
+     id="g188" />
+  <g
+     id="g5931"
+     transform="translate(-6,0)">
+    <g
+       transform="translate(31,227)"
+       style="font-size:20px;text-anchor:start;color:black;fill:black;stroke:none;stroke-width:1;font-family:Arial"
+       id="g140">
+      <text
+         id="text142">
+        <tspan
+           id="tspan144">U, I</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(64,33)"
+       style="font-size:20px;text-anchor:start;color:black;fill:black;stroke:none;stroke-width:1;font-family:Arial"
+       id="g146">
+      <text
+         id="text148">
+        <tspan
+           id="tspan150">U</tspan>
+        <tspan
+           font-size="16.0"
+           y="6"
+           id="tspan152"
+           style="font-size:16px">S</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(74,106)"
+       style="font-size:20px;text-anchor:start;color:black;fill:black;stroke:none;stroke-width:1;font-family:Arial"
+       id="g154">
+      <text
+         id="text156">
+        <tspan
+           y="0"
+           id="tspan158">I</tspan>
+        <tspan
+           font-size="16.0"
+           y="6"
+           id="tspan160"
+           style="font-size:16px">S</tspan>
+      </text>
+    </g>
+    <g
+       id="g2085"
+       style="font-size:20px;text-anchor:start;color:black;fill:black;stroke:none;stroke-width:1;font-family:Arial"
+       transform="translate(64,507)">
+      <text
+         y="2"
+         x="-5.5766654"
+         id="text2087">
+        <tspan
+           id="tspan2089">-U</tspan>
+        <tspan
+           style="font-size:16px"
+           id="tspan2091"
+           y="8"
+           font-size="16.0">S</tspan>
+      </text>
+    </g>
+    <g
+       id="g2093"
+       style="font-size:20px;text-anchor:start;color:black;fill:black;stroke:none;stroke-width:1;font-family:Arial"
+       transform="translate(74,440)">
+      <text
+         x="-6.6800818"
+         id="text2095">
+        <tspan
+           id="tspan2097"
+           y="0">-I</tspan>
+        <tspan
+           style="font-size:16px"
+           id="tspan2099"
+           y="6"
+           font-size="16.0">S</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     id="g5925">
+    <g
+       id="g5869">
+      <path
+         style="color:black;fill:none;stroke:currentColor;stroke-width:1"
+         id="path126"
+         d="M 97,510 L 759,510 L 759,26 L 97,26 L 97,510" />
+      <path
+         style="opacity:1;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:2.99999952;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 755.08846,509.98911 C 755.08846,509.98911 730.57146,519.37872 730.57146,519.37872 C 730.57146,519.37872 730.57146,500.59951 730.57146,500.59951 C 730.57146,500.59951 755.08846,509.98911 755.08846,509.98911 z "
+         id="path4981"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <path
+       style="opacity:1;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:2.99999952;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 96.934935,30.488524 C 96.934935,30.488524 106.32454,55.005519 106.32454,55.005519 C 106.32454,55.005519 87.54533,55.005519 87.54533,55.005519 C 87.54533,55.005519 96.934935,30.488524 96.934935,30.488524 z "
+       id="path5873"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>
