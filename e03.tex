@@ -1,21 +1,22 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Martin Deutschmann <martin.deutschmann@campus.tu-berlin.de>
+% Autoren: Martin Deutschmann <martin.deutschmann@campus.tu-berlin.de>, Lars Weiler <dc4lw@darc.de>
+
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 03 \\
           Ohmsches Gesetz, Leistung \& Arbeit \\[2em]}
-\date{Stand 30.10.2014}
+\date{Stand 27.10.2015}
 \input{texdata/titlepage}
 
 %fixme Referenzen, Link funktioniert auch nicht
 
-\section{das ohmsche Gesetz}
+\section{Das ohmsche Gesetz}
 
 \begin{frame}
     \frametitle{Was ist das ohmsche Gesetz?}
     \begin{itemize}
-    	\item Das ohmsche Gesetz ist folgendes:
+    	\item Das ohmsche Gesetz ist folgendes: $U = I \cdot R$
     \end{itemize}
     \begin{center}
  		\includegraphics[scale=0.3]{e03/Ohm_law_triangle.png}
@@ -40,13 +41,18 @@
 		\item	Wir stellen uns folgenden Aufbau vor:
 		\item	Der Widerstand der Lampe soll 1 $\Omega$ betragen
 	\end{itemize}
-	\begin{center}
- 		\includegraphics[scale=1]{e03/Strom_Spannung_Abh.png}
- 		\footnote{Abb.2: Helligkeit einer Lampe bei verschiedenen Spannungen}
- 	\end{center}
- 	\begin{itemize}
- 		\item	Wird die Lampe heller oder dunkler, wenn man sie mit 1,5 Volt anstatt mit 4,5 Volt betreibt?
- 	\end{itemize}
+    \begin{columns}
+         \column{0.35\textwidth}
+           \begin{center}
+                   \includegraphics[scale=1]{e03/Strom_Spannung_Abh.png}
+                   %\footnote{\tiny Abb.2: Helligkeit einer Lampe bei verschiedenen Spannungen}
+           \end{center}
+         \column{0.6\textwidth}
+           \begin{exampleblock}{Aufgabe}
+             Wird die Lampe heller oder dunkler, wenn man sie mit $1,5 V$ anstatt mit $4,5 V$ betreibt?
+           \end{exampleblock}
+       \end{columns}
+
 \end{frame}
 
 \begin{frame}
@@ -70,7 +76,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Das Ergebnis unseres Experimentes}
+	\frametitle{Das Ergebnis unseres Experiments}
 	\begin{itemize}
 		\item	Setzen wir nun die Werte in diese Formel ein, so erhalten wir
 	\end{itemize}
@@ -101,17 +107,17 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{der Innenwiderstand}
+	\frametitle{Der Innenwiderstand}
 	\begin{itemize}
 		\item	Um den Innenwiderstand zu ermitteln nutzen wir wieder das ohmsche Gesetz
-		\item	Dabei gilt es zu beachten, das diesmal die Differenzen der Spannungen und des Stromes zwischen dem Leerlauf und dem belasteten Fall verrechnet werden
+		\item	Dabei gilt es zu beachten, dass diesmal die Differenzen der Spannungen und des Stromes zwischen dem Leerlauf und dem belasteten Fall verrechnet werden
 		\item	Es gilt:
 	\end{itemize}
 	\begin{equation}
 		R_{innen} = \frac{\Delta U}{\Delta I}
 	\end{equation}
 	\begin{itemize}
-		\item	Um den Wert nicht zu sehr zu verfälschen sollten Spannungsquellen einen niedrigen und Stromquellen einen hohen Innenwiderstand besitzen
+		\item Um den Wert nicht zu sehr zu verfälschen sollten \textbf{Spannungsquellen einen niedrigen} und \textbf{Stromquellen einen hohen Innenwiderstand} besitzen
 	\end{itemize}
 \end{frame}
 
@@ -193,9 +199,9 @@
 	\end{small}
 \end{frame}
 
-\section{die elektrische Leistung}
+\section{Die elektrische Leistung}
 \begin{frame}
-	\frametitle{die elektrische Leistung}
+	\frametitle{Die elektrische Leistung}
 	\begin{itemize}
 		\item	Fließt ein Strom durch einen Widerstand, so entsteht Verlustleistung in Form von Wärme an dem Widerstand
 		\item	Dies findet Anwendung bei Heizspiralen in Elektroherd, oder im Bügeleisen
@@ -206,11 +212,38 @@
 		P = U \cdot I
 	\end{equation}
 	\begin{itemize}
-		\item	Die Einheit der Leistung ist das Watt
+		\item	Die Einheit der Leistung ist das Watt $[W]$
 	\end{itemize}
 	\begin{equation}
 		 1[W] = 1[V] \cdot 1[A]
 	\end{equation}
+\end{frame}
+
+\begin{frame}
+  \begin{columns}
+    \column{.43\textwidth}
+      \begin{center}
+	\includegraphics[width=1\textwidth]{e03/electricity.jpg}\\
+	\tiny \url{https://twitter.com/swocket/status/646649716869046272}
+      \end{center}
+    \column{.57\textwidth}
+      \pause
+      \begin{exampleblock}{Widerstand}
+	Was passiert bei Änderung von $\ell$ oder $a$? Was bei $\rho$\footnote{\tiny spezifischer elektrischer Widerstand}?
+      \end{exampleblock}
+      \pause
+      \begin{exampleblock}{Strom}
+	Was passiert bei Änderung von $C$ oder $s$?
+      \end{exampleblock}
+      \pause
+      \begin{exampleblock}{Spannung}
+	Was passiert bei Änderung von $A$ oder $\Omega$?
+      \end{exampleblock}
+      \pause
+      \begin{exampleblock}{Leistung}
+	Was passiert bei Änderung von $A$ oder $V$?
+      \end{exampleblock}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -247,10 +280,10 @@
 	\end{equation}
 \end{frame}
 
-\section{die elektrische Arbeit}
+\section{Die elektrische Arbeit}
 
 \begin{frame}
-	\frametitle{die elektrische Arbeit}
+	\frametitle{Die elektrische Arbeit}
 	\begin{itemize}
 		\item	Die elektrische Arbeit ist definiert als die Leistung, die in einer bestimmten Zeit erbracht wurde
 		\item	Es gilt also:
@@ -265,7 +298,7 @@
 		W = U \cdot I \cdot t
 	\end{equation}
 	\begin{itemize}
-		\item	Die Einheit der elektrischen Arbeit ist die Wattsekunde [WS]
+		\item	Die Einheit der elektrischen Arbeit ist die Wattsekunde $[Ws]$
 	\end{itemize}
 \end{frame}
 
@@ -303,6 +336,12 @@
 	\begin{equation}
 		W = P \cdot t = U \cdot I \cdot t = 230V \cdot 0,63A \cdot 7h = 1,01kWh
 	\end{equation}
+\end{frame}
+
+\begin{frame}
+  \begin{alertblock}{Hausaufgabe}
+    Aus Fragenkatalog Klasse E Kapitel 1.2.9 ``Ohmsches Gesetz, Leistung und Energie'' (TB901--TB911) durcharbeiten.
+  \end{alertblock}
 \end{frame}
 
 \renewcommand{\refname}{Referenzen}
