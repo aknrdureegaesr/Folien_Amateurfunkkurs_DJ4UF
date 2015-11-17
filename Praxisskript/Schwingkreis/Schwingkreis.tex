@@ -1,0 +1,84 @@
+\section{Theorie- und Prüfungsfragen}
+
+
+\begin{enumerate}
+\itemsep1pt\parskip0pt\parsep0pt
+\item[i] Skizzieren Sie die Schaltung eines Reihenschwingkreises.
+\item[ii] Skizzieren Sie die Schaltung eines Parallelschwingkreises.
+\item[iii] Was ist die Resonanzfrequenz und wie lässt sie sich berechnen?
+\item[iv] Berechnen Sie die theoretische Resonanzfrequenz der Schwingkreise bei Verwendung eines $50\Omega$ Widerstandes, eines $10pF$ Kondensators und einer Spule mit $270H$.
+\end{enumerate}
+
+
+
+\begin{enumerate}
+\item[v] \emph{\textbf{TD204}}    Wie ändert sich die Resonanzfrequenz eines Schwingkreises, wenn 1. die Spule weniger Windungen erhält, 2. die Länge der Spule durch Zusammenschieben der Drahtwicklung verringert wird, 3. ein Ferritkern in das Innere der Spule gebracht wird? 
+	\begin{enumerate}
+	\itemsep1pt\parskip0pt\parsep0pt
+		\item[a] Die Resonanzfrequenz wird bei 1. und 2. kleiner und bei 3. größer. 
+		\item[b] Die Resonanzfrequenz wird bei 1. kleiner und bei 2. und 3. größer.
+		\item[c] Die Resonanzfrequenz wird bei 1. und 2. größer und bei 3. kleiner.
+		\item[d] Die Resonanzfrequenz wird bei 1. größer und bei 2. und 3. kleiner. 
+	\end{enumerate}
+\end{enumerate}
+
+
+\loesung{
+	\begin{figure}[H]
+	\center
+	\input{Schwingkreis/Schaltungen/Reihenschwingkreis.tex}\\
+	\caption{i Reihenschwingkreis}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\center
+	\input{Schwingkreis/Schaltungen/Parallelschwingkreis.tex}\\
+	\caption{ii Parallelschwingkreis}
+	\end{figure}
+
+	\begin{enumerate}
+		\item[iii] Die Resonanzfrequenz eines Schwingkreises, ist die Frequenz, bei der die Wechselspannungswiderstände der Kapazität($X_C$) und der Induktivität($X_L$) gleich groß sind ($X_C = X_L$). $f_g = \dfrac{1}{2\pi \sqrt{LC}}$
+		\item[iv] $f_g =  5033Hz$
+		\item[v]  d
+	\end{enumerate}
+}
+
+\section{Praktische Anwendung}
+
+\subsection*{Reihenschwingkreis}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item Bauen Sie die Schaltung des Reihenschwingkreises auf. Verwenden Sie hierfür eine Spule mit $270H$, einen $50\Omega$ Widerstand und einen $10pF$ Kondensator. 
+\item Legen Sie nun eine Wechselspannungsquelle bzw. einen Frequenzgenerator an die Schaltung an. Verwenden Sie eine sinusförmige Wechselspannung mit einer konstanten Amplitude zwischen $1V$ und $3V$.
+\item Erhöhen Sie nun Schrittweise die die Frequenz von $1kHz$ bis $10khz$. Messen Sie für 10 Frequenzwerte den Strom der durch die Schaltung fließt.
+\item Zeichnen Sie die Werte in ein Diagramm ein. Legen Sie die Frequenz auf die X-Achse und den Strom auf die Y-Achse.
+\item Was lässt sich aus dem Diagramm ablesen?
+\end{itemize}
+
+\loesung{
+	\begin{figure}[H]
+	\centering
+	\input{Schwingkreis/Schaltungen/Reihenschwingkreis_Impedanz.tex}
+	\caption{Impedanz eines Reihenschwingkreises in Abhängigkeit von der Frequenz}
+	\end{figure}
+}
+
+\subsection*{Parallelschwingkreis}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item Bauen Sie die Schaltung des Parallelschwingkreises auf. Verwenden Sie hierfür eine Spule mit $270H$, einen $50\Omega$ Widerstand und einen $10pF$ Kondensator. 
+\item Legen Sie nun eine Wechselspannungsquelle bzw. einen Frequenzgenerator an die Schaltung an. Verwenden Sie eine sinusförmige Wechselspannung mit einer konstanten Amplitude zwischen $1V$ und $3V$.
+\item Erhöhen Sie nun Schrittweise die die Frequenz von $1kHz$ bis $10khz$. Messen Sie für 10 Frequenzwerte den Strom der durch die Schaltung fließt.
+\item Zeichnen Sie die Werte in ein Diagramm ein. Legen Sie die Frequenz auf die X-Achse und den Strom auf die Y-Achse.
+\item Was lässt sich aus dem Diagramm ablesen?
+\end{itemize}
+
+\loesung{
+	\begin{figure}[H]
+	\centering
+	\input{Schwingkreis/Schaltungen/Parallelschwingkreis_Impedanz.tex}
+	\caption{Impedanz eines Parallelschwingkreiseses in Abhängigkeit von der Frequenz}
+	\end{figure}
+}
