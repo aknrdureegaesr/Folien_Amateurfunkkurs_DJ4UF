@@ -1,6 +1,6 @@
-a*.pdf
-bv*.pdf
-e*.pdf
+./a*.pdf
+./bv*.pdf
+./e*.pdf
 *.aux
 *.log
 *.out
