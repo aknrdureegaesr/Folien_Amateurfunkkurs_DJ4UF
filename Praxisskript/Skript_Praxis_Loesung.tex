@@ -1,0 +1,44 @@
+
+\documentclass[ngerman,openany]{Script}
+
+\usepackage{amsmath}
+
+% Aufgabentext ein-/ausschalten
+\newboolean{aufgabentext}
+\setboolean{aufgabentext}{true}
+\newcommand{\aufgabentext}[1]{\ifthenelse{\boolean{aufgabentext}}{#1}{}}
+
+% Wenn aufgabentext auch true ist, dann wird der Lösungstext etwas abgesetzt und kursiv geschrieben
+\newboolean{mitloesung}
+\setboolean{mitloesung}{true}
+\newcommand{\loesung}[1]{\ifthenelse{\boolean{mitloesung}}{\ifthenelse{\boolean{aufgabentext}}{{~\\~\\\itshape{#1}}}{#1}}{}}
+
+% Für die Strukturierung
+\newcommand{\Thema}[1]{\chapter{#1}}
+\newcommand{\Thementeil}[1]{\section{#1}}
+\newcommand{\Aufgabe}[1]{\subsection{#1}}
+\newcommand{\Unteraufgabe}[1]{\subsubsection{#1}}
+\newcommand{\Lernziele}[1]{\subsection*{Lernziele}{#1}}
+\graphicspath{{./Bilder/}}
+
+\begin{document}
+
+\input{Head_Loesung.tex}
+
+\newpage
+%------------------
+\chapter{Die Spule}
+\input{Spule/Spule.tex}
+
+\chapter{Der Schwingkreis}
+\input{Schwingkreis/Schwingkreis.tex}
+
+\chapter{Die Diode}
+\input{Diode/Diode.tex}
+
+\chapter{Der Bipolar-Transistor}
+\input{Transistor/Transistor.tex}
+
+\input{Foot.tex}
+
+\end{document}
