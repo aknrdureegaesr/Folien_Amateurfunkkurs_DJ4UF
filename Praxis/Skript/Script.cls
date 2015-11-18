@@ -263,7 +263,7 @@
           \\[6ex]
     \end{spacing}%
             %{\Large #1}\\
-            \includegraphics[scale=0.35]{Bilder/Helios_Voltmeter}
+            \includegraphics[scale=0.8]{Bilder/shack}
         \vfill
             {\LARGE #4}
                 \vfill
