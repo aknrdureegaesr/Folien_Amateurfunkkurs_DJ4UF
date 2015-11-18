@@ -1,11 +1,18 @@
-./a*.pdf
-./bv*.pdf
-./e*.pdf
+# Doku: https://git-scm.com/docs/gitignore
+
+# generated pdfs
+/a*.pdf
+/bv*.pdf
+/e*.pdf
+
+# LaTeX tmp files
 *.aux
 *.log
 *.out
 *.toc
 *.lof
+
+# Sublime Text2 tmp files
 *.bbl
 *.blg
 *.fdb_latexmk
