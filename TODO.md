@@ -15,4 +15,4 @@
 * Prüfungsaufgaben in eine Box
 * Fotos Stück für Stück durch unsere ersetzen
 * Anhänge: Formelsammlung, Manuals, Datasheets
-* Duzen vs. Siezen
+* Siezen -> Duzen
