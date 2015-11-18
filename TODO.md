@@ -10,6 +10,8 @@
 
 # Skript
 
+* Prüfungskatalogfragen mit Box drum herum
+* Nummerierungssystem der Aufgaben mit arabischen Ziffern
 * FM-QSO.tex ins Skript integrieren
     * + einfacher Logbuchvordruck in die Anlage
 * Kapitel e99 inhaltlich ins Skript integrieren
