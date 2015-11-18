@@ -6,3 +6,7 @@
 *.out
 *.toc
 *.lof
+*.bbl
+*.blg
+*.fdb_latexmk
+*.synctex.gz
