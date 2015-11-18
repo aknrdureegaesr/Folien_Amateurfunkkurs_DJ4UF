@@ -1,3 +1,7 @@
+# Insgesamt
+
+* Grafiken etc. aus den Slides ruhig in der Praxis nutzen und andersherum
+
 # Slides
 
 * Diff & Merge Chaoswelle -> DK0TU, Stand:
