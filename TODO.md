@@ -6,6 +6,9 @@
 
 # Skript
 
+* FM-QSO.tex ins Skript integrieren
+    * + einfacher Logbuchvordruck in die Anlage
+* Kapitel e99 inhaltlich ins Skript integrieren
 * 0TU-Logo ändern
 * Titelseitenbild was mit Funkbezug
 * CC-BY-SA Lizenz
