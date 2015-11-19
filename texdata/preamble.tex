@@ -126,7 +126,8 @@
 % default | professionalfonts | serif | structurebold | structureitalicserif | structuresmallcapsserif
 
 % Innere Themen(Kopf-, Fuß-, Sidebar usw)
-\useinnertheme{default}
+%\useinnertheme{default}
+\useinnertheme{circles}
 % default | inmargin | rectangles | rounded | circles
 
 % Äußere Themen (Anordnung der inneren, grenzen der Folien etc.)
@@ -139,7 +140,7 @@
 
 % Zeige ein Hintergrundbild
 \setbeamertemplate{background canvas}{
-        \hspace*{-4.0cm}\includegraphics[width=17.8cm]{texdata/dk0tu_rooftop_background.pdf}
+        \hspace*{-2.0cm}\includegraphics[width=17.8cm]{texdata/dk0tu_rooftop_background.pdf}
 }
 
 % Foliennummer einfügen
@@ -175,7 +176,7 @@
     \immediate\write18{/usr/bin/dia #1.dia -e #1_diatmp.png -t png}
 }
 
-% RICHIG GROßER FONT!
+% RICHIG GROSSER FONT!
 \newfont{\bigfont}{cmr10 at 144pt}
 \newfont{\smallfont}{cmr10 at 8pt}
 
@@ -186,8 +187,28 @@
 \makeatother
 
 % Schwarze Überschrift
-\setbeamercolor{frametitle}{fg=black}
-\setbeamercolor{title}{fg=black}
+%\setbeamercolor{frametitle}{fg=black}
+%\setbeamercolor{title}{fg=black}
+
+% Item- und Box-Farben
+\definecolor{deepBlue}{HTML}{000066}
+\setbeamercolor{itemize item}{fg=deepBlue}
+\setbeamercolor{itemize subitem}{fg=deepBlue}
+\setbeamercolor{description item}{fg=deepBlue}
+\setbeamercolor{block title}{fg=deepBlue!100, bg=blue!15}
+\setbeamercolor{block body}{fg=black, bg=blue!5}
+\setbeamercolor{block title alerted}{fg=deepBlue, bg=red!75}
+\setbeamercolor{block body alerted}{fg=black, bg=red!15}
+\setbeamercolor*{block title example}{fg=blue!50, bg=blue!10}
+\setbeamercolor*{block body example}{fg= blue, bg=blue!5}
+
+%\setbeamercolor{section in head/foot}{parent=palette primary}
+%\setbeamercolor{subsection in head/foot}{parent=palette secondary}
+%\setbeamercolor{sidebar}{fg=darkblue,bg=yellow!90!orange}
+%\setbeamercolor{title in sidebar}{fg=darkblue}
+%\setbeamercolor{author in sidebar}{fg=darkblue}
+%\setbeamercolor{section in sidebar}{fg=darkblue!10!black}
+%\setbeamercolor{subsection in sidebar}{fg=darkblue!50!black}
 
 % Titlepage Infos
 \title{AFu-Kurs nach DJ4UF}
