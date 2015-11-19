@@ -4,6 +4,8 @@
 /a*.pdf
 /bv*.pdf
 /e*.pdf
+/Praxis/Skript/Skript_Praxis.pdf
+/Praxis/Skript/Skript_Praxis_Loesung.pdf
 
 # LaTeX tmp files
 *.aux
