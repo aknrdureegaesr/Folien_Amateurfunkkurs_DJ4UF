@@ -27,3 +27,9 @@
 * Fotos Stück für Stück durch unsere ersetzen
 * Anhänge: Formelsammlung, Manuals, Datasheets
 * Siezen -> Duzen
+* + Q Codes
+    * http://www.funkwelle.com/amateurfunk/q-schluessel-fuer-amateurfunkpruefung.html
+* Landeskenner
+    * Übung mit rein
+    * Ausschlussliste als Anhang
+    * http://www.funkwelle.com/amateurfunk/itu-landeskenner-lernen.html
