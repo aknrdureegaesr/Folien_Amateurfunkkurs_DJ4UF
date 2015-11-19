@@ -33,3 +33,6 @@
     * Übung mit rein
     * Ausschlussliste als Anhang
     * http://www.funkwelle.com/amateurfunk/itu-landeskenner-lernen.html
+* Diode Klasse E
+    * Praxis hinzufügen?
+    * Aufgaben teilweise nach Klasse A verschieben - geht schon zu weit
