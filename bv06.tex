@@ -1,11 +1,11 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+% Autoren: Sebastian Lange <dl7bst@dk0tu.de>, Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Betriebstechnik/Vorschriften 06: \\
           Rufzeichen - Landeskenner \\[2em]}
-\date{Stand 20.11.2014}
+\date{Stand 19.11.2015}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -41,14 +41,15 @@
 
 \end{frame}
 
-\begin{frame}
-    \frametitle{Einleitung / Landeskenner}
-
-    \begin{center}
-        \Large{Wurde vermutlich schon erkannt.}
-    \end{center}
-
-\end{frame}
+%\begin{frame}
+%    \frametitle{Einleitung / Landeskenner}
+%
+%    \begin{center}
+%        \Large{Landeskenner im Präfix -}
+%        Wurde vermutlich schon erkannt.
+%    \end{center}
+%
+%\end{frame}
 
 \section{Rufzeichen}
 
@@ -59,8 +60,14 @@
     gebunden sein. \\[1em]
 
     Mindestens drei, normalerweise bis sechs Zeichen. Kann aber auch länger
-    sein.\\[1em]
-    
+    sein.\footnote{\scriptsize Ausnahme: Sonder-Calls, z.B.
+    \texttt{DL65DARC}}
+
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Rufzeichen}
+
     Aufbau:
 
     \begin{itemize}
@@ -72,6 +79,13 @@
         \item $>$1 Zeichen \textbf{Suffix}
     \end{itemize}
 
+    \pause
+
+    \begin{block}{Regular Expression}
+        \verb+/^([A-Z]{1,2}|[0-9][A-Z])([0-9])([A-Z]{1,3})$/+
+    \end{block}
+
+
 \end{frame}
 
 \section{Landeskenner}
@@ -80,17 +94,24 @@
     \frametitle{Landeskenner}
 
     \begin{center}
-        Deutschland: D\textbf{A}-D\textbf{R} \\[1em]
+        Deutschland: D\textbf{A}--D\textbf{R} \\[1em]
     \end{center}
 
     Vorsicht! \\
-    DS-DT: Südkorea \\
-    DU-DZ: Philippinen \\[2em]
+    DS--DT: Südkorea \\
+    DU--DZ: Philippinen \\[1em]
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Landeskenner}
 
     Nachschlagewerke für Landeskenner:
 
     \begin{itemize}
-        \item DXCC-Liste\footnote{\url{http://dl3vtl.darc.de/Landeskenner.htm}}
+        \item ITU (Appendix 42 to the RR)
+              \footnote{\scriptsize\url{http://www.itu.int/online/mms/glad/cga_callsign.sh?lng=E}}
+        \item DXCC-Liste\footnote{\scriptsize\url{http://dl3vtl.darc.de/Landeskenner.htm}}
               (Landeskennerliste) der ITU
         \item Amateurfunkhandbücher
         \item Rufzeichenlisten
@@ -101,102 +122,207 @@
 
 \subsection{Europäische Landeskenner}
 
+%    Don't Panic! ''Eselsbrücken'' helfen weiter, z.B.:
+
 \begin{frame}
     \frametitle{Europäische Landeskenner}
 
-    % todo Liste als Text in die Folien übertragen
-    Liste der Prüfungsrelevanten Länder von DJ4UF
-    \footnote{\scriptsize\url{http://www.amateurfunkpruefung.de/lehrg/bv06/lk_europa.gif}}... \\[2em]
-    
-    Don't Panic! ''Eselsbrücken'' helfen weiter, z.B.:
-   
-    \footnotesize
-    \begin{itemize}
-        \item HV: Heiliger Vater
-        \item PA: Pay Bas
-        \item LA: Lachse
-        \item HB: Helvetia Bern
-        \item EA: España
-        \item EI: Eire
-        \item HA: Hungary
-        \item SP: Soz. Polen
-        \item YL: Young Lettin
-    \end{itemize}
+    \begin{tabular}{l|l|l}
+      Kenner & Land & Eselsbrücke\\ \hline
+      C3 & Andorra & \\
+      CT & Portugal & \\
+      \alert<2>{DL (DA\ldots DR)} & \alert<2>{Deutschland} & \\
+      \alert<2>{EA (EB, EC, ED)} & \alert<2>{Spanien} & \textbf{E}spañ\textbf{a} \\
+      \alert<2>{EI} & \alert<2>{Irland} & \textbf{Ei}re \\
+      EM (UT) & Ukraine & \\
+      \alert<2>{ES} & \alert<2>{Estland} & \\
+      \alert<2>{F} (FA\ldots FE) & \alert<2>{Frankreich} & \\
+      G (GB\ldots GM, M) & Großbritannien & \\
+      GM (MM) & Schottland & \\
+      HA & Ungarn & \textbf{H}ung\textbf{a}ry\\
+      \alert<2>{HB, HB9} & \alert<2>{Schweiz} & \textbf{H}ohe \textbf{B}erge (\textbf{H}elvetia) \\
+      \alert<2>{HB\O} & \alert<2>{Liechtenstein} & \\
+      HV & Vatikan & \textbf{H}eiliger \textbf{V}ater \\
+    \end{tabular}
 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Europäische Landeskenner}
+
+    \begin{tabular}{l|l|l}
+      Kenner & Land & Eselsbrücke\\ \hline
+      I (IA\ldots IZ) & Italien & \\
+      \alert<2>{LA} (LB) & \alert<2>{Norwegen} & \textbf{La}chse \\
+      \alert<2>{LX} & \alert<2>{Luxemburg} & \textbf{L}u\textbf{x}emburg \\
+      LY & Litauen & \\
+      \alert<2>{LZ} & \alert<2>{Bulgarien} & \\
+      OE & Österreich & \\
+      \alert<2>{OH} & \alert<2>{Finnland} & \\
+      OK & Tschechien & \\
+      OM & Slowakei & \\
+      \alert<2>{ON} & \alert<2>{Belgien} & \\
+      OY & Faröer Inseln & \\
+      \alert<2>{OZ} & \alert<2>{Dänemark} & \\
+      \alert<2>{PA} (PB, PD, PE, PI) & \alert<2>{Niederlande} & \textbf{Pa}ys-Bas \\
+      UA (RA\ldots) & Russland & \\
+    \end{tabular}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Europäische Landeskenner}
+
+    \begin{tabular}{l|l|l}
+      Kenner & Land & Eselsbrücke\\ \hline
+      SM & Schweden & \\
+      \alert<2>{SP} & \alert<2>{Polen} & \textbf{S}chönes/\textbf{S}oz. \textbf{P}olen \\
+      SV & Griechenland & \\
+      \alert<2>{S5} & \alert<2>{Slowenien} & \\
+      TA & Türkei & \\
+      \alert<2>{YL} & \alert<2>{Lettland} & \textbf{Y}oung \textbf{L}atvian \\
+      \alert<2>{YO} & \alert<2>{Rumänien} & \\
+      YU & Serbien & \\
+      \alert<2>{3A} & \alert<2>{Monaco} & \\
+      \alert<2>{4U} & \alert<2>{Vereinte Nationen} & For You \\
+      \alert<2>{9A} & \alert<2>{Kroatien} & \\
+      \alert<2>{9H} & \alert<2>{Malta} & \\
+    \end{tabular}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Übung}
+    \begin{center}
+      \begin{tabular}{l||p{.8\textwidth}}\hline
+        BD206 & Welche Länder sind der Reihe nach den folgenden Landeskennern zugeordnet? Die Landeskenner OE, OH, OK, OM, ON, OZ entsprechen den Ländern\\\hline\hline
+          A & Österreich, Belgien, Tschechien, Slowakei, Finnland, Dänemark. \\ \hline
+          B \only<2>\checkmark & Österreich, Finnland, Tschechien, Slowakei, Belgien, Dänemark. \\ \hline
+          C & Österreich, Finnland, Tschechien, Belgien, Slowakei, Dänemark. \\\hline
+          D & Österreich, Slowakei, Tschechien, Finnland, Belgien, Dänemark. \\\hline
+    \end{tabular}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Übung}
+    \begin{center}
+      \begin{tabular}{l||p{.8\textwidth}}\hline
+        BD202 & Welche Gruppe von Ländern grenzt an die Bundesrepublik Deutschland?\\\hline\hline
+          A & SM, LA, LZ, HB \\ \hline
+          B & EA, GM, OE, ON \\\hline
+          C \only<2>\checkmark & F, HB, OZ, SP \\ \hline
+          D & CT, I, LX, OK \\\hline
+    \end{tabular}
+  \end{center}
 \end{frame}
 
 \subsection{Außereuropäische Landeskenner}
 
 \begin{frame}
-    \frametitle{Außereuropäische Landeskenner: \\ RR Funkregionen}
+    \frametitle{Außereuropäische Landeskenner: RR Funkregionen}
 
-    %todo Karte der Regionen
+    \begin{center}
+      \includegraphics[width=.7\textheight]{bv06/800px-International_Telecommunication_Union_region.png}
+      \footnote{\scriptsize gemeinfrei \url{https://commons.wikimedia.org/wiki/File:International_Telecommunication_Union_region.svg\#/media/File:International_Telecommunication_Union_region.svg}}
+    \end{center}
 
-    \begin{itemize}
-        \item \textbf{Region 1}: Europa, Afrika, Vorderasien (ohne Iran), Russland, Georgien,
-              Armenien, Aserbaidschan, Kasachstan, Turkmenistan, Usbekistan,
-              Tadschikistan, Kirgisistan, Mongolei
-        \item \textbf{Region 2}: Nordund Südamerika, Karibik, Grönland, Hawaii
-        \item \textbf{Region 3}: Australien, Neuseeland, Ozeanien und Asien ohne die unter
-              Region 1 genannten Länder Asiens.
-    \end{itemize}
+    \small{
+    \begin{description}
+        \item[Region 1] Europa, Afrika, Vorderasien (ohne Iran), Russland, Georgien,
+                        Armenien, Aserbaidschan, Kasachstan, Turkmenistan,
+                        Usbekistan, Tadschikistan, Kirgisistan, Mongolei
+        \item[Region 2] Nord- und Südamerika, Karibik, Grönland, Hawaii
+        \item[Region 3] Australien, Neuseeland, Ozeanien und Asien ohne die unter
+                        Region~1 genannten Länder Asiens.
+    \end{description}
+    }
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Außereuropäische Landeskenner: Region 1}
 
-    Liste der Prüfungsrelevanten Länder von DJ4UF:
-
-    \begin{center}
-        \includegraphics[width=0.8\textwidth]{bv06/lk_region1.png}
-        \footnote{\tiny \url{http://www.amateurfunkpruefung.de/lehrg/bv06/lk_region1.gif}}
-    \end{center}
+    In der Prüfung genannt\hspace{2pc}\only<2>{\alert{Lernen für Ausschlussverfahren}}\\[1em]
+ 
+    \begin{tabular}{l|l|l}
+      Kenner & Land & Eselsbrücke\\ \hline
+      \alert<2>{3V} & \alert<2>{Tunesien} & \\
+      5N & Nigeria &  \\
+      4X & Israel & \\
+      5B & Zypern & \\
+      5H & Tansania & \\
+      9X & Ruanda & \\
+      EL & Libera & \\
+      ST & Sudan & \\
+      \alert<2>{SU} & \alert<2>{Ägypten} & \\
+      YK & Syrien & \\
+      ZS & Südafrika & \\
+    \end{tabular}
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Außereuropäische Landeskenner: Region 2}
 
-    Liste der Prüfungsrelevanten Länder von DJ4UF:
+    In der Prüfung genannt\hspace{2pc}\only<2>{\alert{Lernen für Ausschlussverfahren}}\\[1em]
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth]{bv06/lk_region2.png}
-        \footnote{\tiny \url{http://www.amateurfunkpruefung.de/lehrg/bv06/lk_region2.gif}}
-    \end{center}
+    \begin{tabular}{l|l|l}
+      Kenner & Land & Eselsbrücke\\ \hline
+      CE & Chile &  \\
+      \alert<2>{HC} & \alert<2>{Ecuador} & \\
+      \alert<2>{HK} & \alert<2>{Kolumbien} & \\
+      \alert<2>{K, W, N, A} & \alert<2>{USA} & \textbf{K}einer \textbf{W}ill \textbf{N}ach \textbf{A}merika\\
+      \alert<2>{LU} & \alert<2>{Argentinien} & \textbf{L}inks \textbf{U}nten \\
+      \alert<2>{OA} & \alert<2>{Peru} & \textbf{O}st-\textbf{A}nden \\
+      \alert<2>{PY} & \alert<2>{Brasilien} & \\
+      \alert<2>{VE} & \alert<2>{Kanada} & \textbf{V}iele \textbf{E}lche \\
+      XE, XF & Mexiko & \\
+      \alert<2>{YV} & \alert<2>{Venezuela} & \\
+    \end{tabular}
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Außereuropäische Landeskenner: Region 3}
 
-    Liste der Prüfungsrelevanten Länder von DJ4UF:
+    In der Prüfung genannt\hspace{2pc}\only<2>{\alert{Lernen für Ausschlussverfahren}}\\[1em]
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth]{bv06/lk_region3.png}
-        \footnote{\tiny \url{http://www.amateurfunkpruefung.de/lehrg/bv06/lk_region3.gif}}
-    \end{center}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Außereuropäische Landeskenner: ''Eselsbrücken''}
-
-    Von ihm auch noch einige Merkhilfen:
-
-    \footnotesize
-    \begin{itemize}
-        \item TF: Tiefer Frost
-        \item VK: Viele Kängurus
-        \item OA: Obere Anden
-        \item ZL: Zealand
-        \item PY: Pyranha
-    \end{itemize}
-
-    Diverse ausführliche Präfixlisten\footnote{\url{http://ac6v.com/prefixes.htm}}
-    (viel genauer unterteilt als nur Landeskenner) gibt es online.
+    \begin{tabular}{l|l|l}
+      Kenner & Land & Eselsbrücke\\ \hline
+      BV & Taiwan & \\
+      \alert<2>{BY} & \alert<2>{China} & \\
+      DS\ldots DT & Südokorea & \\
+      DU\ldots DZ & Philippinen & \\
+      EP & Iran & \\
+      \alert<2>{JA}, JE\ldots JS & \alert<2>{Japan} & \\
+      JT & Mongolei &  \\
+      UA9, UA0 & asiatisch Russland & \\
+      VK & Australien & \textbf{V}iele \textbf{K}ängurus \\
+      VU & Indien & \\
+      \alert<2>{ZL} & \alert<2>{Neuseeland} & \\
+      4S & Sri Lanka &  \\
+    \end{tabular}
 
 \end{frame}
+
+%\begin{frame}
+%    \frametitle{Außereuropäische Landeskenner: ''Eselsbrücken''}
+%
+%    Von ihm auch noch einige Merkhilfen:
+%
+%    \footnotesize
+%    \begin{itemize}
+%        \item TF: Tiefer Frost
+%        \item VK: Viele Kängurus
+%        \item OA: Obere Anden
+%        \item ZL: Zealand
+%        \item PY: Pyranha
+%    \end{itemize}
+%
+%    Diverse ausführliche Präfixlisten\footnote{\url{http://ac6v.com/prefixes.htm}}
+%    (viel genauer unterteilt als nur Landeskenner) gibt es online.
+%
+%\end{frame}
 
 \section{T/R 61-01}
 
