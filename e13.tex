@@ -28,6 +28,7 @@
 	\item Transistoren bestehen aus drei Halbleiterschichten
 	\item Anschlüsse: Basis (B), Kollektor (C), Emitter (E)
 \end{itemize}
+
 \end{center}
 \end{frame}
 
@@ -44,21 +45,36 @@
 	Abb. 4: ESB eines PNP-Transistors
 \end{minipage}
 
+\begin{center}
+\begin{block}{Funktionsweise}
+Der Basisstrom steuert den Kollektorstrom
+$$I_{CE} = I_{BE} \cdot \beta$$
+\end{block}
+\end{center}
+
 \end{frame}
 
 
 \section*{Feldeffekt Transistor (FET)}
 \begin{frame}
-\frametitle{Feldeffekt Transistor (FET)}
+\frametitle{Metall Oxid Semiconductor Feldeffekt Transistor (MOSFET)}
 \begin{center}
-	\includegraphics[scale=0.2]{e13/FET-aufbau.png}\\
-	Abb. 5: Aufbau eines J-FET
-	\footnote{\url{http://de.wikipedia.org/wiki/Datei:Scheme_of_n-junction_field-effect_transistor_de.svg}}\\
-	
+	\includegraphics[scale=0.2]{e13/N-Kanal-MOSFET.png}\\
+	Abb. 5: Mosfet in Planartechnologie
+	\footnote{\url{https://commons.wikimedia.org/wiki/File:N-Kanal-MOSFET_\%28Schema\%29.svg}}\\
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Metall Oxid Semiconductor Feldeffekt Transistor (MOSFET)}
+\begin{center}
+	\includegraphics[scale=0.2]{e13/N-Ch_Enh_Labelled.png}\\
+\begin{block}{Funktionsweise}
 \begin{itemize}
-	\item Gate steuert Kanalbreite durch Spannung
-	\item Je dünner der Kanal, desto höher ist der Kanalwiderstand
+	\item Gate steuert Kanalbreite durch Spannung $U_{GS}$
+	\item Je größer $U_{GS}$ desto größer $I_{DS}$
 \end{itemize}
+\end{block}
 \end{center}
 \end{frame}
 
