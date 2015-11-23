@@ -1,6 +1,6 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Martin Deutschmann
+% Autoren:Felix Baum <baum@campus.tu-berlin.de>, Martin Deutschmann,
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 13: \\
@@ -51,9 +51,52 @@ Der Basisstrom steuert den Kollektorstrom
 $$I_{CE} = I_{BE} \cdot \beta$$
 \end{block}
 \end{center}
-
 \end{frame}
 
+\begin{frame}
+\frametitle{Bipolartransistor Verständnis}
+\begin{minipage}{0.55\textwidth}
+\begin{center}
+	\only<1>{\includegraphics[scale=0.3]{e13/Transistor_animation1.png}\\
+	Abb. 5: Bipolartransistor geschlossen}
+    \only<2>{\includegraphics[scale=0.3]{e13/Transistor_animation2.png}\\
+	Abb. 5: Bipolartransistor offen}
+    \end{center}
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}
+    \begin{center}
+    \begin{block}{Funktionsweise}
+        Der Basisstrom steuert den Kollektorstrom
+        $$I_{CE} = I_{BE} \cdot \beta$$
+        $\beta = $ Verstärkungsfaktor \\ (Modellabhängig $\beta = 10-900$)
+    \end{block}
+    \end{center}
+    \end{minipage}
+	\footnote{\url{https://commons.wikimedia.org/wiki/File:Transistor_animation.gif}}\\
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Ersatzschaltbild}
+
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=1.4]{e13/NPN.png}\\
+	NPN Transistor\\ \textbf{P}feil \textbf{N}ach \textbf{P}latte
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}{0.4\textwidth}
+	\includegraphics[scale=1.4]{e13/PNP.png}\\
+	PNP Transistor\\ \textbf{N}icht \textbf{P}feil \textbf{N}ach Platte
+\end{minipage}
+
+\begin{center}
+\begin{block}{Funktionsweise}
+NPN Transistor braucht $ U_{CE}=+0.7V$ zum schalten\\
+PNP Transistor braucht $ U_{CE}=-0.7V$ zum schalten\\
+Beide sind Stromgesteuert $I_{CE} = I_{BE} \cdot \beta$
+\end{block}
+\end{center}
+\end{frame}
 
 \section*{Feldeffekt Transistor (FET)}
 \begin{frame}
@@ -72,7 +115,7 @@ $$I_{CE} = I_{BE} \cdot \beta$$
 \begin{block}{Funktionsweise}
 \begin{itemize}
 	\item Gate steuert Kanalbreite durch Spannung $U_{GS}$
-	\item Je größer $U_{GS}$ desto größer $I_{DS}$
+	\item Je größer $U_{GS}$ desto größer $I_{DS}$, da $R_{DS}$ kleiner wird
 \end{itemize}
 \end{block}
 \end{center}
@@ -91,12 +134,11 @@ $$I_{CE} = I_{BE} \cdot \beta$$
 \begin{frame}
 \frametitle{Verstärker}
 \begin{center}
-\begin{Large}
-\begin{itemize}
-	\item \textbf{Es ist nur dann eine Verstärkung, wenn die Leistung am Ausgang größer ist, als die am Eingang}
-
-\end{itemize}
-\end{Large}
+\begin{block}{Definition eines Verstärkers nach Captain Obvious}
+  \begin{Large}
+    Es ist nur dann eine Verstärkung, wenn die Leistung am Ausgang größer ist, als die am Eingang
+  \end{Large}
+\end{block}
 \end{center}
 \end{frame}
 
