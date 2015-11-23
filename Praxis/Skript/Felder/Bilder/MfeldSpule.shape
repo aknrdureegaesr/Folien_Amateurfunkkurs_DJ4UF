@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>Bilder - MfeldSpule</name>
+  <icon>MfeldSpule.png</icon>
+  <connections>
+    <point x="1.48127" y="12"/>
+    <point x="1.48127" y="2.95"/>
+    <point x="1.48127" y="7.475"/>
+    <point x="19.4813" y="12"/>
+    <point x="19.4813" y="3.5"/>
+    <point x="19.4813" y="7.75"/>
+    <point x="0.48127" y="5"/>
+    <point x="19.9563" y="5"/>
+    <point x="10.2188" y="5"/>
+    <point x="19.9563" y="5.25"/>
+    <point x="20.4563" y="5"/>
+    <point x="19.9563" y="4.75"/>
+    <point x="20.2063" y="5.125"/>
+    <point x="20.2063" y="4.875"/>
+    <point x="0.48127" y="6"/>
+    <point x="19.9563" y="6"/>
+    <point x="10.2188" y="6"/>
+    <point x="19.9563" y="6.25"/>
+    <point x="20.4563" y="6"/>
+    <point x="19.9563" y="5.75"/>
+    <point x="20.2063" y="6.125"/>
+    <point x="20.2063" y="5.875"/>
+    <point x="0.48127" y="7"/>
+    <point x="19.9563" y="7"/>
+    <point x="10.2188" y="7"/>
+    <point x="19.9563" y="7.25"/>
+    <point x="20.4563" y="7"/>
+    <point x="19.9563" y="6.75"/>
+    <point x="20.2063" y="7.125"/>
+    <point x="20.2063" y="6.875"/>
+    <point x="0.48127" y="4"/>
+    <point x="19.9563" y="4"/>
+    <point x="10.2188" y="4"/>
+    <point x="19.9563" y="4.25"/>
+    <point x="20.4563" y="4"/>
+    <point x="19.9563" y="3.75"/>
+    <point x="20.2063" y="4.125"/>
+    <point x="20.2063" y="3.875"/>
+  </connections>
+  <aspectratio type="fixed"/>
+  <svg:svg>
+    <svg:line style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" x1="1.48127" y1="12" x2="1.48127" y2="2.95"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" d="M 4.34083,3.00051 A 4.57846,4.57846 0 0 0 1.48127,3"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke-dasharray: 0.2; stroke: #000000" d="M 4.01583,8.62549 A 3.31899,3.31899 0 0 0 4.26583,3.02551"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" d="M 5.19083,2.87551 A 2.99324,2.99324 0 0 0 3.99083,8.60049"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" d="M 6.44083,3.17551 A 1.95014,1.95014 0 0 0 4.99083,2.90051"/>
+    <svg:line style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" x1="19.4813" y1="12" x2="19.4813" y2="3.5"/>
+    <svg:line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="0.48127" y1="5" x2="19.9563" y2="5"/>
+    <svg:polygon style="fill: #000000" points="19.9563,5.25 20.4563,5 19.9563,4.75 "/>
+    <svg:polygon style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" points="19.9563,5.25 20.4563,5 19.9563,4.75 "/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke-dasharray: 0.2; stroke: #000000" d="M 6.66582,8.65049 A 3.22821,3.22821 0 0 0 6.52479,3.11975"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" d="M 8.04207,2.89176 A 2.99324,2.99324 0 0 0 6.84207,8.61674"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" d="M 8.96372,3.19041 A 1.95014,1.95014 0 0 0 7.51373,2.91541"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke-dasharray: 0.2; stroke: #000000" d="M 9.18872,8.66539 A 3.22821,3.22821 0 0 0 9.04769,3.13465"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" d="M 10.565,2.90666 A 2.99324,2.99324 0 0 0 9.36497,8.63164"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" d="M 16.6122,3.2938 A 1.95014,1.95014 0 0 0 15.1622,3.0188"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke-dasharray: 0.2; stroke: #000000" d="M 16.8372,8.76878 A 3.22821,3.22821 0 0 0 16.6962,3.23804"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" d="M 18.2355,3.05919 A 2.96635,2.96635 0 0 0 17.0134,8.73503"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" d="M 11.5336,3.22021 A 1.95014,1.95014 0 0 0 10.0836,2.94521"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke-dasharray: 0.2; stroke: #000000" d="M 11.7586,8.6952 A 3.22821,3.22821 0 0 0 11.6176,3.16445"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" d="M 13.1349,2.93646 A 2.99324,2.99324 0 0 0 11.9349,8.66145"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" d="M 14.1012,3.24314 A 1.95014,1.95014 0 0 0 12.6512,2.96814"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke-dasharray: 0.2; stroke: #000000" d="M 14.3262,8.71812 A 3.22821,3.22821 0 0 0 14.1852,3.18738"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" d="M 15.6933,2.97059 A 2.98528,2.98528 0 0 0 14.5025,8.68437"/>
+    <svg:path style="fill: none; fill-opacity:0; stroke-width: 0.15; stroke: #000000" d="M 19.4813,3.5 A 2.34575,2.34575 0 0 0 17.9171,3.06378"/>
+    <svg:line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="0.48127" y1="6" x2="19.9563" y2="6"/>
+    <svg:polygon style="fill: #000000" points="19.9563,6.25 20.4563,6 19.9563,5.75 "/>
+    <svg:polygon style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" points="19.9563,6.25 20.4563,6 19.9563,5.75 "/>
+    <svg:line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="0.48127" y1="7" x2="19.9563" y2="7"/>
+    <svg:polygon style="fill: #000000" points="19.9563,7.25 20.4563,7 19.9563,6.75 "/>
+    <svg:polygon style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" points="19.9563,7.25 20.4563,7 19.9563,6.75 "/>
+    <svg:line style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" x1="0.48127" y1="4" x2="19.9563" y2="4"/>
+    <svg:polygon style="fill: #000000" points="19.9563,4.25 20.4563,4 19.9563,3.75 "/>
+    <svg:polygon style="fill: none; fill-opacity:0; stroke-width: 0.05; stroke: #000000" points="19.9563,4.25 20.4563,4 19.9563,3.75 "/>
+  </svg:svg>
+</shape>
