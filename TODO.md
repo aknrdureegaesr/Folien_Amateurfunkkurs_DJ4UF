@@ -10,6 +10,12 @@
 * frametitle-Systematik / Nicht ganz einheitlich
 * FIXME DK0TU-Farbschema - Items Weiß auf Weiß
 
+# Kurskoffer
+
+* Packliste
+* Konzeptpaper
+* Kiste "AfuTUB-Kurs Ersatz- und Verbrauchsmaterial"
+
 # Skript
 
 * Prüfungskatalogfragen mit Box drum herum
