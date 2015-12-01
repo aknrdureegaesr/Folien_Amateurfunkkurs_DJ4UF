@@ -1,0 +1,79 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Wellenausbreitung.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{841.88976378bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.70707071)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Wellenausbreitung/Bilder/Wellenausbreitung.pdf}}%
+    \put(-0.09502432,0.26606811){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.06010168,0.13444783){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{D}}}%
+    \put(0.06002835,0.32700234){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{F}}}%
+    \put(0.05852627,0.4576584){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{F}}}%
+    \put(0.06004474,0.22730876){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{E}}}%
+    \put(0.01764124,0.1101805){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{60}}}%
+    \put(0.01898508,0.15751321){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{80}}}%
+    \put(0.01613435,0.19742343){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{100}}}%
+    \put(0.01328363,0.25348777){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{120}}}%
+    \put(0.01328363,0.29624872){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{170}}}%
+    \put(0.01328363,0.36751695){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{220}}}%
+    \put(0.01328363,0.40362619){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{250}}}%
+    \put(0.01328363,0.51955586){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{450}}}%
+    \put(0.06612822,0.44435499){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.06612822,0.31702241){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Wellenausbreitung/Bilder/Wellenausbreitung.pdf}}%
+    \put(0.02447576,0.55780437){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{km}}}%
+    \put(0.07031799,0.00570148){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{< 5 MHz}}}%
+    \put(0.18244669,0.00570148){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{> 5 MHz}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Wellenausbreitung/Bilder/Wellenausbreitung.pdf}}%
+    \put(0.10047204,0.28790926){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{< 10 MHz}}}%
+    \put(0.33026985,0.42363779){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{< 30 MHz}}}%
+    \put(0.35714679,0.00838912){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{>1.5 MHz}}}%
+    \put(0.47137377,0.22206079){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1.5 - 5 MHz}}}%
+    \put(0.85437011,0.40751167){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{< 10 MHz}}}%
+  \end{picture}%
+\endgroup%
