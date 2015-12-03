@@ -5,7 +5,7 @@ EXPORT_DIR="Kurs-Material"
 EXPORT_ARCHIVE="${EXPORT_DIR}_DK0TU_r`date --utc +%Y-%m-%dT%H%MZ`"
 PUBLISH_DIR="/home/webgit/dk0tu.underlay/download"
 
-all: slides
+all: slides skript
 
 slides: bv e a
 
@@ -24,6 +24,9 @@ a: a??.tex
 	texi2pdf --shell-escape a??.tex
 	texi2pdf --shell-escape a??.tex
 	$(MAKE) temp-clean
+
+skript:
+	$(MAKE) -C Praxis/Skript all
 
 export: slides
 	mkdir --parents export/${EXPORT_DIR}
