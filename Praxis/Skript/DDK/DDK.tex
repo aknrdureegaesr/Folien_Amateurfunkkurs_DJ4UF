@@ -29,7 +29,7 @@
 			$1W$ & $4W$ &  & ~\hspace*{1cm}\\
 			$4W$ & $1W$ &  & ~\hspace*{1cm}\\
 			$4W$ & $10W$ &  & ~\hspace*{1cm}\\
-			$50W$ &  & $-7dB$ & $7dB$\\
+			$50W$ &  & $-7dB$ & \\
 			\hline
 		\end{tabular}
 	}
@@ -39,15 +39,146 @@
 				\hline
 				Eingang & Ausgang & Dämpfung & Verstärkung\\
 				\hline
-				$1W$ & $4W$ &  & ~\hspace*{1cm}\\
-				$4W$ & $1W$ &  & ~\hspace*{1cm}\\
-				$4W$ & $10W$ &  & ~\hspace*{1cm}\\
-				$50W$ &  & $-7dB$ & $7dB$\\
+				$1W$ & $4W$ & $-6dB$ & $6dB$\\
+				$4W$ & $1W$ & $6dB$ & $-6dB$\\
+				$4W$ & $10W$ & $-4dB$ & $4dB$\\
+				$50W$ & $20W$  & $-7dB$ & $7dB$\\
 				\hline
 			\end{tabular}
 			}
 	}
 \end{figure}
+
+\subsection*{S-Stufen}
+
+\begin{enumerate} 
+\itemsep1pt\parskip0pt\parsep0pt
+\item[5] Zur Angabe der Empfangsfeldstärke wurde im RST-System für die Lautstärke $S9$ ein bestimmter Wert einer Empfangsspannung an einem $50\Omega$-Eingang für KW und UKW festgelegt. Wie lautet diese Angabe?
+\loesung{KW: $S9 \hat{=} 50\mu V ~an~ 50\Omega$; UKW: $S9 \hat{=} 5\mu V ~an~ 50\Omega$}
+\item[6] Die Erhöhung der Sendeleistung um eine S-Stufe entspricht einer Erhöhung um wie viel $dB$?
+\item[7] Die Erhöhung der Sendeleistung um eine S-Stufe entspricht einer Erhöhung der Empfangsspannung um wie viel $\mu V$?
+\item[8] \emph{\textbf{TITF406}} Wie groß ist der Unterschied von S4 nach S7 in dB?
+	\begin{enumerate}
+	\itemsep1pt\parskip0pt\parsep0pt
+		\item[A] 3 dB
+		\item[B] 9 dB
+		\item[C] 18 dB
+		\item[D] 24 dB
+		\loesung{Lösung C}
+	\end{enumerate}
+\item[9] \emph{\textbf{TI403}} Um wie viel S-Stufen müsste die S-Meter-Anzeige Ihres Empfängers steigen, wenn Ihr Partner die Sendeleistung von 10 Watt auf 40 Watt erhöht? Um ...
+	\begin{enumerate}
+	\itemsep1pt\parskip0pt\parsep0pt
+		\item[A] eine S-Stufe
+		\item[B] zwei S-Stufen
+		\item[C] vier S-Stufen
+		\item[D] acht S-Stufen
+		\loesung{Lösung A}
+	\end{enumerate}
+\item[10] \emph{\textbf{TI404}} Ein Funkamateur kommt laut S-Meter mit S7 an. Dann schaltet er seine Endstufe ein und bittet um einen erneuten Rapport. Das S-Meter zeigt S9+8dB. Um welchen Faktor müsste der Funkamateur seine Leistung erhöht haben?
+	\begin{enumerate}
+	\itemsep1pt\parskip0pt\parsep0pt
+		\item[A] 120-fach
+		\item[B] 20-fach 
+		\item[C] 10-fach
+		\item[D] 100-fach
+		\loesung{Lösung D}
+	\end{enumerate}
+\end{enumerate}
+
+\subsection*{Pegel}
+
+\begin{enumerate} 
+\itemsep1pt\parskip0pt\parsep0pt
+\item[11] Wie lautet die Formel für den Leistungspegel (dBmW)?
+\loesung{$p=10\cdot lg\dfrac{P}{1mW}$}
+\item[12] \emph{\textbf{TH304}}  Welcher der nachfolgenden Zusammenhänge ist richtig?
+	\begin{enumerate}
+	\itemsep1pt\parskip0pt\parsep0pt
+		\item[A] 	0 dBm entspricht 1 mW;
+					3 dBm entspricht 1,4 mW;
+					20 dBm entspricht 10 mW
+		\item[B] 	0 dBm entspricht 0 mW;
+					3 dBm entspricht 30 mW;
+					20 dBm entspricht 200 mW
+		\item[C] 	1 dBm entspricht 0 mW;
+					2 dBm entspricht 3 mW;
+					100 dBm entspricht 20 mW
+		\item[D] 	0 dBm entspricht 1 mW;
+					3 dBm entspricht 2 mW;
+					20 dBm entspricht 100 mW
+		\loesung{Lösung D}
+	\end{enumerate}
+\end{enumerate}
+
+\subsection*{Wellenwiderstand}
+
+\begin{enumerate} 
+\itemsep1pt\parskip0pt\parsep0pt
+\item[13] Wie lässt sich der Wellenwiderstand einer Leitung berechnen?
+\loesung{aus dem Kapazitätsbelag $C'$ (C pro m) und dem Induktivitätsbelag $L'$ (L pro m) $ Z_w = \sqrt{ \dfrac{L'}{C'} } $}
+\item[14] \emph{\textbf{TH307}}  Der Wellenwiderstand einer Leitung
+	\begin{enumerate}
+	\itemsep1pt\parskip0pt\parsep0pt
+		\item[A] ist völlig frequenzunabhängig.
+		\item[B] hängt von der Beschaltung am Leitungsende ab.
+		\item[C] hängt von der Leitungslänge und der Beschaltung am Leitungsende ab.
+		\item[D] ist im HF-Bereich in etwa konstant und unabhängig vom Leitungsabschluss.
+		\loesung{Lösung D}
+	\end{enumerate}
+\item[14] \emph{\textbf{TH308}}  Koaxialkabel weisen typischerweise Wellenwiderstände von
+	\begin{enumerate}
+	\itemsep1pt\parskip0pt\parsep0pt
+		\item[A] 50, 300 und 600 Ohm auf.
+		\item[B] 60, 120 und 240 Ohm auf.
+		\item[C] 50, 60 und 75 Ohm auf.
+		\item[D] 50, 75 und 240 Ohm auf.
+		\loesung{Lösung C}
+	\end{enumerate}
+\item[15] \emph{\textbf{TH309}}  Welche Vorteile hat eine Paralleldraht-Speiseleitung gegenüber der Speisung über ein Koaxialkabel?
+	\begin{enumerate}
+	\itemsep1pt\parskip0pt\parsep0pt
+		\item[A] Sie vermeidet Mantelwellen durch Wegfall der Abschirmung.
+		\item[B] Sie erlaubt leichtere Kontrolle des Wellenwiderstandes durch Verschieben der Spreizer.
+		\item[C] Sie bietet guten Blitzschutz durch niederohmige Drähte.
+		\item[D] Sie hat geringere Dämpfung und hohe Spannungsfestigkeit.
+		\loesung{Lösung D}
+	\end{enumerate}
+\end{enumerate}
+
+\subsection*{Dämpfungsberechnung}
+
+\begin{enumerate} 
+\itemsep1pt\parskip0pt\parsep0pt
+\item[16] \emph{\textbf{TH306}}  Welche Dämpfung hat ein 20 m langes Koaxkabel vom Typ RG58 bei 29 MHz? (siehe hierzu Diagramm ...)
+	\begin{enumerate}
+	\itemsep1pt\parskip0pt\parsep0pt
+		\item[A] 4,5 dB
+		\item[B] 1,8 dB
+		\item[C] 9,0 dB
+		\item[D] 1,2 dB
+		\loesung{Lösung B}
+	\end{enumerate}
+\item[17] \emph{\textbf{TH305}}  Welche Dämpfung hat ein 25 m langes Koaxkabel vom Typ Aircell 7 bei 145 MHz? (siehe hierzu Diagramm)
+	\begin{enumerate}
+	\itemsep1pt\parskip0pt\parsep0pt
+		\item[A] 1,9 dB
+		\item[B] 7,5 dB
+		\item[C] 3,75 dB
+		\item[D] 1,5 dB
+		\loesung{Lösung A}
+	\end{enumerate}
+\item[18] \emph{\textbf{TH302}}  Am Ende einer Leitung ist nur noch ein Zehntel der Leistung vorhanden. Wie groß ist das Dämpfungsmaß des Kabels?
+	\begin{enumerate}
+	\itemsep1pt\parskip0pt\parsep0pt
+		\item[A] 16 dB
+		\item[B] 3 dB
+		\item[C] 6 dB
+		\item[D] 10 dB
+		\loesung{Lösung A}
+	\end{enumerate}
+\end{enumerate}
+
 
 
 \begin{enumerate} 
