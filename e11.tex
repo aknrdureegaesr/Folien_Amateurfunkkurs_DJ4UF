@@ -1,3 +1,379 @@
+%%%%%%%%%%%%%%%%%%%camp
+
+\section*{Einleitung}
+
+\begin{frame}
+    \frametitle{Antenne}
+      \begin{center}
+        \includegraphics[width=.5\textwidth]{e11/Traqueur_acquisition.JPG}
+        \footnote{\tiny \url{https://upload.wikimedia.org/wikipedia/commons/3/32/Traqueur_acquisition.JPG}}
+    \end{center}
+\end{frame}
+  
+\begin{frame}
+	\frametitle{Einleitung}
+\begin{minipage}{0.49\textwidth}
+	\includegraphics[width=1\textwidth]{antennen101/HEINRICH_HERTZ.jpg}
+	\tiny \hyperlink{refs}{\cite{wc}}
+\end{minipage}
+\begin{minipage}{0.49\textwidth}
+	\begin{itemize}
+		\item Heinrich Hertz (1851-1894)
+		\item Nachweis Elektromagnetischer Wellen 1888	
+		\item Herzscher Dipol
+	\end{itemize}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Schwingkreis}
+    \begin{center} \huge
+    $$f = \frac{1}{2  \pi \cdot \sqrt{LC}}$$
+        \includegraphics[width=.8\textwidth]{antennen101/Schwingkreis.png}
+	\end{center}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Dipol}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{e11/dipol_entstehung.png}
+        \footnote{\tiny by DB4UM}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{E- und H-Feld}
+    \begin{center}
+        \includegraphics[width=0.85\textwidth]{e11/Felder_um_Dipol.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Felder_um_Dipol.jpg}}
+	\end{center}
+\end{frame}
+
+
+\section*{Dipol}
+
+\begin{frame}
+    \frametitle{Dipol}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{antennen101/Faltdipol.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Faltdipol.png}}
+	\end{center}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Wellenlänge}
+    \begin{center} \huge
+        $$\lambda = \frac{c}{f}$$
+      	mit $c = 299\,792\,458 ~ \mathrm{m/s}$
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Wellenlänge einfacher}
+    \begin{center} \huge
+        $$\lambda [m] = \frac{300}{f[MHz]}$$
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{$\lambda / 2$ Dipol berechnen}
+    \begin{center}
+	\begin{itemize} \Large
+		\item Theoretische Strahlerlänge eines $\lambda / 2$ Dipols für 7MHz berechnen
+		\item $\lambda[m] = \frac{300}{f[MHz]}$
+    \end{itemize}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Verkürzungsfaktor beachten}
+    \begin{center}
+	\begin{itemize} \Large
+		\item Inerhalb von Feststoffen breiten sich EM-Wellen nicht mit Lichtgeschwindigkeit aus.
+		\item Deshalb: $\lambda[m] = \frac{300}{f[MHz]} \cdot $ Verkürzungsfaktor
+		\item z.B. bei Kupfer $0.95$
+    \end{itemize}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Fertig?}
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{antennen101/cat-antenna.jpg}
+        \footnote{\tiny \url{http://www.socalgreenrealestateblog.com/control-your-homes-energy-use-with-these-apps/cat-antenna/}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Strom und Spannungsverteilung}
+	\begin{itemize}
+		\item Stahlerlänge $\lambda / 2$
+		\item Stromknoten und Spannungsbauch an den Enden (Unendlich großer Widerstand)
+        \item Spannung nicht überall gleich groß
+    \end{itemize}
+    \begin{center}
+        \includegraphics[width=0.85\textwidth]{e11/DipolUI.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Lineare_antennen.svg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Fußpunktwiderstand}
+    \begin{center}
+	\begin{itemize}
+		\item Fußpunktwiderstand/Impedanz/Speisewiderstand
+		\item Beim Dipol im freien Raum: $70 \Omega$
+		\item je nach Dipolhöhe zwischen $40  \Omega$ und $80  \Omega$
+		\item  Bei $0.15 \lambda$ Höhe $50  \Omega$ Speisewiderstand 
+    \end{itemize}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage}
+    \begin{center}
+    \begin{tabular}{l||l}\hline
+        TH206 & Ein Halbwellendipol wird auf der  \\
+         " "  & Grundfrequenz in der Mitte \\ \hline\hline
+         A & spannungsgespeist.\\\hline
+         B & stromgespeist. \\\hline
+         C & endgespeist. \\ \hline
+         D & parallel gespeist.\\\hline
+    \end{tabular}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prüfungsfrage}
+
+    \begin{center}
+    \begin{tabular}{l||l}\hline
+        TH206 & Ein Halbwellendipol wird auf der  \\
+         " "  & Grundfrequenz in der Mitte \\ \hline\hline
+         " " & spannungsgespeist.\\\hline
+         X & stromgespeist. \\\hline
+         " " & endgespeist. \\ \hline
+         " " & parallel gespeist.\\\hline
+    \end{tabular}
+        \includegraphics[width=0.85\textwidth]{e11/DipolUI.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Lineare_antennen.svg}}
+ 	\end{center}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Fußpunktwiderstand}
+    \begin{center}
+	\begin{itemize}
+		\item Erwünschter Widerstand: Real $50 \Omega$ Imaginär $O \Omega$
+		\item SWR-Meter (Standing wave Ratio) möglichst 1:1 ($S_{11} < -17$)
+    \end{itemize}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{SWR}
+    \begin{center}
+	\begin{itemize}
+		\item Aussage über verhältnis Widerstand am Kabelende zu Widerstand an der Antenne
+		\item Informationen darüber wie viel Leistung an die Antenne abgegeben wird
+		\item Nicht an die Antenne gegebene Leistung wird zurück in die Endstufe reflektiert
+		\item Keine Aussage über Abstrahleigenschaften der Antenne ($50 \Omega$ R ist perfekt)
+		\item Typische Werte für eine reale Antenne im WLAN-Bereich liegen etwa bei 2:1 bis 2,5:1.
+		\item Für rad1o werden Antennen benötigt mit SWR besser als 2:1
+    \end{itemize}
+ 	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Schwingkreis}
+    \begin{center} \large
+    Messung einer selbstgebauten Yagi für $10m$ bei DK0TU
+        \includegraphics[width=.9\textwidth]{antennen101/Measurement0010.png}
+	\end{center}
+\end{frame}
+
+
+\section*{Richtdiagramm}
+
+\begin{frame}
+    \frametitle{Richtdiagramm Dipol}
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{e11/Richt-Dipol.png}
+        \footnote{\tiny DB4UM Programm: cocoaNec 2.0}
+	\end{center}
+\end{frame}
+
+\section*{Gewinn}
+
+\begin{frame}
+    \frametitle{EIRP und ERP}
+    \begin{itemize}
+    	\item ERP
+		    \begin{itemize}
+				\item Effektive Radiated Power
+       		 	\item Bezug auf Dipol
+       		 	\item $P_{ERP} = G_{Dipol} \cdot (P_{Sender} - P_{Verlust})$
+ 		   	\end{itemize}
+		\item EIRP
+		    \begin{itemize}
+				\item Effektive Isotropic Radiated Power
+       		 	\item Bezug auf Isotropstrahler
+       		 	\item $dB_{ERP} = 2.15 + dB_{EIRP}$
+       		 	\item $P_{EIRP} = 1.64 \cdot P_{ERP}$
+ 		   	\end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Isotropstrahler}
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{e11/Spherical_wave2.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Spherical_wave2.gif}}
+	\end{center}
+\end{frame}
+
+\section*{Multiband}
+
+\begin{frame}
+    \frametitle{Multiband Dipol}
+    $2.15dBi$
+    \begin{center}
+        \includegraphics[width=0.9\textwidth]{e11/Multiband.jpg}
+        \footnote{\tiny Antenne EA-1015204080 von EAntenna}
+	\end{center}
+\end{frame}
+
+
+\section*{Yagi-Uda}
+
+\begin{frame}
+    \frametitle{Yagi-Uda}
+    $5dBi$-$30dBi$
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{e11/Yagi_3_element.png}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Yagi_3_element.svg}}
+	\end{center}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Richtdiagramm Yagi}
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{e11/yagi_gain.png}
+        \footnote{\tiny DK0TU 10m Yagi 28.1 MHz von DL2JAS Programm: EZNEC}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Yagi - Richtung erkennen}
+    \begin{center}
+        \includegraphics[width=.9\textwidth]{e11/yagi.jpg}
+        \footnote{\tiny 10M Yagi bei DK0TU von DK9GD}
+	\end{center}
+\end{frame}
+
+
+\section*{Groundplane}
+
+\begin{frame}
+    \frametitle{Groundplane}
+    $2.15dBi$ - Jeder Draht $\lambda / 4$
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{e11/GP-DB4UM.png}
+        \footnote{\tiny DB4UM mit cocoaNec 2.0}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Spiegelladung}
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{antennen101/Spiegelladung.png}
+                \footnote{\tiny \url{https://de.wikipedia.org/wiki/Datei:Spiegelladung.svg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Spiegelladung}
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{antennen101/Antena_marconi501.png}
+                \footnote{\tiny \url{https://de.wikipedia.org/wiki/Datei:Spiegelladung.svg}}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Magnetfuss-Antenne}
+    \begin{center}
+        \includegraphics[height=0.99\textheight]{antennen101/magnetfuss.jpg}
+                \footnote{\tiny \url{https://de.wikipedia.org/wiki/Datei:Spiegelladung.svg}}
+	\end{center}
+\end{frame}
+
+\section*{Magnetic Loop}
+
+\begin{frame}
+    \frametitle{Magnetic Loop}
+    \begin{center}
+        \includegraphics[width=1\textwidth]{e11/Magloop.jpg}
+        \footnote{\tiny Magloop bei DK0TU von DB4UM}
+	\end{center}
+\end{frame}
+
+\section*{Polarisierung}
+
+\begin{frame}
+    \frametitle{Polarisierung}
+    	\begin{itemize}
+		\item Antennen sind Vertikaloder Horizontal Polarisiert?
+		\item Wie ist die Antenne unten polarisiert?
+    \end{itemize}
+    \begin{center}
+        \includegraphics[width=.4\textwidth]{e11/kreutzYagi.jpg}
+        \footnote{\tiny DK0TU Fildday 2014 von DL7BUR}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Jetzt Ihr}
+    \begin{center} 	Baut, messt und benutzt eure selbstgebauten Antennen
+        \includegraphics[width=1\textwidth]{antennen101/hamPro.jpg}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Kontakt}
+    	\begin{itemize}
+		\item Twitter: [at]b4um oder [at]dk0tu
+		\item baum AT campus.tu-berlin.de
+		\item GSM: B4UM
+		\item Amateur Radio Dorf
+    \end{itemize}
+\end{frame}
+
+
+\section*{Referenzen}
+
+\begin{frame}
+    \frametitle{Referenzen/Links}
+    
+    \footnotesize
+    \begin{itemize}
+        \item Moltrecht E 09: \\
+              \url{http://www.dj4uf.de/lehrg/e11/e11.html}
+        \item Strahlungsdiagramm (Youtube): \\
+              \url{https://www.youtube.com/watch?v=gBqqp7rnZ64}
+    \end{itemize}
+
+\end{frame}
+
+\input{texdata/postamble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Felix Baum <baum@campus.tu-berlin.de>
