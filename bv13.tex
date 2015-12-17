@@ -1,11 +1,12 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+% Korrekturen: Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Betriebstechnik/Vorschriften 13: \\
           RST-System, UTC, Logbuch, QSL-Karte \\[2em]}
-\date{Stand 29.01.2015}
+\date{Stand 17.12.2015}
 \input{texdata/titlepage}
 
 \section{Einleitung}
@@ -13,7 +14,7 @@
 \begin{frame}
     \frametitle{Einleitung}
 
-    Für den eigentlichen Spaß des Funkbetriebes braucht es etwas ''back
+    Für den eigentlichen Spaß des Funkbetriebes braucht es etwas ``back
     office'': 
 
     \begin{itemize}
@@ -23,7 +24,7 @@
 
     \vspace{1cm}
 
-    Benötigt: \emph{RST}-System und Umgang mit \emph{UTC}...
+    Benötigt: \emph{RST}-System und Umgang mit \emph{UTC}.
 
 \end{frame}
 
@@ -83,7 +84,7 @@
         \item RS: Sprechfunk (p2p)
         \item RSV: \textbf{V}ideo - SSTV/ATV
         \item RSQ: \textbf{Q}uality - digitalen Betriebsarten
-        \item RSA: \textbf{A}urora - Tonrapport wäre quatsch $\rightarrow$ ''A'' geben
+        \item RSA: \textbf{A}urora - Tonrapport wäre quatsch $\rightarrow$ ``A'' geben
     \end{itemize}
 
 \end{frame}
@@ -102,11 +103,11 @@
 
     Beispiel\footnote{Prüfungskatalog Frage BB303}:    
 
-    \begin{block}{Um wie viel S-Stufen müsste die S-Meter- Anzeige Ihres
+    \begin{exampleblock}{Um wie viel S-Stufen müsste die S-Meter-Anzeige Ihres
                   Empfängers steigen, wenn Ihr Partner die Sendeleistung von 100
                   Watt auf 400 Watt erhöht?}
-        \only<2>{$\rightarrow$ Um eine S-Stufe}
-    \end{block}
+        \only<1>{\vspace{1pc}}\only<2>{$\rightarrow$ Um eine S-Stufe}
+    \end{exampleblock}
 
 \end{frame}
 
@@ -115,12 +116,12 @@
 
     Noch ein Beispiel\footnote{Prüfungskatalog Frage BB307}:    
 
-    \begin{block}{Durch ''Fading'' sinkt die S-Meter-Anzeige von S9 auf S8. Auf
+    \begin{exampleblock}{Durch ``Fading'' sinkt die S-Meter-Anzeige von S9 auf S8. Auf
                   welchen Wert sinkt dabei die Empfänger-Eingangsspannung ab,
                   wenn bei S9 am Empfängereingang $50\mu V$ anliegen? Die
                   Empfänger-Eingangsspannung sinkt auf}
-        \only<2>{$\rightarrow 25\mu V$}
-    \end{block}
+        \only<1>{\vspace{1pc}}\only<2>{$\rightarrow 25\mu V$}
+    \end{exampleblock}
 
 \end{frame}
 
@@ -132,12 +133,12 @@
     \textbf{U}niversal \textbf{T}ime, \textbf{C}oordinated
 
     \begin{center}
-        \includegraphics[width=0.8\textwidth]{bv13/Standard_time_zones_of_the_world.png}
+        \includegraphics[width=0.7\textwidth]{bv13/Standard_time_zones_of_the_world.png}
         \tiny \hyperlink{refs}{\cite{wc}}
     \end{center}
 
     \begin{itemize}
-        \item Bezugsachse: lokale ''Sonnenzeit'' am Nullmeridian durch
+        \item Bezugsachse: lokale ``Sonnenzeit'' am Nullmeridian durch
               London-Greenwich\footnote{früher übliche Bezeichnung
               \emph{Greenwich Mean Time (GMT)}}
     \end{itemize}
@@ -148,7 +149,7 @@
     \frametitle{UTC}
 
     \begin{center}
-        \includegraphics[width=0.9\textwidth]{bv13/Standard_time_zones_of_the_world.png}
+        \includegraphics[width=0.5\textwidth]{bv13/Standard_time_zones_of_the_world.png}
         \tiny \hyperlink{refs}{\cite{wc}}
     \end{center}
 
@@ -171,12 +172,12 @@
 \begin{frame}
     \frametitle{Logbook}
 
-    ''Stationstagebuch, das ein Funkamateur freiwillig führt oder in besonderen
+    ``Stationstagebuch, das ein Funkamateur freiwillig führt oder in besonderen
     Fällen führen muss.''
 
     %todo aktuelles Papierlogbild?
     \begin{center}
-        \includegraphics[width=0.8\textwidth]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
+        \includegraphics[width=0.55\textwidth]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
         \tiny \footnote{DK0TU Kurzwellenlog Feb. 1972 (Auszug, nach Wasserschaden)}
     \end{center}
 
@@ -186,7 +187,7 @@
     \frametitle{Logbook}
 
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
+        \includegraphics[width=0.3\textwidth]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
     \end{center}
 
     Je Aussendung:
@@ -223,13 +224,10 @@
 
     \begin{center}
         \includegraphics[height=0.25\textheight]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
-        $\rightarrow$
+        \hspace{2pc}$\rightarrow$\hspace{1pc}
         \includegraphics[height=0.25\textheight]{bv13/tucnak_Hf-10.png}
+        \tiny \hyperlink{refs}{\cite{tucn}}
     \end{center}
-    %\begin{center}
-    %    \includegraphics[width=0.5\textwidth]{bv13/tucnak_Hf-10.png}
-    %    \tiny \hyperlink{refs}{\cite{tucn}}
-    %\end{center}
 
     \begin{itemize}
         \item Uhrzeit automatisch
@@ -238,7 +236,7 @@
         \item Call-Datenbanken
         \item DX-Cluster
         \item Sync im LAN/WAN für Multi-Op
-        \item ...
+        \item je nach Logprogramm weitere Optionen
     \end{itemize}
 
 \end{frame}
@@ -249,14 +247,14 @@
     \frametitle{Beispiel: Papierlog}
 
     \begin{center}
-        \includegraphics[width=1\textwidth]{bv13/dk0tu_log_kw.png}
+        \includegraphics[height=.9\textheight]{bv13/dk0tu_log_kw.png}
     \end{center}
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Beispiele: Software}
-    
+ 
     \begin{center}
 
     \Large Demo... \\[3em]
@@ -272,8 +270,8 @@
 \begin{frame}
     \frametitle{Logbuchführung / Angeordnete Logbuchführung}
 
-    Heutzutage ist die Logbuchführung freiwillig - im Falle einer Störung nicht.
-    Die ''zuständigen Behörde'' (\emph{BNetzA}) kann das anordnen.
+    Heutzutage ist die Logbuchführung freiwillig -- im Falle einer Störung nicht.
+    Die ``zuständigen Behörde'' (\emph{BNetzA}) kann das anordnen.
 
     \begin{center}
         \includegraphics[width=0.3\textwidth]{bv13/Bundesnetzagentur_logo_709px.png}
@@ -288,6 +286,18 @@
 
 \end{frame}
 
+\begin{frame}
+    \frametitle{Logbuchführung / Angeordnete Logbuchführung}
+
+    \begin{exampleblock}{Ausbildungsfunkbetrieb}
+      AfuV §12
+      \begin{quote}
+       (4) Beim Ausbildungsfunkbetrieb sind von dem Auszubildenden Angaben über den Funkbetrieb schriftlich festzuhalten und vom Ausbilder zu bestätigen. Dieser hat die Aufzeichnungen ein Jahr aufzubewahren.
+      \end{quote}
+    \end{exampleblock}
+\end{frame}
+
+
 \section{QSL-Karte}
 
 \begin{frame}
@@ -299,7 +309,7 @@
         \includegraphics[width=0.6\textwidth]{bv13/DK0TU_1.jpg}
     \end{center}
 
-    $\rightarrow$ traditionell auch mit einer ''Ansichtskarte'' bei KW oder UKW-DX
+	$\rightarrow$ traditionell auch mit einer ``Ansichtskarte'' bei KW oder UKW-DX
 
 \end{frame}
 
@@ -322,7 +332,7 @@
 \begin{frame}
     \frametitle{QSL-Karte / Informationen}
 
-    \begin{block}{Welche Angaben sollten mind. enthalten sein?}
+    \begin{exampleblock}{Welche Angaben sollten mind. enthalten sein?}
         \only<1>{$\rightarrow$ Tafel} 
         \only<2>{
         Im Prinzip Daten aus dem \textbf{Logbook}:
@@ -337,11 +347,11 @@
             \item Unterschrift des Op
         \end{itemize}
         }
-    \end{block}
+    \end{exampleblock}
 
     \only<2>{
-        Besonderheit\footnote{z.B. bei \emph{DXpeditionen}}:
-        \emph{''QSL via [Call]''} $\rightarrow$ QSL-Manager
+		\footnotesize{Besonderheit\footnote{z.B. bei \emph{DXpeditionen}}:
+		\emph{``QSL via [Call]''} $\rightarrow$ QSL-Manager}
     }
 
 \end{frame}
@@ -350,7 +360,7 @@
     \frametitle{QSL-Karte / Informationen}
 
     \begin{center}
-        \includegraphics[width=1\textwidth]{bv13/dk0tu_qsl2.pdf}
+		\includegraphics[width=0.9\textwidth]{bv13/dk0tu_qsl2.pdf}
     \end{center}
 
 \end{frame}
@@ -359,13 +369,21 @@
     \frametitle{QSL-Karte / Versand}
 
     \begin{itemize}
-        \item kostenfrei \emph{''via bureau''}
+		\item kostenfrei \emph{``via bureau''}
         \item direkte Zusendung durch Adresse aus \emph{int. Callbook} oder Internet
     \end{itemize}
 
     Für besonders Eilige oder Länder ohne Radio Clubs: Mit Versand der Karte
     Antwortbriefumschlag (\emph{SAE}\footnote{Self-Addressed Envelope}) und
     \emph{IRC}\footnote{International Reply Coupon}s zwei 1\$-Noten beilegen. \\[2em]
+
+    \pause
+
+    Noch eiliger: Online-QSL-Karten
+    \begin{itemize}
+      \item eQSL \url{https://www.eqsl.cc/}
+      \item LoTW \url{https://lotw.arrl.org/}
+    \end{itemize}
 
 \end{frame}
 
@@ -377,14 +395,14 @@
     im Prinzip wie \textbf{e}Mail
 
     \begin{center}
-        \includegraphics[width=0.6\textwidth]{bv13/eQSL_DK0TU-EA3ARE.jpg}
+		\includegraphics[width=0.4\textwidth]{bv13/eQSL_DK0TU-EA3ARE.jpg}
         \tiny \hyperlink{refs}{\cite{wc}}
     \end{center}
 
     \begin{itemize}
         \item minimaler Kostenaufwand
         \item Ausdruck nur bei Bedarf
-        \item weniger ''Flair''
+		\item weniger ``Flair''
     \end{itemize}
 
     Wie bei E-Mail gibt es diverse Webdienste oder Programme.
@@ -396,8 +414,8 @@
 \begin{frame}
     \frametitle{QSL-Karte / SSTV}
 
-    Manchmal wird das empfangene SSTV-Bild zur Bestätigung per E-Mail
-    zurückgesendet.
+	Keine QSL-Karte, aber manchmal wird einfach das empfangene SSTV-Bild zur
+	Bestätigung per E-Mail zurückgesendet.
 
     \begin{center}
         \includegraphics[width=0.6\textwidth]{bv13/QSL_SSTV_2014-11-24_162753.png}
@@ -413,7 +431,7 @@
     Einige HAMs sammeln besondere Stationen:
 
     \begin{center}
-        \includegraphics[width=0.6\textwidth]{bv13/DK0TU_SDOK_FSB13.jpg}
+		\includegraphics[width=0.4\textwidth]{bv13/DK0TU_SDOK_FSB13.jpg}
     \end{center}
 
     \begin{itemize}
@@ -454,7 +472,8 @@
     \begin{itemize}
         \item DXCC\footnote{DX century club}-Diplom für $>100$ Länder
         \item DLD\footnote{Deutschland Diplom} für $>100$ \emph{OV}s
-        \item ... ''All \$Achievement Award''
+		\item Berlin-Diplom\footnote{\url{http://www.darc.de/distrikte/d/berlin-diplom/}}
+		\item ... ``All \$Achievement Award''
     \end{itemize}
 
     Beantragung vom Operator selbst. Nachweis: QSL-Karten, relevante
