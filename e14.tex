@@ -1,11 +1,14 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Martin Deutschmann
+% Autoren: 
+% Martin Deutschmann
+% Lars Weiler <dc4lw@darc.de>
+% Felix Baum <baum@campus.tu-berlin.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 14: \\
           Modulation \& Demodulation \\[2em]}
-\date{Stand 08.01.2015}
+\date{Stand 07.12.2015}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -80,39 +83,33 @@ Abb. 1: Sender\\
 \end{itemize}
 \end{frame}
 
+%\begin{frame}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TD501} & \textbf{Durch Modulation...}\\ \hline\hline
+%      A \only<2>\checkmark & werden Informationen auf einen oder mehrere Träger übertragen. \\ \hline
+%      B & werden einem oder mehreren Trägern Informationen entnommen. \\ \hline
+%      C & werden Sprach- und CW-Signale kombiniert. \\ \hline
+%      D & werden dem Signal NF-Komponenten entnommen. \\ \hline 	
+%    \end{tabular}
+%\end{frame}
+
 \begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TD501: Durch Modulation...}}\\
-		\hline
-		A & werden Informationen auf einen & ??? \\
-		" " &  oder mehrere Träger übertragen. & " " \\ \hline
-		B & werden einem oder mehreren & ??? \\ 
-		" " & Trägern Informationen entnommen.  & " " \\ \hline
-		C & werden Sprach- und CW-Signale kombiniert.  & ??? \\ \hline
-		D & werden dem Signal NF-Komponenten entnommen. & ??? \\ \hline 	
-	\end{tabular}
-	\end{small}
+\frametitle{Frequenzen eines Geigentons}
+\begin{center}
+\includegraphics[height=0.8\textheight]{e14/geigenton.png}\\
+	\footnote{\url{https://commons.wikimedia.org/wiki/File:Geigentonspektrum.svg}}\\
+\end{center}
 \end{frame}
 
 \begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TD501: Durch Modulation...}}\\
-		\hline
-		A & werden Informationen auf einen & Richtig \\
-		" " &  oder mehrere Träger übertragen. & " " \\ \hline
-		B & werden einem oder mehreren & ??? \\ 
-		" " & Trägern Informationen entnommen.  & " " \\ \hline
-		C & werden Sprach- und CW-Signale kombiniert.  & ??? \\ \hline
-		D & werden dem Signal NF-Komponenten entnommen. & ??? \\ \hline 	
-	\end{tabular}
-	\end{small}
+\frametitle{Frequenzen bei Sprache}
+\begin{center}
+\includegraphics[height=0.8\textheight]{e14/spracheFrequenzen.png}\\
+	Frequenzssprektum bei 10sek Sprachaufnahme mit Audacity
+\end{center}
 \end{frame}
 
-\section*{Modulationsarten}
+\section[Arten]{Modulationsarten}
 \begin{frame}
 \frametitle{Modulationsarten}
 \begin{center}
@@ -121,103 +118,104 @@ Abb. 1: Sender\\
 	\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}}\\
 	
 \begin{itemize}
-	\item grundsätzlich sind nur Amplitudenmodulation und Frequenzmodulation im Einsatz
+	\item grundsätzlich sind nur Amplitudenmodulation und Frequenzmodulation im Einsatz (Phasenmodulation erst seit sdr)
 	\item der eingefügte Träger muss sinusförmig sein
 \end{itemize}
 \end{center}
 \end{frame}
 
-\section{Amplitudenmodulation}
+\subsection[AM]{Amplitudenmodulation}
 \begin{frame}
 \frametitle{Amplitudenmodulation}
-\begin{minipage}{0.4\textwidth}
-\includegraphics[scale=0.24]{e14/AM1.png}\\
+\begin{minipage}{0.3\textwidth}
+\includegraphics[width=1\textwidth]{e14/AM1.png}\\
 \end{minipage}
-\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/b/b8/Amplitudenmodulation3.png}}
 \hspace{0.5cm}
-\begin{minipage}{0.4\textwidth}	
+\begin{minipage}{0.5\textwidth}	
 	\begin{itemize}
-		\item wird nur noch im Rundfunk angewendet
+		\item wird fast nur noch im Rundfunk angewendet
 		\item Information steckt in der Amplitude
-		\item \url{http://upload.wikimedia.org/wikipedia/commons/6/62/Am2_spec.gif}
+        \item Überlegen: Wie verändert sich das AM Signal bei höheren/niedrigeren Frequenzen
 	\end{itemize}
 \end{minipage}
+\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/b/b8/Amplitudenmodulation3.png}}
 \end{frame}
 
-\section*{Modulationsgrad}
 \begin{frame}
 \frametitle{Modulationsgrad}
 \begin{center}
-\includegraphics[scale=0.8]{e14/TE103.png}\\
-Abb. 3: Modulationsgrade bei AM
+\includegraphics[scale=0.65]{e14/TE103.png}\\
+Abb. 3: Modulationsgrad bei AM
 
 \hspace{0.5cm}
 
-\begin{itemize}
-	\item	\LARGE{$m = \frac{\hat{U_{mod}}}{\hat{U_T}}$}
-\end{itemize}
+\begin{block}{Modulationsgrad}
+  $m = \cfrac{\hat{U}_{mod}}{\hat{U}_T}$
+\end{block}
 \end{center}
 \end{frame}
 
-\section*{Bandbreite bei AM}
 \begin{frame}
 \frametitle{Bandbreite bei AM}
 \begin{center}
-\includegraphics[scale=0.4]{e14/Bandbreite.png}\\
-\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/b/b9/Am_spek1.png}}
-	\begin{itemize}
-		\item Bandbreite ist die Differenz zwischen der höchsten und der niedrigsten Frequenz des HF-Signals
-		\item Formel: \LARGE{$b_{AM} = 2 \cdot f_{NF,max}$}
-	\end{itemize}
+\includegraphics[scale=0.3]{e14/Bandbreite.png}
+\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/b/b9/Am_spek1.png}} \\
 \end{center}
+Bandbreite ist die Differenz zwischen der höchsten und der niedrigsten Frequenz des HF-Signals
+\begin{block}{Bandbreite}
+  {$B = 2 \cdot f_{mod~max}$}
+\end{block}
 \end{frame}
 
-\section*{Leistung bei AM}
 \begin{frame}
 \frametitle{Leistung bei AM}
 \includegraphics[scale=0.8]{e14/AMP.png}
 \end{frame}
 
-\section{Trägerunterdrückung (DSB)}
+\subsection[DSBSC]{Trägerunterdrückung}
 \begin{frame}
-\frametitle{Trägerunterdrückung (DSB)}
+\frametitle{Trägerunterdrückung (DSBSC)}
 \begin{itemize}
-	\item Um Leistung zu sparen, kann der Träger unterdrückt werden
-	\item Dies erfordert mehr Aufwand im Empfänger
-	\item Nach dem umwandeln in ein HF-Signal wird der Träger herausgefiltert
-	\item Die beiden Seitenbänder bleiben trotzdem als HF-Signal vorhanden
-	\item Wird auch Doppelseitenbandmodulation genannt
-	\item Im Amateurfunk nicht zulässig
+  \item Double side band suppressed carrier (DSBSC)
+  \item Um Leistung zu sparen, kann der Träger unterdrückt werden
+  \item Dies erfordert mehr Aufwand im Empfänger
+  \item Nach dem Umwandeln in ein HF-Signal wird der Träger herausgefiltert
+  \item Die beiden Seitenbänder bleiben trotzdem als HF-Signal vorhanden
+  \item Wird auch Doppelseitenbandmodulation genannt
+  \item Im Amateurfunk nicht zulässig
 \end{itemize}
 \end{frame}
 
-\section*{Einseitenbandmodulation SSB}
+\subsection[SSB]{Einseitenbandmodulation}
 \begin{frame}
 \frametitle{Einseitenbandmodulation SSB}
 \begin{small}
 \begin{itemize}
-	\item \url{http://upload.wikimedia.org/wikipedia/commons/4/4e/Ssb_spec.gif}
-	\item Um weitere Leistung zu sparen, kann man zusätzlich noch eines der Seitenbänder unterdrücken
-	\item Dadurch wird die benötigte Bandbreite halbiert
-	\item dies ist möglich, da beide Seitenbänder die gleiche Information beinhalten
-	\item Im Amateurfunk wird unterhalb von 10 MHz das LSB und oberhalb von 10 MHz das USB genutzt	
-	\item Die Bandbreite eines SSB-Signals ist identisch mit der Bandbreite des NF-Signals, also etwas geringer als die Hälfte der Bandbreite von AM.
-	\item Bandbreite: $b_{SSB} = f_{NF,max} - f_{NF,min}$
-	\item da $f_{NF,min}$ wesentlich kleiner als $f_{NF,max}$ gilt vereinfacht:
-	\item $b_{SSB} = f_{NF,max}$
+  \item Um weitere Leistung zu sparen, kann man zusätzlich noch eines der Seitenbänder unterdrücken
+  \item Dadurch wird die benötigte Bandbreite halbiert
+  \item dies ist möglich, da beide Seitenbänder die gleiche Information beinhalten
+  \item Im Amateurfunk wird unterhalb von 10 MHz das LSB (Lower Side Band) und oberhalb von 10 MHz das USB (Upper Side Band) genutzt	
+  \item Die Bandbreite eines SSB-Signals ist identisch mit der Bandbreite des NF-Signals, also etwas geringer als die Hälfte der Bandbreite von AM.
 \end{itemize}
 \end{small}
 \end{frame}
 
-\section*{Frequenzmodulation}
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{e16/Ssb-de.png}
+    \tiny \hyperlink{refs}{\cite{wc}}
+  \end{center}
+\end{frame}
+
+\subsection[FM]{Frequenzmodulation}
 \begin{frame}
 \frametitle{Frequenzmodulation}
 	\begin{center}
-\includegraphics[scale=0.8]{e14/modulationen.jpg}\\
+\includegraphics[scale=0.7]{e14/modulationen.jpg}\\
 	Abb. 2: verschiedene Arten der Modulation
 	\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}}\\
 	\begin{itemize}
-		\item Wird im VHF / UHF Bereich angewandt
+		\item Wird im VHF\,/\,UHF Bereich angewandt
 		\item Vor allem bei mobilem Funkbetrieb
 		\item Findet auch bei Packet-Radio Anwendung
 		\item Information steckt in der Frequenz
@@ -229,23 +227,49 @@ Abb. 3: Modulationsgrade bei AM
 \begin{frame}
 \frametitle{Hub bei FM}
 \begin{center}
-\includegraphics[scale=0.6]{e14/Hub.png}
+\includegraphics[scale=0.5]{e14/Hub.png}
 \end{center}
 \end{frame}
 
-\section*{Bandbreite bei FM}
+\begin{frame}
+  \frametitle{Modulationsindex}
+  Verhältnis von Frequenzhub zu Modulationsfrequenz
+  \begin{block}{Modulationsindex}
+    $m = \cfrac{\Delta f_T}{f_{mod}}$
+  \end{block}
+  \begin{description}
+    \item[$m\textless2$] Schmalband-FM (NFM)
+    \item[$m\geq$2] Breitband-FM (WFM)
+  \end{description}
+  \begin{exampleblock}{Modulationsindex}
+    Amateurfunk: $m = \frac{3kHz}{3kHz} = 1$\\
+    UKW-Hörfunk (mono): $m = \frac{75kHz}{15kHz} = 5$\\
+  \end{exampleblock}
+\end{frame}
+
 \begin{frame}
 \frametitle{Bandbreite bei FM}
 \begin{itemize}
 	\item FM erzeugt Seitenbänder
 	\item Im Amateurfunk wird ein geringer Hub verwendet, der die höchste vorkommende Niederfrequenz nicht überschreitet
-	\item Dadurch gilt folgende Formel:
-	\item \LARGE{$b_{FM} = 2 \cdot (\Delta f + f_{NF,max})$}
 \end{itemize}
+\begin{block}{Ungefähre Bandbreite (Carson Bandbreite)}
+  $B = 2 \cdot (\Delta f_T + f_{mod~max})$
+\end{block}
+\begin{exampleblock}{Bandbreite}
+  Amateurfunk: $B =2 \cdot (3kHz + 3kHz) = 12kHz$\\
+  UKW-Hörfunk (mono): $B = 2 \cdot (75kHz + 15kHz) = 180kHz$
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{e16/Dpx-fm-radio.png}
+    \tiny \hyperlink{refs}{\cite{wc}}
+  \end{center}
 \end{frame}
 
 
-\section*{FM pro \& contra}
 \begin{frame}
 \frametitle{FM Vor- \& Nachteile}
 \textbf{\Large{Vorteile}}
@@ -260,6 +284,35 @@ Abb. 3: Modulationsgrade bei AM
 \end{itemize}
 \end{frame}
 
+%\begin{frame}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TE202} & \textbf{FM hat gegenüber SSB den Vorteil der}\\ \hline\hline
+%    A & geringeren Anforderungen an die Bandbreite. \\ \hline
+%    B & größeren Entfernungsüberbrückung. \\ \hline
+%    C \only<2>\checkmark & geringeren Beeinflussung durch Störquellen. \\ \hline
+%    D & besseren Kreisgüte. \\ \hline
+%  \end{tabular}
+%\end{frame}
+
+%\begin{frame}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TE203} & \textbf{Ein zu großer Hub eines FM-Senders führt dazu,}\\ \hline\hline
+%    A & dass Verzerrungen auf Grund gegenseitiger Auslöschung der Seitenbänder auftreten. \\ \hline
+%    B \only<2>\checkmark & dass die HF-Bandbreite zu groß wird. \\ \hline
+%    C & dass Verzerrungen auf Grund unerwünschter Unterdrückung der Trägerfrequenz auftreten. \\ \hline
+%    D & dass die Sendeendstufe übersteuert wird. \\ \hline
+%  \end{tabular}
+%\end{frame}
+
+%\begin{frame}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TE204} & \textbf{Größerer Frequenzhub führt bei einem FM-Sender zu}\\ \hline\hline
+%    A & einer Reduktion der Amplituden der Seitenbänder. \\ \hline
+%    B & einer Erhöhung der Amplitude der Trägerfrequenz. \\ \hline
+%    C & einer Erhöhung der Senderausgangsleistung. \\ \hline
+%    D \only<2>\checkmark & einer größeren HF-Bandbreite. \\ \hline
+%  \end{tabular}
+%\end{frame}
 
 \section*{Referenzen}
 \begin{frame}
@@ -274,5 +327,16 @@ Abb. 3: Modulationsgrade bei AM
     \end{itemize}
 
 \end{frame}
+
+\begin{thebibliography}{}
+    \bibitem{wc}    Wikimedia Commons \\
+                    \url{http://commons.wikimedia.org/wiki/File:Ssb-de.png}\\
+                    \url{http://commons.wikimedia.org/wiki/File:Dpx-fm-radio.png}\\
+                    \url{http://commons.wikimedia.org/wiki/File:Mechanical_glow_drum_slow_scan_television_monitor.gif}\\
+                    \url{http://commons.wikimedia.org/wiki/File:Sstv_frequences.svg}\\
+                    \url{http://commons.wikimedia.org/wiki/File:SSTV_signal.jpg}\\
+                    \url{http://commons.wikimedia.org/wiki/File:BPSK_31_63_125.jpg}\\
+                    \url{http://commons.wikimedia.org/wiki/File:Ax25-US-Paket.png}
+\end{thebibliography} 
 
 \input{texdata/postamble}
