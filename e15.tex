@@ -1,11 +1,13 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Felix Baum <baum@campus.tu-berlin.de>
+% Autoren:
+% Felix Baum <baum@campus.tu-berlin.de>
+% Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik 15: \\
            Sender- und Empfängertechnik \\[2em]}
-\date{Stand 12.1.2015}
+\date{Stand 07.12.2015}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -15,7 +17,7 @@
 \begin{frame}
     \frametitle{Was ist das?}
 		\begin{center}
-        	\includegraphics[width=.95\textwidth]{e15/bitx.png}
+        	\includegraphics[width=.95\textwidth,height=.8\textheight,keepaspectratio]{e15/bitx.png}
         \footnote{\tiny \url{http://www.phonestack.com/farhan/bitx.html}}
 	\end{center}
 \end{frame}
@@ -39,7 +41,7 @@
 \section*{Sender}
 
 \begin{frame}
-    \frametitle{Sender - Blockschaltbild}
+    \frametitle{Sender -- Blockschaltbild}
     \begin{center}
         \includegraphics[width=1\textwidth]{e15/ssb-trx-bsb.pdf}
         \footnote{\tiny DB4UM}
@@ -49,7 +51,7 @@
 \begin{frame}
     \frametitle{Sender}
     \begin{center}
-        \includegraphics[width=.95\textwidth]{e15/bitx-farbe.png}
+        \includegraphics[width=.95\textwidth,height=.8\textheight,keepaspectratio]{e15/bitx-farbe.png}
         \footnote{\tiny \url{http://www.phonestack.com/farhan/bitx.html}}
 	\end{center}
 \end{frame}
@@ -69,7 +71,7 @@
 			\item BFO
 			\begin{itemize}
 				\item Beat Frequency Oszillator
-				\item Möglichst Frequenzstabiel auf einer Frequenz
+				\item Möglichst frequenzstabil auf einer Frequenz
     		\end{itemize}
     \end{itemize}
 	\end{center}
@@ -79,44 +81,14 @@
     \frametitle{Prüfungsfrage}
 
     \begin{center}
-    \begin{tabular}{l||l}\hline
-        TD604 &Wie verhält sich die Frequenz eines LC-Oszillators \\
-         " "  & bei Temperaturanstieg, wenn die Kapazität \\
-         " "  & des Schwingkreiskondensators mit dem \\
-         " "  & Temperaturanstieg geringer wird? \\ \hline\hline
+      \begin{tabular}{l||p{.8\textwidth}}\hline
+	\textbf{TD604} & \textbf{Wie verhält sich die Frequenz eines LC-Oszillators bei Temperaturanstieg, wenn die Kapazität des Schwingkreiskondensators mit dem Temperaturanstieg geringer wird?} \\ \hline\hline
          A & Die Frequenz wird niedriger. \\\hline
          B & Die Frequenz bleibt stabil. \\\hline
-         C & Die Frequenz wird erhöht. \\ \hline
+         C \only<2>\checkmark & Die Frequenz wird erhöht. \\ \hline
          D & Die Schwingungen reißen ab (Aussetzer).\\\hline
     \end{tabular}
  	\end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Prüfungsfrage}
-
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TD604 &Wie verhält sich die Frequenz eines LC-Oszillators \\
-         " "  & bei Temperaturanstieg, wenn die Kapazität \\
-         " "  & des Schwingkreiskondensators mit dem \\
-         " "  & Temperaturanstieg geringer wird? \\ \hline\hline
-         " " & Die Frequenz wird niedriger. \\\hline
-         " " & Die Frequenz bleibt stabil. \\\hline
-         X & Die Frequenz wird erhöht. \\ \hline
-         " " & Die Schwingungen reißen ab (Aussetzer).\\\hline
-    \end{tabular}
- 	\end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Oszillator}
-    \begin{center}
-    \begin{itemize}
-			\item Warum ist es so schwierig einen Frequenzstabielen BFO zu bauen?
-			\item Was für Möglichkeiten gibt es?
-    \end{itemize}
-	\end{center}
 \end{frame}
 
 \section*{Mischer}
@@ -124,9 +96,10 @@
 \begin{frame}
     \frametitle{Mischer}
     \begin{center}
-        \includegraphics[width=1\textwidth]{e15/IdealerMischer.png}
+        \includegraphics[width=.8\textwidth,height=.75\textheight,keepaspectratio]{e15/IdealerMischer.png}
         \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Mischer.svg}}
 	\end{center}
+    Es fallen immer mehrere Frequenzen als Geschmisch heraus.
 \end{frame}
 
 \begin{frame}
@@ -138,64 +111,67 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Mischer Rechenübung}
-    \begin{center}
+  \begin{exampleblock}{Mischer Rechenübung}
     \begin{itemize}
-			\item Oszillator 1: $10 MHz$
-			\item Oszillator 2: $4.1 MHz$ \\ " "
-			\item Welche Ausgangsfrequenzen?
+      \item Oszillator 1: $10 MHz$
+      \item Oszillator 2: $4.1 MHz$
     \end{itemize}
-	\end{center}
+    Welche Ausgangsfrequenzen?
+  \end{exampleblock}
+  \pause
+  \begin{exampleblock}{Ergebnis}
+    \begin{itemize}
+      \item Ausgangsfrequenz 1: $14.1 MHz$
+      \item Ausgangsfrequenz 2: $5.9 MHz$
+    \end{itemize}
+  \end{exampleblock}
 \end{frame}
 
 \begin{frame}
     \frametitle{Prüfungsfrage}
 
     \begin{center}
-    \begin{tabular}{l||l}\hline
-        TF107 &Einem Mischer werden die Frequenzen 28 MHz\\
-         " "  &und 38,7 MHz zugeführt. Welche Frequenzen\\
-         " "  &werden beim Mischvorgang erzeugt?\\ \hline\hline
+      \begin{tabular}{l||p{.8\textwidth}}\hline
+	\textbf{TF107} & \textbf{Einem Mischer werden die Frequenzen 28 MHz und 38,7 MHz zugeführt. Welche Frequenzen werden beim Mischvorgang erzeugt?}\\ \hline\hline
          A & 10,7 MHz und 56 MHz \\\hline
          B & 10,7 MHz \\\hline
          C & 56 MHz und 66,7 MHz \\ \hline
-         D & 10,7 MHz und 66,7 MHz\\\hline
+         D \only<2>\checkmark & 10,7 MHz und 66,7 MHz\\\hline
     \end{tabular}
- 	\end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Prüfungsfrage}
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TF107 &Einem Mischer werden die Frequenzen 28 MHz\\
-         " "  &und 38,7 MHz zugeführt. Welche Frequenzen\\
-         " "  &werden beim Mischvorgang erzeugt? \\ \hline\hline
-         " " & 10,7 MHz und 56 MHz \\\hline
-         " " & 10,7 MHz \\\hline
-         " " & 56 MHz und 66,7 MHz \\ \hline
-         X & 10,7 MHz und 66,7 MHz\\\hline
-    \end{tabular}
+    \end{center}
+    \pause
     Hinweis: Die ungewollte Frequenz heißt auch Spiegelfrequenz.
- 	\end{center}
 \end{frame}
 
 \section*{Transverter}
 
 \begin{frame}
-    \frametitle{Transverter - Blockschaltbild}
+    \frametitle{Transverter -- Blockschaltbild}
+    Kofferwort: Transceiver + Konverter
     \begin{center}
-        \includegraphics[width=1\textwidth]{e15/transverter.pdf}
-	\end{center}
+        \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{e15/transverter.pdf}
+    \end{center}
+    Frequenzerweiterung für das Funkgerät. Hier: 20m auf 70cm.
 \end{frame}
 
 \section*{Empfänger}
 
 \begin{frame}
-    \frametitle{Direktüberlagerungsempfänger - Blockschaltbild}
+  \frametitle{Direktüberlagerungsempfänger}
+    Oder auch \emph{Superheterodynempfänger}, \emph{Superhet} oder \emph{Super}
+    \begin{description}
+      \item[super] \textit{(lat. super)} über
+      \item[hetero] \textit{(griech. $\varepsilon\tau\varepsilon\rho o\varsigma$)} verschieden
+      \item[dyn] \textit{(griech. $\delta\upsilon\nu o\mu\iota\varsigma$)} Kraft
+    \end{description}
+    $\rightarrow$ Mischung zweier Signale unterschiedlicher Frequenz
+\end{frame}
+
+\begin{frame}
+    \frametitle{Direktüberlagerungsempfänger -- Blockschaltbild}
     \begin{center}
         \includegraphics[width=.99\textwidth]{e15/Ueberlagerungsempfanger_blockschaltbild.png}
-        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Ueberlagerungsempfänger_blockschaltbild.svg}}
+        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Ueberlagerungsempfanger_blockschaltbild.svg}}
 	\end{center}
 \end{frame}
 
@@ -212,7 +188,7 @@
     \frametitle{SNR}
     \begin{itemize}
 		\item Das Signal-Rausch-Verhältnis dient als Bewertungszahl zur Beurteilung der Qualität eines (analogen) Kommunikationspfades.
-		\item Um Sprache verstehen zu können braucht es ein SNR von ca 6dB
+		\item Um Sprache verstehen zu können braucht es ein SNR von ca 6dB.
     \end{itemize}
 \end{frame}
 
@@ -220,30 +196,31 @@
     \frametitle{Trennschärfe}
     \begin{itemize}
 		\item Beurteilt wie gut der Empfänger ein Signal von starken benachbarten Signalen trennen kann.
-		\item Je steiler der Bandpass, desto besser die Trennschärfe
+		\item Je steiler der Bandpass, desto besser die Trennschärfe.
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \frametitle{Großsignalfestigkeit}
     \begin{itemize}
-		\item Beurteilt wie gut der Empfänger mit ganz starken Signalen zurechtkommt
-		\item Bekannt ist z.B. dann ein zugestopft des Empfängers bei zu starken Signalen (Erkennbar durch brummen)
+		\item Beurteilt wie gut der Empfänger mit ganz starken Signalen zurechtkommt.
+		\item Bekannt ist z.B. dann ein zugestopft des Empfängers bei zu starken Signalen (Erkennbar durch brummen).
     \end{itemize}
 \end{frame}
 
-\section*{Transciver}
+\section*{Transceiver}
 
 \begin{frame}
     \frametitle{BITX}
-        \includegraphics[width=1.02\textwidth]{e15/bitx-farbe.png}
-        \footnote{\tiny \url{http://www.phonestack.com/farhan/bitx.html}}
+        \includegraphics[width=.95\textwidth,height=.75\textheight,keepaspectratio]{e15/bitx-farbe.png}
+        \footnote{\tiny \url{http://www.phonestack.com/farhan/bitx.html}}\\
+	6W SSB Transceiver für 14MHz
 \end{frame}
 
 \begin{frame}
     \frametitle{Elecraft - K3}
         \begin{center}
-        \includegraphics[width=1.22\textwidth]{e15/K3_Front.jpg}
+        \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{e15/K3_Front.jpg}
         \footnote{\tiny \url{http://www.elecraft.com/K3/K3.htm}}
 	\end{center}
 \end{frame}
@@ -251,9 +228,25 @@
 \begin{frame}
     \frametitle{Drake TR-7}
         \begin{center}
-        \includegraphics[width=1.22\textwidth]{e15/drake.jpg}
+        \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{e15/drake.jpg}
         \footnote{\tiny Bild von DB4UM bei DK0TU}
 	\end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{rad1o}
+  \begin{center}
+    \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{e15/rad1o.jpg}
+    \footnote{\tiny \url{https://rad1o.badge.events.ccc.de/_media/rad1o_6.jpg}}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{rad1o -- Blockschaltbild}
+  \begin{center}
+    \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{e15/rad1o_block.pdf}
+    \footnote{\tiny \url{https://github.com/rad1o/hardware/blob/master/concept/overview_RF.pdf}}
+  \end{center}
 \end{frame}
 
 \section*{Referenzen}
