@@ -5,13 +5,15 @@
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 16 \& Betriebstechnik/Vorschriften 12: \\
           (Digitale) Betriebsarten \\[2em]}
-\date{Stand 03.05.2015}
+\date{Stand 14.01.2016}
 \input{texdata/titlepage}
 
 % todo Gern noch mehr Bilder - es ist ein schönes praktisches Thema.
 % todo bei viel Text Buzzwords fett hervorheben oder Text kürzen
 % todo da der Talk ca. 2h lang ist: Guten Pausenzeitpunkt finden
 % todo Eine schöne Datenbank an Digisounds: http://www.nonstopsystems.com/radio/radio-sounds.html
+% todo Audioquiz am Ende
+% todo Spektrum nochmal mit Audacity/GNU Radio
 
 \section{Einleitung}
 
@@ -23,7 +25,7 @@
     \texttt{BV12}\hyperlink{refs}{\cite{bv12}} in diesen Foliensatz der Lektion
     \texttt{Technik E16}\hyperlink{refs}{\cite{e16}} integriert. \\[2em]
 
-    Freut euch auf eine Lektion ''Klingeln in den Ohren'' :-)
+    Freut euch auf eine Lektion ``Klingeln in den Ohren'' :-)
 
 \end{frame}
 
@@ -62,7 +64,7 @@
     \frametitle{Sprechfunk (Wdh.) / SSB}
 
     \begin{center}
-        \includegraphics[width=0.8\textwidth]{e16/Ssb-de.png}
+        \includegraphics[width=0.8\textwidth,height=.65\textheight,keepaspectratio]{e16/Ssb-de.png}
         \tiny \hyperlink{refs}{\cite{wc}}
     \end{center}
 
@@ -74,7 +76,7 @@
     \frametitle{Sprechfunk (Wdh.) / FM}
 
     \begin{center}
-        \includegraphics[width=0.8\textwidth]{e16/Dpx-fm-radio.png}
+        \includegraphics[width=0.8\textwidth,height=.55\textheight,keepaspectratio]{e16/Dpx-fm-radio.png}
         \tiny \hyperlink{refs}{\cite{wc}}
     \end{center}
 
@@ -86,17 +88,28 @@
 
 \end{frame}
 
+% FIXME Hellschreiber?
+
 \subsection[SSTV]{Slow Scan Television (SSTV)}
 
 \begin{frame}
     \frametitle{SSTV / Historie}
 
-    \textbf{S}low \textbf{S}can \textbf{T}elevision
+    \textbf{S}low \textbf{S}can \textbf{T}elevision\\[1.5em]
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth]{e16/Mechanical_glow_drum_slow_scan_television_monitor.jpg}
-        \tiny \hyperlink{refs}{\cite{wc}}
-    \end{center}
+%    \begin{center}
+%        \includegraphics[width=0.6\textwidth]{e16/Mechanical_glow_drum_slow_scan_television_monitor.jpg}
+%        \tiny \hyperlink{refs}{\cite{wc}}
+%    \end{center}
+
+    \begin{columns}
+      \column[c]{.45\textwidth}
+       \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{e16/Mechanical_glow_drum_slow_scan_television_monitor.jpg}
+       \tiny \hyperlink{refs}{\cite{wc}}
+      \column[c]{.45\textwidth}
+       \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{e16/SSTV-RS0ISS_2015-07-19.jpg}
+    \end{columns}
+
 
     \begin{itemize}
         \item 1958 durch US-HAMs veröffentlicht
@@ -105,6 +118,8 @@
         \begin{itemize}
             \item 120x120 Bildpunkte (s/w) in acht Sekunden
             \item \emph{elektromechanischer SSTV-Empfänger} siehe \texttt{GIF}
+            \item \emph{elektromechanischer SSTV-Empfänger} siehe \texttt{GIF}
+                  \footnote{\url{https://upload.wikimedia.org/wikipedia/commons/1/1e/Mechanical_glow_drum_slow_scan_television_monitor.gif}}
         \end{itemize}
     \end{itemize}
 

@@ -112,3 +112,27 @@
 	\end{enumerate} 
 \end{enumerate}
 
+\section{Praktische Anwendung}
+
+\subsection{GNU Radio Part II}
+
+Es soll in GNU Radio die Verwendung realer Bauteile simuliert werden. Alle
+Blöcke sollen also mit \emph{Float}-Werten arbeiten. Da ohne echte Hardware
+gearbeitet wird, sollte eine \emph{Throttle} eingebaut werden.
+
+\begin{enumerate}
+    \item Nimm je einen Oszillator 2 kHz und 500 Hz.
+          \loesung{Hinweis: Signal Source}
+    \item Führe beide Signale einem Mischer zu und stelle das Ergebnis im
+          Frequenzbereich dar. Was entsteht im Spektrum?
+          \loesung{Hinweis: Multiplier, Frequency Sink}
+    \item Baue um zum Transverter um 500 Hz auf 3500 Hz hochzumischen. \\
+          Was wäre einfacher und besser bei der digitalen Signalverarbeitung? :-)
+          \loesung{Hinweis: Band Pass vs. High Pass \\
+                   Einfacher: Alles gleich komplex rechnen}
+    \item Baue eine 46dB-Treiberstufe (Verstärker, Feldgröße!) ein.
+          \loesung{Hinweis: Multiply 200}
+    \item Zusatz: Baue einen SSB-Modulator mit dem Mikrofon als Source.
+\end{enumerate}
+
+
