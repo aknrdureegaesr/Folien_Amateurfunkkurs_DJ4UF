@@ -15,6 +15,7 @@
 % todo Eine schöne Datenbank an Digisounds: http://www.nonstopsystems.com/radio/radio-sounds.html
 % todo Audioquiz am Ende
 % todo Spektrum nochmal mit Audacity/GNU Radio
+% todo WSPR
 
 \section{Einleitung}
 
@@ -46,9 +47,69 @@
 
 \end{frame}
 
+\begin{frame}
+    \frametitle{Einleitung / MODEM}
+
+    Heute im Mittelpunkt: Das MODEM -- was ist das?
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Einleitung / MODEM}
+
+    Kofferwort: \textbf{MOD}ulate, \textbf{DEM}odulate.
+
+    \begin{columns}[c]
+        \column[c]{8cm}
+            Meist denkt man an ein 56k- bzw. ITU-T Rec. V.90/V.92-Modem (PCM-codiert):\\[1em]
+            \centering \href{https://www.youtube.com/watch?v=abapFJN6glo}{[YouTube]}
+        \column{5cm}
+        \begin{center}
+            \includegraphics[width=.9\textwidth]{e16/Modems.jpg}
+            \tiny \hyperlink{refs}{\cite{wc}}
+        \end{center}
+    \end{columns}
+
+\end{frame}
+
 \section{analog}
 
-\subsection[Sprechfunk]{Sprechfunk (Wiederholung)}
+\subsection{Modulation (Wdh.)}
+
+\begin{frame}
+    \frametitle{Grundlegende Modulationsprinzipien}
+
+    Nochmal ein kurzer Blick auf:
+    \begin{equation*}
+        u_{mod} = A \cdot cos(\omega t + \varphi)
+    \end{equation*}
+
+    Was kann hier moduliert werden?
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Grundlegende Modulationsprinzipien}
+
+    \begin{equation*}
+        u_{mod} = A \cdot cos(\omega t + \varphi), ~ \omega = 2 \pi f
+    \end{equation*}
+
+    \bigskip
+
+    $\rightarrow$ Amplitudenmodulation \\
+    $\rightarrow$ Winkelmodulation (FM, PM)
+
+    \bigskip
+
+    \href{https://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}{[Animation]}
+
+    \bigskip Heutige Verfahren kombinieren die Grundarten.
+
+\end{frame}
+
+
+\subsection[Sprechfunk (Wdh.)]{Sprechfunk (Wiederholung)}
 
 \begin{frame}
     \frametitle{Sprechfunk (Wiederholung)}
@@ -62,14 +123,17 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Sprechfunk (Wdh.) / SSB}
+    \frametitle{Sprechfunk (Wdh.)\,/\,SSB}
+
 
     \begin{center}
+        $B_{SSB} ~ < ~ \frac{1}{2} B_{DSB} ~ = ~ \frac{1}{2} B_{AM}$ \\
         \includegraphics[width=0.8\textwidth,height=.65\textheight,keepaspectratio]{e16/Ssb-de.png}
         \tiny \hyperlink{refs}{\cite{wc}}
     \end{center}
 
-    Durchgängiges (da analoges) Spektrum ca. $300 Hz$ bis $3 kHz$
+    \centering
+    $\sim 2,7 kHz$ durchgängiges (da analoges) Spektrum ca. $300 Hz$ bis $3 kHz$
 
 \end{frame}
 
@@ -81,32 +145,53 @@
         \tiny \hyperlink{refs}{\cite{wc}}
     \end{center}
 
-    Je $2x$ Hub ($3 kHz$) + NF-Signal ($2,7 kHz$) um Träger herum
-    (durchgängiges Spektrum) \\[1em]
+    \centering Durchgängiges Spektrum -- für NBFM: \\
+    Je $2x$ Hub ($3 kHz$) + NF-Signal ($2,7 kHz$) um Träger herum \\[1em]
     
-    $\rightarrow$ Gesamtbandbreite eines NBFM-Signals ca. $12 kHz$ ($12,5 kHz$
-    Kanalraster)
+    $\rightarrow$ Gesamtbandbreite ca. $12 kHz$ ($12,5 kHz$ Kanalraster)
 
 \end{frame}
 
 \subsection[Hell]{Hellschreiber}
+
 \begin{frame}
-  \frametitle{Hellschreiber\,/\,Typenbildfernschreiber}
-  \begin{itemize}
-    \item 1929 von Rudolf Hell patentiert
-    \item Fernschreibgerät für störanfällige Übertragungen
-    \item Verwendung bis in die 1980er Jahre
-  \end{itemize}
-  \begin{center}
-    \includegraphics[width=.5\textwidth,height=.3\textheight,keepaspectratio]{e16/Hellschreiber.png}
-  \end{center}
-  \begin{itemize}
-    \item Schriftzeichen im Raster von 7x7 Pixeln
-    \item 8,5 Zeichen (in einer Spalte) pro Sekunde (420bit/s)
-    \item Bei der Decodiderung wird eine Schneckenwalze auf Papierband gedrückt
-    \item zwei Zeilen pro Schnecke; bei Asynchronität verläuft das Schriftbild
-  \end{itemize}
-  Action: \url{https://www.youtube.com/watch?v=luc6QmNyPZ4}
+    \frametitle{Hellschreiber aka Typenbildfernschreiber}
+
+    \begin{itemize}
+        \item 1929 von Rudolf Hell patentiert
+        \item Fernschreibgerät für störanfällige Übertragungen
+        \item Verwendung bis in die 1980er Jahre
+    \end{itemize}
+
+    \begin{center}
+      \includegraphics[width=.6\textwidth,height=.4\textheight,keepaspectratio]{e16/Hell_cq.png}
+    \end{center}
+
+    \begin{itemize}
+        \item Schriftzeichen im Raster von 7x7 Pixeln
+        \item 8,5 Zeichen (in einer Spalte) pro Sekunde (420bit/s)
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Hellschreiber aka Typenbildfernschreiber}
+
+    \begin{center}
+        \includegraphics[width=.6\textwidth,height=.4\textheight,keepaspectratio]{e16/Hell_ans.png}
+        \footnote{unverrauschtes \& synchrones Bild}
+    \end{center}
+
+    \begin{itemize}
+        \item Bei der Decodiderung wird eine Schneckenwalze auf Papierband gedrückt
+        \item zwei Zeilen pro Schnecke; bei Asynchronität verläuft das Schriftbild
+    \end{itemize}
+
+    \bigskip
+
+    $\rightarrow$ in Hardware: \url{https://www.youtube.com/watch?v=luc6QmNyPZ4} \\
+    $\rightarrow$ in Sofware: \emph{fldigi}-Demo
+
 \end{frame}
 
 \subsection[SSTV]{Slow Scan Television (SSTV)}
@@ -121,9 +206,9 @@
         \begin{itemize}
             \item 1958 durch US-HAMs veröffentlicht
             \item Übertragung von Bildern in $3 kHz$ SSB-Kanal
-            \item damals noch Darstellung auf Katodenstrahlröhre mit hoher Nachleuchtdauer
+            \item damals Darstellung auf Katodenstrahlröhre mit hoher Nachleuchtdauer
             \begin{itemize}
-                \item 120x120 Bildpunkte (s/w) in acht Sekunden
+                \item 120x120 px (b/w) in acht Sekunden
                 \item \emph{elektromechanischer SSTV-Empfänger} siehe \texttt{GIF}
                       \href{https://upload.wikimedia.org/wikipedia/commons/1/1e/Mechanical_glow_drum_slow_scan_television_monitor.gif}{[Link]}
             \end{itemize}
@@ -149,12 +234,13 @@
     \begin{itemize}%[<+->]
         \item heute Software-MODEM via Soundkarte
         \begin{itemize}
-            \item Quasi-Standard: 320x240 Bildpunkte (RGB) in 120s
+            \item Quasi-Standard: 320x240(x zeilenweises RGB) Bildpunkt in 120s
             \item zunehmend ziehen digitale Verfahren mit Fehlerkorrektur ein,
                   z.B. \emph{MT63}\hyperlink{refs}{\cite{wp}}
         \end{itemize}
-        \item SSTV-Norm: NF-Frequenz 2300 Hz weiß, 1500 Hertz schwarz, 1200 Hz Sync
-        \item am Bildsynchronisierimpuls kann man Modulation erkennen
+        \item SSTV-Norm: NF-Frequenz $2300 Hz$ weiß, $1500 Hz$ schwarz, $1200 Hz$ Sync
+        \item an Prä-/Postambel \& Bildsynchronisierimpuls kann man Modulation erkennen \\
+              \centering \Large $\rightarrow$ Demo: \texttt{qsstv}
     \end{itemize}
 
 \end{frame}
@@ -175,6 +261,36 @@
 \end{frame}
 
 \begin{frame}
+    \frametitle{SSTV / Betriebstechnik}
+
+    Nach der Übertragung:
+
+    \begin{center}
+        \includegraphics[width=0.45\textwidth,height=.45\textheight,keepaspectratio]{e16/sstv_cq.png}
+        ~
+        \includegraphics[width=0.45\textwidth,height=.45\textheight,keepaspectratio]{e16/sstv_cq_201411241627.png}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{SSTV / Betriebstechnik}
+
+    \begin{center}
+        \includegraphics[width=0.35\textwidth,height=.35\textheight,keepaspectratio]{e16/sstv_qso_201306141504-F4GIS.jpg}
+        ~
+        \includegraphics[width=0.35\textwidth,height=.35\textheight,keepaspectratio]{e16/sstv_qso_201306141947-JP7BNO.jpg}
+        \\[1em]
+        \includegraphics[width=0.35\textwidth,height=.35\textheight,keepaspectratio]{e16/sstv_qso_201307141440-F4FRG.jpg}
+        ~
+        \includegraphics[width=0.35\textwidth,height=.35\textheight,keepaspectratio]{e16/sstv_qso_201307151417-F6APZ.jpg}
+    \end{center}
+
+    \centering QSO-Beispiele. RST $\rightarrow$ RSV...
+
+\end{frame}
+
+\begin{frame}
     \frametitle{SSTV / Rapportsystem}
    
     %todo Anmerkung: Rapportsystem kommt erst in BV13 dran - Foto einfügen?
@@ -189,8 +305,26 @@
         \item V5 = rauschfreies Bild
     \end{itemize}
 
-    Rapport wird ebenfalls im Bild eingefügt $\rightarrow$ siehe DKØTU
-    SSTV-RX-Sammlung
+    \bigskip
+
+    Rapport wird ebenfalls im Bild eingefügt \dots
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{SSTV / Rapportsystem}
+
+    Übertragung der ISS, empfangen mit einem HFG (Gummiwurst) \& Smartphone:
+
+    \begin{center}
+        \includegraphics[width=0.45\textwidth,height=.45\textheight,keepaspectratio]{e16/SSTV-RS0ISS.jpg}
+        \footnote{RSV 594 (einwandfrei lesbar, S?, kleine Details zu erkennen)}
+        ~
+        \includegraphics[width=0.45\textwidth,height=.45\textheight,keepaspectratio]{e16/SSTV-RS0ISS_2015-07-19.jpg}
+        \footnote{RSV 292 (zeitweise lesbar, S?, großes Call lesbar)}
+    \end{center}
+
+    Da starkes Signal, Demodulation sehr einfach -- mehr Infos: \url{http://ariss-sstv.blogspot.de/}
 
 \end{frame}
 
@@ -199,17 +333,19 @@
 
     \begin{center}
         \includegraphics[width=0.5\textwidth,height=.8\textheight,keepaspectratio]{e16/SSTV-over-Ackerschnacker_LNDW2014.jpg}
-        \footnote{SSTV über Feldtelefon \emph{Lange Nacht der Wissenschaften} 2014}
+        \footnote{SSTV über Feldtelefon \emph{Lange Nacht der Wissenschaften} 2014, \\
+                  Ebenfalls gestestet: Rohrpostsystem ``Seidenstraße'' auf dem
+                  Chaos Communication Congress}
     \end{center}
 
 \end{frame}
 
-\begin{frame}
-    \frametitle{SSTV / Demo}
-
-    \Large{Ohren gespitzt... es spricht für Sie: \emph{QSSTV}}
-
-\end{frame}
+%\begin{frame}
+%    \frametitle{SSTV / Demo}
+%
+%    \Large{Ohren gespitzt... es spricht für Sie: \emph{QSSTV}}
+%
+%\end{frame}
 
 \subsection[ATV]{Amateurfunk-Fernsehen, analog ATV}
 
@@ -235,6 +371,13 @@
 \end{frame}
 
 \section{digital}
+
+\begin{frame}
+    \frametitle{Digitale Betriebsarten}
+
+    \centering Digital bedeutet die Verwendung quantisierter bzw. diskreter Werte.
+
+\end{frame}
 
 \subsection[CW]{Morsetelegrafie (CW)}
 
@@ -299,13 +442,16 @@
     \frametitle{RTTY / Technik}
 
     \begin{itemize}
-        \item fünf Kontakte $\rightarrow$ Baudot 5-Bit-Code, später CCITT-1 bzw. Baudot-Murray-Code CCITT-2
+        \item fünf Kontakte $\rightarrow$ Baudot 5-Bit-Code\footnote{später
+              CCITT-1 bzw. Baudot-Murray-Code CCITT-2}: \\
+              $2^5 = 32 Bit$ -- mehr
+              Zeichen durch umschaltbare Register möglich
         \item \emph{AFSK}\footnote{Audio Frequency Shift Keying}:
-              $2^5 = 32 Bit$ in $0$ und $1$ $\rightarrow$ Mark und Space
-        \item Abstand = Shift
+              $1$ und $0$ $\rightarrow$ Mark- und Space-Frequenz
+        \item Abstand = Shift = 2x Hub
         \item Kurzwellenshift 170 Hz, UKW 850 Hz
               % todo Skizze bzw. Screenshot Spektrum
-        \item technische Details: Technik Klasse A (A15)
+        \item mehr technische Details: Technik Klasse A (A15)
     \end{itemize}
 
 \end{frame}
@@ -315,17 +461,32 @@
 
     \Large{Ohren gespitzt... es spricht für Sie: \emph{Fldigi}}\\[2em]
     \pause
-    Teletype mit Dampf: \url{https://media.ccc.de/v/24c3-2338-en-steam_powered_telegraphy}
+    \bigskip
+    \normalsize
+    Für Interessierte:
+    Teletype mit Dampf -- ``Steam Powered Telegraphy (24C3)''\hyperlink{refs}{\cite{steam}}
+
+\end{frame}
+ 
+\subsection{PSK31}
+
+\begin{frame}
+    \frametitle{PSK31: (\textbf{B}inary) \textbf{P}hase \textbf{S}hift \textbf{K}eying (31)}
+
+    Kurzer Ausflug: Zweiwertige Phasenmodulation (BPSK aka 2-PSK)
+
+    \begin{center}
+        \includegraphics[width=.9\textwidth,height=.7\textheight,keepaspectratio]{e16/Phase_modulation_x800.png}
+        \tiny \hyperlink{refs}{\cite{wc}}
+    \end{center}
+
+    Andere Abbildungen wie IQ-Diagramm dann in \emph{Klasse A}.
 
 \end{frame}
 
- 
-\subsection{(B)PSK31}
 
 \begin{frame}
     \frametitle{(B)PSK31}
- 
-    (\textbf{B}inary) \textbf{P}hase \textbf{S}hift \textbf{K}eying (31)
 
     \begin{columns}[c]
         \column[c]{8cm}
@@ -388,9 +549,9 @@
 
     \textbf{W}eak \textbf{S}ignal communication by K1\textbf{JT} \\[2em]
 
-    Gruppe von Übertragungsprotokollen\footnote{Open-Source-Projekt} für
-    Soundcard SDR in SSB-Bandbreite, z.B.:
-    
+    Soundcard SDR ($\rightarrow SSB$) Open-Source-Projekt für Gruppe von
+    Übertragungsprotokollen, z.B.:
+
     \begin{itemize}
         \item Meteorscatter (schnell): FSK441\footnote{Vierton Frequenzumtastung
               (\emph{FSK}) mit 441 Baud}
@@ -399,7 +560,9 @@
         \item Mittel- und Langwelle (schmalbandig): JT9\footnote{ähnlich JT65}
     \end{itemize}
 
-    Mehr dazu unter \url{https://media.ccc.de/v/eh15_-_11_-_de_-_saal_-_201504051730_-_wspr_und_wsjt_-_pylon}
+    \bigskip
+
+    Für mehr Infos Vortrag von DC4LW\hyperlink{refs}{\cite{wsjt}}.
 
 \end{frame}
 
@@ -412,7 +575,7 @@
         \item Zeichen besteht aus nacheinandergesendeten drei von den vier Tönen
         \item Übertragungsgeschwindigkeit 147 Buchstaben/s $\rightarrow$
               \textbf{Meteorscatter}
-        \item Ping ca. $\frac{1}{10}s$ (100km über der Erde) $\rightarrow$ 15 Zeichen
+        \item Pong ca. $\frac{1}{10}s$ (100km über der Erde) $\rightarrow$ 15 Zeichen
         \item 144,370 MHz Anruf-QRG, ab Kontaktaufnahme QSY
         \item Rapporte nach speziellem Kurzzystem
     \end{itemize}
@@ -432,7 +595,8 @@
 
     \begin{itemize}
         \item erfordert ein Verfahren zur Fehlererkennung, z.B. Checksummen
-        \item Feedback: \emph{ACK/NAK}-Signale (\emph{Acknowledgement} / {Negative Acknowledgement})
+        \item Feedback: \emph{ACK/NAK}-Signale\footnote{\emph{Acknowledgement} /
+              {Negative Acknowledgement}}
         \item ggf. Wiederholung der Nachricht
     \end{itemize}
 
@@ -767,7 +931,7 @@
 \section{Quiz}
 
 \begin{frame}
-    \frametitle{Quiz}
+    \frametitle{Quiz: Verständnis}
 
     \begin{exampleblock}{Welche Betriebsarten sind für QRP-DX-Betrieb auf Kurzwelle am
     besten geeignet?}
@@ -786,6 +950,11 @@
 %     *alle die vorher dran waren
 
 % todo Jeopardy Sektion zu Betriebsarten (Spektrum und Bandbreiten) machen
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Quiz: Akkustisch}
 
 \end{frame}
 
@@ -833,18 +1002,21 @@
     \bibitem{we}    Wikipedia EN: \\
                     \url{https://en.wikipedia.org/wiki/Terminal_node_controller}
     \bibitem{wc}    Wikimedia Commons \\
+                    \url{https://commons.wikimedia.org/wiki/File:Modems.jpg}\\
                     \url{http://commons.wikimedia.org/wiki/File:Ssb-de.png}\\
                     \url{http://commons.wikimedia.org/wiki/File:Dpx-fm-radio.png}\\
                     \url{http://commons.wikimedia.org/wiki/File:Mechanical_glow_drum_slow_scan_television_monitor.gif}\\
                     \url{http://commons.wikimedia.org/wiki/File:Sstv_frequences.svg}\\
                     \url{http://commons.wikimedia.org/wiki/File:SSTV_signal.jpg}\\
+                    \url{https://commons.wikimedia.org/wiki/File:Phase_modulation_\%28PHM\%29.svg}\\
                     \url{http://commons.wikimedia.org/wiki/File:BPSK_31_63_125.jpg}\\
                     \url{http://commons.wikimedia.org/wiki/File:Ax25-US-Paket.png}
     \bibitem{atv}   \url{http://www.svecs.net/SVECS-atv16.JPG}
     \bibitem{wl2k}  \url{http://letarc.org/main/2011/06/08/packet-modes-and-winlink-2000/}
     \bibitem{db0fuz}\url{http://hamnet.funkzentrum.de/berliner-hamnet/backbone/hamnet-knoten.html}
     \bibitem{snd}   \url{http://www.nonstopsystems.com/radio/radio-sounds.html}
-
+    \bibitem{steam} \url{https://media.ccc.de/v/24c3-2338-en-steam_powered_telegraphy}
+    \bibitem{wsjt}  \url{https://media.ccc.de/v/eh15_-_11_-_de_-_saal_-_201504051730_-_wspr_und_wsjt_-_pylon}
 \end{thebibliography} 
 
 \input{texdata/postamble}
