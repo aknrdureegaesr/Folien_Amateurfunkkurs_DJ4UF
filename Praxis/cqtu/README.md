@@ -4,8 +4,8 @@
 
 CQ TU FM-Contest
 2016 Jan 21
-Registration 1930 UTC ~ 1955 UTC @Ch1 (+ on-site room number or off-site location)
-Open Talk 1930 UTC ~ 1955 UTC @Ch2
+Registration 1915 UTC ~ 1955 UTC @Ch1 (+ on-site room number or off-site location)
+Open Talk 1915 UTC ~ 1955 UTC @Ch2
 Starts 2000 UTC
 Ends 2059 UTC
 
@@ -17,8 +17,14 @@ Betriebstechnik zu ermöglichen. Ziel ist es so viele Station und Gebäude wie
 möglich kontaktieren. SWL, die erst einmal langsam anfangen möchten, haben die
 Möglichkeit nur auf einem Band teilzunehmen.
 
+% Damit ein Operator mehrere DN-Stationen betreuen kann, sind diese bei Bedarf
+% durch eine angehangene Ziffer -1 bis -9 zu trennen.
+
 Damit ein Operator mehrere DN-Stationen betreuen kann, sind diese bei Bedarf
-durch eine angehangene Ziffer /1 bis /9 zu trennen.
+durch einen angehangene Buchstaben /A bis /Z ('Stroke A ~ Z') zu trennen.
+Achtung: Das elektronische Log unterscheidet korrekterweise nicht zwischen
+diesen Calls. Um Dupes zu vermeiden in der Logsoftware ausnahmsweise im Rahmen
+einer Übung den Buchstaben ohne "/" anhängen.
 
 ## II. BANDS & RUN
 
