@@ -2,7 +2,7 @@
 
 ## Announcing
 
-CQ TU NBFM-Contest
+CQ TU FM-Contest
 2016 Jan 21
 Registration 1930 UTC ~ 1955 UTC @Ch1 (+ on-site room number or off-site location)
 Open Talk 1930 UTC ~ 1955 UTC @Ch2
@@ -22,14 +22,14 @@ durch eine angehangene Ziffer /1 bis /9 zu trennen.
 
 ## II. BANDS & RUN
 
-Nur ein Band (70cm) mit folgenden sechs Kanälen:
+Nur zwei Bänder (VHF/UHF) in der Betriebsart NBFM mit folgenden sechs Kanälen:
 
-* Ch2 430.225 MHz
-* Ch3 430.250 MHz
-* Ch4 430.275 MHz
-* Ch5 145.375 MHz
-* Ch6 145.400 MHz
-* Ch7 145.425 MHz
+* Ch2 430.225 MHz (70cm)
+* Ch3 430.250 MHz (70cm)
+* Ch4 430.275 MHz (70cm)
+* Ch5 145.375 MHz (2m)
+* Ch6 145.400 MHz (2m)
+* Ch7 145.425 MHz (2m)
 
 Ch1 430.200 MHz steht für die Anmeldung und Rücksprachen mit der Leitfunkstelle
 DK0TU zur Verfügung und darf für den Contestbetrieb nicht benutzt werden. Auf
