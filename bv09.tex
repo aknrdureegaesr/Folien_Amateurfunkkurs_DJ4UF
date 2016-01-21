@@ -1,11 +1,12 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+% Korrekturen: Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Betriebstechnik/Vorschriften 09: \\
           Betriebsarten, Sendearten, Frequenzen \\[2em]}
-\date{Stand 11.12.2014}
+\date{Stand 21.01.2016}
 \input{texdata/titlepage}
 
 %todo Struktur nach Moltrecht, aber sehr komisch
@@ -16,14 +17,14 @@
 \begin{frame}
     \frametitle{Einleitung: International}
 
-    Internationaler Frequenzbereichszuweisungsplan: \emph{ITU
-    \footnote{International Telecommunication Union. Gesetzesgrundlagen siehe
-    Lektion \texttt{BV06}: ITU, CEPT, AFuV...} Frequency Allocation Table}
+    Internationaler Frequenzbereichszuweisungsplan:
+    \emph{ITU\footnote{International Telecommunication Union.
+    Gesetzesgrundlagen siehe Lektion \texttt{BV06}: ITU, CEPT, AFuV...} Frequency
+    Allocation Table}
 
     \begin{itemize}
         \item enthält die Frequenzbereichszuweisungen aller Funkdienste in
-              verschiedenen Funkregionen der Erde
-              \footnote{Regionen siehe Lektion \texttt{BV06}}
+              verschiedenen Funkregionen der Erde\footnote{Regionen siehe Lektion \texttt{BV06}}
     \end{itemize}
 
 \end{frame}
@@ -39,12 +40,41 @@
               Frequenzen, Bandbreiten, Leistung, ...
         \item folglich: Nicht alle Bereiche der RR (VO Funk) dürfen automatisch
               verwendet werden
-        \item Bandgrenzen HF bis 13cm muss man lernen %todo Tabelle
-              \footnote{bei vielen Prüfungsfragen hilft einfache Fausformel
-                        $MHz = \frac{300}{Meter}$}
+        \item Bandgrenzen HF bis 13cm muss man lernen\footnote{bei vielen
+              Prüfungsfragen hilft einfache Fausformel $MHz = \frac{300}{Meter}$}
     \end{itemize}
 
 \end{frame}
+
+\begin{frame}
+  \frametitle{Bänder}
+  Bandgrenzen für die Prüfung relevant
+
+  \begin{center}
+  {\footnotesize
+  \begin{tabular}{r|r|r|l}\hline
+    \textbf{Meter} & \textbf{min. QRG} & \textbf{max. QRG} & \textbf{Klasse} \\\hline\hline
+     160m &   1810 kHz &   2000 kHz & A + E \\
+      80m &   3500 kHz &   3800 kHz & A + E \\
+      40m &   7000 kHz &   7200 kHz & A \\
+      30m &  10100 kHz &  10150 kHz & A \\
+      20m &  14000 kHz &  14350 kHz & A \\
+      17m &  18068 kHz &  18168 kHz & A \\
+      15m &  21000 kHz &  21450 kHz & A + E \\
+      12m &  24890 kHz &  24990 kHz & A \\
+      10m &  28000 kHz &  29700 kHz & A + E \\
+       6m &  50,08 MHz &     51 MHz & A \\
+       2m &    144 MHz &    146 MHz & A + E \\
+     70cm &    430 MHz &    440 MHz & A + E \\
+     23cm &   1240 MHz &   1300 MHz & A \\
+     13cm &   2320 MHz &   2450 MHz & A \\\hline
+  \end{tabular}
+  }
+  \end{center}
+
+  Weitere Bänder möglich. 60m aktuell (WRC-15) im Gespräch.
+\end{frame}
+
 
 \begin{frame}
     \frametitle{Einleitung: Vereinbarungen der HAMs}
@@ -52,11 +82,11 @@
     International:
 
     \begin{itemize}
-        \item IARU \footnote{International Amateur Radio Union} legt
+        \item IARU\footnote{International Amateur Radio Union} legt
               Nutzungs\emph{empfehlungen} der Funkamateure untereinander fest
     \end{itemize}
 
-    Lokale Absprachen, z.B.:
+    Lokale Absprachen, z.\,B.
 
     \begin{itemize}
         \item Club QRGs
@@ -67,13 +97,14 @@
 
 \end{frame}
 
-\section[Übertragungstechn.]{Übertragungstechnik}
+\section[Übertra\-gungs\-technik]{Übertragungstechnik}
 
 \begin{frame}
     \frametitle{Übertragungstechnik}
         
     \begin{center}
-        Modulationsarten, Betriebsarten $\Rightarrow$ Sendearten
+        Modulationsarten, Betriebsarten $\Rightarrow$ Sendearten\footnote{später
+        in \texttt{E14}, \texttt{E16} und \texttt{BV12}}
     \end{center}
 
 \end{frame}
@@ -82,22 +113,22 @@
     \frametitle{Modulationsarten}
 
     Radio Regulations verwendet offizielle Codierung von Aussendungen als
-    neunstelligen Code \texttt{BBBBMSIDX}: \\[2em]
+    neunstelligen Code \texttt{BBBB\,MSI\,DX}: \\[2em]
 
-    \begin{itemize}
-        \item BBBB: vier Stellen Bandbreite
-        \item MSI: drei Stellen Sendeart (Modulationsart, Signalart,
+    \begin{description}
+        \item[BBBB] vier Stellen Bandbreite
+        \item[MSI] drei Stellen Sendeart (Modulationsart, Signalart,
                    Informationsgehalt)
-        \item DX: ggf. zwei weitere Stellen für Signaleinzelheiten
+        \item[DX] ggf. zwei weitere Stellen für Signaleinzelheiten
                   (Detaillierung, Multiplexverfahren)
-    \end{itemize}
+    \end{description}
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Sendearten: Amateurfunk}
 
-    Amateurfunk: drei Kennzeichen für die Modulationsart ausreichend
+    Amateurfunk: drei Kennzeichen für die Modulationsart ausreichend (\texttt{MSI})
 
     %todo enumerate color broken
     \begin{enumerate}
@@ -110,75 +141,68 @@
 
 \end{frame}
 
-\begin{frame}
+\begin{frame}[allowframebreaks]
     \frametitle{Sendearten: Schlüsselzeichen}
 
-    \begin{itemize}
-        \item Modulationsart des Hauptträgers
-    \end{itemize}
+    \begin{block}{Modulationsart des Hauptträgers}
+    \begin{description}
+      \item[A] Amplitudenmodulation
+      \item[J] SSB (AM, Seitenband mit unterdrücktem Träger)
+      \item[F] Winkelmodulation, Frequenzmodulation
+    \end{description}
+    \end{block}
 
-    %\begin{center}
-    \begin{tabular}{|l|l|}\hline
-        A & Amplitudenmodulation \\ \hline
-        J & SSB (AM, Seitenband mit unterdrücktem Träger) \\ \hline
-        F & Winkelmodulation, Frequenzmodulation \\ \hline
-    \end{tabular}
-    %\end{center}
+    \begin{block}{Signalart}
+    \begin{description}
+      \item[1] Einkanaliges quantisiertes Signal ohne Hilfsträger
+      \item[2] Einkanaliges quantisiertes Signal mit einem Hilfsträger
+      \item[3] Einkanaliges Analogsignal
+    \end{description}
+    \end{block}
 
-    \begin{itemize}
-        \item Signalart
-    \end{itemize}
-    
-    %\begin{center}
-    \begin{tabular}{|l|l|}\hline
-        1 & Einkanaliges quantisiertes Signal ohne Hilfsträger \\ \hline
-        2 & Einkanaliges quantisiertes Signal mit einem Hilfsträger \\ \hline
-        3 & Einkanaliges Analogsignal \\ \hline
-    \end{tabular}
-    %\end{center}
+    \begin{block}{Informationsart}
+    \begin{description}
+      \item[A] Morsetelegrafie
+      \item[B] Telegrafie für maschinellen Empfang (Teletype)
+      \item[C] Fax
+      \item[D] Daten, Telemetrie, Fernsteuerung
+      \item[E] Telefonie, Rundfunk
+      \item[F] Fernsehsignal
+    \end{description}
+    \end{block}
 
-    \begin{itemize}
-        \item Informationsart
-    \end{itemize}
- 
-    %\begin{center}
-    \begin{tabular}{|l|l|}\hline
-        A & Morsetelegrafie \\ \hline
-        B & Telegrafie für maschinellen Empfang (Teletype) \\ \hline
-        C & Fax \\ \hline
-        D & Daten, Telemetrie, Fernsteuerung \\ \hline
-        E & Telefonie, Rundfunk \\ \hline
-        F & Fernsehsignal \\ \hline
-    \end{tabular}
-    %\end{center}
-   
 \end{frame}
 
 \begin{frame}
     \frametitle{Sendearten: Beispiele}
 
-    \begin{itemize}
-        \item A1A: CW
-        \item F2A: CW via FM-Hilfsträger
-        \item F3E: FM
-        \item J3E: SSB
-        \item J2B: RTTY
-        \item J2B: Pactor
-    \end{itemize}
+    \begin{exampleblock}{Beispiele für Sendearten}
+    \begin{description}
+        \item[A1A] CW
+        \item[F2A] CW via FM-Hilfsträger
+        \item[F3E] FM
+        \item[J3E] SSB
+        \item[J2B] RTTY
+        \item[J2B] Pactor
+    \end{description}
+    \end{exampleblock}
+
+    Übersichtliche Liste: \url{https://de.wikipedia.org/wiki/Modulationsart}
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Bandbreiten}
 
-    %todo Tabelle hier auch?
-    \begin{itemize}
-        \item A1A: 0,1... 0,5 kHz 
-        \item F1B: 0,5 kHz 
-        \item A3E: 5 kHz 
-        \item F3E: 12 kHz 
-        \item J3E: 2,4 kHz (2,7 kHz)
-    \end{itemize}
+    \begin{block}{Bandbreiten}
+    \begin{description}
+        \item[A1A] 0,1\ldots0,5 kHz 
+        \item[F1B] 0,5 kHz 
+        \item[A3E] 5 kHz 
+        \item[F3E] 12 kHz 
+        \item[J3E] 2,4 kHz (2,7 kHz)
+    \end{description}
+    \end{block}
 
     Weitere Einschränkungen, z.B. 160m-Band kein FM.
 
@@ -193,25 +217,29 @@
     % todo Bandplan vorher drucken
     
     \begin{itemize}
-        \item Bei uns Region 1 - remember?
-        \item Aufteilung: Vereinbarung der HAMs untereinander mit ''Charakter
+        \item Bei uns Region 1 -- remember?
+        \item Aufteilung: Vereinbarung der HAMs untereinander mit ``Charakter
               einer Empfehlung''
         \item CW überall erlaubt, aber am Bandanfang exklusiv
         \item auch hier: Frequenzen kann man sich etwas herleiten, aber im
               Prinzip muss man Lernen, sorry
-        \item Ansonsten: Lösung ist immer ''Ich schaue im aktuellen HF-Bandplan
-              der IARU nach ...'' ;-)
+        \item Ansonsten: Lösung ist immer ``Ich schaue im aktuellen HF-Bandplan
+              der IARU nach \ldots'' ;-)
     \end{itemize}
 
 \end{frame}
 
-% todo Fiese Frage?
-%  Aus welchem Grund sollten Sie in der Dunkelheit und im Winter auch tagsüber im
-%  Bereich von 3500-3510 kHz keine innerdeutschen oder innereuropäischen
-%  Telegrafie-QSOs durchführen?
-%    * Im IARU-Region-1-Kurzwellenbandplan ist dieser Bereich als "CW DX"
-%      ausgewiesen und sollte für interkontinentale Verbindungen freigehalten
-%      werden. 
+\begin{frame}
+  \begin{center}
+    \begin{tabular}{l||p{.8\textwidth}}\hline
+      \textbf{BC214} & \textbf{Aus welchem Grund sollten Sie in der Dunkelheit und im Winter auch tagsüber im Bereich von 3500-3510 kHz keine innerdeutschen oder innereuropäischen Telegrafie-QSOs durchführen?} \\ \hline\hline
+      A \only<2>\checkmark & Im IARU-Region-1-Kurzwellenbandplan ist dieser Bereich als ``CW DX'' ausgewiesen und sollte für interkontinentale Verbindungen freigehalten werden. \\\hline
+      B & Gemäß Frequenzbereichszuweisungsplan ist dieser Bereich auch kommerziellen Stationen zugewiesen und muss nachts und im Winter freigehalten werden. \\\hline
+      C & Im IARU-Region-1-Kurzwellenbandplan ist dieser Bereich für Digimode-Betriebsarten ausgewiesen und sollte von CW-Stationen nicht benutzt werden. \\\hline
+      D & Weil dieser Bereich im Ausland auch für Rundfunkstationen ausgewiesen ist und daher nachts und im Winter durch den Amateurfunkdienst nicht genutzt werden darf. \\\hline
+    \end{tabular}
+  \end{center}
+\end{frame}
 
 \subsection{Aktivitätszentren}
 
@@ -219,11 +247,11 @@
     \frametitle{Aktivitätszentren}
 
     \begin{itemize}[<+->]
-        \item QRP - wozu?
+        \item QRP -- wozu?
         \item anbei: Verwendung von \texttt{/qrp} nicht offiziell, aber geduldet
         \item Bildübertragung
         \item Notfunk
-        \item Frequenzbereichen bevorzugt Funkverkehr in digitalen Betriebsarten 
+        \item Frequenzbereiche bevorzugt Funkverkehr in digitalen Betriebsarten
     \end{itemize}
 
 \end{frame}
@@ -233,8 +261,12 @@
 \begin{frame}
     \frametitle{Seitenbänder}
 
-    $<10 MHz$ LSB \\[1em]
-    $>10 MHz$ USB \\[3em]
+    Konvention: \bigskip
+
+	\begin{itemize}
+    	\item [$<$] $10 MHz$ LSB\footnote{Lower Side Band $\rightarrow$ \texttt{E14}} \\[1em]
+    	\item [$>$] $10 MHz$ USB\footnote{Upper Side Band $\rightarrow$ \texttt{E14}} \\[3em]
+	\end{itemize}
 
     Nicht mit deutschen Abkürzungen (USB, OSB) verwechseln!
 
@@ -246,23 +278,26 @@
     \frametitle{Betriebstechniken}
 
     \begin{itemize}
-        \item QRGs werden ''occupied'' - man fragt vorher, ob sie frei sind
-        \item für höhere Bänder gibt es Anruffrequenzen, weil diese groß sind und oft mit
+        \item QRGs werden ``occupied'' -- man fragt vorher, ob sie frei sind
+        \item für höhere Bänder gibt es Anruf\/frequenzen, weil diese groß sind und oft mit
               Richtantennen gearbeitet wird
         \begin{itemize}
             \item nach Kontaktaufnahme sofort QSY
         \end{itemize}
         \item Satellitenfunkbetrieb
         \begin{itemize}
-            \item Uplink/Downlink-Bereiche
-            \item auch mit HFGs frei halten!
+            \item Uplink-/Downlink-Bereiche
+            \item manchmal FM, manchmal SSB mit LSB im Uplink und USB im Downlink
+            \item auch mit Handfunkgeräten (HFG) frei halten\footnote{freie
+                  Sicht direkt zum Satelliten; selbst Siganle mit wenigen $mW$
+                  können die $400km$ vom/zum Satelliten gehört werden}!
             \item auch hier: Bereiche leider Lernstoff
         \end{itemize}
     \end{itemize}
 
 \end{frame}
 
-\section[FRQ-Nutzungsplan]{Frequenznutzungsplan}
+\section[Frequenz\-nutzungs\-plan]{Frequenznutzungsplan}
 
 \begin{frame}
     \frametitle{Frequenznutzungsplan}
@@ -290,13 +325,14 @@
     \begin{itemize}[<+->]
         \item Status: Der (S)ekundärfunkdienst hat im Störungsfall gegenüber einem
               (P)rimärfunkdienst eingeschränkte Nutzungsrechte.
-        \item ISM: Dieser Frequenzbereich wird für industrielle,
-              wissenschaftliche, medizinische, häusliche oder ähnliche Anwendungen mitbenutzt.
+        \item ISM\footnote{Industrial, Scientific and Medical Band}: Dieser
+              Frequenzbereich wird für industrielle, wissenschaftliche,
+              medizinische, häusliche oder ähnliche Anwendungen mitbenutzt.
         \begin{itemize}
             \item Welche ISM-Dienste kennt ihr?
         \end{itemize}
         \item richtige Anfangs- und Endfrequenzen und Bandbreiten muss man
-              leider teilweise lernen
+              leider teilweise lernen, aber helfen später im Betrieb gut weiter
     \end{itemize}
 
 \end{frame}
@@ -304,7 +340,7 @@
 \begin{frame}
     \frametitle{Frequenznutzungsplan: Fragen}
 
-    ''Funfacts'':
+    ``Funfacts'':
     
     \begin{itemize}
         %\item Bei 135,7-137,8 kHz und 1810-1850 kHz beträgt die zulässige maximale
@@ -324,16 +360,27 @@
     \frametitle{Lernhinweise}
 
     Die Frequenzbereiche gehören leider mit zu dem stupidesten Lernstoff für die
-    Prüfung. Tips:
+    Prüfung. Tipps:
 
     \begin{itemize}
         \item Don't Panic! ;-)
         \item bei der Prüfungssimulation am Anfang die Frequenzfragen mit Hilfe
               der Bandpläne beantworten und sacken lassen
-        \item viele Fragen sind auch über die ''Faustformel'' zu lösen
-        \item Antworten mit ''ich schau in Regelwerken nach'' sind immer gut
+        \item viele Fragen sind auch über die ``Faustformel'' zu lösen
+        \item Antworten mit ``ich schau in Regelwerken nach'' sind immer gut
     \end{itemize}
 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Hausaufgaben}
+
+  \begin{alertblock}{Fakultative Hausaufgaben}
+    \begin{itemize}
+      \item Fragenkatalog Betrieb und Vorschriften, Kapitel 2.3 ``Frequenzbereiche und IARU-Bandpläne'', bestehend aus 2.3.1 ``Frequenzbereiche des Amateurfunkdienstes'', 2.3.2 ``IARU-Bandpläne''.
+      \item Fragenkatalog Betrieb und Vorschriften, Kapitel 2.2.4 ``Bezeichnungen der Aussendungen (Sendearten)''
+    \end{itemize}
+  \end{alertblock}
 \end{frame}
 
 \renewcommand{\refname}{Referenzen}
