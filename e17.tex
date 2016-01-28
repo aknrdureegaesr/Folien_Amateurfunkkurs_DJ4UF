@@ -1,11 +1,12 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>
+% Autor: Felix Baum DB4UM <baum@campus.tu-berlin.de>
+% Korrekturen: Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik E 17: \\
           Messtechnik \\[2em]}
-\date{Stand 26.1.2015}
+\date{Stand 21.12.2015}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -23,36 +24,36 @@
 
 \begin{frame}
     \frametitle{Drehspulenmessgerät (Antik)}
-	\begin{minipage}{0.4\textwidth}
-	    \includegraphics[width=.95\textwidth]{e17/drehspulenMess.png}\\
+	\begin{minipage}{0.3\textwidth}
+	    \includegraphics[width=.95\textwidth,height=.8\textheight,keepaspectratio]{e17/drehspulenMess.png}\\
 	\end{minipage}
 	        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Moving_coil_instrument_principle.png}}
-		\hspace{0.5cm}
-	\begin{minipage}{0.4\textwidth}	
-	\begin{itemize} \tiny
-		\item \tiny 1) Weicheisenkern der Drehspule
-		\item 2) Permanentmagnet
-		\item 3) Polschuh zur Bündelung des Magnetfeldes
-		\item 4) Skala
-		\item 5) Hilfsspiegel zur genauen Ablesung
-		\item 6) Rückstellfeder
-		\item 7) Drehspule
-		\item 8) Drehspule in Nulllage
-		\item 9) Drehspule bei Maximalausschlag
-		\item 10) Joch der Spule
-		\item 11) Stellschraube für Nullpunktseinstellung
-		\item 12) Zeiger
-		\item 13) Zeiger in Nulllage
-		\item 14) Zeiger bei Maximalausschlag
-	\end{itemize}
+		%\hspace{0.5cm}
+	\begin{minipage}{0.65\textwidth}
+	\begin{enumerate} \footnotesize
+		\item  Weicheisenkern der Drehspule
+		\item  Permanentmagnet
+		\item  Polschuh zur Bündelung des Magnetfeldes
+		\item  Skala
+		\item  Hilfsspiegel zur genauen Ablesung
+		\item  Rückstellfeder
+		\item  Drehspule
+		\item  Drehspule in Nulllage
+		\item  Drehspule bei Maximalausschlag
+		\item  Joch der Spule
+		\item  Stellschraube für Nullpunkteinstellung
+		\item  Zeiger
+		\item  Zeiger in Nulllage
+		\item  Zeiger bei Maximalausschlag
+	\end{enumerate}
 	\end{minipage}
 \end{frame}
 
 \begin{frame}
     \frametitle{Prüfungsfrage}
     \begin{center}
-        \includegraphics[width=.95\textwidth]{e17/messbereich.png}
-        \footnote{\tiny Fragenkatalog Bundesnetzargentur Klasse E}
+        \includegraphics[width=.95\textwidth,height=.8\textheight,keepaspectratio]{e17/messbereich.png}
+        \footnote{\tiny Fragenkatalog BundesNetzAgentur Klasse E}
 	\end{center}
 \end{frame}
 
@@ -61,16 +62,16 @@
 \begin{frame}
     \frametitle{Digitales Multimeter}
     \begin{center}
-        \includegraphics[width=.35\textwidth]{e17/digitalmultimeter.jpg}
+        \includegraphics[width=.35\textwidth,height=.9\textheight,keepaspectratio]{e17/digitalmultimeter.jpg}
 	\end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Was wo anschließen?}
 	\begin{minipage}{0.4\textwidth}
-        \includegraphics[width=1\textwidth]{e17/digitalmultimeterMess.jpg}
+        \includegraphics[width=1\textwidth,height=.9\textheight,keepaspectratio]{e17/digitalmultimeterMess.jpg}
 	\end{minipage}
-	\begin{minipage}{0.4\textwidth}	
+	\begin{minipage}{0.55\textwidth}
 	\begin{itemize}
 		\item Was kann alles gemessen werden?
 		\item Wo anschließen zum Strom messen?
@@ -82,74 +83,55 @@
 
 \begin{frame}
     \frametitle{Wie sollte gemessen werden?}
-        \includegraphics[width=1\textwidth]{e17/stromSpannung.png}
-        \footnote{\tiny Fragenkatalog Bundesnetzargentur Klasse E}
+        \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{e17/stromSpannung.png}
+        \footnote{\tiny Fragenkatalog BundesNetzAgentur Klasse E}
 \end{frame}
 
 \begin{frame}
     \frametitle{Messfehler}
     \begin{center}
-    		\begin{itemize}
-				\item Nullpunktsabweichung
-				\item Empfindlichkeitsabweichung
-				\item Linearitätsabweichung
-    		\end{itemize}
-        \includegraphics[width=1\textwidth]{e17/werMisstMisst.png}
-        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:AMT_Fehler.svg}}
-	\end{center}
+      \begin{tabular}{ccc}
+	Nullpunktabweichung & Empfindlichkeitsabweichung & Linearitätsabweichung
+      \end{tabular}
+      \includegraphics[width=1\textwidth,height=.6\textheight]{e17/werMisstMisst.png}
+      \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:AMT_Fehler.svg}}
+    \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Prüfungsfrage}
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TJ102 & Die Auflösung eines Messinstrumentes entspricht... \\  \hline\hline
-         A  & der Genauigkeit des Instrumentes \\
-         " " & in Bezug auf den tatsächlichen Wert. \\ \hline
+      \begin{tabular}{l||p{.8\textwidth}}\hline
+	\textbf{TJ102} & \textbf{Die Auflösung eines Messinstrumentes entspricht\ldots} \\  \hline\hline
+         A  & der Genauigkeit des Instrumentes in Bezug auf den tatsächlichen Wert. \\ \hline
          B & der Genauigkeit des Instrumentes. \\ \hline
-         C & der kleinsten Einteilung der Anzeige. \\\hline
+         C \only<2>\checkmark & der kleinsten Einteilung der Anzeige. \\\hline
          D & dem Vollausschlag der Instrumentenanzeige. \\\hline
     \end{tabular}
- 	\end{center}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Prüfungsfrage}
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TJ102 & Die Auflösung eines Messinstrumentes entspricht... \\ \hline\hline
-         " " & der Genauigkeit des Instrumentes \\
-         " " & in Bezug auf den tatsächlichen Wert. \\ \hline
-         " " & der Genauigkeit des Instrumentes. \\ \hline
-         X & der kleinsten Einteilung der Anzeige. \\\hline
-         " " & dem Vollausschlag der Instrumentenanzeige. \\\hline
-    \end{tabular}
- 	\end{center}
-\end{frame}
-
-\section*{Oszilloscope}
+\section*{Oszilloskop}
 
 \begin{frame}
-    \frametitle{Oszilloscope}
+    \frametitle{Oszilloskop}
     \begin{center}
-        \includegraphics[width=1\textwidth]{e17/osziModern.jpg}
+        \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{e17/osziModern.jpg}
         \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Modernes_Speicheroszilloskop.jpg}}
 	\end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Oszilloscope}
+    \frametitle{Oszilloskop}
     \begin{center}
-        \includegraphics[width=.8\textwidth]{e17/WTPCOscilloscopeBeschreiben.jpg}
+        \includegraphics[width=.8\textwidth,height=.8\textheight,keepaspectratio]{e17/WTPCOscilloscopeBeschreiben.jpg}
         \footnote{\tiny \url{https://en.wikipedia.org/wiki/File:WTPC_Oscilloscope-1.jpg}}
 	\end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Oszilloscope - Ablesen}
+    \frametitle{Oszilloskop -- Ablesen}
     \begin{center}
-        $100mV / Div$ und $0.1ms / Div$
-        \includegraphics[width=.8\textwidth]{e17/OsziTon.png}
+        $100mV / Div$ und $0.1ms / Div$\\
+        \includegraphics[width=.8\textwidth,height=.7\textheight,keepaspectratio]{e17/OsziTon.png}
         \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Oszi_Ton.svg}}
 	\end{center}
 \end{frame}
@@ -158,12 +140,14 @@
     \frametitle{Spannungen}
     \begin{center}
     \begin{itemize}
-			\item PEP - Peak to Peak
-			\item RMS - Effektivwert
-			\item $u_{Spitze} = sqrt{2} \cdot U_{eff}$ \\
-			\item Aufgabe: Berechnet Spitzen-Spitzen Spannung vom Netzstrom 
+			\item PEP -- Peak to Peak
+			\item RMS -- Effektivwert
+			\item $u_{Spitze} = \sqrt{2} \cdot U_{eff}$ \\
     \end{itemize}
-	\end{center}
+  \end{center}
+  \begin{exampleblock}{Aufgabe}
+    Berechnet Spitzen-Spitzen Spannung vom Netzstrom
+  \end{exampleblock}
 \end{frame}
 
 \section*{Dipmeter}
@@ -171,7 +155,7 @@
 \begin{frame}
     \frametitle{Dipmeter}
     \begin{center}
-        \includegraphics[width=0.55\textwidth]{e17/Dipmeter.jpg}
+        \includegraphics[width=0.55\textwidth,height=.8\textheight,keepaspectratio]{e17/Dipmeter.jpg}
         \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Dipmeter_and_its_probe_coils.jpg}}
 	\end{center}
 \end{frame}
@@ -181,72 +165,53 @@
 \begin{frame}
     \frametitle{Stehwellenmessgerät}
     \begin{center}
-        \includegraphics[width=1\textwidth]{e17/RS_SWR.jpg}
+        \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{e17/RS_SWR.jpg}
         \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:RS_SWR.jpg}}
 	\end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Interner Aufbau}
+    \begin{block}{S-Wert Berechnung}
+      $$s = \cfrac{U_{max}}{U_{min}} = \cfrac{U_v + U_r}{U_v - U_r}$$
+    \end{block}
     \begin{center}
-    $$s = \frac{U_{max}}{U_{min}} = \frac{U_v + U_r}{U_v - U_r}$$
-        \includegraphics[width=.8\textwidth]{e17/SWRMeterInnen.png}
-        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:SWR_Meter.svg}}
-	\end{center}
+      \includegraphics[width=.8\textwidth,height=.5\textheight,keepaspectratio]{e17/SWRMeterInnen.png}
+      \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:SWR_Meter.svg}}
+    \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{VSWR-Rechnen}
-    \begin{center}
-    $$s = \frac{U_{max}}{U_{min}} = \frac{U_v + U_r}{U_v - U_r}$$
-    $$s = \frac{1V + 0.5V}{1V - 0.5V} = \frac{1.5V}{0.5V} = 3$$
+    \begin{exampleblock}{Beispiel}
+      \begin{center}
+	$$s = \frac{U_{max}}{U_{min}} = \frac{U_v + U_r}{U_v - U_r}$$
+	$$s = \frac{1V + 0.5V}{1V - 0.5V} = \frac{1.5V}{0.5V} = 3$$
 	$$s = \frac{1V + 0V}{1V - 0V} = \frac{1V}{1V} = 1$$
-	\end{center}
+      \end{center}
+    \end{exampleblock}
 \end{frame}
+
 
 \begin{frame}
     \frametitle{Prüfungsfrage}
     \begin{center}
-    \begin{tabular}{l||l}\hline
-        TH401&Eine Antenne hat ein Stehwellenverhältnis (VSWR)\\
-         " "  &von 3. Wie viel Prozent der Sendeleistung\\
-         " "  &wird von der Antenne abgestrahlt, wenn sonst\\
-         " "  &keine Verluste auftreten?\\ \hline\hline
+      \begin{tabular}{l||p{.8\textwidth}}\hline
+	\textbf{TH401} & \textbf{Eine Antenne hat ein Stehwellenverhältnis (VSWR) von 3. Wie viel Prozent der Sendeleistung wird von der Antenne abgestrahlt, wenn sonst keine Verluste auftreten?}\\ \hline\hline
          A & $50 \%$ \\\hline
          B & $29 \%$ \\\hline
          C & $25 \%$ \\ \hline
-         D & $75 \%$\\\hline
-    \end{tabular}
- 	\end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Prüfungsfrage}
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TH401&Eine Antenne hat ein Stehwellenverhältnis (VSWR)\\
-         " "  &von 3. Wie viel Prozent der Sendeleistung\\
-         " "  &wird von der Antenne abgestrahlt, wenn sonst\\
-         " "  &keine Verluste auftreten?\\ \hline\hline
-         " " & $50 \%$ \\\hline
-         " " & $29 \%$ \\\hline
-         " " & $25 \%$ \\ \hline
-         X & $75 \%$\\\hline
-    \end{tabular}
-    $50 \%$ der Spannung sind $25 \%$ der Leistung.
+         D \only<2>\checkmark & $75 \%$\\\hline
+    \end{tabular}\\[1.5em]
+    \only<2>{$50 \%$ der Spannung sind $25 \%$ der Leistung.}
  	\end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Wo das SWR-Meter einschleifen?}
-        \includegraphics[width=.97\textwidth]{e17/SWROrt.png}
-        \footnote{\tiny Fragenkatalog Bundesnetzargentur Klasse E}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Wo das SWR-Meter einschleifen?}
-        \includegraphics[width=.97\textwidth]{e17/SWROrt.png}
-        \footnote{\tiny Fragenkatalog Bundesnetzargentur Klasse E}
+    \includegraphics[width=.97\textwidth,height=.4\textheight,keepaspectratio]{e17/SWROrt.png}
+    \footnote{\tiny Fragenkatalog BundesNetzAgentur Klasse E}
+    \pause
     Am Besten in 1, da alles dahinter zur Antenne bzw. Antennenanlage gehört.
 \end{frame}
 
@@ -256,7 +221,7 @@
 \begin{frame}
     \frametitle{Messen}
     \begin{center}
-        \includegraphics[width=.99\textwidth]{e17/DummyLoad.jpg}
+        \includegraphics[width=.99\textwidth,height=.8\textheight,keepaspectratio]{e17/DummyLoad.jpg}
         \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Dummy_load.jpg}}
 	\end{center}
 \end{frame}
@@ -265,24 +230,24 @@
     \frametitle{Zu Beachten}
     \begin{itemize}
 		\item Aufbau als Widerstandsdekade
+		\item Genau $50 \Omega$ Realer Widerstand
 		\item Lastwiderstände
-		\item Außer bei besonderem Genau $50 \Omega$ Realer Widerstand
-		\item Am besten Metalloxid Widerstände
+		\item Am besten Metalloxid-Widerstände
 		\item Große Kühlkörper
-		\item selbstbau: \url{http://der-bastelbunker.blogspot.de/2011/04/qro-dummy-load-von-kw-bis-vhf-fur-1.html}
+		\item Selbstbau: \url{http://der-bastelbunker.blogspot.de/2011/04/qro-dummy-load-von-kw-bis-vhf-fur-1.html}
     \end{itemize}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Dummy in Nauen}
+    \frametitle{Dummyload in der Sendeanlage Nauen}
 	\begin{minipage}{0.4\textwidth}
 	\begin{center}
-	    \includegraphics[width=.9\textwidth]{e17/DummyNauen.jpg}
+	    \includegraphics[width=.9\textwidth,height=.8\textheight,keepaspectratio]{e17/DummyNauen.jpg}
 	\end{center}
 	\end{minipage}
 	        \footnote{\tiny Bild DB4UM}
-		\hspace{0.5cm}
-	\begin{minipage}{0.4\textwidth}	
+		%\hspace{0.5cm}
+	\begin{minipage}{0.55\textwidth}
 	\begin{itemize}
 		\item Dummyload in Nauen
 		\item Auch als Wattmeter nutzbar
