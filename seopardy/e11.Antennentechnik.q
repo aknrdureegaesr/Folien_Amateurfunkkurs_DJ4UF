@@ -26,4 +26,3 @@
        Question: TODO
        Answer: TODO
        Type: Text
-       Double-Jeopardy: true

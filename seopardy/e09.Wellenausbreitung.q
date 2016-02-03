@@ -21,7 +21,6 @@
        Question: "In dieser Hoehe befindet sich die E-Schicht"
        Answer: "100-120km"
        Type: Text
-       Double-Jeopardy: true
 
      - Name: Question 5
        Question: "Das naechste Sonnenflecken Maximum"

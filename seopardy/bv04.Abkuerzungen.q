@@ -19,7 +19,6 @@
        Question: TRX
        Answer: Transceiver?
        Type: Text
-       Double-Jeopardy: true
 
      - Name: Question 5
        Question: TVI

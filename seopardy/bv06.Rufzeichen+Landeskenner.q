@@ -21,7 +21,6 @@
        Question: ZL
        Answer: Call für Neuseeland?
        Type: Text
-       Double-Jeopardy: true
 
      - Name: Question 5
        Question: § 10 Abs. 3 AFuV

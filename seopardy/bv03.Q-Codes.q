@@ -21,7 +21,6 @@
        Question: QSY?
        Answer: Was bedeutet "Soll ich die Sendefrq. ändern"?
        Type: Text
-       Double-Jeopardy: true
 
      - Name: Question 5
        Question: QRX
