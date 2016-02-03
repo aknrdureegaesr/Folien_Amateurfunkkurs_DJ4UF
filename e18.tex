@@ -1,11 +1,13 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Martin Deutschmann <martin.deutschmann@campus.tu-berlin.de>
+% Autoren: 
+% Martin Deutschmann <martin.deutschmann@campus.tu-berlin.de>
+% Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 18 \& Betriebstechnik/Vorschriften 14: \\
           EMV, EMVG, EMVU, Sicherheit \& Störungen  \\[2em]}
-\date{Stand 05.02.2015}
+\date{Stand 21.12.2015}
 \input{texdata/titlepage}
 
 %fixme Bildreferenzen aus den Folien raus und in den Anhang
@@ -23,29 +25,46 @@
 
 \begin{frame}
 	\frametitle{Einleitung}
-	In diesem Kapitel geht es um Elektromagnetische Verträglichkeit (EMV) von Geräten(EMVG) und 	der Umwelt (EMVU), Störungen und Sicherheit während des Funkes im Rahmen der gesetzlichen 		Vorgaben zu halten.
+	In diesem Kapitel geht es um Elektromagnetische Verträglichkeit (EMV) von Geräten (EMVG) und der Umwelt (EMVU), Störungen und Sicherheit während des Funkes im Rahmen der gesetzlichen Vorgaben zu halten.
 \end{frame}
 
 \begin{frame}
 	\frametitle{Warum kümmert uns EMV eigentlich?}
 	\begin{itemize}
 		\item Unsere Sendeanlagen erzeugen elektromagnetische Strahlung
-		\item Diese kann Geräte in der Nähe stören (z.B. Fernseher des Nachbarn)
+		\item Diese kann Geräte in der Nähe stören, z.B.
+		  \begin{itemize}
+		    \item Fernseher des Nachbarn
+		    \item Funkfernbedienung von Fahrzeugen
+		    \item Funkmikrofone
+		    \item Elektrische Anlagen und elektronische Geräte ohne Funk
+		  \end{itemize}
 		\item Aber auch unsere Geräte können gestört werden
 		\item Deswegen müssen diese geschützt werden
 	\end{itemize}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Prüfungsfrage}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TK103} & \textbf{Welche Reaktion ist angebracht, wenn Störungen im TV-Rundfunk beim Nachbarn nicht mit den zur Verfügung stehenden Mitteln beseitigt werden können?} \\ \hline\hline
+    A & Sie benachrichtigen ihren Amateurfunkverband. \\ \hline
+    B & Der Nachbar sollte höflich darauf hingewiesen werden, dass es an seiner eigenen Einrichtung liegt. \\ \hline
+    C & Der Nachbar sollte darauf hingewiesen werden, dass Sie hierfür nicht zuständig sind. \\ \hline
+    D \only<2>\checkmark & Sie empfehlen dem Nachbarn höflich, sich an die Bundesnetzagentur zur Prüfung der Störungsursache zu wenden. \\ \hline
+  \end{tabular}
+\end{frame}
+
 \section{EMVG}
 \begin{frame}
 	\frametitle{\textbf{E}lektro-\textbf{M}agnetische \textbf{V}erträglichkeit von \textbf{G}eräten}
-	\Large{\textbf{EMVG §3 Schutzanforderungen}}
+	\Large{\textbf{EMVG §3 Schutzanforderungen}}\\
 	\begin{normalsize}
-	(1) Geräte müssen so beschaffen sein, dass bei vorschriftsgemäßer Installierung, 				angemessener Wartung und bestimmungsgemäßem Betrieb gemäß den Angaben des Herstellers in 		der Gebrauchsanweisung	
-	\begin{itemize}
-		\item 1. die Erzeugung elektromagnetischer Störungen begrenzt wird, dass ein 							bestimmungsfähiger Betrieb von Funk und Telekommunikationsgeräten sowie 						sonstigen Geräten möglich ist, 
-		\item 2. die Geräte eine angemessene Festigkeit gegen elektromagnetische Störungen 						aufweisen, so dass ein bestimmungsgemäßer Betrieb möglich ist.
-	\end{itemize}
+	(1) Geräte müssen so beschaffen sein, dass bei vorschriftsgemäßer Installierung, 				angemessener Wartung und bestimmungsgemäßem Betrieb gemäß den Angaben des Herstellers in der Gebrauchsanweisung	
+	\begin{enumerate}
+		\item die Erzeugung elektromagnetischer Störungen begrenzt wird, dass ein bestimmungsfähiger Betrieb von Funk und Telekommunikationsgeräten sowie sonstigen Geräten möglich ist, 
+		\item die Geräte eine angemessene Festigkeit gegen elektromagnetische Störungen aufweisen, so dass ein bestimmungsgemäßer Betrieb möglich ist.
+	\end{enumerate}
 	\end{normalsize}
 \end{frame}
 
@@ -62,13 +81,14 @@
 \section{Störungen}
 
 \begin{frame}
-	\frametitle{Was sind Störungen? und was hilft dagegen?}
+	\frametitle{Was sind Störungen? Und was hilft dagegen?}
 	\begin{itemize}
-		\item Störungen sind unerwünschte Ausstrahlung (wie z.B. Oberwellen oder 								Nebenaussendungen)
+		\item Störungen sind unerwünschte Ausstrahlung (wie z.B. Oberwellen oder Nebenaussendungen)
 		\item Um Störungen zu vermeiden, kann man Filter verwenden
 		\item Man kann auch mit Filtern gegen Störungen vorgehen
 	\end{itemize}
 	\vspace{0.5cm}
+	Gesetzlich vorgeschriebene maximale Störleistung von Nebenaussendungen außerhalb des Amateurfunkbands
 	\begin{center}
 	\begin{tabular}{|c|c|}
 		\hline
@@ -79,7 +99,22 @@
 		max. -16 dBm & $>$ 60 dB gedämpft \\ \hline
 	\end{tabular}
 	\end{center}
-	
+\end{frame}
+
+\begin{frame}
+  \frametitle{Video Oberwellen}
+  \url{https://youtu.be/2AdW9Zpl2Es?t=1m16s}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Prüfungfrage}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TK104} & \textbf{Bei der Überprüfung des Ausgangssignals eines Senders sollte die Dämpfung der Oberwellen mindestens} \\ \hline\hline
+    A \only<2>\checkmark & den geltenden Richtwerten entsprechen. \\ \hline
+    B & 30 dB betragen. \\ \hline
+    C & 100 dB betragen. \\ \hline
+    D & 20 dB betragen. \\ \hline
+  \end{tabular}
 \end{frame}
 
 \begin{frame}
@@ -89,8 +124,8 @@
 
 \begin{frame}
  	\frametitle{Wo störts denn?}
- 	\includegraphics[scale=0.2]{e18/Stoerungen.png}\\
- 	\tiny{Quelle: DM7MD} 	
+ 	\includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{e18/Stoerungen.png}
+ 	\footnote{\tiny Quelle: DM7MD} 	
 \end{frame}
 
 \begin{frame}
@@ -98,15 +133,28 @@
 	\begin{itemize}
 		\item Intermodulationen (Übersteuern der Mischstufe durch mehrere, zu starke Signale)
 		\item Diese erzeugen dann Phantomsignale
-		\item Zustopfeffekte
+		\item Zustopfeffekte 
 	\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Prüfungsfrage}
+  \begin{small}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{VG107} & \textbf{Der Empfang einer Amateurfunkaussendung wird auf der dem Amateurfunk ``primär'' zugewiesenen Frequenz 7,05 MHz durch den Schaltkontakt einer Heizungssteuerung aus der Nachbarschaft gestört. Was trifft für diesen Fall nach den Regelungen des EMVG bzw. AFuG zu?} \\ \hline
+    A \only<2>\checkmark & Die Heizungssteuerung darf weiterbetrieben werden, wenn sie die für sie gültigen Grenzwerte aus den europäisch anerkannten Normen einhält. \\ \hline
+    B & Die Heizungssteuerung ist außer Betrieb zu nehmen, da sie keine Aus\-sendung in einem Amateurfunkband machen darf. \\ \hline
+    C & Die Heizungssteuerung muss umgehend außer Betrieb genommen werden, da sich die gestörte Frequenz in einem primär zugewiesenen Amateurfunkband befindet. \\ \hline
+    D & Die Heizungssteuerung darf aus Gründen der Verhältnismäßigkeit unabhängig von der Einhaltung irgendwelcher Grenzwerte innerhalb der Heizperioden weiterbetrieben werden. \\ \hline
+  \end{tabular}
+  \end{small}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Vorbeugende Maßnahmen}
 	\begin{itemize}
 		\item Sendeanlage so weit weg von Empfangsantennen wie möglich aufbauen
-		\item Eine Richtantenne mit geringem vertikalen Öffnungswinkel auf dem Dach ist ein 					guter Anfang 
+		\item Eine Richtantenne mit geringem vertikalen Öffnungswinkel auf dem Dach ist ein guter Anfang 
 		\item Anpassen der Sendeleistung
 	\end{itemize}
 \end{frame}
@@ -121,26 +169,30 @@
 				\item Expositionsbereich 1 (Vom Funker kontrollierbarer Bereich) und 
 				\item Expositionsbereich 2 (Öffentlicher Bereich)
 			\end{itemize}
-		\item Es gibt festgelegte Grenzwerte und Formeln der BNetzA zur Berechnung des 						Sicherheitsabstandes
+		\item Es gibt festgelegte Grenzwerte und Formeln der BNetzA zur Berechnung des Sicherheitsabstandes
+		\item Diverse Software zur Berechnung der Sicherheitsabstände
+		\item Für eine ortsfeste Antenne ist (ab 10W EIRP) eine Selbsterklärung vor Betriebsaufnahme abzugeben
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Sicherheitsabstand}
-	\begin{center}
+	\begin{block}{Sicherheitsabstand}
 	\begin{LARGE}
 		$r = \frac{\sqrt{30 \cdot P_{EIRP}[W]}}{E[\frac{V}{m}]}$
 	\end{LARGE}
+	\end{block}
 	\vspace{0.5cm}
 	
+	\begin{center}
 	\begin{tabular}{|c|c|}
 	\hline
-	\multicolumn{2}{|l|}{Grenzwerte für Personenschutz} \\ \hline
-	Frequenzbereich & Elektrische Feldstärke \\ \hline
-	unter 10 MHz & $E = 87 / \sqrt{f(MHz)} V/m$ \\ \hline
-	10 - 40 MHz & $E = 27,5 V/m$ \\ \hline
-	40 - 2000 MHz & $E = 1,375 \cdot \sqrt{f(MHz)} V/m$ \\ \hline
-	über 2000 MHz & $E = 61 V/m$ \\ \hline
+	\multicolumn{2}{|l|}{\textbf{Grenzwerte für Personenschutz}} \\ \hline
+	\textbf{Frequenzbereich} & \textbf{Elektrische Feldstärke} \\ \hline
+	unter 10 MHz & $E = \frac{87}{\sqrt{f(MHz)}} \frac{V}{m}$ \\ \hline
+	10 - 40 MHz & $E = 27,5 \frac{V}{m}$ \\ \hline
+	40 - 2000 MHz & $E = 1,375 \cdot \sqrt{f(MHz)} \frac{V}{m}$ \\ \hline
+	über 2000 MHz & $E = 61 \frac{V}{m}$ \\ \hline
 	\end{tabular}
 	\end{center}
 \end{frame}
@@ -149,22 +201,31 @@
 	\frametitle{Leistungsgewinnfaktoren und Reduzierungsfaktoren}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\multicolumn{2}{|l|}{Leistungsgewinnfaktoren} & oder in dBi \\ \hline
-		Dipol & 1,64 & 2,15 dbi \\ \hline
+		\multicolumn{2}{|l|}{\textbf{Leistungsgewinnfaktoren}} & \textbf{oder in dBi} \\ \hline
+		Dipol & 1,64 & 2,15 dBi \\ \hline
 		$\lambda / 4$ - Strahler & 3,28 & 5,15 dBi \\ \hline
 	\end{tabular}
 	\vspace{0.5cm}
 	
 	\begin{tabular}{|c|c|}
 		\hline
-		Bstriebsart & Reduzierungsfaktor \\ \hline
+		\textbf{Betriebsart} & \textbf{Reduzierungsfaktor} \\ \hline
 		SSB & $1 : 6 = 0,167$ \\ \hline
 		CW & $1 : 4 = 0,25$ \\ \hline
-		FM (RTTY, SSTV) & 1 \\ \hline		
-	\end{tabular}
-	\begin{itemize}
-		\item	Reduzierungsfaktoren sind Effektivwerte der maximalen Feldstärke gemittelt über 		einen 6-Minuten Intervall
-	\end{itemize}
+		FM (RTTY, SSTV) & 1 \\ \hline
+	\end{tabular}\\[1.5em]
+	  Reduzierungsfaktoren sind Effektivwerte der maximalen Feldstärke gemittelt über ein 6-Minuten Intervall
+\end{frame}
+
+\begin{frame}
+  \frametitle{Prüfungsfrage}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TL209} & \textbf{Sie möchten den Personenschutz-Sicherheitsabstand für die Antenne Ihrer Amateurfunkstelle für das 10-m-Band und die Betriebsart RTTY berechnen. Der Grenzwert im Fall des Personenschutzes beträgt 28 V/m. Sie betreiben einen Dipol, der von einem Sender mit einer Leistung von 100W über ein Koaxialkabel gespeist wird. Die Kabeldämpfung sei vernachlässigbar. Wie groß muss der Sicherheitsabstand sein?} \\ \hline
+    A & 5,01m \\ \hline
+    B & 1,96m \\ \hline
+    C \only<2>\checkmark & 2,50m \\ \hline
+    D & 13,7m \\ \hline
+  \end{tabular}
 \end{frame}
 
 \section{Sicherheit}
@@ -194,15 +255,13 @@
 
 \begin{frame}
 	\frametitle{Antennenerdung}
-	\begin{itemize}
-		\item	Alle leitfähigen Teile der Antennenanlage müssen geerdet werden
-	\end{itemize}
+	Alle leitfähigen Teile der Antennenanlage müssen geerdet werden\\[1.5em]
 	\begin{tabular}{|c|c|}
 		\hline
-		Werkstoff & Abmessungen oder Art \\ \hline
-		Kupfer & $16 mm^2$ , blank oder isoliert \\ \hline
-		Aluminium & $25 mm^2$ , isoliert, in Innenräumen auch blank \\ \hline
-		Stahl & $50 mm^2$ , verzinkt, z.B. Band $20mm \cdot 2,5mm$ \\ \hline
+		\textbf{Werkstoff} & \textbf{Abmessungen oder Art} \\ \hline
+		Kupfer & $16 mm^2$, blank oder isoliert \\ \hline
+		Aluminium & $25 mm^2$, isoliert, in Innenräumen auch blank \\ \hline
+		Stahl & $50 mm^2$, verzinkt, z.B. Band $20mm \cdot 2,5mm$ \\ \hline
 		\multicolumn{2}{|l|}{Volldraht oder mehrdrähtig, aber nicht feindrähtig} \\
 		\multicolumn{2}{|l|}{Kennzeichnung der Erdleiter: grün-gelb} \\ \hline 	
 	\end{tabular}
@@ -212,15 +271,26 @@
 	\frametitle{Blitzschutz}
 	\begin{itemize}
 		\item	Antennenanlagen müssen gegen Blitze geschützt werden
-		\item	Der Mast muss auf dem kürzesten Weg mit einer fachlich korrekt installierten 					Gebäudeblitzschutzanlage verbunden werden
-		\item	Als Blitzschutzerder darf jeder ordnungsgemäß verlegter Fundamenterder 							verwendet werden
-		\item	Außenleiter von Koaxkabeln (Abschirmung) müssen über einen 										Potentialausgleichsleiter ordnungsgemäß mit Erde verbunden werden 
+		\item	Der Mast muss auf dem kürzestem Weg mit einer fachlich korrekt installierten Gebäudeblitzschutzanlage verbunden werden
+		\item	Als Blitzschutzerder darf jeder ordnungsgemäß verlegter Fundamenterder verwendet werden
+		\item	Außenleiter von Koaxkabeln (Abschirmung) müssen über einen Potentialausgleichsleiter ordnungsgemäß mit Erde verbunden werden 
  	\end{itemize}
  	\begin{center}
- 		\includegraphics[scale=0.2]{e18/Funkenstrecke}
- 		\footnote{\url{http://de.wikipedia.org/wiki/Datei:Suspension_insulators_with_arcing_horns.jpg}}
+ 		\includegraphics[width=.5\textwidth,height=.2\textheight,keepaspectratio]{e18/Funkenstrecke}
+ 		\footnote{Funkenstrecke bei selbststrahlenden Sendemasten \url{http://de.wikipedia.org/wiki/Datei:Suspension_insulators_with_arcing_horns.jpg}}
  	\end{center}
  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Prüfungsfrage}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TL301} & \textbf{Unter welchen Bedingungen darf das Standrohr einer Amateurfunkantenne auf einem Gebäude mit einer vorhandenen Blitzschutzanlage verbunden werden?} \\ \hline
+    A \only<2>\checkmark & Wenn die vorhandene Blitzschutzanlage fachgerecht aufgebaut ist und das Standrohr mit ihr auf dem kürzesten Wege verbunden werden kann. \\ \hline
+    B & Nach den geltenden Vorschriften muss das Standrohr der Amateurfunkantenne mit einer vorhandenen Gebäude-Blitzschutzanlage verbunden werden. \\ \hline
+    C & Nach den geltenden Vorschriften muss immer eine eigene Blitzschutzanlage für eine Amateurfunkantenne aufgebaut werden. \\ \hline
+    D & Die Bedingung ist ein ausreichend großer Querschnitt für die Verbindungsleitung zur Blitzschutzanlage. \\ \hline
+  \end{tabular}
 \end{frame}
 
 \subsection{mechanische Sicherheit}
@@ -231,12 +301,9 @@
 		\item	Sendeanlage muss mechanisch gesichert werden
 		\item	Windlast ist zu beachten
 	\end{itemize}
-	\begin{center}
+	\begin{block}{Kraft auf eine Antennenanlage}
 		\Large{$F_{A} = p \cdot A$}
-	\end{center}	
-	\begin{normalsize}
-	
-	\end{normalsize}
+	\end{block}	
 	\begin{itemize}
 		\item	Sendeanlagen dürfen im KFZ installiert werden
 		\item	Dafür immer Herstellerangaben beachten
