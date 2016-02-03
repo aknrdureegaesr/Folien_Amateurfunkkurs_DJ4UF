@@ -1,10 +1,9 @@
-# FIXME
-
 - Section: Widerstände
   Questions:
+
      - Name: Question 1
        Question: ../e04/seopardy1.png
-       Answer: rechne
+       Answer: Was sind 7.5kOhm?
        Type: Image
 
      - Name: Question 2
@@ -14,12 +13,12 @@
 
      - Name: Question 3
        Question: ../e04/seopardy3.png
-       Answer: Ende eines lambda halbe diopls oder sowas
+       Answer: Was ist ein LDR (lichtabhängigen Widerstand )?
        Type: Image
 
      - Name: Question 4
-       Question: 0.25W
-       Answer: was packet so ein normaler widerstand
+       Question: 0.125W
+       Answer: was packet so ein normaler günstiger widerstand
        Type: Text
 
      - Name: Question 5
