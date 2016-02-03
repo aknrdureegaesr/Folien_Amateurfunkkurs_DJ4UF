@@ -2,7 +2,7 @@
   Questions:
 
      - Name: Question 1
-       Question: ./e07/seopardy1.png
+       Question: ../e07/seopardy1.png
        Answer: Wie sieht ein Serienschwingkreis/Reihenschwingkreis aus?
        Type: Image
 

@@ -9,20 +9,20 @@
 
     - Name: Question 2
       Question: ein stromdurchflossener Leiter
-      Answer: Eselsbr¸cke: Um was bildet sich ein magnetisches Feld
+      Answer: "Eselsbr√ºcke: Um was bildet sich ein magnetisches Feld"
       Type: Text
 
     - Name: Question 3
-      Question: 90∞
+      Question: 90¬∞
       Answer: Winkel zwischen E- und H-Feld
       Type: Text
 
     - Name: Question 4
       Question: 300 000 km/s.
-      Answer: Die Ausbreitungsgeschwindigkeit freier elektromagnetischer Wellen bet‰gt etwa ...
+      Answer: Die Ausbreitungsgeschwindigkeit freier elektromagnetischer Wellen bet√§gt etwa ...
       Type: Text
 
     - Name: Question 5
-      Question: wenn ein zeitlich schnell ver‰nderlicher Strom durch einen elektrischen Leiter flieﬂt, dessen L‰nge mindestens 1/100 der Wellenl‰nge ist
+      Question: wenn ein zeitlich schnell ver√§nderlicher Strom durch einen elektrischen Leiter flie√üt, dessen L√§nge mindestens 1/100 der Wellenl√§nge ist
       Answer: Wodurch entsteht ein elektromagnetisches Feld
       Type: Text
