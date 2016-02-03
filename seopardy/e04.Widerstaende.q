@@ -1,6 +1,6 @@
 # FIXME
 
-- Section: Widerstaende
+- Section: Widerstände
   Questions:
      - Name: Question 1
        Question: ../e04/seopardy1.png
