@@ -1,11 +1,12 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+% Korrekturen: Lars Weiler <dc4lw@drac.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse A 00: \\
           Curriculum \& Organisatorisches \\[2em]}
-\date{Stand 16.04.2015}
+\date{Stand 04.02.2016}
 \input{texdata/titlepage}
 
 % todo weitere Infos ergänzen oder dann in e00? http://www.dk0tu.de/Kurse/AFu-Lizenz/
@@ -41,11 +42,12 @@
     \textbf{technisches Verständnis} und es werden mehr \textbf{Berechnungen}
     verlangt. \\[2em]
 
-    Dafür ''winken'' als Zielprämie:
+    Dafür ``winken'' als Zielprämie:
 
     \begin{itemize}
         \item mehr benutzbare TX-Frequenzen (alle AFu-Bänder)
         \item weitaus höhere Sendeleistungen bis zu $750W$
+        \item Funken in noch mehr Ländern ohne Zusatzprüfung möglich
     \end{itemize}
 
 \end{frame}
@@ -64,12 +66,12 @@
     \begin{columns}[c]
         \column[c]{5cm}
         \begin{center}
-            \includegraphics[width=0.8\textwidth]{a00/Amateurfunklehrgang-Technik-fuer-das-Amateurfunkzeugnis-Klasse-A.jpg}
+            \includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{a00/Amateurfunklehrgang-Technik-fuer-das-Amateurfunkzeugnis-Klasse-A.jpg}
             \tiny \hyperlink{refs}{\cite{darcv}}
         \end{center}
         \column{5cm}
             Inhaltlich entspricht dieser den von DJ4UF geschrieben Büchern - im
-            Amaterfunk bekannt als ''Der Moltrecht''\hyperlink{refs}{\cite{dj4uf}}
+            Amaterfunk bekannt als ``Der Moltrecht''\hyperlink{refs}{\cite{dj4uf}}
     \end{columns}
 
 \end{frame}
@@ -82,15 +84,18 @@
     Dreh- und Angelpunkt aller Kurse: Der offizielle Fragenkatalog der
     Bundesnetzagentur\footnote{als Print z.B. direkt von der BNetzA oder als PDF im WWW}.
 
-    \begin{center}
-        \includegraphics[width=0.3\textwidth]{a00/Fragenkatalog-Klasse-A-Technische-Kenntnisse.jpg}
-        \tiny \hyperlink{refs}{\cite{darcv}}
-    \end{center}
-
-    Digital gibt es den Prüfungskatalog auch in verschiedenen Übungsprogrammen
-    und Prüfungssimulatoren. Als Offline-Tool empfehlen wir den
-    \emph{AFUTrainer}\hyperlink{refs}{\cite{afut}}, für den Browser
-    \emph{AfuP}\hyperlink{refs}{\cite{afup}}
+    \begin{columns}[c]
+        \column[c]{5cm}
+        \begin{center}
+            \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{a00/Fragenkatalog-Klasse-A-Technische-Kenntnisse.jpg}
+            \tiny \hyperlink{refs}{\cite{darcv}}
+        \end{center}
+        \column{5cm}
+            \only<2>{Digital gibt es den Prüfungskatalog auch in verschiedenen
+            \textbf{Übungsprogrammen und Prüfungssimulatoren}. Als Offline-Tool
+            empfehlen wir den \emph{AFUTrainer}\hyperlink{refs}{\cite{afut}},
+            für den Browser \emph{AfuP}\hyperlink{refs}{\cite{afup}}}
+    \end{columns}
 
 \end{frame}
 
@@ -113,7 +118,7 @@
     \frametitle{Curriculum / Abhängigkeitsgraph}
 
     \includedia{a00/Abhaengigkeitsgraph}
-    \includegraphics[width=1\textwidth]{a00/Abhaengigkeitsgraph_diatmp}
+    \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a00/Abhaengigkeitsgraph_diatmp}
 
 \end{frame}
 
@@ -155,8 +160,11 @@
 \begin{frame}
     \frametitle{Weitere Quellen / WWW}
 
-    ''Das Internet ist ein großer Misthaufen, in dem man allerdings auch kleine
-    Schätze und Perlen finden kann.''\hyperlink{refs}{\cite{quote}} \\[1em]
+    \begin{quote}
+      Das Internet ist ein großer Misthaufen, in dem man allerdings auch kleine
+      Schätze und Perlen finden kann.\hyperlink{refs}{\cite{quote}}
+    \end{quote}
+
     \flushright --Joseph Weizenbaum \\[4em]
 
     \center Wo soll man da nur anfangen?
@@ -169,6 +177,10 @@
     Für den Amateurfunkkurs haben wir bereits ein wenig
     Material\hyperlink{refs}{\cite{mat}} zusammengestellt. Für die schnelle
     Suche ist die Wikipedia\hyperlink{refs}{\cite{wp}} ein guter Ausgang. \\[2em]
+
+    Im Bereich Eletronik bietet das Metalab Wien einen umfassenden
+    Einsteiger-Kurs -- mit Skript, Praxis und Videos zu den einzelnen
+    Blöcken\hyperlink{refs}{\cite{meta}}. \\[2em]
 
     Wir haben auch weiterführende freie Inhalte\hyperlink{refs}{\cite{fi}}
     verlinkt. Und ansonsten wie gewohnt die \$SUCHMASCHINE eurer Wahl.
@@ -183,6 +195,7 @@
 \footnotesize
 
 \begin{thebibliography}{}
+    \setbeamertemplate{bibliography item}[online]
     \bibitem{darc}  DARC Online-Lehrgang Klasse A:
                     \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/}
     \bibitem{dj4uf} Amateurfunklehrgang Technik Klasse A (E. Moltecht): \\
@@ -205,6 +218,8 @@
                     \url{http://www.wikipedia.org/}
     \bibitem{fi}    Freie Inhalte (DK0TU):
                     \url{http://www.dk0tu.de/Projekte/Freie_Inhalte/}
+    \bibitem{meta}  Elektronik Kurs im Metalab Wien:
+                    \url{https://metalab.at/wiki/Elektronik_Kurs}
 \end{thebibliography} 
 
 \input{texdata/postamble}

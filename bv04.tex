@@ -1,11 +1,12 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+% Korrekturen: Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Betriebstechnik/Vorschriften 04:         \\
           Betriebliche Abkürzungen \\[2em]}
-\date{Stand 06.11.2014}
+\date{Stand 04.02.2016}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -16,7 +17,7 @@
     \frametitle{Einleitung / Abkürzungen}
     \begin{center}
         \Large{Wozu braucht man diese?} \\
-        \Large{Welche kennt ihr bereits? ($\Rightarrow$ Tafel)}
+        \Large{Welche kennt ihr bereits? ($\Rightarrow$ ggf. Tafel)}
     \end{center}
 \end{frame}
 
@@ -27,10 +28,12 @@
 
     Es folgen Abkürzungen, die in Prüfungsfragen eine Rolle spielen. \\[1em]
 
-    Vollständige Liste in der Lektion \texttt{B/V 04} des Moltrechts. \\[1em]
+    Vollständige Liste in der Lektion
+    \href{http://www.amateurfunkpruefung.de/lehrg/bv04/bv04.html}{\texttt{B/V 04} des Moltrechts}. \\[1em]
 
     Don't Panic! Es geht um eine Übersicht - in den einzelnen Lektionen werden
-    die Begriffe behandelt.
+    die Begriffe behandelt. Als Abschlusskapitel dient es noch einmal der
+    Wiederholung.
 
 \end{frame}
 
@@ -41,8 +44,6 @@
 \subsection*{Frequenzen}
 \begin{frame}
     \frametitle{Bänder, Wellen/Wellenausbreitung}
-
-    Wiederholung der Einführung:
 
     \begin{center}
     \footnotesize
@@ -76,14 +77,14 @@
         BBS   & Bulletin Board System (Telnet Mailbox)                  \\ \hline
         CW    & Continuous Wave (carrier wave modulation, Morse code)   \\ \hline
         DSB   & Double-SideBand transmission                            \\ \hline
-        FAX   & facsimile                                               \\ \hline
+        FAX   & Facsimile, Fax                                          \\ \hline
         FM    & Frequency Modulation                                    \\ \hline
         FSK   & Frequency-Shift Keying                                  \\ \hline
         LSB   & Lower SideBand                                          \\ \hline
         PM    & Phase Modulation                                        \\ \hline
         PSK   & Phase-Shift Keying                                      \\ \hline
         RTTY  & RadioTeleTYpe                                           \\ \hline
-        SSB   & Single-SideBand modulation                              \\ \hline
+        SSB   & Single Side Band modulation                             \\ \hline
         USB   & Upper SideBand                                          \\ \hline
     \end{tabular}
     \end{center}
@@ -98,8 +99,8 @@
     \footnotesize
     \begin{tabular}{|l|l|}\hline
         \textbf{Abkürzung} & \textbf{Bedeutung}                         \\ \hline \hline
-        AGC   & Automatic Gain Control                                  \\ \hline
-        ALC   & Automatic Level Control                                 \\ \hline
+        AGC   & Automatic Gain Control (RX)                             \\ \hline
+        ALC   & Automatic Level Control (TX)                            \\ \hline
         BFO   & Beat Frequency Oscillator                               \\ \hline
         DSP   & Digital Signal Processing                               \\ \hline
         FET   & Field-Effect Transistor                                 \\ \hline
@@ -129,12 +130,13 @@
     \footnotesize
     \begin{tabular}{|l|l|}\hline
         \textbf{Abkürzung}   & \textbf{Bedeutung}                             \\ \hline \hline
-        \multirow{2}*{CCIR}  & Comité consultatif international pour la radio \\
-                             & (fomer ITU-R)                                  \\ \hline
-        \multirow{2}*{CCITT} & Comité Consultatif International               \\
-                             & Téléphonique et Télégraphique (former ITU-T)   \\ \hline
-        \multirow{2}*{CEPT}  & Conférence européenne des administrations      \\
-                             & des postes et des télécommunications           \\ \hline
+        \multirow{2}*{CCIR}  & Comité Consultatif International des Radiocommunications \\
+                             & (heute ITU-R; von 1927 bis 1992)               \\ \hline
+        \multirow{3}*{CCITT} & Comité Consultatif International               \\
+                             & Téléphonique et Télégraphique                  \\
+                             & (heute ITU-T; 1865 bis 1993)                   \\ \hline
+        \multirow{2}*{CEPT}  & Conférence Européenne des Administrations      \\
+                             & des Postes et des Télécommunications           \\ \hline
         IARU                 & International Amateur Radio Union              \\ \hline
         ITU                  & International Telecommunication Union          \\ \hline
         WARC                 & World Administrative Radio Conference          \\ \hline
@@ -150,8 +152,8 @@
     \begin{center}
     \footnotesize
     \begin{tabular}{|l|l|}\hline
-        \textbf{Abkürzung} & \textbf{Bedeutung}                                  \\ \hline \hline
-        EMV   & ElektroMagnetische Verträglichkeit                               \\ \hline
+        \textbf{Abkürzung}  & \textbf{Bedeutung}                                 \\ \hline \hline
+        EMV                 & ElektroMagnetische Verträglichkeit                 \\ \hline
         \multirow{2}*{EMVG} & Gesetz über die elektromagnetische Verträglichkeit \\
                             & von Betriebsmitteln                                \\ \hline
         EMVU                & Elektromagnetische Umweltverträglichkeit           \\ \hline
@@ -213,14 +215,14 @@
 \begin{frame}
     \frametitle{Übung: Kurzer Beispieltext aus einem CW-QSO}
 
-    \begin{block}{Aufgabe: Was könnten folgende Zeilen bedeuten?}
+    \begin{exampleblock}{Aufgabe: Was könnten folgende Zeilen bedeuten?}
         CQ DL CQ DL de HB9ZZ pse k \\
         HB9ZZ de DK0TU DK0TU pse k \\
         DK0TU de HB9ZZ rst 599 k\\
         HB9ZZ de DK0TU rst 599 bk ... condx vy good k \\
         DK0TU de HB9ZZ tks fer qso - 73 k \\
         HB9ZZ de DK0TU gn et cul sk \\
-    \end{block}
+    \end{exampleblock}
 
 \end{frame}
 
