@@ -1,10 +1,10 @@
-- Section: Modulation und Demodulation
+- Section: EMV
   Questions:
 
     - Name: Question 1
-      Question: > ../e18/Stoerungen.png
+      Question: ../e18/Stoerungen.png
       Answer: Wo können überall Störungen sntstehen?
-      Type: Text
+      Type: Image
 
     - Name: Question 3
       Question: ../a19/2Filter.jpg
@@ -12,12 +12,12 @@
       Type: Image
 
     - Name: Question 3
-      Question: > 40 dB gedämpft
+      Question: "> 40 dB gedämpft"
       Answer: Was sollten unerwünschte Aussendungen bei KW mit mehr als 25W sein?
       Type: Text
 
     - Name: Question 4
-      Question: Reduzierungsfaktor 1 : 6
+      Question: "Reduzierungsfaktor 1 : 6"
       Answer: Wie ist der Reduzierungsfaktor bei sicherheitsberechnung SSB?
       Type: Text
 

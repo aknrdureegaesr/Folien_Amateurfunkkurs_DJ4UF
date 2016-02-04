@@ -1,4 +1,4 @@
-- Section: Modulation und Demodulation
+- Section: Modulation
   Questions:
 
     - Name: Question 1

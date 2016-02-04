@@ -18,7 +18,7 @@
 
      - Name: Question 4
        Question: ../e13/N-Ch_Enh_Labelled.png
-       Answer: Wie ist das Schaltzeichen eines MOSFETs?
+       Answer: Wie ist das Schaltzeichen eines P-MOSFETs?
        Type: Image
 
      - Name: Question 5

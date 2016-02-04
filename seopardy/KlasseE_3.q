@@ -3,17 +3,11 @@ Sections:
 - Double-Jeopardies:
   - false
   - false
-  - false
   - true
+  - false
   - false
   File: e07.Schwingkreis+Filter.q
-- Double-Jeopardies:
-  - false
-  - false
-  - false
-  - false
-  - true
-  File: e08.EM-Feld.q
+- File: e08.EM-Feld.q
 - File: e09.Wellenausbreitung.q
 - File: bv05.Gesetze+Vorschriften+Regelungen.q
 - File: bv06.Rufzeichen+Landeskenner.q

@@ -1,4 +1,4 @@
-- Section: Sender- und Empfängertechnik
+- Section: TX/RX-Technik
   Questions:
 
     - Name: Question 1
@@ -22,6 +22,6 @@
       Type: Text
 
     - Name: Question 5
-      Question: ../e15/seopardy5.png
+      Question: ../e15/seopardy5.jpg
       Answer: Wo lässt sich die Sendeleistung am K3 ablesen?
       Type: Image

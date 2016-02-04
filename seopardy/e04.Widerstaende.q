@@ -19,7 +19,7 @@
      - Name: Question 4
        Question: ../e04/Spannungsteiler.png
        Answer: Was ist ein Spannungsteiler?
-       Type: Text
+       Type: Image
 
 #     - Name: Question 4
 #       Question: 0.125W
