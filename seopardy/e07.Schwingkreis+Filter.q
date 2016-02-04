@@ -1,4 +1,4 @@
-- Section: Schwingkreis/Filter
+- Section: Schwingkreis
   Questions:
 
      - Name: Question 1

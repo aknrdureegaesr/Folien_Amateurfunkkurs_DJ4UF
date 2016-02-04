@@ -1,4 +1,4 @@
-- Section: Rechte/Pflichten
+- Section: Recht/Pflicht
   Questions:
 
     - Name: Question 1

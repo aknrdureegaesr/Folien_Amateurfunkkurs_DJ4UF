@@ -1,4 +1,4 @@
-- Section: Buchstabieralphabet
+- Section: Buchstabieren
   Questions:
 
     - Name: Question 1

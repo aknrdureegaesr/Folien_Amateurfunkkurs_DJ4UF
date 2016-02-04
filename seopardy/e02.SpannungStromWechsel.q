@@ -1,4 +1,4 @@
-- Section: Spannung/Strom
+- Section: U & I
   Questions:
 
     - Name: Question 1

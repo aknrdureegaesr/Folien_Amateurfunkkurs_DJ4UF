@@ -1,4 +1,4 @@
-- Section: Wellenausbreitung
+- Section: HF-Ausbreitung
   Questions:
      - Name: Question 1
        Question: ../e09/Aurora_Seen_From_Space_by_NASA.jpg

@@ -1,4 +1,4 @@
-- Section: R, P, W
+- Section: R & P & W
   Questions:
 
     - Name: Question 1
