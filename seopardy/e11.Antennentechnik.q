@@ -16,11 +16,6 @@
       Answer: Wie sieht das Strahlungsdiagramm einer Yagi aus?
       Type: Image
 
-#    - Name: Question 3
-#      Question: Stromknoten
-#      Answer: Ende eines lambda halbe diopls oder sowas
-#      Type: Text
-
     - Name: Question 4
       Question: ../e11/Magloop.jpg
       Answer: Was ist eine Magnetic Loop?
