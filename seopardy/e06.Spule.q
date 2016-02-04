@@ -1,4 +1,4 @@
-- Section: Spule, Transformer
+- Section: Spule/Trafo
   Questions:
 
      - Name: Question 1
@@ -13,7 +13,7 @@
 
      - Name: Question 3
        Question: Quadratisch
-       Answer: Wie geht die Windungszeil in die berechnung der Induktivität ein?
+       Answer: Wie geht die Windungszeil in die Berechnung der Induktivität ein?
        Type: Text
 
      - Name: Question 4

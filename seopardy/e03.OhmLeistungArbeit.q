@@ -1,4 +1,4 @@
-- Section: Ohmsches Gesetz, Leistung, Arbeit
+- Section: R, P, W
   Questions:
 
     - Name: Question 1

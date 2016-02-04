@@ -1,13 +1,13 @@
-- Section: Widerstand und seine Grundschaltungen
+- Section: Spannung/Strom
   Questions:
 
     - Name: Question 1
-      Question: 1/t
+      Question: 1/T
       Answer: Wie berechnet sich die Frequenz?
       Type: Text
 
     - Name: Question 2
-      Question: Vom Minuspol zum Pluspos
+      Question: Vom Minuspol zum Pluspol
       Answer: Was ist die Physikalische Stromrichtung?
       Type: Text
 
@@ -16,6 +16,7 @@
       Answer: Wie berechnet sich die Spitzenspannung?
       Type: Text
 
+    # FIXME find ich zu heftig die Frage --dl7bst
     - Name: Question 4
       Question: Q/t
       Answer: Wie berechnet sich der elektrische Strom I?

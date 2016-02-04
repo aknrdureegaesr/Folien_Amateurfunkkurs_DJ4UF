@@ -1,4 +1,4 @@
-- Section: Schwingkreis und Filter
+- Section: Schwingkreis/Filter
   Questions:
 
      - Name: Question 1
@@ -17,11 +17,11 @@
        Type: Image
 
      - Name: Question 4
-       Question: 3dB
+       Question: 3 dB
        Answer: Bei welchem Wert unter der Maximalspannung wird die Bandbreite/Grenzfrequenz gemessen?
        Type: Text
 
      - Name: Question 5
-       Question: Es ist die Formel für die Resonanzfrequenz eines Schwingkreises
-       Answer: Was ist 1/(2*pi*sqrt(LC))?
+       Question: 1/(2*pi*sqrt(LC))
+       Answer: Was ist die Formel für die Resonanzfrequenz eines Schwingkreises?
        Type: Text

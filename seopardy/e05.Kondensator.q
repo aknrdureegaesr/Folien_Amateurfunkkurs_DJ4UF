@@ -1,4 +1,4 @@
-- Section: Rechte/Pflichten
+- Section: Kondensator
   Questions:
 
     - Name: Question 1
@@ -13,15 +13,15 @@
 
     - Name: Question 3
       Question: m33
-      Answer: Was kann auf einem Kondensator mit 330uF stehen??
+      Answer: Was kann auf einem Kondensator mit 330uF stehen?
       Type: Text
 
     - Name: Question 4
-      Question: Polung beachten
+      Question: Polung beachten!
       Answer: Was muss bei Elektrolytkondensatoren gemacht werden?
       Type: Text
 
     - Name: Question 5
-      Question: Oft verwendet bei einer Magloop Antenne
+      Question: Dieser Kondensatortyp wird oft bei einer Magloop Antenne verwendet.
       Answer: Was ist ein Vaccumkondensator/ Drehkondensator mit großem Plattenabstand? Wegen hohen Spannungen
       Type: Text

@@ -1,4 +1,4 @@
-- Section: Mathematische Grundkenntnisse/Einheiten
+- Section: Mathe
   Questions:
 
     - Name: Question 1
@@ -22,6 +22,6 @@
       Type: Text
 
     - Name: Question 5
-      Question: Vs/A.
+      Question: Vs/A
       Answer: Abk. der Einheit Henry (H) einer Induktivität?
       Type: Text
