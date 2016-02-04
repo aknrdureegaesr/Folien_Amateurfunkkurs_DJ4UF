@@ -12,7 +12,7 @@
       Type: Text
 
     - Name: Question 3
-      Question: "Jankee"
+      Question: Jankee
       Answer: Was ist eigentlich Yankee, Buchstabe Y?
       Type: Text
 

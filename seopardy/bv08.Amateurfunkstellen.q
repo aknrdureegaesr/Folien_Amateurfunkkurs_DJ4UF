@@ -1,4 +1,4 @@
-- Section: Amateurfunkstellen
+- Section: Afu-Stellen
   Questions:
 
     - Name: Question 1

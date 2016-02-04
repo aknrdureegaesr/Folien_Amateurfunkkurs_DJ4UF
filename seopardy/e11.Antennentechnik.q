@@ -25,3 +25,8 @@
       Question: +2.15dB
       Answer: dBd in dBi umrechnen
       Type: Text
+
+#    - Name: Question 3
+#      Question: Stromknoten
+#      Answer: Ende eines lambda halbe diopls oder sowas
+#      Type: Text

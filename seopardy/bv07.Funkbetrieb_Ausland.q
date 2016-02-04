@@ -1,4 +1,4 @@
-- Section: Funkbetr. Ausland
+- Section: Im Ausland
   Questions:
 
     - Name: Question 1
