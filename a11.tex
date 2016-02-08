@@ -1,0 +1,350 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+
+\input{texdata/preamble}
+\subtitle{Technik Klasse A 11: \\
+          Signale \\[2em]}
+\date{Stand 11.06.2015}
+\input{texdata/titlepage}
+
+\section{Einleitung}
+
+\begin{frame}
+    \frametitle{Einleitung}
+
+    Was sind Signale?
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Einleitung}
+
+    Allgemein: \\[2em]
+
+    Signale sind Zeichen. Ist ihre Bedeutung festgelegt können Nachrichten
+    transportiert werden. \\[2em]
+
+    Dazu ein wenig Theorie für den Bereich der elektrischen Nachrichtenübertragung...
+
+\end{frame}
+
+\section{Periodische Signale}
+
+\begin{frame}
+    \frametitle{Periodische Signale}
+
+    Nachrichtentechnik: \\[2em]
+    
+    Grundsätzliche Unterscheidung zwischen
+    \textbf{periodischen} und \textbf{nicht-periodischen} Signalen. \\[2em]
+
+    Bekannte periodische sind z.B. Sin/Cos, Rechteck, Dreieck, Sägezahn.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Periodische Signale}
+
+    \begin{center}
+        \includegraphics[width=1\textwidth]{a11/Waveforms_de.png}
+        \tiny \hyperlink{refs}{\cite{wc}}
+    \end{center}
+
+\end{frame}
+
+\subsection{Sinus}
+
+\begin{frame}
+    \frametitle{Sinus}
+
+    Fundamental: Sinus bzw. Cosinus.
+
+    \begin{center}
+        \includegraphics[width=1\textwidth]{a11/Sine_cosine_one_period.png}
+        \tiny \hyperlink{refs}{\cite{wc}}
+    \end{center}
+
+    Was sind Amplitude, Scheitelwert, Spitze-Spitze-Wert, Periodendauer, Frequenz?
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Sinus}
+
+    \begin{block}{Wie hoch sind die Effektivwerte von sin/cos?}
+        \only<2>{$\frac{1}{\sqrt{2}} \approx 0,7$}
+    \end{block}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Sinus}
+
+    \begin{block}{(TB608) Der Spitzenwert der häuslichen 230-V-Stromversorgung beträgt?}
+        \only<2>{$230V \cdot \sqrt{2} \approx 325V$}
+    \end{block}
+
+    \only<2>{\vspace{2em}Bei Leistungsberechnungen mit Wechselströmen daran denken!}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Sinus}
+
+    \begin{block}{Welche Periodendauer hat europäische Netzspannung?}
+        \only<2>{$T = \frac{1}{f} = \frac{1}{50 Hz} \approx 20ms$}
+    \end{block}
+
+\end{frame}
+
+\subsubsection{Oszi (Wdh)}
+ 
+\begin{frame}
+    \frametitle{Kurze Wiederholung Messtechnik: Oszilloskop}
+
+    % TODO auf entsprechenden Foliensatz referenzieren
+
+    \begin{block}{
+        Wie hoch sind Spitze-Spitze-Spannung und Frequenz?
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{a11/TB605.png}
+            \tiny (TB606)
+        \end{center}
+    }
+        \only<2>{
+            $U_{SS} = 40 V$ \\
+            $f = \frac{1}{4 \cdot 0,03 \cdot 10^{-6} s} \approx 8,33 \cdot 10^6 Hz = 8,33 MHz$
+        }
+    \end{block}
+
+\end{frame}
+   
+\subsubsection{Phasenwinkel}
+
+\begin{frame}
+    \frametitle{Zeigerdarstellung}
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{a11/Sine_Cosine_Exponential_qtl1.png}
+        \tiny \hyperlink{refs}{\cite{wc}}\\
+        \normalsize Trigonometrische Zusammenhänge im Einheitskreis.
+    \end{center}
+
+    Animierte Darstellungen:
+    \begin{itemize}
+        \item Wikimedia [\href{http://commons.wikimedia.org/wiki/File:Einheitskreis_mit_Sinus_und_Kosinusfunktion.gif}{Link}]
+        \item H. Krauß [\href{http://www.hutschdorf.de/flash/sinus.htm}{Link}]
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Phasenwinkel}
+
+    \begin{block}{
+        Wie groß ist folgende Phasenverschiebung?
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{a11/TB612.png}
+            \tiny (TB61)
+        \end{center}
+    }
+        \only<2>{$\Delta\varphi = \frac{\pi}{4} = 45 ^{\circ}$}
+    \end{block}
+
+
+\end{frame}
+
+\subsection{Weitere Signale}
+
+\begin{frame}
+    \frametitle{Ableitung weiterer Signale}
+
+    Alle möglichen period. Signale lassen sich aus Überlagerung von
+    Sinussignalen ableiten:
+
+    \begin{itemize}
+        \item \textbf{Grundfrequenz}
+        \item beliebige \textbf{ganzzahlige Vielfache} der Grundfrequenz
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Oberwellen}
+
+    \begin{block}{Welche Frequenz hat die erste Harmonische von $430.200 MHz$?}
+        \only<2-3>{Die erste Harmonische ist die Frequenz selbst. \\
+                 Die erste Oberwelle bzw. zweite Harmonische liegt bei $860.40 MHz$}
+    \end{block}
+
+    \only<3>{\vspace{3em}\Large Merke: Harmonische = Oberwelle + 1}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Sägezahn}
+
+    Grundwelle + alle Harmonischen reduzierter Amplitude:
+
+    % TODO Grafik und Formel?
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{a11/TB705.png}
+        \tiny (TB705)
+    \end{center}
+
+    \begin{itemize}
+        \item 1. Harmonische, $\frac{1}{1}$ Amplitude (Bsp. $2kHz$)
+        \item 2. Harmonische, $\frac{1}{2}$ Amplitude (Bsp. \only<1>{\textbf{?}}
+                                                            \only<2>{$4 kHz$})
+        \item 3. Harmonische, $\frac{1}{3}$ Amplitude
+        \item ...
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Rechteck}
+
+    Grundwelle + ungeradzahligen Harmonische:
+
+    % TODO Grafik und Formel?
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{a11/TB706.png}
+        \tiny (TB706)
+    \end{center}
+
+     \begin{itemize}
+        \item 1. Harmonische, $\frac{1}{1}$ Amplitude (Bsp. $2kHz$)
+        \item 3. Harmonische, $\frac{1}{3}$ Amplitude (Bsp. \only<1>{\textbf{?}}
+                                                            \only<2>{$6 kHz$})
+        \item 5. Harmonische, $\frac{1}{5}$ Amplitude
+        \item ...
+    \end{itemize}
+   
+
+\end{frame}
+
+\section{Nicht-periodische Signale}
+
+\begin{frame}
+    \frametitle{Nicht-periodische Signale}
+
+    Nicht wiederkehrende Signale beliebiger Form, z.B. Impulse.
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{a11/TB702a.png}
+        \tiny (TB702a)
+    \end{center}
+
+    Messung Impulsdauer oder Pulsbreite bei ca. 50\% der Amplitude.
+    
+    Wie breit ist das Signal im Beispiel?\only<2>{\footnote{Antwort: $0,2 ms$}}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Nicht-periodische Signale}
+
+    Zur Messung von Impulsantworten oder Übergangsfunktionen (Sprungantwort)
+    spielen Dirac-Impuls und Heaviside-Funktion eine große Rolle. \\[2em]
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{a11/High_accuracy_settling_time_measurements_figure_1.png}
+        \tiny \hyperlink{refs}{\cite{wc}}
+    \end{center}
+
+    Praxis: \textbf{Sprungantwort aus Rechteck} - überführbar zu Impulsantwort.
+
+\end{frame}
+
+%%%%%%%% TODO ab hier nochmal ordentlich überarbeiten
+
+\section{Modulation}
+
+\begin{frame}
+    \frametitle{Modulation}
+
+    Modulation: ''Aufprägen'' von Signalen auf einen periodischen Träger durch
+    Mischung/Multiplikation.\footnote{siehe Technik Klasse E} % TODO Welches Kapitel?
+    \\[2em]
+
+    Im einfachen reellen Fall betrachtet:
+
+    \begin{equation*}
+        u = \hat{u} \cdot sin(\omega t + \varphi)
+    \end{equation*}
+
+    % TODO Parameter erläutern
+    \vspace{2em}
+    Welche Parameter lassen sich modulieren?
+
+\end{frame}
+
+\subsection{Amplitude}
+
+\begin{frame}
+    \frametitle{Amplitude}
+
+    Mit einer niedrigeren Frequenz wird eine Hüllkurve auf den Träger geprägt
+    und muss zur Demodulation lediglich gleichgerichtet werden. \\[2em]
+
+    Animation: Wikimedia [\href{http://commons.wikimedia.org/wiki/File:Amfm3-en-de.gif}{Link}]
+    \\[2em]
+
+    Mischung sorgt immer für Spiegelfrequenzen.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Amplitude}
+
+    Arten:
+
+    \begin{itemize}
+        \item AM mit Träger ($> 2 \cdot$ NF-Bandbreite)
+        \item AM ohne Träger ($> 2 \cdot$ NF-Bandbreite)
+        \item SSB: LSB/USB ($\approx$ NF-Bandbreite)
+    \end{itemize}
+
+    % TODO Skizzen
+
+    \vspace{2em} Woraus ergeben sich die Bandbreiten?
+
+\end{frame}
+
+\subsection{Frequenz}
+
+\begin{frame}
+    \frametitle{Frequenz}
+
+
+\end{frame}
+
+\subsection{Phase}
+
+\begin{frame}
+    \frametitle{Phase}
+
+\end{frame}
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+    \bibitem{darc}  DARC Online-Lehrgang Klasse A:
+                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a11/}
+    \bibitem{wc}    Wikimedia Commons: \\
+                    \url{http://commons.wikimedia.org/wiki/File:Waveforms_de.svg}\\
+                    \url{http://commons.wikimedia.org/wiki/File:Sine_cosine_one_period.svg}\\
+                    \url{http://commons.wikimedia.org/wiki/File:Sine_Cosine_Exponential_qtl1.svg}\\
+                    \url{http://commons.wikimedia.org/wiki/File:High_accuracy_settling_time_measurements_figure_1.png}
+\end{thebibliography} 
+
+\input{texdata/postamble}
