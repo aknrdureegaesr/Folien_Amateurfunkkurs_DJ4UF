@@ -34,6 +34,8 @@
 * Fotos Stück für Stück durch unsere ersetzen
 * Anhänge: Formelsammlung, Manuals, Datasheets
 * Siezen -> Duzen
+* Antennenbau
+    * http://www.reichelt.de/reicheltpedia/index.php5/Crimp_Anleitungen#Crimpen_von_MCX-Steckern
 * + Q Codes
     * http://www.funkwelle.com/amateurfunk/q-schluessel-fuer-amateurfunkpruefung.html
 * Landeskenner
