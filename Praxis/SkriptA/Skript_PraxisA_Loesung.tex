@@ -1,0 +1,59 @@
+
+\documentclass[ngerman,openany,twoside]{Script}
+
+\usepackage{amsmath}
+
+% Aufgabentext ein-/ausschalten
+\newboolean{aufgabentext}
+\setboolean{aufgabentext}{true}
+\newcommand{\aufgabentext}[1]{\ifthenelse{\boolean{aufgabentext}}{#1}{}}
+
+% Wenn aufgabentext auch true ist, dann wird der Lösungstext etwas abgesetzt und kursiv geschrieben
+\newboolean{mitloesung}
+\setboolean{mitloesung}{true}
+\newcommand{\loesung}[1]{\ifthenelse{\boolean{mitloesung}}{\ifthenelse{\boolean{aufgabentext}}{{~\\\itshape{#1}}}{#1}}{}}
+
+% Für die Strukturierung
+\newcommand{\Thema}[1]{\chapter{#1}}
+\newcommand{\Thementeil}[1]{\section{#1}}
+\newcommand{\Aufgabe}[1]{\subsection{#1}}
+\newcommand{\Unteraufgabe}[1]{\subsubsection{#1}}
+\newcommand{\Lernziele}[1]{\subsection*{Lernziele}{#1}}
+\graphicspath{{./Bilder/}}
+
+\newcommand{\mucho}[8]{
+	\aufgabentext{
+	\begin{enumerate}
+	\item[#1] \emph{\textbf{#2}} #3
+		\begin{enumerate}
+		\itemsep1pt\parskip0pt\parsep0pt
+		\item[A] #4
+		\item[B] #5
+		\item[C] #6
+		\item[D] #7
+		\loesung{Lösung: #8}
+		\end{enumerate}
+	\end{enumerate}
+	}}
+
+
+\begin{document}
+
+\input{Head_Loesung.tex}
+
+\newpage
+%------------------
+
+
+\chapter{Der Widerstand}
+\input{Widerstand/Widerstand.tex}
+
+\chapter{Der Kondensator und die Spule}
+\input{KondensatorSpule/KondensatorSpule.tex}
+
+\chapter{Der Schwingkreis}
+\input{Schwingkreis/Schwingkreis.tex}
+
+\input{Foot.tex}
+
+\end{document}
