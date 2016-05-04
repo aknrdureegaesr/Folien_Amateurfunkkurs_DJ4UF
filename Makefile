@@ -26,7 +26,8 @@ a: a??.tex
 	$(MAKE) temp-clean
 
 skript:
-	$(MAKE) -C Praxis/Skript all
+	$(MAKE) -C Praxis/SkriptE all
+	$(MAKE) -C Praxis/SkriptA all
 
 export: slides
 	mkdir --parents export/${EXPORT_DIR}
