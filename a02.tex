@@ -1,11 +1,12 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Martin Deutschmann <martin.deutschmann@campus.tu-berlin.de>
+% Korrekturen: Lars Weiler <dc4lw@darc.de>, Sebastian Lange <dl7bst@dk0tu.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse A 02: \\
           Der Widerstand und seine Schaltungsarten \\[2em]}
-\date{Stand 16.04.2015}
+\date{Stand 28.04.2016}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -15,7 +16,7 @@
 \begin{frame}
     \frametitle{Einleitung / Widerstand}
        \begin{center}
-        \includegraphics[width=.7\textwidth]{e04/URI.png}
+        \includegraphics[width=.7\textwidth,height=.8\textheight,keepaspectratio]{e04/URI.png}
         \footnote{\tiny TU Wien \url{http://www.fet.at/twiki/pub/Homepage/OnlineFetzn/fetzn_ausgabe_maerz-2013_online.pdf}}
     \end{center}
 \end{frame}
@@ -25,10 +26,11 @@
     \frametitle{Einleitung / Widerstand}
 
     \begin{center}
-        \includegraphics[width=0.8\textwidth]{e04/Widerstaende.jpg}
+        \includegraphics[width=0.8\textwidth,height=.8\textheight,keepaspectratio]{e04/Widerstaende.jpg}
         \footnote{\tiny By Honina at de.wikipedia. Later version(s) were uploaded by Montauk at de.wikipedia.}
     \end{center}
- 	
+    
+    % TODO SMD-Bauteile ergaenzen
 
 \end{frame}
 
@@ -36,43 +38,39 @@
     \frametitle{Einleitung / Widerstand}
 
     \begin{center}
-        \includegraphics[width=.4\textwidth]{e04/Resistor_symbol_IEC.png}
+        \includegraphics[width=.4\textwidth,height=.2\textheight,keepaspectratio]{e04/Resistor_symbol_IEC.png}
         \footnote{\tiny By Markus Kuhn (Made in Inkscape from scratch) [Public domain], via Wikimedia Commons}
     \end{center}
 
     \begin{center}
-        \includegraphics[width=.4\textwidth]{e04/R_LTspice.png}
+        \includegraphics[width=.4\textwidth,height=.5\textheight,keepaspectratio]{e04/R_LTspice.png}
         \footnote{\tiny aus LTspice}
     \end{center} 	
 \end{frame}
 
 \begin{frame}
 	\frametitle{Aufbau von Widerständen}
-	\textbf{Kohleschichtwiderstände:}\\
-	\vspace{1cm}
-	\textbf{Metallschichtwiderstände:}\\
-	\vspace{5mm}
-	\textbf{Metalloxidwiderstände:}\\
-	\vspace{5mm}
-	\textbf{Drahtwiderstände:}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Aufbau von Widerständen}
 	\textbf{Kohleschichtwiderstände:}
+	\pause
 	\begin{itemize}
-		\item Günstig in der Herrstellung
+		\item Günstig in der Herstellung
 		\item Hohe Toleranzen
 	\end{itemize}
+	\pause
 	\textbf{Metallschichtwiderstände:}
+	\pause
 	\begin{itemize}
 		\item Sehr präzise
 	\end{itemize}
+	\pause
 	\textbf{Metalloxidwiderstände:}
+	\pause
 	\begin{itemize}
 		\item HF tauglich
 	\end{itemize}
+	\pause
 	\textbf{Drahtwiderstände:}
+	\pause
 	\begin{itemize}
 		\item Leistungswiderstände für NF
 	\end{itemize}
@@ -81,72 +79,72 @@
 \section{Spezifischer Widerstand}
 
 \begin{frame}
-    \frametitle{Leitende Materialien}
-
-     \begin{tabular}{lr}
-  	Material & Spezifischer Widerstand\footnote{\tiny \url{de.wikipedia.org/wiki/Spezifischer_Widerstand}} \\ \hline
-  	Silber & $1,587 \cdot 10^{-2}$ \\
-  	Kupfer & $1,721 \cdot 10^{-2}$ \\
-  	Gold & $2,214 \cdot 10^{-2}$ \\
-  	Aluminium & $2,65 \cdot 10^{-2}$ \\
-  	Zinn & $1.15 \cdot 10^{-1}$ \\
-  	Blei & $2,08 \cdot 10^{-1}$ \\
-  	Quecksilber & $9.412 \cdot 10^{-1}$ \\
-  	Germanium & $4.6 \cdot 10^{5}$\\
-  	Porzellan & $1 \cdot 10^{18}$ \\
- 	\end{tabular}
- 	
- 	\begin{center}
- 	  \begin{Large}
- 	    $$R = \rho \cdot \frac{l}{A}$$
- 	  \end{Large}
- 	\end{center}
- 	
+  \frametitle{Leitende Materialien}
+  \begin{columns}
+    \column{.6\textwidth}
+    \begin{tabular}{llr}
+      Material & \multicolumn{2}{r}{Spezifischer Widerstand $\rho$ in $\frac{\Omega \cdot mm^2}{m}$} \\ \hline
+      Silber & & $1,587 \cdot 10^{-2}$ \\
+      Kupfer & & $1,721 \cdot 10^{-2}$ \\
+      Gold & & $2,214 \cdot 10^{-2}$ \\
+      Aluminium & & $2,65 \cdot 10^{-2}$ \\
+      Zinn & & $1,15 \cdot 10^{-1}$ \\
+      Blei & & $2,08 \cdot 10^{-1}$ \\
+      Quecksilber & & $9,412 \cdot 10^{-1}$ \\
+      Germanium & \only<2>{$\leftarrow$ \textbf{Halbleiter}} & $4,6 \cdot 10^{5}$\\
+      Porzellan & \only<2>{$\leftarrow$ \textbf{Isolator}} & $1 \cdot 10^{18}$ \\
+    \end{tabular}
+    
+    \column{.35\textwidth}
+      \only<3>{
+      \begin{block}{Berechnung des Widerstands}
+        $$R = \rho \cdot \frac{\ell}{A}$$
+      \end{block}
+      }
+  \end{columns}
 \end{frame}
 
 \section{Skin-Effekt}
+
 \begin{frame}
   \frametitle{der Skin-Effekt}
   \begin{itemize}
     \item Tritt bei höherfrequenter Wechselspannung auf
     \item Verdrängt die Elektronen aus dem Leitungsinneren an die Leiteroberfläche
     \item Dadurch steigt der Widerstand im Leiter
-    
   \end{itemize}
-
 \end{frame}
 
 \begin{frame}
-	\frametitle{Ursachen des Skin-Effektes}
-	  \begin{center}
-	 	\includegraphics[scale=0.06]{a02/Skineffect.png}\\
- 			\small{Abb.5: Überlagerung von Wechsel- und Wirbelströmen \cite{wp}}
- 		\begin{itemize}
- 			\item Ursache des Skin-Effektes ist das magnetische Feld
- 			\item Es erzeugt Wirbelströme im Innern des Leiters
- 			\item Diese sind dem Erzeugerstrom entgegengerichtet
- 			\item Das wechselnde Magnetfeld erzeugt im Leiter eine höhere Gegenspannung als am Rand 
- 		\end{itemize}
+    \frametitle{Ursachen des Skin-Effektes}
+      \begin{center}
+        \includegraphics[scale=0.06]{a02/Skineffect.png}\\
+            \small{Abb.5: Überlagerung von Wechsel- und Wirbelströmen \cite{wp}}
+        \begin{itemize}
+            \item Ursache des Skin-Effektes ist das magnetische Feld
+            \item Es erzeugt Wirbelströme im Innern des Leiters
+            \item Diese sind dem Erzeugerstrom entgegengerichtet
+            \item Das wechselnde Magnetfeld erzeugt im Leiter eine höhere Gegenspannung als am Rand
+        \end{itemize}
   \end{center}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Folgen \& Gegenmaßnahmen}
-	\textbf{Folgen:}	
-	\begin{itemize}
-		\item Der Leiterquerschnitt sinkt
-		\item Die Impedanz steigt
-	\end{itemize}
-	\textbf{Gegenmaßnahmen}
-	\begin{itemize}
-		\item Verwendung von Hohlleitern
-		\item Mehrere voneinander isolierte Drähte nutzen
-		\item Oberfläche versilbern
-	\end{itemize}
+    \frametitle{Folgen \& Gegenmaßnahmen}
+    \textbf{Folgen:}
+    \begin{itemize}
+        \item Der Leiterquerschnitt sinkt
+        \item Die Impedanz steigt
+    \end{itemize}
+    \textbf{Gegenmaßnahmen}
+    \begin{itemize}
+        \item Verwendung von Hohlleitern
+        \item Mehrere voneinander isolierte Drähte nutzen
+        \item Oberfläche versilbern
+    \end{itemize}
 \end{frame}
 
-
-\section{das ohmsche Gesetz}
+\section{Ohmsches Gesetz}
 
 \begin{frame}
     \frametitle{Was ist das ohmsche Gesetz?}
@@ -154,7 +152,7 @@
     	\item Das ohmsche Gesetz ist folgendes:
     \end{itemize}
     \begin{center}
- 		\includegraphics[scale=0.3]{e03/Ohm_law_triangle.png}\\
+ 		\includegraphics[width=.5\textwidth,height=.6\textheight,keepaspectratio]{e03/Ohm_law_triangle.png}\\
  		\small{Abb.6: das ohmsche Dreieck \cite{wmen}}
  	\end{center}
  	\begin{itemize}
@@ -166,19 +164,19 @@
 	\frametitle{Das ohmsche Gesetz}
 	\begin{itemize}
 		\item	Das ohmsche Gesetz gibt uns die Abhängigkeiten zwischen Spannung, Strom \& ohmschen Widerstand an
-		\item	Dadurch wissen wir, das sich zum Beispiel der Strom an einem konstanten Widerstand proportional zur Spannung ändert
+		\item	Dadurch wissen wir, dass sich zum Beispiel der Strom an einem konstanten Widerstand proportional zur Spannung ändert
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Der Innenwiderstand}
 	\begin{itemize}
-		\item	Oftmals bemerken wir einen Spannungsabfall, zwischen einer Maschine im Leerlauf und der gleichen Maschine bei Belastung
+		\item	Oftmals bemerken wir einen Spannungsabfall zwischen einer Maschine im Leerlauf und der gleichen Maschine bei Belastung
 		\item	Dies führen wir auf den Innenwiderstand der Maschine zurück
 	\end{itemize}
 	\begin{center}
  		\includegraphics[scale=1.4]{e03/Innenwiderstand.png}\\
- 		\small{Abb.7: Innenwidestand einer Batterie}
+ 		\small{Abb.7: Innenwiderstand einer Batterie}
  	\end{center}
 \end{frame}
 
@@ -186,53 +184,95 @@
 	\frametitle{der Innenwiderstand}
 	\begin{itemize}
 		\item	Um den Innenwiderstand zu ermitteln nutzen wir wieder das ohmsche Gesetz
-		\item	Dabei gilt es zu beachten, das diesmal die Differenzen der Spannungen und des Stromes zwischen dem Leerlauf und dem belasteten Fall verrechnet werden
+		\item	Dabei gilt es zu beachten, dass diesmal die Differenzen der Spannungen und des Stromes zwischen dem Leerlauf und dem belasteten Fall verrechnet werden
 		\item	Es gilt:
 	\end{itemize}
-	\begin{equation}
-		R_{innen} = \frac{\Delta U}{\Delta I}
-	\end{equation}
+	\begin{block}{Innenwiderstand}
+	  \begin{center}
+	    $R_{innen} = \cfrac{\Delta U}{\Delta I}$
+	  \end{center}
+	\end{block}
 	\begin{itemize}
-		\item	Um den Wert nicht zu sehr zu verfälschen sollten Spannungsquellen einen niedrigen und Stromquellen einen hohen Innenwiderstand besitzen
+	  \item	Um den Wert nicht zu sehr zu verfälschen sollten \textbf{Spannungsquellen einen niedrigen} und \textbf{Stromquellen einen hohen Innenwiderstand} besitzen
 	\end{itemize}
 \end{frame}
+
+% FIXME + Leistungsanpassung, Strom-/Spannungsanpassung Innenwiderzustand zu Lastwiderstand
 
 \section{Rechnen mit Widerständen}
 
+\subsection{Reihenschaltung}
 \begin{frame}
-    \frametitle{Reihenschaltung}
+  \frametitle{Reihenschaltung}
         
-    $$R_{gesamt} = R_1 + R_2 + R_3 + ...$$
-
-	\begin{center}
-        \includegraphics[width=.2\textwidth]{e04/Reihe.png}
-        \footnote{\tiny aus LTspice}
+  \begin{columns}
+    \column{.4\textwidth}
+    \begin{center}
+      \includegraphics[width=.4\textwidth]{e04/Reihe.png}\footnotemark
     \end{center}
+    \pause
+    \column{.55\textwidth}
+    \begin{block}{Berechnung}
+      $$R_{gesamt} = R_1 + R_2 + R_3 + ...$$
+    \end{block}
+  \end{columns}
+
+  \footnotetext[1]{\tiny aus LTspice}
 \end{frame}
 
+\subsection{Parallelschaltung}
 \begin{frame}
-    \frametitle{Parallelschaltung}
-        $$\frac{1}{R_{gesamt}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...$$
-        
-	\begin{center}
-        \includegraphics[width=.5\textwidth]{e04/Parallel.png}
-        \footnote{\tiny aus LTspice}
+  \frametitle{Parallelschaltung}
+  \begin{columns}
+    \column{.4\textwidth}
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{e04/Parallel.png}\footnotemark
     \end{center}
-    
-
+    \pause
+    \column{.55\textwidth}
+    \begin{block}{Berechnung}
+      $$\frac{1}{R_{gesamt}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...$$
+    \end{block}
+  \end{columns}
+  \footnotetext[1]{\tiny aus LTspice}
 \end{frame}
 
-\section{Spannungsteiler}
+\subsection{Ersatzwiderstand}
+\begin{frame}
+  \frametitle{Ersatzwiderstand}
+  \begin{columns}
+    \column{.47\textwidth}
+    \includegraphics[width=1\textwidth]{e04/Ersatzwiderstand1.png}
+    \column{.47\textwidth}
+    \includegraphics[width=1\textwidth]{e04/Ersatzwiderstand2.png}
+  \end{columns}
+  \begin{columns}
+    \column{.47\textwidth}
+    \pause
+    \begin{exampleblock}{Berechnung}
+      $R_1 + (R_2 \parallel R_3)$ \\[1.5em]
+      $\Rightarrow R_1 + \cfrac{1}{\cfrac{1}{R_2} + \cfrac{1}{R_3}}$
+    \end{exampleblock}
+    \column{.47\textwidth}
+    \pause
+    \begin{exampleblock}{Berechnung}
+      $(R_1 + R_2) \parallel R_3$\\[1.5em]
+      $\Rightarrow \cfrac{1}{\cfrac{1}{R_1 + R_2} + \cfrac{1}{R_3}}$
+    \end{exampleblock}
+  \end{columns}
+\end{frame}
+
+\subsection{Spannungsteiler}
 \begin{frame}
 	\frametitle{Spannungsteiler}
 	 \includegraphics[scale=0.13]{a02/spannungsteiler-unbelastet.png}
 	 \hspace{2mm}
 	 \includegraphics[scale=0.13]{a02/spannungsteiler-belastet.png}\\
-	 	\tiny{Abb.9: Unbelasteter Spannungsteiler \cite{wp}}
+	 	{\tiny Abb.9: Unbelasteter Spannungsteiler \cite{wp}}
 	 	\hspace{10mm}
- 		\tiny{Abb.10: Belasteter Spannungsteiler \cite{wp}} 
+ 		{\tiny Abb.10: Belasteter Spannungsteiler \cite{wp}} 
  	\begin{itemize}
- 		\item $U_2$ ist beim belasteten kleiner, als beim unbelasteten Spannungsteiler
+ 		\item $U_2$ ist beim belasteten Spannungsteiler kleiner als beim unbelasteten Spannungsteiler
 	\end{itemize} 		
 \end{frame}
 
@@ -242,446 +282,170 @@
 	\begin{itemize}
 		\item $U_2$ ist die Spannung über $R_2$ 
 	\end{itemize}
-	\vspace{1mm}
-	$$\frac{U_2}{U} = \frac{R_2}{R_{gesamt}}$$\\
-	\vspace{2mm}
+	\begin{block}{unbelasteter Spannungsteiler}
+	  \begin{center}
+	    $$\frac{U_2}{U} = \frac{R_2}{R_{gesamt}}$$
+	  \end{center}
+	\end{block}
+
 	\textbf{beim belasteten Spannungsteiler:}
 	\begin{itemize}
-		\item $U_2$ ist die Spannung über den beiden parallelen Widerständen $R_2$ und $R_L$
+		\item $U_2$ ist die Spannung über den beiden parallelen Widerstände $R_2$ und $R_L$
 	\end{itemize}
-	\vspace{1mm}
-	$$\frac{U_2}{U} = \frac{R_{2||L}}{R_{gesamt}}$$
+	\begin{block}{belasteter Spannungsteiler}
+	  \begin{center}
+	    $$\frac{U_2}{U} = \frac{R_{2}||R_{L}}{R_{gesamt}}$$
+	  \end{center}
+	\end{block}
 \end{frame}
 
 \section{Übung}
 
 \begin{frame}
-	\begin{tiny}
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TB106:} Was verstehen Sie unter Halbleitermaterialien?}\\
+    \frametitle{Übungsaufgaben}
 
-		\hline
-		A & Einige Stoffe (z.B. Silizium, Germanium) sind in reinem Zustand bei  & ??? \\
-		" " & Zimmertemperatur gute Leiter. Durch geringfügige Zusätze von  & " "\\
-		" " & geeigneten anderen Stoffen nimmt jedoch ihre Leitfähigkeit ab.  & " "\\ \hline
-		
-		B & Einige Stoffe wie z.B. Indium oder Magnesium sind in reinem Zustand bei   & ??? \\
-		" " & Zimmertemperatur gute Isolatoren. Durch geringfügige Zusätze von Silizium, & " "\\
-		" " & Germaniumoder geeigneten anderen Stoffen werden sie jedoch zu Leitern.  & " "\\ \hline
-		C & Einige Stoffe (z.B. Silizium, Germanium) sind in reinem Zustand bei & ??? \\
-		" " & Zimmertemperatur gute Isolatoren. Durch geringfügige Zusätze von geeigneten & " "\\
-		" " &  anderen Stoffen oder bei hohen Temperaturen werden sie jedoch zu Leitern. & " "\\ \hline
-		
-		D & Einige Stoffe (z.B. Silizium, Germanium) sind in trockenem Zustand bei & ??? \\
-		" " & Zimmertemperatur gute Elektrolyten. Durch geringfügige Zusätze von Wismut& " "\\
-		" " & oder Tellur kann man daraus entweder N-leitendes- oder P-leitendes Material für& " "\\
-		" " &   Anoden bzw. Katoden von Halbleiterbauelementen herstellen. & " " \\ \hline
-	\end{tabular}
-	\end{tiny}
+    Als Teil des Praxisskriptes im Anschluss.
+
 \end{frame}
 
-\begin{frame}
-	\begin{tiny}
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TB106:} Was verstehen Sie unter Halbleitermaterialien?}\\
-
-		\hline
-		A & Einige Stoffe (z.B. Silizium, Germanium) sind in reinem Zustand bei  & ??? \\
-		" " & Zimmertemperatur gute Leiter. Durch geringfügige Zusätze von  & " "\\
-		" " & geeigneten anderen Stoffen nimmt jedoch ihre Leitfähigkeit ab.  & " "\\ \hline
-		
-		B & Einige Stoffe wie z.B. Indium oder Magnesium sind in reinem Zustand bei   & ??? \\
-		" " & Zimmertemperatur gute Isolatoren. Durch geringfügige Zusätze von Silizium, & " "\\
-		" " & Germaniumoder geeigneten anderen Stoffen werden sie jedoch zu Leitern.  & " "\\ \hline
-		C & Einige Stoffe (z.B. Silizium, Germanium) sind in reinem Zustand bei & Richtig \\
-		" " & Zimmertemperatur gute Isolatoren. Durch geringfügige Zusätze von geeigneten & " "\\
-		" " &  anderen Stoffen oder bei hohen Temperaturen werden sie jedoch zu Leitern. & " "\\ \hline
-		
-		D & Einige Stoffe (z.B. Silizium, Germanium) sind in trockenem Zustand bei & ??? \\
-		" " & Zimmertemperatur gute Elektrolyten. Durch geringfügige Zusätze von Wismut& " "\\
-		" " & oder Tellur kann man daraus entweder N-leitendes- oder P-leitendes Material für& " "\\
-		" " &   Anoden bzw. Katoden von Halbleiterbauelementen herstellen. & " " \\ \hline
-	\end{tabular}
-	\end{tiny}
-\end{frame}
-
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TB104:} Der Temperaturkoeffizient für den Widerstand von}\\
-		\multicolumn{3}{|c|}{ metallischen Leitern ist ...}\\
-		\hline
-		A & exponentiell & ??? \\ \hline
-		B & negativ & ??? \\ \hline
-		C & logarithmisch & ??? \\ \hline
-		D & positiv & ??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TB104:} Der Temperaturkoeffizient für den Widerstand von}\\
-		\multicolumn{3}{|c|}{ metallischen Leitern ist ...}\\
-		\hline
-		A & exponentiell & ??? \\ \hline
-		B & negativ & ??? \\ \hline
-		C & logarithmisch & ??? \\ \hline
-		D & positiv & Richtig \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-
-\begin{frame}
-	\begin{scriptsize}
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TC314:} Welche Folgen hat der Skin-Effekt?}\\
-		\hline
-		A & Der Skin-Effekt ist für den mit der Frequenz ansteigenden  & ??? \\
-		" " & induktiven Widerstand verantwortlich  & " "\\ \hline
-		
-		B & Der Strom fließt bei hohen Frequenzen nur noch in der Oberfläche & ??? \\
-		" " &des Leiters. Mit sinkendem stromdurchflossenen Querschnitt& " "\\
-		" " & steigt daher der induktive Widerstand des Leiters.  & " "\\ \hline
-		
-		C & Der Strom fließt bei hohen Frequenzen nur noch in der Oberfläche& ??? \\
-		" " & des  Leiters. Mit sinkendem stromdurchflossenen Querschnitt&" "\\
-		" " & vergrößert  sich daher der kapazitive Widerstand des Leiters. &" "\\ \hline
-		
-		D &Der Strom fließt bei hohen Frequenzen nur noch in der Oberfläche& ??? \\
-		" " & des Leiters. Mit sinkendem stromdurchflossenen Querschnitt& " "\\
-		" " & steigt daher der effektive Widerstand des Leiters& " "\\ \hline
-	\end{tabular}
-	\end{scriptsize}
-\end{frame}
-\begin{frame}
-	\begin{scriptsize}
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TC314:} Welche Folgen hat der Skin-Effekt?}\\
-		\hline
-		A & Der Skin-Effekt ist für den mit der Frequenz ansteigenden  & ??? \\
-		" " & induktiven Widerstand verantwortlich  & " "\\ \hline
-		
-		B & Der Strom fließt bei hohen Frequenzen nur noch in der Oberfläche & ??? \\
-		" " &des Leiters. Mit sinkendem stromdurchflossenen Querschnitt& " "\\
-		" " & steigt daher der induktive Widerstand des Leiters.  & " "\\ \hline
-		
-		C & Der Strom fließt bei hohen Frequenzen nur noch in der Oberfläche& ??? \\
-		" " & des  Leiters. Mit sinkendem stromdurchflossenen Querschnitt&" "\\
-		" " & vergrößert  sich daher der kapazitive Widerstand des Leiters. &" "\\ \hline
-		
-		D &Der Strom fließt bei hohen Frequenzen nur noch in der Oberfläche& Richtig \\
-		" " & des Leiters. Mit sinkendem stromdurchflossenen Querschnitt& " "\\
-		" " & steigt daher der effektive Widerstand des Leiters& " "\\ \hline
-	\end{tabular}
-	\end{scriptsize}
-\end{frame}
-
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TC109:} Ein Widerstand hat eine Toleranz von 10 \%. Bei }\\
-		\multicolumn{3}{|c|}{einem nominalen Widerstandswert von $5,6 k\Omega$ liegt der}\\
-		\multicolumn{3}{|c|}{tatsächliche Wert zwischen}\\
-		\hline
-		A & 5040 und 6160 $\Omega$ & ??? \\ \hline
-		B & 4760 und 6440 $\Omega$ & ??? \\ \hline
-		C & 4,7 und 6,8 $\Omega$ & ??? \\ \hline
-		D & 5,2 und 6,3 $\Omega$ & ??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TC109:} Ein Widerstand hat eine Toleranz von 10 \%. Bei }\\
-		\multicolumn{3}{|c|}{einem nominalen Widerstandswert von $5,6 k\Omega$ liegt der}\\
-		\multicolumn{3}{|c|}{tatsächliche Wert zwischen}\\
-		\hline
-		A & 5040 und 6160 $\Omega$ & Richtig \\ \hline
-		B & 4760 und 6440 $\Omega$ & ??? \\ \hline
-		C & 4,7 und 6,8 $\Omega$ & ??? \\ \hline
-		D & 5,2 und 6,3 $\Omega$ & ??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TC112:} Ein Lastwiderstand besteht aus zwölf parallel geschalteten }\\
-		\multicolumn{3}{|c|}{600-$\Omega$-Drahtwiderständen. Er eignet sich höchstens}\\
-		\hline
-		A & für Funkfrequenzen bis etwa 144 MHz. & ??? \\ \hline
-		B & für UHF-Senderausgänge mit 50 $\Omega$. & ??? \\ \hline
-		C & für Tonfrequenzen bis etwa 15 kHz. & ??? \\ \hline
-		D & als Langdrahtersatz.& ??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TC112:} Ein Lastwiderstand besteht aus zwölf parallel geschalteten }\\
-		\multicolumn{3}{|c|}{600-$\Omega$-Drahtwiderständen. Er eignet sich höchstens}\\
-		\hline
-		A & für Funkfrequenzen bis etwa 144 MHz. & ??? \\ \hline
-		B & für UHF-Senderausgänge mit 50 $\Omega$. & ??? \\ \hline
-		C & für Tonfrequenzen bis etwa 15 kHz. & Richtig \\ \hline
-		D & als Langdrahtersatz.& ??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TD302:} Die Leerlaufspannung einer Gleichspannungsquelle}\\
-		\multicolumn{3}{|c|}{beträgt 13,5 V. Wenn die Spannungsquelle einen Strom von 1 A}\\
-		\multicolumn{3}{|c|}{abgibt, sinkt die Klemmenspannung auf 12,4 V. Wie groß ist der}\\			\multicolumn{3}{|c|}{Innenwiderstand der Spannungsquelle?}\\
-		\hline
-		A & $1,1 \Omega$ & ??? \\ \hline
-		B & $1,2 \Omega$ & ??? \\ \hline
-		C & $12,4 \Omega$ & ??? \\ \hline
-		D & $13,5 \Omega$ & ??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TD302:} Die Leerlaufspannung einer Gleichspannungsquelle}\\
-		\multicolumn{3}{|c|}{beträgt 13,5 V. Wenn die Spannungsquelle einen Strom von 1 A}\\
-		\multicolumn{3}{|c|}{abgibt, sinkt die Klemmenspannung auf 12,4 V. Wie groß ist der}\\			\multicolumn{3}{|c|}{Innenwiderstand der Spannungsquelle?}\\
-		\hline
-		A & $1,1 \Omega$ & richtig \\ \hline
-		B & $1,2 \Omega$ & ??? \\ \hline
-		C & $12,4 \Omega$ & ??? \\ \hline
-		D & $13,5 \Omega$ & ??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-	\vspace{1cm}
-	\begin{equation}
-		R = \frac{\Delta U}{\Delta I} = \frac{13,5V - 12,4V}{1A} = \frac{1,1V}{1A} = 1,1\Omega
-	\end{equation}
-\end{frame}
-
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TB102:} Welchen Widerstand hat eine Kupferdrahtwicklung,}\\
-		\multicolumn{3}{|c|}{wenn der verwendete Draht eine Länge von 1,8 m}\\
-		\multicolumn{3}{|c|}{und einen Durchmesser von 0,2 mm hat}\\
-		\hline
-		A &  $0,05 \Omega$  & ??? \\ \hline
-		B &  $1 \Omega$ & ??? \\ \hline
-		C & $ 5,6 \Omega$ & ??? \\ \hline
-		D & $56 \Omega$  & ??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TB102:} Welchen Widerstand hat eine Kupferdrahtwicklung,}\\
-		\multicolumn{3}{|c|}{wenn der verwendete Draht eine Länge von 1,8 m}\\
-		\multicolumn{3}{|c|}{und einen Durchmesser von 0,2 mm hat}\\
-		\hline
-		A &  $0,05 \Omega$  & ??? \\ \hline
-		B &  $1 \Omega$ & Richtig \\ \hline
-		C & $ 5,6 \Omega$ & ??? \\ \hline
-		D & $56 \Omega$  & ??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TB105:} Welche Gruppe von Materialien enthält nur Nichtleiter?}\\
-		\hline
-		A & Epoxyd, Polyethylen (PE), Polystyrol (PS) & ??? \\ \hline
-		B & Pertinax, Polyvinylchlorid (PVC), Graphit & ??? \\ \hline
-		C & Polyethylen (PE), Messing, Konstantan & ??? \\ \hline
-		D & Teflon, Pertinax, Bronze & ??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TB105:} Welche Gruppe von Materialien enthält nur Nichtleiter?}\\
-		\hline
-		A & Epoxyd, Polyethylen (PE), Polystyrol (PS) & Richtig \\ \hline
-		B & Pertinax, Polyvinylchlorid (PVC), Graphit & ??? \\ \hline
-		C & Polyethylen (PE), Messing, Konstantan & ??? \\ \hline
-		D & Teflon, Pertinax, Bronze & ??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-
-\begin{frame}
-	\begin{scriptsize}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TC103:} Metalloxidwiderstände}\\
-		\hline
-		A &haben geringe Toleranzen und Widerstandsänderungen und sind & ??? \\
-		" " & besonders als Präzisionswiderstände in der Messtechnik geeignet. & " " \\ \hline
-		B & sind besonders als Hochlastwiderstände bei & ??? \\
-		" " &niedrigen Frequenzen geeignet. & " "\\ \hline
-		C & sind induktionsarm und eignen sich besonders für den& ??? \\ 
-		" " &  Einsatz bei sehr hohen Frequenzen. & " " \\ \hline
-		D & haben einen extrem stark negativen Temperaturkoeffizienten & ??? \\ 
-		" " & und sind besonders als NTC-Widerstände (Heißleiter) geeignet. & " " \\ \hline 		
-	\end{tabular}
-	\end{scriptsize}
-\end{frame}\begin{frame}
-	\begin{scriptsize}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TC103:} Metalloxidwiderstände}\\
-		\hline
-		A &haben geringe Toleranzen und Widerstandsänderungen und sind& ??? \\
-		" " & besonders als Präzisionswiderstände in der Messtechnik geeignet.& " " \\ \hline
-		B & sind besonders als Hochlastwiderstände bei & ??? \\
-		" " &niedrigen Frequenzen geeignet. & " "\\ \hline
-		C &sind induktionsarm und eignen sich besonders für den& Richtig \\ 
-		" " &  Einsatz bei sehr hohen Frequenzen. & " " \\ \hline
-		D & haben einen extrem stark negativen Temperaturkoeffizienten& ??? \\ 
-		" " & und sind besonders als NTC-Widerstände (Heißleiter) geeignet.& " " \\ \hline 		
-	\end{tabular}
-	\end{scriptsize}
-\end{frame}
-
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TD301:} Welche Eigenschaften sollten Strom- und}\\
-		\multicolumn{3}{|c|}{Spannungsquellen aufweisen?}\\
-		\hline
-		A &  Strom- und Spannungsquellen sollten einen möglichst  & ??? \\
-		" " & niedrigen Innenwiderstand haben. & " "\\ \hline
-		B &  Strom- und Spannungsquellen sollten einen möglichst  & ??? \\
-		" " & hohen Innenwiderstand haben. & " "\\ \hline
-		C & Spannungsquellen sollten einen möglichst hohen & ??? \\
-		" " & Innenwiderstand und Stromquellen einen möglichst  & " " \\ 
-		" " & niedrigen Innenwiderstand haben.  & "" \\ \hline
-		D & Spannungsquellen sollten einen möglichst niedrigen & ??? \\
-		" " & Innenwiderstand und Stromquellen einen möglichst & " " \\ 
-		" " & hohen Innenwiderstand haben.  & " " \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TD301:} Welche Eigenschaften sollten Strom- und}\\
-		\multicolumn{3}{|c|}{Spannungsquellen aufweisen?}\\
-		\hline
-		A &  Strom- und Spannungsquellen sollten einen möglichst  & ??? \\
-		" " & niedrigen Innenwiderstand haben. & " "\\ \hline
-		B &  Strom- und Spannungsquellen sollten einen möglichst  & ??? \\
-		" " & hohen Innenwiderstand haben. & " "\\ \hline
-		C & Spannungsquellen sollten einen möglichst hohen & ??? \\
-		" " & Innenwiderstand und Stromquellen einen möglichst  & " " \\ 
-		" " & niedrigen Innenwiderstand haben.  & "" \\ \hline
-		D & Spannungsquellen sollten einen möglichst niedrigen & richtig \\
-		" " & Innenwiderstand und Stromquellen einen möglichst & " " \\ 
-		" " & hohen Innenwiderstand haben.  & " " \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TB914:} Welche Belastbarkeit muss ein 100-Ohm-Widerstand, }\\
-		\multicolumn{3}{|c|}{an dem 10 Volt anliegen, mindestens haben?}\\
-		\hline
-		A & 100 mW & ??? \\ \hline
-		B & 0,125 W & ??? \\ \hline
-		C & 1 W & ??? \\ \hline
-		D & 10 W& ??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TB914:} Welche Belastbarkeit muss ein 100-Ohm-Widerstand, }\\
-		\multicolumn{3}{|c|}{an dem 10 Volt anliegen, mindestens haben?}\\
-		\hline
-		A & 100 mW & ??? \\ \hline
-		B & 0,125 W & ??? \\ \hline
-		C & 1 W & Richtig \\ \hline
-		D & 10 W& ??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-
-
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TB923:} In welcher Antwort sind alle dargestellten Zusammenhänge }\\
-		\multicolumn{3}{|c|}{zwischen Strom, Spannung, Widerstand und Leistung richtig? }\\
-		\hline
-		A & $I = \sqrt{P \cdot R}$ , $U = \sqrt{\frac{P}{R}}$ & ??? \\ \hline
-		B & $I = \sqrt{\frac{R}{P}}$ , $U = \sqrt{P \cdot R}$& ??? \\ \hline
-		C &  $I = \sqrt{\frac{P}{R}}$ , $U = \sqrt{P \cdot R}$ & ??? \\ \hline
-		D &  $I = \frac{\sqrt{P}}{P}$ , $U = \sqrt{P} \cdot R$ &??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
-\begin{frame}
-	\begin{small}	
-	\begin{tabular}{|l|l|l|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TB923:} In welcher Antwort sind alle dargestellten Zusammenhänge }\\
-		\multicolumn{3}{|c|}{zwischen Strom, Spannung, Widerstand und Leistung richtig? }\\
-		\hline
-		A & $I = \sqrt{P \cdot R}$ , $U = \sqrt{\frac{P}{R}}$ & ??? \\ \hline
-		B & $I = \sqrt{\frac{R}{P}}$ , $U = \sqrt{P \cdot R}$& ??? \\ \hline
-		C &  $I = \sqrt{\frac{P}{R}}$ , $U = \sqrt{P \cdot R}$ & Richtig \\ \hline
-		D &  $I = \frac{\sqrt{P}}{P}$ , $U = \sqrt{P} \cdot R$ &??? \\ \hline 		
-	\end{tabular}
-	\end{small}
-\end{frame}
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TB106} & \textbf{Was verstehen Sie unter Halbleitermaterialien?}\\ \hline\hline
+%     A & Einige Stoffe (z.B. Silizium, Germanium) sind in reinem Zustand bei Zimmertemperatur gute Leiter. Durch geringfügige Zusätze von geeigneten anderen Stoffen nimmt jedoch ihre Leitfähigkeit ab. \\ \hline
+%     B & Einige Stoffe wie z.B. Indium oder Magnesium sind in reinem Zustand bei Zimmertemperatur gute Isolatoren. Durch geringfügige Zusätze von Silizium, Germanium oder geeigneten anderen Stoffen werden sie jedoch zu Leitern. \\ \hline
+%     C \only<2>\checkmark & Einige Stoffe (z.B. Silizium, Germanium) sind in reinem Zustand bei Zimmertemperatur gute Isolatoren. Durch geringfügige Zusätze von geeigneten anderen Stoffen oder bei hohen Temperaturen werden sie jedoch zu Leitern. \\ \hline
+%     D & Einige Stoffe (z.B. Silizium, Germanium) sind in trockenem Zustand bei Zimmertemperatur gute Elektrolyten. Durch geringfügige Zusätze von Wismut oder Tellur kann man daraus entweder N-leitendes- oder P-leitendes Material für Anoden bzw. Katoden von Halbleiterbauelementen herstellen. \\ \hline
+%   \end{tabular}
+% \end{frame}
+% 
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TB104} & \textbf{Der Temperaturkoeffizient für den Widerstand von metallischen Leitern ist \ldots}\\ \hline\hline
+%     A & exponentiell \\ \hline
+%     B & negativ \\ \hline
+%     C & logarithmisch \\ \hline
+%     D \only<2>\checkmark & positiv \\ \hline 		
+%   \end{tabular}
+% \end{frame}
+% 
+% 
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TC109} & \textbf{Ein Widerstand hat eine Toleranz von 10 \%. Bei einem nominalen Widerstandswert von $5,6 k\Omega$ liegt der tatsächliche Wert zwischen}\\ \hline\hline
+%     A \only<2>\checkmark & 5040 und 6160 $\Omega$ \\ \hline
+%     B & 4760 und 6440 $\Omega$ \\ \hline
+%     C & 4,7 und 6,8 $\Omega$ \\ \hline
+%     D & 5,2 und 6,3 $\Omega$ \\ \hline 		
+%   \end{tabular}
+% \end{frame}
+% 
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+% 		\textbf{TC112} & \textbf{Ein Lastwiderstand besteht aus zwölf parallel geschalteten 600-$\Omega$-Drahtwiderständen. Er eignet sich höchstens}\\ \hline\hline
+% 		A & für Funkfrequenzen bis etwa 144 MHz.\\ \hline
+% 		B & für UHF-Senderausgänge mit 50 $\Omega$.\\ \hline
+% 		C \only<2>\checkmark & für Tonfrequenzen bis etwa 15 kHz.\\ \hline
+% 		D & als Langdrahtersatz.\\ \hline 		
+% 	\end{tabular}
+% \end{frame}
+% 
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TD302} & \textbf{Die Leerlaufspannung einer Gleichspannungsquelle beträgt 13,5 V. Wenn die Spannungsquelle einen Strom von 1 A abgibt, sinkt die Klemmenspannung auf 12,4 V. Wie groß ist der Innenwiderstand der Spannungsquelle?}\\ \hline\hline
+%     A \only<2>\checkmark & $1,1 \Omega$\\ \hline
+%     B & $1,2 \Omega$\\ \hline
+%     C & $12,4 \Omega$\\ \hline
+%     D & $13,5 \Omega$\\ \hline 		
+%   \end{tabular}
+%   \pause
+%   \vspace{2em}
+%   $$R = \frac{\Delta U}{\Delta I} = \frac{13,5V - 12,4V}{1A} = \frac{1,1V}{1A} = 1,1\Omega$$
+% \end{frame}
+% 
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TB102} & \textbf{Welchen Widerstand hat eine Kupferdrahtwicklung, wenn der verwendete Draht eine Länge von 1,8 m und einen Durchmesser von 0,2 mm hat?}\\ \hline\hline
+%     A & $0,05 \Omega$\\ \hline
+%     B \only<2>\checkmark &$1 \Omega$\\ \hline
+%     C & $5,6 \Omega$\\ \hline
+%     D & $56 \Omega$\\ \hline 		
+%   \end{tabular}
+%   \pause
+%   \vspace{2em}
+%   $$R = \frac{\rho \cdot \ell}{A_{Dr}}$$
+%   \pause
+%   $$A_{Dr} = \frac{d^2 \cdot \pi}{4} = \frac{0,2mm^2 \cdot \pi}{4} = 0,0314mm^2$$
+%   \pause
+%   $$\Rightarrow R = \frac{0,0178 \frac{\Omega \cdot mm^2}{m} \cdot 1,8m}{0,0314mm^2} = \frac{0,03204 \Omega}{0,0314} \approx 1\Omega$$
+% \end{frame}
+% 
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TB105} & \textbf{Welche Gruppe von Materialien enthält nur Nichtleiter?}\\ \hline\hline
+%     A \only<2>\checkmark & Epoxyd, Polyethylen (PE), Polystyrol (PS)\\ \hline
+%     B & Pertinax, Polyvinylchlorid (PVC), Graphit\\ \hline
+%     C & Polyethylen (PE), Messing, Konstantan\\ \hline
+%     D & Teflon, Pertinax, Bronze\\ \hline 		
+%   \end{tabular}
+% \end{frame}
+% 
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TC103} & \textbf{Metalloxidwiderstände}\\ \hline\hline
+%     A & haben geringe Toleranzen und Widerstandsänderungen und sind besonders als Präzisionswiderstände in der Messtechnik geeignet.\\ \hline
+%     B & sind besonders als Hochlastwiderstände bei niedrigen Frequenzen geeignet.\\ \hline
+%     C \only<2>\checkmark & sind induktionsarm und eignen sich besonders für den Einsatz bei sehr hohen Frequenzen.\\ \hline
+%     D & haben einen extrem stark negativen Temperaturkoeffizienten und sind besonders als NTC-Widerstände (Heißleiter) geeignet.\\ \hline 		
+%   \end{tabular}
+% \end{frame}
+% 
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TD301} & \textbf{Welche Eigenschaften sollten Strom- und Spannungsquellen aufweisen?}\\ \hline\hline
+%     A & Strom- und Spannungsquellen sollten einen möglichst niedrigen Innenwiderstand haben.\\ \hline
+%     B & Strom- und Spannungsquellen sollten einen möglichst hohen Innenwiderstand haben.\\ \hline
+%     C & Spannungsquellen sollten einen möglichst hohen Innenwiderstand und Stromquellen einen möglichst niedrigen Innenwiderstand haben.\\ \hline
+%     D \only<2>\checkmark & Spannungsquellen sollten einen möglichst niedrigen Innenwiderstand und Stromquellen einen möglichst hohen Innenwiderstand haben.\\ \hline 		
+%   \end{tabular}
+% \end{frame}
+% 
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TB914} & \textbf{Welche Belastbarkeit muss ein 100-Ohm-Widerstand, an dem 10 Volt anliegen, mindestens haben?}\\ \hline\hline
+%     A & 100 mW\\ \hline
+%     B & 0,125 W\\ \hline
+%     C \only<2>\checkmark & 1 W\\ \hline
+%     D & 10 W \\ \hline 		
+%   \end{tabular}
+%   \pause
+%   \vspace{2em}
+%   $$P = \frac{U^2}{R} = \frac{10V^2}{100\Omega} = 1W$$
+% \end{frame}
+% 
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TB923} & \textbf{In welcher Antwort sind alle dargestellten Zusammenhänge zwischen Strom, Spannung, Widerstand und Leistung richtig?}\\ \hline\hline
+%     A & $$I = \sqrt{P \cdot R} \:,\: U = \sqrt{\frac{P}{R}}$$\\ \hline
+%     B & $$I = \sqrt{\frac{R}{P}} \:,\: U = \sqrt{P \cdot R}$$\\ \hline
+%     C \only<2>\checkmark & $$I = \sqrt{\frac{P}{R}} \:,\: U = \sqrt{P \cdot R}$$\\ \hline
+%     D & $$I = \frac{\sqrt{P}}{P} \:,\: U = \sqrt{P} \cdot R$$\\ \hline 		
+%   \end{tabular}
+% \end{frame}
+% 
+% \begin{frame}
+%   \begin{exampleblock}{Weitere Übungen}
+%     TD107--TD108, TD111--TD115, TD121--TD124, TJ708
+%   \end{exampleblock}
+% \end{frame}
 
 \section{Referenzen}
 	\begin{small}
     \begin{thebibliography}{}
+    \setbeamertemplate{bibliography item}[online]
     \bibitem{a02}  Moltrecht A 02: \\
                     \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a02/}
                     
     \bibitem{wp}    Wikipedia DE: \\
-                    \url{http://de.wikipedia.org/wiki/Skin-Effekt}\\
-                    \url{http://de.wikipedia.org/wiki/Datei:Skineffect_reason.svg}\\
                     \url{http://de.wikipedia.org/wiki/Spannungsteiler}\\
                     \url{http://de.wikipedia.org/wiki/Datei:Einfacher-unbelasteter-Spannungsteiler.svg}\\
                     \url{http://de.wikipedia.org/wiki/Datei:Einfacher-Spannungsteiler.svg}\\

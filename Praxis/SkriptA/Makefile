@@ -5,13 +5,13 @@ FILE=Skript_Praxis*
 all: aufgaben loesung
 
 aufgaben:
-	pdflatex Skript_Praxis.tex
-	pdflatex Skript_Praxis.tex
+	pdflatex Skript_PraxisA.tex
+	pdflatex Skript_PraxisA.tex
 	$(MAKE) temp-clean
 
 loesung:
-	pdflatex Skript_Praxis_Loesung.tex
-	pdflatex Skript_Praxis_Loesung.tex
+	pdflatex Skript_PraxisA_Loesung.tex
+	pdflatex Skript_PraxisA_Loesung.tex
 	$(MAKE) temp-clean
 
 temp-clean:
