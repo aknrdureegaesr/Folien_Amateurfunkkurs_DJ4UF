@@ -30,6 +30,7 @@ skript:
 	$(MAKE) -C Praxis/SkriptA all
 
 export: slides
+	git pull
 	mkdir --parents export/${EXPORT_DIR}
 	cp -r docs *.pdf export/${EXPORT_DIR}
 	@echo "Material des DK0TU-Amateurfunkkurses http://www.dk0tu.de/Kurse/AFu-Lizenz/" > export/${EXPORT_DIR}/README.txt
