@@ -1,22 +1,24 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Martin Deutschmann
+% Autoren: 
+% Martin Deutschmann
+% Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse A 04: \\
           Schwingkreise \& Filter \\[2em]}
-\date{Stand \today}
+\date{Stand 11.01.2016}
 \input{texdata/titlepage}
 
 %fixme Links zur bibliography einfuegen
 
-\section*{Schwingungsvorgang}
+\section*{Schwingkreis}
 \begin{frame}
 \frametitle{Schwingkreise}
 	\begin{center}
 		\includegraphics[scale=0.4]{a04/Schwingkreis_reihe.png}
 		\includegraphics[scale=0.4]{a04/Schwingkreis_parallel.png}\\
-		Abb.1: Serien- \& Paralellschwingkreise
+		Abb.1: Serien- \& Parallelschwingkreis
 	\end{center}
 \end{frame}
 
@@ -24,7 +26,7 @@
 \frametitle{Schwingungserzeugung}
 \begin{center}
 	\includegraphics[scale=0.35]{a04/Schwingkreis.png}\\
-	Abb.2: Energie in einem LC-Schwingkreis \cite{wmde} \\
+	{\tiny Abb.2: Energie in einem LC-Schwingkreis \cite{wmde}} \\
 	\vspace{3mm}
 	\begin{itemize}
 		\item durch Verluste kommt es zur gedämpfte Schwingung\\
@@ -33,67 +35,16 @@
 \end{center}
 \end{frame}
 
-\begin{frame}
-\frametitle{Resonanzfrequenz}
-	\begin{itemize}
-		\item Wir benötigen die Blindwiderstände $X_C$ und $X_L$
-	\end{itemize}
-
-	\begin{LARGE}
-		$X_C = \frac{1}{j \omega C}$ 
-		\hspace{3cm}
-		$X_L = j \omega L$ \\
-		\vspace{1cm}
-		$X_C = \frac{j}{j^2 \omega C}$ \\
-		\vspace{1cm}
-		$X_C = \frac{-j}{\omega C}$ \\
-	\end{LARGE}
-\end{frame}
-
-\begin{frame}
-\frametitle{Resonanzfrequenz}
-\begin{itemize}
-	\item Für Resonanz muss gelten $X_L = X_C$
-\end{itemize}
-\begin{LARGE}
-\begin{center}
-	$j \omega L = \frac{-j}{\omega C}$
-\end{center}
-\end{LARGE}
-\begin{itemize}
-	\item Nun stellen wir nach $\omega$ um
-\end{itemize}
-\begin{LARGE}
-\begin{center}
-	$\omega^2 = \frac{-j}{j L C}$
-\end{center}
-\end{LARGE}
-\begin{itemize}
-	\item	Nun lösen wir noch das Quadrat auf und mult mit $\frac{j}{j}$
-\end{itemize}
-\begin{LARGE}
-\begin{center}
-	$\omega = \frac{-1}{1 \cdot \sqrt{L C}}$
-\end{center}
-\end{LARGE}
-\begin{itemize}
-	\item	Nachdem wir $\omega$ durch $2 \pi f$ ersetzt und durch $2 \pi$ geteilt haben, erhalten wir die entgültige Form:
-\end{itemize}
-\begin{center}
-	\LARGE{$ |f_{res}| = \frac{1}{2 \pi \sqrt{L C}} $}
-\end{center}
-\end{frame}
-
-\section*{Reihenschwingkreis}
+\subsection*{Reihen\-schwing\-kreis}
 \begin{frame}
 \frametitle{Reihenschwingkreis}
 \begin{center}
 	\begin{minipage}{0.4\textwidth}
-	\includegraphics[scale=0.8]{a04/Serirenschw.png}\\
+	\includegraphics[height=.5\textheight,width=\textwidth,keepaspectratio]{a04/Serirenschw.png}\\
 	\tiny{Abb.3: Serienschwingkreis \cite{wmen}}
 	\end{minipage}
 	\begin{minipage}{0.4\textwidth}
-	\includegraphics[scale=0.2]{a04/SerirenschwSig.png}\\
+	\includegraphics[height=.5\textheight,width=\textwidth,keepaspectratio]{a04/SerirenschwSig.png}\\
 	\tiny{Abb.4: Resonanzwiderstand \cite{wmen}} 
 	\end{minipage}
 \end{center}
@@ -103,7 +54,7 @@
 \end{itemize}
 \end{frame}
 
-\section*{Parallelschwingkreis}
+\subsection*{Parallel\-schwing\-kreis}
 \begin{frame}
 \frametitle{Parallelschwingkreis}
 \begin{center}
@@ -123,95 +74,169 @@
 \end{itemize}
 \end{frame}
 
-\section*{Bandreite}
+\subsection*{Resonanz\-frequenz}
 \begin{frame}
-\frametitle{Bandbreite}
+  \frametitle{Resonanzfrequenz}
+  \begin{block}{Resonanzfrequenz}
+    Frequenz der äußeren Anregung, bei der die resultierende Amplitude maximal wird.
+  \end{block}
+
+  Das gilt, wenn der induktive Blindwiderstand $X_L$ gleich dem kapazitiven Blindwiderstand $X_C$ ist. Damit ergibt sich für die Resonanzfrequenz $f_0$:
+  \begin{block}{Resonanzfrequenz}
+    \begin{center}
+      $f_0 = \cfrac{1}{2\pi \cdot \sqrt{L \cdot C}}$
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Resonanzfrequenz}
+  Herleitung:
+  \begin{align*}
+    X_L &= X_C \\
+    \omega \cdot L &= \frac{1}{\omega \cdot C} & \text{mit } \omega = 2\pi \cdot f \\
+    2\pi \cdot f \cdot L &= \frac{1}{2\pi \cdot f \cdot C} & \cdot\  2\pi \cdot f \\
+    4\pi^2 \cdot f^2 &= \frac{1}{C} & \div\  L \\  
+    4\pi^2 \cdot f^2 &= \frac{1}{L \cdot C} & \sqrt{\ } \\
+    2\pi \cdot f &= \frac{1}{\sqrt{L \cdot C}} & \div\  2\pi \\
+    f &= \frac{1}{2\pi \cdot \sqrt{L \cdot C}}
+  \end{align*}
+\end{frame}
+
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TD207} & \textbf{Wie groß ist die Resonanzfrequenz dieser Schaltung, wenn $C_1 = 0,1nF$, $C_2 = 1,5nF$, $C_3 = 220pF$ und $L = 1mH$ beträgt?} \\
+    & \includegraphics[width=.8\textwidth,height=.3\textheight,keepaspectratio]{a04/td207.png} \\ \hline\hline
+    A & $1,18 kHz$ \\ \hline
+    B \only<2>\checkmark & $117,973 kHz$ \\ \hline
+    C & $1,17973 MHz$ \\ \hline
+    D & $11,979 kHz$ \\ \hline
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TD209} & \textbf{Welche Resonanzfrequenz $f_{res}$ hat die Parallelschaltung einer Spule von $2 \mu H$ mit einem Kondensator von $60 pF$ und einem Widerstand von $10 k\Omega$?} \\ \hline\hline
+    A & $145,288 kHz$ \\ \hline
+    B & $1,45288 MHz$ \\ \hline
+    C & $145,288 MHz$ \\ \hline
+    D \only<2>\checkmark & $14,5288 MHz$ \\ \hline
+  \end{tabular}
+\end{frame}
+
+
+
+\subsection*{Bandbreite}
+\begin{frame}
+\frametitle{Bandbreite eines Schwingkreises}
 \begin{center}
 	\includegraphics[scale=0.3]{a04/bandwidth.png}\\
-	\tiny{Abb.7: Bandweite \cite{wmen}}
+	\tiny{Abb.7: Bandbreite \cite{wmen}}
 \end{center}
+Untere $f_L$ und obere Grenzfrequenz $f_H$ festgelegt beim $-3dB$-Punkt.
 \end{frame}
 
-\section*{Die Güte}
+\subsection*{Güte}
 
 \begin{frame}
-\frametitle{Die Güte}
-\begin{itemize}
-	\item Bandbreite hängt von der Güte des Schwingkreises ab
-	\item Güte hängt von der Widerstand der Spule $X_L$ ab
-	\item	Kondensatorverluste sind bei niedrigen und mittleren Frequenzen vernachlässigbar klein
-\end{itemize}
-\vspace{3mm}
-\begin{itemize}
-	\item	Für den Reihenschwingkreis gilt:
-\end{itemize}
-\begin{Large}
-	\begin{center}
-		$Q = \frac{X_L}{R_S}$
-	\end{center}
-\end{Large}
-\begin{itemize}
-	\item	Für den Parallelschwingkreis gilt:
-\end{itemize}
-\begin{Large}
-	\begin{center}
-		$Q = \frac{R_P}{X_L}$
-	\end{center}
-\end{Large}
-\begin{itemize}
-	\item	Kennt man die Güte und die Resonanzfrequenzg $f_0$ eines Schwingkreises, so lässt sich die Bandbreite bestimmen:
-\end{itemize}
-\begin{Large}
-	\begin{center}
-		$B = \frac{f_0}{Q}$
-	\end{center}
-\end{Large}
-\end{frame}
-
-\section*{Der Quartz als Schwingkreis}
-\begin{frame}
-\frametitle{Der Quartz als Schwingkreis}
-\begin{center}
-	\includegraphics[scale=0.3]{a04/Quartz.jpg}\\
-	Abb.8: Verschiedene Bauformen von Quartzen
-\end{center}
-\begin{itemize}
-	\item	Besteht aus reinem Siliziumdioxid und wird aus einem Quarzkristall als dünnes Plätchen herausgeschnitten
-	\item	Verhalten ist du den umgekehrten piezoelektrischen Effekt gekennzeichnet
-	\item	Ist ein Schwingkreis von hoher Güte
-\end{itemize}
+  \frametitle{Die Güte}
+  \begin{itemize}
+    \item Bandbreite hängt von der Güte des Schwingkreises ab
+    \item Güte hängt vom (reellen) Widerstand der Spule $X_L$ ab
+    \item Kondensatorverluste sind bei niedrigen und mittleren Frequenzen vernachlässigbar klein
+  \end{itemize}
+  \vspace{1em}
+  \begin{block}{Reihenschwingkreis}
+    \begin{center}
+      $Q = \cfrac{X_L}{R_S}$
+    \end{center}
+  \end{block}
+  \begin{block}{Parallelschwingkreis}
+    \begin{center}
+      $Q = \cfrac{R_P}{X_L}$
+    \end{center}
+  \end{block}
 \end{frame}
 
 \begin{frame}
-\frametitle{ESB eines Quartzes}
-\begin{center}
-	\includegraphics[scale=0.3]{a04/Quartz-ESB.png}\\
-	Abb.9: ESB eines Quartzes \cite{wpde}
-\end{center}
-\begin{itemize}
-	\item	Für den Serienschwingkreis gilt:
-\end{itemize}
-\begin{Large}
-	\begin{center}
-		$f_S = \frac{1}{2 \pi \sqrt{L C_{s}}}$
-	\end{center}
-\end{Large}
-\begin{itemize}
-	\item	Für den Parallelschwingkreis gilt:
-\end{itemize}
-\begin{Large}
-	\begin{center}
-		$f_P = \frac{1}{2 \pi \sqrt{L C_{ges}}}$
-	\end{center}
-\end{Large}
+  \frametitle{Die Güte}
+  Kennt man die Güte und die Resonanzfrequenz $f_0$ eines Schwingkreises, so lässt sich die Bandbreite bestimmen:
+  \begin{block}{Bandbreite}
+    \begin{center}
+      $B = \cfrac{f_0}{Q}$
+    \end{center}
+  \end{block}
+  Und damit ergibt sich dieser Zusammenhang:
+  \begin{block}{Güte}
+    \begin{center}
+      $Q = \cfrac{f_0}{B} = \cfrac{R_P}{X_L} = \cfrac{X_L}{R_S}$
+    \end{center}
+  \end{block}
 \end{frame}
 
-\section*{Tiefpass}
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}} \hline
+    \textbf{TD214} & \textbf{Welchen Gütefaktor $Q$ hat die Reihenschaltung einer Spule von $100 \mu H$ mit einem Kondensator von $0,01 \mu F$ und einem Widerstand von $10 \Omega$?} \\ \hline\hline
+    A & 1 \\ \hline
+    B & 0,1 \\ \hline
+    C \only<2>\checkmark & 10 \\ \hline
+    D & 100 \\ \hline
+  \end{tabular}
+\end{frame}
+
+\section*{Quarz}
+\begin{frame}
+  \frametitle{Der Quarz als Schwingkreis}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{a04/Quartz.jpg}\\
+    {\tiny Abb.8: Verschiedene Bauformen von Quarzen}
+  \end{center}
+  \begin{itemize}
+    \item Englisch: quar\textbf{t}z
+    \item Besteht aus reinem Siliziumdioxid und wird aus einem Quarzkristall als dünnes Plättchen herausgeschnitten
+    \item Verhalten ist durch den umgekehrten piezoelektrischen Effekt gekennzeichnet
+    \item Ist ein Schwingkreis von hoher Güte und geringer Bandbreite
+    \item Bessere Frequenzstabilität als LC-Oszillatoren
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}} \hline
+    \textbf{TF412} & \textbf{Ein Frequenzmarken-Generator in einem Empfänger sollte möglichst}\\ \hline \hline
+    A & ein BFO sein. \\ \hline
+    B & ein RC-Oszillator sein. \\ \hline
+    C \only<2>\checkmark & ein Quarzoszillator sein. \\ \hline
+    D & ein LC-Oszillator sein. \\ \hline
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}} \hline
+    \textbf{TD234} & \textbf{Ein Quarzfilter mit einer der \emph{(sic!)} 3-dB-Bandbreite von 500~Hz eignet sich besonders zur Verwendung in einem Sendeempfänger für} \\ \hline\hline
+    A & SSB. \\ \hline
+    B & FM. \\ \hline
+    C & AM. \\ \hline
+    D \only<2->\checkmark & CW. \\ \hline
+  \end{tabular}
+
+  \pause
+  \vspace{2em}
+  Die Frage gibt für alle Antwortmöglichkeiten, aber unterschiedlichen Bandbreiten:
+  \begin{description}
+    \item[2,3~kHz $\rightarrow$] \only<3>{SSB}
+    \item[6~kHz $\rightarrow$] \only<3>{AM}
+    \item[12~kHz $\rightarrow$] \only<3>{FM}
+  \end{description}
+\end{frame}
+
+\section*{Filter}
+\subsection*{Tiefpass}
 \begin{frame}
 \frametitle{Tiefpass}
 \begin{center}
-	\includegraphics[scale=1.2]{a04/LC-Tiefpass.png}\\
-	Abb.10: LC-Tiefpass
+	\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/LC-Tiefpass.png}\\
+	Abb.8: LC-Tiefpass
 \end{center}
 \begin{itemize}
 	\item Bei steigender Frequenz sinkt der Blindwiderstand $X_L$ und der Blindwiderstand $X_C$ steigt
@@ -220,12 +245,12 @@
 \end{itemize}
 \end{frame}
 
-\section*{Hochpass}
+\subsection*{Hochpass}
 \begin{frame}
 \frametitle{Hochpass}
 \begin{center}
-	\includegraphics[scale=1.2]{a04/LC-Hochpass.png}\\
-	Abb.11: LC-Hochpass
+	\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/LC-Hochpass.png}\\
+	Abb.9: LC-Hochpass
 \end{center}
 \begin{itemize}
 	\item Bei steigender Frequenz steigt der Blindwiderstand $X_L$ und der Blindwiderstand $X_C$ sinkt
@@ -234,56 +259,81 @@
 \end{itemize}
 \end{frame}
 
-\section*{Der Bandpass}
+\subsection*{Bandpass}
 \begin{frame}
-\frametitle{Der Bandpass}
-\begin{center}
-	\includegraphics[scale=0.5]{a04/BandpassSpulen.png}\\
-	Abb.12: Bandpass aus induktiv gekoppelten Schwingkreisen \cite{wpde}
-\end{center}
-\begin{itemize}
-	\item	Mehrere Parallelschwingkreise können zu Bandpässen gekoppelt werden
-	\item	Je nachdem wie fest/ lose die Schwingkreise gekoppelt sind, ändert sich die Bandbreite des Bandpasses
-\end{itemize}
+  \frametitle{Bandpass}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a04/BandpassSpulen.png}\\
+    Abb.12: Bandpass aus induktiv gekoppelten Schwingkreisen \cite{wpde}
+  \end{center}
+  \begin{itemize}
+    \item Mehrere Parallelschwingkreise können zu Bandpässen gekoppelt werden
+    \item Je nachdem wie fest\,/\,lose die Schwingkreise gekoppelt sind, ändert sich die Bandbreite des Bandpasses
+  \end{itemize}
 \end{frame}
 
-\section*{Resonanztranzformation}
+\subsection*{Saugkreis}
 \begin{frame}
-\frametitle{Resonanztransformation}
-\begin{center}
-	\includegraphics[scale=0.2]{a04/Pi-Filter.png}\\
-	Abb.13: Pi- oder auch Collinsfilter \cite{wpde}
-\end{center}
-\begin{itemize}
-	\item	Schwingkreise in Resonanz eignen sich gut zum Anpassen von Impedanzen
-	\item	Nicht die Induktivität, sondern die Kapazitäten sind für die Anpassung verantwortlich
-	\item	Oft werden Drehkondensatoren benutzt, um stufenlos anpassen zu können
-\end{itemize}
+  \frametitle{Saugkreis}
+  \begin{center}
+    % https://upload.wikimedia.org/wikipedia/commons/c/c9/Saugkreis.png
+    \includegraphics<1>[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/Saugkreis.png}
+    \includegraphics<2>[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/SerirenschwSig.png}
+  \end{center}
+  \pause
+  \begin{itemize}
+    \item vor und nach der Resonanzfrequenz hoher Widerstand
+    \item nur Wechselspannungen mit Frequenzen in der Nähe der Resonanzfrequenz werden durchgelassen
+    \item Anwendung: Audiotechnik
+  \end{itemize}
+\end{frame}
+
+\subsection*{Sperrkreis}
+\begin{frame}
+  \frametitle{Sperrkreis}
+  \begin{center}
+    % https://upload.wikimedia.org/wikipedia/commons/e/ef/Sperrkreis.png
+    \includegraphics<1>[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/Sperrkreis.png}
+    \includegraphics<2>[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/ParallelschwSig.png}
+  \end{center}
+  \pause
+  \begin{itemize}
+    \item bei der Resonanzfrequenz hoher Widerstand
+    \item die Resonanzfrequenz wird gefiltert
+    \item Anwendungen: Mehrbandantennen; Filtern von starken Sendern
+  \end{itemize}
+\end{frame}
+
+\subsection*{Resonanz\-trans\-formation}
+\begin{frame}
+  \frametitle{Resonanztransformation}
+  \begin{center}
+    \includegraphics[scale=0.2]{a04/Pi-Filter.png}\\
+    Abb.13: Pi- oder auch Collinsfilter \cite{wpde}
+  \end{center}
+  \begin{itemize}
+    \item Schwingkreise in Resonanz eignen sich gut zum Anpassen von Impedanzen
+    \item Nicht die Induktivität, sondern die Kapazitäten sind für die Anpassung verantwortlich
+    \item Oft werden Drehkondensatoren benutzt, um stufenlos anpassen zu können
+    \item Eingesetzt in Tunern oder Verstärkern (mit den zwei Drehkondensatoren \emph{Load} und \emph{Plate}).
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{ein kleines Beispiel}
-\begin{itemize}
-	\item	$R_2$ sei der Ausgangswiderstand
-	\item	Es soll gelten Eingangsleistung $P_1$ gleich Ausgangsleistung $P_2$
-\end{itemize}
-\begin{Large}
-	\begin{center}
-		$P_1 = P_2 \rightarrow \frac{U^2_1}{R_1} = \frac{U^2_2}{R_2} \rightarrow \frac{U_1}{U_2} = \sqrt{\frac{R_1}{R_2}} $
-	\end{center}
-\end{Large}
-\begin{itemize}
-	\item	Außerdem verhalten sich im abgestimmten Schwingkreis die Spannungen wie die Wechselstromwiderstände
-\end{itemize}
-\begin{Large}
-	\begin{center}
-		$\frac{U_1}{U_2} = \frac{X_{C1}}{X_{C2}} = \sqrt{\frac{R_1}{R_2}} \rightarrow \frac{C_2}{C_1} = \sqrt{\frac{R_1}{R_2}}$
-	\end{center}
-\end{Large}
-\begin{itemize}
-	\item	Kapazitäten verhalten sich umgekehrt proportional zu den zu transformierenden Widerständen
-\end{itemize}
+  \begin{columns}
+    \column{.65\textwidth}
+    \begin{tabular}{l||p{.8\textwidth}} \hline
+      \textbf{TD230} & \textbf{Das folgende Bild zeigt ein typisches ZF-Filter und vier seiner möglichen Übertragungskurven (a bis d). Welche Kurve ergibt sich bei kritischer Kopplung und welche bei überkritischer Kopplung?} \\ \hline\hline
+      A \only<2>\checkmark & Die b-Kurve zeigt kritische, die a-Kurve zeigt überkritische Kopplung. \\ \hline
+      B & Die a-Kurve zeigt kritische, die b-Kurve zeigt überkritische Kopplung. \\ \hline
+      C & Die c-Kurve zeigt kritische, die b-Kurve zeigt überkritische Kopplung. \\ \hline
+      D & Die d-Kurve zeigt kritische, die c-Kurve zeigt überkritische Kopplung. \\ \hline
+    \end{tabular}
+    \column{.3\textwidth}
+      \includegraphics[width=\textwidth,height=.95\textheight,keepaspectratio]{a04/td230.png}
+  \end{columns}
 \end{frame}
+
 
 \renewcommand{\refname}{Referenzen}
 

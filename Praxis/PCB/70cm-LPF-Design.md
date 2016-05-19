@@ -20,6 +20,11 @@
 
 # 2. "Schematic"-Verdrahtung
 
+* Generic female header
+    * flip horizontal
+    * GPIO = Pin 16
+    * GND = Pin 17
+
 # 3. "PCB" View
 
 * PCB ändern auf One Layer & Fäche ca. 30x30mm
