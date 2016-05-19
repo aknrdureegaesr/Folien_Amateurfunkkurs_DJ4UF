@@ -99,24 +99,24 @@ die zu layoutende Schaltung für den 70cm-Tiefpassfilter (siehe Abbildung
 
 \subsubsection{Schematic View}
 
-Bauteile aus den \emph{Core Parts} hinzufügen:
+Bauteile aus den \emph{Core Parts} hinzufügen (fettgedruckte Bauteileigenschaften anpassen!):
 
 \begin{itemize}
     \item  Basic
     \begin{itemize}
-        \item Resistor $680 \Omega$ (THT)
-        \item Inductor $22 nH$ (SMD 1206)
+        \item Resistor $220 \Omega$ (THT)
+        \item Inductor $22 nH$ (\textbf{SMD 1206})
         \item Ceramic Capacitor $1 nF$ (THT)
         \item Ceramic Capacitor $22 pF$ (THT)
     \end{itemize}
     \item  Input
     \begin{itemize}
-        \item Variable Capacitor $2.1-10 pF$ (THT, $3.81mm$ pin spacing)
+        \item Variable Capacitor $2.1-10 pF$ (THT, \textbf{3.81mm pin spacing})
         \item Antenna (Wire soldering point)
     \end{itemize}
     \item Connection
     \begin{itemize}
-        \item Generic female header (THT, 2x10, flip horizontal)
+        \item Generic female header (THT, \textbf{2x10}, \textbf{flip horizontal})
     \end{itemize}
     \item Schematic View
     \begin{itemize}
@@ -124,7 +124,7 @@ Bauteile aus den \emph{Core Parts} hinzufügen:
     \end{itemize}
 \end{itemize}
 
-Nun können die Bauteile entsprechend des Schaltplanes verdrahtet werden.
+Nun können die Bauteile entsprechend des Schaltplanes "`verdrahtet"' werden.
 \textbf{Hinweis}: Die Pin-Zählung des \emph{Generic female header} stimmt nicht
 mit der des Raspberry Pi überein! Auf der Fritzing-Buchsenleiste gilt die
 folgende Belegung:
@@ -137,11 +137,12 @@ folgende Belegung:
 \subsubsection{PCB View}
 
 \begin{itemize}
-    \item PCB ändern auf One Layer \& Fäche ca. $30x30mm$
+    \item PCB ändern auf \textbf{One Layer} \& Fäche ca. $30x30mm$
     \item Bauteile anordnen (THT-Bauteile auf Vorderseite, SMD auf Unterseite)
-    \item Leitungen ziehen
-    \item optional: Copper Fill Blocker \& Silkscreen Text
-    \item Rechtsklick auf einen Ground Pin: "`Set Ground Fill Seed"'
+    \item Leitungen ziehen (es sollten nur die orangen Leitungen des unteren Layers zu sehen sein)
+    \item Silkscreen Text mit dem Gruppennamen auf eine freie Fläche \\
+          optional: Copper Fill Blocker \& Copper Text
+    \item Rechtsklick auf einen Bauteile-Pin, der an Ground angeschlossen ist: "`Set Ground Fill Seed"'
     \item Menü $\rightarrow$ Routing $\rightarrow$ Ground Fill
 \end{itemize}
 
