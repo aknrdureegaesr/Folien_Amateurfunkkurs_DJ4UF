@@ -1,11 +1,13 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>
+% Autoren:
+% Felix Baum DB4UM <baum@campus.tu-berlin.de>
+% Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik A05: \\
            Die Diode und ihre Anwendungen \\[2em]}
-\date{Stand 4.5.2015}
+\date{Stand 18.05.2016}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -18,47 +20,64 @@
 			\item Was ist ein Halbleiter? (Erinnern aus alter Technik)
 			\item Wann leitet eine Siliziumdiode?
 			\item Wann leitet eine Germaniumdiode?
-			\item Was bedeutet p-Dotiert?
+			\item Was bedeutet p-dotiert?
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \frametitle{Leitet die Siliziumdiode?}
     \begin{center}
-        \includegraphics[width=1\textwidth]{a05/Leit_Diode.png}
+        \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a05/Leit_Diode.png}
 	\end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Diode RLZ}
+    \frametitle{Diode Raumladungszone}
     \begin{center}
-        \includegraphics[width=1\textwidth]{a05/diode_with_electrical_symbol.png}
+        \includegraphics[width=1\textwidth,height=.7\textheight,keepaspectratio]{a05/diode_with_electrical_symbol.png}
         \tiny \hyperlink{refs}{\cite{wm}} \\[3em]
-     \large Wie, Wo und Warum bildet sich eine Raumladungszone in der pn-Diode aus?
+     \large Wie, wo und warum bildet sich eine Raumladungszone (RLZ), auch Verarmungszone genannt, in der pn-Diode aus?
      \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Leitet die Siliziumdiode?}
     \begin{center}
-        \includegraphics[width=1\textwidth]{a05/Pn_Junction_Diffusion_and_Drift.pdf}\\
+        \includegraphics[width=1\textwidth,height=.65\textheight,keepaspectratio]{a05/Pn_Junction_Diffusion_and_Drift.pdf}\\
      \emph{Durch Ausgleichsbewegungen (Diffusionsstrom) zwischen dem p- und dem n-Gebiet wird die RLZ gebildet.\\
      		Dort gibt es keine frei beweglichen Ladungsträger mehr.}\
      \end{center}
 \end{frame}
-  
+
+\begin{frame}
+  \frametitle{Diodenkennlinien}
+  \begin{columns}[c]
+    \column[c]{.5\textwidth}
+      \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a05/tc511.png}\\
+      {\tiny Prüfungsfrage TC511}
+    \column{.45\textwidth}
+    Welcher Diodentyp hat welche Kennlinie?
+    \begin{description}
+      \item[1 $\rightarrow$] \only<2>{Schottkydiode}
+      \item[2 $\rightarrow$] \only<2>{Germaniumdiode}
+      \item[3 $\rightarrow$] \only<2>{Siliziumdiode}
+    \end{description}
+  \end{columns}
+\end{frame}
+
 \section*{Verschiedene Spezialdioden}
 
+\subsection*{Schottky-Diode}
 \begin{frame}
     \frametitle{Schottky-Diode}
     \begin{columns}[c]
-        \column[c]{5cm}
+        \column[c]{.5\textwidth}
         \begin{center}
-            \includegraphics[width=1\textwidth]{a05/Diode-Schottky-EN_A-K.png}\\
-            \includegraphics[width=0.8\textwidth]{a05/AusfuerungsformenSchottkyDiode.png}
+            \includegraphics[width=1\textwidth,height=.3\textheight,keepaspectratio]{a05/Diode-Schottky-EN_A-K.png}\\
+            \includegraphics[width=0.8\textwidth,height=.6\textheight,keepaspectratio]{a05/AusfuerungsformenSchottkyDiode.png}
             \tiny \hyperlink{refs}{\cite{wm}}
         \end{center}
-        \column{5cm}
+        \column{.45\textwidth}
     \begin{itemize}
 			\item Sehr gut geeignet für HF-Schaltungen
 			\item Raumladungszone baut sich schneller auf und ab
@@ -68,32 +87,34 @@
     \end{columns}
 \end{frame}
 
+\subsection*{Kapazitätsdiode}
 \begin{frame}
     \frametitle{Kapazitätsdiode}
         \begin{columns}[c]
-        \column[c]{5cm}
+        \column[c]{.5\textwidth}
         \begin{center}
-            \includegraphics[width=1\textwidth]{a05/Varicap_symbol.png}\\
-            \includegraphics[width=0.73\textwidth]{a05/Varactor_function.png}
+            \includegraphics[width=1\textwidth,height=.3\textheight,keepaspectratio]{a05/Varicap_symbol.png}\\
+            \includegraphics[width=0.73\textwidth,height=.55\textheight,keepaspectratio]{a05/Varactor_function.png}
             \tiny \hyperlink{refs}{\cite{wm}}
         \end{center}
-        \column{5cm}
+        \column{.45\textwidth}
     \begin{itemize}
-			\item auch Varicap, Varaktor oder Abstimmdiode
+			\item auch \emph{Varicap}, \emph{Varaktor} oder \emph{Abstimmdiode}
 			\item Kapazität sinkt mit steigender Spannung
 			\item in fast allen VCOs verbaut
     \end{itemize}
     \end{columns}
 \end{frame}
 
+\subsection*{Z-Diode}
 \begin{frame}
     \frametitle{Z-Diode}
 	\begin{columns}[c]
-        \column[c]{5cm}
+        \column[c]{.5\textwidth}
         \begin{center}
-        \includegraphics[width=.8\textwidth]{a05/z-diode.png}
+        \includegraphics[width=.8\textwidth,height=.3\textheight,keepaspectratio]{a05/z-diode.png}
         \end{center}
-        \column{5cm}
+        \column{.45\textwidth}
     \begin{itemize}
 			\item Meist zur Spannungsstabilisierung
 			\item Einbau in Sperrichtung
@@ -105,30 +126,22 @@
 \begin{frame}
     \frametitle{Z-Diode}
     \begin{center}
-        \includegraphics[width=.7\textwidth]{a05/Kennlinie_Z-Diode.png}
+        \includegraphics[width=.7\textwidth,height=.75\textheight,keepaspectratio]{a05/Kennlinie_Z-Diode.png}
         \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Kennlinie_Z-Diode.svg}}
 	\end{center}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Prüfungsfrage TC517}
-    \begin{center}
-            \includegraphics[width=1\textwidth]{a05/TC517.png}\\
-            \tiny \hyperlink{refs}{\cite{bna}} \\[1em] \large
-	Der Strom durch die Z-Diode soll $25 mA$ betragen und der Laststrom ist $20 mA$.\\ Wie groß muss der Vorwiderstand gewählt werden?
-        \end{center}
-\end{frame}
-
+\subsection*{Fotodiode}
 \begin{frame}
     \frametitle{Fotodiode}
     \begin{columns}[c]
-        \column[c]{5cm}
+        \column[c]{.5\textwidth}
         \begin{center}
-            \includegraphics[width=1\textwidth]{a05/Symbol_Photodiode.png}\\
-            \includegraphics[width=0.8\textwidth]{a05/Fotodio.jpg}
+            \includegraphics[width=1\textwidth,height=.3\textheight,keepaspectratio]{a05/Symbol_Photodiode.png}\\
+            \includegraphics[width=0.8\textwidth,height=.55\textheight,keepaspectratio]{a05/Fotodio.jpg}
             \tiny \hyperlink{refs}{\cite{wm}}
         \end{center}
-        \column{5cm}
+        \column{.45\textwidth}
     \begin{itemize}
 			\item Ändert Widerstand abhängig von Lichteinfall 
 			\item Wird z.B. als Helligkeitssensor verwendet
@@ -136,10 +149,11 @@
     \end{columns}
 \end{frame}
 
+\subsection*{Solarzelle}
 \begin{frame}
     \frametitle{Solarzelle}
         \begin{center}
-            \includegraphics[width=1\textwidth]{a05/Solarzelle_Funktionsprinzip2.png}\\
+            \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a05/Solarzelle_Funktionsprinzip2.png}\\
             \tiny \hyperlink{refs}{\cite{wm}}
         \end{center}
 \end{frame}
@@ -147,41 +161,43 @@
 \begin{frame}
     \frametitle{Kennlinie Solar + Fotodiode}
         \begin{center}
-            \includegraphics[width=1\textwidth]{a05/Kennlinie_Photodiode_1.png}\\
+            \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a05/Kennlinie_Photodiode_1.png}\\
             \tiny \hyperlink{refs}{\cite{wm}}
         \end{center}
 \end{frame}
 
+\subsection*{LED}
 \begin{frame}
     \frametitle{Leuchtdiode (LED)}
     \begin{columns}[c]
-        \column[c]{5cm}
+        \column[c]{.5\textwidth}
         \begin{center}
-            \includegraphics[width=1\textwidth]{a05/Symbol_LED.png}\\
-            \includegraphics[width=0.8\textwidth]{a05/Verschiedene_LEDs.jpg}
+            \includegraphics[width=1\textwidth,height=.3\textheight,keepaspectratio]{a05/Symbol_LED.png}\\
+            \includegraphics[width=0.8\textwidth,height=.55\textheight,keepaspectratio]{a05/Verschiedene_LEDs.jpg}
             \tiny \hyperlink{refs}{\cite{wm}}
         \end{center}
-        \column{5cm}
+        \column{.45\textwidth}
     \begin{itemize}
-			\item Leuchtet wenn in Durchlassrichtung betrieben
-			\item Betriebsspannung je nach LED-Farbe von etwa $1.5V$ - $3.2V$
+			\item Leuchtet, wenn in Durchlassrichtung betrieben
+			\item Betriebsspannung je nach LED-Farbe von etwa $1.5V$ bis $3.2V$
     \end{itemize}
     \end{columns}
 \end{frame}
 
+\subsection*{Optokoppler}
 \begin{frame}
     \frametitle{Optokoppler}
     \begin{columns}[c]
-        \column[c]{5cm}
+        \column[c]{.5\textwidth}
         \begin{center}
-            \includegraphics[width=1\textwidth]{a05/Optokoppler_Aus.png}\\
-            \includegraphics[width=1\textwidth]{a05/Optokoppler_An.png}
+            \includegraphics[width=1\textwidth,height=.4\textheight,keepaspectratio]{a05/Optokoppler_Aus.png}\\
+            \includegraphics[width=1\textwidth,height=.4\textheight,keepaspectratio]{a05/Optokoppler_An.png}
             \tiny \hyperlink{refs}{\cite{wm}}
         \end{center}
-        \column{5cm}
+        \column{.45\textwidth}
     \begin{itemize}
 			\item LED und Photodiode in einem Bauelement
-			\item Galvanische Trennung von 2 Schaltkreisen
+			\item Galvanische Trennung von zwei Schaltkreisen
 			\item Probleme bei Hochfrequenzschaltungen
     \end{itemize}
     \end{columns}
@@ -189,34 +205,38 @@
 
 \section*{Anwendungen der Diode}
 
+\subsection*{Spannungs\-begrenzung}
 \begin{frame}
     \frametitle{Spannungsbegrenzung}
     \begin{columns}[c]
-        \column[c]{5cm}
+        \column[c]{.5\textwidth}
         \begin{center}
             \includegraphics[width=1\textwidth]{a05/spannungsBegrenz.png}\\
             \tiny \hyperlink{refs}{\cite{wm}}
         \end{center}
-        \column{5cm}
+        \column{.45\textwidth}
     \begin{itemize}
-			\item Schneidet Signale überhalb und unterhalb der Durchlassspannung ab
+			\item Schneidet Signale oberhalb und unterhalb der Durchlassspannung ab
 			\item Gut als Überspannungsschutz
     \end{itemize}
     \end{columns}
 \end{frame}
 
 
+\subsection*{Entkopplung}
 \begin{frame}
     \frametitle{Entkopplung - Prüfungsfrage TC527}
     \begin{columns}[c]
-        \column[c]{5cm}
+        \column[c]{.5\textwidth}
         \begin{center}
             \includegraphics[width=1\textwidth]{a05/TC527.png}\\
             \tiny \hyperlink{refs}{\cite{bna}}
     \end{center}
-    \column{5cm}
-	Der Sonnenkollektor liefert $U_1 = 14.9V$. \\Der Akkumulator hat $U_2 = 13.9V$. \\Das Netzteil ist auf $U_3 = 13.5V$ eingestellt. \\
-	Welche Dioden Leiten und welche nicht
+    \column{.45\textwidth}
+	Der Sonnenkollektor liefert $U_1 = 14.9V$. \\[0.2em]
+	Der Akkumulator hat $U_2 = 13.9V$. \\[0.2em]
+	Das Netzteil ist auf $U_3 = 13.5V$ eingestellt. \\[1.2em]
+	Welche Dioden leiten und welche nicht?
     \end{columns}
 \end{frame}
 
@@ -225,15 +245,15 @@
 \begin{frame}
     \frametitle{Gleichrichter}
     \begin{columns}[c]
-        \column[c]{5cm}
+        \column[c]{.5\textwidth}
         \begin{center}
-            \includegraphics[width=1\textwidth]{a05/Brueckengleichrichter_Bilder.jpg}\\
+            \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a05/Brueckengleichrichter_Bilder.jpg}\\
             \tiny \hyperlink{refs}{\cite{wm}}
         \end{center}
-        \column{5cm}
+        \column{.45\textwidth}
     \begin{itemize}
 			\item Gleichrichter machen aus Wechselspannung Gleichspannung
-			\item Mithilfe von Dioden wird die obere und untere Halbwelle getrennt
+			\item Mit Hilfe von Dioden wird die obere und untere Halbwelle getrennt
 			\item Ohne Dioden sehr schwierig
     \end{itemize}
     \end{columns}
@@ -242,12 +262,12 @@
 \begin{frame}
     \frametitle{Einweggleichrichtung}
     \begin{center}
-    	\includegraphics[width=1\textwidth]{a05/Halfwave_rectifier.png}\\
+        \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a05/Halfwave_rectifier.png}\\
         \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
         \begin{itemize}
 			\item Nur obere Halbwelle, also sehr hohe Verluste
 			\item Einfach aufzubauen
-			\item Wäre mit Kondensator ein AM-Hüllkurvendemodulator
+			\item Wäre mit Kondensator ein AM-Hüllkurvendemodulator (siehe Siebung)
     	\end{itemize}
  	\end{center}
 \end{frame}
@@ -255,13 +275,13 @@
 \begin{frame}
     \frametitle{Vollweggleichrichtung}
     \begin{center}
-    	\includegraphics[width=1\textwidth]{a05/Fullwave_rectifier.png}\\
+        \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a05/Fullwave_rectifier.png}\\
         \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
         \begin{itemize}
 			\item Obere und untere Halbwelle, also deutlich weniger Verluste
 			\item Schwieriger aufzubauen
-			\item Verdoppelt Frequenz
-			\item \huge Benötigt Transformator mit Mittelpunktanzapfung
+			\item Verdoppelt die Abtastrate
+			\item Benötigt Transformator mit Mittelpunktanzapfung
     	\end{itemize}
  	\end{center}
 \end{frame}
@@ -269,13 +289,13 @@
 \begin{frame}
     \frametitle{Brückengleichrichtung}
     \begin{center}
-    	\includegraphics[width=1\textwidth]{a05/Gratz_rectifier.png}\\
+        \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a05/Gratz_rectifier.png}\\
         \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
         \begin{itemize}
 			\item Obere und untere Halbwelle, also deutlich weniger Verluste
 			\item Schwieriger aufzubauen
 			\item Verdoppelt Frequenz
-			\item Benötigt 4 Dioden
+			\item Benötigt vier Dioden
     	\end{itemize}
  	\end{center}
 \end{frame}
@@ -283,12 +303,12 @@
 \begin{frame}
     \frametitle{Siebung}
     \begin{columns}[c]
-        \column[c]{5cm}
+        \column[c]{.5\textwidth}
         \begin{center}
             \includegraphics[width=1\textwidth]{a05/Smoothed_ripple.png}\\
             \tiny \hyperlink{refs}{\cite{wm}}
         \end{center}
-        \column{5cm}
+        \column{.45\textwidth}
     \begin{itemize}
 			\item Glättung durch Tiefpass hinter dem Gleichrichter
 			\item Durch verdoppelte Frequenz noch einfacher umzusetzen
@@ -299,9 +319,19 @@
 \end{frame}
 
 \begin{frame}
+  \begin{tabular}{l|p{.8\textwidth}}\hline
+    \textbf{TF317} & 
+    \begin{tabular}{c}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a05/tf317.png}
+    \end{tabular}
+      \textbf{Bei der Schaltung handelt es sich um einen... ?}
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
     \frametitle{Gleichspannungsrückgewinnung}
     \begin{center}
-    	\includegraphics[width=1\textwidth]{a05/Positive_Voltage_Clamping_Circuit.png}\\
+        \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a05/Positive_Voltage_Clamping_Circuit.png}\\
         \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
         \begin{itemize}
 			\item Wird benutzt um das Signal anzuheben
@@ -340,7 +370,7 @@
                     \url{}
     \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
                     \url{https://de.wikipedia.org/wiki/Gleichrichter}
-	\bibitem{bna}   Fragenkatalog Bundesnetzargentur Technik Klasse A:                   
+	\bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:                   
                     \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
     \bibitem{fi}    Freie Inhalte (DK0TU):
                     \url{http://www.dk0tu.de/Projekte/Freie_Inhalte/}
