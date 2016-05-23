@@ -1,12 +1,12 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Martin Deutschmann <martin.deutschmann@campus.tu-berlin.de>
-
+% Korrekturen: Lars Weiler <dc4lw@darc.de>, Sebastian Lange <dl7bst@dk0tu.de>
 
 \input{texdata/preamble}
 \subtitle{Technik A 16: \\
           Messtechnik \\[2em]}
-\date{Stand \today}
+\date{Stand 23.05.2016}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -15,349 +15,371 @@
 
 \begin{frame}
     \frametitle{Messgeräte}
-    \begin{itemize}
-		\item Was wisst ihr denn noch aus dem Kapitel E 17?
-    \end{itemize}
+    {\Large Was wisst ihr noch aus Kapitel E 17?}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Stehwellenmessgerät}
-    \begin{center}
-        \includegraphics[width=1\textwidth]{a16/RS_SWR.jpg}\\
-        Abb.1: SWR-Meter zum messen des Stehwellenverhältnisses \cite{wmen}
-	\end{center}
+  \frametitle{Stehwellenmessgerät}
+  \begin{center}
+    \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a16/RS_SWR.jpg}\\
+    {\tiny SWR-Meter zum messen des Stehwellenverhältnisses \hyperlink{refs}{\cite{wmen}}}
+  \end{center}
 \end{frame}
 
 \section*{Analog}
 
 \begin{frame}
-    \frametitle{Drehspulenmessgerät (Antik)}
-	\begin{minipage}{0.4\textwidth}
-	    \includegraphics[width=.95\textwidth]{a16/drehspulenMess.png}
-	\end{minipage}
-		\hspace{0.5cm}
-	\begin{minipage}{0.4\textwidth}	
-	\begin{itemize} \tiny
-		\item \tiny 1) Weicheisenkern der Drehspule
-		\item 2) Permanentmagnet
-		\item 3) Polschuh zur Bündelung des Magnetfeldes
-		\item 4) Skala
-		\item 5) Hilfsspiegel zur genauen Ablesung
-		\item 6) Rückstellfeder
-		\item 7) Drehspule
-		\item 8) Drehspule in Nulllage
-		\item 9) Drehspule bei Maximalausschlag
-		\item 10) Joch der Spule
-		\item 11) Stellschraube für Nullpunktseinstellung
-		\item 12) Zeiger
-		\item 13) Zeiger in Nulllage
-		\item 14) Zeiger bei Maximalausschlag
-	\end{itemize}
-	\end{minipage}\\
-	\begin{small}	
-		Abb.2: Drehspulmesswerk mit Beschriftung \cite{wmen}
-	\end{small}
+  \frametitle{Drehspulenmessgerät (Antik)}
+  \begin{columns}
+    \column{.3\textwidth}
+    \includegraphics[width=.95\textwidth,height=.8\textheight,keepaspectratio]{a16/drehspulenMess.png}\\
+    {\tiny Prinzip Drehspulenmessgerät \href{refs}{\cite{wmen}}}
+    \column{.65\textwidth}
+    \begin{footnotesize}
+      \begin{enumerate}
+        \item Weicheisenkern der Drehspule
+        \item Permanentmagnet
+        \item Polschuh zur Bündelung des Magnetfeldes
+        \item Skala
+        \item Hilfsspiegel zur genauen Ablesung
+        \item Rückstellfeder
+        \item Drehspule
+        \item Drehspule in Nulllage
+        \item Drehspule bei Maximalausschlag
+        \item Joch der Spule
+        \item Stellschraube für Nullpunkteinstellung
+        \item Zeiger
+        \item Zeiger in Nulllage
+        \item Zeiger bei Maximalausschlag
+      \end{enumerate}
+    \end{footnotesize}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Funktionsprinzip analoger Messgeräte}
-	\begin{itemize}
-		\item	Analoge Messgeräte funktionieren nach dem elektrodynamischen, oder dem elektrostatischen Prinzip
-		\item	Dabei erzeugt die zu messende Größe ein mechanisches Drehmoment zwischen dem feststehendem Messwerk und dem beweglichen Organ
-		\item	Die Empfindlichkeit wird in $k \Omega /V$ angegeben
-		\item	Für Gleichstrom sollte die Empfindlichkeit bei mindestens $20 k \Omega / V$ liegen
-	\end{itemize}
+  \frametitle{Funktionsprinzip analoger Messgeräte}
+  \begin{itemize}
+    \item Analoge Messgeräte funktionieren nach dem elektrodynamischen, oder dem elektrostatischen Prinzip
+    \item Dabei erzeugt die zu messende Größe ein mechanisches Drehmoment zwischen dem feststehendem Messwerk und dem beweglichen Organ
+    \item Die Empfindlichkeit wird in $k \Omega /V$ angegeben
+    \item Für Gleichstrom sollte die Empfindlichkeit bei mindestens $20 k \Omega / V$ liegen
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Symbole auf analogen Messgeräten}
-	\includegraphics[scale=0.13]{a16/Symbole.png}
+  %\frametitle{Symbole auf analogen Messgeräten}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{a16/Symbole.png}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Geräteklassen}
-	\begin{center}
-	\begin{tabular}{|c|c|}
-		\hline
-		Feinmessgeräte & Betriebsmessgeräte\\ \hline
-		Klasse 0.1 & Klasse 1.0 \\ \hline
-		Klasse 0.2 & Klasse 1.5 \\ \hline
-		Klasse 0.5 & Klasse 2.5 \\ \hline
-		" " & Klasse 5.0 \\ \hline
-	\end{tabular}
-	\end{center}
-	\begin{itemize}
-		\item	Klasse gibt den prozentualen Fehler bezogen auf den Skalenendwert an
-	\end{itemize}
+  \frametitle{Messgeräteklassen}
+  Klasse gibt den prozentualen Fehler bezogen auf den Skalenendwert an
+  \begin{center}
+    \begin{tabular}{c|c}
+      \textbf{Feinmessgeräte} & \textbf{Betriebsmessgeräte}\\ \hline
+      Klasse 0,1 & Klasse 1,0 \\
+      Klasse 0,2 & Klasse 1,5 \\
+      Klasse 0,5 & Klasse 2,5 \\
+      " " & Klasse 5,0 \\
+    \end{tabular}
+  \end{center}
+
+  \pause
+
+  \begin{exampleblock}{\textbf{TJ805} Mit einem Voltmeter der Klasse 1.5, das einen Skalenendwert von 300 Volt hat, messen Sie an einer Spannungsquelle 230 Volt. In welchem Bereich liegt der wahre Wert?}
+    \only<2>{\vspace{1em}}
+    \only<3>{Er liegt zwischen 225,5 und 234,5 Volt.}
+  \end{exampleblock}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Messbereichserweiterung}
-	\includegraphics[scale=2]{a16/Messbereichserweiterung-Spannung.png}
-	\hspace{3mm}
-	\includegraphics[scale=2]{a16/Messbereichserweiterung-Strom.png}\\
-	Abb.3: Möglichkeiten zum erweitern des Messbereichs	
+  \frametitle{Messbereichserweiterung}
+  \begin{columns}
+    \column{.47\textwidth}
+    \begin{center}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a16/Messbereichserweiterung-Spannung.png}\\
+      Spannungsmessgerät
+    \end{center}
+    \only<1>{\vspace{4em}}
+    \only<2->{Zu große Spannung fällt am Vorwiderstand ab $\rightarrow$ Spannungsteiler \\
+              (Messung höherer Spannungen möglich -- abhängig von $\frac{R_M}{R_{gesamt}}$)}
+    \column{.47\textwidth}
+    \begin{center}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a16/Messbereichserweiterung-Strom.png}\\
+      Strommessgerät
+    \end{center}
+    \only<1-2>{\vspace{4em}}
+    \only<3>{Zu großer Strom wird parallel durch einen Widerstand geleitet\vspace{2em}}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Messbereichserweiterung im Detail}
-	\begin{itemize}
-		\item	Sollte der Messbereich nicht ausreichen, so kann man diesen auch erweitern
-		\item	Will man den Spannungsbereich erweitern, so baut man einen Vorwiderstand ein
-		\item	Der Vorwiderstand und das Messgerät bilden einen Spannungsteiler
-		\item	Je nach Verhältnis aus $\frac{R_M}{R_{gesamt}}$ kann man dann höhere Spannungen messen
-		\item	Um den Strombereich zu erweitern, schaltet man einen Widerstand parallel zum Messgerät
-		\item	Dieser sorgt dafür, das weniger Strom durch das Messgerät fließt 
-	\end{itemize}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Messgleichrichter}
-	\begin{center}
-	\includegraphics[scale=1.2]{a16/Messgleichrichter1.png}
-	\hspace{3mm}
-	\includegraphics[scale=1.3]{a16/Messgleichrichter2.png}\\
-	Abb.4: Mögliche Schaltungen für Messgleichrichter	
-	\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Messgleichrichter}
-	\begin{itemize}
-		\item	Drehspulmesswerke eignen sich nur zum messen von Gleichstrom
-		\item	Um auch Wechselspannungen messen zu können, nutzt man Messgleichrichter
-		\item	Diese funktionieren aber nur für sinusförmige Signale
-		\item	Für andere Signalformen gibt es das Dreheisenmesswerk
-		\item	Diese brauchen keinen Gleichrichter benötigen aber recht viel Leistung und sind nicht als Feinmessgeräte tauglich
-		\item	Will man im GHz-Bereich messen benötigt man einen speziellen Thermoumformer
-	\end{itemize}		
+  \frametitle{Messgleichrichter}
+  \begin{columns}
+    \column{.35\textwidth}
+    \begin{center}
+      \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{a16/Messgleichrichter1.png}\\
+      \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{a16/Messgleichrichter2.png}\\
+      {\tiny Mögliche Schaltungen für Messgleichrichter}
+    \end{center}
+    \column{.65\textwidth}
+    \begin{itemize}
+      \item Drehspulmesswerke eignen sich nur zum messen von Gleichstrom
+      \item Um auch Wechselspannungen messen zu können, nutzt man Messgleichrichter
+      \item Diese funktionieren aber nur für sinusförmige Signale
+      \item Für andere Signalformen gibt es das Dreheisenmesswerk
+      \item Diese brauchen keinen Gleichrichter benötigen aber recht viel Leistung und sind nicht als Feinmessgeräte tauglich
+      \item Will man im GHz-Bereich messen benötigt man einen speziellen Thermoumformer
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 \section*{Digital}
 
 \begin{frame}
-    \frametitle{Digitales Multimeter}
-    \begin{minipage}{0.5\textwidth}
+  \frametitle{Digitales Multimeter}
+  \begin{columns}
+    \column{.3\textwidth}
     \begin{center}
-        \includegraphics[width=.35\textwidth]{a16/digitalmultimeter.jpg}\\
-        Abb.5: Digitales Multimeter von Voltcraft \cite{wmde}
-	\end{center}
-	\end{minipage}
-	\begin{minipage}{0.4\textwidth}
-		\begin{itemize}
-			\item	Verringern Chance auf Ablesefehler
-			\item	Brauchen Strom zum messen
-			\item	Auflösung ist die kleinste Einteilung der Anzeige
-		\end{itemize}			
-	\end{minipage}
-	\vspace{3mm}
-	\begin{itemize}
-		\item	Neben der Auflösung ist auch die Genauigkeitsklasse zu beachten
-		\item	Können unter anderem Strom, Spannung, Induktivitäten, Kapazitäten, Verstärkung von Bipolartransistoren und Frequenzen messen
-	\end{itemize}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Was wo anschließen?}
-	\begin{minipage}{0.4\textwidth}
-        \includegraphics[width=1\textwidth]{a16/digitalmultimeterMess.jpg}
-	\end{minipage}
-	\begin{minipage}{0.4\textwidth}	
-	\begin{itemize}
-		\item Was kann alles gemessen werden?
-		\item Wo anschließen zum Strom messen?
-		\item Wo anschließen zum Spannung messen?
-		\item Welcher Messbereich?
-	\end{itemize}
-	\end{minipage}
-	\vspace{3mm}
-	Abb.6: Wählrad und Anschlüsse eines Multimeters \cite{wmde}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Messfehler}
-    \begin{center}
-    		\begin{itemize}
-				\item Nullpunktsabweichung
-				\item Empfindlichkeitsabweichung
-				\item Linearitätsabweichung
-    		\end{itemize}
-        \includegraphics[width=1\textwidth]{a16/werMisstMisst.png}\\
-       	Abb.7: Mögliche Abweichungen durch Messfehler \cite{wmde}
-	\end{center}
-\end{frame}
-
-\section*{Oszilloscope}
-
-\begin{frame}
-    \frametitle{Oszilloscope}
-    \begin{center}
-        \includegraphics[width=1\textwidth]{a16/osziModern.jpg}\\
-        Abb.8: Modernes Speicheroszilloskop \cite{wmde}
-	\end{center}
-\end{frame}
-
-\begin{frame}
-	\begin{itemize}
-		\item	Können zeitliche Verläufe von Spannungen darstellen
-		\item	Anzeige mit Elektronenstrahlröhre(veraltet) oder LCD(moderner)
-		\item	Kann stehende Bilder von Wellen darstellen, indem die Welle immer an einem bestimmten Amplitudenwert getriggert(gestartet) wird
-		\item	Benötigt dafür eine Triggereinrichtung
-	\end{itemize}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Oszilloscope - Ablesen}
-    \begin{center}
-        $100mV / Div$ und $0.1ms / Div$
-        \includegraphics[width=.8\textwidth]{a16/OsziTon.png}\\
-       	Abb.9: Signal auf einem Oszilloskop \cite{wmde}
-	\end{center}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Verschiedene Signalformen}
-	\begin{center}
-        \includegraphics[width=0.95\textwidth]{a16/Signalformen.png}\\
-		\begin{small}
-			Abb.10: Verschiedene elementare Signalformen \cite{wmen}
-		\end{small}		       
-	\end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Spannungen}
-    \begin{center}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a16/digitalmultimeter.jpg}\\
+      {\tiny Digitales Multimeter \href{refs}{\cite{wmde}}}
+    \end{center}
+    \column{.65\textwidth}
     \begin{itemize}
-			\item PEP - Peak to Peak
-			\item RMS - Effektivwert
-			\item $u_{Spitze} = \sqrt{2} \cdot U_{eff}$ \\
-			\item Aufgabe: Berechnet Spitzen-Spitzen Spannung vom Netzstrom 
+      \item Verringern Chance auf Ablesefehler
+      \item Brauchen Strom zum messen
+      \item Auflösung ist die kleinste Einteilung der Anzeige
+      \item Neben der Auflösung ist auch die Genauigkeitsklasse zu beachten
+      \item Können unter anderem Strom, Spannung, Induktivitäten, Kapazitäten, Verstärkung von Bipolartransistoren und Frequenzen messen
     \end{itemize}
-	\end{center}
+  \end{columns}
 \end{frame}
 
-\section*{Absorptionsfrequenzmesser}
 \begin{frame}
-    \frametitle{Absorptionsfrequenzmesser}
+  \frametitle{Was wo anschließen?}
+  \begin{columns}
+    \column{.32\textwidth}
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{a16/Absorptionsfrequenzmesser.png}\\
-        Abb.11: Schaltung eines Absorptionsfrequenzmessers
-	\end{center}
-	\begin{itemize}
-		\item	Besteht aus einem passiven Schwingkreis hoher Güte, einem AM-Demotulator und einer Antenne
-		\item	Damit lassen sich passiv Senderfrequenzen und Oberwellen feststellen
-		\item	Anzeigegenauigkeit liegt bei etwa 5\%
-	\end{itemize}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a16/digitalmultimeterMess.jpg}\\
+      {\tiny Wählrad und Anschlüsse eines Multimeters \href{refs}{\cite{wmde}}}
+    \end{center}
+    \column{.65\textwidth}
+    \begin{itemize}
+      \item Was kann alles gemessen werden?
+      \item Wo anschließen zum Strom messen?
+      \item Wo anschließen zum Spannung messen?
+      \item Welcher Messbereich?
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
-\section*{Feldstärkeanzeiger}
 \begin{frame}
-    \frametitle{Feldstärkeanzeiger}
+  \frametitle{Messfehler}
+  \begin{center}
+    \begin{tabular}{ccc}
+      Nullpunktabweichung & Empfindlichkeitsabweichung & Linearitätsabweichung
+    \end{tabular}
+    \includegraphics[width=1\textwidth,height=.6\textheight]{a16/werMisstMisst.png}\\
+    {\tiny Mögliche Abweichungen durch Messsfehler \href{refs}{\cite{wmde}}}
+  \end{center}
+\end{frame}
+
+\section*{Oszilloskop}
+
+
+\begin{frame}
+  \frametitle{Oszilloskop}
+  \begin{center}
+    \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a16/osziModern.jpg}\\
+    {\tiny Modernes Speicheroszilloskop \href{refs}{\cite{wmde}}}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Oszilloskop}
+  \begin{itemize}
+    \item Können zeitliche Verläufe von Spannungen darstellen
+    \item Anzeige mit Elektronenstrahlröhre (ein Strahl, sehr genau, direkte Spannungsumsetzung) oder LCD (moderner, Computer-Schaltung bereitet das Bild auf)
+    \item Kann stehende Bilder von Wellen darstellen, indem die Welle immer an einem bestimmten Amplitudenwert getriggert (gestartet) wird
+    \item Benötigt dafür eine Triggereinrichtung
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Oszilloskop}
+  \begin{center}
+    \includegraphics[width=.8\textwidth,height=.8\textheight,keepaspectratio]{e17/WTPCOscilloscopeBeschreiben.jpg}\\
+    {\tiny Anschlüsse und Schalter eines Oszilloskops \href{refs}{\cite{wmen}}}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Oszilloskop ablesen}
+  \begin{center}
+    $100mV / Div$ und $0,1ms / Div$\\
+    \includegraphics[width=.8\textwidth,height=.7\textheight,keepaspectratio]{a16/OsziTon.png}\\
+    {\tiny Signal auf einem Oszilloskop \href{refs}{\cite{wmde}}}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Verschiedene Signalformen}
+  \begin{center}
+    \includegraphics[width=0.95\textwidth,height=.8\textheight,keepaspectratio]{a16/Signalformen.png}\\
+    {\tiny Verschiedene elementare Signalformen \href{refs}{\cite{wmen}}}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Spannungen}
+  \begin{center}
+    \begin{itemize}
+      \item Peak-to-Peak
+      \item RMS (root mean square) -- Effektivwert
+      \item $u_{Spitze} = \sqrt{2} \cdot U_{eff}$ \\
+    \end{itemize}
+  \end{center}
+  \begin{exampleblock}{Aufgabe}
+    Berechnet die Spitze-Spitze-Spannung der in Europa üblichen Netzspannung!
+  \end{exampleblock}
+\end{frame}
+
+\section*{Absorptions"-frequenz"-messgerät}
+\begin{frame}
+  \frametitle{Absorptionsfrequenzmessgerät}
+  \begin{columns}
+    \column{.6\textwidth}
     \begin{center}
-        \includegraphics[width=0.6\textwidth]{a16/Feldstaerkeanzeiger.png}\\
-        Abb.12: Schaltung eines Feldstärkeanzeigers
-	\end{center}
-	\begin{itemize}
-		\item	Wird zum Prüfen(!!! nicht zum messen!!!) der Feldstärke genutzt
-		\item	Besteht aus einer HF-Diode, HF-Drosseln und einem Kondensator
-	\end{itemize}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a16/Absorptionsfrequenzmesser.png}\\
+      {\tiny Schaltung eines Absorptionsfrequenzmessgeräts}
+    \end{center}
+    \column{.4\textwidth}
+    \begin{itemize}
+      \item Besteht aus einer Antenne, einem passiven Schwingkreis hoher Güte und  einem AM-Demodulator
+      \item Damit lassen sich passiv Senderfrequenzen und Oberwellen feststellen
+      \item Anzeigegenauigkeit liegt bei etwa 5\%
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\section*{Feld"-stärke"-anzeiger}
+\begin{frame}
+  \frametitle{Feldstärkeanzeiger}
+  \begin{columns}
+    \column{.6\textwidth}
+    \begin{center}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a16/Feldstaerkeanzeiger.png}\\
+      {\tiny Schaltung eines Feldstärkeanzeigers}
+    \end{center}
+    \column{.4\textwidth}
+    \begin{itemize}
+      \item Wird zum Prüfen (\emph{nicht zum messen!}) der Feldstärke genutzt
+      \item Besteht aus einer HF-Diode, HF-Drosseln und einem Kondensator
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 \section*{Dipmeter}
 
 \begin{frame}
-    \frametitle{Dipmeter}
+  \frametitle{Dipmeter}
+  \begin{columns}
+    \column{.35\textwidth}
     \begin{center}
-        \includegraphics[width=0.55\textwidth]{a16/Dipmeter.jpg}\\
-        Abb.13: Dipmeter mit beiliegenden Mess-Spulen \cite{wmen}
-	\end{center}
-\end{frame}
-
-\begin{frame}
-	\begin{itemize}
-		\item	Ein Dipmeter ist prinzipiell ein Oszillator mit nach außen geführter Schwinkreisspule
-		\item	Der Schwingkreis wird durch das Messobjekt beeinflusst
-		\item	Der Rückgang der Schwingungsamplitude wird mit einer Anzeige sichtbar gemacht
-		\item	Anzeigegenauigkeit liegt bei etwa 3\%
-		\item	Kann indirekt eine Induktivität messen
-		\item	Dafür schaltet man einen Kondensator parallel zur Induktivität, ermitteln die Resonanzfrequenz und rechnet um
-		\item	Zum messen wird eine relativ lose Kopplung zwischen Dipmeter und Messobjekt benötigt
-		\item	Da sonst das Messobjekt verstimmt wird und das Messergebnis dadurch verfälscht
-	\end{itemize}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a16/Dipmeter.jpg}\\
+      {\tiny Dipmeter mit beiliegenden Mess-Spulen \href{refs}{\cite{wmen}}}
+    \end{center}
+    \column{.65\textwidth}
+    \begin{itemize}
+      \item prinzipiell ein Oszillator mit nach außen geführter Schwingkreisspule
+      \item Schwingkreis wird durch das Messobjekt beeinflusst
+      \item Rückgang der Schwingungsamplitude wird mit einer Anzeige sichtbar gemacht
+      \item Anzeigegenauigkeit liegt bei etwa 10\%
+      \item kann indirekt eine Induktivität messen $\rightarrow$ Kondensator parallel zur Induktivität schalten, Resonanzfrequenz ermitteln und umrechnen
+      \item zum Messen wird eine relativ lose Kopplung zwischen Dipmeter und Messobjekt benötigt, da sonst das Messobjekt verstimmt wird und das Messergebnis dadurch verfälscht
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 \section*{Frequenzzähler}
+
 \begin{frame}
-    \frametitle{Frequenzzähler}
+  \frametitle{Frequenzzähler}
+  \begin{columns}
+    \column{.4\textwidth}
     \begin{center}
-        \includegraphics[width=0.6\textwidth]{a16/Frequenzzaehler.jpg}\\
-        Abb.14: Frequenzzähler von ELV \cite{wmen}
-	\end{center}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a16/Frequenzzaehler.jpg}\\
+      {\tiny Frequenzzähler von ELV \href{refs}{\cite{wmen}}}
+    \end{center}
+    \column{.6\textwidth}
+    \begin{itemize}
+      \item zählt während einer eingestellten Torzeit die ankommenden Impulse
+      \item zur Erhöhung der Genauigkeit müssen mehr Impulse gezählt werden $\rightarrow$ längere Torzeit einstellen
+      \item kann keine Oberwellen messen, wenn die Grundfrequenz noch vorhanden ist
+      \item sehr genaue Messungen mit einer hohen Auflösung und einer temperaturstabilen Quarzzeitbasis möglich
+      \item zum Messen von höheren Frequenzen einen Vorteiler verwenden $\rightarrow$ meistens Faktor 10
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
+\section*{Spektrum"-analysator}
 \begin{frame}
-	\begin{itemize}
-		\item	Zählt während einer eingestellten Torzeit die ankommenden Impulse
-		\item	Um die Genauigkeit zu erhöhen müssen mehr Impulse gezählt werden, weshalb eine längere Torzeit eingestellt werden muss
-		\item	Kann keine Oberwellen messen, wenn dir Grundfrequenz noch vorhanden ist
-		\item	Sehr genaue Messungen erhält man mit einer hohen Auflösung und einer temperaturstabilen Quarzzeitbasis 
-		\item	Will man höhere Frequenzen messen, kann man einen Vorteiler nutzen
-		\item	Meist wird dafür ein Vorteiler mit Faktor 10 benutzt
-	\end{itemize}
-\end{frame}
-
-\section*{Spektrumanalysator}
-\begin{frame}
-    \frametitle{Spektrumanalysator}
+  \frametitle{Spektrumanalysator}
+  \begin{columns}
+    \column{.5\textwidth}
     \begin{center}
-        \includegraphics[width=0.6\textwidth]{a16/Spektrumanalysator.jpg}\\
-        Abb.15: Beispiel eines Spektrumanalysators \cite{wp}
-	\end{center}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a16/Spektrumanalysator.jpg}\\
+      {\tiny Beispiel eines Spektrumanalysators \href{refs}{\cite{wp}}}
+    \end{center}
+    \column{.5\textwidth}
+    \begin{itemize}
+      \item kann die Amplitude eines Signals in Abhängigkeit der Frequenz darstellen
+      \item besitzt dafür einen ``Wobbeloszillator'', der schnell seine Frequenz ändern kann
+      \item Oberwellen mit sehr breiter Wobbelbandbreite messen
+      \item Senderbandreite mit sehr schmaler Wobbelbandbreite messen
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
-	\begin{itemize}
-		\item	Kann die Amplitude eines Signals in Abhängigkeit der Frequenz darstellen
-		\item	Besitzt dafür einen "Wobbeloszillator" der schnelle seine Frequenz ändern kann
-		\item	Die Wobbelbandbreite kann zum messen von Oberwellen sehr breit eingestellt werden
-		\item	Um Senderbandbreite zu ermitteln kann die Sie sehr schmal eingestellt werden
-	\end{itemize}
+  \frametitle{Spektrumanalysator}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a16/Spektrumanalysator-Display.png}\\
+    {\tiny Display eines Spektrumanalysators zeigt Frequenzgang \href{refs}{\cite{wp}}}
+  \end{center}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Spektrumanalysator}
-    \begin{center}
-        \includegraphics[width=0.6\textwidth]{a16/Spektrumanalysator-Display.png}\\
-        Abb.16: Display eines Spektrumanalysators zeigt Frequenzgang \cite{wp}
-	\end{center}
-\end{frame}
+\renewcommand{\refname}{Referenzen}
 
-\section*{Referenzen}
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
 
-	\begin{small}
-    \begin{thebibliography}{}
-    \bibitem{a02}  Moltrecht A 17: \\
-                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a16/}
-                    
-    \bibitem{wp}    Wikipedia DE: \\
-    	\url{http://commons.wikimedia.org/wiki/File:FSL.jpg}\\
-    	\url{http://de.wikipedia.org/wiki/Datei:SpectrumAnalyzerDisplay.png}
-                    
-    \bibitem{wmde}	Wikimedia DE:\\
-   		\url{https://commons.wikimedia.org/wiki/File:Oszi_Ton.svg}\\
-   		\url{https://commons.wikimedia.org/wiki/File:Modernes_Speicheroszilloskop.jpg}\\
-   		\url{https://commons.wikimedia.org/wiki/File:AMT_Fehler.svg}\\
-   		\url{http://commons.wikimedia.org/wiki/File:Digitalmultimeter.jpg}\\
-   		
-   	\bibitem{wmen}	Wikimedia EN:\\
-   		\url{https://commons.wikimedia.org/wiki/File:Dipmeter_and_its_probe_coils.jpg}\\
-   		\url{https://commons.wikimedia.org/wiki/File:RS_SWR.jpg}\\
-   		\url{https://commons.wikimedia.org/wiki/File:Moving_coil_instrument_principle.png}\\
-   		\url{http://commons.wikimedia.org/wiki/File:Waveforms_de.svg}
-   		\url{http://commons.wikimedia.org/wiki/File:Frequency_counter.JPG}\\
-   		  		
-	\end{thebibliography}
-	\end{small}
+\begin{thebibliography}{}
+  \bibitem{a02}  Moltrecht A 17: \\
+    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a16/}
+
+  \bibitem{wp}    Wikipedia DE: \\
+    \url{http://commons.wikimedia.org/wiki/File:FSL.jpg}\\
+    \url{http://de.wikipedia.org/wiki/Datei:SpectrumAnalyzerDisplay.png}
+
+  \bibitem{wmde} Wikimedia DE:\\
+    \url{https://commons.wikimedia.org/wiki/File:Oszi_Ton.svg}\\
+    \url{https://commons.wikimedia.org/wiki/File:Modernes_Speicheroszilloskop.jpg}\\
+    \url{https://commons.wikimedia.org/wiki/File:AMT_Fehler.svg}\\
+    \url{http://commons.wikimedia.org/wiki/File:Digitalmultimeter.jpg}\\
+
+  \bibitem{wmen} Wikimedia EN:\\
+    \url{https://commons.wikimedia.org/wiki/File:Dipmeter_and_its_probe_coils.jpg}\\
+    \url{https://commons.wikimedia.org/wiki/File:RS_SWR.jpg}\\
+    \url{https://commons.wikimedia.org/wiki/File:Moving_coil_instrument_principle.png}\\
+    \url{http://commons.wikimedia.org/wiki/File:Waveforms_de.svg}
+    \url{http://commons.wikimedia.org/wiki/File:Frequency_counter.JPG}\\
+    \url{https://en.wikipedia.org/wiki/File:WTPC_Oscilloscope-1.jpg}\\
+
+\end{thebibliography}
 
 \input{texdata/postamble}
