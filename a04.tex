@@ -1,13 +1,12 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: 
-% Martin Deutschmann
-% Lars Weiler <dc4lw@darc.de>
+% Autoren: Martin Deutschmann, Lars Weiler <dc4lw@darc.de>
+% Korrekturen: Sebastian Lange <dl7bst@dk0tu.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse A 04: \\
           Schwingkreise \& Filter \\[2em]}
-\date{Stand 11.01.2016}
+\date{Stand 19.05.2016}
 \input{texdata/titlepage}
 
 %fixme Links zur bibliography einfuegen
@@ -88,6 +87,65 @@
     \end{center}
   \end{block}
 \end{frame}
+
+%% TODO alte Herleitung - vielleicht mit in die neue einarbeiten?
+% \begin{frame}
+% \frametitle{ESB eines Quartzes}
+% \begin{center}
+%     \includegraphics[scale=0.3]{a04/Quartz-ESB.png}\\
+%     Abb.9: ESB eines Quartzes \cite{wpde}
+% \end{center}
+% \begin{itemize}
+%     \item   Für den Serienschwingkreis gilt:
+% \end{itemize}
+% \begin{Large}
+%     \begin{center}
+%         $f_S = \frac{1}{2 \pi \sqrt{L C_{s}}}$
+%     \end{center}
+% \end{Large}
+% \begin{itemize}
+%     \item   Für den Parallelschwingkreis gilt:
+% \end{itemize}
+% \begin{Large}
+%     \begin{center}
+%         $f_P = \frac{1}{2 \pi \sqrt{L C_{ges}}}$
+%     \end{center}
+% \end{Large}
+% \end{frame}
+% 
+% \begin{frame}
+% \frametitle{Resonanzfrequenz}
+% \begin{itemize}
+%     \item Für Resonanz muss gelten $X_L = X_C$
+% \end{itemize}
+% \begin{LARGE}
+% \begin{center}
+%     $j \omega L = \frac{-j}{\omega C}$
+% \end{center}
+% \end{LARGE}
+% \begin{itemize}
+%     \item Nun stellen wir nach $\omega$ um
+% \end{itemize}
+% \begin{LARGE}
+% \begin{center}
+%     $\omega^2 = \frac{-j}{j L C}$
+% \end{center}
+% \end{LARGE}
+% \begin{itemize}
+%     \item   Nun lösen wir noch das Quadrat auf und mult mit $\frac{j}{j}$
+% \end{itemize}
+% \begin{LARGE}
+% \begin{center}
+%     $\omega = \frac{-1}{1 \cdot \sqrt{L C}}$
+% \end{center}
+% \end{LARGE}
+% \begin{itemize}
+%     \item   Nachdem wir $\omega$ durch $2 \pi f$ ersetzt und durch $2 \pi$ geteilt haben, erhalten wir die entgültige Form:
+% \end{itemize}
+% \begin{center}
+%     \LARGE{$ |f_{res}| = \frac{1}{2 \pi \sqrt{L C}} $}
+% \end{center}
+% \end{frame}
 
 \begin{frame}
   \frametitle{Resonanzfrequenz}
@@ -200,6 +258,30 @@ Untere $f_L$ und obere Grenzfrequenz $f_H$ festgelegt beim $-3dB$-Punkt.
     \item Ist ein Schwingkreis von hoher Güte und geringer Bandbreite
     \item Bessere Frequenzstabilität als LC-Oszillatoren
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Zusatzwissen für Interessierte: ESB eines Quarzes}
+\begin{center}
+    \includegraphics[scale=0.25]{a04/Quartz-ESB.png}\\
+    Abb.9: ESB eines Quartzes \cite{wpde}
+\end{center}
+\begin{itemize}
+    \item   Für den Serienschwingkreis gilt:
+\end{itemize}
+\begin{Large}
+    \begin{center}
+        $f_S = \frac{1}{2 \pi \sqrt{L C_{s}}}$
+    \end{center}
+\end{Large}
+\begin{itemize}
+    \item   Für den Parallelschwingkreis gilt:
+\end{itemize}
+\begin{Large}
+    \begin{center}
+        $f_P = \frac{1}{2 \pi \sqrt{L C_{ges}}}$
+    \end{center}
+\end{Large}
 \end{frame}
 
 \begin{frame}
