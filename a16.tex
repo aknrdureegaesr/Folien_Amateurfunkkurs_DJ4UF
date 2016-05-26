@@ -6,7 +6,7 @@
 \input{texdata/preamble}
 \subtitle{Technik A 16: \\
           Messtechnik \\[2em]}
-\date{Stand 23.05.2016}
+\date{Stand 26.05.2016}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -62,7 +62,7 @@
     \item Analoge Messgeräte funktionieren nach dem elektrodynamischen, oder dem elektrostatischen Prinzip
     \item Dabei erzeugt die zu messende Größe ein mechanisches Drehmoment zwischen dem feststehendem Messwerk und dem beweglichen Organ
     \item Die Empfindlichkeit wird in $k \Omega /V$ angegeben
-    \item Für Gleichstrom sollte die Empfindlichkeit bei mindestens $20 k \Omega / V$ liegen
+    \item Für Gleichspannung sollte die Empfindlichkeit bei mindestens $20 k \Omega / V$ liegen
   \end{itemize}
 \end{frame}
 
@@ -131,7 +131,7 @@
       \item Diese funktionieren aber nur für sinusförmige Signale
       \item Für andere Signalformen gibt es das Dreheisenmesswerk
       \item Diese brauchen keinen Gleichrichter benötigen aber recht viel Leistung und sind nicht als Feinmessgeräte tauglich
-      \item Will man im GHz-Bereich messen benötigt man einen speziellen Thermoumformer
+      \item Will man im GHz-Bereich messen, benötigt man einen speziellen Thermoumformer
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -144,15 +144,17 @@
     \column{.3\textwidth}
     \begin{center}
       \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a16/digitalmultimeter.jpg}\\
-      {\tiny Digitales Multimeter \href{refs}{\cite{wmde}}}
+      {\tiny Digitales Multimeter (DMM) \href{refs}{\cite{wmde}}}
     \end{center}
     \column{.65\textwidth}
     \begin{itemize}
-      \item Verringern Chance auf Ablesefehler
+      \item Verringern Gefahr von Ablesefehlern
       \item Brauchen Strom zum messen
       \item Auflösung ist die kleinste Einteilung der Anzeige
-      \item Neben der Auflösung ist auch die Genauigkeitsklasse zu beachten
-      \item Können unter anderem Strom, Spannung, Induktivitäten, Kapazitäten, Verstärkung von Bipolartransistoren und Frequenzen messen
+      \item Neben Auflösung auch Genauigkeit beachten
+      \item Einfache DMM messen:\newline Spannung, Stromstärke, Widerstand
+      \item Bessere:\newline Durchgangsprüfung (auf Geschwindigkeit achten!), Kapazität, (niedrige) Frequenzen, Dioden- und Transistortest
+      \item Selten auch:\newline Induktivität, Temperatur, Temperatur, Verstärkung von Bipolartransistoren, Lichtstärke, Schalldruck
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -238,7 +240,7 @@
     \begin{itemize}
       \item Peak-to-Peak
       \item RMS (root mean square) -- Effektivwert
-      \item $u_{Spitze} = \sqrt{2} \cdot U_{eff}$ \\
+      \item Bei Sinus: $u_{Spitze} = \sqrt{2} \cdot U_{eff}$ \\
     \end{itemize}
   \end{center}
   \begin{exampleblock}{Aufgabe}
@@ -271,13 +273,17 @@
     \column{.6\textwidth}
     \begin{center}
       \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a16/Feldstaerkeanzeiger.png}\\
-      {\tiny Schaltung eines Feldstärkeanzeigers}
+      {\tiny Schaltung eines Feldstärkeanzeigers (nach Prüfungsfrage TJ706)}
     \end{center}
     \column{.4\textwidth}
     \begin{itemize}
-      \item Wird zum Prüfen (\emph{nicht zum messen!}) der Feldstärke genutzt
+      \item Wird zum Prüfen (\emph{nicht zum Messen!}) der Feldstärke genutzt
       \item Besteht aus einer HF-Diode, HF-Drosseln und einem Kondensator
     \end{itemize}
+    \begin{flushright}
+      \includegraphics[width=.7\textwidth,keepaspectratio]{a16/ghostbusters_egon.jpg}\\
+      {\tiny http://tvtropes.org (cc-nc-sa 3.0)}
+    \end{flushright}
   \end{columns}
 \end{frame}
 
