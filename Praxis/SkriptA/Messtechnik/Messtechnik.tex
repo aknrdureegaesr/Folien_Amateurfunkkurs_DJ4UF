@@ -113,3 +113,60 @@
 {einen Y-Vorteiler haben. \vspace*{-0.06cm}}%C
 {einen Frequenzmarken-Generator haben.}%D
 {A}%Lösung
+
+
+\section*{Praxisteil}
+
+\begin{enumerate}
+	\item Das lineare Verhalten eines Tiefpassfilters.
+		\begin{itemize}
+			\item Nutze die Gleispannungsquelle und das Tischmultimeter.
+			\item Lege eine Gleichspannung an den Eingang des Tiefpassfilters und messe die Ausgangsspannung.
+    		\item Die Eingangspannung soll zwischen $-10~V$ und $+10~V$ liegen.
+    		\item Die Eingangsspannung soll in $2~V$-Schritten geändert werden.
+    		\item Um eine negative Gleichspannung mit der Gleichspannungsquelle zu realisieren, muss umgepolt werden.
+    		\item Miss mit Hilfe des Tischmultimeters die Ausgangsspannung des Tiefpassfilters (Siehe Abbildung \ref{block1}).
+    		\item Notiere die Messwerte direkt in Scilab, Octave oder einer Tabellekalkulation.
+			\item Plotte den Verlauf der Ausgangsspannung in Abhängigkeit der Eingangsspannung.
+			\item \textbf{Zusatz:} Plotten Sie den idealen Kennlinienverlauf mit in den selben Plott.
+			\end{itemize}	
+	\item Das Messen des Amplitudenganges eines Tiefpassfilters mit Hilfe des Oszilloskops.
+		\begin{itemize}
+			\item Nutze den Frequenzgenerator und das Oszilloskop.
+			\item Stelle am Frequenzgenerator ein Sinus-Signal mit einer Amplitude von $10~V$ ein und lege diese an den Eingang des Tiefpassfilters.
+			\item Miss mit Hilfe des Oszilloskops die Eingangs- und die Ausgangsspannung des Tiefpassfilters (Siehe Abbildung \ref{block2}).
+			\item Erhöhe schrittweise die Frequenz .
+			\item Nimm insgesamt 20 Messwerte auf.
+			\item Verteile die Messwerte über einen Bereich von $10^1~Hz$ bis $10^4~Hz$.
+			\item Verwende \texttt{$V_{RMS}$} der \texttt{Measure}-Funktion zur Messung der Amplitude
+			\item Notiere die Messwerte direkt in Scilab, Octave oder einer Tabellekalkulation.
+			\item Plotte den Verlauf der Amplitude (Ausgangsspannung) in Abhängigkeit der Frequenz.
+			\item \textbf{Zusatz:} Stelle die Amplitude in dB dar und stelle die X-Achse auf logarthmische Darstellung um.
+			\end{itemize}
+	\item Das Messen der Sprungantwort eines Tiefpassfilters.
+		\begin{itemize}
+			\item Nutze den Frequenzgenerator und das Oszilloskop.
+			\item Erzeuge mit dem Funktionsgenerator eine Rechteckfunktion mit einer Amplitude von $2,5~V$, mit einem Offset von $2,5 V$ und einer Frequenz von $5~Hz$ und lege diese an den Eingang des Tiefpassfilters.
+			\item Miss mit Hilfe des Oszilloskops die Eingangs- und die Ausgangsspannung des Tiefpassfilters (Siehe Abbildung \ref{block2}).
+			\item Übertrage die Sprungantwort ins Protokoll (Foto, Skizze).
+			\item Hinweise zum Umgang mit dem Oszilloskop:
+				\begin{itemize}
+					\item Achte darauf, dass bei den einzelnen Kanälen (\textbf{CH1}, \textbf{CH2}) bei \textbf{Kopplung}: \textbf{DC} eingestellt ist.
+					\item Um einwandfrei messen zu können, verwenden Sie die Trigger-Funktion des Oszilloskops. Drücken Sie die Taste \textbf{Mode/Coupling} in der Trigger-Sektion. Wählen Sie beim oberen \textbf{Modus}: \textbf{Flanke}, bei \textbf{Quelle}: \textbf{CH2}, beim unteren \textbf{Modus}: \textbf{Normal} und bei der \textbf{Kopplung}: \textbf{AC} aus.
+					\end{itemize}
+			\end{itemize}
+ 	\end{enumerate} 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{Messtechnik/Bilder/Block_Messung_Kennlinie.pdf}
+	\caption{Blcokschaltbild für die Messungen mit dem Tischmultimeter.}
+	\label{block1}
+	\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1]{Messtechnik/Bilder/Block_Messung_oszi.pdf}
+	\caption{Blcokschaltbild für die Messungen mit dem Oszilloskop.}
+	\label{block2}
+	\end{figure}
