@@ -1,11 +1,12 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>
+% Korrekturen: Lars Weiler <dc4lw@darc.de>, Sebastian Lange <dl7bst@dk0tu.de>
 
 \input{texdata/preamble}
 \subtitle{Technik A08: \\
            Das elektromagnetische Feld \\[2em]}
-\date{Stand 25.5.2015}
+\date{Stand 02.06.2016}
 \input{texdata/titlepage}
 
 \section*{Wiederholung}
@@ -13,8 +14,8 @@
 \begin{frame}
     \frametitle{Wiederholung}
     \begin{center}
-		\includegraphics[width=0.7\textwidth]{a08/efeld1.png}\\
-		\tiny Abb. 1: elektrisches Feld zwischen zwei leitenden Platten \large
+		\includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e08/PlattenkondensatorFeld.png}\\
+		\only<2>{\tiny Abb. 1: elektrisches Feld zwischen zwei leitenden Platten\\(CC-BY 3.0 \url{https://de.wikipedia.org/wiki/Benutzer:Wfstb})}
 		\begin{itemize}
 			\item Was für ein Feld ist dies?
 			\item von wo nach wo gehen die Linien?
@@ -27,67 +28,54 @@
 \begin{frame}
     \frametitle{Wie verlaufen die Feldlinien?}
     \begin{center}
-        \includegraphics[width=0.8\textwidth]{a08/VFPt_dipole_electric_ohne.png}
-        \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+        \includegraphics[width=0.8\textwidth,height=.8\textheight,keepaspectratio]{a08/VFPt_dipole_electric_ohne.png}
+	{\tiny \hyperlink{refs}{\cite{wm}}}
     \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{So verfaufen die Feldlinien}
+    \frametitle{So verlaufen die Feldlinien}
     \begin{center}
-        \includegraphics[width=0.8\textwidth]{a08/VFPt_dipole_electric_mit.png}
-        \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
-    \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Elektrisches Feld}
-    \begin{center}
-        \huge $$E = \frac{U}{d}$$
+        \includegraphics[width=0.8\textwidth,height=.8\textheight,keepaspectratio]{a08/VFPt_dipole_electric_mit.png}
+	{\tiny \hyperlink{refs}{\cite{wm}}}
     \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Elektrisches Feld}
+    \begin{block}{Elektrisches Feld}
     \begin{center}
-	\begin{block}{TB512}
-        \includegraphics[width=1\textwidth]{a08/TB512.png}\\
-        \tiny TB512 \hyperlink{refs}{\cite{bna}}
-   		\large Welche elektrische Feldstärke $E$ herrscht in der Mitte der dargestellten, symmetrisch aufgebauten Messzelle, wenn der angeschlossene Sender 1 Watt Ausgangsleistung liefert? 
-	\end{block}
+        \huge $E = \cfrac{U}{d}$
     \end{center}
+    \end{block}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Elektrisches Feld}
+  \frametitle{Elektrisches Feld}
+  \begin{exampleblock}{TB512}
     \begin{center}
-	\begin{block}{TB512}
-	     \includegraphics[width=1\textwidth]{a08/TB512.png}\\
-        \tiny TB512 \hyperlink{refs}{\cite{bna}}\\ \large
-		$$U = \sqrt{P \cdot R}$$
-		$$E = \frac{U}{d}$$
-		$$P = 1W$$
-	\end{block}
+      \includegraphics[width=1\textwidth,height=.4\textheight,keepaspectratio]{a08/TB512.png}
+      {\tiny TB512 \hyperlink{refs}{\cite{bna}}}
     \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Elektrisches Feld}
-    \begin{center}
-\begin{block}{TB512}
-        \includegraphics[width=1\textwidth]{a08/TB512.png}\\
-        \tiny TB512 \hyperlink{refs}{\cite{bna}}
-    
-    \large $$E = 28.3 \frac{V}{m}$$
-\end{block}
-    \end{center}
+    \only<1>{Welche elektrische Feldstärke $E$ herrscht in der Mitte der dargestellten, symmetrisch aufgebauten Messzelle, wenn der angeschlossene Sender 1 Watt Ausgangsleistung liefert?}
+    \only<2>{
+    \begin{align*}
+      U &= \sqrt{P \cdot R}\\
+      E &= \frac{U}{d}\\
+      P &= 1W
+    \end{align*}}
+    \only<3>{
+    \begin{align*}
+      E &= 28.3 \frac{V}{m}
+    \end{align*}}
+  \end{exampleblock}
 \end{frame}
 
 \begin{frame}
     \frametitle{Starkes Elektrisches Feld}
     \begin{center}
-        \includegraphics[width=0.6\textwidth]{a08/Fluorescent_tube_under_electric_line.jpg}
-        \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+        \includegraphics[width=0.6\textwidth,height=.85\textheight,keepaspectratio]{a08/Fluorescent_tube_under_electric_line.jpg}
+	{\tiny \hyperlink{refs}{\cite{wm}}}
     \end{center}
 \end{frame}
 
@@ -96,10 +84,10 @@
 \begin{frame}
     \frametitle{Magnetisches Feld}
     \begin{center}
-		\includegraphics[width=0.6\textwidth]{a08/RechteHand.png}\\
-		\tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+		\includegraphics[width=0.6\textwidth,height=.6\textheight,keepaspectratio]{a08/RechteHand.png}\\
+		{\tiny \hyperlink{refs}{\cite{wm}}} \\[1em]
 		\begin{itemize}
-			\item Rechte Hand Regel
+			\item Rechte-Hand-Regel
 			\item Magnetfeld um stromdurchflossenen Leiter
 		\end{itemize}
 	\end{center}
@@ -108,11 +96,11 @@
 \begin{frame}
     \frametitle{Stromdurchflossene Spule}
     \begin{center}
-		\includegraphics[width=0.7\textwidth]{a08/H-Feld.png}\\
-		\tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+		\includegraphics[width=0.7\textwidth,height=.6\textheight,keepaspectratio]{a08/H-Feld.png}\\
+		{\tiny \hyperlink{refs}{\cite{wm}}} \\[1em]
 		\begin{itemize}
-		\item Im Inneren ein homogenes Magnetisches Feld
-		\item Flussrichtung durch rechte Hand Regel
+		\item Im Inneren ein homogenes magnetisches Feld
+		\item Flussrichtung durch Rechte-Hand-Regel
 		\end{itemize}
 	\end{center}
 \end{frame}
@@ -120,7 +108,7 @@
 \begin{frame}
     \frametitle{Stromdurchflossene Spule}
     \begin{center}
-		\includegraphics[width=0.7\textwidth]{a08/3-D_HFeld.png}\\
+		\includegraphics[width=0.7\textwidth,height=.6\textheight,keepaspectratio]{a08/3-D_HFeld.png}\\
 		\tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
 		\begin{itemize}
 		\item $B = \mu \cdot H$
@@ -131,82 +119,98 @@
 
 \begin{frame}
     \frametitle{Formeln aus der Formelsammlung}
+    \begin{block}{Formeln zur Spule}
+      \begin{align*}
+	\text{Leiter: } H &= \cfrac{\mathrm{I}}{\ell_m} \\[1em]
+    	\text{Spule: } H &= \cfrac{\mathrm{I} \cdot N}{\ell_m} \\[1em]
+	\text{Spule: } B &= \mu_r \cdot \mu_0 \cdot H \\[1em]
+    	\mu_0 &= 1.257 \cdot 10^{-6}[\frac{Vs}{Am}] \\[1em]
+	\mu_r &= 1 \text{ bei Luft}
+     \end{align*}
+   \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Induktionsofen}
+  \begin{columns}[c]
+    \column[c]{.6\textwidth}
+    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a08/Induction_heating_of_bar_crop.jpg}\\
+    {\tiny \hyperlink{refs}{\cite{wm}}} \\[1em]
+    \column[c]{.35\textwidth}
+    \begin{itemize}
+      \item $B = \mu \cdot H$
+      \item 15kW bei 450 kHz
+      \item Spule ist wassergekühlt
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Hysterese}
+  \begin{columns}[c]
+    \column[c]{.49\textwidth}
     \begin{center}
-        \huge Leiter: $H = \frac{\mathrm{I}}{l_m}$ \\[1em]
-    	\huge Spule: $H = \frac{\mathrm{I} \cdot N}{l_m}$ \\[1em]
-    	\huge Spule: $B = \mu_r \cdot \mu_0 \cdot H$\\[1em]
-    	 $\mu_0 = 1.257 \cdot 10^{-6}[\frac{Vs}{Am}]$ \\[1em]
-    	 $\mu_r = 1$ bei Luft
+      \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a08/Soft_hysteresis_welded.png}\\
+      {\tiny \hyperlink{refs}{\cite{wm}}}
     \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Induktionsofen}
+    \column[c]{.49\textwidth}
     \begin{center}
-		\includegraphics[width=0.56\textwidth]{a08/Induction_heating_of_bar_crop.jpg}\\
-		\tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
-		\begin{itemize}
-		\item $B = \mu \cdot H$
-			\item 15kW bei 450 kHz
-			\item Spule ist wassergekühlt
-		\end{itemize}
-	\end{center}
+      \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a08/Hard_hysteresis_de.png}\\
+      {\tiny \hyperlink{refs}{\cite{wm}}}
+    \end{center}
+  \end{columns}
+\end{frame}
+
+\section*{Elektro"=magnetisches Feld}
+
+\begin{frame}
+  \frametitle{Verständnis Dipol}
+  \begin{center}
+    \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a08/dipol_entstehung.png}\\
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Hysterese}
-    \begin{columns}[c]
-        \column[c]{5cm}
-        \begin{center}
-        \includegraphics[width=1\textwidth]{a08/Soft_hysteresis_welded.png}\\
-        \tiny \hyperlink{refs}{\cite{wm}}
-    \end{center}
-    \column{5cm} \large
-        \begin{center}
-        \includegraphics[width=1\textwidth]{a08/Hard_hysteresis_de.png}\\
-        \tiny \hyperlink{refs}{\cite{wm}}
-    \end{center}
-    \end{columns}
-\end{frame}
-
-\section*{Elektromagnetisches Feld}
-\begin{frame}
-    \frametitle{Verständnis Dipol}
-    \begin{center}
-		\includegraphics[width=1\textwidth]{a08/dipol_entstehung.png}\\
-	\end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Dipol}
-    \begin{columns}[c]
-        \column[c]{5cm}
-        \begin{center}
-        \includegraphics[width=1\textwidth]{a08/emagfeld1.png}\\
-    \end{center}
-    \column{5cm} \large
-        \begin{center}
-        \includegraphics[width=1\textwidth]{a08/emagfeld2.png}\\
-    \end{center}
-    \end{columns}
+  \frametitle{Das elektromagnetische Feld}
+  \begin{center}
+    %\animategraphics[loop,width=\textwidth,height=0.5\textheight,keepaspectratio,controls]{3}{e08/Dipolentstehung-}{0}{21}\\
+    \includegraphics[width=1\textwidth,height=.5\textheight,keepaspectratio]{e08/Dipolentstehung-11.png}\\
+    {\tiny elektromagnetisches Feld - siehe \url{../e08/Dipolentstehung.gif} \\
+    {\tiny CC-BY-SA 3.0 \url{https://commons.wikimedia.org/wiki/File:Dipolentstehung.gif}}}
+  \end{center}
+  \begin{itemize}
+    \item elektromagnetisches Feld bildet sich durch ein sich änderndes elektrisches und ein sich änderndes magnetisches Feld
+    \item zieht man die Kondensatorplatten auseinander und streckt die Spule, erhält man eine Dipolantenne 
+  \end{itemize}
 \end{frame}
 
 \section*{Fernfeld}
 
 \begin{frame}
-    \frametitle{Polarisation}
-    \begin{center}
-		\includegraphics[width=1\textwidth]{a08/Onde_electromagnetique.png}\\
-		\tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
-		\begin{itemize}
-			\item Polarisatzion im Amateurfunk Vertikal oder Horizontal
-			\item Elektrisches Feld bestimmt die Polarisation
-		\end{itemize}
-	\end{center}
+  \frametitle{Polarisation}
+  \begin{center}
+    \begin{minipage}{0.45\textwidth}
+      %\animategraphics[loop,width=\textwidth,height=.6\textheight,keepaspectratio,controls]{8}{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-}{0}{7}
+        \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-2.png}\\
+      {\tiny elektromagnetisches Feld einer Antenne \\
+             siehe \url{../e08/Dipole_xmting_antenna_animation_4_408x318x150ms.gif}}
+      %{\tiny (CC0) \url{https://de.wikipedia.org/wiki/Antennentechnik/media/File:Dipole_xmting_antenna_animation_4_408x318x150ms.gif}}}
+    \end{minipage}
+    \begin{minipage}{0.45\textwidth}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{e08/Onde_electromagnetique.png}\\
+      {\tiny Polarisation einer Antenne}
+      %{\tiny CC-BY-SA 3.0 \url{https://de.wikipedia.org/wiki/Antennentechnik/media/File:Onde_electromagnetique.svg}}}
+      \begin{itemize}
+	\item E-Feld bestimmt die Richtung der Polarisation
+	\item magnetisches Feld ist um $90^\circ$ gedreht
+	\item Im Amateurfunk horizontal oder vertikal
+      \end{itemize}
+    \end{minipage}\\[1.5em]
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Poynting-Vektor}
+    \frametitle{Poynting-Vektor (nicht prüfungsrelevant)}
     \begin{center}
 		\huge $$S = E \times H$$ \\[1em]
 		\large Der Poynting-Vektor $S[\frac{W}{m^2}]$ ist das Kreuzprodukt aus dem $E$ und $H$ Feld gibt die Energierichtung, so wie die Wirkleistung des Signals an dem berechneten Punkt.
@@ -214,7 +218,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Poynting-Vektor}
+    \frametitle{Poynting-Vektor (nicht prüfungsrelevant)}
     \begin{center}
 		\includegraphics[width=1\textwidth]{a08/Poynting_vectors_of_DC_circuit.png}\\
 		\tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
@@ -226,21 +230,21 @@
 
 \begin{frame}
     \frametitle{Der Feldwellenwiderstand}
-    \begin{center}
-        \huge Wie $U = R \cdot \mathrm{I}$  \\[1em]
-    	\huge $E = Z_0 \cdot H$ \\[1em]
-    	 $Z_0 = \sqrt{\frac{\mu_0}{\epsilon_0}} = 376,7 \Omega $\\[1em]
-    \end{center}
+    \begin{block}{Feldwellenwiderstand}
+      $E = Z_0 \cdot H$ \vspace{2cm} - analog zu $U = R \cdot I$ \\[1em]
+      Im Freiraum ist $Z_0$ eine Konstante: \\[1em]
+      $Z_0 = \sqrt{\cfrac{\mu_0}{\varepsilon_0}} = 376,7 \Omega$ \\[1em]
+  \end{block}
 \end{frame}
 
 \begin{frame}
     \frametitle{Die Ersatzfeldstärke}
-    \begin{center}
-        \huge Ersatzfeldstärke des E-Feldes im Fernfeld \\[1em]
-    	$E = \frac{1}{r} \sqrt{\frac{Z_0}{4 \cdot \pi} \cdot P_s}$ \\[1em]
-    	Es gilt im Freiraum $Z_0 = 376,7 \Omega $\\[1em]
-    	$E = \frac{\sqrt{30 \Omega \cdot P_s}}{r} $ \\[1em]
-    \end{center}
+    \begin{block}{Ersatzfeldstärke}
+        Ersatzfeldstärke des E-Feldes im Fernfeld (Herleitung nicht prüfungsrelevant)\\[1em]
+    	$E = \cfrac{1}{r} \sqrt{\cfrac{Z_0}{4 \cdot \pi} \cdot P_s}$ \\[1em]
+        Im Fernfeld (bei $> \frac{\lambda}{2\pi}$) gilt im Freiraum $Z_0 = 376,7 \Omega $\\[1em]
+    	$\rightarrow E \approx \cfrac{\sqrt{30 \Omega \cdot P_s}}{r} $ \\[1em]
+  \end{block}
 \end{frame}
 
 \begin{frame}
@@ -252,7 +256,8 @@
 \begin{frame}
     \frametitle{Wellenlänge}
     \begin{center}
-        \huge Wie lautet die Formel zum Umrechnen von Frequenz auf Wellenlänge?
+        \huge Wie lautet die Formel zum Umrechnen von Frequenz auf
+        Wellenlänge?\footnote{zum ``Einbrennen'' ;-)}
     \end{center}
 \end{frame}
 
@@ -263,12 +268,12 @@
     \end{center}
 \end{frame}
 
-\section*{Ionisationsschichten}
+\section*{Ionisations"=schichten}
 
 \begin{frame}
     \frametitle{Raumwelle}
 	\begin{center}
-        \includegraphics[width=.9\textwidth]{a08/schichten_behelf_43.png}
+        \includegraphics[width=.9\textwidth,height=.85\textheight,keepaspectratio]{a08/schichten_behelf_43.png}
         \footnote{\tiny Amateurfunkbehelf s.43 \url{http://ham.granjow.net/builds/Amateurfunkbehelf.pdf}}
     \end{center}
 \end{frame}
@@ -276,13 +281,14 @@
 \begin{frame}
     \frametitle{D-Schicht}
     \begin{itemize}
-    			\item Tagsüber und verschwindet nach Sonnenuntergang sehr schnell
+    			\item tagsüber und verschwindet nach Sonnenuntergang sehr schnell
 				\item Dämpft Frequenzen unter $5MHz$ (160m und 80m unbenutzbar)
-       		 	\item HF Frequenzen ab ca $20MHz$ sind bei einem Minimum nicht verwendbar
-       		 	\item Bei hoher Sonnenaktivität Möbel-Dellinger-Effekt (Kurzzeitig ganzes KW-Band unbenutzbar)
+       		 	\item HF Frequenzen ab ca $20MHz$ sind bei einem Sonnenflecken-Minimum nicht verwendbar
+       		 	\item bei hoher Sonnenaktivität
+                      Mögel-Dellinger-Effekt\footnote{kurzzeitig ganzes KW-Band unbenutzbar}
     \end{itemize}
     \begin{center}
-        \includegraphics[width=.6\textwidth]{a08/schichten_behelf_43.png}
+        \includegraphics[width=.6\textwidth,height=.5\textheight,keepaspectratio]{a08/schichten_behelf_43.png}
         \footnote{\tiny Amateurfunkbehelf s.43 \url{http://ham.granjow.net/builds/Amateurfunkbehelf.pdf}}
     \end{center}
 \end{frame}
@@ -290,13 +296,13 @@
 \begin{frame}
     \frametitle{E-Schicht}
     \begin{itemize}
-    			\item Tagsüber
-				\item Reflektiert HF-Bänder 10m, 6m
-       		 	\item Refelktiert gelegendlich 2m (Sporedic-E) \footnote{\tiny \url{https://www.youtube.com/watch?v=xSWTkuSekhE}}
-       		 	\item (Short Skip)mit sehr starken Signalen zwischen 750 und 2200 km (Short-Skip)
+    			\item tagsüber
+				\item reflektiert HF-Bänder 10m, 6m
+       		 	\item reflektiert gelegentlich 2m (Sporadic-E) \footnote{\tiny \url{https://www.youtube.com/watch?v=xSWTkuSekhE}}
+       		 	\item mit sehr starken Signalen zwischen 750 und 2200 km (Short-Skip)
     \end{itemize}
     \begin{center}
-        \includegraphics[width=.75\textwidth]{a08/schichten_behelf_43.png}
+        \includegraphics[width=.75\textwidth,height=.5\textheight,keepaspectratio]{a08/schichten_behelf_43.png}
         \footnote{\tiny Amateurfunkbehelf s.43 \url{http://ham.granjow.net/builds/Amateurfunkbehelf.pdf}}
     \end{center}
 \end{frame}
@@ -306,11 +312,11 @@
     \begin{itemize}
     			\item F1 und F2 Schicht
 				\item F2 Schicht besteht auch Nachts (langsame Rekombination)
-       		 	\item Wichtigstens da beständigste Schichten für KW
-       		 	\item (Short Skip)mit sehr starken Signalen zwischen 750 und 2200 km (Short-Skip)
+       		 	\item beständigste Schichten für KW
+       		 	\item mit sehr starken Signalen zwischen 750 und 2200 km (Short-Skip)
     \end{itemize}
 	\begin{center}
-        \includegraphics[width=.75\textwidth]{a08/schichten_behelf_43.png}
+        \includegraphics[width=.75\textwidth,height=.5\textheight,keepaspectratio]{a08/schichten_behelf_43.png}
         \footnote{\tiny Amateurfunkbehelf s.43 \url{http://ham.granjow.net/builds/Amateurfunkbehelf.pdf}}
     \end{center}
 \end{frame}
@@ -320,34 +326,44 @@
 \begin{frame}
     \frametitle{Solarer Flux}
     \begin{itemize}
-    			\item Messwert der Solaren Radiostrahlung bei $2800 MHz$
+    			\item Messwert der solaren Radiostrahlung bei $2800 MHz$
 				\item Werte über 100 stehen für große Ionisation und somit gute Fernausbreitung von KW
     \end{itemize}
     \begin{center}
-        \includegraphics[width=.6\textwidth]{a08/Solar_10_7_cm_Radio_Flux.png}
+        \includegraphics[width=.7\textwidth,height=.7\textheight,keepaspectratio]{a08/Solar_10_7_cm_Radio_Flux.png}
     \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Muf}
+    \frametitle{MUF}
         \begin{center}
     \begin{itemize}
     			\item $MUF$: Größte noch nutzbare Frequenz für Reflektion
-    			\item $MUF \approx \frac{f_{kritisch}}{sin{\alpha}} = \frac{f_{kritisch}}{cos{\phi}}$
-				\item $\alpha$ ist der Astrahlwinkel vom Boden
-				\item $\phi$ ist der auftreffwinkel auf die Schicht
-				\item $f_{opt} = 0.85 \cdot f_{kritisch}$
+    			\item $MUF \approx \cfrac{f_{kritisch}}{sin{\alpha}} = \cfrac{f_{kritisch}}{cos{\phi}}$
+				\item $\alpha$ ist der Abstrahlwinkel vom Boden
+				\item $\phi$ ist der Auftreffwinkel auf die Schicht
+				\item $f_{opt} = 0.85 \cdot MUF$
     \end{itemize}
-        \includegraphics[width=.6\textwidth]{a08/DifferentFrequencies-NPS.png}
+        \includegraphics[width=.6\textwidth,height=.4\textheight,keepaspectratio]{a08/DifferentFrequencies-NPS.png}
     \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TI227} & \textbf{Berechnen Sie die höchste brauchbare Frequenz (MUF) und die optimale Frequenz ($f_{opt}$) für einen Abstrahlwinkel von $45^\circ$, wenn für den zu berechnenden Tag eine kritische Grenzfrequenz von $f_k = 3 MHz$ gemessen wurde.}\\ \hline\hline
+    A & $MUF=2,1MHz$, $f_{opt} = 1,8MHz$ \\ \hline
+    B \only<2>\checkmark & $MUF=4,2MHz$, $f_{opt} = 3,6MHz$ \\ \hline
+    C & $MUF=2,1MHz$, $f_{opt} = 2,5MHz$ \\ \hline
+    D & $MUF=4,2MHz$, $f_{opt} = 4,9MHz$ \\ \hline
+  \end{tabular}
 \end{frame}
 
 \begin{frame}
     \frametitle{Fading, Backscatter}
         \begin{center}
     \begin{itemize}
-    			\item Von Fading spricht man wenn aufgrund von unterschiedlich starker Ionisierung der Schichten das Signal mal stärker und mal schwächer zu empfangen ist während eines Durchgangs
-    			\item Backscatter bezeichnet die Rückstreuung von Wellen und kann bei Frequeznen Weit über der Muf auftreten wenn die Ionosphäre inhomogen ist  			
+    			\item Von Fading spricht man, wenn während eines Durchgangs aufgrund von unterschiedlich starker Ionisierung der Schichten das Signal mal stärker und mal schwächer zu empfangen ist
+    			\item Backscatter bezeichnet die Rückstreuung von Wellen und kann bei Frequenzen weit über der MUF auftreten wenn die Ionosphäre inhomogen ist  			
     			\item \url{https://upload.wikimedia.org/wikipedia/commons/c/c6/Radaroperation.gif}
     			\item Wird bei Radaren genutzt
     \end{itemize}
@@ -358,17 +374,17 @@
     \frametitle{Mögel-Dellinger}
     \begin{center}
     \begin{itemize}
-    			\item Entdeckt wurde der Effekt um das Jahr 1930 von Hans Mögel, 1935 hat ihn der John Howard Dellinger dem US-Standardisierungsamt (National Bureau of Standards) vorgestellt.
-    			\item Durch Sonneneruptionen, sogenannten Flares, werden Kurzzeitig alle Frequenzen unterhalb von $300MHz$ stark gedämpft durch Ionisierung der D-Schicht
-    			\item Im Bild ist Blau Normal und Rot nach dem Flare. \\[1em]
+    			\item Entdeckt wurde der Effekt um das Jahr 1930 von Hans Mögel, 1935 hat ihn der John Howard Dellinger dem US-Standardisierungsamt (National Bureau of Standards) vorgestellt
+    			\item Durch Sonneneruptionen, sogenannten Flares, werden kurzzeitig alle Frequenzen unterhalb von $300MHz$ stark gedämpft durch Ionisierung der D-Schicht
+    			\item Im Bild ist blau Normal und rot nach dem Flare. \\[1em]
     \end{itemize}
-        \includegraphics[width=.6\textwidth]{a08/FlareNPS.png}
+        \includegraphics[width=.6\textwidth,height=.4\textheight,keepaspectratio]{a08/FlareNPS.png}
     \end{center}
 \end{frame}
 
 \begin{frame}
         \begin{center}
-        \includegraphics[height=1.2\textheight]{a08/AzimuthalMap.pdf}
+        \includegraphics[height=\textheight,height=\textheight,keepaspectratio]{a08/AzimuthalMap.pdf}
     \end{center}
 \end{frame}
 
@@ -376,13 +392,21 @@
     \frametitle{Reichweite der Bänder}
     \begin{center}
     \begin{itemize}
-    			\item Welche Bänder Tagsüber?
-    			\item Welche Bänder Nachts?
+    			\item Welche Bänder tagsüber?
+    			\item Welche Bänder nachts?
     			\item Womit geht mehr DX?
     			\item \url{http://www.dr1a.com/pages/de/dx-propagation.php}
-    			\item Ausführlich auch in E-Technik e09
+    			\item Ausführlich auch in E-Technik E09
     \end{itemize}
     \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{exampleblock}{Hausaufgabe}
+    Prüfungskatalog Kapitel 1.9.1 Ionosphäre, TI101--TI115\\
+    Prüfungskatalog Kapitel 1.9.2 Kurzwellenausbreitung, TI201--TI239\\
+    Prüfungskatalog Kapitel 1.9.3 Wellenausbreitung oberhalb 30MHz, TI301--TI317
+  \end{exampleblock}
 \end{frame}
 
 \renewcommand{\refname}{Referenzen}
@@ -414,7 +438,7 @@
                     \url{http://ns6t.net/azimuth/azimuth.html}
     \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
                     \url{https://de.wikipedia.org/wiki/Elektrisches_Feld}
-	\bibitem{bna}   Fragenkatalog Bundesnetzargentur Technik Klasse A:                   
+	\bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:                   
                     \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
 \end{thebibliography} 
 
