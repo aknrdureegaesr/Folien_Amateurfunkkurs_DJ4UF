@@ -3,6 +3,9 @@
 % Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>
 % Korrekturen: Lars Weiler <dc4lw@darc.de>, Sebastian Lange <dl7bst@dk0tu.de>
 
+% TODO Quellenangaben sind ein Wildwuchs -> vereinheitlichen
+% TODO Widerholungspart eindeutiger markieren und schnell abarbeiten
+
 \input{texdata/preamble}
 \subtitle{Technik A08: \\
            Das elektromagnetische Feld \\[2em]}
@@ -14,6 +17,7 @@
 \begin{frame}
     \frametitle{Wiederholung}
     \begin{center}
+        % FIXME in erster Abbildung +/- und Pfeile nicht einzeichnen - siehe Praxis-Skript
 		\includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e08/PlattenkondensatorFeld.png}\\
 		\only<2>{\tiny Abb. 1: elektrisches Feld zwischen zwei leitenden Platten\\(CC-BY 3.0 \url{https://de.wikipedia.org/wiki/Benutzer:Wfstb})}
 		\begin{itemize}
@@ -60,9 +64,8 @@
     \only<1>{Welche elektrische Feldstärke $E$ herrscht in der Mitte der dargestellten, symmetrisch aufgebauten Messzelle, wenn der angeschlossene Sender 1 Watt Ausgangsleistung liefert?}
     \only<2>{
     \begin{align*}
-      U &= \sqrt{P \cdot R}\\
-      E &= \frac{U}{d}\\
-      P &= 1W
+      \text{geg.: } P &= 1W \\
+      E &= \frac{U}{d} \text{ mit } U = \sqrt{P \cdot R}
     \end{align*}}
     \only<3>{
     \begin{align*}
@@ -99,20 +102,19 @@
 		\includegraphics[width=0.7\textwidth,height=.6\textheight,keepaspectratio]{a08/H-Feld.png}\\
 		{\tiny \hyperlink{refs}{\cite{wm}}} \\[1em]
 		\begin{itemize}
-		\item Im Inneren ein homogenes magnetisches Feld
+		\item im Inneren ein homogenes magnetisches Feld
 		\item Flussrichtung durch Rechte-Hand-Regel
 		\end{itemize}
 	\end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Stromdurchflossene Spule}
+    \frametitle{3D-Darstellung}
     \begin{center}
 		\includegraphics[width=0.7\textwidth,height=.6\textheight,keepaspectratio]{a08/3-D_HFeld.png}\\
 		\tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
 		\begin{itemize}
-		\item $B = \mu \cdot H$
-		\item Im Inneren ein homogenes magnetisches Feld
+		\item Was ist das? Gibt es homogene Bereiche?
 		\end{itemize}
 	\end{center}
 \end{frame}
@@ -121,11 +123,11 @@
     \frametitle{Formeln aus der Formelsammlung}
     \begin{block}{Formeln zur Spule}
       \begin{align*}
-	\text{Leiter: } H &= \cfrac{\mathrm{I}}{\ell_m} \\[1em]
-    	\text{Spule: } H &= \cfrac{\mathrm{I} \cdot N}{\ell_m} \\[1em]
-	\text{Spule: } B &= \mu_r \cdot \mu_0 \cdot H \\[1em]
+        \text{Feldstärke Leiter: } H &= \cfrac{\mathrm{I}}{\ell_m} \\[1em]
+    	\text{Feldstärke Spule: } H &= \cfrac{\mathrm{I} \cdot N}{\ell_m} \\[1em]
+	\text{Flussdichte Spule: } B &= \mu_r \cdot \mu_0 \cdot H \\[1em]
     	\mu_0 &= 1.257 \cdot 10^{-6}[\frac{Vs}{Am}] \\[1em]
-	\mu_r &= 1 \text{ bei Luft}
+	\mu_r &\approx 1 \text{ bei Luft}
      \end{align*}
    \end{block}
 \end{frame}
@@ -138,8 +140,8 @@
     {\tiny \hyperlink{refs}{\cite{wm}}} \\[1em]
     \column[c]{.35\textwidth}
     \begin{itemize}
-      \item $B = \mu \cdot H$
-      \item 15kW bei 450 kHz
+	    \item $B = \mu \cdot H$ %(Flussdiche = Feldkonstante $\cdot$ Feldstärke)
+        \item 15kW bei 450 kHz
       \item Spule ist wassergekühlt
     \end{itemize}
   \end{columns}
@@ -231,7 +233,7 @@
 \begin{frame}
     \frametitle{Der Feldwellenwiderstand}
     \begin{block}{Feldwellenwiderstand}
-      $E = Z_0 \cdot H$ \vspace{2cm} - analog zu $U = R \cdot I$ \\[1em]
+      $E = Z_0 \cdot H$ \hspace{2cm} (analog zu $U = R \cdot I)$ \\[1em]
       Im Freiraum ist $Z_0$ eine Konstante: \\[1em]
       $Z_0 = \sqrt{\cfrac{\mu_0}{\varepsilon_0}} = 376,7 \Omega$ \\[1em]
   \end{block}
@@ -239,19 +241,20 @@
 
 \begin{frame}
     \frametitle{Die Ersatzfeldstärke}
-    \begin{block}{Ersatzfeldstärke}
-        Ersatzfeldstärke des E-Feldes im Fernfeld (Herleitung nicht prüfungsrelevant)\\[1em]
+    \begin{block}{Ersatzfeldstärke des E-Feldes}
+        Im Fernfeld bei $> \frac{\lambda}{2\pi}$ (Herleitung nicht prüfungsrelevant)\\[1em]
     	$E = \cfrac{1}{r} \sqrt{\cfrac{Z_0}{4 \cdot \pi} \cdot P_s}$ \\[1em]
-        Im Fernfeld (bei $> \frac{\lambda}{2\pi}$) gilt im Freiraum $Z_0 = 376,7 \Omega $\\[1em]
+        Mit Freiraumdämpfung $Z_0 = 376,7 \Omega $\\[1em]
     	$\rightarrow E \approx \cfrac{\sqrt{30 \Omega \cdot P_s}}{r} $ \\[1em]
   \end{block}
 \end{frame}
 
-\begin{frame}
-    \begin{center}
-        \Huge Pause
-    \end{center}
-\end{frame}
+% Pause nicht notwendig
+% \begin{frame}
+%     \begin{center}
+%         \Huge Pause
+%     \end{center}
+% \end{frame}
 
 \begin{frame}
     \frametitle{Wellenlänge}
@@ -273,6 +276,7 @@
 \begin{frame}
     \frametitle{Raumwelle}
 	\begin{center}
+        % FIXME Grafiken aus dem Skript verwenden
         \includegraphics[width=.9\textwidth,height=.85\textheight,keepaspectratio]{a08/schichten_behelf_43.png}
         \footnote{\tiny Amateurfunkbehelf s.43 \url{http://ham.granjow.net/builds/Amateurfunkbehelf.pdf}}
     \end{center}
