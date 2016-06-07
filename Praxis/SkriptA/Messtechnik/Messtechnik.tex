@@ -20,7 +20,8 @@
 {5$mA$}%B
 {50$mA$}%C
 {50$\mu A$}%D
-{D}%Lösung
+{D \hspace{3em} $20 \frac{k\Omega}{V} \cdot 1V = 20 k\Omega \Rightarrow
+                 I = \frac{U}{R} = \frac{1V}{20k\Omega} = 50 \mu A$}%Lösung
 
 \mucho{3}{TJ102}
 {Das Drehspulmesswerk in der folgenden Schaltung hat einen maximalen Messstrom $I_M = 100\mu A$ und einen Messwerkwiderstand $R_M = 1 k\Omega$.}%Frage
@@ -37,7 +38,8 @@
 {Er liegt zwischen 226,5 und 233,5V.}%B
 {Er liegt zwischen 229,5 und 230,5V.}%C
 {Er liegt zwischen 229,7 und 230,3V.}%D
-{A}%Lösung
+{A \hspace{3em} Klasse 1.5 $\rightarrow 1,5\% \Rightarrow
+                            300V \cdot 0,015 = 4,5V \Rightarrow \pm 4,5V$ }%Lösung
 
 
 \mucho{5}{TJ115}
@@ -117,10 +119,59 @@
 
 \section*{Praxisteil}
 
+\subsection*{PCB mit 70cm-LPF: Bestücken \& Löten}
+
+Bestückt und verlötet die Bauteile auf der 70cm-Platine! Beachtet beim Löten des SMDs:
+
+\begin{itemize}
+    \item als erstes ein Lötpad etwas verzinnen
+    \item Zinn erwärmen und das Bauteil mit einer Pinzette darauf ablegen
+    \item wenn das Bauteil plan aufliegt, abschließend das andere Pad verlöten
+\end{itemize}
+
+Berechnet eine einfache Groundplane-Antenne ($\lambda/4$) für das Band von $430
+MHz$ bis $440 MHz$ und schneidet die entsprechende Länge aus einem starren
+Draht. Dieser wird nun so auf das Antennenpad aufgelötet, dass die Antenne
+gegenüber von der Buchsenleiste steht -- sprich: auf der Leiterbahnseite.
+
+\textbf{Hinweis}: Als Vorwiderstand verbauen wir im Kurs $470 \Omega$ um unsere
+\emph{Raspberry Pi}s gegen versehentliches Kurzschließen zu schützen. Später kann dieser
+gegen einen geringeren Widerstand oder sogar eine Drahtbrücke ausgetauscht
+werden, um mehr Leistung an der Antenne zu erhalten. Erklärung: Der Stromfluss
+wird durch den Widerstand begrenzt ($I = \frac{U}{R} = \frac{3,3 V}{470 \Omega}
+\approx 7 mA$). Mit $220 \Omega$ auf $15 mA$ sollte man aber auch noch auf der
+sicheren Seite sein -- "`das Internet"' berichtet von $30 mA$ am GPIO ohne
+bleibende Schäden. ;-) Ist sichergestellt, dass der Filter und die Abstrahlung
+an der Antenne funktionieren, kann der Widerstand auch wie gesagt weggelassen
+werden. \textbf{Frage:} Welche Leistungen ergeben sich je nach Vorwiderstand
+ungefähr?
+
+\loesung{$P = U \cdot I$ \\
+         $7 mA$: $3,3 V \cdot 0.007 A \approx 23 mW$ \\
+         $15 mA$: $3,3 V \cdot 0.015 A \approx 50 mW$ \\
+         $30 mA$: $3,3 V \cdot 0.030 A \approx 100 mW$}
+
+\subsection*{Perfboard mit 30m-LPF: Bestücken \& Löten}
+
+Baut einen weiteren Tiefpassfilter auf einer Lochrasterplatine auf. Beachtet,
+dass diesmal \textbf{TX via GPIO 4 (Pin 7)} und ein beliebiger GND verdrahtet
+werden muss (siehe Abbildung \ref{rpi}). Die Spule dient später zum Abstimmen
+und soll von Hand auf einen $8mm$-Durchmesser auf ca. $1cm$ Länge gewickelt
+werden -- wieviele Windungen müssen das sein?
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Messtechnik/Bilder/30mRaspiAmpLP.jpg}
+    \caption{Schaltung des 30m-Tiefpassfilters aus Qucs}
+    \label{30mLP}
+\end{figure}
+
+\subsection*{Messprotokoll}
+
 \begin{enumerate}
 	\item Das lineare Verhalten eines Tiefpassfilters.
 		\begin{itemize}
-			\item Nutze die Gleispannungsquelle und das Tischmultimeter.
+			\item Nutze die Gleichspannungsquelle und das Tischmultimeter.
 			\item Lege eine Gleichspannung an den Eingang des Tiefpassfilters und messe die Ausgangsspannung.
     		\item Die Eingangspannung soll zwischen $-10~V$ und $+10~V$ liegen.
     		\item Die Eingangsspannung soll in $2~V$-Schritten geändert werden.
