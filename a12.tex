@@ -1,175 +1,478 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+% Autoren: Sebastian Lange <dl7bst@dk0tu.de>, Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse A 12: \\
-          Modulation und Demodulation \\[2em]}
-\date{Stand 11.06.2015}
+Modulation und Demodulation \\[2em]}
+\date{Stand 15.02.2016}
 \input{texdata/titlepage}
 
 \section{Überblick}
 
 \begin{frame}
-    \frametitle{Überblick}
+  \frametitle{Überblick}
 
-    Wiederholung: Was ist Modulation? \bigskip
+  Wiederholung: Was ist Modulation? \bigskip
 
-    Nennt die Prinzipien von:
+  Nennt die Prinzipien von:
 
-    \begin{itemize}
-        \item AM
-        \item SSB
-        \item FM
-    \end{itemize}
+  \begin{itemize}
+    \item AM
+    \item SSB
+    \item FM
+  \end{itemize}
+
+  \pause
+
+  Diese Lektion setzt viele unterschiedliche Schaltungsbilder ein -- nicht abschrecken lassen!
 
 \end{frame}
+
 
 \section{AM}
 
 \subsection{Modulation}
 
 \begin{frame}
-    \frametitle{AM-Modulation}
+  \frametitle{AM-Modulation}
 
-%    \begin{center}
-%        \includegraphics[width=0.8\textwidth]{a13/TG103a.png}
-%        \tiny (TG103)
-%    \end{center}
-
+  \begin{columns}
+    \column{.4\textwidth}
+    \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{a12/td503d.png}
+    \column{.5\textwidth}
+    NF-Signal wird gemischt mit einem
+  \end{columns}
+  \begin{columns}
+    \column{.4\textwidth}
+    \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{a12/td503b.png}
+    \column{.5\textwidth}
+    HF-Signal. Beim resultierenden Signal (nicht dargestellt) wird durch
+  \end{columns}
+  \begin{columns}
+    \column{.4\textwidth}
+    \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{a12/td503a.png}\\
+    {\tiny TD503}
+    \column{.5\textwidth}
+    eine Diode eine Halbwelle entfernt. Mit einer Siebschaltung werden die fehlenden Halbwellen mit gleicher Größe der vorhandenen regeneriert.
+  \end{columns}
 \end{frame}
 
-\subsubsection{Modulationsgrad}
+
+\subsubsection{Modulations"-grad}
 
 \begin{frame}
-    \frametitle{AM-Modulationsgrad}
+  \frametitle{AM-Modulationsgrad}
 
-    \begin{center}
-        \includegraphics[width=0.5\textwidth]{a12/TE111.png}
-        \tiny (TE111)
-    \end{center}
-   
-    \begin{equation*}
-        m = \frac{\hat{U}_{mod}}{\hat{U}_T}
-    \end{equation*}
+  \begin{block}{Modulationsgrad}
+    Verhältnis der Amplitude der NF-Schwingung zur Amplitude der unmodulierten Trägerschwingung.\\
+    $m = \cfrac{\hat{U}_{mod}}{\hat{U}_T}$
+  \end{block}
 
+  \begin{center}
+    \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{a12/TE111.png}
+    {\tiny TE111}
+  \end{center}
 \end{frame}
 
+
 \subsubsection{Leistung}
+
+\begin{frame}
+  \frametitle{Leistung bei AM}
+  \begin{exampleblock}{Beispiel bei 100\% Modulationsgrad}
+    100\% Modulationsgrad $\equiv$ Trägerspannung und Modulationsspannung gleich\\[.5em]
+    z.B. Gesamtspannung 10V $\Rightarrow$ 5V Träger + 2 Mal 2,5V Seitenfrequenzen\\[.5em]
+    Bei einem Widerstand von 50$\Omega$ ergibt sich für die Leistung $P = \frac{U^2}{R}$\\[.5em]
+    \begin{align*}
+      \text{Träger: } & P       &= \frac{5^2V^2}{50\Omega}   = 0,5W    \\
+      \text{Seiten: } & P_{SSB} &= \frac{2,5^2V^2}{50\Omega} = 0,125W \\
+      \text{Gesamt: } & P_{ges} &= 0,5W + 2 \cdot 0,125W           = 0,75W  \\
+    \end{align*}
+    In 1/6 der Gesamtleistung liegt die Information!
+  \end{exampleblock}
+\end{frame}
+
 
 \subsection{Demodulation}
 
 \begin{frame}
-    \frametitle{AM-Demodulation}
+  \frametitle{AM-Demodulation}
 
-%    \begin{center}
-%        \includegraphics[width=0.5\textwidth]{a13/TG226.png}
-%        \tiny (TG226)
-%    \end{center}
-
+  \begin{columns}
+    \column{.5\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{a12/td503.png}\\
+    {\tiny TD501}
+    \column{.45\textwidth}
+    \textbf{Hüllkurvendemodulator}\\[.5em]
+    Bestehend aus Gleichrichter, Diode, Ladekondensator, Entladungswiderstand und Koppelkondensator
+  \end{columns}
 \end{frame}
-
-\subsubsection{Audion}
 
 \begin{frame}
-    \frametitle{Audion}
-
-%    \begin{center}
-%        \includegraphics[width=0.5\textwidth]{a13/TG226.png}
-%        \tiny (TG226)
-%    \end{center}
-
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TD503} & \textbf{Am ZF-Eingang liegt ein sinusförmig moduliertes AM-Signal. Bei dieser Schaltung zeigt der mit ``X'' bezeichnete Punkt das nebenstehende}
+    \begin{tabular}[c]{lr}
+      \includegraphics[width=.4\textwidth,height=.4\textheight,keepaspectratio]{a12/td503.png} &
+      \parbox[c]{.3\textwidth}{
+      \includegraphics[width=.3\textwidth]{a12/td503a.png}\\
+      \includegraphics[width=.3\textwidth]{a12/td503b.png}\\
+      \includegraphics[width=.3\textwidth]{a12/td503c.png}\\
+      \includegraphics[width=.3\textwidth]{a12/td503d.png}\\
+      }\\
+    \end{tabular}\\ \hline\hline
+    A \only<2>\checkmark & Signal 1. \\ \hline
+    B & Signal 2. \\ \hline
+    C & Signal 3. \\ \hline
+    D & Signal 4. \\ \hline
+  \end{tabular}
 \end{frame}
-
-\subsection{Trägerunterdrückung}
 
 \begin{frame}
-    \frametitle{Trägerunterdrückung}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TD504} & \textbf{Am ZF-Eingang liegt ein sinusförmig moduliertes AM-Signal. Bei dieser Schaltung zeigt der mit ``X'' bezeichnete Punkt das nebenstehende}
+    \begin{tabular}[c]{lr}
+      \includegraphics[width=.4\textwidth,height=.4\textheight,keepaspectratio]{a12/td504.png} &
+      \parbox[c]{.3\textwidth}{
+      \includegraphics[width=.3\textwidth]{a12/td503a.png}\\
+      \includegraphics[width=.3\textwidth]{a12/td503b.png}\\
+      \includegraphics[width=.3\textwidth]{a12/td503c.png}\\
+      \includegraphics[width=.3\textwidth]{a12/td503d.png}\\
+      }\\
+    \end{tabular}\\ \hline\hline
+    A & Signal 1. \\ \hline
+    B & Signal 2. \\ \hline
+    C \only<2>\checkmark & Signal 3. \\ \hline
+    D & Signal 4. \\ \hline
+  \end{tabular}
+\end{frame}
 
-%    \begin{center}
-%        \includegraphics[width=0.5\textwidth]{a13/TG106.png}
-%        \tiny (TG106)
-%    \end{center}
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TF317} & \textbf{Bei dieser Schaltung handelt es sich um einen}
+    \includegraphics[width=.6\textwidth,height=.5\textheight,keepaspectratio]{a12/tf317.png} \\ \hline\hline
+    A & FM-Diskriminator. \\ \hline
+    B \only<2>\checkmark & AM-Detektor. \\ \hline
+    C & ZF-Modulator. \\ \hline
+    D & AGC-Gleichrichter. \\ \hline
+  \end{tabular}
+\end{frame}
+
+
+%\subsubsection{Audion}
+
+
+\subsection{Träger"-unter"-drückung}
+
+\begin{frame}
+  \frametitle{Trägerunterdrückung}
+
+  \begin{exampleblock}{Rückblick auf die Mischung}
+    Welche Frequenzen entstehen bei der Mischung von 2kHz mit 7,1MHz?\\[1.5em]
+
+    \pause
+    $f_1 = 7,098 MHz$ und $f_2 = 7,102 MHz$\\[1.5em]
+    $\Rightarrow$ Die Seitenfrequenzen liegen bereits im HF-Bereich und können von einer Antenne abgestrahlt werden!
+  \end{exampleblock}
+  \pause
+  \begin{itemize}
+    \item die Leistung des Trägers kann in die Seitenbänder gesteckt werden
+    \item der Träger muss am Empfänger für die Demodulation wieder hinzugemischt werden
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Ringmodulator}
+  \begin{columns}
+    \column{.5\textwidth}
+    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a12/td513.png}\\
+    {\tiny TD513}
+    \column{.45\textwidth}
+    \emph{Das ist keine Gleichrichterschaltung! Die Dioden sind anders angeordnet.}\\[1.5em]
+    Je nach Polarität des NF-Signals wird ein anderes Dioden-Pärchen leitend. Bei Polaritätswechsel ergibt sich eine Phasendrehung des modulierten Signals.\\[2.5em]
+    {\small Erklärung ist umfangreicher; es gibt nur dieses eine Bild in der Prüfung $\rightarrow$ einfach merken, dass es sich um einen \emph{Modulator zur Erzeugung von AM-Signalen mit unterdrücktem Träger} handelt}
+  \end{columns}
 
 \end{frame}
+
 
 \section{SSB}
-
-\begin{frame}
-    \frametitle{SSB}
-
-%    \begin{center}
-%        \includegraphics[width=0.8\textwidth]{a13/TD701.png}
-%        \tiny (TD701)
-%    \end{center}
-
-\end{frame}
 
 \subsection{Modulation}
 
 \begin{frame}
-    \frametitle{SSB-Modulation}
+  \frametitle{SSB}
 
-%    \begin{center}
-%        \includegraphics[width=0.8\textwidth]{a13/TD701.png}
-%        \tiny (TD701)
-%    \end{center}
-
+  \begin{itemize}
+    \item in beiden Seitenbändern steckt dieselbe Information
+    \item durch einen Filter eines der beiden Seitenbänder weglassen
+    \item historisch bedingt im Amateurfunk
+      \begin{description}
+        \item[$f < 10MHz$] Unteres Seitenband (Lower Sideband \textbf{LSB})
+        \item[$f > 10MHz$] Oberes Seitenband (Upper Sideband \textbf{USB})
+      \end{description}
+    \item 5/6 der Leistung von AM kann ohne Informationsverlust in ein Seitenband gesteckt werden
+    \item weniger als die Hälfte der Bandbreite von AM
+  \end{itemize}
 \end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TG213} & \textbf{Wie wird ein SSB-Signal erzeugt?}\\ \hline\hline
+    A & Im Balancemodulator wird ein Zweiseitenband-Signal erzeugt. Ein auf die Trägerfrequenz abgestimmter Saugkreis filtert den Träger aus.\\ \hline
+    B & Im Balancemodulator wird ein Zweiseitenband-Signal erzeugt. Ein auf die Trägerfrequenz abgestimmter Sperrkreis filtert den Träger aus.\\ \hline
+    C \only<2>\checkmark & Im Balancemodulator wird ein Zweiseitenband-Signal erzeugt. Das Seitenbandfilter selektiert ein Seitenband heraus.\\ \hline
+    D & Im Balancemodulator wird ein Zweiseitenband-Signal erzeugt. In einem Frequenzteiler wird ein Seitenband abgespalten.\\ \hline
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TG214} & \textbf{Für die Erzeugung eines SSB-Signals wird ein Gegentaktmodulator verwendet. Das zur Unterdrückung eines Seitenbandes nachgeschaltete Filter sollte über}\\ \hline\hline
+    A \only<2>\checkmark & 2,4 kHz Bandbreite verfügen.\\ \hline
+    B & 800 Hz Bandbreite verfügen.\\ \hline
+    C & 455 kHz Bandbreite verfügen.\\ \hline
+    D & 10,7 MHz Bandbreite verfügen.\\ \hline
+  \end{tabular}
+\end{frame}
+
 
 \subsection{Demoduluation}
 
 \begin{frame}
-    \frametitle{SSB-Demodulation}
+  \frametitle{SSB-Demodulation}
 
-%    \begin{center}
-%        \includegraphics[width=0.8\textwidth]{a13/TG110.png}
-%        \tiny (TG110)
-%    \end{center}
-
+  \begin{itemize}
+    \item Zufügen des Trägers, beispielsweise mit einem BFO (beat frequency oscillator)
+    \item auch das zweite Seitenband wird damit wiederhergestellt
+    \item Ergebnis ist ein normales AM-Signal
+    \item ab hier kann ein AM-Demodulator eingesetzt werden
+  \end{itemize}
 \end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TF418} & \textbf{Ein Empfänger arbeitet mit einer End-ZF von 455 kHz. Welche BFO-Frequenz wäre beim CW-Empfang geeignet?} \\ \hline\hline
+    A & 455 kHz.\\ \hline
+    B & 465,7 kHz. \\ \hline
+    C \only<2>\checkmark & 455,8 kHz. \\ \hline
+    D & 10,7 MHz. \\ \hline
+  \end{tabular}
+\end{frame}
+
 
 \subsubsection{Produktdetektor}
 
 \begin{frame}
-    \frametitle{Produktdetektor}
-
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TD511} & \textbf{Bei dieser Schaltung handelt es sich um einen}
+    \includegraphics[width=.8\textwidth,height=.5\textheight,keepaspectratio]{a12/td511.png} \\ \hline\hline
+    A & Flankendemudolator zur Demodulation von FM-Signalen. \\ \hline
+    B & Diskriminator zur Demodulation von FM-Signalen. \\ \hline
+    C & Hüllkurvendemodulator zur Demodulation von AM-Signalen. \\ \hline
+    D \only<2>\checkmark & Produktdetektor zur Demodulation ven SSB-Signalen. \\ \hline
+  \end{tabular}
 \end{frame}
-
-\section{FM}
 
 \begin{frame}
-    \frametitle{FM}
-
-%    \begin{center}
-%        \includegraphics[width=0.5\textwidth]{a13/TF206.png}
-%        \tiny (TF206)
-%    \end{center}
-
+  \frametitle{Produktdetektor}
+  \begin{columns}
+    \column{.5\textwidth}
+    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td511.png}\\
+    {\tiny TD511}
+    \column{.45\textwidth}
+    \begin{itemize}
+      \item anderer Demodulator anstatt AM-Hüllkurvendemodulator
+      \item Ringmodulator (ordne die Dioden anders an, dann wird es deutlich)
+      \item jeweils an den Mittenanzapfungen von SSB-Signal und BFO wird das NF-Signal abgenommen
+    \end{itemize}
+    {\small Auch hier ist die Erklärung wieder umfangreich $\rightarrow$ einfach das Bild und den Begriff \emph{Produktdetektor} merken.}
+  \end{columns}
 \end{frame}
+
+
+\section{FM}
 
 \subsection{Modulation}
 
 \begin{frame}
-    \frametitle{FM-Modulation}
+  \frametitle{FM-Modulation}
 
-%    \begin{center}
-%        \includegraphics[width=0.8\textwidth]{a13/TF205b.png}
-%        \tiny (TF205b)
-%    \end{center}
-
+  \begin{columns}
+    \column{.5\textwidth}
+    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td514.png}\\
+    {\tiny TD514}
+    \column{.45\textwidth}
+    \begin{itemize}
+      \item Kapazitätsdiode parallel zum Oszillator geschaltet
+      \item bei Amplitudenänderung der NF ändert sich die Sperrspannung des Varicaps
+      \item dieses ändert die Frequenz des Oszillators
+      \item die Amplitude des Oszillators bleibt gleich
+      \item Empfindlichkeit wird in kHz/V angegeben
+    \end{itemize}
+  \end{columns}
 \end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TD514} & \textbf{Bei dieser Schaltung handelt es sich um einen Modulator zur Erzeugung von}
+    \includegraphics[width=.7\textwidth,height=.85\textheight,keepaspectratio]{a12/td514.png}\\ \hline\hline
+    A & phasenmodulierten Signalen. \\ \hline
+    B \only<2>\checkmark & frequenzmodulierten Signalen. \\ \hline
+    C & AM-Signalen mit unterdrücktem Träger. \\ \hline
+    D & AM-Signalen. \\ \hline
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TE208} & \textbf{Die Änderung der Kapazität einer über einen Quarzoszillator geschalteten Varicap-Diode stellt eine Möglichkeit dar} \\ \hline\hline
+    A \only<2>\checkmark & Frequenzmodulation zu erzeugen. \\ \hline
+    B & Zweiseitenbandmodulation zu erzeugen. \\ \hline
+    C & CW-Signale zu erzeugen. \\ \hline
+    D & Amplitudenmodulation zu erzeugen. \\ \hline
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TE216} & \textbf{Wie wird die Empfindlichkeit eines FM-Modulators angegeben?} \\ \hline\hline
+    A & in Rad/s \\ \hline
+    B & Als Modulationsindex \\ \hline
+    C & Als Hub. \\ \hline
+    D \only<2>\checkmark & In kHz/V \\ \hline
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TG301} & \textbf{Was kann man bezüglich der Ausgangsleistung eines FM-Senders in Abhängigkeit von der Modulation aussagen?}\\ \hline\hline
+    A & Sie reduziert sich um 50\%, wenn der Sender moduliert wird. \\ \hline
+    B & Sie variiert mit der Modulationsleistung, wenn der Sender moduliert wird. \\ \hline
+    C \only<2>\checkmark & Sie ist unabhängig von der Modulation. \\ \hline
+    D & Sie geht gegen Null, wenn der Sender nicht moduliert wird. \\ \hline
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TG212} &
+    \begin{tabular}[c]{lr}
+      \includegraphics[width=.4\textwidth,height=.5\textheight,keepaspectratio]{a12/tg212.png} &
+      \parbox[c]{.4\textwidth}{\textbf{Dieser Schaltungsauszug ist Teil eines Senders.  Welche Funktion hat die Diode?}} \\
+    \end{tabular} \\ \hline\hline
+    A \only<2>\checkmark & Sie beeinflussst die Resonanzfrequenz des Schwingkreises in Abhängigkeit von den Frequenzen im Basisband und moduliert so die Oszillatorfrequenz. \\ \hline
+    B & Sie richtet das Eingangssignal gleich und erzeugt so die Betriebsspannung für den Oszillator, um diesen von der Stromversorgung der anderen Stufen zu entkoppeln. \\ \hline
+    C & Sie begrenzt die Amplituden des Eingangssignals und vermeidet so die Übersteuerung der Oszillatorstufe. \\ \hline
+    D & Sie dient zur Erzeugung von Amplitudenmodulation und zur Abstimmung der Oszillatorfrequenz. \\ \hline
+  \end{tabular}
+\end{frame}
+
+
+\subsubsection{Preemphasis}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TB804} & \textbf{Warum wird bei FM senderseitig eine Preemphasis eingesetzt?} \\ \hline\hline
+    A & Um das FM Kanalraster von 25 kHz auf 12,5 kHz durch Reduzierung der Bandbreite zu ermöglichen. \\ \hline
+    B & Um das breibandige FM-Signal durch Anheben der Amplituden der höheren Modulationsfrequenzen auf Schmalband FM zu reduzieren. \\ \hline
+    C & Um die Ausgangsleistung durch Verdichtung des Spektrums der Modulationsfrequenzen zu erhöhen. \\ \hline
+    D \only<2>\checkmark & Um das Signal/Rausch-Verhältnis durch Anheben der Amplituden der höheren Modulationsfrequenzen zu verbessern. \\ \hline
+  \end{tabular}
+\end{frame}
+
 
 \subsection{Demodulation}
 
 \begin{frame}
-    \frametitle{FM-Demodulation}
+  \frametitle{FM-Demodulation}
 
-%    \begin{center}
-%        \includegraphics[width=0.8\textwidth]{a13/TF209b.png}
-%        \tiny (TF209b)
-%    \end{center}
+  \begin{columns}
+    \column{.5\textwidth}
+    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td505.png}\\
+    {\tiny TD505}
+    \column{.45\textwidth}
+    \begin{itemize}
+      \item die meisten FM-Demodulatoren wandeln FM erst in AM oder PM um
+      \item Fachbezeichnung: \emph{Diskriminator}, hier ein \textbf{Flanken-Diskriminator}
+      \item Schwingkreis liefert bei Resonanzfrequenz die größte Spannung
+      \item bei Frequenzen knapp daneben wird die Spannung geringer
+      \item Ergebnis ist eine AM-Hüllkurve
+      \item anschließend Einweggleichrichter
+    \end{itemize}
+  \end{columns}
+\end{frame}
 
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TD506} & \textbf{Bei dieser Schaltung handelt es sich um einen}
+    \includegraphics[width=.6\textwidth,height=.4\textheight,keepaspectratio]{a12/td506.png}\\ \hline\hline
+    A \only<2>\checkmark & Gegentakt-Flanken-Diskriminator zur Demodulation von FM-Signalen. \\ \hline
+    B & Ratiodetektor zur Demodulation von FM-Signalen. \\ \hline
+    C & Hüllkurvenmodulator zur Demodulation von AM-Signalen. \\ \hline
+    D & Produktdetektor zur Demodulation von SSB-Signalen. \\ \hline
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  \begin{columns}
+    \column{.5\textwidth}
+    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td507.png}\\
+    {\tiny TD507}
+    \column{.45\textwidth}
+    \begin{itemize}
+      \item \textbf{Phasendiskriminator}
+      \item Wandelt über den Koppelkondensator in Phasenmodulation um 
+    \end{itemize}
+    {\small Diese Schaltung kommt nur ein Mal vor $\rightarrow$ \emph{Kondensator} und \emph{Phasendiskriminator} merken}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \begin{columns}
+    \column{.5\textwidth}
+    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td508.png}\\
+    {\tiny TD508}
+    \column{.45\textwidth}
+    \begin{itemize}
+      \item \textbf{Verhältnisdiskriminator} oder \textbf{Ratiodetektor}
+      \item ähnlich wie Phasendiskriminator, jedoch mit induktiver Einkopplung
+      \item antisymmetrische Dioden 
+    \end{itemize}
+    {\small Diese Schaltung kommt nur ein Mal vor $\rightarrow$ \emph{Dioden} und \emph{Ratiodetektor} merken}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \begin{columns}
+    \column{.5\textwidth}
+    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td509.png}\\
+    {\tiny TD509}
+    \column{.45\textwidth}
+    \begin{itemize}
+      \item \textbf{PLL-FM-Demodulator}
+      \item Demodulation mittels einer PLL (phase locked loop)
+      \item VCO ist auf dem FM-Signal eingestellt
+      \item ändert sich die HF, wird über den Komparator verglichen
+      \item die Änderung soll durch Spannungsänderung nachgeregelt werden
+      \item $\Delta V$ entspricht der NF
+      \item mehr zu PLL in Lektion A13
+    \end{itemize}
+    {\small Diese Schaltung kommt nur ein Mal vor $\rightarrow$ \emph{PLL} merken}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TD510} & \textbf{Bei dieser Schaltung handelt es sich um einen}
+    \includegraphics[width=.7\textwidth,height=.5\textheight,keepaspectratio]{a12/td510.png} \\ \hline\hline
+    A \only<2>\checkmark & Begrenzerverstärker mit FM-Diskriminator. \\ \hline
+    B & Produktdetektor zu Demodulation von SSB-Signalen. \\ \hline
+    C & Modulator zur Erzeugung von SSB-Signalen. \\ \hline
+    D & Modulator zur Erzeugung von FM-Signalen. \\ \hline
+  \end{tabular}
+
+  \only<2>{\vspace{1.5em}ZF-Verstärker mit Quarzfilter, Begrenzer und FM-Demodulator. Einfach merken\ldots}
 \end{frame}
 
 \renewcommand{\refname}{Referenzen}
@@ -180,8 +483,10 @@
 \footnotesize
 
 \begin{thebibliography}{}
-    \bibitem{darc}  DARC Online-Lehrgang Lektion A12:
-                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a12/}
-\end{thebibliography} 
+  \bibitem{darc}  DARC Online-Lehrgang Lektion A12:
+    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a12/}
+  \bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:\\
+    \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
+\end{thebibliography}
 
 \input{texdata/postamble}
