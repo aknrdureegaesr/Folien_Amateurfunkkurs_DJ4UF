@@ -1,11 +1,13 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+% Autoren: Sebastian Lange <dl7bst@dk0tu.de>, Lars Weiler <dc4lw@darc.de>
+
+% FIXME Durch den Merge mit Lars' Input müssen die Quellen nochmal sortiert werden!
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse A 11: \\
           Signale \\[2em]}
-\date{Stand 11.06.2015}
+\date{Stand 15.06.2016}
 \input{texdata/titlepage}
 
 \section{Einleitung}
@@ -13,81 +15,115 @@
 \begin{frame}
     \frametitle{Einleitung}
 
-    Was sind Signale?
+    \centering \Large Generell: Was sind Signale?
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Einleitung}
+    \frametitle{Signale}
 
-    Allgemein: \\[2em]
-
-    Signale sind Zeichen. Ist ihre Bedeutung festgelegt können Nachrichten
-    transportiert werden. \\[2em]
+    Allgemein: Signale sind Zeichen. Ist ihre Bedeutung festgelegt können
+    Nachrichten transportiert werden. \\[2em]
 
     Dazu ein wenig Theorie für den Bereich der elektrischen Nachrichtenübertragung...
 
 \end{frame}
 
-\section{Periodische Signale}
-
 \begin{frame}
-    \frametitle{Periodische Signale}
+    \frametitle{Signale}
 
-    Nachrichtentechnik: \\[2em]
-    
-    Grundsätzliche Unterscheidung zwischen
+    Nachrichtentechnik: Grundsätzliche Unterscheidung zwischen
     \textbf{periodischen} und \textbf{nicht-periodischen} Signalen. \\[2em]
 
-    Bekannte periodische sind z.B. Sin/Cos, Rechteck, Dreieck, Sägezahn.
+    Welche periodischen Signale kennt ihr?
 
 \end{frame}
+
+\section{Periodische Signale}
+
 
 \begin{frame}
     \frametitle{Periodische Signale}
 
     \begin{center}
-        \includegraphics[width=1\textwidth]{a11/Waveforms_de.png}
+        \includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{a11/Waveforms_de.png}
         \tiny \hyperlink{refs}{\cite{wc}}
     \end{center}
 
 \end{frame}
 
-\subsection{Sinus}
+\subsection{Sinusförmig}
+
+\begin{frame}{Sinusförmige Signale}
+  Fundamental: Schallwellen und elektromagnetische Wellen lassen sich als zusammengesetzte Sinus- und Cosinuswellen beschreiben
+
+  \begin{center}
+    \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{a11/Sine.pdf}
+    {\tiny \hyperlink{refs}{\cite{wm}}}
+  \end{center}
+
+  Entstehung von Sinus und Cosinus am Einheitskreis, z.B. durch einen Generator (Animation\footnote{
+  \url{https://upload.wikimedia.org/wikipedia/commons/9/9c/Einheitskreis_mit_Sinus_und_Kosinusfunktion.gif}})
+
+\end{frame}
 
 \begin{frame}
-    \frametitle{Sinus}
-
-    Fundamental: Sinus bzw. Cosinus.
+    \frametitle{Sinusförmige Signale}
 
     \begin{center}
         \includegraphics[width=1\textwidth]{a11/Sine_cosine_one_period.png}
         \tiny \hyperlink{refs}{\cite{wc}}
     \end{center}
 
-    Was sind Amplitude, Scheitelwert, Spitze-Spitze-Wert, Periodendauer, Frequenz?
+    Was sind Amplitude, Scheitelwert, Spitze-Spitze-Wert, Periodendauer,
+    Frequenz, Effektivwert?
 
+\end{frame}
+
+\begin{frame}{Kenngrößen}
+  \begin{columns}[c]
+    \column[c]{.4\textwidth}
+      \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{a11/Sinusspannung.pdf}
+      {\tiny \hyperlink{refs}{\cite{wm}}}
+    \column[c]{.55\textwidth}
+      \begin{block}{Begriffe}
+    \begin{enumerate}
+          \item Scheitelwert, Spitzenwert $\hat{U}$
+          \item Spitze-Spitze-Wert $U_{SS} = 2 \cdot \hat{U}$
+          \item Effektivwert $U_{eff} = \frac{\hat{U}}{\sqrt{2}} \approx 0,7 \cdot \hat{U}$
+          \item Periodendauer $T = \frac{1}{f} = \frac{2\pi}{\omega}$\\
+            mit Kreisfrequenz $\omega = 2\cdot\pi \cdot f$
+    \end{enumerate}
+      \end{block}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Sinus}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TB609} & \textbf{Der Spitzen-Spitzen-Wert der häuslichen 230-V-Strom"-ver"-sor"-gung ist}\\ \hline\hline
+    A & 163 Volt. \\ \hline
+    B & 325 Volt. \\ \hline
+    C \only<2>\checkmark & 650 Volt. \\ \hline
+    D & 460 Volt. \\ \hline
+  \end{tabular}
 
-    \begin{block}{Wie hoch sind die Effektivwerte von sin/cos?}
-        \only<2>{$\frac{1}{\sqrt{2}} \approx 0,7$}
-    \end{block}
+    \bigskip
 
+  \only<2>{$230V \cdot \sqrt{2} \cdot 2$ \hfill -- Darauf achten, ob vielleicht nach Spitzenwert gefragt ist.
+
+           \vspace{3em} Generell bei Leistungsberechnungen mit Wechselströmen: Effektivwert nehmen!}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Sinus}
-
-    \begin{block}{(TB608) Der Spitzenwert der häuslichen 230-V-Stromversorgung beträgt?}
-        \only<2>{$230V \cdot \sqrt{2} \approx 325V$}
-    \end{block}
-
-    \only<2>{\vspace{2em}Bei Leistungsberechnungen mit Wechselströmen daran denken!}
-
-\end{frame}
+% -> Aufgabenblatt
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TA114} & \textbf{Die Periodendauer von $50 \mu s$ entspricht einer Frequenz von}\\ \hline\hline
+%     A & 200 Hz \\ \hline
+%     B & 2 kHz \\ \hline
+%     C \only<2>\checkmark & 20 kHz \\ \hline
+%     D & 200 MHz \\ \hline
+%   \end{tabular}
+% \end{frame}
 
 \begin{frame}
     \frametitle{Sinus}
@@ -98,7 +134,13 @@
 
 \end{frame}
 
-\subsubsection{Oszi (Wdh)}
+\begin{frame}
+  \begin{exampleblock}{Fakultative Hausaufgabe}
+    Fragenkatalog Kapitel 1.2.6 Sinusförmige Signale TB601--TB612.
+  \end{exampleblock}
+\end{frame}
+
+\subsubsection{Oszilloskop (Wdh.)}
  
 \begin{frame}
     \frametitle{Kurze Wiederholung Messtechnik: Oszilloskop}
@@ -108,7 +150,7 @@
     \begin{block}{
         Wie hoch sind Spitze-Spitze-Spannung und Frequenz?
         \begin{center}
-            \includegraphics[width=0.5\textwidth]{a11/TB605.png}
+            \includegraphics[width=0.4\textwidth]{a11/TB605.png}
             \tiny (TB606)
         \end{center}
     }
@@ -120,22 +162,22 @@
 
 \end{frame}
    
-\subsubsection{Phasenwinkel}
+\subsection{Phasenwinkel}
 
 \begin{frame}
     \frametitle{Zeigerdarstellung}
 
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{a11/Sine_Cosine_Exponential_qtl1.png}
+        \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/Sine_Cosine_Exponential_qtl1.png}
         \tiny \hyperlink{refs}{\cite{wc}}\\
         \normalsize Trigonometrische Zusammenhänge im Einheitskreis.
     \end{center}
 
-    Animierte Darstellungen:
-    \begin{itemize}
-        \item Wikimedia [\href{http://commons.wikimedia.org/wiki/File:Einheitskreis_mit_Sinus_und_Kosinusfunktion.gif}{Link}]
-        \item H. Krauß [\href{http://www.hutschdorf.de/flash/sinus.htm}{Link}]
-    \end{itemize}
+    Animationen:
+    Wikimedia\footnote{\tiny\url{http://commons.wikimedia.org/wiki/File:Einheitskreis_mit_Sinus_und_Kosinusfunktion.gif}}
+    (Wdh.) und von H.
+    Krauß\footnote{\tiny\url{http://www.hutschdorf.de/flash/sinus.htm}} (braucht
+    Flash).
 
 \end{frame}
 
@@ -160,27 +202,102 @@
 \begin{frame}
     \frametitle{Ableitung weiterer Signale}
 
-    Alle möglichen period. Signale lassen sich aus Überlagerung von
-    Sinussignalen ableiten:
-
-    \begin{itemize}
-        \item \textbf{Grundfrequenz}
-        \item beliebige \textbf{ganzzahlige Vielfache} der Grundfrequenz
-    \end{itemize}
+	\begin{block}{Definition}
+      Hat ein Signal nur eine einzige Frequenz, ist es ein sinusförmiges Signal. Alle anderen Signale bestehen aus einem Frequenzgemisch.
+    \end{block}
 
 \end{frame}
 
 \begin{frame}
-\frametitle{Oberwellen}
+    \frametitle{Ableitung weiterer Signale}
+
+	Bedeutet alle möglichen period. Signale lassen sich aus Überlagerung von
+    Sinussignalen ableiten:
+
+    \begin{itemize}
+        \item \textbf{Grundfrequenz}
+        \item beliebige \textbf{ganzzahlige Vielfache} der Grundfrequenz \\
+              (Oberwellen bzw. Harmonische)
+    \end{itemize}
+
+    \bigskip Bereits vorgestelle Beispiele: Rechteck, Dreieck, Sägezahn
+
+\end{frame}
+
+\subsubsection{Frequenzvielfache}
+
+\begin{frame}
+\frametitle{Harmonische und Oberwellen}
 
     \begin{block}{Welche Frequenz hat die erste Harmonische von $430.200 MHz$?}
         \only<2-3>{Die erste Harmonische ist die Frequenz selbst. \\
-                 Die erste Oberwelle bzw. zweite Harmonische liegt bei $860.40 MHz$}
+                 Die erste Oberwelle bzw. zweite Harmonische liegt bei $860.4 MHz$}
     \end{block}
 
     \only<3>{\vspace{3em}\Large Merke: Harmonische = Oberwelle + 1}
 
 \end{frame}
+
+\begin{frame}{Harmonische und Oberwellen}
+  \begin{columns}[c]
+    \column[c]{.4\textwidth}
+      \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{a11/Moodswingerscale.pdf}
+      {\tiny \hyperlink{refs}{\cite{wm}}}
+    \column[c]{.55\textwidth}
+      Harmonische
+      \begin{itemize}
+    \item 1. Harmonische = Grundfrequenz
+    \item 2. Harmonische = Doppelte Grundfrequenz
+    \item 3. Harominsche = Dreifache Grundfrequenz
+    \item \ldots
+      \end{itemize}
+      Oberwelle
+      \begin{itemize}
+    \item 1. Oberwelle = Doppelte Grundfrequenz
+    \item 2. Oberwelle = Dreifache Grundfrequenz
+    \item \ldots
+      \end{itemize}
+  \end{columns}
+\end{frame}
+
+% -> Skript
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TB703} & \textbf{Was sind Harmonische?}\\ \hline\hline
+%     A \only<2>\checkmark & Harmonische sind die ganzzahligen (1, 2, 3 \ldots) Vielfachen einer Frequenz. \\ \hline
+%     B & Harmonische sind die ganzzahligen (1, 2, 3 \ldots) Teile einer Frequenz. \\ \hline
+%     C & Harmonische sind die erzeugten Frequenzen oberhalb der ursprünglichen Frequenz. \\ \hline
+%     D & Harmonische sind identisch mit den Oberwellen, wobei die Grundwelle keine Harmonische ist. \\ \hline
+%   \end{tabular}
+% \end{frame}
+% 
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TB704} & \textbf{Die dritte Oberwelle einer Frequenz ist}\\ \hline\hline
+%     A \only<2>\checkmark & die vierte Harmonische der Frequenz. \\ \hline
+%     B & die dritte Harmonische der Frequenz. \\ \hline
+%     C & die zweite Harmonische der Frequenz. \\ \hline
+%     D & die zweite ungeradzahlige Harmonische der Frequenz. \\ \hline
+%   \end{tabular}
+% \end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TA116} & \textbf{Die zweite ungeradzahlige Harmonische der Frequenz 144,690 MHz ist}\\ \hline\hline
+    A & 145,000 MHz \\ \hline
+    B & 289,380 MHz \\ \hline
+    C \only<2>\checkmark & 434,070 MHz \\ \hline
+    D & 723,450 MHz \\ \hline
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  \begin{exampleblock}{Fakultative Hausaufgabe}
+    Fragenkatalog Kapitel 1.2.7 Nichtsinusförmige Signale TB701--TB708.
+  \end{exampleblock}
+\end{frame}
+
+\subsubsection{Sägezahn}
 
 \begin{frame}
     \frametitle{Sägezahn}
@@ -190,7 +307,7 @@
     % TODO Grafik und Formel?
 
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{a11/TB705.png}
+        \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/TB705.png}
         \tiny (TB705)
     \end{center}
 
@@ -204,6 +321,8 @@
 
 \end{frame}
 
+\subsubsection{Rechteck}
+
 \begin{frame}
     \frametitle{Rechteck}
 
@@ -212,7 +331,7 @@
     % TODO Grafik und Formel?
 
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{a11/TB706.png}
+        \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/TB706.png}
         \tiny (TB706)
     \end{center}
 
@@ -232,10 +351,19 @@
 \begin{frame}
     \frametitle{Nicht-periodische Signale}
 
-    Nicht wiederkehrende Signale beliebiger Form, z.B. Impulse.
+	\begin{block}{Definition}
+      Signale, die sich nicht regelmäßig wiederholen werden nicht-periodische Signale genannt.
+    \end{block}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Nicht-periodische Signale}
+
+    Dies können nicht wiederkehrende Signale beliebiger Form sein, z.B. Impulse.
 
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{a11/TB702a.png}
+        \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/TB702a.png}
         \tiny (TB702a)
     \end{center}
 
@@ -246,13 +374,13 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Nicht-periodische Signale}
+    \frametitle{Nicht-periodische Signale (nicht prüfungsrelevant)}
 
     Zur Messung von Impulsantworten oder Übergangsfunktionen (Sprungantwort)
     spielen Dirac-Impuls und Heaviside-Funktion eine große Rolle. \\[2em]
 
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{a11/High_accuracy_settling_time_measurements_figure_1.png}
+        \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/High_accuracy_settling_time_measurements_figure_1.png}
         \tiny \hyperlink{refs}{\cite{wc}}
     \end{center}
 
@@ -260,18 +388,17 @@
 
 \end{frame}
 
-%%%%%%%% TODO ab hier nochmal ordentlich überarbeiten
-
-\section{Modulation}
+\section{Modulierte Signale}
 
 \begin{frame}
     \frametitle{Modulation}
+  
+    \begin{block}{Bekanntes Wissen aus Technik Klasse E:} % TODO Welches Kapitel?
+        Modulation ist das "`Aufprägen"' von Signalen auf einen periodischen Träger
+        durch Mischung/Multiplikation. Mischung sorgt immer für Spiegelfrequenzen.
+    \end{block}
 
-    Modulation: ''Aufprägen'' von Signalen auf einen periodischen Träger durch
-    Mischung/Multiplikation.\footnote{siehe Technik Klasse E} % TODO Welches Kapitel?
-    \\[2em]
-
-    Im einfachen reellen Fall betrachtet:
+    \bigskip Im einfachen reellen Fall betrachtet (Formel nicht prüfungsrelevant):
 
     \begin{equation*}
         u = \hat{u} \cdot sin(\omega t + \varphi)
@@ -283,29 +410,69 @@
 
 \end{frame}
 
-\subsection{Amplitude}
+\begin{frame}{Modulierte Signale}
+  \begin{block}{Definition}
+    Eine Kombination aus einem sinusförmigen Signal, weiteren sinusförmigen Signalen oder nicht-sinusförmigen Signalen oder Impulsen wird moduliertes Signal genannt. Es ist keine Kombination aus Harmonischen.
+  \end{block}
+  \vspace{2em}
+  Veränderbare Kenngrößen eines Signals:
+  \begin{itemize}
+    \item Amplitude
+    \item Frequenz
+    \item Phase
+  \end{itemize}
+  \vspace{2em}
+  Verschiebung eines Signals in einen anderen Frequenzbereich.
+\end{frame}
 
-\begin{frame}
-    \frametitle{Amplitude}
+\begin{frame}{Modulationsarten (Wdh.)}
+  \begin{columns}[c]
+    \column[c]{.4\textwidth}
+      \includegraphics[width=\textwidth,height=.80\textheight,keepaspectratio]{e14/modulationen.jpg}\\
+      {\tiny \hyperlink{refs}{\cite{wm}}}\\
+      {\tiny Animiert: \url{https://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}}
+    \column[c]{.55\textwidth}
+      Amplitudenmodulation
+      \begin{itemize}
+        \item Zweiseitenbandmodulation
+        \item Einseitenbandmodulation
+        \item jeweils mit und ohne Träger
+      \end{itemize}
+      Winkelmodulation
+      \begin{itemize}
+        \item Frequenzmodulation
+        \item Phasenmodulation
+      \end{itemize}
+  \end{columns}
+\end{frame}
 
-    Mit einer niedrigeren Frequenz wird eine Hüllkurve auf den Träger geprägt
-    und muss zur Demodulation lediglich gleichgerichtet werden. \\[2em]
+\subsection[AM]{Amplitudenmodulation}
 
-    Animation: Wikimedia [\href{http://commons.wikimedia.org/wiki/File:Amfm3-en-de.gif}{Link}]
-    \\[2em]
-
-    Mischung sorgt immer für Spiegelfrequenzen.
-
+\begin{frame}{Amplitudenmodulation}
+  \begin{columns}[c]
+    \column[c]{.4\textwidth}
+      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{e14/AM1.png}\\
+      {\tiny \hyperlink{refs}{\cite{wm}}}
+    \column[c]{.55\textwidth}
+      \begin{itemize}
+        \item niederfrequentes Signal wird als Hüllkurve auf den Träger geprägt
+              \\ $\rightarrow$ einfache Gleichrichtung zur Demodulation
+        \item gleiche Information in jedem Seitenband
+        \item nur maximal 18\% der Sendeleistung überträgt Information
+        \item Bandbreite doppelt so groß wie maximale Modulationsfrequenz $B = 2 \cdot f_{mod max}$
+        \item starke Störungsanfälligkeit
+      \end{itemize}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Amplitude}
+    \frametitle{Amplitudenmodulation}
 
     Arten:
 
     \begin{itemize}
         \item AM mit Träger ($> 2 \cdot$ NF-Bandbreite)
-        \item AM ohne Träger ($> 2 \cdot$ NF-Bandbreite)
+        \item AM ohne Träger aka DSB ($> 2 \cdot$ NF-Bandbreite)
         \item SSB: LSB/USB ($\approx$ NF-Bandbreite)
     \end{itemize}
 
@@ -315,19 +482,213 @@
 
 \end{frame}
 
-\subsection{Frequenz}
+\subsection[SSB]{Einseitenbandmodulation}
 
-\begin{frame}
-    \frametitle{Frequenz}
+\begin{frame}{Einseitenbandmodulation (SSB)}
 
+    \begin{itemize}
+      \item ein Seitenband unterdrücken
+      \item halbiert die Bandbreite (vereinfacht)
+      \item Bandbreite ist nun so groß wie das NF-Signal
+    \end{itemize}
+
+    \bigskip Für den Betrieb interessant: Lower Side Band (LSB) bei $<10MHz$, Upper Side Band (USB) bei $>10MHz$
 
 \end{frame}
 
-\subsection{Phase}
+\begin{frame}{Einseitenbandmodulation (SSB)}
+  \begin{center}
+    \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{e16/Ssb-de.png}
+    {\tiny \hyperlink{refs}{\cite{wm}}}
+  \end{center}
+\end{frame}
 
 \begin{frame}
-    \frametitle{Phase}
+  \begin{exampleblock}{Hausaufgabe}
+    Fragenkatalog Kapitel 1.5.1 Amplitudenmodulation TE101--TE113.
+  \end{exampleblock}
+\end{frame}
 
+\subsection[FM]{Frequenzmodulation}
+
+\begin{frame}{Frequenzmodulation}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{e14/modulationen.jpg}\\
+    {\tiny \hyperlink{refs}{\cite{wm}}}
+    \begin{itemize}
+      \item wird im VHF\,/\,UHF Bereich \& $10m$ angewandt
+      \item vor allem bei mobilem Funkbetrieb
+      \item findet auch bei Packet-Radio Anwendung
+      \item Information steckt in der Frequenz
+      \item Amplitude bleibt konstant
+    \end{itemize}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Hub bei FM}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{e14/Hub.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Modulationsindex}
+  Verhältnis von Frequenzhub zu Modulationsfrequenz
+  \begin{block}{Modulationsindex}
+    $m = \cfrac{\Delta f_T}{f_{mod}}$
+  \end{block}
+  \begin{description}
+    \item[$m\textless2$] Schmalband-FM (NFM)
+    \item[$m\geq$2] Breitband-FM (WFM)
+  \end{description}
+  \begin{exampleblock}{Modulationsindex}
+    Amateurfunk: $m = \frac{3kHz}{3kHz} = 1$\\
+    UKW-Hörfunk (mono): $m = \frac{75kHz}{15kHz} = 5$\\
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}{Bandbreite bei FM}
+  \begin{itemize}
+    \item FM erzeugt Seitenbänder
+    \item Im Amateurfunk wird ein geringer Hub verwendet, der die höchste vorkommende Niederfrequenz nicht überschreitet
+  \end{itemize}
+  \begin{block}{Ungefähre Bandbreite (Carson Bandbreite)}
+    $B = 2 \cdot (\Delta f_T + f_{mod~max})$
+  \end{block}
+  \begin{exampleblock}{Bandbreite}
+    Amateurfunk: $B =2 \cdot (3kHz + 3kHz) = 12kHz$\\
+    UKW-Hörfunk (mono): $B = 2 \cdot (75kHz + 15kHz) = 180kHz$
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}{FM Vor- \& Nachteile}
+\textbf{\Large{Vorteile}}
+\begin{itemize}
+    \item Störungfester, da die Amplitude konstant bleibt -- Störimpulse werden
+          nicht demoduliert
+\end{itemize}
+\vspace{1cm}
+\textbf{\Large{Nachteile}}
+\begin{itemize}
+    \item benötigt mehr Bandbreite
+    \item nur der stärkste Sender kann empfangen werden
+\end{itemize}
+\end{frame}
+
+% -> Skript
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TE206} & \textbf{FM hat gegenüber SSB den Vorteil der}\\ \hline\hline
+%     A & geringeren Anforderungen an die Bandbreite. \\ \hline
+%     B & größeren Entfernungsüberbrückung. \\ \hline
+%     C \only<2>\checkmark & geringeren Beeinflussung durch Störquellen. \\ \hline
+%     D & besseren Kreisgüte. \\ \hline
+%   \end{tabular}
+% \end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TE207} & \textbf{Ein zu großer Hub eines FM-Senders führt dazu,}\\ \hline\hline
+    A & dass Verzerrungen auf Grund gegenseitiger Auslöschung der Seitenbänder auftreten. \\ \hline
+    B \only<2>\checkmark & dass die HF-Bandbreite zu groß wird. \\ \hline
+    C & dass Verzerrungen auf Grund unerwünschter Unterdrückung der Trägerfrequenz auftreten. \\ \hline
+    D & dass die Sendeendstufe übersteuert wird. \\ \hline
+  \end{tabular}
+\end{frame}
+
+% Fragentyp doppelt
+% \begin{frame}
+%   \begin{tabular}{l||p{.8\textwidth}}\hline
+%     \textbf{TE212} & \textbf{Größerer Frequenzhub führt bei einem FM-Sender zu}\\ \hline\hline
+%     A & einer Reduktion der Amplituden der Seitenbänder. \\ \hline
+%     B & einer Erhöhung der Amplitude der Trägerfrequenz. \\ \hline
+%     C & einer Erhöhung der Senderausgangsleistung. \\ \hline
+%     D \only<2>\checkmark & einer größeren HF-Bandbreite. \\ \hline
+%   \end{tabular}
+% \end{frame}
+
+\begin{frame}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TE203} & \textbf{Was gilt in etwa für die Bandbreite B eines FM-Signals, wenn der Modulationsindex $m > 2$ wird? ($f_{mod}$ sei die Modulationsfrequenz und $\Delta f$ der Hub.)}\\ \hline\hline
+    A \only<2>\checkmark & $f_{mod} < \Delta f$. Die Bandbreite wird im wesentlichen durch $\Delta f$ bestimmt; $B \approx 2\cdot\Delta f$.\\ \hline
+    B & $f_{mod} > \Delta f$. Die Bandbreite wird im wesentlichen durch $f_{mod}$ bestimmt; $B \approx 2\cdot f_{mod}$.\\ \hline
+    C & $f_{mod} > \Delta f$. Die Bandbreite wird im wesentlichen durch $m\cdot\Delta f$ bestimmt; $B \approx m\cdot\Delta f$.\\ \hline
+    D & $f_{mod} < \Delta f$. Die Bandbreite wird im wesentlichen durch $m\cdot f_{mod}$ bestimmt; $B \approx m\cdot f_{mod}$.\\ \hline
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  \begin{exampleblock}{Hausaufgabe}
+    Fragenkatalog Kapitel 1.5.2 Frequenzmodulation TE201--TE217.
+  \end{exampleblock}
+\end{frame}
+
+\subsection[PM]{Phasenmodulation}
+
+\begin{frame}
+    \frametitle{Phasenmodulation}
+
+    \dots ist wie die Frequenzmodulation eine Winkelmodulation und dieser sehr ähnlich. \\[4em]
+
+    \emph{In der Prüfung spielt sie keine Rolle} -- Beispiel: PSK31
+
+\end{frame}
+
+
+\subsection{Hilfsträger}
+\begin{frame}{Modulation mit Hilfsträger}
+  Nutzsignal wird auf eine niederfrequente Zwischenfrequenz moduliert und danach auf AM oder FM.
+  \vspace{4em}
+
+  Beispiel: \bigskip
+  
+  1kHz Tonsignal mit Morsecode wird auf den Mikrofoneingang eines FM-Senders gelegt
+  $\rightarrow$ \emph{Frequenzmodulation mit Tastung eines modulierten Hilfsträgers F2A}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Sendearten: Schlüsselzeichen}
+  \emph{Wiederholung aus BV09}
+
+  \begin{block}{Modulationsart des Hauptträgers}
+    \begin{description}
+      \item[A] Amplitudenmodulation
+      \item[J] SSB (AM, Seitenband mit unterdrücktem Träger)
+      \item[F] Winkelmodulation, Frequenzmodulation
+    \end{description}
+  \end{block}
+
+  \begin{block}{Signalart}
+    \begin{description}
+      \item[1] Einkanaliges quantisiertes Signal ohne Hilfsträger
+      \item[2] Einkanaliges quantisiertes Signal mit einem Hilfsträger
+      \item[3] Einkanaliges Analogsignal
+    \end{description}
+  \end{block}
+
+  \begin{block}{Informationsart}
+    \begin{description}
+      \item[A] Morsetelegrafie
+      \item[B] Telegrafie für maschinellen Empfang (Teletype)
+      \item[C] Fax
+      \item[D] Daten, Telemetrie, Fernsteuerung
+      \item[E] Telefonie, Rundfunk
+      \item[F] Fernsehsignal
+    \end{description}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Sendearten: Beispiele}
+  \begin{exampleblock}{Beispiele für Sendearten}
+    \begin{description}
+      \item[A1A] CW
+      \item[F2A] CW via FM-Hilfsträger
+      \item[F3E] FM
+      \item[J3E] SSB
+      \item[J2B] RTTY
+      \item[J2B] Pactor
+    \end{description}
+  \end{exampleblock}
+
+  Übersichtliche Liste: \url{https://de.wikipedia.org/wiki/Modulationsart}
 \end{frame}
 
 \renewcommand{\refname}{Referenzen}
@@ -345,6 +706,15 @@
                     \url{http://commons.wikimedia.org/wiki/File:Sine_cosine_one_period.svg}\\
                     \url{http://commons.wikimedia.org/wiki/File:Sine_Cosine_Exponential_qtl1.svg}\\
                     \url{http://commons.wikimedia.org/wiki/File:High_accuracy_settling_time_measurements_figure_1.png}
+  	\bibitem{wm}  Wikimedia:\\
+  	  \url{https://de.wikipedia.org/wiki/Effektivwert#/media/File:Sinusspannung.svg}\\
+  	  \url{https://de.wikipedia.org/wiki/Periodische_Funktion#/media/File:Sine.svg}\\
+  	  \url{https://en.wikipedia.org/wiki/Harmonic#/media/File:Moodswingerscale.svg}\\
+  	  \url{http://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}\\
+  	\bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
+  	\bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:\\
+  	  \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
+
 \end{thebibliography} 
 
 \input{texdata/postamble}
