@@ -1,4 +1,4 @@
-# Einführung
+# Einführung Klasse E
 
 * SDR:
     * Ant -> LP -> A/D -> DSP
@@ -11,15 +11,24 @@
     * frequency range abhängig vom verwendeten Tuner, specs:
         * dmesg
         * http://sdr.osmocom.org/trac/wiki/rtl-sdr
-* gqrx - Input Rate 600k
+* gqrx - Input Rate 600k oder 1200k
+
+# Einführung Klasse A
+
+* Wdh. Intro Klasse E
 * GR vorführen
     * Aufbau gnuradio-companion
     * Help -> Types
     * QT
+* TODO Signale mischen, verstärken, ansehen
+
+# Modeling Klasse A
+
+* TODO Converter
 * AM-Beispiel
 * FM-Beispiel
 
-# Aufgaben
+# Aufgaben Klasse A
 
 * RTL-SDR Source -> QT GUI Waterfall Sink
     * samp_rate = 2.4M
