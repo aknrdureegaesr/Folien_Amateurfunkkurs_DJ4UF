@@ -45,3 +45,6 @@
 * Diode Klasse E
     * Praxis hinzufügen?
     * Aufgaben teilweise nach Klasse A verschieben - geht schon zu weit
+
+# Folien
+- Gegentaktmodulator müsste eingeführt werden A12
