@@ -10,6 +10,7 @@
     * bv01, bv02, bv03, bv07, bv13, bv10
 * frametitle-Systematik / Nicht ganz einheitlich
 * FIXME DK0TU-Farbschema - Items Weiß auf Weiß
+* Texte entschlacken bzw. auf mehrere Folien verteilen
 
 # Kurskoffer
 
