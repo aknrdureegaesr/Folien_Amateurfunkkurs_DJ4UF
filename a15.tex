@@ -1,0 +1,251 @@
+% Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
+% Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
+% Autoren:
+% Lars Weiler <dc4lw@darc.de>
+
+\input{texdata/preamble}
+\subtitle{Technik A15: \\
+           Übertragungstechnik \\[2em]}
+\date{Stand 07.03.2016}
+\input{texdata/titlepage}
+
+\begin{frame}{Einleitung / Umleitung}
+  Aufgrund sehr großer Überschneidungen werden viele Digimodes bereits in der \emph{Lektion E16: (Digitale) Betriebsarten} behandelt.
+\end{frame}
+
+\section{Digitalsignal}
+\begin{frame}{Analog-Digital-Wandlung (ADC)}
+  \begin{columns}
+    \column{.5\textwidth}
+    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a15/Uebersicht_kontinuierliche_und_diskrete_Signale.png}\\
+    {\tiny Kontinuierliche und diskrete Signale \hyperlink{refs}{\cite{wm}}}
+    \column{.45\textwidth}
+    Ein analoges Signal wird in ein digitales Signal über zwei Schritte umgewandelt
+    \begin{description}
+      \item[Abtastung] zeitkontinuierlich $\rightarrow$ zeitdiskret
+      \item[Quantisierung] wertkontinuierlich $\rightarrow$ wertdiskret
+    \end{description}
+    \begin{block}{Nyquist-Shannon-Abtasttheorem}
+      $T_A \leq \cfrac{1}{2 \cdot f_{max}}$\\[.5em]
+      $T_A$: Abtastfrequenz\\
+      $f_{max}$: Maximale Informationsfrequenz
+    \end{block}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Kodierung}
+  Je größer die Abtastrate und die Kodierung sind, umso genauer entspricht das Digitalsignal dem Analogsignal.
+  \begin{description}
+    \item[8 Bit] 256 unterschiedliche Werte
+    \item[16 Bit] 65536 unterschiedliche Werte
+  \end{description}
+\end{frame}
+
+\begin{frame}{Übertragungsgeschwindigkeit\,/\,Baudrate}
+  Anzahl der Schritte pro Sekunde\\
+  $1200 Bd \equiv 1200 \frac{Schritte}{Sekunde}$\\[2em]
+
+  Ein ISO 8859 Zeichen besteht aus 8 Bit. Bei 1200\,Baud können $\frac{1200 Bd}{8 Bit} = 150$ Zeichen pro Sekunde übertragen werden.\\[2em]
+
+  Es gibt Möglichkeiten, mehrere Zustände gleichzeitig pro Schritt zu übertragen. Dadurch erhöht sich die Zahl der Bits pro Sekunde bei gleicher Baudrate.
+\end{frame}
+
+\section{FSK}
+\begin{frame}{Frequenzumtastung\,/\,Frequency Shift Keying (FSK)}
+  \begin{columns}
+    \column{.4\textwidth}
+    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a15/Fsk.png}\\
+    {\tiny Frequenzumtastung \hyperlink{refs}{\cite{wm}}}
+    \column{.55\textwidth}
+    \begin{itemize}
+      \item ähnlich zu FM
+      \item unempfindlich gegenüber Störungen
+      \item einfachste Umsetzung: mittels zweier Frequenzen übertragen
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\subsection{AFSK}
+\begin{frame}{Audio Frequency Shift Keying (AFSK)}
+  Modulation zweier Töne, je nach Zustand
+  \begin{exampleblock}{RTTY}
+    \begin{description}
+      \item[logisch 0] 1200\,Hz (oder 2100\,Hz bei ``high tones'')
+      \item[logisch 1] 1400\,Hz (oder 2300\,Hz bei ``high tones'')
+    \end{description}
+    Modulation mit 14100\,kHz und SSB ergibt die Frequenzen 14101,200\,kHz und 14101,400\,kHz.\\
+    Die 200\,Hz Frequenzabstand wird \emph{Shift} genannt.
+  \end{exampleblock}
+\end{frame}
+
+\section{PSK}
+\begin{frame}{Phase Shift Keying (PSK)}
+  \begin{columns}
+    \column{.5\textwidth}
+    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a15/Phase_modulation_(PHM).png}\\
+    {\tiny BPSK mit harter Umtastung \hyperlink{refs}{\cite{wm}}}
+    \column{.45\textwidth}
+    \begin{itemize}
+      \item Welle wird um $180^\circ$ gedreht
+      \item BPSK enthält nur zwei Zustände (binary)
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\subsection{QPSK}
+\begin{frame}{Quadraturphasenumtastung}
+  \begin{columns}
+    \column{.5\textwidth}
+    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a15/QPSK_Gray_Coded.png}\\
+    {\tiny Konstellationsdiagramm QPSK (``4-QAM'')}
+    \column{.45\textwidth}
+    \begin{itemize}
+      \item QPSK nutzt Phasensprünge alle $90^\circ$ (quadrature)
+      \item $\rightarrow$ Übertragung von 2 Bits zur gleichen Zeit
+      \item Verwendung bei \emph{PSK31} und \emph{Pactor}
+      \item Darstellung als Konstellationsdiagramm mit \emph{I} für \emph{In-phase component} und \emph{Q} für \emph{Quadrature Component}
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\subsection{QAM}
+\begin{frame}{Quadraturamplitudenmodulation}
+  \begin{columns}
+    \column{.5\textwidth}
+    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a15/Circular_16QAM.png}\\
+    {\tiny Circular 16QAM}
+    \column{.45\textwidth}
+    \begin{itemize}
+      \item Kombination von Phase und Amplitude für Datenübertragung
+      \item Mehrere Bits können zur gleichen Zeit übertragen werden
+      \item Anwendung bei Modems, DSL, DVB etc.
+      \item \emph{Beispiel: \href{https://upload.wikimedia.org/wikipedia/commons/9/90/QAM16_Demonstration.gif}{\PointingHand 4 Bit 16-QAM Demo}}
+      \item DVB-C2 G.hn (HomeGrid) nutzen 12 Bit 4096-QAM
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+
+\section{Packet Radio}
+\begin{frame}{Packet Radio}
+  \begin{itemize}
+    \item \ldots ist tot
+    \item \ldots aber dummerweise noch Prüfungsbestandteil
+    \item meist im UHF-Band, geht aber auch in VHF, KW oder SHF
+    \item höhere Übertragungsraten als RTTY (i.\,d.\,R.\, 1200 oder 9600 Baud)
+    \item Fehlerkorrektur
+    \item Digipeater als Zwischenstationen
+    \item Mailboxen für Speicherstellen
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Packet Radio}
+  \begin{columns}
+    \column{.47\textwidth}
+    1k2-Packet
+    \begin{itemize}
+      \item 1200\,Baud
+      \item NF-Töne bei 1200\,Hz und 2200\,Hz (1000\,Hz Shift)
+      \item Mittenfrequenz bei 1700\,Hz
+      \item $\rightarrow$ AFSK-Signal mit 12\,kHz Bandbreite
+    \end{itemize}
+    \column{.47\textwidth}
+    9k6-Packet
+    \begin{itemize}
+      \item 9600\,Baud
+      \item Optimierung der Übertragung von vielen 1en oder 0en durch ``Scrambling'' (abwechselnde Invertierung)
+      \item hohe Rechteckfrequenzen von 4800\,Hz werden statt über den NF-Eingang direkt in den Modulator eingespeist
+      \item Bandbreite 20 kHz
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{TX-Delay}
+  \begin{itemize}
+    \item Sender braucht einige Zeit zum einschwingen
+    \item Geräte brauchen Zeit, um von Empfang auf Sendung zu schalten
+    \item Abhilfe schafft das einstellbare \emph{TX-Delay} am Computer, der Soundkarte oder dem TNC
+    \item $\rightarrow$ mit der Datenübertragung wird einige Millisekunden gewartet
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Packet Radio Netzwerk}
+  \begin{itemize}
+    \item es kann immer nur eine Station gleichzeitig senden\footnote{wie im 10BASE2-Netzwerk oder mit Hubs}
+    \item ansonsten kommt es zu Kollisionen
+    \item $\rightarrow$ \emph{DAMA} (Demand Assigned Multiple Access)
+    \item Stationen werden nacheinander gepollt, ob sie Daten senden möchten\footnote{fast wie bei Token Ring}
+  \end{itemize}
+\end{frame}
+
+\subsection{APRS}
+\begin{frame}{Automatic Packet Reporting System (APRS)}
+  \begin{itemize}
+    \item sendet kurze Datenpakete ohne Bestätigung
+    \item Inhalte sind Wetterdaten, Positionsmeldungen und andere Messwerte
+    \item ganz häufig GPS-Koordinaten des eigenen Fahrzeugs mit Rufzeichen
+    \item Darstellung mit Karte unter \url{http://aprs.fi/\#!addr=berlin}
+    \item QRG ist 144,800\,MHz
+  \end{itemize}
+\end{frame}
+
+\section{PSK31}
+\begin{frame}{PSK31}
+  \begin{itemize}
+    \item 1999 von G3LPX entwickelt
+    \item Bitrate von 31,25\,Bit/s -- Bandbreite somit 31\,Hz
+    \item $\rightarrow$ 1/10 der Bandbreite von Telegraphie!
+    \item mit guten Filtern reichen 10\,W für weltweiten Funkverkehr
+    \item Subarten BPSK und QPSK (mit Fehlerkorrektur auf zweitem Kanal)
+    \item Hilfsträger bei 1000\,Hz
+  \end{itemize}
+\end{frame}
+
+\section{AMTOR}
+\begin{frame}{AMTOR}
+  Amateur Microprocessor Teleprinting Over Radio
+  \begin{itemize}
+    \item hohe Übertragungssicherheit
+    \item nach drei Zeichen wird eine Quittierung eingefordert
+    \item $\rightarrow$ ARQ (automatic repeat request)
+    \item 7 Bits, von denen nur die 38 Kombinationen mit 4 Einsen und 3 Nullen verwendet werden
+    \item abgelöst durch PACTOR
+  \end{itemize}
+\end{frame}
+
+\section{PACTOR}
+\begin{frame}{PACTOR}
+  Packet Teleprinting Over Radio
+  \begin{itemize}
+    \item Weiterentwicklung von AMTOR durch DF4KV und DL6MAA in 1990
+    \item für störungsbehaftete Übertragung auf Kurzwelle geeignet
+    \item 8-Bit Code zzgl. CRC-Check
+    \item Weiterentwicklung aktuell bei PACTOR 4 mit 10500\,bps
+    \item Controller ist gebrauchsmustergeschützt und recht teuer
+  \end{itemize}
+\end{frame}
+
+
+\renewcommand{\refname}{Referenzen}
+
+\hypertarget{refs}{}
+\textcolor{white}{} \\ %\vspace{} geht nicht
+\Large Referenzen/Links
+\footnotesize
+
+\begin{thebibliography}{}
+  \bibitem{darc}  DARC Online-Lehrgang Lektion A15:\\
+    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a15/}
+  \bibitem{wm} 	Wikimedia:\\
+    \href{https://de.wikipedia.org/wiki/Digitalsignal#/media/File:\%C3\%9Cbersicht_kontinuierliche_und_diskrete_Signale.svg}{\mbox{Übersicht kontinuierliche und diskrete Signale, By wdwd (Own work) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY 3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons}}\\
+    \href{https://commons.wikimedia.org/wiki/Category:Quantized_QAM?uselang=de#/media/File:Circular_16QAM.svg}{\mbox{von Life of Riley (Eigenes Werk) [Public domain], via Wikimedia Commons}}\\
+    \href{https://de.wikipedia.org/wiki/Phasenmodulation#/media/File:Phase_modulation_(PHM).svg}{\mbox{By L31n42 (Own work) [CC0], via Wikimedia Commons}}\\
+    \href{https://de.wikipedia.org/wiki/Quadraturphasenumtastung#/media/File:QPSK_Gray_Coded.svg}{\mbox{By No machine-readable author provided. Splash assumed (based on copyright claims). [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY-SA 2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/2.5-2.0-1.0)], via Wikimedia Commons}}\\
+    \href{https://de.wikipedia.org/wiki/Frequenzumtastung#/media/File:Fsk.svg}{\mbox{Bildung eines binären FSK Signals, By No machine-readable author provided. Ktims assumed (based on copyright claims). [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY-SA 2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/2.5-2.0-1.0)], via Wikimedia Commons}}
+
+  \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:\\
+  \bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:\\
+    \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
+\end{thebibliography}
+
+\input{texdata/postamble}

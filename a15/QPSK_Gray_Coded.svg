@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Quadraturphasenumtastung – Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Quadraturphasenumtastung","wgTitle":"Quadraturphasenumtastung","wgCurRevisionId":134065591,"wgRevisionId":134065591,"wgArticleId":165849,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Modulation (Technik)"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Quadraturphasenumtastung","wgRelevantArticleId":165849,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"de","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"de","wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSAcceptLanguageList":["de-de"],"wgULSCurrentAutonym":"Deutsch","wgFlaggedRevsParams":{"tags":{"accuracy":{"levels":1,"quality":2,"pristine":4}}},"wgStableRevisionId":134065591,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCentralAuthMobileDomain":false,"wgWikibaseItemId":"Q13377152","wgVisualEditorToolbarScrollOffset":0}); /* @nomin */mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"de"});});mw.loader.implement("user.tokens",function ( $, jQuery ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"}); /* @nomin */ ;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.flaggedRevs.basic%7Cext.gadget.CommonsDirekt%2COpenStreetMap%2CWikiMiniAtlas%7Cext.tmh.thumbnail.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.page.gallery.styles%7Cmediawiki.raggett%2CsectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.27.0-wmf.15" />
+<meta name="referrer" content="origin-when-cross-origin" />
+<link rel="alternate" href="android-app://org.wikipedia/http/de.m.wikipedia.org/wiki/Quadraturphasenumtastung" />
+<link rel="alternate" type="application/x-wiki" title="Seite bearbeiten" href="/w/index.php?title=Quadraturphasenumtastung&amp;action=edit" />
+<link rel="edit" title="Seite bearbeiten" href="/w/index.php?title=Quadraturphasenumtastung&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (de)" />
+<link rel="EditURI" type="application/rsd+xml" href="//de.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="canonical" href="https://de.wikipedia.org/wiki/Quadraturphasenumtastung" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns ns-0 ns-subject page-Quadraturphasenumtastung skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="de">Quadraturphasenumtastung</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">aus Wikipedia, der freien Enzyklopädie</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Wechseln zu:					<a href="#mw-head">Navigation</a>, 					<a href="#p-search">Suche</a>
+				</div>
+				<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><p>Die <b>Quadraturphasenumtastung</b> oder <b>Vierphasen-Modulation</b> (englisch <i>Quadrature Phase-Shift Keying</i> oder <i>Quaternary Phase-Shift Keying</i>, <b>QPSK</b>) ist ein digitales <a href="/wiki/Modulation_(Technik)" title="Modulation (Technik)">Modulationsverfahren</a> in der <a href="/wiki/Nachrichtentechnik" title="Nachrichtentechnik">Nachrichtentechnik</a>. Mit QPSK können pro <a href="/wiki/Symbol_(Nachrichtentechnik)" title="Symbol (Nachrichtentechnik)">Symbol</a> zwei <a href="/wiki/Bit" title="Bit">Bits</a> übertragen werden. Dadurch verdoppelt sich die Ausnutzung der zur Verfügung stehenden <a href="/wiki/Bandbreite" title="Bandbreite">Bandbreite</a> (<a href="/wiki/Spektrale_Effizienz" title="Spektrale Effizienz">spektrale Effizienz</a>).</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Eigenschaft"><span class="tocnumber">1</span> <span class="toctext">Eigenschaft</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Funktion"><span class="tocnumber">2</span> <span class="toctext">Funktion</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Varianten"><span class="tocnumber">3</span> <span class="toctext">Varianten</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#.CF.80.2F4-QPSK"><span class="tocnumber">3.1</span> <span class="toctext">π/4-QPSK</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Offset-QPSK_.28OQPSK.29"><span class="tocnumber">3.2</span> <span class="toctext">Offset-QPSK (OQPSK)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Weitere_Anwendungen"><span class="tocnumber">4</span> <span class="toctext">Weitere Anwendungen</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Literatur"><span class="tocnumber">5</span> <span class="toctext">Literatur</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Eigenschaft">Eigenschaft</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadraturphasenumtastung&amp;action=edit&amp;section=1" title="Abschnitt bearbeiten: Eigenschaft">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Datei:QPSK_Gray_Coded.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8f/QPSK_Gray_Coded.svg/220px-QPSK_Gray_Coded.svg.png" width="220" height="229" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8f/QPSK_Gray_Coded.svg/330px-QPSK_Gray_Coded.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8f/QPSK_Gray_Coded.svg/440px-QPSK_Gray_Coded.svg.png 2x" data-file-width="618" data-file-height="644" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Datei:QPSK_Gray_Coded.svg" class="internal" title="vergrößern und Informationen zum Bild anzeigen"></a></div>
+Konstellationsdiagramm QPSK (Auch als 4-<a href="/wiki/QAM" title="QAM" class="mw-redirect">QAM</a> bezeichnet)</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/Datei:Qpsk_Spektrum.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Qpsk_Spektrum.jpg/220px-Qpsk_Spektrum.jpg" width="220" height="140" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Qpsk_Spektrum.jpg/330px-Qpsk_Spektrum.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Qpsk_Spektrum.jpg/440px-Qpsk_Spektrum.jpg 2x" data-file-width="591" data-file-height="375" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/Datei:Qpsk_Spektrum.jpg" class="internal" title="vergrößern und Informationen zum Bild anzeigen"></a></div>
+Spektrum eines QPSK Signals</div>
+</div>
+</div>
+<p>Wesentliche Eigenschaft ist, dass die vier im nebenstehenden <a href="/wiki/Konstellationsdiagramm" title="Konstellationsdiagramm">Konstellationsdiagramm</a> in der komplexen Ebene eingezeichneten Symbolpunkte einen betragsmäßig exakt gleichen Abstand zum Nullpunkt aufweisen. Das bedeutet, dass die <a href="/wiki/Amplitude" title="Amplitude">Amplitude</a> keine Information trägt, sondern ausschließlich die <a href="/wiki/Phase_(Schwingung)" title="Phase (Schwingung)" class="mw-redirect">Phase</a>. Davon leitet sich auch der Name dieser <a href="/wiki/Modulation_(Technik)" title="Modulation (Technik)">Modulationstechnik</a> ab. Jeder Informationspunkt ist Träger von zwei Informationsbits. Die QPSK liefert die gleichen Ergebnisse wie eine 4-<a href="/wiki/QAM" title="QAM" class="mw-redirect">QAM</a>. Bei einer <a href="/wiki/QAM" title="QAM" class="mw-redirect">QAM</a> werden allerdings zwei zueinander orthogonale Träger gleicher Frequenz in ihrer Amplitude moduliert. Die Resultierende beider Träger hat wieder Amplitude und Phase, womit dann ein Symbol verknüpft ist – im übertragungstechnischen Sinne liegt bei einer QAM aber keine Phasenmodulation vor, sondern eine QDSB (AM mit unterdrücktem Träger).</p>
+<p>Die folgenden Bilder zeigen zwei DVB-S-Signale. Beim schwächeren Signal ist zu erkennen, dass bei sehr vielen Punkten eine klare Zuordnung zum rechts abgebildeten Konstellationsdiagramm nicht mehr möglich ist, was dazu führt, dass knapp 8&#160;% der Daten verloren gehen. Dank <a href="/wiki/Vorw%C3%A4rtsfehlerkorrektur" title="Vorwärtsfehlerkorrektur">Vorwärtsfehlerkorrektur</a> ist der Kanal immerhin unter starker <a href="/wiki/Blockartefakt" title="Blockartefakt">Artefaktbildung</a> zu betrachten, während beim mittelstarken Signal sämtliche Fehler korrigiert werden können und ein fehlerfreies Bild wiedergegeben werden kann.</p>
+<ul class="gallery mw-gallery-traditional">
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:17px auto;"><a href="/wiki/Datei:Weak_QPSK.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/00/Weak_QPSK.png/120px-Weak_QPSK.png" width="120" height="116" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/00/Weak_QPSK.png/180px-Weak_QPSK.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/00/Weak_QPSK.png/240px-Weak_QPSK.png 2x" data-file-width="292" data-file-height="283" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Schwaches <a href="/wiki/DVB-S" title="DVB-S">DVB-S</a>-Signal (starkes Rauschen)</p>
+</div>
+</div>
+</li>
+<li class="gallerybox" style="width: 155px">
+<div style="width: 155px">
+<div class="thumb" style="width: 150px;">
+<div style="margin:17px auto;"><a href="/wiki/Datei:Average_QPSK.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Average_QPSK.png/120px-Average_QPSK.png" width="120" height="116" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Average_QPSK.png/180px-Average_QPSK.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Average_QPSK.png/240px-Average_QPSK.png 2x" data-file-width="292" data-file-height="283" /></a></div>
+</div>
+<div class="gallerytext">
+<p>Mittelstarkes DVB-S-Signal (schwaches Rauschen)</p>
+</div>
+</div>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Funktion">Funktion</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadraturphasenumtastung&amp;action=edit&amp;section=2" title="Abschnitt bearbeiten: Funktion">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Der serielle Datenstrom eines <a href="/wiki/NRZ-Signal" title="NRZ-Signal" class="mw-redirect">NRZ-Signals</a> wird zunächst mit einem <a href="/wiki/Demultiplexer" title="Demultiplexer">Demultiplexer</a> auf zwei parallele Pfade aufgeteilt. Nun können je zwei Bits, sogenannte <a href="/w/index.php?title=Dibits&amp;action=edit&amp;redlink=1" class="new" title="Dibits (Seite nicht vorhanden)">Dibits</a>, verarbeitet werden. Diesen Dibits wird die Funktion eines komplexen Symbols mit Real- und Imaginärteil zugeordnet. Als <a href="/wiki/Tr%C3%A4gerfrequenz" title="Trägerfrequenz" class="mw-redirect">Träger</a> werden zwei sinusförmige Signale derselben Frequenz verwendet, von denen eines um 90° phasenverschoben (Kosinussignal) ist. Das QPSK-Signal ist also die Addition zweier <a href="/wiki/Phase_Shift_Keying" title="Phase Shift Keying" class="mw-redirect">PSK</a>-Signale. Das Empfangsverfahren funktioniert umgekehrt.</p>
+<p>QPSK wird bei der Signalübertragung in digitalen Satellitenkanälen (z.&#160;B. <a href="/wiki/DVB-S" title="DVB-S">DVB-S</a>), bei der terrestrischen Ausstrahlung digitaler Signale und auch bei drahtgebundenen Übertragungsverfahren verwendet.</p>
+<h2><span class="mw-headline" id="Varianten">Varianten</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadraturphasenumtastung&amp;action=edit&amp;section=3" title="Abschnitt bearbeiten: Varianten">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id=".CF.80.2F4-QPSK">π/4-QPSK</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadraturphasenumtastung&amp;action=edit&amp;section=4" title="Abschnitt bearbeiten: π/4-QPSK">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Eine wesentliche Erweiterung von QPSK ist π/4-QPSK. Bei herkömmlicher QPSK besteht das Problem, dass der Übergang zwischen zwei diagonalen Sendesymbolpunkten in der komplexen Ebene durch den Nullpunkt führt. Das bedeutet im Übergang zwischen diesen diagonalen Sendesymbolen eine Absenkung der Amplitude, der sogenannten Einhüllenden, auf praktisch null. Auf der Empfängerseite erschwert es das notwendige Synchronisieren und begünstigt durch Nichtlinearitäten im Übertragungsweg Signalverzerrungen und Störfrequenzen.</p>
+<p>Eine Abhilfe stellt π/4-QPSK dar. Dabei wird, unabhängig von den Nutzdaten, nach jedem Sendesymbol ein zusätzlicher Phasensprung von π/4 (45°) vorgenommen. Damit wird sichergestellt, dass der Übergang zwischen zwei Symbolen niemals durch den Ursprung geht, d.&#160;h. immer eine Trägeramplitude gesendet wird. Außerdem wird die Taktsynchronisation auf der Empfängerseite erleichtert, da unabhängig von den Nutzdaten und deren Codierung immer regelmäßig Phasensprünge im Empfangssignal vorhanden sind.</p>
+<h3><span class="mw-headline" id="Offset-QPSK_.28OQPSK.29">Offset-QPSK (OQPSK)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadraturphasenumtastung&amp;action=edit&amp;section=5" title="Abschnitt bearbeiten: Offset-QPSK (OQPSK)">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Eine weitere Möglichkeit, den Durchgang durch den Nullpunkt, also eine Absenkung der Amplitude, zu vermeiden, bietet die Offset-QPSK. Dabei werden der Realteil und der Imaginärteil des komplexen Symbols um eine halbe Symboldauer zeitversetzt gesendet, sodass die maximale Änderung nur noch 90° statt wie bei der herkömmlichen QPSK 180° beträgt. Anschaulich kann man sich vorstellen, dass der Verlauf der Zustandsübergänge der Form des von den vier Zuständen begrenzten Quadrates folgt und nicht mehr den diagonalen Weg durch den Nullpunkt nehmen kann.</p>
+<h2><span class="mw-headline" id="Weitere_Anwendungen">Weitere Anwendungen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadraturphasenumtastung&amp;action=edit&amp;section=6" title="Abschnitt bearbeiten: Weitere Anwendungen">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Fax" title="Fax">Faxgeräte</a>: Eine bekannte Anwendung, in der man ein QPSK-Signal auch <i>mithören</i> kann, ist die Übertragung von Schwarzweiß-Bildern (<a href="/wiki/Faksimile" title="Faksimile">Faksimiles</a>) über das Telefonnetz. Unmoduliert würde sich der Träger wie ein reiner Sinuston anhören. Durch die Modulation wird das Signal breitbandiger. Der schnell und laufend umgetastete Träger hört sich dann wie ein Rauschen an.</p>
+<p>Mittlerweile findet diese Art der Modulation auch Anwendung bei der <a href="/wiki/High_Speed_Downlink_Packet_Access" title="High Speed Downlink Packet Access">HSDPA</a>-Technik in <a href="/wiki/UMTS" title="UMTS" class="mw-redirect">UMTS</a>-Netzen. Hier wird die Datenrate von 384 kbit/s auf ca. 2 Mbit/s angehoben.</p>
+<h2><span class="mw-headline" id="Literatur">Literatur</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadraturphasenumtastung&amp;action=edit&amp;section=7" title="Abschnitt bearbeiten: Literatur">Bearbeiten</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Hermann_Rohling" title="Hermann Rohling">Hermann Rohling</a>: <i>Einführung in die Informations- und Codierungstheorie.</i> Teubner-Verlag, Stuttgart 1995, <a href="/wiki/Spezial:ISBN-Suche/3519061740" class="internal mw-magiclink-isbn">ISBN 3-519-06174-0</a>.</li>
+</ul>
+<div class="NavFrame">
+<div class="NavHead" style="background:#efefef;"><span class="erweiterte-navigationsleiste-quicklinks" style="float:left;width:6em;text-align:left;font-weight:normal;font-size:75%;display:none;"><span style="visibility:hidden;">00</span><a href="/wiki/Vorlage:Navigationsleiste_Technische_Modulationsverfahren" title="Vorlage:Navigationsleiste Technische Modulationsverfahren"><span title="Vorlage anzeigen">V</span></a> – <a href="/wiki/Vorlage_Diskussion:Navigationsleiste_Technische_Modulationsverfahren" title="Vorlage Diskussion:Navigationsleiste Technische Modulationsverfahren"><span title="Diskussion anzeigen">D</span></a></span><a href="/wiki/Modulation_(Technik)" title="Modulation (Technik)">Technische Modulationsverfahren</a></div>
+<div class="NavContent" style="clear:left;">
+<p style="margin:.1em 0;border-top:1px solid #FFF;padding-top:.2em;padding-bottom:.15em;background:#f5f5f5;text-align:center;font-size:95%">Übersicht: <a href="/wiki/Modulator" title="Modulator">Modulator</a></p>
+<table class="wikitable zebra" style="width:100%;margin:0;text-align:left;font-size:95%;margin-top:.1em;margin-bottom:.0em;">
+<tr style="display:none">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space: nowrap;text-align: right;background: #DDE5EE;border: 1px solid transparent;border-top: 1px solid #FFF;border-bottom: 2px solid #FFF;padding: 0 1em;"><b>Analoge Modulationsverfahren</b></td>
+<td class="hlist" style="text-align: left;border-left: 2px solid #fdfdfd;width: 100%;margin: .4em 0;border-color: #fdfdfd;padding: 0 .25em;">
+<p><a href="/wiki/Amplitudenmodulation" title="Amplitudenmodulation">AM</a>&#160;| <a href="/wiki/Frequenzmodulation" title="Frequenzmodulation">FM</a>&#160;| <a href="/wiki/Phasenmodulation" title="Phasenmodulation">PM</a>&#160;| <a href="/wiki/Vektormodulation" title="Vektormodulation">VM</a>&#160;| <a href="/wiki/Einseitenbandmodulation" title="Einseitenbandmodulation">SSB</a>&#160;| <a href="/wiki/Restseitenbandmodulation" title="Restseitenbandmodulation">SSBSC</a>&#160;| <a href="/wiki/Amplitudenmodulation_mit_unterdr%C3%BCcktem_Tr%C3%A4ger" title="Amplitudenmodulation mit unterdrücktem Träger">DSBSC</a>&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="white-space: nowrap;text-align: right;background: #DDE5EE;border: 1px solid transparent;border-top: 1px solid #FFF;border-bottom: 2px solid #FFF;padding: 0 1em;"><b>Digitale Modulationsverfahren</b></td>
+<td class="hlist" style="text-align: left;border-left: 2px solid #fdfdfd;width: 100%;margin: .4em 0;border-color: #fdfdfd;padding: 0 .25em;">
+<p><a href="/wiki/Amplitudenumtastung" title="Amplitudenumtastung">ASK</a>&#160;| <a href="/wiki/Frequenzumtastung" title="Frequenzumtastung">FSK</a>&#160;| <a href="/wiki/Gaussian_Frequency_Shift_Keying" title="Gaussian Frequency Shift Keying" class="mw-redirect">GFSK</a>&#160;| <strong class="selflink">QPSK</strong>&#160;| <a href="/wiki/Quadraturamplitudenmodulation" title="Quadraturamplitudenmodulation">QAM</a>&#160;| <a href="/wiki/Orthogonales_Frequenzmultiplexverfahren" title="Orthogonales Frequenzmultiplexverfahren">OFDM</a>&#160;| <a href="/wiki/Discrete_Multitone" title="Discrete Multitone">DMT</a>&#160;| <a href="/wiki/Trellis-Code" title="Trellis-Code">TCM</a>&#160;| <a href="/wiki/VSB-Modulation" title="VSB-Modulation">VSB</a>&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="white-space: nowrap;text-align: right;background: #DDE5EE;border: 1px solid transparent;border-top: 1px solid #FFF;border-bottom: 2px solid #FFF;padding: 0 1em;"><b>Pulsmodulationsverfahren</b></td>
+<td class="hlist" style="text-align: left;border-left: 2px solid #fdfdfd;width: 100%;margin: .4em 0;border-color: #fdfdfd;padding: 0 .25em;">
+<p><a href="/wiki/Pulsweitenmodulation" title="Pulsweitenmodulation">PWM</a>&#160;| <a href="/wiki/Pulsamplitudenmodulation" title="Pulsamplitudenmodulation">PAM</a>&#160;| <a href="/wiki/Deltamodulation" title="Deltamodulation">PFM</a>&#160;| <a href="/wiki/Pulsphasenmodulation" title="Pulsphasenmodulation">PPM (1)</a>&#160;| <a href="/wiki/Puls-Pausen-Modulation" title="Puls-Pausen-Modulation">PPM (2)</a>&#160;| <a href="/wiki/Puls-Code-Modulation" title="Puls-Code-Modulation">PCM</a>&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="white-space: nowrap;text-align: right;background: #DDE5EE;border: 1px solid transparent;border-top: 1px solid #FFF;border-bottom: 1px solid #FFF;padding: 0 1em;"><b>Frequenzspreizende Modulationsverfahren</b></td>
+<td class="hlist" style="text-align: left;border-left: 2px solid #fdfdfd;width: 100%;margin: .4em 0;border-color: #fdfdfd;padding: 0 .25em;">
+<p><a href="/wiki/Frequency_Hopping_Spread_Spectrum" title="Frequency Hopping Spread Spectrum">FHSS</a>&#160;| <a href="/wiki/Direct_Sequence_Spread_Spectrum" title="Direct Sequence Spread Spectrum">DSSS</a>&#160;| <a href="/wiki/Time_Hopping" title="Time Hopping">THSS</a>&#160;| <a href="/wiki/Chirp_Spread_Spectrum" title="Chirp Spread Spectrum">CSS</a>&#160;</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1187
+Cached time: 20160304103202
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.060 seconds
+Real time usage: 0.073 seconds
+Preprocessor visited node count: 978/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 14300/2097152 bytes
+Template argument size: 4558/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 1/500
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   34.783      1 - Vorlage:Navigationsleiste_Technische_Modulationsverfahren
+100.00%   34.783      1 - -total
+ 92.34%   32.119      1 - Vorlage:Erweiterte_Navigationsleiste
+ 27.19%    9.459     32 - Vorlage:Erweiterte_Navigationsleiste/Kern
+  5.10%    1.774      1 - Vorlage:0
+-->
+
+<!-- Saved in parser cache with key dewiki:stable-pcache:idhash:165849-0!*!0!!de!4!* and timestamp 20160304103202 and revision id 134065591
+ -->
+<noscript><img src="//de.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Abgerufen von „<a dir="ltr" href="https://de.wikipedia.org/w/index.php?title=Quadraturphasenumtastung&amp;oldid=134065591">https://de.wikipedia.org/w/index.php?title=Quadraturphasenumtastung&amp;oldid=134065591</a>“					</div>
+				<div id='catlinks' class='catlinks' data-mw='interface'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Wikipedia:Kategorien" title="Wikipedia:Kategorien">Kategorie</a>: <ul><li><a href="/wiki/Kategorie:Modulation_(Technik)" title="Kategorie:Modulation (Technik)">Modulation (Technik)</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigationsmenü</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Meine Werkzeuge</h3>
+						<ul>
+							<li id="pt-anonuserpage">Nicht angemeldet</li><li id="pt-anontalk"><a href="/wiki/Spezial:Meine_Diskussionsseite" title="Diskussion über Änderungen von dieser IP-Adresse [n]" accesskey="n">Diskussionsseite</a></li><li id="pt-anoncontribs"><a href="/wiki/Spezial:Meine_Beitr%C3%A4ge" title="Eine Liste der Bearbeitungen, die von dieser IP-Adresse gemacht wurden [y]" accesskey="y">Beiträge</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Quadraturphasenumtastung&amp;type=signup" title="Wir ermutigen dich dazu, ein Benutzerkonto zu erstellen und dich anzumelden. Es ist jedoch nicht zwingend erforderlich.">Benutzerkonto erstellen</a></li><li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Quadraturphasenumtastung" title="Anmelden ist zwar keine Pflicht, wird aber gerne gesehen. [o]" accesskey="o">Anmelden</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namensräume</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Quadraturphasenumtastung"  title="Seiteninhalt anzeigen [c]" accesskey="c">Artikel</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Diskussion:Quadraturphasenumtastung"  title="Diskussion zum Seiteninhalt [t]" accesskey="t" rel="discussion">Diskussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Varianten</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Ansichten</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Quadraturphasenumtastung" >Lesen</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Quadraturphasenumtastung&amp;action=edit"  title="Diese Seite bearbeiten [e]" accesskey="e">Bearbeiten</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Quadraturphasenumtastung&amp;action=history"  title="Frühere Versionen dieser Seite [h]" accesskey="h">Versionsgeschichte</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>Mehr</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Suche</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Suchen" title="Durchsuche die Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Spezial:Suche" name="title" /><input type="submit" name="fulltext" value="Volltext" title="Suche nach Seiten, die diesen Text enthalten" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Artikel" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Wikipedia:Hauptseite"  title="Hauptseite"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Wikipedia:Hauptseite" title="Hauptseite besuchen [z]" accesskey="z">Hauptseite</a></li><li id="n-topics"><a href="/wiki/Portal:Wikipedia_nach_Themen">Themenportale</a></li><li id="n-alphindex"><a href="/wiki/Spezial:Alle_Seiten">Von A bis Z</a></li><li id="n-randompage"><a href="/wiki/Spezial:Zuf%C3%A4llige_Seite" title="Zufällige Seite aufrufen [x]" accesskey="x">Zufälliger Artikel</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Mitmachen' aria-labelledby='p-Mitmachen-label'>
+			<h3 id='p-Mitmachen-label'>Mitmachen</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Artikel-verbessern"><a href="/wiki/Wikipedia:Beteiligen">Artikel verbessern</a></li><li id="n-Neuerartikel"><a href="/wiki/Hilfe:Neuen_Artikel_anlegen">Neuen Artikel anlegen</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Autorenportal" title="Info-Zentrum über Beteiligungsmöglichkeiten">Autorenportal</a></li><li id="n-help"><a href="/wiki/Hilfe:%C3%9Cbersicht" title="Hilfeseite anzeigen">Hilfe</a></li><li id="n-recentchanges"><a href="/wiki/Spezial:Letzte_%C3%84nderungen" title="Liste der letzten Änderungen in Wikipedia [r]" accesskey="r">Letzte Änderungen</a></li><li id="n-contact"><a href="/wiki/Wikipedia:Kontakt">Kontakt</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_de.wikipedia.org&amp;uselang=de" title="Unterstütze uns">Spenden</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Werkzeuge</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Spezial:Linkliste/Quadraturphasenumtastung" title="Liste aller Seiten, die hierher verlinken [j]" accesskey="j">Links auf diese Seite</a></li><li id="t-recentchangeslinked"><a href="/wiki/Spezial:%C3%84nderungen_an_verlinkten_Seiten/Quadraturphasenumtastung" title="Letzte Änderungen an Seiten, die von hier verlinkt sind [k]" accesskey="k">Änderungen an verlinkten Seiten</a></li><li id="t-specialpages"><a href="/wiki/Spezial:Spezialseiten" title="Liste aller Spezialseiten [q]" accesskey="q">Spezialseiten</a></li><li id="t-permalink"><a href="/w/index.php?title=Quadraturphasenumtastung&amp;oldid=134065591" title="Dauerhafter Link zu dieser Seitenversion">Permanenter Link</a></li><li id="t-info"><a href="/w/index.php?title=Quadraturphasenumtastung&amp;action=info" title="Weitere Informationen über diese Seite">Seiten­informationen</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q13377152" title="Link zum verbundenen Objekt im Datenrepositorium [g]" accesskey="g">Wikidata-Datenobjekt</a></li><li id="t-cite"><a href="/w/index.php?title=Spezial:Zitierhilfe&amp;page=Quadraturphasenumtastung&amp;id=134065591" title="Hinweise, wie diese Seite zitiert werden kann">Artikel zitieren</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Drucken/­exportieren</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Spezial:Buch&amp;bookcmd=book_creator&amp;referer=Quadraturphasenumtastung">Buch erstellen</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Spezial:Buch&amp;bookcmd=render_article&amp;arttitle=Quadraturphasenumtastung&amp;returnto=Quadraturphasenumtastung&amp;oldid=134065591&amp;writer=rdf2latex">Als PDF herunterladen</a></li><li id="t-print"><a href="/w/index.php?title=Quadraturphasenumtastung&amp;printable=yes" title="Druckansicht dieser Seite [p]" accesskey="p">Druckversion</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>Andere Projekte</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:QPSK" hreflang="en">Commons</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In anderen Sprachen</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="//ca.wikipedia.org/wiki/QPSK" title="QPSK – Katalanisch" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="//cs.wikipedia.org/wiki/QPSK" title="QPSK – Tschechisch" lang="cs" hreflang="cs">Čeština</a></li><li class="interlanguage-link interwiki-hu"><a href="//hu.wikipedia.org/wiki/Kvadrat%C3%BAra_f%C3%A1zisbillenty%C5%B1z%C3%A9s" title="Kvadratúra fázisbillentyűzés – Ungarisch" lang="hu" hreflang="hu">Magyar</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Modulacja_QPSK" title="Modulacja QPSK – Polnisch" lang="pl" hreflang="pl">Polski</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q13377152#sitelinks-wikipedia" title="Links auf Artikel in anderen Sprachen bearbeiten" class="wbc-editpage">Links bearbeiten</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> Diese Seite wurde zuletzt am 15. September 2014 um 20:38 Uhr geändert.</li>
+											<li id="footer-info-copyright"><div id="footer-info-copyright-stats"><a class="external" href="https://tools.wmflabs.org/pageviews#pages=Quadraturphasenumtastung&amp;project=de.wikipedia.org" rel="nofollow">Abrufstatistik</a></div><div id="footer-info-copyright-info"><br />
+Der Text ist unter der Lizenz <a class="internal" href="//de.wikipedia.org/wiki/Wikipedia:Lizenzbestimmungen_Commons_Attribution-ShareAlike_3.0_Unported">„Creative Commons Attribution/Share Alike“</a> verfügbar; Informationen zu den Urhebern und zum Lizenzstatus eingebundener Mediendateien (etwa Bilder oder Videos) können im Regelfall durch Anklicken dieser abgerufen werden. Möglicherweise unterliegen die Inhalte jeweils zusätzlichen Bedingungen. Durch die Nutzung dieser Website erklären Sie sich mit den <a class="internal" href="//wikimediafoundation.org/wiki/Nutzungsbedingungen">Nutzungsbedingungen</a> und der <a class="internal" href="//de.wikipedia.org/wiki/Wikipedia:Datenschutz">Datenschutzrichtlinie</a> einverstanden.<br />
+Wikipedia® ist eine eingetragene Marke der Wikimedia Foundation Inc.</div></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//meta.wikimedia.org/wiki/Privacy_policy/de" title="m:Privacy policy/de">Datenschutz</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:%C3%9Cber_Wikipedia" title="Wikipedia:Über Wikipedia">Über Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:Impressum" title="Wikipedia:Impressum">Haftungsausschluss</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Entwickler</a></li>
+											<li id="footer-places-cookiestatement"><a href="//wikimediafoundation.org/wiki/Cookie_statement">Stellungnahme zu Cookies</a></li>
+											<li id="footer-places-mobileview"><a href="//de.m.wikipedia.org/w/index.php?title=Quadraturphasenumtastung&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile Ansicht</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.eventLogging.subscriber","ext.gadget.WikiMiniAtlas","ext.gadget.OpenStreetMap","ext.gadget.CommonsDirekt","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage","ext.flaggedRevs.advanced"]);
+} );</script><script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgBackendResponseTime":85,"wgHostname":"mw1241"}); /* @nomin */
+} );</script>
+	</body>
+</html>
