@@ -1,11 +1,12 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+% Korrekturen: Lars Weiler <dc4lw@drac.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse A 18: \\
           Gerätetechnik \\[2em]}
-\date{Stand 09.07.2015}
+\date{Stand 12.07.2016}
 \input{texdata/titlepage}
 
 \section{Überblick}
@@ -31,13 +32,13 @@
     \frametitle{Wiederholung SNR}
 
     \begin{center}
-        \includegraphics[width=0.8\textwidth]{a18/Received_message.jpg}
-        \tiny \hyperlink{refs}{\cite{wc}}
+        \includegraphics[width=0.8\textwidth,height=.4\textheight,keepaspectratio]{a18/Received_message.jpg}
+        {\tiny \hyperlink{refs}{\cite{wm}}}
     \end{center}
 
     \begin{center}
-    \includegraphics[width=0.8\textwidth]{a18/Analyse_thermo_gravimetrique_bruit.png}
-        \tiny \hyperlink{refs}{\cite{wc}}
+    \includegraphics[width=0.8\textwidth,height=.4\textheight,keepaspectratio]{a18/Analyse_thermo_gravimetrique_bruit.png}
+        {\tiny \hyperlink{refs}{\cite{wm}}}
     \end{center}
 
 \end{frame}
@@ -45,34 +46,38 @@
 \begin{frame}
     \frametitle{Empfindlichkeit}
 
-    Empfindlichkeit gibt an, wie stark Eingangssignal sein muss um über dem
-    thermischen Eigenrauschen zu liegen. Einfacher: \\
+    Empfindlichkeit gibt an, wie stark das Eingangssignal sein muss, um über
+    dem thermischen Eigenrauschen zu liegen.\\[.5em]
 
-    Fähigkeit des Empfängers, schwache Signale zu empfangen.
+    Einfacher: Fähigkeit des Empfängers, schwache Signale zu empfangen.
 
     \bigskip
 
-    Wahrnehmungsschwelle bei ca. $6 dB$
+    Wahrnehmungsschwelle des menschlichen Ohrs bei ca. $6 dB$\\
+    Sprache ist ab etwa $10 dB$ wahrnehmbar
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Empfindlichkeit}
 
-    Rauschleistung (Formelsammlung): $P_R = k \cdot T_0 \cdot b$
-    \footnote{mit Boltzmannkonstante $k$, Temperatur $T_0$ und Bandbreite $b$}
-
-    \bigskip
-
-    Wichtig ist: Die Leistung eines gleichmäßig über einen Frequenzbereich
-    verteilten Rauschens ist proportional zur Bandbreite!
-
-    \bigskip
-
-    \begin{block}{Wie verhält sich bei sonst gleich bleibenden Bedingungen die
-                  Rauschleistung nach Umschaltung von SSB auf CW?}
-        \only<2>{$\frac{2,5 kHz}{0,5 kHz} \approx \frac{1}{5}$}
+    \begin{block}{Rauschleistung (Formelsammlung)}
+      $P_R = k \cdot T_K \cdot B$\\
+      mit $k$: Boltzmann-Konstante, $T_K$: Temperatur in Kelvin, $B$: Bandbreite
     \end{block}
+
+    \bigskip
+
+    \textbf{Die Leistung eines gleichmäßig über einen Frequenzbereich
+    verteilten Rauschens ist proportional zur Bandbreite!}
+
+    \bigskip
+
+    \begin{exampleblock}{Wie verhält sich bei sonst gleich bleibenden Bedingungen die
+                  Rauschleistung nach Umschaltung von SSB auf CW?}
+        \only<1>{\vspace{2em}}
+        \only<2>{$\frac{2,5 kHz}{0,5 kHz} \approx \frac{1}{5}$}
+    \end{exampleblock}
 
 \end{frame}
 
@@ -81,8 +86,9 @@
 \begin{frame}
     \frametitle{Rauschzahl}
 
-    Noise Figure $F$ bzw. Rauschzahl ist der Faktor um den theoretische
-    Rauschformeln gerätespezifisch erweitert werden.
+    Jedes Gerät produziert Eigenrauschen. Die Rauschzahl $F$ (noise figure) ist
+    der Faktor, um den die theoretischen Rauschformeln gerätespezifisch
+    erweitert werden.
 
     \bigskip
 
@@ -90,20 +96,18 @@
 
     \bigskip
 
-    Beispiele:
-
-    \begin{itemize}
-        \item $F=1,8 dB \rightarrow$ Ausgang $1,8dB$ geringeres SNR als das Eingang
-        \item $F=2 \rightarrow$ Ausgang \only<1>{\textbf{?}} \only<2>{$3dB$ geringeres} SNR als Eingang
-    \end{itemize}
+    \begin{exampleblock}{Beispiele}
+        $F=1,8 dB \rightarrow$ am Ausgang $1,8dB$ geringeres SNR als am Eingang\\
+        $F=2 \rightarrow$ am Ausgang \only<1>{\textbf{?}} \only<2>{$3dB$ geringeres} SNR als am Eingang
+    \end{exampleblock}
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Rauschzahl}
 
-    Für Kurzwelle und niedrigere Frequenzen spielt die Noise Figure keine Rolle,
-    da QRN und QRM den SNR bestimmen.
+    Für Kurzwelle und niedrigere Frequenzen spielt die Rauschzahl keine Rolle,
+    da QRN und QRM das SNR bestimmen.
 
     \bigskip
 
@@ -115,7 +119,9 @@
 \begin{frame}
     \frametitle{Rauschzahl}
 
-    VHF-Vorverstärker möglichst direkt an der Antenne. Warum?
+    VHF/UHF-Vorverstärker möglichst direkt an der Antenne. Warum?\\
+    \only<2>{Ursache: (Langes) Kabel zwischen Antenne und Empfängereingang
+    verschlechtert die Rauschzahl mit seiner Dämpfung}
 
     \bigskip
 
@@ -129,16 +135,24 @@
 \begin{frame}
     \frametitle{Selektivität}
 
-    Fähigkeit Signale mit steilen Filterflanken zu selektieren. Deshalb auch:
-    Trennschärfe.
+    \begin{columns}
+      \column{.5\textwidth}
+      \begin{center}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a18/TF410.png}\\
+        {\tiny (TF410/411)}
+      \end{center}
 
-    \begin{center}
-    \includegraphics[width=0.5\textwidth]{a18/TF410.png}
-        \tiny (TF410/411)
-    \end{center}
+      \column{.45\textwidth}
 
-    Grenzbandbreite bei -60 dB? Für welche Signale geeignet?
-    \only<2>{A: 4 kHz, SSB}
+      Fähigkeit, Signale mit steilen Filterflanken zu selektieren. Deshalb auch:
+      Trennschärfe.
+
+      \begin{exampleblock}{Grenzbandbreite bei -60 dB? Für welche Signale geeignet?}
+        \only<1>{\vspace{1em}}
+        \only<2>{4\,kHz, SSB}
+      \end{exampleblock}
+
+    \end{columns}
 
 \end{frame}
 
@@ -148,9 +162,17 @@
     Für einen steilen und schmalen Bandpass eignen sich am besten
     Quarzkristalle.
 
-    Welche Filterbandbreiten würdet ihr für J3E, F1B (RTTY Shift 170 Hz), F3E nutzen?
-    \only<2>{A: 2,2 kHz, 500 Hz, 12 kHz}
 
+    \begin{exampleblock}{Welche Filterbandbreiten würdet ihr für J3E, F1B (RTTY Shift 170\,Hz), F3E nutzen?}
+      \only<1>{\vspace{3em}}
+      \only<2>{
+      \begin{description}
+        \item[J3E] 2,2\,kHz
+        \item[F1B] 500\,Hz
+        \item[F3E] 12\,kHz
+      \end{description}
+     }
+    \end{exampleblock}
 \end{frame}
 
 \section{HF-Regelung}
@@ -160,12 +182,13 @@
 \begin{frame}
     \frametitle{AGC}
 
-    \emph{Automatic Gain Control} sorgt für konstante NF auch bei schwankendem
+    Automatic Gain Control (AGC) sorgt für konstante NF auch bei schwankendem
     HF-Eingang.
 
     \bigskip
 
-    $\rightarrow$ Bei starkem Eingang reduzieren der Verstärkung der HF-und ZF-Stufen.
+    $\rightarrow$ Bei starkem Eingangssignal wird die Verstärkung der HF- und
+    ZF-Stufen reduziert.
 
 \end{frame}
 
@@ -204,7 +227,9 @@
     Durch IF/ZF-Shift wird die Filterkurve soweit verschoben, dass das
     Störsignal ausgeblendet wird.
 
-    % FIXME Gutes Bild finden oder bauen
+    \bigskip
+
+    \emph{Beispiel: \href{https://youtu.be/NnhZbAKXm28}{$\Rightarrow$ Passband Tuning vs. IF Shift}}
 
 \end{frame}
 
@@ -214,14 +239,14 @@
     \frametitle{Bandwidth-Tuning}
 
     Übereinanderschieben von steilflankigen Filtern, sodass der
-    Durchlassbereicht kleiner wird.
+    Durchlassbereich kleiner wird.
 
     % FIXME Gutes Bild finden oder bauen
-    
+
     \bigskip
 
-    Wie verhält sich der SNR?
-    \only<2>{Proportional zur Brandbreite. Remember?}
+    Wie verhält sich das SNR?
+    \only<2>{Proportional zur Bandbreite. Remember?}
 
 \end{frame}
 
@@ -230,13 +255,19 @@
 \begin{frame}
     \frametitle{Notchfilter}
 
-    Auch: Kerbfilter mit ''Loch'' im IF-Durchlassbereich zum Ausblenden
-    schmalbandiger Störungen. Frequenzverlauf:
+    \begin{columns}
+      \column{.5\textwidth}
+      \begin{center}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a18/TF326a.png}\\
+      {\tiny (TF326)}
+      \end{center}
 
-    \begin{center}
-    \includegraphics[width=0.5\textwidth]{a18/TF326A.png}
-        \tiny (TF326)
-    \end{center}
+      \column{.45\textwidth}
+      Auch: Kerbfilter mit ``Loch'' im IF-Durchlassbereich zum Ausblenden
+      schmalbandiger Störungen.
+
+    \end{columns}
+
 
 \end{frame}
 
@@ -250,14 +281,14 @@
 
     \bigskip
 
-    Störaustaster regelt bei Störungen IF oder NF komplett herunter
+    Störaustaster regelt bei Störungen ZF oder NF komplett herunter
     $\rightarrow$ Noise Blanker.
 
     % TODO Zeichnungen?
 
 \end{frame}
 
-\section{Großsignalfestigkeit}
+\section{Groß"-signal"-festig"-keit}
 
 \begin{frame}
     \frametitle{Großsignalfestigkeit}
@@ -267,7 +298,8 @@
 
     \bigskip
 
-    Entstehung: Nichtlinearität realer Bauteile.
+    Hauptursache für Intermodulationtsprodukte sind Nichtlinearitäten in den
+    HF-Stufen.\footnote{Für Mischstufen praktisch, bei Verstärkern unerwünscht}
 
 \end{frame}
 
@@ -275,8 +307,9 @@
     \frametitle{Interception Point}
 
     Ungeradzahlige Intermodulationsprodukte sollen so gering wie möglich
-    auftreten $\rightarrow$ Intermodulationsabstand. Aufhebung zu Null an den
-    ''Interception Points.''
+    auftreten\\
+    $\rightarrow$ Intermodulationsabstand.\\
+    Aufhebung zu Null an den ``Interception Points.''\footnote{Siehe \url{https://de.wikipedia.org/wiki/Intercept_Point}}
 
     % FIXME Skizze
 
@@ -302,9 +335,16 @@
 \begin{frame}
     \frametitle{Leistung}
 
-    \Large QRP ... QRO
+    {\Large QRP ... QRO}
 
-    % <10W ... 750W
+    \pause
+
+    \begin{description}
+      \item[10W--20W] QRP-TRX für HF
+      \item[10W--50W] TRX für UKW
+      \item[$\approx$100W] übliche Ausgangsleistung für Desktop- und Portabel-HF-TRX
+      \item[750W] Hochleistungs-TRX mit zusätzlichem Verstärker
+    \end{description}
 
 \end{frame}
 
@@ -318,44 +358,48 @@
 \begin{frame}
     \frametitle{Frequenzbereiche}
 
-    HF-TRX meist 160m - 10m
+    HF-TRX meist 160m--10m, ggf. 6m
 
     \bigskip
 
-    UKW-TRX meist 2m + 70cm, ggf. 23cm
+    UKW-TRX meist 2m + 70cm, ggf. 23cm und 6m
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Frequenzanzeige}
 
-    Ältere Empfänger können mit einem einem quarzgesteuerten
-    Frequenzmarken-Generator geprüft werden - heute nicht mehr notwendig.
+    Ältere Empfänger können meist nicht genauer als $\pm100Hz$ eingestellt
+    werden.  Die Anzeige kann mit einem quarzgesteuerten
+    Frequenzmarken-Generator geprüft werden -- heute nicht mehr notwendig.
 
     \bigskip
 
     Ansonsten wie bei der Messtechnik immer an die Ambivalenz digitaler Anzeigen
-    denken: Auflösung $\neq$ Anzeigegenauigkeit.
+    denken: Auflösung $\neq$ Anzeigegenauigkeit. Im Datenblatt in $ppm$ angegeben.
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{RIT}
+    \frametitle{RIT und Split}
 
-    Receiver Incremental Tuning zur geringfügigen Veränderung der
-    Empfangsfrequenz gegenüber der Sende-QRG.
+    Receiver Incremental Tuning (RIT) zur geringfügigen Veränderung der
+    Empfangsfrequenz gegenüber der Sende-QRG. Praktisch z.B. bei TX-Drift.
 
     \bigskip
 
-    z.B. TX-Drift oder Pile-Up.
+    Split ermöglicht die Einstellung einer völlig anderen Frequenz für Empfang
+    und Senden. Wird bei Pile-Ups, im Satellitenbetrieb oder zur besseren
+    Anpassung des Hilfsträgers in Digimodes (JT65/JT9) verwendet.
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Kompressor}
 
-    Audiokompression der Stimme, damit sie ''satter'' rüberkommt und
-    verständlicher wird, damit allerdings ihre Färbung verliert.
+    Audiokompression der Stimme zur vollen Aussterung des Senders, damit sie
+    ``satter'' rüberkommt und verständlicher wird, allerdings ihre Färbung
+    verliert.
 
 \end{frame}
 
@@ -374,27 +418,27 @@
 \begin{frame}
     \frametitle{DSP}
 
-    Digital Signal Processing als Überbegriff für jegliche digitale
-    Audioverarbeitung. Alle o.g. Beispiele werden heute durch DSPs umgesetzt.
+    Digital Signal Processing (DSP) als Überbegriff für jegliche digitale
+    Audioverarbeitung. Alle o.\,g. Beispiele werden heute durch DSPs umgesetzt.
 
     \bigskip
 
-    Das Signal muss vor dem DSP digitalisiert und anschließend wieder in eine
-    analoges Signal umgeformt werden.
+    Das Signal muss vor dem DSP digitalisiert und anschließend wieder in ein
+    analoges Signal umgeformt werden $\rightarrow$ AD---DA-Wandlung
 
 \end{frame}
 
 \begin{frame}
     \frametitle{PTT und VOX}
 
-    Push To Talk wurde bereits oft angesprochen - es handelt sich um eine
+    Push To Talk (PTT) wurde bereits oft angesprochen -- es handelt sich um eine
     einfache Sende-/Empfangsumschaltung.
 
     \bigskip
 
     Mit einer Voice Control (VOX) lässt sich die Umschaltung durch den NF-Pegel
     der eigenen Sprache auslösen. Nachteile: Störgeräusche können ggf. auch
-    umschalten und meist dadurch ein Delay.
+    umschalten.
 
 \end{frame}
 
@@ -406,11 +450,11 @@
 \footnotesize
 
 \begin{thebibliography}{}
-    \bibitem{darc}  DARC Online-Lehrgang Lektion A18:
+    \bibitem{darc}  DARC Online-Lehrgang Lektion A18:\\
                     \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a18/}
-    \bibitem{wm}    Wikimedia:
-                    \url{https://commons.wikimedia.org/wiki/File:Received_message.jpg}
+    \bibitem{wm}    Wikimedia:\\
+                    \url{https://commons.wikimedia.org/wiki/File:Received_message.jpg}\\
                     \url{https://commons.wikimedia.org/wiki/File:Analyse_thermo_gravimetrique_bruit.png}
-\end{thebibliography} 
+\end{thebibliography}
 
 \input{texdata/postamble}
