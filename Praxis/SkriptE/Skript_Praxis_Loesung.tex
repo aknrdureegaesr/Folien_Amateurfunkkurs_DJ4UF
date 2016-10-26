@@ -21,6 +21,21 @@
 \newcommand{\Lernziele}[1]{\subsection*{Lernziele}{#1}}
 \graphicspath{{./Bilder/}}
 
+\newcommand{\mucho}[8]{
+	\aufgabentext{
+	\begin{enumerate}
+	\item[#1] \emph{\textbf{#2}} #3
+		\begin{enumerate}
+		\itemsep1pt\parskip0pt\parsep0pt
+		\item[A] #4
+		\item[B] #5
+		\item[C] #6
+		\item[D] #7
+		\loesung{Lösung: #8}
+		\end{enumerate}
+	\end{enumerate}
+	}}
+
 \begin{document}
 
 \input{Head_Loesung.tex}
