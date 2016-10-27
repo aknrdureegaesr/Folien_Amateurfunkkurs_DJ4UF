@@ -1,12 +1,13 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>, Lars Weiler <dc4lw@darc.de>
+%Überarbeitung: Hendrik Boerma
 
-\input{texdata/preamble}
+\input{texdata/preamble.dk0tu}
 \subtitle{Technik 02: \\
           Spannung und Strom, Wechselspannung \\[2em]}
-\date{Stand 28.10.2015}
-\input{texdata/titlepage}
+\date{Stand 27.10.2016}
+\input{texdata/titlepage.dk0tu}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
 
@@ -23,10 +24,11 @@
 \begin{frame}
     \frametitle{Spannung}
     \begin{center}
-    Elektrische Spannung wird erzeugt durch die Trennung von Ladungen
-		\includegraphics[width=.6\textwidth]{e02/ladung.png}
-        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}}
-    \end{center}
+\begin{figure}
+ 		\includegraphics[width=.6\textwidth,height=.75\textheight,keepaspectratio]{e02/ladung.png}      
+		 \attribcaption{Elektrische Spannung wird durch die Trennung von Ladungen erzeugt}{Geek3}{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}{\ccbysa}     
+\end{figure}    
+\end{center}
 \end{frame}
 
 
@@ -42,56 +44,67 @@
 \begin{frame}
     \frametitle{Batterie}
     \begin{center}
-    Schaltungszeichen einer Batterie / Batteriezelle\\
+ \begin{figure}
 	\includegraphics[width=.7\textwidth]{e02/batterieEagle.png}
+	 \caption{Schaltungszeichen einer Batterie}
+\end{figure}
     \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{9V Batterie}
     \begin{center}
-    Schaltungszeichen einer 9V Batterie\\
-    Pro Zelle $1.8V$\\
-    Werden bei Reihenschaltung addiert\\
+	 \begin{figure}
 	\includegraphics[width=.99\textwidth]{e02/9vBatEagle.png}
+    	\caption{Schaltungszeichen einer 9V Batterie. Pro Zelle $1,8V$. Werden bei Reihenschaltung addiert.}
+    	\end{figure}
     \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Spannung bestimmen}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.5\textwidth,height=.75\textheight,keepaspectratio]{e02/Spannung.png}
+      \caption{Spannungsquellen in einem Netzwerk mit möglichen Messpunkten}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Digitales Multimeter}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.25\textwidth,height=.75\textheight,keepaspectratio]{e02/digitalmultimeter.jpg}
+      \attribcaption{Digitales Multimeter}{MichaelHaeckel}{https://commons.wikimedia.org/wiki/File:Digitalmultimeter.jpg}{\ccpd}
+    \end{figure}
+  \end{center}
+\end{frame}
+\begin{frame}
+  \frametitle{Was wo anschließen?}
+  \begin{minipage}{0.4\textwidth}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e02/digitalmultimeterMess.jpg}
+      \attribcaption{Digitales Multimeter}{MichaelHaeckel (modifiziert)}{https://commons.wikimedia.org/wiki/File:Digitalmultimeter.jpg}{\ccpd}
+    \end{figure}
+  \end{minipage}
+  \begin{minipage}{0.4\textwidth}
+    \begin{itemize}
+      \item Was kann alles gemessen werden?
+      \item Wo zum Strom messen anschließen?
+      \item Wo zum Spannung messen anschließen?
+      \item Welcher Messbereich?
+    \end{itemize}
+  \end{minipage}
 \end{frame}
 
 \begin{frame}
     \frametitle{Spannung bestimmen}
     \begin{center}
-	\includegraphics[width=.5\textwidth]{e02/Spannung.png}
-    \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Digitales Multimeter}
-    \begin{center}
-        \includegraphics[width=.25\textwidth]{e02/digitalmultimeter.jpg}
-    \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Was wo anschließen?}
-	\begin{minipage}{0.4\textwidth}
-        \includegraphics[width=1\textwidth]{e02/digitalmultimeterMess.jpg}
-	\end{minipage}
-	\begin{minipage}{0.4\textwidth}	
-	\begin{itemize}
-		\item Was kann alles gemessen werden?
-		\item Wo zum Strom messen anschließen?
-		\item Wo zum Spannung messen anschließen?
-		\item Welcher Messbereich?
-	\end{itemize}
-	\end{minipage}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Spannung bestimmen}
-    \begin{center}
-    Was Zeigt das Messgertät an beim Messen von $A$ nach $C$?\\
-    (Abb. Ähnlich)
-        \includegraphics[width=.4\textwidth]{e02/SpannungMess.png}
+  \begin{figure}
+      \includegraphics[width=.4\textwidth,height=.75\textheight,keepaspectratio]{e02/SpannungMess.png}
+      \caption{Frage Welchen Betrag der Spannung zeigt das Messgerät beim Messen von $A$ nach $C$ an?}
+    \end{figure}-
     \end{center}
 \end{frame}
 
@@ -124,36 +137,42 @@
 
 \begin{frame}
     \frametitle{Physikalische vs. Technische Stromrichtung}
-	\begin{center}
-		Nur Elektronen können sich bewegen
-	    \includegraphics[width=.7\textwidth]{e02/Current_notation.png}\\
-	    \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Current_notation.svg}}
-       \end{center}
+  		\begin{center}
+   		 \begin{figure}
+      			\includegraphics[width=.7\textwidth,height=.75\textheight,keepaspectratio]{e02/Current_notation.png}
+     		 	\attribcaption{Nur Elektronen können sich bewegen}{User:Flekstro (Conventional\_Current.png by User:Romtobbi)}{https://commons.wikimedia.org/wiki/File:Current_notation.svg}{\ccby}
+ 			\end{figure}
+       		\end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Strom Messen}
     \begin{center}
-    	Strom wird in Reihe gemessen
-        \includegraphics[width=.5\textwidth]{e02/reiheAmpare.png}
-      \end{center}
+    \begin{figure}
+      \includegraphics[width=.5\textwidth,height=.75\textheight,keepaspectratio]{e02/reiheAmpare.png}
+      \caption{Strom wird in Reihe gemessen}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Wie sollte gemessen werden?}
-        \includegraphics[width=.8\textwidth]{e02/stromSpannung.png}
-        \footnote{\tiny Fragenkatalog Bundesnetzargentur Klasse E TJ201}
+         \begin{figure}
+    \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e02/stromSpannung.png}
+    \caption{Fragenkatalog Bundesnetzagentur Klasse E TJ201}
+  \end{figure}
 \end{frame}
 
 \section*{Ladung}
 
 \begin{frame}
     \frametitle{Ladung}
-    \begin{center}
-    		$$Q = I \cdot t$$
-        \includegraphics[width=.5\textwidth]{e02/ladung.png}
-        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}}
-	\end{center}
+     \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e02/ladung.png}
+      \attribcaption{$Q = I \cdot t$}{Geek3}{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}{\ccbysa}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
@@ -193,7 +212,10 @@
 \end{frame}
 
 \section*{Wechsel\-spannung}
+\begin{frame}
+\frametitle{Frequenz}
 
+\end{frame}
 \begin{frame}
     \frametitle{Wechselspannungen}
 	\begin{minipage}{0.4\textwidth}
@@ -212,16 +234,18 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Effektivwert vs Spitzen Wert}
-    \begin{align} 
-		\int \! sin^2(\omega t) \, \mathrm{d}t & = \frac{t}{2} - \frac{1}{4\omega}sin^2(2\omega t) + c \\
-		U_{eff}^2 \cdot \int_0^T \! sin^2(\omega t) \, \mathrm{d}t & = \frac{T}{2} \cdot \frac{u_{spitze}^2}{T} \\
-		U_{eff} & = \frac{1}{\sqrt{2}} u_{spitze}
-	\end{align}
-	    \begin{center}
-	    \includegraphics[width=.6\textwidth]{e02/EffektivwertSinus.png}\\
-	    \footnote{\tiny \url{https://de.wikipedia.org/wiki/Datei:Effektivwert-Sinus.svg}}
-	    \end{center}
+  \frametitle{Effektivwert vs Spitzen Wert}
+  \begin{align}
+    \int \! sin^2(\omega t) \, \mathrm{d}t & = \frac{t}{2} - \frac{1}{4\omega}sin^2(2\omega t) + c \\
+    U_{eff}^2 \cdot \int_0^T \! sin^2(\omega t) \, \mathrm{d}t & = \frac{T}{2} \cdot \frac{u_{spitze}^2}{T} \\
+    U_{eff} & = \frac{1}{\sqrt{2}} u_{spitze}
+  \end{align}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.6\textwidth,height=.3\textheight,keepaspectratio]{e02/EffektivwertSinus.png}\\
+      \attribcaption{Effektivwert-Sinus}{Saure}{https://de.wikipedia.org/wiki/Datei:Effektivwert-Sinus.svg}{\ccbysa}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}

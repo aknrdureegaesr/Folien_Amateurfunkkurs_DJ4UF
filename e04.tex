@@ -2,11 +2,11 @@
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Felix Baum <baum@campus.tu-berlin.de>, Lars Weiler <dc4lw@darc.de>
 
-\input{texdata/preamble}
+\input{texdata/preamble.dk0tu}
 \subtitle{Technik Klasse E 04: \\
           Der Widerstand und seine Schaltungsarten \\[2em]}
 \date{Stand 27.10.2014}
-\input{texdata/titlepage}
+\input{texdata/titlepage.dk0tu}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
 
@@ -24,10 +24,14 @@
 \begin{frame}
     \frametitle{Einleitung / Widerstand}
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth]{e04/Widerstaende.jpg}
-        \footnote{\tiny By Honina at de.wikipedia. Later version(s) were uploaded by Montauk at de.wikipedia.}
-    \end{center}
+
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e04/Widerstaende.jpg}
+      \attribcaption{Widerstände}{Honina}{https://commons.wikimedia.org/wiki/File:Widerstände.JPG}{\ccbysa}
+    \end{figure}
+  \end{center}
+
  	
 
 \end{frame}
@@ -36,74 +40,80 @@
     \frametitle{Einleitung / Widerstand}
 
     \begin{center}
-        \includegraphics[width=.4\textwidth]{e04/Resistor_symbol_IEC.png}
-        \footnote{\tiny By Markus Kuhn (Made in Inkscape from scratch) [Public domain], via Wikimedia Commons}
+           \begin{figure}
+      \includegraphics[width=.3\textwidth,height=.3\textheight,keepaspectratio]{e04/Resistor_symbol_IEC.png}
+      \attribcaption{Widerstandssymbol nach IEC}{Markus Kuhn}{https://commons.wikimedia.org/wiki/File:Resistor_symbol_IEC.svg}{\ccpd}
+    \end{figure}
     \end{center}
 
     \begin{center}
-        \includegraphics[width=.4\textwidth]{e04/R_LTspice.png}
-        \footnote{\tiny aus LTspice, Freeware zur Schaltungssimulation \url{http://www.linear.com/designtools/software/\#Spice}}
+         \begin{figure}
+      \includegraphics[width=.4\textwidth,height=.4\textheight,keepaspectratio]{e04/R_LTspice.png}
+      \caption{aus LTspice, Freeware zur Schaltungssimulation \ExternalLink~\url{http://www.linear.com/designtools/software/\#Spice}}
+    \end{figure}
     \end{center}
  	
 \end{frame}
 
-\section*{Besondere Widerstandsarten}
-\begin{frame}
-    \frametitle{Drehpotentiometer}
 
-    \begin{center}
-        \includegraphics[width=.5\textwidth]{e04/Potenziometer.jpg}
-        \footnote{\tiny „Potenziometer“ von Honina.Original uploader was Honina at de.wikipedia.Later version(s) were uploaded by Ulfbastel at de.wikipedia. Lizenziert unter Creative Commons Attribution-Share Alike 3.0 über Wikimedia Commons}
-    \end{center}
- 	
-\end{frame}
 
 \section*{Spezifischer Widerstand}
 
 \begin{frame}
-    \frametitle{Leitende Materialien}
+  \frametitle{Leitende Materialien}
+  \begin{columns}
+    \column{.6\textwidth}
+    \begin{tabular}{lr}
+      Material & Spezifischer Widerstand\footnotemark $\rho \text{ in } \frac{\Omega\cdot mm^2}{m}$ \\ \hline
+      Silber & $1,587 \cdot 10^{-2}$ \\
+      Kupfer & $1,721 \cdot 10^{-2}$ \\
+      Gold & $2,214 \cdot 10^{-2}$ \\
+      Aluminium & $2,65 \cdot 10^{-2}$ \\
+      Zinn & $1,15 \cdot 10^{-1}$ \\
+      Blei & $2,08 \cdot 10^{-1}$ \\
+      Quecksilber & $9,412 \cdot 10^{-1}$ \\
+      Germanium & \only<2>{$\leftarrow$ merken \hspace{2pc}} $4,6 \cdot 10^{5}$\\
+      Porzellan & \only<2>{$\leftarrow$ \textbf{Isolator} \hspace{2pc}} $1 \cdot 10^{18}$ \\
+    \end{tabular}
 
-     \begin{tabular}{lr}
-  	Material & Spezifischer Widerstand\footnote{\tiny \url{de.wikipedia.org/wiki/Spezifischer_Widerstand}} \\ \hline
-  	Silber & $1,587 \cdot 10^{-2}$ \\
-  	Kupfer & $1,721 \cdot 10^{-2}$ \\
-  	Gold & $2,214 \cdot 10^{-2}$ \\
-  	Aluminium & $2,65 \cdot 10^{-2}$ \\
-  	Zinn & $1.15 \cdot 10^{-1}$ \\
-  	Blei & $2,08 \cdot 10^{-1}$ \\
-  	Quecksilber & $9.412 \cdot 10^{-1}$ \\
-  	Germanium & $4.6 \cdot 10^{5}$\\
-  	Porzellan & $1 \cdot 10^{18}$ \\
- 	\end{tabular}
- 	
- 	$$R = \rho \cdot \frac{l}{A}$$
- 	
-
+    \column{.35\textwidth}
+    \only<3>{
+    \begin{block}{Berechnung des Widerstands}
+      $$R = \rho \cdot \frac{\ell}{A}$$
+    \end{block}
+    }
+  \end{columns}
+  \footnotetext[1]{\tiny \ExternalLink \url{http://de.wikipedia.org/wiki/Spezifischer_Widerstand}}
 \end{frame}
 
-\section*{Widerstandswerte Ablesen}
+\section*{Widerstandswerte}
 
 \begin{frame}
 	\begin{center}
-        \includegraphics[width=.74\textwidth]{e04/4-Ringe.png}
-        \footnote{\tiny By Wikipedia CC-BY-SA-3.0\url{https://de.wikipedia.org/wiki/Widerstand_(Bauelement)}]}
+        \begin{figure}
+      \includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e04/4-Ringe.png}
+      \attribcaption{Farbkodierung von Widerständen mit 4 Ringen}{Screenshot}{https://de.wikipedia.org/wiki/Widerstand_(Bauelement)}{\ccbysa}
+    \end{figure}
 \end{center}
 \end{frame}
 
 \begin{frame}
 	\begin{center}
-        \includegraphics[width=1\textwidth]{e04/5-Ringe.png}
-        \footnote{\tiny By Wikipedia CC-BY-SA-3.0\url{https://de.wikipedia.org/wiki/Widerstand_(Bauelement)}]}
+       \begin{figure}
+      \includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e04/5-Ringe.png}
+      \attribcaption{Farbkodierung von Widerständen mit 5 Ringen}{Screenshot}{https://de.wikipedia.org/wiki/Widerstand_(Bauelement)}{\ccbysa}
+    \end{figure}
 \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{SMD Widerstände}
     \begin{center}
-        \includegraphics[width=.3\textwidth]{e04/Rsistor_SMD.jpg}
-        \footnote{\tiny By Haragayato CC-BY-SA-3.0 (\url{http://creativecommons.org/licenses/by-sa/3.0/)}], via Wikimedia Commons}
+        \begin{figure}
+      \includegraphics[width=\textwidth,height=.2\textheight,keepaspectratio]{e04/Rsistor_SMD.jpg}
+      \attribcaption{SMD Widerstand}{Haragayato}{https://commons.wikimedia.org/wiki/File:Register3.jpg}{\ccbysa}
+    \end{figure}
     \end{center}
-    
     \begin{center}
     \begin{tabular}{l||l|l|l|l|l|l|l|l|l|l}\hline
         1.Ziffer & - & 1 &2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
@@ -114,6 +124,7 @@
     Zum Beispiel:
     \begin{center}
     \begin{tabular}{l||l}\hline
+	Aufdruck & Widerstandswert \\ \hline
         470 & $47 \cdot 10^{0} \Omega$ \\ \hline
         223 & $22 \cdot 10^{3} \Omega$ \\ \hline
         4R7 & $4,7 \Omega$ \\ \hline
@@ -121,13 +132,26 @@
     \end{center}
 
 \end{frame}
+\section*{Besondere Widerstandsarten}
+\begin{frame}
+    \frametitle{Drehpotentiometer}
 
+    \begin{center}
+      \begin{figure}
+      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e04/Potenziometer.jpg}
+      \attribcaption{Zwei Trimmpotentiometer und ein Schiebepotentiometer}{Honina}{https://commons.wikimedia.org/wiki/File:Potenziometer.JPG}{\ccbysa}
+    \end{figure}
+    \end{center}
+ 	
+\end{frame}
 \begin{frame}
     \frametitle{Besondere Widerstände}
 
     \begin{center}
-        \includegraphics[width=.7\textwidth]{e04/bild-TC106.png}
-        \footnote{\tiny Technik Fragenkatalog KlasseE 2006-09 Frage TC106}
+      \begin{figure}
+      \includegraphics[width=.6\textwidth,height=.5\textheight,keepaspectratio]{e04/bild-TC106.png}
+      \caption{Technik Fragenkatalog Klasse E 2006-09 Frage TC106}
+    \end{figure}
  	
  	\begin{tabular}{l||l}\hline
         A & NTC - Negativer Temperaturkoeffizient \\ \hline
@@ -146,8 +170,10 @@
     $$R_{gesamt} = R_1 + R_2 + R_3 + ...$$
 
 	\begin{center}
-        \includegraphics[width=.2\textwidth]{e04/Reihe.png}
-        \footnote{\tiny aus LTspice}
+        \begin{figure}
+        \includegraphics[width=.4\textwidth,height=.75\textheight,keepaspectratio]{e04/Reihe.png}
+        \caption{aus LTspice}
+      \end{figure}
     \end{center}
 \end{frame}
 
@@ -156,8 +182,10 @@
         $$\frac{1}{R_{gesamt}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...$$
         
 	\begin{center}
-        \includegraphics[width=.5\textwidth]{e04/Parallel.png}
-        \footnote{\tiny aus LTspice}
+    \begin{figure}
+        \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e04/Parallel.png}
+        \caption{aus LTspice}
+      \end{figure}
     \end{center}
     
 
@@ -236,8 +264,10 @@
 \begin{frame}
 
 	\begin{center}
-        \includegraphics[width=.8\textwidth]{e04/URI.png}
-        \footnote{\tiny TU Wien \url{http://www.fet.at/twiki/pub/Homepage/OnlineFetzn/fetzn_ausgabe_maerz-2013_online.pdf}}
+	\begin{figure}
+        \includegraphics[width=.5\textwidth]{e04/URI.png}
+        \caption{\tiny TU Wien \url{http://www.fet.at/twiki/pub/Homepage/OnlineFetzn/fetzn_ausgabe_maerz-2013_online.pdf}}
+	\end{figure}
     \end{center}
     
 \end{frame}

@@ -1,0 +1,290 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage[ngerman]{babel} % deutsche Worttrennung etc.
+\usepackage[utf8]{inputenc} % UTF8 Text
+\usepackage{eulervm} % schönere Font in Formeln
+%\usepackage[scaled]{helvet} % Helvetica verwenden
+
+%\usepackage[super, comma, numbers, square, sort]{natbib}
+
+\usepackage{hyperref}       % Hyperref Package für bessere Referenzen (todo)
+\hypersetup{
+    colorlinks=false,       %   false: boxed links; true: colored links
+    %linkcolor=white,       %   color of internal links (change box color with linkbordercolor)
+    citecolor=red,          %   color of links to bibliography
+    filecolor=white,        %   color of file links
+    urlcolor=blue           %   color of external links
+}
+
+\usepackage{multirow}
+\usepackage{wasysym}  % Math Symbols like \permil
+%\usepackage{colortbl}
+%\usepackage{subscript}
+%\usepackage{caption}
+%\usepackage{setspace}
+%\usepackage{xcolor}        % benutze CodeListe
+
+\usepackage{marvosym}
+\DeclareUnicodeCharacter{20AC}{\EUR{}}
+
+%\usepackage{animate}
+
+% Footnote
+%\usepackage{hanging}
+%
+%\setbeamertemplate{footnote}{%
+%  \hangpara{2em}{1}%
+%  \makebox[2em][l]{\insertfootnotemark}\footnotesize\insertfootnotetext\par%
+%}
+
+
+%\usepackage{pgf}
+%\usepackage{tikz}
+%\usetikzlibrary{arrows,automata}
+%\usetikzlibrary{positioning}
+%
+%\tikzset{
+%    state/.style={
+%           rectangle,
+%           rounded corners,
+%           draw=black, very thick,
+%           minimum height=2em,
+%           minimum width=2pt,
+%           inner sep=2pt,
+%           text centered,
+%           },
+%}
+
+%\usepackage{listings}
+%\lstset{basicstyle=\small, numberstyle=\tiny, extendedchars=true, numbers=left, numbersep=5pt}
+%\lstset{showtabs=false, showspaces=false, showstringspaces=false}
+%%\lstset{backgroundcolor=\color{white!75!lightgray}, , frame=single}
+%%\lstset{backgroundcolor=\color{white}}
+%%\lstset{backgroundcolor=none}
+%\lstset{keywordstyle=\color{blue!50!gray},  identifierstyle=\color{black}}
+%\lstset{commentstyle=\color{green!50!gray}, stringstyle=\color{red!50!gray}}
+%\lstset{language=C, fontadjust=true, tabsize=2, breaklines=true}
+%\lstset{backgroundcolor=\color{white!75!lightgray}, caption=\lstname, frame=single}
+%\lstset{emphstyle=\color{black}\fbox}
+%
+%% Keine "Listing:"-Caption
+%\captionsetup{labelformat=empty,labelsep=none}
+%
+%% für mathematische Umgebungen
+%\usepackage{amsmath,amsfonts,amssymb}
+%
+%\lstdefinestyle{Bash}{
+%language=Bash,
+%frame=single,
+%rulecolor=\color{black},
+%backgroundcolor=\color{gray!50},
+%keywordstyle=\color{black},
+%identifierstyle=,
+%commentstyle=\color{black},
+%stringstyle=\color{magenta!65!white},
+%showstringspaces=false,
+%basicstyle=\footnotesize\ttfamily\color{black},
+%numbers=none,
+%breaklines=true,
+%captionpos=b
+%}
+
+%\usepackage{listings}
+%
+%\lstdefinestyle{basic}{
+%    captionpos=t,%
+%    basicstyle=\footnotesize\ttfamily,%
+%    numberstyle=\tiny,%
+%    numbers=left,%
+%    stepnumber=1,%
+%    frame=single,%
+%    showspaces=false,%
+%    showstringspaces=false,%
+%    showtabs=false,%
+%    %
+%    keywordstyle=\color{blue},%
+%    identifierstyle=,%
+%    commentstyle=\color{gray},%
+%    stringstyle=\color{magenta}%
+%}
+
+
+
+% fließende Boxen haben keinen Abstand
+%\fboxsep0mm
+
+% inkludiere Creative Commons Helper
+%\input{texdata/cc_beamer}
+\usepackage{ccicons}
+
+% generelles Thema auswählen
+%\usetheme{Goettingen} %Berlin spart ohne Sidebar allerdings angenehm Platz
+\usetheme{Hannover} %Berlin spart ohne Sidebar allerdings angenehm Platz
+% AnnArbor | Antibes | Bergen | Berkeley | Berlin | Boadilla | boxes | CambridgeUS | Copenhagen | Darmstadt | default | Dresden | Frankfurt | Goettingen | Hannover | Ilmenau | JuanLesPins | Luebeck | Madrid | Malmoe | Marburg | Montpellier | PaloAlto | Pittsburgh | Rochester | Singapore | Szeged | Warsaw
+
+% Farben wählen
+%\usecolortheme{beetle}
+\usecolortheme{crane} % Gelb und Blau!
+% beaver | beetle | crane | default | dolphin | dove | fly | lily | orchid | rose | seagull | seahorse | sidebartab | structure | whale | wolverine
+
+% Setze alle Farben auf Grau und Weiß
+%\definecolor{craneorange}{RGB}{64,64,64}
+%\definecolor{craneblue}{RGB}{255,255,255}
+
+% Schriftart wählen
+\usefonttheme{default}
+% default | professionalfonts | serif | structurebold | structureitalicserif | structuresmallcapsserif
+
+% Innere Themen(Kopf-, Fuß-, Sidebar usw)
+%\useinnertheme{default}
+\useinnertheme{circles}
+% default | inmargin | rectangles | rounded | circles
+
+% Äußere Themen (Anordnung der inneren, grenzen der Folien etc.)
+\useoutertheme{infolines}
+% default | infolines | miniframes | shadow | sidebar | smoothbars | smoothtree | split | tree
+
+% Deaktiviere Navigations-Symbole ({} -> leer)
+\setbeamertemplate{navigation symbols}{}
+%\setbeamertemplate{navigation symbols}{\large \ifnum \insertframenumber <10 0\fi\insertframenumber/\inserttotalframenumber\vspace*{0.2ex}}
+
+% Zeige ein Hintergrundbild
+\setbeamertemplate{background canvas}{
+        \hspace*{-2.0cm}\includegraphics[width=17.8cm]{texdata/dk0tu_rooftop_background.pdf}
+}
+
+% Foliennummer einfügen
+\setbeamertemplate{footline}[frame number]
+%\setbeamertemplate{footline}{}
+
+% Ändere das Zeichen vor jedem item
+%\setbeamertemplate{itemize item}{\color{craneorange}$\blacktriangleright$}
+%\setbeamertemplate{itemize subitem}{\color{craneorange}$\triangleright$}
+%\setbeamertemplate{itemize subsubitem}{\color{craneorange}$\blacktriangleright$}
+
+% Ändert die Blöcke
+\setbeamertemplate{blocks}[rounded][shadow=true]
+% default | rounded [shadow=true|false]
+
+
+%
+% Eigene Kommandos
+%
+
+% Hack to get natbib and beamer working together. "The beamer user guide suggests
+% that only the manual bibliography entry approach is supported"
+% on some system it works out of the box, sometimes you need the hack :-(
+% so check it --dl7bst
+%\ifdefined\newblock
+%    \relax
+%\else
+%    \newcommand{\newblock}{}
+%\fi
+
+% \includedia command to generate png out of a dia file
+% NEEDS installed dia and pdflatex option --shell-escape
+\newcommand{\includedia}[1]{
+    \immediate\write18{/Applications/Dia.app/Contents/Resources/bin/dia-cmd #1.svg -e #1.png -t png}
+}
+
+% RICHIG GROẞER FONT!
+\newfont{\bigfont}{cmr10 at 144pt}
+\newfont{\smallfont}{cmr10 at 8pt}
+
+% Römische Ziffern
+\makeatletter
+\newcommand{\rmnum}[1]{\romannumeral #1}
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+% Schwarze Überschrift
+%\setbeamercolor{frametitle}{fg=black}
+%\setbeamercolor{title}{fg=black}
+
+% Item- und Box-Farben
+%\definecolor{deepBlue}{HTML}{000066}
+%\setbeamercolor{itemize item}{fg=deepBlue}
+%\setbeamercolor{itemize subitem}{fg=deepBlue}
+%\setbeamercolor{description item}{fg=deepBlue}
+%\setbeamercolor{block title}{fg=deepBlue!100, bg=blue!15}
+%\setbeamercolor{block body}{fg=black, bg=blue!5}
+%\setbeamercolor{block title alerted}{fg=deepBlue, bg=red!75}
+%\setbeamercolor{block body alerted}{fg=black, bg=red!15}
+%\setbeamercolor*{block title example}{fg=blue!50, bg=blue!10}
+%\setbeamercolor*{block body example}{fg= blue, bg=blue!5}
+
+%\setbeamercolor{section in head/foot}{parent=palette primary}
+%\setbeamercolor{subsection in head/foot}{parent=palette secondary}
+%\setbeamercolor{sidebar}{fg=darkblue,bg=yellow!90!orange}
+%\setbeamercolor{title in sidebar}{fg=darkblue}
+%\setbeamercolor{author in sidebar}{fg=darkblue}
+%\setbeamercolor{section in sidebar}{fg=darkblue!10!black}
+%\setbeamercolor{subsection in sidebar}{fg=darkblue!50!black}
+
+% Fetter 'alert'-Text
+\setbeamerfont{alerted text}{series=\bfseries}
+
+% das Linksymbol bauen, da Links nicht unterstrichen oder andersfarbig dargestellt werden
+% http://tex.stackexchange.com/questions/99316/symbol-for-external-links
+\usepackage{tikz}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1)
+                --++ (-0, 1.2)
+                --++ (0.6, 0)
+                --++ (0, -0.6)
+                --++ (0.6, 0)
+                --++ (0, -1);
+            \path[draw,
+                line width = 0.5,
+                rounded corners=0.5]
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5)
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1)
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+
+% Ändert die Bildunterschrift zu "Abb."
+% http://tex.stackexchange.com/questions/17489/change-caption-name-of-figures
+%\renewcommand{\figurename}{Abb.}
+\addto\captionsngerman{\renewcommand{\figurename}{Abb.}}
+
+\setbeamerfont{caption}{size=\scriptsize}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}[colon]
+%\setbeamertemplate{caption}{%
+%\begin{beamercolorbox}[wd=.5\paperwidth, sep=.2ex]{block body}\insertcaption%
+%\end{beamercolorbox}%
+%}
+
+% gleichartige Bildunterschrift mit Referenz auf die Quelle
+% #1 Caption
+% #3 Autor
+% #2 URL
+% #4 Lizenz
+\newcommand{\attribcaption}[4]{\caption{#1 {\tiny(von #2 \href{#3}{\ExternalLink} #4)}}}
+
+
+% Logo in Sidebar http://tex.stackexchange.com/questions/199312/sidebar-logo-width
+\makeatletter
+\addtobeamertemplate{sidebar left}{}{%
+  \hspace{3px}%
+  \includegraphics[width=0.9\beamer@sidebarwidth]{texdata/chaoswelle_neues_logo.pdf}%
+}
+\makeatother
+
+% Titlepage Infos
+\title{AFu-Kurs nach DJ4UF}
+\author[Chaoswelle]{Chaoswelle\\ \footnotesize{DARC Ortsverband D23}}
+%\institute[OV D23]{\url{http://www.chaoswelle.de} }
+%\logo{\includegraphics[height=2em]{texdata/chaoswelle_neues_logo.pdf}}
+
+% PDF-Eigenschaften
+\subject{Chaoswelle Amateurfunkkurs aufbauend auf DK0TU-Amateurfunkkurs nach DJ4UF}
+\keywords{Amateurfunk Kurs HAM Radio Course CC-BY-NC-SA OpenSource TU Berlin DK0TU Chaoswelle D23}
+

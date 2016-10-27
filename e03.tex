@@ -1,58 +1,62 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Martin Deutschmann <martin.deutschmann@campus.tu-berlin.de>, Lars Weiler <dc4lw@darc.de>
+%Überarbeitung: Hendrik Boerma
 
 
-\input{texdata/preamble}
+\input{texdata/preamble.dk0tu}
 \subtitle{Technik Klasse E 03 \\
           Ohmsches Gesetz, Leistung \& Arbeit \\[2em]}
 \date{Stand 27.10.2015}
-\input{texdata/titlepage}
+\input{texdata/titlepage.dk0tu}
 
 %fixme Referenzen, Link funktioniert auch nicht
 
 \section{Das ohmsche Gesetz}
 
 \begin{frame}
-    \frametitle{Was ist das ohmsche Gesetz?}
-    \begin{itemize}
-    	\item Das ohmsche Gesetz ist folgendes: $U = I \cdot R$
-    \end{itemize}
-    \begin{center}
- 		\includegraphics[scale=0.3]{e03/Ohm_law_triangle.png}
- 		\footnote{Abb.1: das ohmsche Dreieck \cite{wmen}}
+  \frametitle{Was ist das ohmsche Gesetz?}
+  \begin{itemize}
+    \item Das ohmsche Gesetz ist folgendes: $U = I \cdot R$
+  \end{itemize}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{e03/Ohm_law_triangle.png}
+      \attribcaption{Das ohmsche Dreieck}{Eirik}{https://commons.wikimedia.org/wiki/File:Ohm's_law_triangle.PNG}{\ccpd}
+    \end{figure}
  	\end{center}
  	\begin{itemize}
- 		\item	Aber was sagt uns das nun?
+ 		\item	Aber was bedeutet das nun für uns?
  	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Das ohmsche Gesetz}
 	\begin{itemize}
-		\item	Das ohmsche Gesetz gibt uns die Abhängigkeiten zwischen Spannung, Strom \& ohmschen Widerstand an
-		\item	Dadurch wissen wir, das sich zum Beispiel der Strom an einem konstanten Widerstand proportional zur Spannung ändert
+		\item	Das ohmsche Gesetz gibt die Abhängigkeiten zwischen Spannung, Strom \& ohmschen Widerstand an.
+		\item	Dadurch wissen wir, dass sich zum Beispiel der Strom an einem konstanten Widerstand proportional zur Spannung ändert.
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Ein kleines Gedankenexperiment}
-	\begin{itemize}
-		\item	Wir stellen uns folgenden Aufbau vor:
-		\item	Der Widerstand der Lampe soll 1 $\Omega$ betragen
-	\end{itemize}
-    \begin{columns}
-         \column{0.35\textwidth}
-           \begin{center}
-                   \includegraphics[scale=1]{e03/Strom_Spannung_Abh.png}
-                   %\footnote{\tiny Abb.2: Helligkeit einer Lampe bei verschiedenen Spannungen}
-           \end{center}
-         \column{0.6\textwidth}
-           \begin{exampleblock}{Aufgabe}
-             Wird die Lampe heller oder dunkler, wenn man sie mit $1,5 V$ anstatt mit $4,5 V$ betreibt?
-           \end{exampleblock}
-       \end{columns}
-
+  \frametitle{Ein kleines Gedankenexperiment}
+  \begin{itemize}
+    \item Wir stellen uns folgenden Aufbau vor:
+    \item Der Widerstand der Lampe soll 1 $\Omega$ betragen
+  \end{itemize}
+  \begin{columns}
+    \column{0.35\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e03/Strom_Spannung_Abh.png}
+        \caption{Helligkeit einer Lampe bei verschiedenen Spannungen}
+      \end{figure}
+    \end{center}
+    \column{0.6\textwidth}
+    \begin{exampleblock}{Aufgabe}
+      Wird die Lampe heller oder dunkler, wenn man sie mit $1,5 V$ anstatt mit $4,5 V$ betreibt?
+    \end{exampleblock}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -62,12 +66,14 @@
 		\item	Dazu nehmen wir uns das Ohmsche Dreieck zu Hilfe
 	\end{itemize}
 	\begin{center}
- 		\includegraphics[scale=0.2]{e03/Ohm_law_triangle.png}
- 		\footnote{Abb.3: das ohmsche Dreieck \cite{wmen}}
+ 		   \begin{figure}
+    				\includegraphics[width=\textwidth,height=.2\textheight,keepaspectratio]{e03/Ohm_law_triangle.png}
+      				\attribcaption{Das ohmsche Dreieck}{Eirik}{https://commons.wikimedia.org/wiki/File:Ohm's_law_triangle.PNG}{\ccpd}
+    \end{figure}
  	\end{center}
  	\begin{itemize}
- 		\item	Decken wir den Wert, den wir ermitteln wollen ab, so zeigt uns das Dreieck die Formel dafür
- 		\item	So lautet die Formel für den Strom:
+ 		\item	Decken wir den Wert, den wir ermitteln wollen ab, dann kann man die Formel aus dem Dreieck ablesen.
+ 		\item	Somit lautet die Formel für den Strom:
  	\end{itemize}
  	\begin{equation}
  		I = \frac{U}{R}
@@ -78,7 +84,7 @@
 \begin{frame}
 	\frametitle{Das Ergebnis unseres Experiments}
 	\begin{itemize}
-		\item	Setzen wir nun die Werte in diese Formel ein, so erhalten wir
+		\item	Setzen wir nun die Werte in diese Formel ein, so erhalten wir:
 	\end{itemize}
 	\begin{equation}
 		I_{4,5 V} = \frac{4,5 V}{1 \Omega} = 4,5 A
@@ -90,26 +96,28 @@
 		I_{1,5 V} = \frac{1,5 V}{1 \Omega} = 1,5 A
 	\end{equation}
 	\begin{itemize}
-		\item	Womit bei 4,5 Volt angelegter Spannung der größere Strom durch die Lampe fließt
+		\item Somit fließt bei einer angelegten Spannung von 4,5V der größere Strom durch die Lampe.
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Der Innenwiderstand}
 	\begin{itemize}
-		\item	Oftmals bemerken wir einen Spannungsabfall, zwischen einer Maschine im Leerlauf und der gleichen Maschine bei Belastung
-		\item	Dies führen wir auf den Innenwiderstand der Maschine zurück
+		\item	Oftmals bemerken wir einen Spannungsabfall, zwischen einer Maschine im Leerlauf und der gleichen Maschine bei Belastung.
+		\item	Dies können wir auf den Innenwiderstand der Machine zurückführen.
 	\end{itemize}
 	\begin{center}
- 		\includegraphics[scale=1.4]{e03/Innenwiderstand.png}
- 		\footnote{Abb.4: Innenwidestand einer Batterie}
+ 		\begin{figure}
+      			\includegraphics[scale=1.4]{e03/Innenwiderstand.png}
+     			 \caption{Innenwiderstand einer Batterie}
+   		 \end{figure}
  	\end{center}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Der Innenwiderstand}
 	\begin{itemize}
-		\item	Um den Innenwiderstand zu ermitteln nutzen wir wieder das ohmsche Gesetz
+		\item	Um den Innenwiderstand zu ermitteln, nutzen wir wieder das ohmsche Gesetz
 		\item	Dabei gilt es zu beachten, dass diesmal die Differenzen der Spannungen und des Stromes zwischen dem Leerlauf und dem belasteten Fall verrechnet werden
 		\item	Es gilt:
 	\end{itemize}
@@ -146,9 +154,9 @@
 		\multicolumn{3}{|c|}{abgibt, sinkt die Klemmenspannung auf 12,4 V. Wie groß ist der}\\			\multicolumn{3}{|c|}{Innenwiderstand der Spannungsquelle?}\\
 		\hline
 		A & $1,1 \Omega$ & richtig \\ \hline
-		B & $1,2 \Omega$ & ??? \\ \hline
-		C & $12,4 \Omega$ & ??? \\ \hline
-		D & $13,5 \Omega$ & ??? \\ \hline 		
+		B & $1,2 \Omega$ & " "\\ \hline
+		C & $12,4 \Omega$ & " "\\ \hline
+		D & $13,5 \Omega$ & " " \\ \hline 		
 	\end{tabular}
 	\end{small}
 	\vspace{1cm}
@@ -185,11 +193,11 @@
 		\multicolumn{3}{|c|}{\textbf{TD301:} Welche Eigenschaften sollten Strom- und}\\
 		\multicolumn{3}{|c|}{Spannungsquellen aufweisen?}\\
 		\hline
-		A &  Strom- und Spannungsquellen sollten einen möglichst  & ??? \\
+		A &  Strom- und Spannungsquellen sollten einen möglichst  & " " \\
 		" " & niedrigen Innenwiderstand haben. & " "\\ \hline
-		B &  Strom- und Spannungsquellen sollten einen möglichst  & ??? \\
+		B &  Strom- und Spannungsquellen sollten einen möglichst  & " " \\
 		" " & hohen Innenwiderstand haben. & " "\\ \hline
-		C & Spannungsquellen sollten einen möglichst hohen & ??? \\
+		C & Spannungsquellen sollten einen möglichst hohen & " " \\
 		" " & Innenwiderstand und Stromquellen einen möglichst  & " " \\ 
 		" " & niedrigen Innenwiderstand haben.  & "" \\ \hline
 		D & Spannungsquellen sollten einen möglichst niedrigen & richtig \\
@@ -223,8 +231,10 @@
   \begin{columns}
     \column{.43\textwidth}
       \begin{center}
-	\includegraphics[width=1\textwidth]{e03/electricity.jpg}\\
-	\tiny \url{https://twitter.com/swocket/status/646649716869046272}
+	 \begin{figure}
+        \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{e03/electricity.jpg}\\
+        \attribcaption{Electricity explained the Escher way}{swocket}{https://twitter.com/swocket/status/646649716869046272}{}
+      \end{figure}
       \end{center}
     \column{.57\textwidth}
       \pause
@@ -268,9 +278,9 @@
 		\multicolumn{3}{|c|}{\textbf{TB906:} Eine Glühlampe hat einen Nennwert von 12 V }\\
 		\multicolumn{3}{|c|}{und 48 W. Bei einer 12-V-Versorgung beträgt die Stromentnahme}\\
 		\hline
-		A & $36 A $ & ??? \\ \hline
-		B & $250 mA $ & ??? \\ \hline
-		C & $750 mA $ & ??? \\ \hline
+		A & $36 A $ & " " \\ \hline
+		B & $250 mA $ & " " \\ \hline
+		C & $750 mA $ & " " \\ \hline
 		D & $4 A $ & richtig \\ \hline	
 	\end{tabular}
 	\end{small}
@@ -327,9 +337,9 @@
 		\multicolumn{3}{|c|}{bei einer Betriebsdauer von 7 Stunden verbraucht?}\\
 		\hline
 		A & $1,01 kWh$ & richtig \\ \hline
-		B & $0,1 kWh $ & ??? \\ \hline
-		C & $2,56 kWh$ & ??? \\ \hline
-		D & $20,7 kWh$ & ??? \\ \hline	
+		B & $0,1 kWh $ & " " \\ \hline
+		C & $2,56 kWh$ & " " \\ \hline
+		D & $20,7 kWh$ & " " \\ \hline	
 	\end{tabular}
 	\end{small}
 	\vspace{1cm}
