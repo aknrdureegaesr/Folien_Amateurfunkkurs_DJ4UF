@@ -38,29 +38,29 @@
 
 
 %% Groups
-\newcommand{\CcGroupBy}[1]{% zoom
-	\CcImageBy{#1}%
+\newcommand{\CcGroupBy}[2]{% zoom, gap
+	\CcImageCc{#1}\hspace*{#2}\CcImageBy{#1}%
 }
 \newcommand{\CcGroupByNc}[2]{% zoom, gap
-	\CcImageBy{#1}\hspace*{#2}\CcImageNc{#1}%
+	\CcImageCc{#1}\hspace*{#2}\CcImageBy{#1}\hspace*{#2}\CcImageNc{#1}%
 }
 \newcommand{\CcGroupByNcNd}[2]{% zoom, gap
-	\CcImageBy{#1}\hspace*{#2}\CcImageNc{#1}\hspace*{#2}\CcImageNd{#1}%
+	\CcImageCc{#1}\hspace*{#2}\CcImageBy{#1}\hspace*{#2}\CcImageNc{#1}\hspace*{#2}\CcImageNd{#1}%
 }
 \newcommand{\CcGroupByNcSa}[2]{% zoom, gap
-	\CcImageBy{#1}\hspace*{#2}\CcImageNc{#1}\hspace*{#2}\CcImageSa{#1}%
+	\CcImageCc{#1}\hspace*{#2}\CcImageBy{#1}\hspace*{#2}\CcImageNc{#1}\hspace*{#2}\CcImageSa{#1}%
 }
 \newcommand{\CcGroupByNd}[2]{% zoom, gap
-	\CcImageBy{#1}\hspace*{#2}\CcImageNd{#1}%
+	\CcImageCc{#1}\hspace*{#2}\CcImageBy{#1}\hspace*{#2}\CcImageNd{#1}%
 }
 \newcommand{\CcGroupBySa}[2]{% zoom, gap
-	\CcImageBy{#1}\hspace*{#2}\CcImageSa{#1}%
+	\CcImageCc{#1}\hspace*{#2}\CcImageBy{#1}\hspace*{#2}\CcImageSa{#1}%
 }
-\newcommand{\CcGroupDevNations}[1]{% zoom
-	\CcImageDevNations{#1}%
+\newcommand{\CcGroupDevNations}[2]{% zoom, gap
+	\CcImageCc{#1}\hspace*{#2}\CcImageDevNations{#1}%
 }
 \newcommand{\CcGroupNcSampling}[2]{% zoom, gap
-	\CcImageNc{#1}\hspace*{#2}\CcImageSampling{#1}%
+	\CcImageCc{#1}\hspace*{#2}\CcImageNc{#1}\hspace*{#2}\CcImageSampling{#1}%
 }
 \newcommand{\CcGroupPd}[1]{% zoom
 	\CcImagePd{#1}%
