@@ -1,42 +1,47 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Martin Deutschmann, Lars Weiler <dc4lw@darc.de>
+% Autor: Martin Deutschmann
+% Korrekturen: Lars Weiler <dc4lw@darc.de>, Hendrik Boerma
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 05: \\
-          Der Kondensator und seine Schaltungsarten \\[2em]}
-\date{Stand 26.10.2015}
+  Der Kondensator und seine Schaltungsarten \\[2em]}
+\date{Stand 03.11.2016}
 \input{texdata/titlepage}
 
 \section*{Einleitung}
 
 \begin{frame}
-    \frametitle{Einleitung / Kondensator}
-    \begin{center}
-        \Large{Wie sieht er aus?}\\
-        \Large{Was tut der?}         
-    \end{center}
+  \frametitle{Einleitung / Kondensator}
+  \begin{center}
+    \Large{Wie sieht er aus?}\\
+    \Large{Was tut der?}
+  \end{center}
 \end{frame}
 
 
 \begin{frame}
-    \frametitle{Einleitung / Kondensator}
+  \frametitle{Einleitung / Kondensator}
 
-    \begin{center}
-        \includegraphics[width=0.7\textwidth]{e05/Kondensator01.jpg}
-        \footnote{Abb.1: Verschiedene Kondensatoren \cite{wmen}}
-    \end{center}
- 	
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.75\textheight,keepaspectratio]{e05/Kondensator01.jpg}
+      \attribcaption{Verschiedene Kondensatoren}{Eric Schrader}{https://commons.wikimedia.org/wiki/File:Capacitors_(7189597135).jpg}{\ccbysa}
+    \end{figure}
+  \end{center}
+
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Einleitung / Kondensator}
+  \frametitle{Einleitung / Kondensator}
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth]{e05/Kondensator02.jpg}
-        \footnote{Abb.2: Verschiedene kleine Kondensatoren \cite{wmen}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.75\textheight,keepaspectratio]{e05/Kondensator02.jpg}
+      \attribcaption{Verschiedene kleine Kondensatoren}{Aka}{https://commons.wikimedia.org/wiki/File:Condensators.JPG}{\ccbysa}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \section*{Anwendungen}
@@ -46,13 +51,13 @@
   \pause
   \begin{itemize}
     \item Energiespeicher
-    \item Blitzlicht 
+    \item Blitzlicht
     \item Signalentkopplung
-    \item Filter 
-    \item Schwingkreise 
-    \item Glättung 
-    \item Entstörung 
-    \item Phasenkompensation 
+    \item Filter
+    \item Schwingkreise
+    \item Glättung
+    \item Entstörung
+    \item Phasenkompensation
   \end{itemize}
 \end{frame}
 
@@ -60,31 +65,33 @@
 \section*{Kapazität}
 
 \begin{frame}
-    \frametitle{Kapazität}
-	
-	\begin{center}
-        \includegraphics[width=0.8\textwidth]{e05/c-aufbau.png}
-        \footnote{Abb.3: Interner Aufbau eines Plattenkondensators \cite{wp}}
-    \end{center}
+  \frametitle{Kapazität}
+
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.75\textheight,keepaspectratio]{e05/c-aufbau.png}
+      \attribcaption{Interner Aufbau eines Plattenkondensators}{Cepheiden}{https://de.wikipedia.org/wiki/Datei:Plate_Capacitor_DE.svg}{\ccbysa}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \section*{Gleich\-strom\-kreis}
 \begin{frame}
-	\frametitle{ein paar Formeln}
-	\begin{block}{Berechnung eines Kondensators}
-	  \begin{center}
-	    \huge{$C = \frac{Q}{U}$} in $[C] = \frac{As}{V} = F$ (Farad)
-	  \end{center}
-	  Ladung des Kondensators im Verhältnis zur Spannung
-	\end{block}
-	\begin{block}{Berechnung eines Kondensators}
-	  \begin{center}
-	    \huge{$C= \varepsilon_{0} \cdot \varepsilon_{r} \cdot \cfrac{A}{d}$}\\
-	      \small{mit $\varepsilon_{0} = 0,885 \cdot 10^{-11} \frac{As}{Vm}$: Elektrische Feldkonstante\\
-	      $\varepsilon_{r}$: relative Dielektrizitätszahl}
-	  \end{center}
-	\end{block}
-	Sobald der Kondensator geladen ist, fließt kein Strom mehr.
+  \frametitle{ein paar Formeln}
+  \begin{block}{Berechnung eines Kondensators}
+    \begin{center}
+      \huge{$C = \frac{Q}{U}$} in $[C] = \frac{As}{V} = F$ (Farad)
+    \end{center}
+    Ladung des Kondensators im Verhältnis zur Spannung
+  \end{block}
+  \begin{block}{Berechnung eines Kondensators}
+    \begin{center}
+      \huge{$C= \varepsilon_{0} \cdot \varepsilon_{r} \cdot \cfrac{A}{d}$}\\
+      \small{mit $\varepsilon_{0} = 0,885 \cdot 10^{-11} \frac{As}{Vm}$: Elektrische Feldkonstante\\
+      $\varepsilon_{r}$: relative Dielektrizitätszahl}
+    \end{center}
+  \end{block}
+  Sobald der Kondensator geladen ist, fließt kein Strom mehr.
 \end{frame}
 
 \section{Wechsel\-strom\-kreis}
@@ -92,25 +99,27 @@
   \frametitle{Funktionsprinzip im Wechselstromkreis}
   \begin{columns}
     \column{0.37\textwidth}
-      \includegraphics[width=1\textwidth]{e05/Sinus_Voltage_and_Current_of_a_Capacitor.png}\footnotemark
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e05/Sinus_Voltage_and_Current_of_a_Capacitor.png}
+      \attribcaption{Sinusspannung und Strom eines Kondensators}{Fabian R}{https://de.wikipedia.org/wiki/Datei:Sinus_Voltage_and_Current_of_a_Capacitor.svg}{\ccbysa}
+    \end{figure}
     \column{0.63\textwidth}
     {\small
     \begin{block}{}
-    \begin{description}
-      \item[$t=0$] Kondensator ist geladen; es fließt kein Strom
-      \item[$0<t<0,25$] Kondensator wird entladen; der Stromfluss nimmt zu
-      \item[$t=0,25$] Kondensator ist entladen; der Stromfluss ist am Maximum 
-      \item[$0,25<t<0,5$] Kondensator wird umgekehrt aufgeladen; der Stromfluss in diese Richtung nimmt ab
-      \item[$t=0,5$] Kondensator ist umgekehrt aufgeladen; es fließt kein Strom
-    \end{description}
+      \begin{description}
+        \item[$t=0$] Kondensator ist geladen; es fließt kein Strom
+        \item[$0<t<0,25$] Kondensator wird entladen; der Stromfluss nimmt zu
+        \item[$t=0,25$] Kondensator ist entladen; der Stromfluss ist am Maximum
+        \item[$0,25<t<0,5$] Kondensator wird umgekehrt aufgeladen; der Stromfluss in diese Richtung nimmt ab
+        \item[$t=0,5$] Kondensator ist umgekehrt aufgeladen; es fließt kein Strom
+      \end{description}
     \end{block}
     }
   \end{columns}
-  \footnotetext[4]{\tiny Abb.: CC-BY-SA 3.0 Fabian R \url{https://de.wikipedia.org/wiki/Datei:Sinus_Voltage_and_Current_of_a_Capacitor.svg}}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Eselsbrücke}
+  \frametitle{Eselsbrücke}
   \begin{block}{Merksatz}
     Kondensator: Strom eilt vor
   \end{block}
@@ -130,21 +139,7 @@
   Der Scheinwiderstand sinkt bei größerer Kapazität.
 \end{frame}
 
-\begin{frame}
-  \begin{center}
-      \begin{tabular}{|l|l|p{1cm}|}
-	\hline
-		\multicolumn{3}{|c|}{\textbf{TC208: Mit zunehmender Frequenz...}}\\
-		\hline
-		A & steigt der Wechselstromwiderstand des Kondensators. & ??? \\ \hline
-		B & sinkt der Wechselstromwiderstand des Kondensators. & \only<1>{???}\only<2>{richtig} \\ \hline
-		C & steigt der Wechselstromwiderstand des Kondensators  & ??? \\
-		" " & bis zu einem Maximum und sinkt dann wieder. & " " \\ \hline
-		D & sinkt der Wechselstromwiderstand des Kondensators & ??? \\
-		" " & bis zu einem Minimum und steigt dann wieder. & " " \\ \hline
-	\end{tabular}
-  \end{center}
-\end{frame}
+
 
 
 \section*{Schaltungsarten}
@@ -152,16 +147,18 @@
 \subsection*{Parallel\-schaltung}
 
 \begin{frame}
-    \frametitle{Parallelschaltung von Kondensatoren}
-    \begin{center}
-        \includegraphics[width=0.7\textwidth]{e05/c-parallel.png}
-        \footnote{\tiny By Martin Deutschmann mit Eagle}
-    \end{center}
-    \begin{block}{Parallelschaltung}
-      $C_{ges} = C_1 + C_2 + C_3 + C_4 + C_5$
-    \end{block}
+  \frametitle{Parallelschaltung von Kondensatoren}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.5\textheight,keepaspectratio]{e05/c-parallel.png}
+      \caption{Parallelschaltung von Kondensatoren {\tiny mit Eagle erstellt}}
+    \end{figure}
+  \end{center}
+  \begin{block}{Parallelschaltung}
+    $C_{ges} = C_1 + C_2 + C_3 + C_4 + C_5$
+  \end{block}
 \end{frame}
-	
+
 \begin{frame}
   \begin{exampleblock}{TC206}
     Drei Kondensatoren mit den Kapazitäten $C_{1} = 0,1 \mu F, C_{2} = 150 nF$ und $C_{3} = 50000 pF$ werden parallel geschaltet. Wie groß ist die Gesamtkapazität?
@@ -177,14 +174,17 @@
 \begin{frame}
   \frametitle{Reihenschaltung von Kondensatoren}
   \begin{center}
-    \includegraphics[width=0.6\textwidth]{e05/c-reihe.png}\footnote{\tiny By Martin Deutschmann mit Eagle}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{e05/c-reihe.png}
+      \caption{Reihenschaltung von Kondensatoren {\tiny mit Eagle erstellt}}
+    \end{figure}
   \end{center}
   \begin{block}{Reihenschaltung}
-      $\frac{1}{C_{ges}} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \frac{1}{C_4} + \frac{1}{C_5}$\\
-      $C_{ges} = \cfrac{1}{\frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \frac{1}{C_4} + \frac{1}{C_5}}$
+    $\frac{1}{C_{ges}} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \frac{1}{C_4} + \frac{1}{C_5}$\\
+    $C_{ges} = \cfrac{1}{\frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \frac{1}{C_4} + \frac{1}{C_5}}$
   \end{block}
 \end{frame}
- 
+
 \begin{frame}
   \begin{exampleblock}{Reihenschaltung}
     Zwei Kondensatoren von $100 pF$ und $150 pF$ sind hintereinander (in Serie) geschaltet. Berechnen Sie die Gesamtkapazität.
@@ -196,7 +196,7 @@
 \end{frame}
 
 \begin{frame}
-  \begin{alertblock}{Hausaufgabe}
+  \begin{alertblock}{Vertiefung}
     Aus Fragenkatalog Klasse E Fragen TB610--TB613.\\
     Aus Fragenkatalog Klasse E Kapitel 1.3.2 Kondensator (Fragen TC201--TC208).
   \end{alertblock}
@@ -212,15 +212,20 @@
 \footnotesize
 
 \begin{thebibliography}{}
-    \bibitem{e03}   Moltrecht E 05: \\
-                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e05/}
-    \bibitem{wp}    Wikipedia DE: \\
-                    \url{http://de.wikipedia.org/wiki/Kondensator_(Elektrotechnik)}\\ 
-    \bibitem{wmde}	Wikimedia DE:\\
-    				\url{http://de.wikipedia.org/wiki/Datei:Plate_Capacitor_DE.svg}\\
-   	\bibitem{wmen}	Wikimedia EN:\\
-   					\url{http://commons.wikimedia.org/wiki/File:Capacitors_(7189597135).jpg}\\
-   					\url{http://commons.wikimedia.org/wiki/File:Condensators.JPG}
-\end{thebibliography} 
-
+  \bibitem{e03}   Moltrecht E 05: \\
+    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e05/}
+  \bibitem{wp}    Wikipedia DE: \\
+    \url{http://de.wikipedia.org/wiki/Kondensator_(Elektrotechnik)}\\
+\end{thebibliography}
+\begin{frame}
+  \begin{center}
+    \begin{tabular}{l||p{.8\textwidth}}\hline
+      \textbf{TC208} & \textbf{Mit zunehmender Frequenz...}\\ \hline\hline
+      A & steigt der Wechselstromwiderstand des Kondensators. \\ \hline
+      B \only<2>\checkmark & sinkt der Wechselstromwiderstand des Kondensators. \\ \hline
+      C & steigt der Wechselstromwiderstand des Kondensators bis zu einem Maximum und sinkt dann wieder. \\ \hline
+      D & sinkt der Wechselstromwiderstand des Kondensators bis zu einem Minimum und steigt dann wieder. \\ \hline
+    \end{tabular}
+  \end{center}
+\end{frame}
 \input{texdata/postamble}
