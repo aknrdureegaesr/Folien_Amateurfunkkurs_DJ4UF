@@ -1,7 +1,7 @@
 
 %https://de.wikipedia.org/wiki/Datei:Electronic_component_inductors.jpg
 
-\begin{wrapfigure}[5]{r}[-1cm]{3cm}
+\begin{wrapfigure}[0]{r}[-1cm]{3cm}
  \vspace{-5cm}
  \includegraphics[scale=0.1]{Spule/Bilder/Electronic_component_inductors.jpg}
  \vspace{-5cm}
@@ -17,7 +17,14 @@
 \item[4] Berechne die Induktivität der Zylinderspule mit folgender Bemaßung: 25 Windungen, 	Durchmesser von 8mm, Länge 1cm, relative Permeabilität von Luft
 \end{enumerate}
 
-
+\loesung{
+	\begin{align}
+	i) ~& L ~&=&~ & \dfrac{\mu_0 \cdot \mu_r \cdot A \cdot N^2}{l}\\
+	ii) ~& \mu_0 ~&=&~ & 1,2566\cdot 10^{-6} \frac{H}{m}\\
+	iii) ~& \mu_{r, Luft} ~& = &~ & 1 + 4 \cdot 10^{-7}\\
+	iv) ~& L ~&=&~& 3,9\mu H
+	\end{align}
+	}
 
 %\begin{block}
 \aufgabentext{
@@ -29,10 +36,11 @@
 		\item[B] Zentriertes magnetisches Feld
 		\item[C] Konzentrisches Magnetfeld
 		\item[D] Homogenes magnetisches Feld 
-		\loesung{D}
+		\loesung{Lösung: D}
 		\end{enumerate}
 	\end{enumerate}
 }
+
 %\end{block}
 
 %\begin{block}
@@ -43,9 +51,9 @@
 		\itemsep1pt\parskip0pt\parsep0pt
 			\item[A] Die Induktivität sinkt auf $3 \mu H$.
 			\item[B] Die Induktivität sinkt auf $6 \mu H$. 
-			\item[C]  Die Induktivität steigt auf $24 \mu H$.
+			\item[C] Die Induktivität steigt auf $24 \mu H$.
 			\item[D] Die Induktivität steigt auf $48 \mu H$.
-			\loesung{B}
+			\loesung{Lösung: B}
 		\end{enumerate}	
 	\end{enumerate}	
 %\end{block}
@@ -56,25 +64,59 @@
 		\item[7] \emph{\textbf{TC303}} Wie kann man die Induktivität einer Spule vergrößern?
 		\begin{enumerate}
 		\itemsep1pt\parskip0pt\parsep0pt
-			\item[A]  Durch Auseinanderziehen der Spule (Vergrößerung der Spulenlänge).
+			\item[A] Durch Auseinanderziehen der Spule (Vergrößerung der Spulenlänge).
 			\item[B] Durch Einführen eines Kupferkerns in die Spule.
 			\item[C] Durch Stauchen der Spule (Verkürzen der Spulenlänge). 
 			\item[D] Durch Einbau der Spule in einen Abschirmbecher.
-			\loesung{C}
+			\loesung{Lösung: C}
 		\end{enumerate}
 	\end{enumerate}
 %\end{block}
 }
 
-\loesung{
-	\begin{align}
-	i) ~& L ~&=&~ & \dfrac{\mu_0 \cdot \mu_r \cdot A \cdot N^2}{l}\\
-	ii) ~& \mu_0 ~&=&~ & 1,2566\cdot 10^{-6} \frac{H}{m}\\
-	iii) ~& \mu_{r, Luft} ~& = &~ & 1 + 4 \cdot 10^{-7}\\
-	iv) ~& L ~&=&~& 3,9\mu H
-	\end{align}
-	}
 
+
+\mucho{8}{TC305}
+{Schaltet man zwei Glühlampen gleichzeitig an eine Spannungsquelle (siehe Abbildung), wobei eine Glühlampe zum Helligkeitsausgleich über einen Widerstand und die andere über eine Spule mit vielen Windungen und Eisenkern angeschlossen ist, so\\ \includegraphics[scale=0.35]{Spule/Bilder/TC305.png}}%Frage
+{leuchtet H1 zuerst.}%A
+{leuchtet H2 zuerst.}%B
+{leuchten H1 und H2 genau gleich schnell.}%C
+{leuchtet H2 kurz auf und geht wieder aus. H1 leuchtet.}%D
+{A}%Lösung
+
+\mucho{9}{TC402}
+{Ein Trafo liegt an 45 Volt und gibt 180 Volt ab. Seine Primärwicklung hat 150 Windungen. Wie groß ist seine Sekundärwindungszahl?}%Frage
+{46 Windungen}%A
+{30 Windungen}%B
+{600 Windungen}%C
+{850 Windungen}%D
+{C: $\dfrac{N_1}{N_2} = \dfrac{U_1}{U_2}$; $N_2 = \dfrac{180V}{45V} \cdot 150$}%Lösung
+
+\mucho{10}{TC403}
+{Die Primärspule eines Übertragers hat die fünffache Anzahl von Windungen der Sekundärspule. Wie hoch ist die erwartete Sekundärspannung, wenn die Primärspule an eine 230-V-Stromversorgung angeschlossen wird?}%Frage
+{46 Windungen}%A
+{30 Windungen}%B
+{600 Windungen}%C
+{850 Windungen}%D
+{A: $\dfrac{N_1}{N_2} = \dfrac{U_1}{U_2}$; $U_2 = \dfrac{1}{5} \cdot 230V$}%Lösung
+
+\mucho{11}{TC304}
+{Das folgende Bild zeigt einen Kern, um den ein Kabel für den Bau einer Netzdrossel gewickelt ist. Der Kern sollte aus\\ \includegraphics[scale=0.9]{Spule/Bilder/TC304.png}}%Frage
+{Kunststoff bestehen.}%A
+{Ferrit bestehen.}%B
+{Stahl bestehen.}%C
+{aus gut leitendem Material bestehen.}%D
+{B}%Lösung
+
+\mucho{12}{TC306}
+{Mit zunehmender Frequenz}%Frage
+{sinkt der Wechselstromwiderstand einer Spule.}%A
+{sinkt der Wechselstromwiderstand einer Spule
+bis zu einem Minimum und steigt dann wieder.}%B
+{steigt der Wechselstromwiderstand einer Spule
+bis zu einem Maximum und sinkt dann wieder.}%C
+{steigt der Wechselstromwiderstand einer Spule.}%D
+{D}%Lösung
 
 %----------------------------
 \newpage
