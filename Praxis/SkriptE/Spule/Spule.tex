@@ -125,6 +125,7 @@ bis zu einem Maximum und sinkt dann wieder.}%C
 
 \subsection*{Spule wickeln}
 
+% FIXME Foto einer eigenen Spule
 \begin{wrapfigure}{r}{0.4\textwidth}
  \vspace{-10pt}
  \centering 
@@ -134,5 +135,65 @@ bis zu einem Maximum und sinkt dann wieder.}%C
  \vspace{-5pt}
 \end{wrapfigure}
 
-Für den ersten Versuch soll eine Spule mit insgesamt $25 $Windungen und vier Anzapfungen gewickelt werden. Als Wickelkörper soll eine 8 mm dickes und $3cm$ langes Stück eines Trinkhalmes verwendet werden. Zwei Löcher im Abstand $1cm$ helfen die Drahtenden zu fixieren. Es werden dann jeweils $5$ Windungen gewickelt, eine Schlaufe verdrillt und die folgenden Windungen aufgetragen. Die fertige Spule wird an einen Abschnitt Pfostenstecker mit sechs Kontakten gelötet. 
+% Sollte auf Mehrband-RX hinführen - ist aber zu aufändig
+% Für den ersten Versuch soll eine Spule mit insgesamt $25 $Windungen und vier
+% Anzapfungen gewickelt werden. Als Wickelkörper soll eine 8 mm dickes und $3cm$
+% langes Stück eines Trinkhalmes verwendet werden. Zwei Löcher im Abstand $1cm$
+% helfen die Drahtenden zu fixieren. Es werden dann jeweils $5$ Windungen
+% gewickelt, eine Schlaufe verdrillt und die folgenden Windungen aufgetragen. Die
+% fertige Spule wird an einen Abschnitt Pfostenstecker mit sechs Kontakten
+% gelötet. 
+
+Für den ersten Versuch soll eine Spule aus $1 m$ Kupferlackdraht gewickelt
+werden. Denkt daran beim Wickeln die Windungszahl zu zählen!
+
+\begin{enumerate}
+  \item Als Wickelkörper dient ein $8 mm$ dickes und $3cm$ langes Stück eines
+    Trinkhalmes.
+  \item Zwei Löcher im Abstand $1cm$ helfen die Drahtenden zu fixieren.
+  \item Um die Kontakte der Spule frei zu legen, muss die aufgetragene
+    Lackschicht abgeschabt oder mit einem Feuerzeug freigebrannt werden.
+  \item Berechnet die Induktivität $L$ eurer Spule und messt mit dem
+    LC-Messgerät nach.
+\end{enumerate}
+
+\loesung{Die Spule sollte um die $3-5 uH$ haben, damit der darauf aufbauende
+KW-Empfänger-Versuch mit einem Schwingkreis um die $7 MHz$ klappt.}
+
+\subsection*{Impedanz von C und L}
+
+Wdh. Kondensator:
+
+\begin{itemize}
+    \item Erzeuge mit den Klinkenanschlusskabel und einem Signalgenerator
+      Sinusschwingungen und finde heraus in welchem Bereich die Schwingungen
+      noch deutlich hörbar sind.
+    \item Schleife nun einen Koppelkondensator mit $C = 100 nF$ ein. Welche Unterschiede
+      sind hörbar? \loesung{Hochpassverhalten}
+    \item Berechne die Impedanz der Kondensators in den oberen und unteren
+      Bereichen der Hörschwelle.
+    \item Zusatzaufgabe: Was passiert mit einem Rechtecksignal?
+\end{itemize}
+
+% TODO Induktivität/Kapazität als Energiespeicher:
+%      * siehe Experiment TC305
+%      * Glimmlampen
+%      * mit Dioden antiparallel?
+
+Spule:
+
+\begin{itemize}
+  \item Wiederholt das o.g. Experiment mit eurer Spule -- was fällt euch auf?
+  \item Wiederholt das o.g. Experiment noch einmal mit einer geg. Spule -- hier
+    reicht das Messen der Impedanz % FIXME
+\end{itemize}
+
+\loesung{Ziel in diesem Teil ist es herauszufinden, dass es unglaubliche
+Windugszahlen bei Spulen erfordert um etwas im niederfrequenten Bereich zu
+erreichen.}
+
+% DONE Spannungsteilerversuch mit 1 Ohm und Induktivität von bis zu 20 uH
+%      fehlgeschlagen :-( Allein die Übergangswiderstände machen schon zu viel aus
+% TODO einfaches Audiofilter als Notch?
+% TODO Induktionsversuch a la Trafo?
 
