@@ -10,22 +10,36 @@
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
 \begin{frame}
-\frametitle{How does a transistor work?}
-    \begin{center}
-Video: \url{https://www.youtube.com/watch?v=IcrBqCFLHIY}
-	\end{center}
+\frametitle{Was macht ein Transistor?}
+   	\begin{itemize}
+	
+	 \item verstärken (analog)
+         \item schalten (digital)
+         \item Video: \url{https://www.youtube.com/watch?v=IcrBqCFLHIY}
+  	\end{itemize}	
+\end{frame}
+\begin{frame}
+  \frametitle{Transistoren}
+  \begin{figure}
+    \includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{e13/Transistors-white.jpg}
+    \attribcaption{Verschiedene Transistor-Bauformen}{Benedikt.Seidl}{https://commons.wikimedia.org/wiki/File:Transistors-white.jpg}{\ccpd}
+  \end{figure}
 \end{frame}
 \section*{Bipolarer Transistor}
 \begin{frame}
 \frametitle{Bipolarer Transistor}
 \begin{minipage}{0.4\textwidth}
-	\includegraphics[scale=0.2]{e13/NPN_hlb.png}\\
-	Abb. 1: Schichten eines NPN-Transistors
+	\begin{figure}
+      \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{e13/NPN_hlb.png}\\
+      \caption{Schichten eines \hbox{NPN-Transistors}}
+    \end{figure}
 \end{minipage}
 \hspace{0.5cm}
 \begin{minipage}{0.4\textwidth}
-	\includegraphics[scale=0.2 ]{e13/PNP_hlb.png}\\
-	Abb. 2: Schichten eines PNP-Transistors
+	 \begin{figure}
+      \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{e13/PNP_hlb.png}\\
+      \caption{Schichten eines \hbox{PNP-Transistors}}
+    \end{figure}
 \end{minipage}
 \vspace{0.5cm}
 \begin{center}
@@ -41,13 +55,17 @@ Video: \url{https://www.youtube.com/watch?v=IcrBqCFLHIY}
 \frametitle{Ersatzschaltbild}
 
 \begin{minipage}{0.4\textwidth}
-	\includegraphics[scale=1.4]{e13/NPN_esb.png}\\
-	Abb. 3: ESB eines NPN-Transistors
+	\begin{figure}
+      \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{e13/NPN_esb.png}
+      \caption{ESB eines \hbox{NPN-Transistors}}
+    \end{figure}
 \end{minipage}
 \hspace{0.5cm}
 \begin{minipage}{0.4\textwidth}
-	\includegraphics[scale=1.4]{e13/PNP_esb.png}\\
-	Abb. 4: ESB eines PNP-Transistors
+	 \begin{figure}
+      \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{e13/PNP_esb.png}
+      \caption{ESB eines \hbox{PNP-Transistors}}
+    \end{figure}
 \end{minipage}
 
 \begin{center}
@@ -59,25 +77,32 @@ $$I_{CE} = I_{BE} \cdot \beta$$
 \end{frame}
 
 \begin{frame}
-\frametitle{Bipolartransistor Verständnis}
-\begin{minipage}{0.55\textwidth}
-\begin{center}
-	\only<1>{\includegraphics[scale=0.3]{e13/Transistor_animation1.png}\\
-	Abb. 5: Bipolartransistor geschlossen}
-    \only<2>{\includegraphics[scale=0.3]{e13/Transistor_animation2.png}\\
-	Abb. 5: Bipolartransistor offen}
-    \end{center}
-    \end{minipage}
-    \begin{minipage}{0.4\textwidth}
+  \frametitle{Bipolartransistor Verständnis}
+  \begin{minipage}{0.55\textwidth}
     \begin{center}
-    \begin{block}{Funktionsweise}
+      \only<1>{
+      \begin{figure}
+        \includegraphics[scale=0.3]{e13/Transistor_animation1.png}
+        \attribcaption{Animation eines alternativen Transistormodells (geschlossen)}{Stefan Riepl}{https://commons.wikimedia.org/wiki/File:Transistor_animation.gif}{\ccbysa}
+      \end{figure}
+      }
+      \only<2>{
+      \begin{figure}
+        \includegraphics[scale=0.3]{e13/Transistor_animation2.png}
+        \attribcaption{Animation eines alternativen Transistormodells (offen)}{Stefan Riepl}{https://commons.wikimedia.org/wiki/File:Transistor_animation.gif}{\ccbysa}
+      \end{figure}
+      }
+    \end{center}
+  \end{minipage}
+  \begin{minipage}{0.4\textwidth}
+    \begin{center}
+      \begin{block}{Funktionsweise}
         Der Basisstrom steuert den Kollektorstrom
         $$I_{CE} = I_{BE} \cdot \beta$$
         $\beta = $ Verstärkungsfaktor \\ (Modellabhängig $\beta = 10-900$)
-    \end{block}
+      \end{block}
     \end{center}
-    \end{minipage}
-	\footnote{\url{https://commons.wikimedia.org/wiki/File:Transistor_animation.gif}}\\
+  \end{minipage}
 \end{frame}
 
 
@@ -85,15 +110,17 @@ $$I_{CE} = I_{BE} \cdot \beta$$
 \frametitle{Ersatzschaltbild}
 
 \begin{minipage}{0.4\textwidth}
-	\includegraphics[scale=1.4]{e13/NPN.png}\\
-	NPN Transistor\\
-    \textbf{N}icht \textbf{P}feil \textbf{N}ach Platte
+	 \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e13/NPN.png}
+      \caption{NPN Transistor -- \textbf{N}icht \textbf{P}feil \textbf{N}ach Platte}
+    \end{figure}
 \end{minipage}
 \hspace{0.5cm}
 \begin{minipage}{0.4\textwidth}
-	\includegraphics[scale=1.4]{e13/PNP.png}\\
-	PNP Transistor\\
-    \textbf{P}feil \textbf{N}ach \textbf{P}latte
+	 \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e13/PNP.png}
+      \caption{PNP Transistor -- \textbf{P}feil \textbf{N}ach \textbf{P}latte}
+    \end{figure}
 \end{minipage}
 
 \begin{center}
@@ -109,16 +136,20 @@ Beide sind Stromgesteuert $I_{CE} = I_{BE} \cdot \beta$
 \begin{frame}
 \frametitle{Metall Oxid Semiconductor Feldeffekt Transistor (MOSFET)}
 \begin{center}
-	\includegraphics[scale=0.2]{e13/N-Kanal-MOSFET.png}\\
-	Abb. 5: Mosfet in Planartechnologie
-	\footnote{\url{https://commons.wikimedia.org/wiki/File:N-Kanal-MOSFET_\%28Schema\%29.svg}}\\
+	 \begin{figure}
+      \includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{e13/N-Kanal-MOSFET.png}
+      \attribcaption{MOSFET in Planartechnologie}{PNG-Version: Markus A. Hennig, SVG-Umsetzung: Cepheiden}{https://commons.wikimedia.org/wiki/File:N-Kanal-MOSFET_(Schema).svg}{\ccbysa}
+    \end{figure}
 \end{center}
 \end{frame}
 
 \begin{frame}
 \frametitle{Metall Oxid Semiconductor Feldeffekt Transistor (MOSFET)}
 \begin{center}
-	\includegraphics[scale=0.2]{e13/N-Ch_Enh_Labelled.png}\\
+	\begin{figure}
+      \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e13/N-Ch_Enh_Labelled.png}
+      \caption{N-Kanal beschriftet}
+    \end{figure}
 \begin{block}{Funktionsweise}
 \begin{itemize}
 	\item Gate steuert Kanalbreite durch Spannung $U_{GS}$
@@ -131,9 +162,10 @@ Beide sind Stromgesteuert $I_{CE} = I_{BE} \cdot \beta$
 \begin{frame}
 \frametitle{Feldeffekt Transistor (FET)}
 \begin{center}
-	\includegraphics[scale=0.35]{e13/FET-overview.png}\\
-	Abb. 6: Übersicht über FETs
-	\footnote{\url{http://de.wikipedia.org/wiki/Datei:FET-Typen_(mit_Schaltbildern).svg}}\\
+	\begin{figure}
+      \includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{e13/FET-overview.png}
+      \attribcaption{Übersicht über FETs}{Cepheiden}{https://commons.wikimedia.org/wiki/File:FET-Typen_(mit_Schaltbildern).svg}{\ccpd}
+    \end{figure}
 \end{center}
 \end{frame}
 
@@ -149,25 +181,30 @@ Beide sind Stromgesteuert $I_{CE} = I_{BE} \cdot \beta$
 \end{center}
 \end{frame}
 
-\section*{Operationsverstärker}
+\section*{Operations\-verstärker}
 \begin{frame}
 \frametitle{Operationsverstärker}
 \begin{minipage}{0.4\textwidth}
-	\includegraphics[scale=0.6]{e13/OPV.png}\\
-	Abb. 7: OPV nach ANSI
+	 \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e13/OPV.png}
+      \attribcaption{OPV nach ANSI}{Omegatron}{https://commons.wikimedia.org/wiki/File:Op-amp_symbol.svg}{\ccbysa}
+    \end{figure}
 \end{minipage}
-\footnote{\url{http://de.wikipedia.org/wiki/Datei:Op-amp_symbol.svg}}
 \hspace{0.5cm}
 \begin{minipage}{0.4\textwidth}
-	\includegraphics[scale=0.2 ]{e13/OPV-ger.png}\\
-	Abb. 8: OPV nach DIN
+	\begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e13/OPV-ger.png}
+      \attribcaption{OPV nach DIN}{Daniel Braun}{https://commons.wikimedia.org/wiki/File:Normsymbol_OPV.svg}{\ccpd}
+    \end{figure}
 \end{minipage}
 \footnote{\url{http://de.wikipedia.org/wiki/Datei:Normsymbol_OPV.svg}}
 \vspace{0.5cm}
 \begin{center}
 \begin{itemize}
-	\item Transistoren bestehen aus drei Halbleiterschichten
-	\item Anschlüsse: Basis (B), Kollektor (C), Emitter (E)
+      \item Transistoren bestehen aus drei Halbleiterschichten
+      \item Anschlüsse für Versorgungsspannung
+      \item Anschlüsse: Basis (B), Kollektor (C), Emitter (E)
+      \item diverse Schaltungsarten für unterschiedliche Funktionsweise möglich
 \end{itemize}
 \end{center}
 \end{frame}
@@ -175,9 +212,10 @@ Beide sind Stromgesteuert $I_{CE} = I_{BE} \cdot \beta$
 \begin{frame}
 \frametitle{Operationsverstärker}
 \begin{center}
-	\includegraphics[scale=0.35]{e13/OPV-intern.png}\\
-	Abb. 9: Innerer Aufbau eines OPVs
-	\footnote{\url{http://de.wikipedia.org/wiki/Datei:OpAmpTransistorLevel_Colored_DE.svg}}
+	\begin{figure}
+      \includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{e13/OPV-intern.png}
+      \attribcaption{Innerer Aufbau eines OPVs}{Daniel Braun derivative work: Cepheiden}{https://commons.wikimedia.org/wiki/File:OpAmpTransistorLevel_Colored_DE.svg}{\ccbysa}
+    \end{figure}
 \end{center}
 \end{frame}
 
@@ -185,32 +223,35 @@ Beide sind Stromgesteuert $I_{CE} = I_{BE} \cdot \beta$
 \begin{frame}
 \frametitle{Integierte Schaltung}
 \begin{minipage}{0.3\textwidth}
-	\includegraphics[scale=0.15]{e13/IC.jpg}\\
-	Abb. 10: IC auf einer Platine
+	 \begin{figure}
+      \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e13/IC.jpg}
+      \attribcaption{IC auf einer Platine}{Luestling}{https://commons.wikimedia.org/wiki/File:Chips_3_bg_102602.jpg}{\ccpd}
+    \end{figure}
 \end{minipage}
-\footnote{\url{http://de.wikipedia.org/wiki/Datei:Chips_3_bg_102602.jpg}}
-\hspace{0.5cm}
 \begin{minipage}{0.5\textwidth}
 	\begin{itemize}
 		\item Heutzutage komplexe Schaltungen auf einem Halbleiterkristall
 	\end{itemize}
-\end{minipage}\\
+
 \vspace{0.5cm}
 \begin{center}
-\includegraphics[scale=0.4 ]{e13/IC2.jpg}\\
-	Abb. 11: Offener IC
-	\footnote{\url{http://en.wikipedia.org/wiki/File:Intel_8742_153056995.jpg}}
+\begin{figure}
+        \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e13/IC2.jpg}
+        \attribcaption{Offener IC}{Ioan Sameli}{https://commons.wikimedia.org/wiki/File:Intel_8742_153056995.jpg}{\ccbysa}
+      \end{figure}
 \end{center}
+\end{minipage}
 \end{frame}
 
 \section*{Die Röhre}
 \begin{frame}
 \frametitle{Die Röhre}
 \begin{minipage}{0.3\textwidth}
-	\includegraphics[scale=0.35]{e13/ERohre.png}\\
-	Abb. 12: Symbol einer Triode
+	 \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e13/ERohre.png}
+      \attribcaption{Symbol einer Triode}{RokerHRO, geändert von Fgli}{https://commons.wikimedia.org/wiki/File:Triode-Symbol_de.svg}{\ccpd}
+    \end{figure}
 \end{minipage}
-\footnote{\url{http://de.wikipedia.org/wiki/Datei:Triode-Symbol_de.svg}}
 \hspace{0.5cm}
 \begin{minipage}{0.5\textwidth}
 \begin{small}
@@ -221,13 +262,14 @@ Beide sind Stromgesteuert $I_{CE} = I_{BE} \cdot \beta$
 		\item Gitterspannung steuert Anodenstrom
 	\end{itemize}
 	\end{small}
-\end{minipage}\\
 %\vspace{0.1cm}
 \begin{center}
-\includegraphics[scale=0.4 ]{e13/Triode.jpg}\\
-	Abb. 13: Triode aus alten Fabfernsehern
-	\footnote{\url{http://de.wikipedia.org/wiki/Datei:Strahltriode.jpg}}
+ \begin{figure}
+        \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{e13/Triode.jpg}
+        \attribcaption{Triode aus alten Fabfernsehern}{Ulfbastel}{https://commons.wikimedia.org/wiki/File:Strahltriode.jpg}{\ccby}
+      \end{figure}
 \end{center}
+\end{minipage}
 \end{frame}
 
 \section*{Referenzen}
