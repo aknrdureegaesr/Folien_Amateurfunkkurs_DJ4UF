@@ -144,9 +144,11 @@ mind. eine Person mit Löterfahrung zu haben -- solche Leute hat man immer dabei
 
 \begin{figure}[H]
 	\centering
-	\subfigure[Schaltplan]{\includegraphics[scale=1.4]{Transistor/Schaltungen/NotBeleuchtung_Schaltplan.pdf}}
-	\subfigure[Mögliche Breadboard-Ansicht]{\includegraphics[scale=1]{Transistor/Schaltungen/NotBeleuchtung_Steckplatine.pdf}}
-	\caption{Transistorschaltung 01 - Der Bipolar-Transistor als Schalter}
+	%\subfigure[Schaltplan]{
+  \includegraphics[scale=1.4]{Transistor/Schaltungen/NotBeleuchtung_Schaltplan.pdf}
+  %}
+	%\subfigure[Mögliche Breadboard-Ansicht]{\includegraphics[scale=1]{Transistor/Schaltungen/NotBeleuchtung_Steckplatine.pdf}}
+	\caption{Schaltplan Transistorschaltung 01 - Der Bipolar-Transistor als Schalter}
 	\label{s01}
 \end{figure}
 
@@ -154,12 +156,21 @@ mind. eine Person mit Löterfahrung zu haben -- solche Leute hat man immer dabei
 
 \subsection*{Transistorschaltung 02 - Der Bipolar-Transistor als Sensor}
 
+\loesung{Der Sensor ist natürlich auch ein Verstärker. Diese
+Darlington-Schaltung verstärkt allerdings mit der multiplizierten
+Stromverstärkung beider Transistoren.}
+
 \begin{enumerate}
     \itemsep1pt\parskip0pt\parsep0pt
     \item Baut die Transistor-Schaltung aus Abbildung \ref{s02} auf.
     \item Legt die Versorgungsspannung an die Schaltung an.
-    \item Berührt die Basis des Transistors Q1 mit dem Finger. Was passiert und warum?
-    \item \textbf{Zusatz:} Ersetze die LED durch einen Lautsprecher? Was passiert und warum?
+    \item Berührt die Basis des Transistors Q1 mit dem Finger. Was passiert und
+      warum? Der Effekt wird besser sichtbar, wenn man mit der anderen Hand das
+      Potential der Spannungsversorgung berührt. \loesung{Der vom Körper als
+      Antenne eingefangene Elektrosmok reicht aus um den Transistor
+      anzusteuern.}
+    \item \textbf{Zusatz:} Ersetze die LED durch einen Lautsprecher? Was
+      passiert und warum? \loesung{Man hört den besagten Elektrosmok.}
 \end{enumerate}
 
 \begin{figure}[H]
@@ -190,6 +201,8 @@ mind. eine Person mit Löterfahrung zu haben -- solche Leute hat man immer dabei
 %----------------------------------------------
 
 \subsection{Die Lizenz zum Löten}
+
+% FIXME Belegung nochmal deutlich: je 2x Spannungsversorgung, In, Out
 
 Übertragt die letzte Schaltung auf eine Lochrasterplatine (ca. $5~x~2.5 cm$).
 Den Stecker zur Spannungsversorgung könnt ihr direkt auflöten. Für den Anschluss
