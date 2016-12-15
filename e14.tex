@@ -8,7 +8,7 @@
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 14: \\
           Modulation \& Demodulation \\[2em]}
-\date{Stand 07.12.2015}
+\date{Stand 15.12.2016}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -17,8 +17,10 @@
 \begin{frame}
 \frametitle{Prinzip der Nachrichtenübertragung}
 \begin{center}
-\includegraphics[scale=1.]{e14/Sender.png}\\
-Abb. 1: Sender\\
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.45\textheight,keepaspectratio]{e14/Sender.png}\\
+      \caption{Sender}
+    \end{figure}
 \end{center}
 \begin{itemize}
 	\item Nachrichtentechnik in drahtgebundene und drahtlose eingeteilt
@@ -29,59 +31,60 @@ Abb. 1: Sender\\
 \end{frame}
 
 \begin{frame}
-\frametitle{Sendearten}
-\begin{tiny}
-\begin{minipage}{\textwidth}
+  \frametitle{Sendearten (Wiederholung)}
+  \begin{tiny}
+    \begin{minipage}{\textwidth}
 
-\begin{minipage}{0.4\textwidth}
-	\begin{tabular}{|l|l|}
-	\hline
-		\multicolumn{2}{|c|}{\textbf{1. Symbol: Modulation des Haupträgers}}\\
-		\hline
-		A & Zweiseitenband AM \\ \hline
-		C & Restseitenband AM  \\ \hline
-		F & Frequenzmodulation  \\ 
-		G & Phasenmodulation\\ \hline
-		J & Einseitenband AM, unterdrückter Träger\\ \hline		
-	\end{tabular}
-\end{minipage}
-\hspace{1cm}
-\begin{minipage}{0.4\textwidth}
-	\begin{tabular}{|l|l|}
-	\hline
-		\multicolumn{2}{|c|}{\textbf{2. Symbol: Signalmodulation}}\\
-		\hline
-		" " & Einkanal mit quantisierter oder \\
-		 1  & digitaler Information ohne \\
-		" " & Modulation des Hilfsträgers \\ \hline		
-		" " & Einkanal mit quantisierter oder\\
-		 2  & digitaler Information mittels \\
-		" " & eines modulierten Hilfsträgers \\ \hline	
-		 3  & Einkanal mit analoger Modulation  \\ \hline	
-	\end{tabular}
-\end{minipage}
-\end{minipage}
-\vspace{0.5cm}
-\begin{minipage}{0.4\textwidth}
-	\begin{tabular}{|l|l|}
-	\hline
-		\multicolumn{2}{|c|}{\textbf{3. Symbol: Art der auszusendenden Information}}\\
-		\hline
-		A & Tastung durch Morsetelegrafie\\ \hline
-		B & Fernschreiben \\ \hline
-	    C & Faksimile(Bildübertragung)\\ \hline		
-		D & Datenübertragung, Fernsteuerung\\ \hline
-		E & Sprechfunk \\ \hline
-		F & Fernsehen (Video)\\ \hline	
-	\end{tabular}
-\end{minipage}
-\end{tiny}
-\vspace{0.5cm}
-\begin{itemize}
-	\item Es gibt eine große Vielfalt von Sendearten
-	\item zum Beispiel: J3E, A1A, F3E, C3F
-\end{itemize}
+      \begin{minipage}{0.4\textwidth}
+        \begin{tabular}{|l|l|}
+          \hline
+          \multicolumn{2}{|c|}{\textbf{1. Symbol: Modulation des Haupträgers}}\\
+          \hline
+          A & Zweiseitenband AM \\ \hline
+          C & Restseitenband AM  \\ \hline
+          F & Frequenzmodulation  \\
+          G & Phasenmodulation\\ \hline
+          J & Einseitenband AM, unterdrückter Träger\\ \hline
+        \end{tabular}
+      \end{minipage}
+      \hspace{1cm}
+      \begin{minipage}{0.4\textwidth}
+        \begin{tabular}{|l|l|}
+          \hline
+          \multicolumn{2}{|c|}{\textbf{2. Symbol: Signalmodulation}}\\
+          \hline
+          " " & Einkanal mit quantisierter oder \\
+          1  & digitaler Information ohne \\
+          " " & Modulation des Hilfsträgers \\ \hline
+          " " & Einkanal mit quantisierter oder\\
+          2  & digitaler Information mittels \\
+          " " & eines modulierten Hilfsträgers \\ \hline
+          3  & Einkanal mit analoger Modulation  \\ \hline
+        \end{tabular}
+      \end{minipage}
+    \end{minipage}
+    \vspace{0.5cm}
+    \begin{minipage}{0.4\textwidth}
+      \begin{tabular}{|l|l|}
+        \hline
+        \multicolumn{2}{|c|}{\textbf{3. Symbol: Art der auszusendenden Information}}\\
+        \hline
+        A & Tastung durch Morsetelegrafie\\ \hline
+        B & Fernschreiben \\ \hline
+        C & Faksimile(Bildübertragung)\\ \hline
+        D & Datenübertragung, Fernsteuerung\\ \hline
+        E & Sprechfunk \\ \hline
+        F & Fernsehen (Video)\\ \hline
+      \end{tabular}
+    \end{minipage}
+  \end{tiny}
+  \vspace{0.5cm}
+  \begin{itemize}
+    \item Es gibt eine große Vielfalt von Sendearten
+    \item zum Beispiel: J3E, A1A, F3E, C3F
+  \end{itemize}
 \end{frame}
+
 
 %\begin{frame}
 %  \begin{tabular}{l||p{.8\textwidth}}\hline
@@ -95,17 +98,21 @@ Abb. 1: Sender\\
 
 \begin{frame}
 \frametitle{Frequenzen eines Geigentons}
-\begin{center}
-\includegraphics[height=0.8\textheight]{e14/geigenton.png}\\
-	\footnote{\url{https://commons.wikimedia.org/wiki/File:Geigentonspektrum.svg}}\\
+  \begin{center}
+    \begin{figure}
+      \includegraphics[height=0.75\textheight,width=\textwidth,keepaspectratio]{e14/geigenton.png}
+      \attribcaption{Amplitude spectrum of an audio sample of a violin, open string}{Clngre derivative work: Michael Lenz}{https://commons.wikimedia.org/wiki/File:Geigentonspektrum.svg}{\ccbysa}
+    \end{figure}
 \end{center}
 \end{frame}
 
 \begin{frame}
 \frametitle{Frequenzen bei Sprache}
 \begin{center}
-\includegraphics[height=0.8\textheight]{e14/spracheFrequenzen.png}\\
-	Frequenzssprektum bei 10sek Sprachaufnahme mit Audacity
+\begin{figure}
+      \includegraphics[height=0.75\textheight,width=\textwidth,keepaspectratio]{e14/spracheFrequenzen.png}
+      \caption{Frequenzssprektum bei 10sek Sprachaufnahme mit Audacity}
+    \end{figure}
 \end{center}
 \end{frame}
 
@@ -113,10 +120,11 @@ Abb. 1: Sender\\
 \begin{frame}
 \frametitle{Modulationsarten}
 \begin{center}
-\includegraphics[scale=0.8]{e14/modulationen.jpg}\\
-	Abb. 2: verschiedene Arten der Modulation
-	\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}}\\
-	
+ \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e14/modulationen.jpg}\\
+      \attribcaption{verschiedene Arten der Modulation}{Berserkerus}{https://commons.wikimedia.org/wiki/File:Amfm3-en-de.gif}{\ccbysa}
+    \end{figure}
+
 \begin{itemize}
 	\item grundsätzlich sind nur Amplitudenmodulation und Frequenzmodulation im Einsatz (Phasenmodulation erst seit sdr)
 	\item der eingefügte Träger muss sinusförmig sein
@@ -128,7 +136,10 @@ Abb. 1: Sender\\
 \begin{frame}
 \frametitle{Amplitudenmodulation}
 \begin{minipage}{0.3\textwidth}
-\includegraphics[width=1\textwidth]{e14/AM1.png}\\
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e14/AM1.png}
+      \attribcaption{Beispiel zur Amplitudenmodulation (m=0,5)}{Erico Billich}{https://commons.wikimedia.org/wiki/File:Amplitudenmodulation3.png}{\ccbysa}
+    \end{figure}
 \end{minipage}
 \hspace{0.5cm}
 \begin{minipage}{0.5\textwidth}	
@@ -138,14 +149,16 @@ Abb. 1: Sender\\
         \item Überlegen: Wie verändert sich das AM Signal bei höheren/niedrigeren Frequenzen
 	\end{itemize}
 \end{minipage}
-\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/b/b8/Amplitudenmodulation3.png}}
 \end{frame}
 
 \begin{frame}
 \frametitle{Modulationsgrad}
 \begin{center}
-\includegraphics[scale=0.65]{e14/TE103.png}\\
-Abb. 3: Modulationsgrad bei AM
+   \begin{figure}
+      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e14/TE103.png}
+      \caption{Modulationsgrad bei AM}
+    \end{figure}
+
 
 \hspace{0.5cm}
 
@@ -158,8 +171,10 @@ Abb. 3: Modulationsgrad bei AM
 \begin{frame}
 \frametitle{Bandbreite bei AM}
 \begin{center}
-\includegraphics[scale=0.3]{e14/Bandbreite.png}
-\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/b/b9/Am_spek1.png}} \\
+    \begin{figure}
+      \includegraphics[width=.8\textwidth,height=.4\textheight,keepaspectratio]{e14/Bandbreite.png}
+      \attribcaption{Bandbreite AM mit Frequenzspektrum}{Appaloosa}{https://commons.wikimedia.org/wiki/File:Am_spek1.png}{\ccbysa}
+    \end{figure}
 \end{center}
 Bandbreite ist die Differenz zwischen der höchsten und der niedrigsten Frequenz des HF-Signals
 \begin{block}{Bandbreite}
@@ -169,7 +184,10 @@ Bandbreite ist die Differenz zwischen der höchsten und der niedrigsten Frequenz
 
 \begin{frame}
 \frametitle{Leistung bei AM}
-\includegraphics[scale=0.8]{e14/AMP.png}
+ \begin{figure}
+    \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e14/AMP.png}
+    \caption{Leistung bei AM}
+  \end{figure}
 \end{frame}
 
 \subsection[DSBSC]{Trägerunterdrückung}
@@ -202,8 +220,10 @@ Bandbreite ist die Differenz zwischen der höchsten und der niedrigsten Frequenz
 
 \begin{frame}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{e16/Ssb-de.png}
-    \tiny \hyperlink{refs}{\cite{wc}}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{e14/Ssb-de.png}
+      \attribcaption{SSB}{DB1BMN}{https://commons.wikimedia.org/wiki/File:Ssb-de.png}{\ccpd}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -211,9 +231,10 @@ Bandbreite ist die Differenz zwischen der höchsten und der niedrigsten Frequenz
 \begin{frame}
 \frametitle{Frequenzmodulation}
 	\begin{center}
-\includegraphics[scale=0.7]{e14/modulationen.jpg}\\
-	Abb. 2: verschiedene Arten der Modulation
-	\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}}\\
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e14/modulationen.jpg}
+      \attribcaption{verschiedene Arten der Modulation}{Berserkerus}{https://commons.wikimedia.org/wiki/File:Amfm3-en-de.gif}{\ccbysa}
+    \end{figure}
 	\begin{itemize}
 		\item Wird im VHF\,/\,UHF Bereich angewandt
 		\item Vor allem bei mobilem Funkbetrieb
@@ -227,7 +248,10 @@ Bandbreite ist die Differenz zwischen der höchsten und der niedrigsten Frequenz
 \begin{frame}
 \frametitle{Hub bei FM}
 \begin{center}
-\includegraphics[scale=0.5]{e14/Hub.png}
+  \begin{figure}
+      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e14/Hub.png}
+      \caption{Hub}  % FIXME Autor und Lizenz
+    \end{figure}
 \end{center}
 \end{frame}
 
@@ -264,8 +288,10 @@ Bandbreite ist die Differenz zwischen der höchsten und der niedrigsten Frequenz
 
 \begin{frame}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{e16/Dpx-fm-radio.png}
-    \tiny \hyperlink{refs}{\cite{wc}}
+     \begin{figure}
+      \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{e14/Dpx-fm-radio.png}
+      \attribcaption{A DPX graph of an FM-radio transmission. It's like a spectrum, but the colour shows how many times a certain level has been reached at a certain frequency.}{Casandro~commonswiki}{https://commons.wikimedia.org/wiki/File:Dpx-fm-radio.png}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -314,10 +340,10 @@ Bandbreite ist die Differenz zwischen der höchsten und der niedrigsten Frequenz
 %  \end{tabular}
 %\end{frame}
 
+
 \section*{Referenzen}
 \begin{frame}
     \frametitle{Referenzen/Links}
-    
     \footnotesize
     \begin{itemize}
         \item Moltrecht E 14 : \\
@@ -325,18 +351,6 @@ Bandbreite ist die Differenz zwischen der höchsten und der niedrigsten Frequenz
 		\item Fragenkatalog der BNetzA
 			\url{http://www.dk0tu.de/Kurse/AFu-Lizenz/docs/TechnikFragenkatalogKlasseE.2006-09.pdf}
     \end{itemize}
-
 \end{frame}
-
-\begin{thebibliography}{}
-    \bibitem{wc}    Wikimedia Commons \\
-                    \url{http://commons.wikimedia.org/wiki/File:Ssb-de.png}\\
-                    \url{http://commons.wikimedia.org/wiki/File:Dpx-fm-radio.png}\\
-                    \url{http://commons.wikimedia.org/wiki/File:Mechanical_glow_drum_slow_scan_television_monitor.gif}\\
-                    \url{http://commons.wikimedia.org/wiki/File:Sstv_frequences.svg}\\
-                    \url{http://commons.wikimedia.org/wiki/File:SSTV_signal.jpg}\\
-                    \url{http://commons.wikimedia.org/wiki/File:BPSK_31_63_125.jpg}\\
-                    \url{http://commons.wikimedia.org/wiki/File:Ax25-US-Paket.png}
-\end{thebibliography} 
 
 \input{texdata/postamble}
