@@ -24,3 +24,10 @@
 *.fdb_latexmk
 *.synctex.gz
 *.fls
+
+# symlink to style file
+texdata/preamble.tex
+texdata/titlepage.tex
+
+# macOS folder foo
+.DS_Store
