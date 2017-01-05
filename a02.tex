@@ -5,8 +5,8 @@
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse A 02: \\
-Der Widerstand und seine Schaltungsarten \\[2em]}
-\date{Stand 28.04.2016}
+  Der Widerstand und seine Schaltungsarten \\[2em]}
+\date{Stand 09.01.2017}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -16,8 +16,10 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
 \begin{frame}
   \frametitle{Einleitung / Widerstand}
   \begin{center}
-    \includegraphics[width=.7\textwidth,height=.8\textheight,keepaspectratio]{e04/URI.png}
-    \footnote{\tiny TU Wien \url{http://www.fet.at/twiki/pub/Homepage/OnlineFetzn/fetzn_ausgabe_maerz-2013_online.pdf}}
+    \begin{figure}
+      \includegraphics[width=.7\textwidth,height=.75\textheight,keepaspectratio]{e04/URI.png}
+      \attribcaption{Strom, Spannung und Widerstand}{TU Wien}{http://www.fet.at/twiki/pub/Homepage/OnlineFetzn/fetzn_ausgabe_maerz-2013_online.pdf}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -26,8 +28,10 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
   \frametitle{Einleitung / Widerstand}
 
   \begin{center}
-    \includegraphics[width=0.8\textwidth,height=.8\textheight,keepaspectratio]{e04/Widerstaende.jpg}
-    \footnote{\tiny By Honina at de.wikipedia. Later version(s) were uploaded by Montauk at de.wikipedia.}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.75\textheight,keepaspectratio]{e04/Widerstaende.jpg}
+      \attribcaption{Widerstände}{Honina}{https://commons.wikimedia.org/wiki/File:Resistors-photo.JPG}{\ccbysa}
+    \end{figure}
   \end{center}
 
   % TODO SMD-Bauteile ergaenzen
@@ -38,13 +42,17 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
   \frametitle{Einleitung / Widerstand}
 
   \begin{center}
-    \includegraphics[width=.4\textwidth,height=.2\textheight,keepaspectratio]{e04/Resistor_symbol_IEC.png}
-    \footnote{\tiny By Markus Kuhn (Made in Inkscape from scratch) [Public domain], via Wikimedia Commons}
+    \begin{figure}
+      \includegraphics[width=.4\textwidth,height=.2\textheight,keepaspectratio]{e04/Resistor_symbol_IEC.png}
+      \attribcaption{Schaltzeichen für elektrischen Widerstand nach DIN EN 60617}{Markus Kuhn}{https://commons.wikimedia.org/wiki/File:Resistor_symbol_IEC.svg}{\ccpd}
+    \end{figure}
   \end{center}
 
   \begin{center}
-    \includegraphics[width=.4\textwidth,height=.5\textheight,keepaspectratio]{e04/R_LTspice.png}
-    \footnote{\tiny aus LTspice}
+    \begin{figure}
+      \includegraphics[width=.4\textwidth,height=.4\textheight,keepaspectratio]{e04/R_LTspice.png}
+      \caption{aus LTspice}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -117,16 +125,22 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
 
 \begin{frame}
   \frametitle{Ursachen des Skin-Effektes}
-  \begin{center}
-    \includegraphics[scale=0.06]{a02/Skineffect.png}\\
-    \small{Abb.5: Überlagerung von Wechsel- und Wirbelströmen \cite{wp}}
+  \begin{columns}
+    \column{.4\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{a02/Skineffect.png}\\
+        \attribcaption{Überlagerung von Wechsel- und Wirbelströmen}{Biezl}{https://commons.wikimedia.org/wiki/File:Skineffect_reason.svg}{\ccpd}
+      \end{figure}
+    \end{center}
+    \column{.4\textwidth}
     \begin{itemize}
       \item Ursache des Skin-Effektes ist das magnetische Feld
       \item Es erzeugt Wirbelströme im Innern des Leiters
       \item Diese sind dem Erzeugerstrom entgegengerichtet
       \item Das wechselnde Magnetfeld erzeugt im Leiter eine höhere Gegenspannung als am Rand
     \end{itemize}
-  \end{center}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -152,40 +166,44 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
     \item Das ohmsche Gesetz ist folgendes:
   \end{itemize}
   \begin{center}
-    \includegraphics[width=.5\textwidth,height=.6\textheight,keepaspectratio]{e03/Ohm_law_triangle.png}\\
-    \small{Abb.6: das ohmsche Dreieck \cite{wmen}}
+    \begin{figure}
+      \includegraphics[width=.5\textwidth,height=.5\textheight,keepaspectratio]{e03/Ohm_law_triangle.png}
+      \attribcaption{Ohmsches Dreieck}{Eirik}{https://commons.wikimedia.org/wiki/File:Ohm\%27s_law_triangle.PNG}{\ccpd}
+    \end{figure}
   \end{center}
   \begin{itemize}
-    \item	Aber was sagt uns das nun?
+    \item Aber was sagt uns das nun?
   \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Das ohmsche Gesetz}
   \begin{itemize}
-    \item	Das ohmsche Gesetz gibt uns die Abhängigkeiten zwischen Spannung, Strom \& ohmschen Widerstand an
-    \item	Dadurch wissen wir, dass sich zum Beispiel der Strom an einem konstanten Widerstand proportional zur Spannung ändert
+    \item Das ohmsche Gesetz gibt uns die Abhängigkeiten zwischen Spannung, Strom \& ohmschen Widerstand an
+    \item Dadurch wissen wir, dass sich zum Beispiel der Strom an einem konstanten Widerstand proportional zur Spannung ändert
   \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Der Innenwiderstand}
   \begin{itemize}
-    \item	Oftmals bemerken wir einen Spannungsabfall zwischen einer Maschine im Leerlauf und der gleichen Maschine bei Belastung
-    \item	Dies führen wir auf den Innenwiderstand der Maschine zurück
+    \item Oftmals bemerken wir einen Spannungsabfall zwischen einer Maschine im Leerlauf und der gleichen Maschine bei Belastung
+    \item Dies führen wir auf den Innenwiderstand der Maschine zurück
   \end{itemize}
   \begin{center}
-    \includegraphics[scale=1.4]{e03/Innenwiderstand.png}\\
-    \small{Abb.7: Innenwiderstand einer Batterie}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e03/Innenwiderstand.png}
+      \caption{Innenwiderstand einer Batterie}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{der Innenwiderstand}
   \begin{itemize}
-    \item	Um den Innenwiderstand zu ermitteln nutzen wir wieder das ohmsche Gesetz
-    \item	Dabei gilt es zu beachten, dass diesmal die Differenzen der Spannungen und des Stromes zwischen dem Leerlauf und dem belasteten Fall verrechnet werden
-    \item	Es gilt:
+    \item Um den Innenwiderstand zu ermitteln nutzen wir wieder das ohmsche Gesetz
+    \item Dabei gilt es zu beachten, dass diesmal die Differenzen der Spannungen und des Stromes zwischen dem Leerlauf und dem belasteten Fall verrechnet werden
+    \item Es gilt:
   \end{itemize}
   \begin{block}{Innenwiderstand}
     \begin{center}
@@ -193,7 +211,7 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
     \end{center}
   \end{block}
   \begin{itemize}
-    \item	Um den Wert nicht zu sehr zu verfälschen sollten \textbf{Spannungsquellen einen niedrigen} und \textbf{Stromquellen einen hohen Innenwiderstand} besitzen
+    \item Um den Wert nicht zu sehr zu verfälschen sollten \textbf{Spannungsquellen einen niedrigen} und \textbf{Stromquellen einen hohen Innenwiderstand} besitzen
   \end{itemize}
 \end{frame}
 
@@ -208,7 +226,10 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
   \begin{columns}
     \column{.4\textwidth}
     \begin{center}
-      \includegraphics[width=.4\textwidth]{e04/Reihe.png}\footnotemark
+      \begin{figure}
+        \includegraphics[width=.4\textwidth,height=.5\textheight,keepaspectratio]{e04/Reihe.png}
+        \caption{aus LTspice}
+      \end{figure}
     \end{center}
     \pause
     \column{.55\textwidth}
@@ -217,7 +238,6 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
     \end{block}
   \end{columns}
 
-  \footnotetext[1]{\tiny aus LTspice}
 \end{frame}
 
 \subsection{Parallelschaltung}
@@ -226,7 +246,10 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
   \begin{columns}
     \column{.4\textwidth}
     \begin{center}
-      \includegraphics[width=.8\textwidth]{e04/Parallel.png}\footnotemark
+      \begin{figure}
+        \includegraphics[width=.8\textwidth,height=.5\textheight,keepaspectratio]{e04/Parallel.png}
+        \caption{aus LTspice}
+      \end{figure}
     \end{center}
     \pause
     \column{.55\textwidth}
@@ -234,7 +257,6 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
       $$\frac{1}{R_{gesamt}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...$$
     \end{block}
   \end{columns}
-  \footnotetext[1]{\tiny aus LTspice}
 \end{frame}
 
 \subsection{Ersatzwiderstand}
@@ -242,9 +264,15 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
   \frametitle{Ersatzwiderstand}
   \begin{columns}
     \column{.47\textwidth}
-    \includegraphics[width=1\textwidth]{e04/Ersatzwiderstand1.png}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.2\textheight,keepaspectratio]{e04/Ersatzwiderstand1.png}
+      \caption{Ersatzwiderstand}
+    \end{figure}
     \column{.47\textwidth}
-    \includegraphics[width=1\textwidth]{e04/Ersatzwiderstand2.png}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.2\textheight,keepaspectratio]{e04/Ersatzwiderstand2.png}
+      \caption{Ersatzwiderstand}
+    \end{figure}
   \end{columns}
   \begin{columns}
     \column{.47\textwidth}
@@ -265,12 +293,18 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
 \subsection{Spannungsteiler}
 \begin{frame}
   \frametitle{Spannungsteiler}
-  \includegraphics[scale=0.13]{a02/spannungsteiler-unbelastet.png}
-  \hspace{2mm}
-  \includegraphics[scale=0.13]{a02/spannungsteiler-belastet.png}\\
-  {\tiny Abb.9: Unbelasteter Spannungsteiler \cite{wp}}
-  \hspace{10mm}
-  {\tiny Abb.10: Belasteter Spannungsteiler \cite{wp}}
+  \begin{columns}
+    \column{.45\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.55\textheight,keepaspectratio]{a02/spannungsteiler-unbelastet.png}
+      \attribcaption{Unbelasteter Spannungsteiler}{Biezl}{https://commons.wikimedia.org/wiki/File:Einfacher-unbelasteter-Spannungsteiler.svg}{\ccpd}
+    \end{figure}
+    \column{.45\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.55\textheight,keepaspectratio]{a02/spannungsteiler-belastet.png}\\
+      \attribcaption{Belasteter Spannungsteiler}{Biezl}{https://commons.wikimedia.org/wiki/File:Einfacher-Spannungsteiler.svg}{\ccpd}
+    \end{figure}
+  \end{columns}
   \begin{itemize}
     \item $U_2$ ist beim belasteten Spannungsteiler kleiner als beim unbelasteten Spannungsteiler
   \end{itemize}
@@ -341,12 +375,12 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
 %
 % \begin{frame}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
-% 		\textbf{TC112} & \textbf{Ein Lastwiderstand besteht aus zwölf parallel geschalteten 600-$\Omega$-Drahtwiderständen. Er eignet sich höchstens}\\ \hline\hline
-% 		A & für Funkfrequenzen bis etwa 144 MHz.\\ \hline
-% 		B & für UHF-Senderausgänge mit 50 $\Omega$.\\ \hline
-% 		C \only<2>\checkmark & für Tonfrequenzen bis etwa 15 kHz.\\ \hline
-% 		D & als Langdrahtersatz.\\ \hline
-% 	\end{tabular}
+%   \textbf{TC112} & \textbf{Ein Lastwiderstand besteht aus zwölf parallel geschalteten 600-$\Omega$-Drahtwiderständen. Er eignet sich höchstens}\\ \hline\hline
+%   A & für Funkfrequenzen bis etwa 144 MHz.\\ \hline
+%   B & für UHF-Senderausgänge mit 50 $\Omega$.\\ \hline
+%   C \only<2>\checkmark & für Tonfrequenzen bis etwa 15 kHz.\\ \hline
+%   D & als Langdrahtersatz.\\ \hline
+%  \end{tabular}
 % \end{frame}
 %
 % \begin{frame}
@@ -447,16 +481,9 @@ Der Widerstand und seine Schaltungsarten \\[2em]}
 
     \bibitem{wp}    Wikipedia DE: \\
       \url{http://de.wikipedia.org/wiki/Spannungsteiler}\\
-      \url{http://de.wikipedia.org/wiki/Datei:Einfacher-unbelasteter-Spannungsteiler.svg}\\
-      \url{http://de.wikipedia.org/wiki/Datei:Einfacher-Spannungsteiler.svg}\\
       \url{http://de.wikipedia.org/wiki/Ohmsches_Gesetz}\\
       \url{http://de.wikipedia.org/wiki/Elektrische_Leistung}\\
       \url{http://de.wikipedia.org/wiki/lektrische_Energie#Elektrische_Energie_in_einem_elektrischen_Feld}\\
-
-    \bibitem{wmde}	Wikimedia DE:\\
-      \url{http://commons.wikimedia.org/wiki/File:Ohmsches_Gesetz.svg?uselang=de}\\
-    \bibitem{wmen}	Wikimedia EN:\\
-      \url{http://commons.wikimedia.org/wiki/File:Ohm\%27s_law_triangle.PNG}
   \end{thebibliography}
 \end{small}
 
