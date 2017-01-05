@@ -5,7 +5,7 @@
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse A 02: \\
-          Der Widerstand und seine Schaltungsarten \\[2em]}
+Der Widerstand und seine Schaltungsarten \\[2em]}
 \date{Stand 28.04.2016}
 \input{texdata/titlepage}
 
@@ -14,66 +14,66 @@
 \section{Einleitung}
 
 \begin{frame}
-    \frametitle{Einleitung / Widerstand}
-       \begin{center}
-        \includegraphics[width=.7\textwidth,height=.8\textheight,keepaspectratio]{e04/URI.png}
-        \footnote{\tiny TU Wien \url{http://www.fet.at/twiki/pub/Homepage/OnlineFetzn/fetzn_ausgabe_maerz-2013_online.pdf}}
-    \end{center}
+  \frametitle{Einleitung / Widerstand}
+  \begin{center}
+    \includegraphics[width=.7\textwidth,height=.8\textheight,keepaspectratio]{e04/URI.png}
+    \footnote{\tiny TU Wien \url{http://www.fet.at/twiki/pub/Homepage/OnlineFetzn/fetzn_ausgabe_maerz-2013_online.pdf}}
+  \end{center}
 \end{frame}
 
 
 \begin{frame}
-    \frametitle{Einleitung / Widerstand}
+  \frametitle{Einleitung / Widerstand}
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth,height=.8\textheight,keepaspectratio]{e04/Widerstaende.jpg}
-        \footnote{\tiny By Honina at de.wikipedia. Later version(s) were uploaded by Montauk at de.wikipedia.}
-    \end{center}
-    
-    % TODO SMD-Bauteile ergaenzen
+  \begin{center}
+    \includegraphics[width=0.8\textwidth,height=.8\textheight,keepaspectratio]{e04/Widerstaende.jpg}
+    \footnote{\tiny By Honina at de.wikipedia. Later version(s) were uploaded by Montauk at de.wikipedia.}
+  \end{center}
+
+  % TODO SMD-Bauteile ergaenzen
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Einleitung / Widerstand}
+  \frametitle{Einleitung / Widerstand}
 
-    \begin{center}
-        \includegraphics[width=.4\textwidth,height=.2\textheight,keepaspectratio]{e04/Resistor_symbol_IEC.png}
-        \footnote{\tiny By Markus Kuhn (Made in Inkscape from scratch) [Public domain], via Wikimedia Commons}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=.4\textwidth,height=.2\textheight,keepaspectratio]{e04/Resistor_symbol_IEC.png}
+    \footnote{\tiny By Markus Kuhn (Made in Inkscape from scratch) [Public domain], via Wikimedia Commons}
+  \end{center}
 
-    \begin{center}
-        \includegraphics[width=.4\textwidth,height=.5\textheight,keepaspectratio]{e04/R_LTspice.png}
-        \footnote{\tiny aus LTspice}
-    \end{center} 	
+  \begin{center}
+    \includegraphics[width=.4\textwidth,height=.5\textheight,keepaspectratio]{e04/R_LTspice.png}
+    \footnote{\tiny aus LTspice}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Aufbau von Widerständen}
-	\textbf{Kohleschichtwiderstände:}
-	\pause
-	\begin{itemize}
-		\item Günstig in der Herstellung
-		\item Hohe Toleranzen
-	\end{itemize}
-	\pause
-	\textbf{Metallschichtwiderstände:}
-	\pause
-	\begin{itemize}
-		\item Sehr präzise
-	\end{itemize}
-	\pause
-	\textbf{Metalloxidwiderstände:}
-	\pause
-	\begin{itemize}
-		\item HF tauglich
-	\end{itemize}
-	\pause
-	\textbf{Drahtwiderstände:}
-	\pause
-	\begin{itemize}
-		\item Leistungswiderstände für NF
-	\end{itemize}
+  \frametitle{Aufbau von Widerständen}
+  \textbf{Kohleschichtwiderstände:}
+  \pause
+  \begin{itemize}
+    \item Günstig in der Herstellung
+    \item Hohe Toleranzen
+  \end{itemize}
+  \pause
+  \textbf{Metallschichtwiderstände:}
+  \pause
+  \begin{itemize}
+    \item Sehr präzise
+  \end{itemize}
+  \pause
+  \textbf{Metalloxidwiderstände:}
+  \pause
+  \begin{itemize}
+    \item HF tauglich
+  \end{itemize}
+  \pause
+  \textbf{Drahtwiderstände:}
+  \pause
+  \begin{itemize}
+    \item Leistungswiderstände für NF
+  \end{itemize}
 \end{frame}
 
 \section{Spezifischer Widerstand}
@@ -94,13 +94,13 @@
       Germanium & \only<2>{$\leftarrow$ \textbf{Halbleiter}} & $4,6 \cdot 10^{5}$\\
       Porzellan & \only<2>{$\leftarrow$ \textbf{Isolator}} & $1 \cdot 10^{18}$ \\
     \end{tabular}
-    
+
     \column{.35\textwidth}
-      \only<3>{
-      \begin{block}{Berechnung des Widerstands}
-        $$R = \rho \cdot \frac{\ell}{A}$$
-      \end{block}
-      }
+    \only<3>{
+    \begin{block}{Berechnung des Widerstands}
+      $$R = \rho \cdot \frac{\ell}{A}$$
+    \end{block}
+    }
   \end{columns}
 \end{frame}
 
@@ -116,85 +116,85 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Ursachen des Skin-Effektes}
-      \begin{center}
-        \includegraphics[scale=0.06]{a02/Skineffect.png}\\
-            \small{Abb.5: Überlagerung von Wechsel- und Wirbelströmen \cite{wp}}
-        \begin{itemize}
-            \item Ursache des Skin-Effektes ist das magnetische Feld
-            \item Es erzeugt Wirbelströme im Innern des Leiters
-            \item Diese sind dem Erzeugerstrom entgegengerichtet
-            \item Das wechselnde Magnetfeld erzeugt im Leiter eine höhere Gegenspannung als am Rand
-        \end{itemize}
+  \frametitle{Ursachen des Skin-Effektes}
+  \begin{center}
+    \includegraphics[scale=0.06]{a02/Skineffect.png}\\
+    \small{Abb.5: Überlagerung von Wechsel- und Wirbelströmen \cite{wp}}
+    \begin{itemize}
+      \item Ursache des Skin-Effektes ist das magnetische Feld
+      \item Es erzeugt Wirbelströme im Innern des Leiters
+      \item Diese sind dem Erzeugerstrom entgegengerichtet
+      \item Das wechselnde Magnetfeld erzeugt im Leiter eine höhere Gegenspannung als am Rand
+    \end{itemize}
   \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Folgen \& Gegenmaßnahmen}
-    \textbf{Folgen:}
-    \begin{itemize}
-        \item Der Leiterquerschnitt sinkt
-        \item Die Impedanz steigt
-    \end{itemize}
-    \textbf{Gegenmaßnahmen}
-    \begin{itemize}
-        \item Verwendung von Hohlleitern
-        \item Mehrere voneinander isolierte Drähte nutzen
-        \item Oberfläche versilbern
-    \end{itemize}
+  \frametitle{Folgen \& Gegenmaßnahmen}
+  \textbf{Folgen:}
+  \begin{itemize}
+    \item Der Leiterquerschnitt sinkt
+    \item Die Impedanz steigt
+  \end{itemize}
+  \textbf{Gegenmaßnahmen}
+  \begin{itemize}
+    \item Verwendung von Hohlleitern
+    \item Mehrere voneinander isolierte Drähte nutzen
+    \item Oberfläche versilbern
+  \end{itemize}
 \end{frame}
 
 \section{Ohmsches Gesetz}
 
 \begin{frame}
-    \frametitle{Was ist das ohmsche Gesetz?}
-    \begin{itemize}
-    	\item Das ohmsche Gesetz ist folgendes:
-    \end{itemize}
+  \frametitle{Was ist das ohmsche Gesetz?}
+  \begin{itemize}
+    \item Das ohmsche Gesetz ist folgendes:
+  \end{itemize}
+  \begin{center}
+    \includegraphics[width=.5\textwidth,height=.6\textheight,keepaspectratio]{e03/Ohm_law_triangle.png}\\
+    \small{Abb.6: das ohmsche Dreieck \cite{wmen}}
+  \end{center}
+  \begin{itemize}
+    \item	Aber was sagt uns das nun?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Das ohmsche Gesetz}
+  \begin{itemize}
+    \item	Das ohmsche Gesetz gibt uns die Abhängigkeiten zwischen Spannung, Strom \& ohmschen Widerstand an
+    \item	Dadurch wissen wir, dass sich zum Beispiel der Strom an einem konstanten Widerstand proportional zur Spannung ändert
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Der Innenwiderstand}
+  \begin{itemize}
+    \item	Oftmals bemerken wir einen Spannungsabfall zwischen einer Maschine im Leerlauf und der gleichen Maschine bei Belastung
+    \item	Dies führen wir auf den Innenwiderstand der Maschine zurück
+  \end{itemize}
+  \begin{center}
+    \includegraphics[scale=1.4]{e03/Innenwiderstand.png}\\
+    \small{Abb.7: Innenwiderstand einer Batterie}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{der Innenwiderstand}
+  \begin{itemize}
+    \item	Um den Innenwiderstand zu ermitteln nutzen wir wieder das ohmsche Gesetz
+    \item	Dabei gilt es zu beachten, dass diesmal die Differenzen der Spannungen und des Stromes zwischen dem Leerlauf und dem belasteten Fall verrechnet werden
+    \item	Es gilt:
+  \end{itemize}
+  \begin{block}{Innenwiderstand}
     \begin{center}
- 		\includegraphics[width=.5\textwidth,height=.6\textheight,keepaspectratio]{e03/Ohm_law_triangle.png}\\
- 		\small{Abb.6: das ohmsche Dreieck \cite{wmen}}
- 	\end{center}
- 	\begin{itemize}
- 		\item	Aber was sagt uns das nun?
- 	\end{itemize}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Das ohmsche Gesetz}
-	\begin{itemize}
-		\item	Das ohmsche Gesetz gibt uns die Abhängigkeiten zwischen Spannung, Strom \& ohmschen Widerstand an
-		\item	Dadurch wissen wir, dass sich zum Beispiel der Strom an einem konstanten Widerstand proportional zur Spannung ändert
-	\end{itemize}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Der Innenwiderstand}
-	\begin{itemize}
-		\item	Oftmals bemerken wir einen Spannungsabfall zwischen einer Maschine im Leerlauf und der gleichen Maschine bei Belastung
-		\item	Dies führen wir auf den Innenwiderstand der Maschine zurück
-	\end{itemize}
-	\begin{center}
- 		\includegraphics[scale=1.4]{e03/Innenwiderstand.png}\\
- 		\small{Abb.7: Innenwiderstand einer Batterie}
- 	\end{center}
-\end{frame}
-
-\begin{frame}
-	\frametitle{der Innenwiderstand}
-	\begin{itemize}
-		\item	Um den Innenwiderstand zu ermitteln nutzen wir wieder das ohmsche Gesetz
-		\item	Dabei gilt es zu beachten, dass diesmal die Differenzen der Spannungen und des Stromes zwischen dem Leerlauf und dem belasteten Fall verrechnet werden
-		\item	Es gilt:
-	\end{itemize}
-	\begin{block}{Innenwiderstand}
-	  \begin{center}
-	    $R_{innen} = \cfrac{\Delta U}{\Delta I}$
-	  \end{center}
-	\end{block}
-	\begin{itemize}
-	  \item	Um den Wert nicht zu sehr zu verfälschen sollten \textbf{Spannungsquellen einen niedrigen} und \textbf{Stromquellen einen hohen Innenwiderstand} besitzen
-	\end{itemize}
+      $R_{innen} = \cfrac{\Delta U}{\Delta I}$
+    \end{center}
+  \end{block}
+  \begin{itemize}
+    \item	Um den Wert nicht zu sehr zu verfälschen sollten \textbf{Spannungsquellen einen niedrigen} und \textbf{Stromquellen einen hohen Innenwiderstand} besitzen
+  \end{itemize}
 \end{frame}
 
 % FIXME + Leistungsanpassung, Strom-/Spannungsanpassung Innenwiderzustand zu Lastwiderstand
@@ -204,7 +204,7 @@
 \subsection{Reihenschaltung}
 \begin{frame}
   \frametitle{Reihenschaltung}
-        
+
   \begin{columns}
     \column{.4\textwidth}
     \begin{center}
@@ -264,47 +264,47 @@
 
 \subsection{Spannungsteiler}
 \begin{frame}
-	\frametitle{Spannungsteiler}
-	 \includegraphics[scale=0.13]{a02/spannungsteiler-unbelastet.png}
-	 \hspace{2mm}
-	 \includegraphics[scale=0.13]{a02/spannungsteiler-belastet.png}\\
-	 	{\tiny Abb.9: Unbelasteter Spannungsteiler \cite{wp}}
-	 	\hspace{10mm}
- 		{\tiny Abb.10: Belasteter Spannungsteiler \cite{wp}} 
- 	\begin{itemize}
- 		\item $U_2$ ist beim belasteten Spannungsteiler kleiner als beim unbelasteten Spannungsteiler
-	\end{itemize} 		
+  \frametitle{Spannungsteiler}
+  \includegraphics[scale=0.13]{a02/spannungsteiler-unbelastet.png}
+  \hspace{2mm}
+  \includegraphics[scale=0.13]{a02/spannungsteiler-belastet.png}\\
+  {\tiny Abb.9: Unbelasteter Spannungsteiler \cite{wp}}
+  \hspace{10mm}
+  {\tiny Abb.10: Belasteter Spannungsteiler \cite{wp}}
+  \begin{itemize}
+    \item $U_2$ ist beim belasteten Spannungsteiler kleiner als beim unbelasteten Spannungsteiler
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Rechnen beim Spannungsteiler}
-	\textbf{beim unbelasteten Spannungsteiler:}
-	\begin{itemize}
-		\item $U_2$ ist die Spannung über $R_2$ 
-	\end{itemize}
-	\begin{block}{unbelasteter Spannungsteiler}
-	  \begin{center}
-	    $$\frac{U_2}{U} = \frac{R_2}{R_{gesamt}}$$
-	  \end{center}
-	\end{block}
+  \frametitle{Rechnen beim Spannungsteiler}
+  \textbf{beim unbelasteten Spannungsteiler:}
+  \begin{itemize}
+    \item $U_2$ ist die Spannung über $R_2$
+  \end{itemize}
+  \begin{block}{unbelasteter Spannungsteiler}
+    \begin{center}
+      $$\frac{U_2}{U} = \frac{R_2}{R_{gesamt}}$$
+    \end{center}
+  \end{block}
 
-	\textbf{beim belasteten Spannungsteiler:}
-	\begin{itemize}
-		\item $U_2$ ist die Spannung über den beiden parallelen Widerstände $R_2$ und $R_L$
-	\end{itemize}
-	\begin{block}{belasteter Spannungsteiler}
-	  \begin{center}
-	    $$\frac{U_2}{U} = \frac{R_{2}||R_{L}}{R_{gesamt}}$$
-	  \end{center}
-	\end{block}
+  \textbf{beim belasteten Spannungsteiler:}
+  \begin{itemize}
+    \item $U_2$ ist die Spannung über den beiden parallelen Widerstände $R_2$ und $R_L$
+  \end{itemize}
+  \begin{block}{belasteter Spannungsteiler}
+    \begin{center}
+      $$\frac{U_2}{U} = \frac{R_{2}||R_{L}}{R_{gesamt}}$$
+    \end{center}
+  \end{block}
 \end{frame}
 
 \section{Übung}
 
 \begin{frame}
-    \frametitle{Übungsaufgaben}
+  \frametitle{Übungsaufgaben}
 
-    Als Teil des Praxisskriptes im Anschluss.
+  Als Teil des Praxisskriptes im Anschluss.
 
 \end{frame}
 
@@ -317,58 +317,58 @@
 %     D & Einige Stoffe (z.B. Silizium, Germanium) sind in trockenem Zustand bei Zimmertemperatur gute Elektrolyten. Durch geringfügige Zusätze von Wismut oder Tellur kann man daraus entweder N-leitendes- oder P-leitendes Material für Anoden bzw. Katoden von Halbleiterbauelementen herstellen. \\ \hline
 %   \end{tabular}
 % \end{frame}
-% 
+%
 % \begin{frame}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
 %     \textbf{TB104} & \textbf{Der Temperaturkoeffizient für den Widerstand von metallischen Leitern ist \ldots}\\ \hline\hline
 %     A & exponentiell \\ \hline
 %     B & negativ \\ \hline
 %     C & logarithmisch \\ \hline
-%     D \only<2>\checkmark & positiv \\ \hline 		
+%     D \only<2>\checkmark & positiv \\ \hline
 %   \end{tabular}
 % \end{frame}
-% 
-% 
+%
+%
 % \begin{frame}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
 %     \textbf{TC109} & \textbf{Ein Widerstand hat eine Toleranz von 10 \%. Bei einem nominalen Widerstandswert von $5,6 k\Omega$ liegt der tatsächliche Wert zwischen}\\ \hline\hline
 %     A \only<2>\checkmark & 5040 und 6160 $\Omega$ \\ \hline
 %     B & 4760 und 6440 $\Omega$ \\ \hline
 %     C & 4,7 und 6,8 $\Omega$ \\ \hline
-%     D & 5,2 und 6,3 $\Omega$ \\ \hline 		
+%     D & 5,2 und 6,3 $\Omega$ \\ \hline
 %   \end{tabular}
 % \end{frame}
-% 
+%
 % \begin{frame}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
 % 		\textbf{TC112} & \textbf{Ein Lastwiderstand besteht aus zwölf parallel geschalteten 600-$\Omega$-Drahtwiderständen. Er eignet sich höchstens}\\ \hline\hline
 % 		A & für Funkfrequenzen bis etwa 144 MHz.\\ \hline
 % 		B & für UHF-Senderausgänge mit 50 $\Omega$.\\ \hline
 % 		C \only<2>\checkmark & für Tonfrequenzen bis etwa 15 kHz.\\ \hline
-% 		D & als Langdrahtersatz.\\ \hline 		
+% 		D & als Langdrahtersatz.\\ \hline
 % 	\end{tabular}
 % \end{frame}
-% 
+%
 % \begin{frame}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
 %     \textbf{TD302} & \textbf{Die Leerlaufspannung einer Gleichspannungsquelle beträgt 13,5 V. Wenn die Spannungsquelle einen Strom von 1 A abgibt, sinkt die Klemmenspannung auf 12,4 V. Wie groß ist der Innenwiderstand der Spannungsquelle?}\\ \hline\hline
 %     A \only<2>\checkmark & $1,1 \Omega$\\ \hline
 %     B & $1,2 \Omega$\\ \hline
 %     C & $12,4 \Omega$\\ \hline
-%     D & $13,5 \Omega$\\ \hline 		
+%     D & $13,5 \Omega$\\ \hline
 %   \end{tabular}
 %   \pause
 %   \vspace{2em}
 %   $$R = \frac{\Delta U}{\Delta I} = \frac{13,5V - 12,4V}{1A} = \frac{1,1V}{1A} = 1,1\Omega$$
 % \end{frame}
-% 
+%
 % \begin{frame}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
 %     \textbf{TB102} & \textbf{Welchen Widerstand hat eine Kupferdrahtwicklung, wenn der verwendete Draht eine Länge von 1,8 m und einen Durchmesser von 0,2 mm hat?}\\ \hline\hline
 %     A & $0,05 \Omega$\\ \hline
 %     B \only<2>\checkmark &$1 \Omega$\\ \hline
 %     C & $5,6 \Omega$\\ \hline
-%     D & $56 \Omega$\\ \hline 		
+%     D & $56 \Omega$\\ \hline
 %   \end{tabular}
 %   \pause
 %   \vspace{2em}
@@ -378,60 +378,60 @@
 %   \pause
 %   $$\Rightarrow R = \frac{0,0178 \frac{\Omega \cdot mm^2}{m} \cdot 1,8m}{0,0314mm^2} = \frac{0,03204 \Omega}{0,0314} \approx 1\Omega$$
 % \end{frame}
-% 
+%
 % \begin{frame}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
 %     \textbf{TB105} & \textbf{Welche Gruppe von Materialien enthält nur Nichtleiter?}\\ \hline\hline
 %     A \only<2>\checkmark & Epoxyd, Polyethylen (PE), Polystyrol (PS)\\ \hline
 %     B & Pertinax, Polyvinylchlorid (PVC), Graphit\\ \hline
 %     C & Polyethylen (PE), Messing, Konstantan\\ \hline
-%     D & Teflon, Pertinax, Bronze\\ \hline 		
+%     D & Teflon, Pertinax, Bronze\\ \hline
 %   \end{tabular}
 % \end{frame}
-% 
+%
 % \begin{frame}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
 %     \textbf{TC103} & \textbf{Metalloxidwiderstände}\\ \hline\hline
 %     A & haben geringe Toleranzen und Widerstandsänderungen und sind besonders als Präzisionswiderstände in der Messtechnik geeignet.\\ \hline
 %     B & sind besonders als Hochlastwiderstände bei niedrigen Frequenzen geeignet.\\ \hline
 %     C \only<2>\checkmark & sind induktionsarm und eignen sich besonders für den Einsatz bei sehr hohen Frequenzen.\\ \hline
-%     D & haben einen extrem stark negativen Temperaturkoeffizienten und sind besonders als NTC-Widerstände (Heißleiter) geeignet.\\ \hline 		
+%     D & haben einen extrem stark negativen Temperaturkoeffizienten und sind besonders als NTC-Widerstände (Heißleiter) geeignet.\\ \hline
 %   \end{tabular}
 % \end{frame}
-% 
+%
 % \begin{frame}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
 %     \textbf{TD301} & \textbf{Welche Eigenschaften sollten Strom- und Spannungsquellen aufweisen?}\\ \hline\hline
 %     A & Strom- und Spannungsquellen sollten einen möglichst niedrigen Innenwiderstand haben.\\ \hline
 %     B & Strom- und Spannungsquellen sollten einen möglichst hohen Innenwiderstand haben.\\ \hline
 %     C & Spannungsquellen sollten einen möglichst hohen Innenwiderstand und Stromquellen einen möglichst niedrigen Innenwiderstand haben.\\ \hline
-%     D \only<2>\checkmark & Spannungsquellen sollten einen möglichst niedrigen Innenwiderstand und Stromquellen einen möglichst hohen Innenwiderstand haben.\\ \hline 		
+%     D \only<2>\checkmark & Spannungsquellen sollten einen möglichst niedrigen Innenwiderstand und Stromquellen einen möglichst hohen Innenwiderstand haben.\\ \hline
 %   \end{tabular}
 % \end{frame}
-% 
+%
 % \begin{frame}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
 %     \textbf{TB914} & \textbf{Welche Belastbarkeit muss ein 100-Ohm-Widerstand, an dem 10 Volt anliegen, mindestens haben?}\\ \hline\hline
 %     A & 100 mW\\ \hline
 %     B & 0,125 W\\ \hline
 %     C \only<2>\checkmark & 1 W\\ \hline
-%     D & 10 W \\ \hline 		
+%     D & 10 W \\ \hline
 %   \end{tabular}
 %   \pause
 %   \vspace{2em}
 %   $$P = \frac{U^2}{R} = \frac{10V^2}{100\Omega} = 1W$$
 % \end{frame}
-% 
+%
 % \begin{frame}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
 %     \textbf{TB923} & \textbf{In welcher Antwort sind alle dargestellten Zusammenhänge zwischen Strom, Spannung, Widerstand und Leistung richtig?}\\ \hline\hline
 %     A & $$I = \sqrt{P \cdot R} \:,\: U = \sqrt{\frac{P}{R}}$$\\ \hline
 %     B & $$I = \sqrt{\frac{R}{P}} \:,\: U = \sqrt{P \cdot R}$$\\ \hline
 %     C \only<2>\checkmark & $$I = \sqrt{\frac{P}{R}} \:,\: U = \sqrt{P \cdot R}$$\\ \hline
-%     D & $$I = \frac{\sqrt{P}}{P} \:,\: U = \sqrt{P} \cdot R$$\\ \hline 		
+%     D & $$I = \frac{\sqrt{P}}{P} \:,\: U = \sqrt{P} \cdot R$$\\ \hline
 %   \end{tabular}
 % \end{frame}
-% 
+%
 % \begin{frame}
 %   \begin{exampleblock}{Weitere Übungen}
 %     TD107--TD108, TD111--TD115, TD121--TD124, TJ708
@@ -439,25 +439,25 @@
 % \end{frame}
 
 \section{Referenzen}
-	\begin{small}
-    \begin{thebibliography}{}
-    \setbeamertemplate{bibliography item}[online]
+\begin{small}
+  \begin{thebibliography}{}
+      \setbeamertemplate{bibliography item}[online]
     \bibitem{a02}  Moltrecht A 02: \\
-                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a02/}
-                    
+      \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-a/technik-a02/}
+
     \bibitem{wp}    Wikipedia DE: \\
-                    \url{http://de.wikipedia.org/wiki/Spannungsteiler}\\
-                    \url{http://de.wikipedia.org/wiki/Datei:Einfacher-unbelasteter-Spannungsteiler.svg}\\
-                    \url{http://de.wikipedia.org/wiki/Datei:Einfacher-Spannungsteiler.svg}\\
-      				\url{http://de.wikipedia.org/wiki/Ohmsches_Gesetz}\\ 
-                    \url{http://de.wikipedia.org/wiki/Elektrische_Leistung}\\ 
-                    \url{http://de.wikipedia.org/wiki/lektrische_Energie#Elektrische_Energie_in_einem_elektrischen_Feld}\\ 
-                    
+      \url{http://de.wikipedia.org/wiki/Spannungsteiler}\\
+      \url{http://de.wikipedia.org/wiki/Datei:Einfacher-unbelasteter-Spannungsteiler.svg}\\
+      \url{http://de.wikipedia.org/wiki/Datei:Einfacher-Spannungsteiler.svg}\\
+      \url{http://de.wikipedia.org/wiki/Ohmsches_Gesetz}\\
+      \url{http://de.wikipedia.org/wiki/Elektrische_Leistung}\\
+      \url{http://de.wikipedia.org/wiki/lektrische_Energie#Elektrische_Energie_in_einem_elektrischen_Feld}\\
+
     \bibitem{wmde}	Wikimedia DE:\\
-    				\url{http://commons.wikimedia.org/wiki/File:Ohmsches_Gesetz.svg?uselang=de}\\
-   	\bibitem{wmen}	Wikimedia EN:\\
-   					\url{http://commons.wikimedia.org/wiki/File:Ohm\%27s_law_triangle.PNG}
-   \end{thebibliography}
-	\end{small}
+      \url{http://commons.wikimedia.org/wiki/File:Ohmsches_Gesetz.svg?uselang=de}\\
+    \bibitem{wmen}	Wikimedia EN:\\
+      \url{http://commons.wikimedia.org/wiki/File:Ohm\%27s_law_triangle.PNG}
+  \end{thebibliography}
+\end{small}
 
 \input{texdata/postamble}
