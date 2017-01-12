@@ -9,42 +9,52 @@
 \date{Stand 19.05.2016}
 \input{texdata/titlepage}
 
-%fixme Links zur bibliography einfuegen
 
 \section*{Schwingkreis}
 \begin{frame}
   \frametitle{Schwingkreise}
   \begin{center}
-    \includegraphics[scale=0.4]{a04/Schwingkreis_reihe.png}
-    \includegraphics[scale=0.4]{a04/Schwingkreis_parallel.png}\\
-    Abb.1: Serien- \& Parallelschwingkreis
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{a04/Schwingkreis_reihe.png}
+      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{a04/Schwingkreis_parallel.png}
+      \caption{Serien- \& Parallelschwingkreis}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Schwingungserzeugung}
-  \begin{center}
-    \includegraphics[scale=0.35]{a04/Schwingkreis.png}\\
-    {\tiny Abb.2: Energie in einem LC-Schwingkreis \cite{wmde}} \\
-    \vspace{3mm}
+  \begin{columns}
+    \column{.6\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{a04/Schwingkreis.png}
+        \attribcaption{Energie in einem LC-Schwingkreis}{X3ntar}{https://commons.wikimedia.org/wiki/File:LC_circuit_4_times_new_version.svg}{\ccpd}
+      \end{figure}
+    \end{center}
+    \column{.4\textwidth}
     \begin{itemize}
-      \item durch Verluste kommt es zur gedämpfte Schwingung\\
-      \item animierte Darstellung (\url{http://en.wikipedia.org/wiki/File:Tuned_circuit_animation_3.gif})
+      \item durch Verluste kommt es zur gedämpften Schwingung\\
+      \item \href{http://en.wikipedia.org/wiki/File:Tuned_circuit_animation_3.gif}{\ExternalLink animierte Darstellung}
     \end{itemize}
-  \end{center}
+  \end{columns}
 \end{frame}
 
 \subsection*{Reihen\-schwing\-kreis}
 \begin{frame}
   \frametitle{Reihenschwingkreis}
   \begin{center}
-    \begin{minipage}{0.4\textwidth}
-      \includegraphics[height=.5\textheight,width=\textwidth,keepaspectratio]{a04/Serirenschw.png}\\
-      \tiny{Abb.3: Serienschwingkreis \cite{wmen}}
+    \begin{minipage}{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[height=.45\textheight,width=\textwidth,keepaspectratio]{a04/Serirenschw.png}
+        \attribcaption{Serienschwingkreis}{V4711}{https://commons.wikimedia.org/wiki/File:RLC_series_circuit_v1.svg}{\ccbysa}
+      \end{figure}
     \end{minipage}
-    \begin{minipage}{0.4\textwidth}
-      \includegraphics[height=.5\textheight,width=\textwidth,keepaspectratio]{a04/SerirenschwSig.png}\\
-      \tiny{Abb.4: Resonanzwiderstand \cite{wmen}}
+    \begin{minipage}{0.49\textwidth}
+      \begin{figure}
+        \includegraphics[height=.45\textheight,width=\textwidth,keepaspectratio]{a04/SerirenschwSig.png}
+        \attribcaption{Resonanzwiderstand}{Unknown}{https://commons.wikimedia.org/wiki/File:Resonanzwiderstand_serie.svg}{\ccpd}
+      \end{figure}
     \end{minipage}
   \end{center}
   \begin{itemize}
@@ -57,13 +67,17 @@
 \begin{frame}
   \frametitle{Parallelschwingkreis}
   \begin{center}
-    \begin{minipage}{0.4\textwidth}
-      \includegraphics[scale=1]{a04/Parallelschw.png}\\
-      \tiny{Abb.5: Parallelschwingkreis \cite{wmen}}
+    \begin{minipage}{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[height=.45\textheight,width=\textwidth,keepaspectratio]{a04/Parallelschw.png}
+        \attribcaption{Parallelschwingkreis}{Tillmann Walther}{https://commons.wikimedia.org/wiki/File:KondiSpuleWiderstandParallel.svg}{\ccpd}
+      \end{figure}
     \end{minipage}
-    \begin{minipage}{0.4\textwidth}
-      \includegraphics[scale=0.2]{a04/ParallelschwSig.png}\\
-      \tiny{Abb.6: Resonanzwiderstand \cite{wmen}}
+    \begin{minipage}{0.49\textwidth}
+      \begin{figure}
+        \includegraphics[height=.45\textheight,width=\textwidth,keepaspectratio]{a04/ParallelschwSig.png}
+        \attribcaption{Resonanzwiderstand}{Unknown}{https://commons.wikimedia.org/wiki/File:Resonanzwiderstand_parallel.svg}{\ccpd}
+      \end{figure}
     \end{minipage}
   \end{center}
   \begin{itemize}
@@ -190,8 +204,10 @@
 \begin{frame}
   \frametitle{Bandbreite eines Schwingkreises}
   \begin{center}
-    \includegraphics[scale=0.3]{a04/bandwidth.png}\\
-    \tiny{Abb.7: Bandbreite \cite{wmen}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{a04/bandwidth.png}
+      \attribcaption{Bandbreite}{Inductiveload}{https://commons.wikimedia.org/wiki/File:Bandwidth_2.svg}{\ccpd}
+    \end{figure}
   \end{center}
   Untere $f_L$ und obere Grenzfrequenz $f_H$ festgelegt beim $-3dB$-Punkt.
 \end{frame}
@@ -248,8 +264,10 @@
 \begin{frame}
   \frametitle{Der Quarz als Schwingkreis}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{a04/Quartz.jpg}\\
-    {\tiny Abb.8: Verschiedene Bauformen von Quarzen}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.35\textheight,keepaspectratio]{a04/Quartz.jpg}
+      \attribcaption{Verschiedene Bauformen von Quarzen}{Stefan Riepl (Quark48)}{https://commons.wikimedia.org/wiki/File:Verschiedene_Schwingquarze.jpg?uselang=de}{\ccpd}
+    \end{figure}
   \end{center}
   \begin{itemize}
     \item Englisch: quar\textbf{t}z
@@ -262,26 +280,22 @@
 
 \begin{frame}
   \frametitle{Zusatzwissen für Interessierte: ESB eines Quarzes}
-  \begin{center}
-    \includegraphics[scale=0.25]{a04/Quartz-ESB.png}\\
-    Abb.9: ESB eines Quartzes \cite{wpde}
-  \end{center}
-  \begin{itemize}
-    \item   Für den Serienschwingkreis gilt:
-  \end{itemize}
-  \begin{Large}
+  \begin{columns}
+    \column{.6\textwidth}
     \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{a04/Quartz-ESB.png}
+        \attribcaption{Ersatzschaltbild eines Schwingquarzes}{Elcap, Jens Both}{https://commons.wikimedia.org/wiki/File:Schwingquarz-Ersatzschaltbild.png?uselang=de}{\ccpd}
+      \end{figure}
+    \end{center}
+    \column{.39\textwidth}
+    \begin{block}{Serienschwingkreis}
       $f_S = \frac{1}{2 \pi \sqrt{L C_{s}}}$
-    \end{center}
-  \end{Large}
-  \begin{itemize}
-    \item   Für den Parallelschwingkreis gilt:
-  \end{itemize}
-  \begin{Large}
-    \begin{center}
+    \end{block}
+    \begin{block}{Parallelschwingkreis}
       $f_P = \frac{1}{2 \pi \sqrt{L C_{ges}}}$
-    \end{center}
-  \end{Large}
+    \end{block}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -305,7 +319,7 @@
 
   \pause
   \vspace{2em}
-  Die Frage gibt für alle Antwortmöglichkeiten, aber unterschiedlichen Bandbreiten:
+  Die Frage gibt es für alle Antwortmöglichkeiten, aber unterschiedlichen Bandbreiten:
   \begin{description}
     \item[2,3~kHz $\rightarrow$] \only<3>{SSB}
     \item[6~kHz $\rightarrow$] \only<3>{AM}
@@ -318,8 +332,10 @@
 \begin{frame}
   \frametitle{Tiefpass}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/LC-Tiefpass.png}\\
-    Abb.8: LC-Tiefpass
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.45\textheight,keepaspectratio]{e07/LC-Tiefpass.png}
+      \caption{LC-Tiefpass}
+    \end{figure}
   \end{center}
   \begin{itemize}
     \item Bei steigender Frequenz sinkt der Blindwiderstand $X_L$ und der Blindwiderstand $X_C$ steigt
@@ -332,8 +348,10 @@
 \begin{frame}
   \frametitle{Hochpass}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/LC-Hochpass.png}\\
-    Abb.9: LC-Hochpass
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.45\textheight,keepaspectratio]{e07/LC-Hochpass.png}
+      \caption{LC-Hochpass}
+    \end{figure}
   \end{center}
   \begin{itemize}
     \item Bei steigender Frequenz steigt der Blindwiderstand $X_L$ und der Blindwiderstand $X_C$ sinkt
@@ -346,8 +364,10 @@
 \begin{frame}
   \frametitle{Bandpass}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a04/BandpassSpulen.png}\\
-    Abb.12: Bandpass aus induktiv gekoppelten Schwingkreisen \cite{wpde}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a04/BandpassSpulen.png}
+      \attribcaption{Bandfilter mit magnetisch gekoppelten Spulen}{PeterFrankfurt}{https://commons.wikimedia.org/wiki/File:BandpassSpulen.png?uselang=de}{\ccpd}
+    \end{figure}
   \end{center}
   \begin{itemize}
     \item Mehrere Parallelschwingkreise können zu Bandpässen gekoppelt werden
@@ -358,11 +378,22 @@
 \subsection*{Saugkreis}
 \begin{frame}
   \frametitle{Saugkreis}
-  \begin{center}
-    % https://upload.wikimedia.org/wikipedia/commons/c/c9/Saugkreis.png
-    \includegraphics<1>[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/Saugkreis.png}
-    \includegraphics<2>[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/SerirenschwSig.png}
-  \end{center}
+  \begin{columns}
+    \column{.47\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/Saugkreis.png}
+        \attribcaption{Saugkreis}{Herbertweidner}{https://commons.wikimedia.org/wiki/File:Saugkreis.png}{\ccpd}
+      \end{figure}
+    \end{center}
+    \column{.47\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/SerirenschwSig.png}
+        \attribcaption{Resonanzwiderstand}{Unknown}{https://commons.wikimedia.org/wiki/File:Resonanzwiderstand_serie.svg}{\ccpd}
+      \end{figure}
+    \end{center}
+  \end{columns}
   \pause
   \begin{itemize}
     \item vor und nach der Resonanzfrequenz hoher Widerstand
@@ -374,11 +405,22 @@
 \subsection*{Sperrkreis}
 \begin{frame}
   \frametitle{Sperrkreis}
-  \begin{center}
-    % https://upload.wikimedia.org/wikipedia/commons/e/ef/Sperrkreis.png
-    \includegraphics<1>[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/Sperrkreis.png}
-    \includegraphics<2>[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/ParallelschwSig.png}
-  \end{center}
+  \begin{columns}
+    \column{.47\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/Sperrkreis.png}
+        \attribcaption{Sperrkreis}{Herbertweidner}{https://commons.wikimedia.org/wiki/File:Sperrkreis.png}{\ccpd}
+      \end{figure}
+    \end{center}
+    \column{.47\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/ParallelschwSig.png}
+        \attribcaption{Parallelschwingkreis}{Tillmann Walther}{http://commons.wikimedia.org/wiki/File:KondiSpuleWiderstandParallel.svg}{\ccpd}
+      \end{figure}
+    \end{center}
+  \end{columns}
   \pause
   \begin{itemize}
     \item bei der Resonanzfrequenz hoher Widerstand
@@ -390,16 +432,22 @@
 \subsection*{Resonanz\-trans\-formation}
 \begin{frame}
   \frametitle{Resonanztransformation}
-  \begin{center}
-    \includegraphics[scale=0.2]{a04/Pi-Filter.png}\\
-    Abb.13: Pi- oder auch Collinsfilter \cite{wpde}
-  \end{center}
-  \begin{itemize}
-    \item Schwingkreise in Resonanz eignen sich gut zum Anpassen von Impedanzen
-    \item Nicht die Induktivität, sondern die Kapazitäten sind für die Anpassung verantwortlich
-    \item Oft werden Drehkondensatoren benutzt, um stufenlos anpassen zu können
-    \item Eingesetzt in Tunern oder Verstärkern (mit den zwei Drehkondensatoren \emph{Load} und \emph{Plate}).
-  \end{itemize}
+  \begin{columns}
+    \column{.5\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{a04/Pi-Filter.png}\\
+        \attribcaption{Pi- oder auch Collinsfilter}{Frank Murmann}{https://commons.wikimedia.org/wiki/File:ResoTrafo_3.svg?uselang=de}{\ccpd}
+      \end{figure}
+    \end{center}
+    \column{.5\textwidth}
+    \begin{itemize}
+      \item Schwingkreise in Resonanz eignen sich gut zum Anpassen von Impedanzen
+      \item Nicht die Induktivität, sondern die Kapazitäten sind für die Anpassung verantwortlich
+      \item Oft werden Drehkondensatoren benutzt, um stufenlos anpassen zu können
+      \item Eingesetzt in Tunern oder Verstärkern (mit den zwei Drehkondensatoren \emph{Load} und \emph{Plate}).
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 %% Passt eher zur Kopplung
@@ -431,23 +479,7 @@
     \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a04/}
 
   \bibitem{wpde}    Wikipedia DE: \\
-    \url{http://de.wikipedia.org/wiki/Elektrische_Energie#Elektrische_Energie_in_einem_elektrischen_Feld}\\
-    \url{http://de.wikipedia.org/wiki/Datei:Verschiedene_Schwingquarze.jpg}\\
-    \url{http://de.wikipedia.org/wiki/Datei:Schwingquarz-Ersatzschaltbild.png}\\
-    \url{http://de.wikipedia.org/wiki/Datei:BandpassSpulen.png}\\
-    \url{http://de.wikipedia.org/wiki/Datei:ResoTrafo_3.svg}\\
-
-  \bibitem{wpen} Wikipedia EN:\\
-    \url{http://en.wikipedia.org/wiki/File:Tuned_circuit_animation_3.gif}\\
-
-  \bibitem{wmde} Wikimedia DE:\\
-    \url{http://commons.wikimedia.org/wiki/File:LC_circuit_4_times_new_version.svg?uselang=de}\\
-    \vspace{1cm}
-  \bibitem{wmen} Wikimedia EN:\\
-    \url{http://commons.wikimedia.org/wiki/File:RLC_series_circuit_v1.svg}\\
-    \url{http://commons.wikimedia.org/wiki/File:Resonanzwiderstand_serie.svg}\\
-    \url{http://commons.wikimedia.org/wiki/File:KondiSpuleWiderstandParallel.svg}\\
-    \url{http://commons.wikimedia.org/wiki/File:Resonanzwiderstand_parallel.svg}\\
+    \url{http://de.wikipedia.org/wiki/Elektrische_Energie#Elektrische_Energie_in_einem_elektrischen_Feld}
 
 \end{thebibliography}
 
