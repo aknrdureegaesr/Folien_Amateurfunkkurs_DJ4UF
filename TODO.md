@@ -13,6 +13,11 @@
     * bv01, bv02, bv03, bv07, bv13, bv10
 * frametitle-Systematik / Nicht ganz einheitlich
 * Texte entschlacken bzw. auf mehrere Folien verteilen
+* BV10
+    * Bandplan mit einpflegen
+    * http://www.dk0tu.de/blog/2012/11/27_Sporadic-E_QSO_mit_Spanien/
+      "Buzzwords" raushören, Ablauf erklären
+    * Kapitel muss eher dran sein für die Funkpraxis
 
 # Kurskoffer
 
