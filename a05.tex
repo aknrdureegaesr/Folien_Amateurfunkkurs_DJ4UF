@@ -10,8 +10,6 @@
 \date{Stand 18.05.2016}
 \input{texdata/titlepage}
 
-%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
-
 \section*{Wiederholung}
 
 \begin{frame}
@@ -27,15 +25,20 @@
 \begin{frame}
   \frametitle{Leitet die Siliziumdiode?}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a05/Leit_Diode.png}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a05/Leit_Diode.png}
+      \caption{Leitende und nicht leitende Dioden}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Diode Raumladungszone}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.7\textheight,keepaspectratio]{a05/diode_with_electrical_symbol.png}
-    \tiny \hyperlink{refs}{\cite{wm}} \\[3em]
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a05/diode_with_electrical_symbol.png}
+      \attribcaption{Raumladungszone}{Raffamaiden}{https://commons.wikimedia.org/wiki/File:PN_diode_with_electrical_symbol.svg}{\ccbysa}
+    \end{figure}
     \large Wie, wo und warum bildet sich eine Raumladungszone (RLZ), auch Verarmungszone genannt, in der pn-Diode aus?
   \end{center}
 \end{frame}
@@ -43,9 +46,12 @@
 \begin{frame}
   \frametitle{Leitet die Siliziumdiode?}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.65\textheight,keepaspectratio]{a05/Pn_Junction_Diffusion_and_Drift.pdf}\\
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.5\textheight,keepaspectratio]{a05/Pn_Junction_Diffusion_and_Drift.pdf}
+      \attribcaption{Diffusionsstrom}{Inductiveload}{https://commons.wikimedia.org/wiki/File:Pn_Junction_Diffusion_and_Drift.svg}{\ccpd}
+    \end{figure}
     \emph{Durch Ausgleichsbewegungen (Diffusionsstrom) zwischen dem p- und dem n-Gebiet wird die RLZ gebildet.\\
-    Dort gibt es keine frei beweglichen Ladungsträger mehr.}\
+    Dort gibt es keine frei beweglichen Ladungsträger mehr.}
   \end{center}
 \end{frame}
 
@@ -53,8 +59,10 @@
   \frametitle{Diodenkennlinien}
   \begin{columns}[c]
     \column[c]{.5\textwidth}
-    \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a05/tc511.png}\\
-    {\tiny Prüfungsfrage TC511}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a05/tc511.png}
+      \caption{Prüfungsfrage TC511}
+    \end{figure}
     \column{.45\textwidth}
     Welcher Diodentyp hat welche Kennlinie?
     \begin{description}
@@ -73,9 +81,14 @@
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth,height=.3\textheight,keepaspectratio]{a05/Diode-Schottky-EN_A-K.png}\\
-      \includegraphics[width=0.8\textwidth,height=.6\textheight,keepaspectratio]{a05/AusfuerungsformenSchottkyDiode.png}
-      \tiny \hyperlink{refs}{\cite{wm}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.1\textheight,keepaspectratio]{a05/Diode-Schottky-EN_A-K.png}
+        \attribcaption{Schaltzeichen einer Schottky-Diode}{GregorioW}{https://commons.wikimedia.org/wiki/File:Diode-Schottky-EN_A-K.svg?uselang=de}{\ccbysa}
+      \end{figure}
+      \begin{figure}
+        \includegraphics[width=0.8\textwidth,height=.4\textheight,keepaspectratio]{a05/AusfuerungsformenSchottkyDiode.png}
+        \attribcaption{Ausführungsformen einer Schottky-Diode}{Patrick-Emil Zörner}{http://commons.wikimedia.org/wiki/File:AusfuerungsformenSchottkyDiode.png}{\ccbysa}
+      \end{figure}
     \end{center}
     \column{.45\textwidth}
     \begin{itemize}
@@ -93,9 +106,14 @@
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth,height=.3\textheight,keepaspectratio]{a05/Varicap_symbol.png}\\
-      \includegraphics[width=0.73\textwidth,height=.55\textheight,keepaspectratio]{a05/Varactor_function.png}
-      \tiny \hyperlink{refs}{\cite{wm}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.15\textheight,keepaspectratio]{a05/Varicap_symbol.png}
+        \attribcaption{Schaltzeichen Varicap}{Omegatron}{http://commons.wikimedia.org/wiki/File:Varicap_symbol.svg}{\ccbysa}
+      \end{figure}
+      \begin{figure}
+        \includegraphics[width=0.8\textwidth,height=.4\textheight,keepaspectratio]{a05/Varactor_function.png}
+        \attribcaption{Funktion Varicap}{Shaddack}{https://commons.wikimedia.org/wiki/File:Varactor_function.svg}{\ccpd}
+      \end{figure}
     \end{center}
     \column{.45\textwidth}
     \begin{itemize}
@@ -112,7 +130,10 @@
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=.8\textwidth,height=.3\textheight,keepaspectratio]{a05/z-diode.png}
+      \begin{figure}
+        \includegraphics[width=.8\textwidth,height=.3\textheight,keepaspectratio]{a05/z-diode.png}
+        \caption{Schaltzeichen Z-Diode}
+      \end{figure}
     \end{center}
     \column{.45\textwidth}
     \begin{itemize}
@@ -126,8 +147,10 @@
 \begin{frame}
   \frametitle{Z-Diode}
   \begin{center}
-    \includegraphics[width=.7\textwidth,height=.75\textheight,keepaspectratio]{a05/Kennlinie_Z-Diode.png}
-    \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Kennlinie_Z-Diode.svg}}
+    \begin{figure}
+      \includegraphics[width=.7\textwidth,height=.75\textheight,keepaspectratio]{a05/Kennlinie_Z-Diode.png}
+      \attribcaption{Kennlinie Z-Diode}{Biezl}{https://commons.wikimedia.org/wiki/File:Kennlinie_Z-Diode.svg}{\ccpd}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -137,9 +160,14 @@
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth,height=.3\textheight,keepaspectratio]{a05/Symbol_Photodiode.png}\\
-      \includegraphics[width=0.8\textwidth,height=.55\textheight,keepaspectratio]{a05/Fotodio.jpg}
-      \tiny \hyperlink{refs}{\cite{wm}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.15\textheight,keepaspectratio]{a05/Symbol_Photodiode.png}
+        \attribcaption{Schaltzeichen Photodiode}{MovGP0}{https://commons.wikimedia.org/wiki/File:Symbol_Photodiode.svg}{\ccpd}
+      \end{figure}
+      \begin{figure}
+        \includegraphics[width=0.8\textwidth,height=.4\textheight,keepaspectratio]{a05/Fotodio.jpg}
+        \attribcaption{Verschiedene Si-Fotodioden, oben eine Ge-Fotodiode}{Ulfbastel}{https://commons.wikimedia.org/wiki/File:Fotodio.jpg}{\ccbysa}
+      \end{figure}
     \end{center}
     \column{.45\textwidth}
     \begin{itemize}
@@ -153,16 +181,20 @@
 \begin{frame}
   \frametitle{Solarzelle}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a05/Solarzelle_Funktionsprinzip2.png}\\
-    \tiny \hyperlink{refs}{\cite{wm}}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a05/Solarzelle_Funktionsprinzip2.png}
+      \attribcaption{Entscheidend für das Verständnis ist ein elektrisches Feld, das im Material ständig vorhanden ist.}{Degreen}{ https://commons.wikimedia.org/wiki/File:Solarzelle_Funktionsprinzip2.svg}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Kennlinie Solar + Fotodiode}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a05/Kennlinie_Photodiode_1.png}\\
-    \tiny \hyperlink{refs}{\cite{wm}}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a05/Kennlinie_Photodiode_1.png}
+      \attribcaption{Kennlinie einer Photodiode}{Gegor Hess (Ghe42)}{https://commons.wikimedia.org/wiki/File:Kennlinie_Photodiode_1.png}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -172,9 +204,14 @@
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth,height=.3\textheight,keepaspectratio]{a05/Symbol_LED.png}\\
-      \includegraphics[width=0.8\textwidth,height=.55\textheight,keepaspectratio]{a05/Verschiedene_LEDs.jpg}
-      \tiny \hyperlink{refs}{\cite{wm}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.15\textheight,keepaspectratio]{a05/Symbol_LED.png}
+        \attribcaption{Schaltzeichen einer Leuchtdiode}{MovGP0}{https://commons.wikimedia.org/wiki/File:Symbol_LED.svg}{\ccpd}
+      \end{figure}
+      \begin{figure}
+        \includegraphics[width=0.8\textwidth,height=.55\textheight,keepaspectratio]{a05/Verschiedene_LEDs.jpg}
+        \attribcaption{LEDs in verschiedenen Gehäusen}{Afrank99}{https://commons.wikimedia.org/wiki/File:Verschiedene_LEDs.jpg}{\ccbysa}
+      \end{figure}
     \end{center}
     \column{.45\textwidth}
     \begin{itemize}
@@ -190,8 +227,11 @@
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth,height=.4\textheight,keepaspectratio]{a05/Optokoppler_Aus.png}\\
-      \includegraphics[width=1\textwidth,height=.4\textheight,keepaspectratio]{a05/Optokoppler_An.png}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.35\textheight,keepaspectratio]{a05/Optokoppler_Aus.png}\\
+        \includegraphics[width=1\textwidth,height=.35\textheight,keepaspectratio]{a05/Optokoppler_An.png}
+        \attribcaption{Funktionsprinzip eines Optokopplers (animiertes GIF)}{Stefan Riepl}{http://commons.wikimedia.org/wiki/File:Optokoppler.gif}{\ccbysa}
+      \end{figure}
       \tiny \hyperlink{refs}{\cite{wm}}
     \end{center}
     \column{.45\textwidth}
@@ -211,8 +251,10 @@
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth]{a05/spannungsBegrenz.png}\\
-      \tiny \hyperlink{refs}{\cite{wm}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a05/spannungsBegrenz.png}
+        \caption{Dioden zur Spannungsbegrenzung}
+      \end{figure}
     \end{center}
     \column{.45\textwidth}
     \begin{itemize}
@@ -229,8 +271,10 @@
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth]{a05/TC527.png}\\
-      \tiny \hyperlink{refs}{\cite{bna}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a05/TC527.png}
+        \caption{TC527}
+      \end{figure}
     \end{center}
     \column{.45\textwidth}
     Der Sonnenkollektor liefert $U_1 = 14.9V$. \\[0.2em]
@@ -247,8 +291,10 @@
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a05/Brueckengleichrichter_Bilder.jpg}\\
-      \tiny \hyperlink{refs}{\cite{wm}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a05/Brueckengleichrichter_Bilder.jpg}
+        \attribcaption{Brückengleichrichter unterschiedlicher Bauformen}{Smial}{https://commons.wikimedia.org/wiki/File:Brueckengleichrichter_IMGP5380.jpg}{\ccbysa}
+      \end{figure}
     \end{center}
     \column{.45\textwidth}
     \begin{itemize}
@@ -262,8 +308,10 @@
 \begin{frame}
   \frametitle{Einweggleichrichtung}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a05/Halfwave_rectifier.png}\\
-    \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a05/Halfwave_rectifier.png}
+      \attribcaption{Einweggleichrichtung}{Wdwd}{https://commons.wikimedia.org/wiki/File:Halfwave.rectifier.en.svg}{\ccby}
+    \end{figure}
     \begin{itemize}
       \item Nur obere Halbwelle, also sehr hohe Verluste
       \item Einfach aufzubauen
@@ -275,8 +323,10 @@
 \begin{frame}
   \frametitle{Vollweggleichrichtung}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a05/Fullwave_rectifier.png}\\
-    \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a05/Fullwave_rectifier.png}
+      \attribcaption{Vollweggleichrichtung}{Wdwd}{https://commons.wikimedia.org/wiki/File:Fullwave.rectifier.en.svg}{\ccby}
+    \end{figure}
     \begin{itemize}
       \item Obere und untere Halbwelle, also deutlich weniger Verluste
       \item Schwieriger aufzubauen
@@ -289,8 +339,10 @@
 \begin{frame}
   \frametitle{Brückengleichrichtung}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a05/Gratz_rectifier.png}\\
-    \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a05/Gratz_rectifier.png}
+      \attribcaption{Grätz (Brücken-)Gleichrichter}{Wdwd}{https://commons.wikimedia.org/wiki/File:Gratz.rectifier.en.svg}{\ccby}
+    \end{figure}
     \begin{itemize}
       \item Obere und untere Halbwelle, also deutlich weniger Verluste
       \item Schwieriger aufzubauen
@@ -305,8 +357,10 @@
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth]{a05/Smoothed_ripple.png}\\
-      \tiny \hyperlink{refs}{\cite{wm}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a05/Smoothed_ripple.png}
+        \attribcaption{Restwelligkeit (rot) einer gleichgerichteten Wechselspannung (grau gestrichelt).}{SpinningSpark}{https://commons.wikimedia.org/wiki/File:Smoothed_ripple.svg}{\ccbysa}
+      \end{figure}
     \end{center}
     \column{.45\textwidth}
     \begin{itemize}
@@ -331,8 +385,10 @@
 \begin{frame}
   \frametitle{Gleichspannungsrückgewinnung}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a05/Positive_Voltage_Clamping_Circuit.png}\\
-    \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a05/Positive_Voltage_Clamping_Circuit.png}
+      \attribcaption{Positive voltage clamping circuit}{Jack1993jack}{https://en.wikipedia.org/wiki/File:Positive_Voltage_Clamping_Circuit.svg}{\ccbysa}
+    \end{figure}
     \begin{itemize}
       \item Wird benutzt um das Signal anzuheben
       \item Wird z.B. bei Verstärkerschaltungen benötigt
@@ -350,32 +406,12 @@
 \begin{thebibliography}{}
   \bibitem{darc}  DARC Online-Lehrgang Lektion A05:
     \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a05/}
-  \bibitem{wm}  Wikimedia:
-    \url{https://en.wikipedia.org/wiki/File:PN_diode_with_electrical_symbol.svg}
-    \url{https://commons.wikimedia.org/wiki/File:Pn_Junction_Diffusion_and_Drift.svg}
-    \url{http://commons.wikimedia.org/wiki/File:AusfuerungsformenSchottkyDiode.png}
-    \url{http://de.wikipedia.org/wiki/Datei:Diode-Schottky-EN_A-K.svg}
-    \url{http://commons.wikimedia.org/wiki/File:Varicap_symbol.svg}
-    \url{http://commons.wikimedia.org/wiki/File:Varactor_function.svg}
-    \url{http://commons.wikimedia.org/wiki/File:Solarzelle_Funktionsprinzip2.svg}
-    \url{https://commons.wikimedia.org/wiki/File:Kennlinie_Photodiode_1.png}
-    \url{https://commons.wikimedia.org/wiki/File:Verschiedene_LEDs.jpg}
-    \url{http://commons.wikimedia.org/wiki/File:Optokoppler.gif}
-    \url{https://commons.wikimedia.org/wiki/File:Brueckengleichrichter_IMGP5380.jpg}
-    \url{https://de.wikipedia.org/wiki/Datei:Halfwave.rectifier.en.svg}
-    \url{https://commons.wikimedia.org/wiki/File:Gratz.rectifier.en.svg}
-    \url{https://commons.wikimedia.org/wiki/File:Smoothed_ripple.svg}
-    \url{https://en.wikipedia.org/wiki/File:Positive_Voltage_Clamping_Circuit.svg}
-    \url{}
-    \url{}
   \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
     \url{https://de.wikipedia.org/wiki/Gleichrichter}
   \bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:
     \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
   \bibitem{fi}    Freie Inhalte (DK0TU):
     \url{http://www.dk0tu.de/Projekte/Freie_Inhalte/}
-  \bibitem{yu}    Youtube Video:
-    \url{https://www.youtube.com/watch?v=IcrBqCFLHIY}
 \end{thebibliography}
 
 \input{texdata/postamble}
