@@ -9,23 +9,22 @@
 \date{Stand 04.05.2016}
 \input{texdata/titlepage}
 
-%FIXME Referenzen/Fußnoten-Systematik vereinheitlichen
-%FIXME Abbildungsnummern nicht hard coded
-
 \section*{Aufbau}
 
 \begin{frame}
   \frametitle{Bipolarer Transistor}
-  \begin{minipage}{0.4\textwidth}
-    \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a06/NPN_hlb.png}\\
-    {\tiny Abb.\,1: Schichten eines NPN-Transistors}
-  \end{minipage}
-  \hspace{0.5cm}
-  \begin{minipage}{0.4\textwidth}
-    \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a06/PNP_hlb.png}\\
-    {\tiny Abb.\,2: Schichten eines PNP-Transistors}
-  \end{minipage}
-  \vspace{0.5cm}
+  \begin{columns}
+    \column{.4\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a06/NPN_hlb.png}
+      \caption{Schichten eines NPN-Transistors}
+    \end{figure}
+    \column{.4\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a06/PNP_hlb.png}
+      \caption{Schichten eines PNP-Transistors}
+    \end{figure}
+  \end{columns}
   \begin{center}
     \begin{itemize}
       \item Transistoren bestehen aus drei Halbleiterschichten
@@ -36,21 +35,22 @@
 
 \begin{frame}
   \frametitle{Ersatzschaltbild}
-  \begin{minipage}{0.4\textwidth}
-    \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a06/NPN_esb.png}\\
-    {\tiny Abb.\,3: ESB eines NPN-Transistors}
-  \end{minipage}
-  \hspace{0.5cm}
-  \begin{minipage}{0.4\textwidth}
-    \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e13/PNP_esb.png}\\
-    {\tiny Abb.\,4: ESB eines PNP-Transistors}
-  \end{minipage}
-  \vspace{2mm}
+  \begin{columns}
+    \column{.4\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a06/NPN_esb.png}
+      \caption{ESB eines NPN-Transistors}
+    \end{figure}
+    \column{.4\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e13/PNP_esb.png}
+      \caption{ESB eines PNP-Transistors}
+    \end{figure}
+  \end{columns}
   \begin{itemize}
     \item Basis-Emitterübergang muss in Durchlassrichtung gepolt sein
     \item Basis braucht ein um etwa 0,6 V höheres Potential als der Emitter
   \end{itemize}
-
 \end{frame}
 
 
@@ -58,8 +58,10 @@
 \begin{frame}
   \frametitle{Feldeffekt Transistor (FET)}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{a06/FET-aufbau.png}\\
-    {\tiny Abb.\,5: Aufbau eines J-FET~\cite{wp}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{a06/FET-aufbau.png}
+      \attribcaption{Eingefärbtes Schema eines n-Kanal Sperrschicht-FET (JFET)}{Arne Nordmann (norro)}{https://commons.wikimedia.org/wiki/File:Scheme_of_n-junction_field-effect_transistor_de.svg}{\ccbysa}
+    \end{figure}
     \begin{itemize}
       \item Gate steuert Kanalbreite durch Spannung
       \item Je dünner der Kanal, desto höher ist der Kanalwiderstand
@@ -69,30 +71,38 @@
 
 \begin{frame}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Isolierschicht-FET-intern.png}\\
-    {\tiny Abb.\,6: MOSFET in Planartechnologie~\cite{wmde}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Isolierschicht-FET-intern.png}
+      \attribcaption{Eingefärbter Technologiequerschnitt eines Metall-Oxid-Halbleiters FET (MOSFET)}{Arne Nordmann (norro)}{http://commons.wikimedia.org/wiki/File:Scheme_of_metal_oxide_semiconductor_field-effect_transistor.svg}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Weitere FET-Arten}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a06/FET-overview.png}\\
-    {\tiny Abb.\,7: Übersicht über FETs~\cite{wp}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a06/FET-overview.png}
+      \attribcaption{Übersicht von Feldeffekttransistoren mit zugehörigen Schaltzeichen (DIN)}{Cepheiden}{https://commons.wikimedia.org/wiki/File:FET-Typen_(mit_Schaltbildern).svg?uselang=de}{\ccpd}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/MOSFET-Symbole.png}\\
-    {\tiny Abb.\,8: Schaltzeichen des MOSFETS~\cite{wmde}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/MOSFET-Symbole.png}
+      \attribcaption{Schaltsymbole von MISFET-Transistoren (metal insulator semiconductor)}{Arne Nordmann (norro)}{https://commons.wikimedia.org/wiki/File:MISFET-Transistor_Symbole.svg?uselang=de}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{a06/Dual-Gate-MOSFET.png}\\
-    {\tiny Abb.\,9: Schaltzeichen eines Dual-Gate-MOSFETs}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{a06/Dual-Gate-MOSFET.png}
+      \caption{Schaltzeichen eines Dual-Gate-MOSFETs}
+    \end{figure}
   \end{center}
   \begin{itemize}
     \item Besitzt zwei Gateanschlüsse
@@ -124,60 +134,61 @@
 \section*{Bipolar\-transistor}
 \begin{frame}
   \frametitle{Anwendungen von Bipolartransistoren}
-  \begin{minipage}{0.4\textwidth}
+  \begin{columns}
+    \column{.4\textwidth}
     \begin{center}
-      {\Large Schalter}
-      \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a06/Transistor-Schalter.png}\\
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a06/Transistor-Schalter.png}
+        \attribcaption{Transistor als Schalter}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \end{figure}
     \end{center}
-  \end{minipage}
-  \hspace{3mm}
-  \begin{minipage}{0.4\textwidth}
+    \column{.4\textwidth}
     \begin{center}
-      {\Large Verstärker}
-      \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a06/Transistor-Verstaerker.png}\\
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a06/Transistor-Verstaerker.png}
+        \attribcaption{Transistor als Verstärker}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \end{figure}
     \end{center}
-  \end{minipage}\\
-  \vspace{3mm}
-  {\tiny Abb.\,10: Anwendungen von Transistoren~\cite{bnetza}}
-  \begin{itemize}
-    \item Transistoren können als Schalter oder als Verstärker genutzt werden
-  \end{itemize}
+  \end{columns}
+  Transistoren können als \textbf{Schalter} oder als \textbf{Verstärker} genutzt werden
 \end{frame}
 
 \section*{Anwendungen}
 \subsection*{Transistor als Schalter}
 \begin{frame}
   \frametitle{Transistor als Schalter}
-  \begin{minipage}{0.4\textwidth}
+  \begin{columns}
+    \column{.4\textwidth}
     \begin{center}
-      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Schalter.png}\\
-      {\tiny Abb.\,11: Transistor als Schalter mit Belastung gegen Masse~\cite{bnetza}}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Schalter.png}
+        \attribcaption{Transistor als Schalter mit Belastung gegen Masse}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \end{figure}
     \end{center}
-  \end{minipage}
-  \hspace{3mm}
-  \begin{minipage}{0.5\textwidth}
+    \column{.5\textwidth}
     \begin{itemize}
       \item $U_e = 0 V \rightarrow$ Transistor sperrt\\ $\rightarrow U_a = U_B$\\ $\Rightarrow$ Eingang 0, Ausgang 1
       \item $U_e \gg 0,6 V \rightarrow$ Transistor leitet\\ $\rightarrow U_a \approx 0.1 V$\\ $\Rightarrow$ Eingang 1, Ausgang 0
       \item Der Transistor erfüllt hier die Funktion eines \textbf{Inverters}
     \end{itemize}
-  \end{minipage}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
   \frametitle{Transistor mit Koppelkondensator als Schalter}
-  \begin{minipage}{0.4\textwidth}
+  \begin{columns}
+    \column{.4\textwidth}
     \begin{center}
-      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Schalter+C.png}\\
-      {\tiny Abb.\,12: Transistor mit Koppelkondensator als Schalter~\cite{bnetza}}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Schalter+C.png}
+        \attribcaption{Transistor mit Koppelkondensator als Schalter}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \end{figure}
     \end{center}
-  \end{minipage}
-  \hspace{3mm}
-  \begin{minipage}{0.5\textwidth}
+    \column{.4\textwidth}
     \begin{itemize}
       \item Der Kondensator blockt die Gleichspannung und bildet den Mittelwert der Wechselspannung
     \end{itemize}
-  \end{minipage}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -217,21 +228,22 @@
 
 \begin{frame}
   \frametitle{Transistor als Schalter mit Überspannungsschutzdiode}
-  \begin{minipage}{0.4\textwidth}
+  \begin{columns}
+    \column{.4\textwidth}
     \begin{center}
-      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Schalter+L.png}\\
-      {\tiny Abb.\,13: Transistor als Schalter einer Induktiven Last~\cite{bnetza}}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Schalter+L.png}
+        \attribcaption{Transistor als Schalter einer indkutiven Last}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \end{figure}
     \end{center}
-  \end{minipage}
-  \hspace{3mm}
-  \begin{minipage}{0.5\textwidth}
+    \column{.5\textwidth}
     \begin{itemize}
       \item Durch plötzliches Abschalten baut sich eine hohe Induktionsspannung auf
       \item Diese kann den Transistor zerstören
       \item Um das zu verhindern wird eine Diode parallel zur Spule eingebaut
       \item Diese führt die Induktionsspannung an dem Transistor vorbei ab
     \end{itemize}
-  \end{minipage}
+  \end{columns}
 \end{frame}
 
 % \begin{frame}
@@ -259,8 +271,10 @@
   \begin{columns}
     \column{.4\textwidth}
     \centering
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Verstaerker.png}\\
-    {\tiny Abb.\,14: Transistor als Spannungsverstärker~\cite{bnetza}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Verstaerker.png}
+      \attribcaption{Transistor als Spannungsverstärker}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
     \only<1>{
     \column{.5\textwidth}
     \begin{itemize}
@@ -332,12 +346,23 @@
 \subsection*{Basisvorspannung}
 \begin{frame}
   \frametitle{Generieren der Basisvorspannung}
-  \begin{center}
-    \includegraphics[width=.4\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Verstaerker.png}
-    \vspace{3mm}
-    \includegraphics[width=.4\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Verstaerker-C.png}\\
-    {\tiny Abb.\,17: Möglichkeiten die Basisvospannung zu erzeugen}
-  \end{center}
+  \begin{columns}
+    \column{.5\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a06/Transistor-Verstaerker.png}
+        \attribcaption{Transistor als Spannungsverstärker}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \end{figure}
+    \end{center}
+    \column{.5\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a06/Transistor-Verstaerker-C.png}
+        \attribcaption{Andere Möglichkeit die Basisvorspannung zu erzeugen}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+        \label{fig:spannungsteiler}
+      \end{figure}
+    \end{center}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -351,18 +376,21 @@
 \end{frame}
 
 \begin{frame}
-  % https://de.wikipedia.org/wiki/Arbeitspunkt#/media/File:Arbeitspunkt.PNG
-  \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{a06/Arbeitspunkt.png}\\
-  {\tiny Abb.\,30: Arbeitspunkteinstellung~\cite{wp}}
+  \begin{figure}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{a06/Arbeitspunkt.png}
+    \attribcaption{Arbeitspunkt eines Transistorverstärkers}{Honina}{https://commons.wikimedia.org/wiki/File:Arbeitspunkt.PNG}{\ccbysa}
+  \end{figure}
 \end{frame}
 
 \begin{frame}
   \frametitle{Einstellen des Arbeitspunktes}
   \begin{columns}
     \column{.5\textwidth}
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Kombiniertes_Kennlinienfeld_Transistor_2.pdf}
-    {\tiny Abb.\,31: Vierquadrantenkennlinienfeld \cite{wp}}
-    \column{.45\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a06/Kombiniertes_Kennlinienfeld_Transistor_2.pdf}
+      \attribcaption{Kombiniertes Kennlinienfeld eines Transistors}{Biezl}{https://commons.wikimedia.org/wiki/File:Kombiniertes_Kennlinienfeld_Transistor_2.svg}{\ccpd}
+    \end{figure}
+    \column{.5\textwidth}
     \begin{itemize}
         \only<1>{
       \item Will man den Arbeitspunkt eines Transistors mit der Vorspannung einstellen, muss man zwei Spannungen dimensionieren
@@ -378,7 +406,7 @@
       \item Um die Basisvorspannung zu erzeugen, gibt es zwei Möglichkeiten:
         \begin{itemize}
           \item mit einem Widerstand
-          \item mit einem Spannungsteiler (siehe Abb.\,17)
+          \item mit einem Spannungsteiler (siehe Abbildung~\autoref{fig:spannungsteiler})
         \end{itemize}
         }
     \end{itemize}
@@ -387,14 +415,15 @@
 
 \begin{frame}
   \frametitle{Arbeitspunktstabilisierung durch Stromgegenkopplung}
-  \begin{minipage}{0.4\textwidth}
+  \begin{columns}
+    \column{.4\textwidth}
     \begin{center}
-      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Verstaerker-APstab1.png}\\
-      {\tiny Abb.\,18: Transistor als Spannungsverstärker~\cite{bnetza}}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Verstaerker-APstab1.png}
+        \attribcaption{Transistor als Spannungsverstärker}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \end{figure}
     \end{center}
-  \end{minipage}
-  \hspace{3mm}
-  \begin{minipage}{0.5\textwidth}
+    \column{.5\textwidth}
     % $U_2$ = konstant
     % $I_C$ steigt $\rightarrow I_E$ steigt $\rightarrow U_{R3}$ steigt $\rightarrow U_{R2} = U_{R3} + U_{BE} \rightarrow U_{BE}$ sinkt $\rightarrow $Transistor sperrt$ \rightarrow I_C sinkt$
     \begin{itemize}
@@ -403,7 +432,7 @@
       \item Bei kleinerer $U_{BE}$ sinkt $I_B$ und damit $I_C$ und $I_E$
       \item Die Spannung $U_{R3}$ wird wieder kleiner und $U_{BE}$ wieder größer
     \end{itemize}
-  \end{minipage}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -425,29 +454,40 @@
 
 \begin{frame}
   \frametitle{Arbeitspunktstabilisierung durch Spannungsgegenkopplung}
-  \begin{center}
-    \includegraphics[width=.4\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Verstaerker-APstab2a.png}
-    \vspace{3mm}
-    \includegraphics[width=.4\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Verstaerker-APstab2b.png}\\
-    {\tiny Abb.\,19: Möglichkeiten zur Arbeitspunktstabilisierung via Spannungsgegenkopplung}
-  \end{center}
+  \begin{columns}
+    \column{.5\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a06/Transistor-Verstaerker-APstab2a.png}
+        \attribcaption{Eine Möglichkeit zur Spannungsgegenkopplung}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \end{figure}
+    \end{center}
+    \column{.5\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a06/Transistor-Verstaerker-APstab2b.png}
+        \attribcaption{Eine andere Möglichkeit zur Spannungsgegenkopplung}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \end{figure}
+    \end{center}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
-  \begin{minipage}{0.4\textwidth}
+  \begin{columns}
+    \column{.4\textwidth}
     \begin{center}
-      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Verstaerker-APstab2a.png}\\
-      {\tiny Abb.\,20: Transistor als Spannungsverstärker~\cite{bnetza}}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Transistor-Verstaerker-APstab2a.png}
+        \attribcaption{Transistor als Spannungsverstärker}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \end{figure}
     \end{center}
-  \end{minipage}
-  \hspace{3mm}
-  \begin{minipage}{0.5\textwidth}
+    \column{.5\textwidth}
     \begin{itemize}
       \item $R_1$ stabilisiert gegen thermischen Einfluss
       \item $I_C$ steigt $\rightarrow U_{CE}$ sinkt $\rightarrow U_{BE}$ sinkt
         $\rightarrow$ Transistor ``sperrt'' $\rightarrow I_C$ sinkt wieder
     \end{itemize}
-  \end{minipage}
+  \end{columns}
 \end{frame}
 
 \subsection*{Grundschaltungen}
@@ -456,7 +496,7 @@
   \begin{small}
     \begin{tabular}{|c|c|c|c|}
       \hline
-      " " &Emitterschaltung & Kollektorschaltung & Basisschaltung \\ \hline
+      " " & Emitterschaltung & Kollektorschaltung & Basisschaltung \\ \hline
       " "     & \includegraphics[width=.3\textwidth,height=.3\textheight,keepaspectratio]{a06/Emitterschaltung.png}
       & \includegraphics[width=.3\textwidth,height=.3\textheight,keepaspectratio]{a06/Kollektorschaltung.png}
       & \includegraphics[width=.3\textwidth,height=.3\textheight,keepaspectratio]{a06/Basisschaltung.png} \\ \hline
@@ -468,6 +508,9 @@
       $\varphi_u$ & gegenphasig $180^{\circ}$ & gleichphasig $0^{\circ}$ & gleichphasig $0^{\circ}$ \\ \hline
     \end{tabular}
   \end{small}
+  \begin{figure}
+    \attribcaption{Transistorgrundschaltungen}{Frank Murmann}{https://commons.wikimedia.org/wiki/File:Transistorgrundschaltungen.svg}{\ccpd}
+  \end{figure}
 \end{frame}
 
 \begin{frame}
@@ -480,17 +523,22 @@
 \begin{frame}
   \frametitle{Integierte Schaltung}
   Heutzutage komplexe Schaltungen auf einem Halbleiterkristall
-  \begin{minipage}{0.3\textwidth}
-    \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{a06/IC.jpg}\\
-    {\tiny Abb.\,21: IC auf einer Platine~\cite{wp}}
-  \end{minipage}
-  \hspace{0.5cm}
-  \begin{minipage}{0.5\textwidth}
+  \begin{columns}
+    \column{.5\textwidth}
     \begin{center}
-      \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{a06/IC2.jpg}\\
-      {\tiny Abb.\,22: Offener IC~\cite{wpen}}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{a06/IC.jpg}
+        \attribcaption{Ic auf Platine}{Luestling}{https://commons.wikimedia.org/wiki/File:Chips_3_bg_102602.jpg}{\ccpd}
+      \end{figure}
     \end{center}
-  \end{minipage}
+    \column{.6\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{a06/IC2.jpg}
+        \attribcaption{Offener IC Intel 8742}{Ioan Sameli}{https://en.wikipedia.org/wiki/File:Intel_8742_153056995.jpg}{\ccbysa}
+      \end{figure}
+    \end{center}
+  \end{columns}
 \end{frame}
 
 \section*{Operations\-verstärker}
@@ -498,60 +546,66 @@
 \begin{frame}
   \frametitle{Operationsverstärker}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/OPV-intern.png}\\
-    {\tiny Abb.\,23: Innerer Aufbau eines OPVs~\cite{wp}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/OPV-intern.png}
+      \attribcaption{Innerer Aufbau eines OPVs}{Daniel Braun, bearbeitet von Cepheiden}{https://commons.wikimedia.org/wiki/File:OpAmpTransistorLevel_Colored_DE.svg}{\ccby}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Invertierender Verstärker}
-  \begin{minipage}{0.4\textwidth}
+  \begin{columns}
+    \column{.4\textwidth}
     \begin{center}
-      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/OPV-Inverter.png}\\
-      {\tiny Abb.\,24: OPV als invertierender Verstärker}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/OPV-Inverter.png}
+        \attribcaption{OPV als invertierender Verstärker}{Quelle unbekannt}{}{}
+      \end{figure}
     \end{center}
-  \end{minipage}
-  \hspace{2pc}
-  \begin{minipage}{0.5\textwidth}
+    \column{.5\textwidth}
     \centering
     \begin{block}{Invertierender Verstärker}
       $v_u = -\cfrac{U_A}{U_E} = -\cfrac{R_2}{R_1}$
     \end{block}
-  \end{minipage}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
   \frametitle{Nicht-invertierender Verstärker}
-  \begin{minipage}{0.4\textwidth}
+  \begin{columns}
+    \column{.4\textwidth}
     \begin{center}
-      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/OPV-nonInverter.png}\\
-      {\tiny Abb.\,25: OPV als nicht-invertierender Verstärker}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/OPV-nonInverter.png}
+        \attribcaption{OPV als nichtinvertierender Verstärker}{Quelle unbekannt}{}{}
+      \end{figure}
     \end{center}
-  \end{minipage}
-  \hspace{2pc}
-  \begin{minipage}{0.5\textwidth}
+    \column{.5\textwidth}
     \centering
     \begin{block}{Nicht-invertierender Verstärker}
       $v_u = \cfrac{U_A}{U_E} = 1+\cfrac{R_2}{R_1}$
     \end{block}
     Wird häufig als Impedanzwandler eingesetzt
-  \end{minipage}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
   \frametitle{Impedanzwandler}
-  \begin{minipage}{0.4\textwidth}
+  \begin{columns}
+    \column{.4\textwidth}
     \begin{center}
-      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Impedanzwandler.png}\\
-      {\tiny Abb.\,26: OPV als Impedanzwandler}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/Impedanzwandler.png}
+        \attribcaption{OPV als Imepdanzwandler}{Quelle unbekannt}{}{}
+      \end{figure}
     \end{center}
-  \end{minipage}
-  \begin{minipage}{0.5\textwidth}
+    \column{.5\textwidth}
     \begin{itemize}
       \item Besitzt sehr großen Eingangswiderstand und sehr kleinen Ausgangswiderstand
       \item Ist quasi ein nicht-invertierender Verstärker mit $R_2 = 0 \Omega$ und $R_1 = \infty\Omega$
     \end{itemize}
-  \end{minipage}
+  \end{columns}
 \end{frame}
 
 
@@ -565,8 +619,10 @@
 
 \begin{frame}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a06/Roehren.jpg}\\
-    {\tiny Abb.\,27: Verschiedene Elektronenröhren~\cite{wmde}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a06/Roehren.jpg}
+      \attribcaption{Verschiedene Elektronenröhren}{Stefan Riepl (Quark48)}{https://commons.wikimedia.org/wiki/File:Elektronenroehren-auswahl.jpg}{\ccbysa}
+    \end{figure}
   \end{center}
   \begin{itemize}
     \item Arbeiten mit hohen Spannungen und geringen Strömen
@@ -576,12 +632,13 @@
 
 \begin{frame}
   \frametitle{Die Röhre}
-  \begin{minipage}{0.3\textwidth}
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a06/ERohre.png}\\
-    {\tiny Abb.\,28: Symbol einer Triode~\cite{wp}}
-  \end{minipage}
-  \hspace{0.5cm}
-  \begin{minipage}{0.5\textwidth}
+  \begin{columns}
+    \column{.3\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a06/ERohre.png}
+      \attribcaption{Symbol einer Triode}{RokerHRO, geändert von Fgli}{https://commons.wikimedia.org/wiki/File:Triode-Symbol_de.svg}{\ccpd}
+    \end{figure}
+    \column{.7\textwidth}
     \begin{small}
       \begin{itemize}
         \item Heizung löst Elektronen aus Kathode
@@ -591,10 +648,12 @@
       \end{itemize}
     \end{small}
     \begin{center}
-      \includegraphics[scale=0.4 ]{a06/Triode.jpg}\\
-      {\tiny Abb.\,29: Triode aus alten Fabfernsehern~\cite{wp}}
+      \begin{figure}
+        \includegraphics[scale=0.4 ]{a06/Triode.jpg}
+        \attribcaption{Strahltriode aus altem Fernseher}{Ulfbastel}{https://de.wikipedia.org/wiki/Datei:Strahltriode.jpg}{\ccpd}
+      \end{figure}
     \end{center}
-  \end{minipage}
+  \end{columns}
 \end{frame}
 
 % \begin{frame}
@@ -615,34 +674,8 @@
 \footnotesize
 
 \begin{thebibliography}{}
-  \bibitem{e03}   Moltrecht A 06: \\
+  \bibitem{a06}   Moltrecht A 06: \\
     \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a06/}
-
-  \bibitem{bnetza} Fragenkatalog Technik Klasse A der Bundesnetzagentur:\\
-    \url{http://snh.rp-online.de/download/technika.pdf}
-
-  \bibitem{wp}    Wikipedia DE: \\
-    \url{http://de.wikipedia.org/wiki/Datei:Scheme_of_n-junction_field-effect_transistor_de.svg}
-    \url{http://de.wikipedia.org/wiki/Datei:FET-Typen_(mit_Schaltbildern).svg}
-    \url{http://de.wikipedia.org/wiki/Datei:Op-amp_symbol.svg}
-    \url{http://de.wikipedia.org/wiki/Datei:Normsymbol_OPV.svg}
-    \url{http://de.wikipedia.org/wiki/Datei:OpAmpTransistorLevel_Colored_DE.svg}
-    \url{http://de.wikipedia.org/wiki/Datei:Chips_3_bg_102602.jpg}
-    \url{http://de.wikipedia.org/wiki/Datei:Triode-Symbol_de.svg}
-    \url{http://de.wikipedia.org/wiki/Datei:Strahltriode.jpg}
-    \url{http://de.wikipedia.org/wiki/Arbeitspunkt#/media/File:Arbeitspunkt.PNG}
-    \url{http://de.wikipedia.org/wiki/Bipolartransistor#/media/File:Kombiniertes_Kennlinienfeld_Transistor_2.svg}
-
-  \bibitem{wpen} Wikipedia EN:\\
-    \url{http://en.wikipedia.org/wiki/File:Intel_8742_153056995.jpg}
-
-  \bibitem{wmde} Wikimedia DE:\\
-    \url{http://commons.wikimedia.org/wiki/File:Scheme_of_metal_oxide_semiconductor_field-effect_transistor.svg?uselang=de}
-    \url{http://commons.wikimedia.org/wiki/File:MISFET-Transistor_Symbole.svg?uselang=de}
-    \url{http://commons.wikimedia.org/wiki/File:Elektronenroehren-auswahl.jpg}
-
-  \bibitem{wmen} Wikimedia EN:\\
-    \url{http://commons.wikimedia.org/wiki/File:Transistorgrundschaltungen.svg}\
 
   \bibitem{yu}    Youtube Video “How Does a Transistor Work?”:
     \url{https://www.youtube.com/watch?v=IcrBqCFLHIY}
