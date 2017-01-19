@@ -4,7 +4,7 @@
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse A 13: \\
-          Frequenzaufbereitung \\[2em]}
+Frequenzaufbereitung \\[2em]}
 \date{Stand 17.06.2016}
 \input{texdata/titlepage}
 
@@ -23,36 +23,36 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Überblick}
+  \frametitle{Überblick}
 
-    Bereits bekannt aus Kapitel \emph{E15}: \\[2em]
+  Bereits bekannt aus Kapitel \emph{E15}: \\[2em]
 
-    Signal im Basisband muss für die Übertragung auf einen HF-Träger
-    ``aufgeprägt'' werden.
+  Signal im Basisband muss für die Übertragung auf einen HF-Träger
+  ``aufgeprägt'' werden.
 \end{frame}
 
 \begin{frame}
-    \frametitle{Überblick}
+  \frametitle{Überblick}
 
-    Wozu Frequenzaufbereitung?\\[2em]
-    Wo liegen die klassischen Kurzwellenbänder und
-    was fällt dabei auf?
+  Wozu Frequenzaufbereitung?\\[2em]
+  Wo liegen die klassischen Kurzwellenbänder und
+  was fällt dabei auf?
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Überblick}
+  \frametitle{Überblick}
 
-    ``Klassische'' Amateurfunkbänder: \\[2em]
+  ``Klassische'' Amateurfunkbänder: \\[2em]
 
-    3,5 -- 7 -- 14 -- 21 -- 29 -- 145 -- 435 MHz (80m, 40m, 20m, 15m, 10m, 2m, 70cm)
-    \only<2>{$3,5 \times2 \rightarrow 7 \times2 \rightarrow 14 \times1,5 \rightarrow 21 \times1,5 \rightarrow 29 \times5 \rightarrow 145 \times3 \rightarrow 435$ MHz}
+  3,5 -- 7 -- 14 -- 21 -- 29 -- 145 -- 435 MHz (80m, 40m, 20m, 15m, 10m, 2m, 70cm)
+  \only<2>{$3,5 \times2 \rightarrow 7 \times2 \rightarrow 14 \times1,5 \rightarrow 21 \times1,5 \rightarrow 29 \times5 \rightarrow 145 \times3 \rightarrow 435$ MHz}
 
-    \vspace{3em}
+  \vspace{3em}
 
-    Außerdem später hinzu gekommen: \\[2em]
+  Außerdem später hinzu gekommen: \\[2em]
 
-    1,8 -- 5 -- 10 -- 18 -- 25 -- 50 (160m, 60m, 30m, 17m, 12m, 6m)
+  1,8 -- 5 -- 10 -- 18 -- 25 -- 50 (160m, 60m, 30m, 17m, 12m, 6m)
 
 
 \end{frame}
@@ -62,28 +62,28 @@
 \subsection{Vervielfacher}
 
 \begin{frame}
-    \frametitle{Frequenzvervielfacher}
+  \frametitle{Frequenzvervielfacher}
 
-    \begin{columns}
-      \column{.5\textwidth}
-      \begin{center}
-        \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a13/TG103a.png}
-        {\tiny (TG103)}
-      \end{center}
-      \column{.45\textwidth}
-      \begin{itemize}
-        \item Oberwellen bleiben in Amateurfunkbändern
-        \item Senderaufbau durch Frequenzvervielfacher
-        \item aufbauend auf stabilen 3,5MHz Oszillator
-      \end{itemize}
-    \end{columns}
+  \begin{columns}
+    \column{.5\textwidth}
+    \begin{center}
+      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a13/TG103a.png}
+      {\tiny (TG103)}
+    \end{center}
+    \column{.45\textwidth}
+    \begin{itemize}
+      \item Oberwellen bleiben in Amateurfunkbändern
+      \item Senderaufbau durch Frequenzvervielfacher
+      \item aufbauend auf stabilen 3,5MHz Oszillator
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
   \begin{tabular}{l||p{.8\textwidth}}\hline
     \textbf{TG103} & \textbf{Das Blockschaltbild stellt einen Mehrbandsender dar. Welche Frequenz entsteht am Ausgang X, wenn der VFO auf 3,51 MHz eingestellt ist?}
 
-      \includegraphics[width=.8\textwidth,height=.6\textheight,keepaspectratio]{a13/TG103a.png}\\ \hline \hline
+    \includegraphics[width=.8\textwidth,height=.6\textheight,keepaspectratio]{a13/TG103a.png}\\ \hline \hline
     A & 3,55 MHz. \\ \hline
     B & 7,02 MHz. \\ \hline
     C & 21,06 MHz. \\ \hline
@@ -93,17 +93,17 @@
 
 
 \begin{frame}
-    \frametitle{Frequenzvervielfacher}
+  \frametitle{Frequenzvervielfacher}
 
-    Bei FM darauf achten, dass sich auch der Hub vervielfacht!
+  Bei FM darauf achten, dass sich auch der Hub vervielfacht!
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TG102.png}
-	{\tiny (TG102)}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TG102.png}
+    {\tiny (TG102)}
+  \end{center}
 
-    Abhilfe z.B. durch Antiparallelschaltung von Dioden.\footnote{Einstellung durch
-    den Widerstand}
+  Abhilfe z.B. durch Antiparallelschaltung von Dioden.\footnote{Einstellung durch
+  den Widerstand}
 
 \end{frame}
 
@@ -112,24 +112,24 @@
 \subsubsection{Einfachmischer}
 
 \begin{frame}
-    \frametitle{Einfachmischer}
+  \frametitle{Einfachmischer}
 
-    Vervielfachung ist nur bei CW und FM sinnvoll. Hub zeigt, dass Modulation ``auseinandergezogen wird'' -- bei SSB würde das Seitenband auch entsprechend vervielfacht werden und der Abstand zum Träger gerät größer.
+  Vervielfachung ist nur bei CW und FM sinnvoll. Hub zeigt, dass Modulation ``auseinandergezogen wird'' -- bei SSB würde das Seitenband auch entsprechend vervielfacht werden und der Abstand zum Träger gerät größer.
 
-    \begin{center}
-        \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{a13/TG226.png}
-	{\tiny (TG226)}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{a13/TG226.png}
+    {\tiny (TG226)}
+  \end{center}
 
-    Mischer sind bereits aus der Modulation bekannt. Anwendung hier:
-    Up-/Downconversion.
+  Mischer sind bereits aus der Modulation bekannt. Anwendung hier:
+  Up-/Downconversion.
 \end{frame}
 
 \begin{frame}
   \begin{tabular}{l||p{.8\textwidth}}\hline
     \textbf{TG226} & \textbf{Welche wesentlichen Ausgangsfrequenzen erzeugt die in der Abbildung dargestellte Stufe?}
 
-      \includegraphics[width=.6\textwidth,height=.4\textheight,keepaspectratio]{a13/TG226.png} \\ \hline\hline
+    \includegraphics[width=.6\textwidth,height=.4\textheight,keepaspectratio]{a13/TG226.png} \\ \hline\hline
     A & 21,4 und 105,4 MHz \\ \hline
     B & 42 und 53,4 MHz \\ \hline
     C & 21 und 63,4 MHz \\ \hline
@@ -172,36 +172,36 @@
 \subsubsection{Balance-Mischer}
 
 \begin{frame}
-    \frametitle{Balance-Mischer}
+  \frametitle{Balance-Mischer}
 
-    SSB-Aufbereitung mit einem 9-MHz-Quarzfilter (balancierter Ringmischer)
+  SSB-Aufbereitung mit einem 9-MHz-Quarzfilter (balancierter Ringmischer)
 
-    \begin{center}
-        \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{a13/TG106.png}
-	{\tiny (TG106)}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{a13/TG106.png}
+    {\tiny (TG106)}
+  \end{center}
 
-    {\small CO LSB: $9,0015MHz$; CO USB: $8,9985MHz$}\\[.5em]
+  {\small CO LSB: $9,0015MHz$; CO USB: $8,9985MHz$}\\[.5em]
 
-    Ein fester Bandpassfilter bei $9MHz$ mit $\pm1,2kHz$ Bandbreite lässt nur eines der beiden Seitenbänder durch.
+  Ein fester Bandpassfilter bei $9MHz$ mit $\pm1,2kHz$ Bandbreite lässt nur eines der beiden Seitenbänder durch.
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Balance-Mischer}
+  \frametitle{Balance-Mischer}
 
-    Der gesamte Sendepfad würde so aussehen:
+  Der gesamte Sendepfad würde so aussehen:
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TG101.png}
-	{\tiny (TG101)}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TG101.png}
+    {\tiny (TG101)}
+  \end{center}
 
-    Was wird nach der SSB-Mischstufe benötigt?
-    \vspace{2em}
-    \pause
+  Was wird nach der SSB-Mischstufe benötigt?
+  \vspace{2em}
+  \pause
 
-    Ein Quarzfilter als Seitenbandsperre.
+  Ein Quarzfilter als Seitenbandsperre.
 
 \end{frame}
 
@@ -219,54 +219,54 @@
 \subsection{VCO-PLL}
 
 \begin{frame}
-    \frametitle{Phasenregelung}
+  \frametitle{Phasenregelung}
 
-    Phasenregelschleifen dienen zum Angleichen zweier Phasen.
+  Phasenregelschleifen dienen zum Angleichen zweier Phasen.
 
-    \bigskip
+  \bigskip
 
-    Hier: \textbf{VCO-PLL} (voltage controlled oscillator phase locked loop)
+  Hier: \textbf{VCO-PLL} (voltage controlled oscillator phase locked loop)
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{VCO-PLL}
+  \frametitle{VCO-PLL}
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth,height=.4\textheight,keepaspectratio]{a13/TD701.png}
-	{\tiny (TD701)}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth,height=.4\textheight,keepaspectratio]{a13/TD701.png}
+    {\tiny (TD701)}
+  \end{center}
 
-    \only<1>{
-    \begin{itemize}
-      \item VCO (voltage-controlled oscillator) ist das Herzstück
-      \item Quarzgenerator erzeugt Referenzfrequenz
-      \item Teilerfunktion ``:n'' steuert die Ausgangsfrequenz (heutzutage oft von Mikroprozessor)
-      \item Phasenkomparator $\varphi$
-      \item stabiler Zustand: Die Frequenzen an A und B sind gleich
+  \only<1>{
+  \begin{itemize}
+    \item VCO (voltage-controlled oscillator) ist das Herzstück
+    \item Quarzgenerator erzeugt Referenzfrequenz
+    \item Teilerfunktion ``:n'' steuert die Ausgangsfrequenz (heutzutage oft von Mikroprozessor)
+    \item Phasenkomparator $\varphi$
+    \item stabiler Zustand: Die Frequenzen an A und B sind gleich
     \item der Tiefpass erzeugt eine Gleichspannung vom Mittelwert des Pulses an C
-    \end{itemize}
-    }
-    \only<2>{
-    \begin{itemize}
-      \item bei Phasenverschiebung der Frequenzen ergibt sich im Komparator ein Signal mit kürzeren oder längeren Pausen zwischen den Impulsen
-      \item dadurch verschiebt sich die Spannung über den Tiefpass
-      \item der VCO erhält eine andere Spannung und regelt nach
-    \end{itemize}
-    }
-    \only<3>{
-    \begin{itemize}
-      \item die VCO-PLL ``lockt'' auf ein Vielfaches der Quarzoszillatorfrequenz ein
-      \item der Teiler bestimmt die größe der Ausgangsfrequenz
-    \end{itemize}
-    }
+  \end{itemize}
+  }
+  \only<2>{
+  \begin{itemize}
+    \item bei Phasenverschiebung der Frequenzen ergibt sich im Komparator ein Signal mit kürzeren oder längeren Pausen zwischen den Impulsen
+    \item dadurch verschiebt sich die Spannung über den Tiefpass
+    \item der VCO erhält eine andere Spannung und regelt nach
+  \end{itemize}
+  }
+  \only<3>{
+  \begin{itemize}
+    \item die VCO-PLL ``lockt'' auf ein Vielfaches der Quarzoszillatorfrequenz ein
+    \item der Teiler bestimmt die größe der Ausgangsfrequenz
+  \end{itemize}
+  }
 \end{frame}
 
 \begin{frame}
   \begin{tabular}{l||p{.8\textwidth}}\hline
     \textbf{TD706} & \textbf{Die Frequenz am Punkt A beträgt 12,5 kHz. Es sollen Ausgangsfrequenzen im Bereich von 12,000 MHz bis 14,000 MHz erzeugt werden. Welchen Bereich muss der Teilerfaktor umfassen?}
 
-      \includegraphics[width=.7\textwidth,height=.5\textheight,keepaspectratio]{a13/TD701.png} \\ \hline\hline
+    \includegraphics[width=.7\textwidth,height=.5\textheight,keepaspectratio]{a13/TD701.png} \\ \hline\hline
     A & 300 bis 857 \\ \hline
     B & 300 bis 1120 \\ \hline
     C & 960 bis 857 \\ \hline
@@ -281,13 +281,13 @@
 \subsubsection{Mehrfach-Mischer}
 
 \begin{frame}
-    \frametitle{Mehrfach-Mischer}
+  \frametitle{Mehrfach-Mischer}
 
-    % TODO Muendl. oder Folien warum Mehrfachmischung
+  % TODO Muendl. oder Folien warum Mehrfachmischung
 
-    \begin{columns}[c]
+  \begin{columns}[c]
     \column[c]{.6\textwidth}
-        \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a13/TG110.png}
+    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a13/TG110.png}
     {\tiny (TG110)}
     \column{.35\textwidth}
     \begin{itemize}
@@ -302,7 +302,7 @@
   \begin{tabular}{l||p{.8\textwidth}}\hline
     \textbf{TG110} & \textbf{Im folgenden Blockschaltbild ist die Frequenzaufbereitung für einen Amateurfunk-Transceiver dargestellt. Welche Frequenz erzeugt der Sender, wenn VCO1 auf 2,651\,MHz eingestellt und VCO2 auf 6\,MHz eingerastet ist?}
 
-      \includegraphics[width=.55\textwidth,height=.55\textheight,keepaspectratio]{a13/TG110.png} \\ \hline\hline
+    \includegraphics[width=.55\textwidth,height=.55\textheight,keepaspectratio]{a13/TG110.png} \\ \hline\hline
     A & 6,651 MHz \\ \hline
     B \only<2>\checkmark & 3,651 MHz \\ \hline
     C & 8,651 MHz \\ \hline
@@ -314,15 +314,15 @@
 \section{Empfänger}
 
 \begin{frame}
-    \frametitle{Empfängerprinzipien}
+  \frametitle{Empfängerprinzipien}
 
-    Doppelsuper: Niedrige zweite Zwischenfrequenz (ZF) gute Trennschärfe. \\[2em]
+  Doppelsuper: Niedrige zweite Zwischenfrequenz (ZF) gute Trennschärfe. \\[2em]
 
-    Bei heutigen TRX: Die 1.\,ZF liegt höher als das Doppelte der maximalen
-    Empfangsfrequenz. Nach der Filterung im Roofing-Filter (1.\,ZF) wird auf die
-    2.\,ZF im Bereich um 9 bis 10\,MHz heruntergemischt. \\[2em]
+  Bei heutigen TRX: Die 1.\,ZF liegt höher als das Doppelte der maximalen
+  Empfangsfrequenz. Nach der Filterung im Roofing-Filter (1.\,ZF) wird auf die
+  2.\,ZF im Bereich um 9 bis 10\,MHz heruntergemischt. \\[2em]
 
-    Erste ZF-Filterbandbreite mind. so groß wie höchste benötigte Bandbreite.
+  Erste ZF-Filterbandbreite mind. so groß wie höchste benötigte Bandbreite.
 \end{frame}
 
 \begin{frame}
@@ -345,7 +345,7 @@
   \begin{tabular}{l||p{.8\textwidth}}\hline
     \textbf{TF201} & \textbf{In dieser Schaltung können bei einer Empfangsfrequenz von 145,6\,MHz und einer Oszillatorfrequenz von 134,9\,MHz Spiegelstörungen auftreten. Berechnen Sie diese Spiegelfrequenz.}
 
-      \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{a13/TF201.png}\\ \hline\hline
+    \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{a13/TF201.png}\\ \hline\hline
     A & 156,3 MHz \\ \hline
     B & 134,5 MHz \\ \hline
     C \only<2>\checkmark & 124,2 MHz \\ \hline
@@ -357,17 +357,17 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Doppelsuper}
+  \frametitle{Doppelsuper}
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TF205b.png}
-        {\tiny (TF205b)}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TF205b.png}
+    {\tiny (TF205b)}
+  \end{center}
 
-    \begin{itemize}
-      \item 1. ZF relativ hoch (oft um 10,7\,MHz) $\rightarrow$ gute Spiegelfrequenzunterdrückung
-      \item 2. ZF niedrig (oft um 460\,kHz) $\rightarrow$ hohe Trennschärfe
-    \end{itemize}
+  \begin{itemize}
+    \item 1. ZF relativ hoch (oft um 10,7\,MHz) $\rightarrow$ gute Spiegelfrequenzunterdrückung
+    \item 2. ZF niedrig (oft um 460\,kHz) $\rightarrow$ hohe Trennschärfe
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -392,15 +392,15 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Doppelsuper}
+  \frametitle{Doppelsuper}
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TF209b.png}
-	{\tiny (TF209b)}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TF209b.png}
+    {\tiny (TF209b)}
+  \end{center}
 
-    Vorteil von Kurzwellen-Empfängern mit sehr hoher ZF (z.B. 50 MHz):
-    Spiegelfrequenz liegt sehr weit außerhalb des Empfangsbereichs.
+  Vorteil von Kurzwellen-Empfängern mit sehr hoher ZF (z.B. 50 MHz):
+  Spiegelfrequenz liegt sehr weit außerhalb des Empfangsbereichs.
 
 \end{frame}
 
@@ -408,33 +408,33 @@
 \subsection{Direkt"-über"-lagerungs"-empfänger}
 
 \begin{frame}
-    \frametitle{Direktüberlagerungsempfänger}
+  \frametitle{Direktüberlagerungsempfänger}
 
-    Auch Produktdetektor genannt. \\[2em]
+  Auch Produktdetektor genannt. \\[2em]
 
-    Prinzip wie der Einfachmischer beim TX. Eine Mischstufe mit VFO in nächster
-    Nähe zur Empfangsfrequenz.
+  Prinzip wie der Einfachmischer beim TX. Eine Mischstufe mit VFO in nächster
+  Nähe zur Empfangsfrequenz.
 
 \end{frame}
 
 \subsection{PLL}
 
 \begin{frame}
-    \frametitle{PLL}
+  \frametitle{PLL}
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth,height=.7\textheight,keepaspectratio]{a13/TF213.png}
-      {\tiny (TF213)}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth,height=.7\textheight,keepaspectratio]{a13/TF213.png}
+    {\tiny (TF213)}
+  \end{center}
 
-    Prinzip wie beim Sender
+  Prinzip wie beim Sender
 \end{frame}
 
 \begin{frame}
   \begin{tabular}{l||p{.8\textwidth}}\hline
     \textbf{TF213} & \textbf{Dies ist das Blockschaltbild eines modernen Empfängers mit PLL-Frequenzaufbereitung. Es soll eine Frequenz von 15,0\,MHz emfangen werden. Welche Frequenzen liefern $VCO_1$ und $VCO_2$, wenn der programmierbare Frequenzvervielfacher $n_p$ dabei 18\,MHz liefert?}
 
-      \includegraphics[width=0.48\textwidth,height=.48\textheight,keepaspectratio]{a13/TF213.png}\\ \hline\hline
+    \includegraphics[width=0.48\textwidth,height=.48\textheight,keepaspectratio]{a13/TF213.png}\\ \hline\hline
     A & $VCO_1$: 67,5\,MHz, $VCO_2$: 87,5\,MHz \\ \hline
     B & $VCO_1$: 68,5\,MHz, $VCO_2$: 88,5\,MHz \\ \hline
     C & $VCO_1$: 88,5\,MHz, $VCO_2$: 67,5\,MHz \\ \hline
@@ -446,28 +446,28 @@
 \subsection{Converter}
 
 \begin{frame}
-    \frametitle{Converter}
+  \frametitle{Converter}
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth,height=.7\textheight,keepaspectratio]{a13/TF204.png}
-	{\tiny (TF204)}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth,height=.7\textheight,keepaspectratio]{a13/TF204.png}
+    {\tiny (TF204)}
+  \end{center}
 
-    2-m-Konverter für einen KW-Empfänger
+  2-m-Konverter für einen KW-Empfänger
 
 \end{frame}
 
 \subsection{Transverter}
 
 \begin{frame}
-    \frametitle{Transverter (Transceiver-Konverter)}
+  \frametitle{Transverter (Transceiver-Konverter)}
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth,height=.7\textheight,keepaspectratio]{a13/TF209.png}
-	{\tiny (TF209)}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth,height=.7\textheight,keepaspectratio]{a13/TF209.png}
+    {\tiny (TF209)}
+  \end{center}
 
-    Transverter für das 2-m-Band
+  Transverter für das 2-m-Band
 
 \end{frame}
 
@@ -479,8 +479,8 @@
 \footnotesize
 
 \begin{thebibliography}{}
-    \bibitem{darc}  DARC Online-Lehrgang Lektion A13:
-                    \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a13/}
+  \bibitem{darc}  DARC Online-Lehrgang Lektion A13:
+    \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a13/}
   \bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:\\
     \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
 \end{thebibliography}
