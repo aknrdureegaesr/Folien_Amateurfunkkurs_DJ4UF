@@ -5,18 +5,18 @@
 
 \input{texdata/preamble}
 \subtitle{Technik A17: \\
-           Schaltungstechnik \\[2em]}
+  Schaltungstechnik \\[2em]}
 \date{Stand 29.06.2016}
 \input{texdata/titlepage}
 
 \section*{Röhren PA mit Pi-Filter}
 \begin{frame}
-    \frametitle{HF-Verstärker mit Röhren}
-    \begin{center}
-        \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a17/TG313.png}
-        {\tiny \hyperlink{refs}{\cite{bna}}}\\
-        Röhrenendstufe mit Pi-Filter am Ausgang (TG313)
-    \end{center}
+  \frametitle{HF-Verstärker mit Röhren}
+  \begin{center}
+    \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a17/TG313.png}
+    {\tiny \hyperlink{refs}{\cite{bna}}}\\
+    Röhrenendstufe mit Pi-Filter am Ausgang (TG313)
+  \end{center}
 \end{frame}
 
 \begin{frame}
@@ -27,64 +27,64 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Wissenswertes zu Röhren PAs mit Pi-Filtern}
-\begin{center}
-  \begin{itemize}
-    \item haben höheren Wirkungsgrad als Transistorendstufen, da mit hohen Spannungen und geringen Strömen gearbeitet wird
-    \item die meisten Verluste treten durch Ströme in den Spulen auf
-    \item benötigt zur Arbeitspunkteinstellung am Gitter eine geringere Spannung als an der Katode
-    \item dafür kann eine Konstantspannungsquelle oder ein Widerstand genutzt werden
-    \item Pi-Filter dient der Impedanzanpassung
-  \end{itemize}
-\end{center}
+  \frametitle{Wissenswertes zu Röhren PAs mit Pi-Filtern}
+  \begin{center}
+    \begin{itemize}
+      \item haben höheren Wirkungsgrad als Transistorendstufen, da mit hohen Spannungen und geringen Strömen gearbeitet wird
+      \item die meisten Verluste treten durch Ströme in den Spulen auf
+      \item benötigt zur Arbeitspunkteinstellung am Gitter eine geringere Spannung als an der Katode
+      \item dafür kann eine Konstantspannungsquelle oder ein Widerstand genutzt werden
+      \item Pi-Filter dient der Impedanzanpassung
+    \end{itemize}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Das Abstimmen einer Röhren PAs mit Pi-Filtern}
+  \frametitle{Das Abstimmen einer Röhren PAs mit Pi-Filtern}
 
-    \begin{center}
-        \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{a07/Heathkit.jpg}
-        \tiny \hyperlink{refs}{\cite{dc4lw}}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{a07/Heathkit.jpg}
+    \tiny \hyperlink{refs}{\cite{dc4lw}}
+  \end{center}
 
-    \begin{itemize}
+  \begin{itemize}
       \only<1>{
-      \item $C_1$ ist für die Resonanz des Kreises verantwortlich; wird auch Abstimmkondensator, Plate oder Tune bezeichnet
-      \item $C_2$ dient der Einstellung der Lastimpedanz (LOAD)
-      \item Zuerst stellt man $C_1$ und $C_2$ auf max
+    \item $C_1$ ist für die Resonanz des Kreises verantwortlich; wird auch Abstimmkondensator, Plate oder Tune bezeichnet
+    \item $C_2$ dient der Einstellung der Lastimpedanz (LOAD)
+    \item Zuerst stellt man $C_1$ und $C_2$ auf max
       }
       \only<2>{
-      \item $C_1$ auf Dip im Anodenstrom stellen (Resonanz); Dip heißt, der Strom ist am Minimum
-      \item Nun mit $C_2$ einen etwas höheren Anodenstrom einstellen (Leistung auskoppeln)
-      \item Vorgang mit $C_1$ und $C_2$ wechselseitig wiederholen bis maximale Ausgangsleistung erreicht ist
-      \item Nach dem Abstimmvorgang sollte noch ein Dip von ca. 10\% verbleiben
+    \item $C_1$ auf Dip im Anodenstrom stellen (Resonanz); Dip heißt, der Strom ist am Minimum
+    \item Nun mit $C_2$ einen etwas höheren Anodenstrom einstellen (Leistung auskoppeln)
+    \item Vorgang mit $C_1$ und $C_2$ wechselseitig wiederholen bis maximale Ausgangsleistung erreicht ist
+    \item Nach dem Abstimmvorgang sollte noch ein Dip von ca. 10\% verbleiben
       }
-    \end{itemize}
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Röhrenverstärker abstimmen}
-    \begin{center}
-        \begin{exampleblock}{TG315}
-          \only<1>{Welche Bedeutung und Funktion haben $C_1$, $C_2$ und $L_1$? Wie sind die Bedienknöpfe der beiden Kondensatoren an einer Endstufe wahrscheinlich beschriftet?}
-          \only<2>{An dem Drehknopf für $C_1$ steht $C_{Plate}$ oder ``Plate'', an dem für $C_2$ steht $C_{Load}$ oder ``Load''. Die drei Bauelemente $C_1$, $C_2$ und $L_1$ bilden zusammen einen so genannten Pi-Tankkreis zur Anpassung der Ausgangsimpedanz der Röhre an die Antennenimpedanz.}
-        \end{exampleblock}
-        \includegraphics[width=0.65\textwidth,height=.4\textheight,keepaspectratio]{a07/TG313.png}
-        {\tiny TG313--TG318 \hyperlink{refs}{\cite{bna}}}
-      \end{center}
+  \frametitle{Röhrenverstärker abstimmen}
+  \begin{center}
+    \begin{exampleblock}{TG315}
+      \only<1>{Welche Bedeutung und Funktion haben $C_1$, $C_2$ und $L_1$? Wie sind die Bedienknöpfe der beiden Kondensatoren an einer Endstufe wahrscheinlich beschriftet?}
+      \only<2>{An dem Drehknopf für $C_1$ steht $C_{Plate}$ oder ``Plate'', an dem für $C_2$ steht $C_{Load}$ oder ``Load''. Die drei Bauelemente $C_1$, $C_2$ und $L_1$ bilden zusammen einen so genannten Pi-Tankkreis zur Anpassung der Ausgangsimpedanz der Röhre an die Antennenimpedanz.}
+    \end{exampleblock}
+    \includegraphics[width=0.65\textwidth,height=.4\textheight,keepaspectratio]{a07/TG313.png}
+    {\tiny TG313--TG318 \hyperlink{refs}{\cite{bna}}}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Röhrenverstärker abstimmen}
-    \begin{center}
-      \begin{exampleblock}{TG316}
-        \only<1>{Wie wird die folgende Endstufe richtig auf die Sendefrequenz abgestimmt?}
-        \only<2>{Zum Abstimmen $C_1$ und $C_2$ auf maximale Kapazität stellen. $C_1$ auf Dip im Anodenstrom (Resonanz) stellen, dann mit $C_2$ einen etwas höheren Anodenstrom einstellen (Leistung auskoppeln). Vorgang mit $C_1$ und $C_2$ wechselweise mehrmals wiederholen bis die maximale Ausgangsleistung erreicht ist. Nach dem Abstimmvorgang sollte ein Dip von etwa $10\%$ verbleiben.}
-      \end{exampleblock}
-      \includegraphics[width=0.6\textwidth,height=.4\textheight,keepaspectratio]{a07/TG313.png}
-      {\tiny TG313--TG318 \hyperlink{refs}{\cite{bna}}}
-    \end{center}
+  \frametitle{Röhrenverstärker abstimmen}
+  \begin{center}
+    \begin{exampleblock}{TG316}
+      \only<1>{Wie wird die folgende Endstufe richtig auf die Sendefrequenz abgestimmt?}
+      \only<2>{Zum Abstimmen $C_1$ und $C_2$ auf maximale Kapazität stellen. $C_1$ auf Dip im Anodenstrom (Resonanz) stellen, dann mit $C_2$ einen etwas höheren Anodenstrom einstellen (Leistung auskoppeln). Vorgang mit $C_1$ und $C_2$ wechselweise mehrmals wiederholen bis die maximale Ausgangsleistung erreicht ist. Nach dem Abstimmvorgang sollte ein Dip von etwa $10\%$ verbleiben.}
+    \end{exampleblock}
+    \includegraphics[width=0.6\textwidth,height=.4\textheight,keepaspectratio]{a07/TG313.png}
+    {\tiny TG313--TG318 \hyperlink{refs}{\cite{bna}}}
+  \end{center}
 \end{frame}
 
 \begin{frame}
@@ -100,41 +100,41 @@
 \section*{2m-FM Endstufe}
 \begin{frame}
   \frametitle{2m-FM Endstufe}
-    \begin{center}
-        \includegraphics[width=0.7\textwidth,height=.7\textheight,keepaspectratio]{a17/TG311.png}
-        {\tiny TG311--TG312 \hyperlink{refs}{\cite{bna}}}\\
-        $2m$-FM Endstufe
-    \end{center}
+  \begin{center}
+    \includegraphics[width=0.7\textwidth,height=.7\textheight,keepaspectratio]{a17/TG311.png}
+    {\tiny TG311--TG312 \hyperlink{refs}{\cite{bna}}}\\
+    $2m$-FM Endstufe
+  \end{center}
 \end{frame}
 \begin{frame}
-\frametitle{2m-FM Endstufe abgleichen}
-\begin{itemize}
-  \item zum Abgleich des Verstärkers wird eine $50 \Omega$ Dummy-Load für UKW angeschlossen
-  \item dann wird die Eingangsleistung erhöht, bis der Strom etwas ansteigt
-  \item nun abwechselnd die Ausgangskondensatoren verstellen bis die Leistung etwa konstant bleibt
-  \item danach wird der Vorgang mit den Eingangskondensatoren wiederholt
-  \item dann wird die Eingangsleistung erhöht bis die Schaltung einen Strom von etwa $2,7 A$ aufnimmt (= Nennstrom der Schaltung)
-  \item anschließend wird der Abgleich mit dem nun eingestellten Strom wiederholt
-  \item um Eigenschwingungen zu vermindern kann man die Eingangsimpedanz des Transistors mit einem Widerstand dämpfen
-  \item oder den Emitteranschluss mit einer Ferritperle versehen
-\end{itemize}
+  \frametitle{2m-FM Endstufe abgleichen}
+  \begin{itemize}
+    \item zum Abgleich des Verstärkers wird eine $50 \Omega$ Dummy-Load für UKW angeschlossen
+    \item dann wird die Eingangsleistung erhöht, bis der Strom etwas ansteigt
+    \item nun abwechselnd die Ausgangskondensatoren verstellen bis die Leistung etwa konstant bleibt
+    \item danach wird der Vorgang mit den Eingangskondensatoren wiederholt
+    \item dann wird die Eingangsleistung erhöht bis die Schaltung einen Strom von etwa $2,7 A$ aufnimmt (= Nennstrom der Schaltung)
+    \item anschließend wird der Abgleich mit dem nun eingestellten Strom wiederholt
+    \item um Eigenschwingungen zu vermindern kann man die Eingangsimpedanz des Transistors mit einem Widerstand dämpfen
+    \item oder den Emitteranschluss mit einer Ferritperle versehen
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{2m-FM Endstufe in der Praxis}
-\begin{itemize}
-  \item Schaltung sollte in ein Metallgehäuse montiert werden
-  \item am Besten noch mit Trennwand hinter dem Transistor
-  \item Verstärker arbeitet im C-Betrieb
-  \item kann nur CW und FM -- \textbf{kein SSB}
-\end{itemize}
+  \frametitle{2m-FM Endstufe in der Praxis}
+  \begin{itemize}
+    \item Schaltung sollte in ein Metallgehäuse montiert werden
+    \item am Besten noch mit Trennwand hinter dem Transistor
+    \item Verstärker arbeitet im C-Betrieb
+    \item kann nur CW und FM -- \textbf{kein SSB}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
   \begin{tabular}{l||p{.8\textwidth}}\hline
     \textbf{TG312} & \textbf{Welche der nachfolgenden Aussagen trifft \underline{nicht} für die Schaltung zu?}
 
-        \includegraphics[width=.5\textwidth,height=.5\textheight,keepaspectratio]{a17/TG311.png} \\ \hline\hline
+    \includegraphics[width=.5\textwidth,height=.5\textheight,keepaspectratio]{a17/TG311.png} \\ \hline\hline
     A & HF-Eingang und HF-Ausgang sind gleichspannungsfrei. \\ \hline
     B & $C_4$, $C_5$ und $L_2$ passen den Transistorausgang an die niederohmigere Ausgangsimpedanz an. \\ \hline
     C & $C_1$, $C_2$ und $L_1$ passen die hochohmigere Eingangsimpedanz an den Transistoreingang an. \\ \hline
@@ -146,33 +146,33 @@
 \section*{Linearverstärker}
 \begin{frame}
   \frametitle{Linearverstärker}
-    \begin{center}
-        \includegraphics[width=.8\textwidth,height=.8\textheight,keepaspectratio]{a17/TG222.png}
-        {\tiny TG222--TG225 \cite{bna}}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=.8\textwidth,height=.8\textheight,keepaspectratio]{a17/TG222.png}
+    {\tiny TG222--TG225 \cite{bna}}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Linearverstärker}
-\begin{itemize}
-  \item für den SSB-Betrieb geeignet
-  \item HF-Verstärker sollen möglichst verzerrungsfrei (linear) verstärken
-  \item einen solchen Verstärker kann man mit zwei Transistoren im Gegentakt-B-Betrieb aufbauen
-  \item oder mit einem Transistor im AB-Betrieb
-  \item bei kleinen Signalen arbeitet der Transistor dann im A-Betrieb und bei größeren im B-Betrieb
-  \item $R_1$ und $R_2$ bestimmen den Arbeitspunkt des Transistors
-  \item der Schwingkreis $L_1$--$C_1$--$C_2$ schafft eine doppelte Resonanztransformation
-  \item das Verhältnis von $C_1$ zu $C_2$ bestimmt die Anpassung an die Basis des Transistors
-  \item die Mittelanzapfung an $L_1$ erzeugt den üblichen $50 \Omega$ Eingangswiderstand
-  \item der Ausgang wird normal transformiert über $L_2$ zu $L_3$
-\end{itemize}
+  \frametitle{Linearverstärker}
+  \begin{itemize}
+    \item für den SSB-Betrieb geeignet
+    \item HF-Verstärker sollen möglichst verzerrungsfrei (linear) verstärken
+    \item einen solchen Verstärker kann man mit zwei Transistoren im Gegentakt-B-Betrieb aufbauen
+    \item oder mit einem Transistor im AB-Betrieb
+    \item bei kleinen Signalen arbeitet der Transistor dann im A-Betrieb und bei größeren im B-Betrieb
+    \item $R_1$ und $R_2$ bestimmen den Arbeitspunkt des Transistors
+    \item der Schwingkreis $L_1$--$C_1$--$C_2$ schafft eine doppelte Resonanztransformation
+    \item das Verhältnis von $C_1$ zu $C_2$ bestimmt die Anpassung an die Basis des Transistors
+    \item die Mittelanzapfung an $L_1$ erzeugt den üblichen $50 \Omega$ Eingangswiderstand
+    \item der Ausgang wird normal transformiert über $L_2$ zu $L_3$
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
   \begin{tabular}{l||p{.8\textwidth}}\hline
     \textbf{TG222} & \textbf{Bei dieser Schaltung handelt es sich um einen}
 
-      \includegraphics[width=.5\textwidth,height=.5\textheight,keepaspectratio]{a17/TG222.png} \\ \hline\hline
+    \includegraphics[width=.5\textwidth,height=.5\textheight,keepaspectratio]{a17/TG222.png} \\ \hline\hline
     A & Oszillator. \\ \hline
     B & Mischer. \\ \hline
     C & NF-Verstärker. \\ \hline
@@ -184,7 +184,7 @@
   \begin{tabular}{l||p{.8\textwidth}}\hline
     \textbf{TG223} & \textbf{Welchem Zweck dient $C_5$ in der folgenden Schaltung?}
 
-      \includegraphics[width=.5\textwidth,height=.5\textheight,keepaspectratio]{a17/TG222.png} \\ \hline\hline
+    \includegraphics[width=.5\textwidth,height=.5\textheight,keepaspectratio]{a17/TG222.png} \\ \hline\hline
     A \only<2>\checkmark & Zur HF-Entkopplung. \\ \hline
     B & Zur Abstimmung. \\ \hline
     C & Zur Wechselstromkopplung. \\ \hline
@@ -196,7 +196,7 @@
   \begin{tabular}{l||p{.8\textwidth}}\hline
     \textbf{TG224} & \textbf{Welchem Zweck dient die Anzapfung an $L_1$ in der folgenden Schaltung?}
 
-      \includegraphics[width=.5\textwidth,height=.5\textheight,keepaspectratio]{a17/TG222.png} \\ \hline\hline
+    \includegraphics[width=.5\textwidth,height=.5\textheight,keepaspectratio]{a17/TG222.png} \\ \hline\hline
     A \only<2>\checkmark & Sie dient zur Anpassung der Eingangsimpedanz der Stufe. \\ \hline
     B & Sie schützt die Verstärkerstufe vor wilden Schwingungen. \\ \hline
     C & Sie bewirkt die notwendige Entkopplung für den Schwingungseinsatz der Oszillatorstufe. \\ \hline
@@ -208,7 +208,7 @@
   \begin{tabular}{l||p{.8\textwidth}}\hline
     \textbf{TG225} & \textbf{Welchem Zweck dient $C_2$ in der folgenden Schaltung?}
 
-      \includegraphics[width=.5\textwidth,height=.5\textheight,keepaspectratio]{a17/TG222.png} \\ \hline\hline
+    \includegraphics[width=.5\textwidth,height=.5\textheight,keepaspectratio]{a17/TG222.png} \\ \hline\hline
     A \only<2>\checkmark & Zur Festlegung der HF-Kopplung. \\ \hline
     B & Zur Verhinderung der Schwingneigung. \\ \hline
     C & Zur Gleichstromentkopplung. \\ \hline
@@ -219,25 +219,25 @@
 \section*{Detektor-Empfänger}
 \begin{frame}
   \frametitle{Der Detektorempfänger}
-    \begin{center}
-        \includegraphics[width=.7\textwidth,height=.7\textheight,keepaspectratio]{a17/TJ601.png}
-        {\tiny TJ601 \cite{bna}}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=.7\textwidth,height=.7\textheight,keepaspectratio]{a17/TJ601.png}
+    {\tiny TJ601 \cite{bna}}
+  \end{center}
 \end{frame}
 
 
 \section*{Oszillatoren}
 \begin{frame}
-\frametitle{Aufbau von Oszillatoren}
-\begin{itemize}
-  \item Spulen und Kondensatoren sind temperaturabhängig
-  \item Spulen dehnen sich aus, dadurch steigt ihr Querschnitt und die Induktivität
-  \item deshalb nutzt man dafür Kondensatoren mit negativen Temperaturkoeffizienten, wie z.B. Styroflexkondensatoren
-  \item dies alles beeinflusst die Frequenz
-  \item also, Oszillatoren weg von Wärmequellen!
-  \item extra stabilisierte Spannungsversorgung verhindert ein Verzerren der Frequenz durch den Transistor
-  \item und immer gut schirmen
-\end{itemize}
+  \frametitle{Aufbau von Oszillatoren}
+  \begin{itemize}
+    \item Spulen und Kondensatoren sind temperaturabhängig
+    \item Spulen dehnen sich aus, dadurch steigt ihr Querschnitt und die Induktivität
+    \item deshalb nutzt man dafür Kondensatoren mit negativen Temperaturkoeffizienten, wie z.B. Styroflexkondensatoren
+    \item dies alles beeinflusst die Frequenz
+    \item also, Oszillatoren weg von Wärmequellen!
+    \item extra stabilisierte Spannungsversorgung verhindert ein Verzerren der Frequenz durch den Transistor
+    \item und immer gut schirmen
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -283,19 +283,19 @@
 \section*{Dummy-Load}
 
 \begin{frame}
-\frametitle{Die Dummy-Load}
-\begin{columns}
-  \column[c]{.4\textwidth}
-  \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a17/Cantenna.jpg}\\
-  \centering Cantenna \cite{wm}
-  \column[c]{.55\textwidth}
-  \begin{itemize}
-    \item im Prinzip ist die Dummy-Load ein Widerstand für hohe Frequenzen und Leistungen
-    \item dabei soll sie wenig kapazitive und -- noch wichtiger -- wenig induktive Anteile haben
-    \item gut eignen sich Schichtwiderstände
-    \item Aufbau als Widerstandskaskade mit $50\Omega$
-  \end{itemize}
-\end{columns}
+  \frametitle{Die Dummy-Load}
+  \begin{columns}
+    \column[c]{.4\textwidth}
+    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a17/Cantenna.jpg}\\
+    \centering Cantenna \cite{wm}
+    \column[c]{.55\textwidth}
+    \begin{itemize}
+      \item im Prinzip ist die Dummy-Load ein Widerstand für hohe Frequenzen und Leistungen
+      \item dabei soll sie wenig kapazitive und -- noch wichtiger -- wenig induktive Anteile haben
+      \item gut eignen sich Schichtwiderstände
+      \item Aufbau als Widerstandskaskade mit $50\Omega$
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -313,16 +313,16 @@
 \section*{Netzteil und Stabilisierung}
 \begin{frame}
   \frametitle{Netzteil und Stabilisierung}
-    \begin{center}
-        \includegraphics[width=1\textwidth,height=.43\textheight,keepaspectratio]{a17/TD306.png}
-        {\tiny Netzteil aus TD306 \hyperlink{refs}{\cite{bna}}}
-    \end{center}
-    Wie funzt das?
-\begin{itemize}
-  \item Die Ausgangsspannung wird als Vergleich zur Transistorsteuerung genommen
-  \item Fixe Ausgangspannung $\equiv$ Z-Diodenspannung + $0,6V$ $U_{BE}$ für $T_2$
-  \item $U_A$ sinkt (bei höherer Belastung) $\rightarrow$ $I_{B,T2}$ sinkt (und leitet weniger) $\rightarrow$ $U_{R_1,R_2}$ sinkt (durch verminderten Kollektorstrom an T2) $\rightarrow$ $U_{B,T1}$ steigt $\rightarrow$ $T1$ leitet besser $\rightarrow$ $U_A$ steigt
-\end{itemize}
+  \begin{center}
+    \includegraphics[width=1\textwidth,height=.43\textheight,keepaspectratio]{a17/TD306.png}
+    {\tiny Netzteil aus TD306 \hyperlink{refs}{\cite{bna}}}
+  \end{center}
+  Wie funzt das?
+  \begin{itemize}
+    \item Die Ausgangsspannung wird als Vergleich zur Transistorsteuerung genommen
+    \item Fixe Ausgangspannung $\equiv$ Z-Diodenspannung + $0,6V$ $U_{BE}$ für $T_2$
+    \item $U_A$ sinkt (bei höherer Belastung) $\rightarrow$ $I_{B,T2}$ sinkt (und leitet weniger) $\rightarrow$ $U_{R_1,R_2}$ sinkt (durch verminderten Kollektorstrom an T2) $\rightarrow$ $U_{B,T1}$ steigt $\rightarrow$ $T1$ leitet besser $\rightarrow$ $U_A$ steigt
+  \end{itemize}
 \end{frame}
 
 \subsection*{Fest"-pannungs"-regler}
@@ -330,8 +330,8 @@
   \frametitle{Festspannungsregler}
   \begin{columns}
     \column[c]{.5\textwidth}
-      \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a17/TD319.png}\\
-      {\tiny Festpannungsregler aus TD319 \hyperlink{refs}{\cite{bna}}}
+    \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a17/TD319.png}\\
+    {\tiny Festpannungsregler aus TD319 \hyperlink{refs}{\cite{bna}}}
     \column{.45\textwidth}
     \begin{itemize}
       \item viel freundlicher im Umgang als z.B. die Z-Diodenschaltung
@@ -374,16 +374,16 @@
 
 \subsection*{Schaltnetzteil}
 \begin{frame}
-    \begin{center}
-        \includegraphics[width=.7\textwidth,height=.5\textheight,keepaspectratio]{a17/TD317.png}
-        {\tiny Schaltnetzteil aus TD317 \hyperlink{refs}{\cite{bna}}}
-    \end{center}
-    \begin{itemize}
-      \item will man den Trafo in einem Netzteil verkleinern, brauch man höhere Spannungen
-      \item Lösung des Problems: man richtet die Wechselspannung gleich, zerhackstückelt diese dann per elektronischen Schalter, transformiert sie dann und richtet sie wieder gleich
-      \item Schaltfrequenzen gehen bis in den MHz-Bereich
-      \item erzeugt dafür aber Oberwellen, die auf KW stören können
-    \end{itemize}
+  \begin{center}
+    \includegraphics[width=.7\textwidth,height=.5\textheight,keepaspectratio]{a17/TD317.png}
+    {\tiny Schaltnetzteil aus TD317 \hyperlink{refs}{\cite{bna}}}
+  \end{center}
+  \begin{itemize}
+    \item will man den Trafo in einem Netzteil verkleinern, brauch man höhere Spannungen
+    \item Lösung des Problems: man richtet die Wechselspannung gleich, zerhackstückelt diese dann per elektronischen Schalter, transformiert sie dann und richtet sie wieder gleich
+    \item Schaltfrequenzen gehen bis in den MHz-Bereich
+    \item erzeugt dafür aber Oberwellen, die auf KW stören können
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -400,13 +400,13 @@
 
 \section*{Mechanik \& Sicherheit}
 \begin{frame}
-\frametitle{Was für die Bastler}
-\begin{itemize}
-  \item \textbf{Immer an die Abschirmung denken!}
-  \item am besten Metallgehäuse nutzten
-  \item braucht das Gerät Netzspannung, muss das gesamte Gehäuse geerdet werden
-  \item bei HF-Verstärkern in der Versorgung auch noch die HF rausfiltern
-\end{itemize}
+  \frametitle{Was für die Bastler}
+  \begin{itemize}
+    \item \textbf{Immer an die Abschirmung denken!}
+    \item am besten Metallgehäuse nutzten
+    \item braucht das Gerät Netzspannung, muss das gesamte Gehäuse geerdet werden
+    \item bei HF-Verstärkern in der Versorgung auch noch die HF rausfiltern
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -519,7 +519,7 @@
 \begin{thebibliography}{}
   \bibitem{darc}  DARC Online-Lehrgang Lektion A17:
     \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a17/}
-  \bibitem{wm} 	Wikimedia:\\
+  \bibitem{wm}  Wikimedia:\\
     \href{https://commons.wikimedia.org/wiki/File:Cantenna.JPG?uselang=de}{Cantenna, von No machine-readable author provided. Gerry Ashton assumed (based on copyright claims). [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) oder CC BY-SA 2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/2.5-2.0-1.0)], via Wikimedia Commons}
   \bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:
     \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
