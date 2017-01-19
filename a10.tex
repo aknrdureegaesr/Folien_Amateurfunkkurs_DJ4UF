@@ -5,7 +5,7 @@
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse A 10: \\
-          HF-Leitungen \& Kabel \\[2em]}
+  HF-Leitungen \& Kabel \\[2em]}
 \date{Stand 03.06.2016}
 \input{texdata/titlepage}
 
@@ -63,9 +63,9 @@
   \frametitle{Verkürzungsfaktor}
   \begin{itemize}
     \item das Dielektrikum verlangsamt die Ausbreitungsgeschwindigkeit im Kabel: \\
-          $v = \cfrac{1}{\sqrt{L' C'}}$
+      $v = \cfrac{1}{\sqrt{L' C'}}$
     \item durch geringere Ausbreitungsgeschwindigkeit verkürzt sich die
-          Wellenlänge auf der Leitung: \\ $k = \cfrac{v}{c}$
+      Wellenlänge auf der Leitung: \\ $k = \cfrac{v}{c}$
   \end{itemize}
 \end{frame}
 
@@ -88,7 +88,7 @@
   \begin{itemize}
     \item tritt bei höherfrequenter Wechselspannung auf
     \item verdrängt Elektronen aus dem Leitungsinneren an die Leiteroberfläche \\
-          $\rightarrow$ Widerstand im Leiter steigt
+      $\rightarrow$ Widerstand im Leiter steigt
   \end{itemize}
 \end{frame}
 
@@ -135,26 +135,26 @@
 \begin{frame}
   \frametitle{Die Dämpfung}
   \begin{itemize}
-    \item	Gibt den Leistungsverlust über das Kabel an
-    \item	Hängt vom Verlustwiderstand und dem Dielektrikum ab
-    \item	Wird meist in dB pro $100m$ angegeben
+    \item Gibt den Leistungsverlust über das Kabel an
+    \item Hängt vom Verlustwiderstand und dem Dielektrikum ab
+    \item Wird meist in dB pro $100m$ angegeben
       \begin{Large}
-      \item	$n = \sqrt{\cfrac{f_{hoch}}{f_{niedrig}}}$
+      \item $n = \sqrt{\cfrac{f_{hoch}}{f_{niedrig}}}$
       \end{Large}
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Kabeldämpfung Beispiel 1}
-    
-    \begin{exampleblock}{RG 213/U hat bei $100MHz$ eine Dämpfung von $6,7dB$.
-                         Wie groß ist die Dämpfung bei $145MHz$?}
-        \only<1>{Hinweis: $n = \sqrt{\cfrac{f_{hoch}}{f_{niedrig}}}$
-                 \vspace{2em}}
-        \only<2>{$n = \sqrt{\cfrac{f_2}{f_1}} = \sqrt{\cfrac{145}{100}} = \sqrt{1,45} = 1,2$ \\[1em]
-                 Bei $145MHz$ ist die Dämpfung also: $1,2 \cdot 6,7dB = 8dB$
-        }
-    \end{exampleblock}
+  \frametitle{Kabeldämpfung Beispiel 1}
+
+  \begin{exampleblock}{RG 213/U hat bei $100MHz$ eine Dämpfung von $6,7dB$.
+    Wie groß ist die Dämpfung bei $145MHz$?}
+    \only<1>{Hinweis: $n = \sqrt{\cfrac{f_{hoch}}{f_{niedrig}}}$
+    \vspace{2em}}
+    \only<2>{$n = \sqrt{\cfrac{f_2}{f_1}} = \sqrt{\cfrac{145}{100}} = \sqrt{1,45} = 1,2$ \\[1em]
+    Bei $145MHz$ ist die Dämpfung also: $1,2 \cdot 6,7dB = 8dB$
+    }
+  \end{exampleblock}
 
 \end{frame}
 
@@ -195,12 +195,12 @@
       \begin{Large}
         $SWR = s = \cfrac{U_{max}}{U_{min}}$
       \end{Large}
-    \item	hängt vom Verhältnis Abschlusswiderstand $R_a$ zu Wellenwiderstand $Z_W$ ab \\
+    \item hängt vom Verhältnis Abschlusswiderstand $R_a$ zu Wellenwiderstand $Z_W$ ab \\
       \vspace{2mm}
       \begin{Large}
-      $SWR = s = \cfrac{U_{max}}{U_{min}} = \frac{Z}{R_a} \text{ für } R_a \geq Z$
+        $SWR = s = \cfrac{U_{max}}{U_{min}} = \frac{Z}{R_a} \text{ für } R_a \geq Z$
         \vspace{2mm}
-      $SWR = s = \cfrac{U_{max}}{U_{min}} = \frac{R_a}{Z} \text{ für } Z \geq R_a$
+        $SWR = s = \cfrac{U_{max}}{U_{min}} = \frac{R_a}{Z} \text{ für } Z \geq R_a$
       \end{Large}
       \vspace{2mm}
     \item ist das Verhältnis von vorlaufender zu zurücklaufender Welle
@@ -226,14 +226,14 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Lecherleitung}
+  \frametitle{Lecherleitung}
 
-    Zusammenfassung:
-    
-    \begin{itemize}
-        \item	$\lambda /4$ Leitung kehrt Impedanzverhältnisse um (niederohmig $\leftrightarrow$ hochohmig), wirkt wie Schwingkreis
-        \item	$\lambda /2$ Leitung transformiert 1:1, wirkt auch wie ein Schwingkreis
-    \end{itemize}
+  Zusammenfassung:
+
+  \begin{itemize}
+    \item $\lambda /4$ Leitung kehrt Impedanzverhältnisse um (niederohmig $\leftrightarrow$ hochohmig), wirkt wie Schwingkreis
+    \item $\lambda /2$ Leitung transformiert 1:1, wirkt auch wie ein Schwingkreis
+  \end{itemize}
 
 \end{frame}
 
@@ -263,10 +263,10 @@
   \frametitle{Transformationsleitungen}
   \begin{itemize}
     \item dienen der Anpassung von Antenne zum Sender, dazu \dots
-    \begin{itemize}
+      \begin{itemize}
         \item Anpassung des Sender-Widerstandes an die HF-Leitung
         \item Anpassung der Antennenimpedanz an das Kabel
-    \end{itemize}
+      \end{itemize}
     \item $R_i = Z_w = Z_{Antenne}$
   \end{itemize}
 \end{frame}
@@ -278,37 +278,37 @@
     {\tiny Abb.7: Anpassung \cite{wp}}
   \end{center}
   \begin{itemize}
-    \item	Eine $\lambda /4$-Leitung kann Widerstände tranformieren
-    \item	Aber nur in einer begrenzten Bandbreite
-    \item	Leitung wirkt als Transformator
-    \item	Eine solche Leitung bestimmter Länge auch als abgestimmte Speiseleitung bezeichnet
-    \item	Leitungen die mit ihrem Wellenwiderstand abgeschlossen werden, um Stehwellen zu vermeiden, nennt man unabgestimmte Speiseleitung
+    \item Eine $\lambda /4$-Leitung kann Widerstände tranformieren
+    \item Aber nur in einer begrenzten Bandbreite
+    \item Leitung wirkt als Transformator
+    \item Eine solche Leitung bestimmter Länge auch als abgestimmte Speiseleitung bezeichnet
+    \item Leitungen die mit ihrem Wellenwiderstand abgeschlossen werden, um Stehwellen zu vermeiden, nennt man unabgestimmte Speiseleitung
   \end{itemize}
 \end{frame}
 
 \begin{frame}
 
-    Will man zwei Impedanzen $Z_E$ \& $Z_A$ mit einem Viertelwellentransformator
-    anpassen, so muss die Transformationsleitung folgende Werte besitzen:
+  Will man zwei Impedanzen $Z_E$ \& $Z_A$ mit einem Viertelwellentransformator
+  anpassen, so muss die Transformationsleitung folgende Werte besitzen:
 
   \begin{itemize}
-    \item	Wellenwiderstand:\\
+    \item Wellenwiderstand:\\
       \vspace{2mm}
       \begin{Large}
         $Z = \sqrt{Z_E \cdot Z_A}$
       \end{Large}
       \vspace{2mm}
-    \item	Länge: \\
+    \item Länge: \\
       \vspace{2mm}
       \begin{Large}
         $\ell = (2n - 1) \cdot \frac{\lambda}{4} \cdot k$
       \end{Large}
       \vspace{3mm}
-    \item	Bei Koaxialkabeln sieht das Ganze wie folgt aus:
+    \item Bei Koaxialkabeln sieht das Ganze wie folgt aus:
       \vspace{3mm}
       \begin{align*}
-         Z &= \frac{60 \Omega}{\sqrt{\varepsilon_r}} \cdot ln(\frac{D}{d}) \\
-           &= \frac{138 \Omega}{\sqrt{\varepsilon_r}} \cdot lg(\frac{D}{d})
+        Z &= \frac{60 \Omega}{\sqrt{\varepsilon_r}} \cdot ln(\frac{D}{d}) \\
+        &= \frac{138 \Omega}{\sqrt{\varepsilon_r}} \cdot lg(\frac{D}{d})
       \end{align*}
   \end{itemize}
 \end{frame}
@@ -328,7 +328,7 @@
       \item Paralleldraht ist symmetrisch
       \item Alle Dipole sind symmetrisch
       \item Alle Antennen, die gegen Erde erregt werden sind unsymmetrisch
-      \item	Ohne Symmetrierung entstehen Mantelwellen
+      \item Ohne Symmetrierung entstehen Mantelwellen
     \end{itemize}
   \end{minipage}
 \end{frame}
@@ -340,8 +340,8 @@
     {\tiny Abb.9: Spartrafo als Balun \cite{wm}}
   \end{center}
   \begin{itemize}
-    \item	Balun kann symmetrieren und gleichzeitig die Impedanz anpassen
-    \item	Wird der Eingang an halber Windungszahl des Ausganges angeschlossen, erhält man einen 1:4 Übertrager
+    \item Balun kann symmetrieren und gleichzeitig die Impedanz anpassen
+    \item Wird der Eingang an halber Windungszahl des Ausganges angeschlossen, erhält man einen 1:4 Übertrager
   \end{itemize}
 \end{frame}
 
@@ -409,7 +409,7 @@
     \url{http://de.wikipedia.org/wiki/Datei:Balun(semirigid).jpg}
   \bibitem{darc}  DARC Online-Lehrgang Lektion A08:
     \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a10/}
-  \bibitem{wm} 	Wikimedia:
+  \bibitem{wm}  Wikimedia:
     \url{http://commons.wikimedia.org/wiki/File:Coaxial_cable_cutaway_new.svg}
     \url{http://commons.wikimedia.org/wiki/File:Cdbalun2.svg}
   \bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:
