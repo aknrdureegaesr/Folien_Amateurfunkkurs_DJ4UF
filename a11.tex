@@ -7,36 +7,36 @@
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse A 11: \\
-          Signale \\[2em]}
+  Signale \\[2em]}
 \date{Stand 15.06.2016}
 \input{texdata/titlepage}
 
 \section{Einleitung}
 
 \begin{frame}
-    \frametitle{Einleitung}
+  \frametitle{Einleitung}
 
-    \centering \Large Generell: Was sind Signale?
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Signale}
-
-    Allgemein: Signale sind Zeichen. Ist ihre Bedeutung festgelegt können
-    Nachrichten transportiert werden. \\[2em]
-
-    Dazu ein wenig Theorie für den Bereich der elektrischen Nachrichtenübertragung...
+  \centering \Large Generell: Was sind Signale?
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Signale}
+  \frametitle{Signale}
 
-    Nachrichtentechnik: Grundsätzliche Unterscheidung zwischen
-    \textbf{periodischen} und \textbf{nicht-periodischen} Signalen. \\[2em]
+  Allgemein: Signale sind Zeichen. Ist ihre Bedeutung festgelegt können
+  Nachrichten transportiert werden. \\[2em]
 
-    Welche periodischen Signale kennt ihr?
+  Dazu ein wenig Theorie für den Bereich der elektrischen Nachrichtenübertragung...
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Signale}
+
+  Nachrichtentechnik: Grundsätzliche Unterscheidung zwischen
+  \textbf{periodischen} und \textbf{nicht-periodischen} Signalen. \\[2em]
+
+  Welche periodischen Signale kennt ihr?
 
 \end{frame}
 
@@ -44,12 +44,12 @@
 
 
 \begin{frame}
-    \frametitle{Periodische Signale}
+  \frametitle{Periodische Signale}
 
-    \begin{center}
-        \includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{a11/Waveforms_de.png}
-        \tiny \hyperlink{refs}{\cite{wc}}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{a11/Waveforms_de.png}
+    \tiny \hyperlink{refs}{\cite{wc}}
+  \end{center}
 
 \end{frame}
 
@@ -69,33 +69,33 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Sinusförmige Signale}
+  \frametitle{Sinusförmige Signale}
 
-    \begin{center}
-        \includegraphics[width=1\textwidth]{a11/Sine_cosine_one_period.png}
-        \tiny \hyperlink{refs}{\cite{wc}}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=1\textwidth]{a11/Sine_cosine_one_period.png}
+    \tiny \hyperlink{refs}{\cite{wc}}
+  \end{center}
 
-    Was sind Amplitude, Scheitelwert, Spitze-Spitze-Wert, Periodendauer,
-    Frequenz, Effektivwert?
+  Was sind Amplitude, Scheitelwert, Spitze-Spitze-Wert, Periodendauer,
+  Frequenz, Effektivwert?
 
 \end{frame}
 
 \begin{frame}{Kenngrößen}
   \begin{columns}[c]
     \column[c]{.4\textwidth}
-      \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{a11/Sinusspannung.pdf}
-      {\tiny \hyperlink{refs}{\cite{wm}}}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{a11/Sinusspannung.pdf}
+    {\tiny \hyperlink{refs}{\cite{wm}}}
     \column[c]{.55\textwidth}
-      \begin{block}{Begriffe}
-    \begin{enumerate}
-          \item Scheitelwert, Spitzenwert $\hat{U}$
-          \item Spitze-Spitze-Wert $U_{SS} = 2 \cdot \hat{U}$
-          \item Effektivwert $U_{eff} = \frac{\hat{U}}{\sqrt{2}} \approx 0,7 \cdot \hat{U}$
-          \item Periodendauer $T = \frac{1}{f} = \frac{2\pi}{\omega}$\\
-            mit Kreisfrequenz $\omega = 2\cdot\pi \cdot f$
-    \end{enumerate}
-      \end{block}
+    \begin{block}{Begriffe}
+      \begin{enumerate}
+        \item Scheitelwert, Spitzenwert $\hat{U}$
+        \item Spitze-Spitze-Wert $U_{SS} = 2 \cdot \hat{U}$
+        \item Effektivwert $U_{eff} = \frac{\hat{U}}{\sqrt{2}} \approx 0,7 \cdot \hat{U}$
+        \item Periodendauer $T = \frac{1}{f} = \frac{2\pi}{\omega}$\\
+          mit Kreisfrequenz $\omega = 2\cdot\pi \cdot f$
+      \end{enumerate}
+    \end{block}
   \end{columns}
 \end{frame}
 
@@ -108,11 +108,11 @@
     D & 460 Volt. \\ \hline
   \end{tabular}
 
-    \bigskip
+  \bigskip
 
   \only<2>{$230V \cdot \sqrt{2} \cdot 2$ \hfill -- Darauf achten, ob vielleicht nach Spitzenwert gefragt ist.
 
-           \vspace{3em} Generell bei Leistungsberechnungen mit Wechselströmen: Effektivwert nehmen!}
+  \vspace{3em} Generell bei Leistungsberechnungen mit Wechselströmen: Effektivwert nehmen!}
 \end{frame}
 
 % -> Aufgabenblatt
@@ -127,11 +127,11 @@
 % \end{frame}
 
 \begin{frame}
-    \frametitle{Sinus}
+  \frametitle{Sinus}
 
-    \begin{block}{Welche Periodendauer hat europäische Netzspannung?}
-        \only<2>{$T = \frac{1}{f} = \frac{1}{50 Hz} \approx 20ms$}
-    \end{block}
+  \begin{block}{Welche Periodendauer hat europäische Netzspannung?}
+    \only<2>{$T = \frac{1}{f} = \frac{1}{50 Hz} \approx 20ms$}
+  \end{block}
 
 \end{frame}
 
@@ -142,58 +142,58 @@
 \end{frame}
 
 \subsubsection{Oszilloskop (Wdh.)}
- 
+
 \begin{frame}
-    \frametitle{Kurze Wiederholung Messtechnik: Oszilloskop}
+  \frametitle{Kurze Wiederholung Messtechnik: Oszilloskop}
 
-    % TODO auf entsprechenden Foliensatz referenzieren
+  % TODO auf entsprechenden Foliensatz referenzieren
 
-    \begin{block}{
-        Wie hoch sind Spitze-Spitze-Spannung und Frequenz?
-        \begin{center}
-            \includegraphics[width=0.4\textwidth]{a11/TB605.png}
-            \tiny (TB606)
-        \end{center}
+  \begin{block}{
+    Wie hoch sind Spitze-Spitze-Spannung und Frequenz?
+    \begin{center}
+      \includegraphics[width=0.4\textwidth]{a11/TB605.png}
+      \tiny (TB606)
+    \end{center}
     }
-        \only<2>{
-            $U_{SS} = 40 V$ \\
-            $f = \frac{1}{4 \cdot 0,03 \cdot 10^{-6} s} \approx 8,33 \cdot 10^6 Hz = 8,33 MHz$
-        }
-    \end{block}
+    \only<2>{
+    $U_{SS} = 40 V$ \\
+    $f = \frac{1}{4 \cdot 0,03 \cdot 10^{-6} s} \approx 8,33 \cdot 10^6 Hz = 8,33 MHz$
+    }
+  \end{block}
 
 \end{frame}
-   
+
 \subsection{Phasenwinkel}
 
 \begin{frame}
-    \frametitle{Zeigerdarstellung}
+  \frametitle{Zeigerdarstellung}
 
-    \begin{center}
-        \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/Sine_Cosine_Exponential_qtl1.png}
-        \tiny \hyperlink{refs}{\cite{wc}}\\
-        \normalsize Trigonometrische Zusammenhänge im Einheitskreis.
-    \end{center}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/Sine_Cosine_Exponential_qtl1.png}
+    \tiny \hyperlink{refs}{\cite{wc}}\\
+    \normalsize Trigonometrische Zusammenhänge im Einheitskreis.
+  \end{center}
 
-    Animationen:
-    Wikimedia\footnote{\tiny\url{http://commons.wikimedia.org/wiki/File:Einheitskreis_mit_Sinus_und_Kosinusfunktion.gif}}
-    (Wdh.) und von H.
-    Krauß\footnote{\tiny\url{http://www.hutschdorf.de/flash/sinus.htm}} (braucht
-    Flash).
+  Animationen:
+  Wikimedia\footnote{\tiny\url{http://commons.wikimedia.org/wiki/File:Einheitskreis_mit_Sinus_und_Kosinusfunktion.gif}}
+  (Wdh.) und von H.
+  Krauß\footnote{\tiny\url{http://www.hutschdorf.de/flash/sinus.htm}} (braucht
+  Flash).
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Phasenwinkel}
+  \frametitle{Phasenwinkel}
 
-    \begin{block}{
-        Wie groß ist folgende Phasenverschiebung?
-        \begin{center}
-            \includegraphics[width=0.5\textwidth]{a11/TB612.png}
-            \tiny (TB61)
-        \end{center}
+  \begin{block}{
+    Wie groß ist folgende Phasenverschiebung?
+    \begin{center}
+      \includegraphics[width=0.5\textwidth]{a11/TB612.png}
+      \tiny (TB61)
+    \end{center}
     }
-        \only<2>{$\Delta\varphi = \frac{\pi}{4} = 45 ^{\circ}$}
-    \end{block}
+    \only<2>{$\Delta\varphi = \frac{\pi}{4} = 45 ^{\circ}$}
+  \end{block}
 
 
 \end{frame}
@@ -201,63 +201,63 @@
 \subsection{Weitere Signale}
 
 \begin{frame}
-    \frametitle{Ableitung weiterer Signale}
+  \frametitle{Ableitung weiterer Signale}
 
-	\begin{block}{Definition}
-      Hat ein Signal nur eine einzige Frequenz, ist es ein sinusförmiges Signal. Alle anderen Signale bestehen aus einem Frequenzgemisch.
-    \end{block}
+  \begin{block}{Definition}
+    Hat ein Signal nur eine einzige Frequenz, ist es ein sinusförmiges Signal. Alle anderen Signale bestehen aus einem Frequenzgemisch.
+  \end{block}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Ableitung weiterer Signale}
+  \frametitle{Ableitung weiterer Signale}
 
-	Bedeutet alle möglichen period. Signale lassen sich aus Überlagerung von
-    Sinussignalen ableiten:
+  Bedeutet alle möglichen period. Signale lassen sich aus Überlagerung von
+  Sinussignalen ableiten:
 
-    \begin{itemize}
-        \item \textbf{Grundfrequenz}
-        \item beliebige \textbf{ganzzahlige Vielfache} der Grundfrequenz \\
-              (Oberwellen bzw. Harmonische)
-    \end{itemize}
+  \begin{itemize}
+    \item \textbf{Grundfrequenz}
+    \item beliebige \textbf{ganzzahlige Vielfache} der Grundfrequenz \\
+      (Oberwellen bzw. Harmonische)
+  \end{itemize}
 
-    \bigskip Bereits vorgestelle Beispiele: Rechteck, Dreieck, Sägezahn
+  \bigskip Bereits vorgestelle Beispiele: Rechteck, Dreieck, Sägezahn
 
 \end{frame}
 
 \subsubsection{Frequenzvielfache}
 
 \begin{frame}
-\frametitle{Harmonische und Oberwellen}
+  \frametitle{Harmonische und Oberwellen}
 
-    \begin{block}{Welche Frequenz hat die erste Harmonische von $430.200 MHz$?}
-        \only<2-3>{Die erste Harmonische ist die Frequenz selbst. \\
-                 Die erste Oberwelle bzw. zweite Harmonische liegt bei $860.4 MHz$}
-    \end{block}
+  \begin{block}{Welche Frequenz hat die erste Harmonische von $430.200 MHz$?}
+    \only<2-3>{Die erste Harmonische ist die Frequenz selbst. \\
+    Die erste Oberwelle bzw. zweite Harmonische liegt bei $860.4 MHz$}
+  \end{block}
 
-    \only<3>{\vspace{3em}\Large Merke: Harmonische = Oberwelle + 1}
+  \only<3>{\vspace{3em}\Large Merke: Harmonische = Oberwelle + 1}
 
 \end{frame}
 
 \begin{frame}{Harmonische und Oberwellen -- Beispiel: Instrumentensaite}
   \begin{columns}[c]
     \column[c]{.4\textwidth}
-      \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{a11/Moodswingerscale.pdf}
-      {\tiny \hyperlink{refs}{\cite{wm}}}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{a11/Moodswingerscale.pdf}
+    {\tiny \hyperlink{refs}{\cite{wm}}}
     \column[c]{.55\textwidth}
-      Harmonische
-      \begin{itemize}
-    \item 1. Harmonische = Grundfrequenz
-    \item 2. Harmonische = Doppelte Grundfrequenz
-    \item 3. Harominsche = Dreifache Grundfrequenz
-    \item \ldots
-      \end{itemize}
-      Oberwelle
-      \begin{itemize}
-    \item 1. Oberwelle = Doppelte Grundfrequenz
-    \item 2. Oberwelle = Dreifache Grundfrequenz
-    \item \ldots
-      \end{itemize}
+    Harmonische
+    \begin{itemize}
+      \item 1. Harmonische = Grundfrequenz
+      \item 2. Harmonische = Doppelte Grundfrequenz
+      \item 3. Harominsche = Dreifache Grundfrequenz
+      \item \ldots
+    \end{itemize}
+    Oberwelle
+    \begin{itemize}
+      \item 1. Oberwelle = Doppelte Grundfrequenz
+      \item 2. Oberwelle = Dreifache Grundfrequenz
+      \item \ldots
+    \end{itemize}
   \end{columns}
 \end{frame}
 
@@ -271,7 +271,7 @@
 %     D & Harmonische sind identisch mit den Oberwellen, wobei die Grundwelle keine Harmonische ist. \\ \hline
 %   \end{tabular}
 % \end{frame}
-% 
+%
 % \begin{frame}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
 %     \textbf{TB704} & \textbf{Die dritte Oberwelle einer Frequenz ist}\\ \hline\hline
@@ -301,113 +301,113 @@
 \subsubsection{Sägezahn}
 
 \begin{frame}
-    \frametitle{Sägezahn}
+  \frametitle{Sägezahn}
 
-    Grundwelle + alle Harmonischen reduzierter Amplitude:
+  Grundwelle + alle Harmonischen reduzierter Amplitude:
 
-    % TODO Grafik und Formel?
+  % TODO Grafik und Formel?
 
-    \begin{center}
-        \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/TB705.png}
-        \tiny (TB705)
-    \end{center}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/TB705.png}
+    \tiny (TB705)
+  \end{center}
 
-    \begin{itemize}
-        \item 1. Harmonische, $\frac{1}{1}$ Amplitude (Bsp. $2kHz$)
-        \item 2. Harmonische, $\frac{1}{2}$ Amplitude (Bsp. \only<1>{\textbf{?}}
-                                                            \only<2>{$4 kHz$})
-        \item 3. Harmonische, $\frac{1}{3}$ Amplitude
-        \item ...
-    \end{itemize}
+  \begin{itemize}
+    \item 1. Harmonische, $\frac{1}{1}$ Amplitude (Bsp. $2kHz$)
+    \item 2. Harmonische, $\frac{1}{2}$ Amplitude (Bsp. \only<1>{\textbf{?}}
+      \only<2>{$4 kHz$})
+    \item 3. Harmonische, $\frac{1}{3}$ Amplitude
+    \item ...
+  \end{itemize}
 
 \end{frame}
 
 \subsubsection{Rechteck}
 
 \begin{frame}
-    \frametitle{Rechteck}
+  \frametitle{Rechteck}
 
-    Grundwelle + ungeradzahligen Harmonische:
+  Grundwelle + ungeradzahligen Harmonische:
 
-    % TODO Grafik und Formel?
+  % TODO Grafik und Formel?
 
-    \begin{center}
-        \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/TB706.png}
-        \tiny (TB706)
-    \end{center}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/TB706.png}
+    \tiny (TB706)
+  \end{center}
 
-     \begin{itemize}
-        \item 1. Harmonische, $\frac{1}{1}$ Amplitude (Bsp. $2kHz$)
-        \item 3. Harmonische, $\frac{1}{3}$ Amplitude (Bsp. \only<1>{\textbf{?}}
-                                                            \only<2>{$6 kHz$})
-        \item 5. Harmonische, $\frac{1}{5}$ Amplitude
-        \item ...
-    \end{itemize}
-   
+  \begin{itemize}
+    \item 1. Harmonische, $\frac{1}{1}$ Amplitude (Bsp. $2kHz$)
+    \item 3. Harmonische, $\frac{1}{3}$ Amplitude (Bsp. \only<1>{\textbf{?}}
+      \only<2>{$6 kHz$})
+    \item 5. Harmonische, $\frac{1}{5}$ Amplitude
+    \item ...
+  \end{itemize}
+
 
 \end{frame}
 
 \section{Nicht-periodische Signale}
 
 \begin{frame}
-    \frametitle{Nicht-periodische Signale}
+  \frametitle{Nicht-periodische Signale}
 
-	\begin{block}{Definition}
-      Signale, die sich nicht regelmäßig wiederholen werden nicht-periodische Signale genannt.
-    \end{block}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Nicht-periodische Signale}
-
-    Dies können nicht wiederkehrende Signale beliebiger Form sein, z.B. Impulse.
-
-    \begin{center}
-        \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/TB702a.png}
-        \tiny (TB702a)
-    \end{center}
-
-    Messung Impulsdauer oder Pulsbreite bei ca. 50\% der Amplitude.
-    
-    Wie breit ist das Signal im Beispiel?\only<2>{\footnote{Antwort: $0,2 ms$}}
+  \begin{block}{Definition}
+    Signale, die sich nicht regelmäßig wiederholen werden nicht-periodische Signale genannt.
+  \end{block}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Nicht-periodische Signale (nicht prüfungsrelevant)}
+  \frametitle{Nicht-periodische Signale}
 
-    Zur Messung von Impulsantworten oder Übergangsfunktionen (Sprungantwort)
-    spielen Dirac-Impuls und Heaviside-Funktion eine große Rolle. \\[2em]
+  Dies können nicht wiederkehrende Signale beliebiger Form sein, z.B. Impulse.
 
-    \begin{center}
-        \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/High_accuracy_settling_time_measurements_figure_1.png}
-        \tiny \hyperlink{refs}{\cite{wc}}
-    \end{center}
+  \begin{center}
+    \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/TB702a.png}
+    \tiny (TB702a)
+  \end{center}
 
-    Praxis: \textbf{Sprungantwort aus Rechteck} - überführbar zu Impulsantwort.
+  Messung Impulsdauer oder Pulsbreite bei ca. 50\% der Amplitude.
+
+  Wie breit ist das Signal im Beispiel?\only<2>{\footnote{Antwort: $0,2 ms$}}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Nicht-periodische Signale (nicht prüfungsrelevant)}
+
+  Zur Messung von Impulsantworten oder Übergangsfunktionen (Sprungantwort)
+  spielen Dirac-Impuls und Heaviside-Funktion eine große Rolle. \\[2em]
+
+  \begin{center}
+    \includegraphics[width=\textwidth,height=0.5\textheight,keepaspectratio]{a11/High_accuracy_settling_time_measurements_figure_1.png}
+    \tiny \hyperlink{refs}{\cite{wc}}
+  \end{center}
+
+  Praxis: \textbf{Sprungantwort aus Rechteck} - überführbar zu Impulsantwort.
 
 \end{frame}
 
 \section{Modulierte Signale}
 
 \begin{frame}
-    \frametitle{Modulation}
-  
-    \begin{block}{Bekanntes Wissen aus Technik Klasse E:} % TODO Welches Kapitel?
-        Modulation ist das "`Aufprägen"' von Signalen auf einen periodischen Träger
-        durch Mischung/Multiplikation. Mischung sorgt immer für Spiegelfrequenzen.
-    \end{block}
+  \frametitle{Modulation}
 
-    \bigskip Im einfachen reellen Fall betrachtet (Formel nicht prüfungsrelevant):
+  \begin{block}{Bekanntes Wissen aus Technik Klasse E:} % TODO Welches Kapitel?
+    Modulation ist das "`Aufprägen"' von Signalen auf einen periodischen Träger
+    durch Mischung/Multiplikation. Mischung sorgt immer für Spiegelfrequenzen.
+  \end{block}
 
-    \begin{equation*}
-        u = \hat{u} \cdot sin(\omega t + \varphi)
-    \end{equation*}
+  \bigskip Im einfachen reellen Fall betrachtet (Formel nicht prüfungsrelevant):
 
-    % TODO Parameter erläutern
-    \vspace{2em}
-    Welche Parameter lassen sich modulieren?
+  \begin{equation*}
+    u = \hat{u} \cdot sin(\omega t + \varphi)
+  \end{equation*}
+
+  % TODO Parameter erläutern
+  \vspace{2em}
+  Welche Parameter lassen sich modulieren?
 
 \end{frame}
 
@@ -429,21 +429,21 @@
 \begin{frame}{Modulationsarten (Wdh.)}
   \begin{columns}[c]
     \column[c]{.4\textwidth}
-      \includegraphics[width=\textwidth,height=.80\textheight,keepaspectratio]{e14/modulationen.jpg}\\
-      {\tiny \hyperlink{refs}{\cite{wm}}}\\
-      {\tiny Animiert: \url{https://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}}
+    \includegraphics[width=\textwidth,height=.80\textheight,keepaspectratio]{e14/modulationen.jpg}\\
+    {\tiny \hyperlink{refs}{\cite{wm}}}\\
+    {\tiny Animiert: \url{https://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}}
     \column[c]{.55\textwidth}
-      Amplitudenmodulation
-      \begin{itemize}
-        \item Zweiseitenbandmodulation
-        \item Einseitenbandmodulation
-        \item jeweils mit und ohne Träger
-      \end{itemize}
-      Winkelmodulation
-      \begin{itemize}
-        \item Frequenzmodulation
-        \item Phasenmodulation
-      \end{itemize}
+    Amplitudenmodulation
+    \begin{itemize}
+      \item Zweiseitenbandmodulation
+      \item Einseitenbandmodulation
+      \item jeweils mit und ohne Träger
+    \end{itemize}
+    Winkelmodulation
+    \begin{itemize}
+      \item Frequenzmodulation
+      \item Phasenmodulation
+    \end{itemize}
   \end{columns}
 \end{frame}
 
@@ -452,34 +452,34 @@
 \begin{frame}{Amplitudenmodulation}
   \begin{columns}[c]
     \column[c]{.4\textwidth}
-      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{e14/AM1.png}\\
-      {\tiny \hyperlink{refs}{\cite{wm}}}
+    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{e14/AM1.png}\\
+    {\tiny \hyperlink{refs}{\cite{wm}}}
     \column[c]{.55\textwidth}
-      \begin{itemize}
-        \item niederfrequentes Signal wird als Hüllkurve auf den Träger geprägt
-              \\ $\rightarrow$ einfache Gleichrichtung zur Demodulation
-        \item gleiche Information in jedem Seitenband
-        \item nur maximal 18\% der Sendeleistung überträgt Information
-        \item Bandbreite doppelt so groß wie maximale Modulationsfrequenz $B = 2 \cdot f_{mod max}$
-        \item starke Störungsanfälligkeit
-      \end{itemize}
+    \begin{itemize}
+      \item niederfrequentes Signal wird als Hüllkurve auf den Träger geprägt
+        \\ $\rightarrow$ einfache Gleichrichtung zur Demodulation
+      \item gleiche Information in jedem Seitenband
+      \item nur maximal 18\% der Sendeleistung überträgt Information
+      \item Bandbreite doppelt so groß wie maximale Modulationsfrequenz $B = 2 \cdot f_{mod max}$
+      \item starke Störungsanfälligkeit
+    \end{itemize}
   \end{columns}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Amplitudenmodulation}
+  \frametitle{Amplitudenmodulation}
 
-    Arten:
+  Arten:
 
-    \begin{itemize}
-        \item AM mit Träger ($> 2 \cdot$ NF-Bandbreite)
-        \item AM ohne Träger aka DSB ($> 2 \cdot$ NF-Bandbreite)
-        \item SSB: LSB/USB ($\approx$ NF-Bandbreite)
-    \end{itemize}
+  \begin{itemize}
+    \item AM mit Träger ($> 2 \cdot$ NF-Bandbreite)
+    \item AM ohne Träger aka DSB ($> 2 \cdot$ NF-Bandbreite)
+    \item SSB: LSB/USB ($\approx$ NF-Bandbreite)
+  \end{itemize}
 
-    % TODO Skizzen
+  % TODO Skizzen
 
-    \vspace{2em} Woraus ergeben sich die Bandbreiten?
+  \vspace{2em} Woraus ergeben sich die Bandbreiten?
 
 \end{frame}
 
@@ -487,13 +487,13 @@
 
 \begin{frame}{Einseitenbandmodulation (SSB)}
 
-    \begin{itemize}
-      \item ein Seitenband unterdrücken
-      \item halbiert die Bandbreite (vereinfacht)
-      \item Bandbreite ist nun so groß wie das NF-Signal
-    \end{itemize}
+  \begin{itemize}
+    \item ein Seitenband unterdrücken
+    \item halbiert die Bandbreite (vereinfacht)
+    \item Bandbreite ist nun so groß wie das NF-Signal
+  \end{itemize}
 
-    \bigskip Für den Betrieb interessant: Lower Side Band (LSB) bei $<10MHz$, Upper Side Band (USB) bei $>10MHz$
+  \bigskip Für den Betrieb interessant: Lower Side Band (LSB) bei $<10MHz$, Upper Side Band (USB) bei $>10MHz$
 
 \end{frame}
 
@@ -562,17 +562,17 @@
 \end{frame}
 
 \begin{frame}{FM Vor- \& Nachteile}
-\textbf{\Large{Vorteile}}
-\begin{itemize}
+  \textbf{\Large{Vorteile}}
+  \begin{itemize}
     \item Störungfester, da die Amplitude konstant bleibt -- Störimpulse werden
-          nicht demoduliert
-\end{itemize}
-\vspace{1cm}
-\textbf{\Large{Nachteile}}
-\begin{itemize}
+      nicht demoduliert
+  \end{itemize}
+  \vspace{1cm}
+  \textbf{\Large{Nachteile}}
+  \begin{itemize}
     \item benötigt mehr Bandbreite
     \item nur der stärkste Sender kann empfangen werden
-\end{itemize}
+  \end{itemize}
 \end{frame}
 
 % -> Skript
@@ -626,11 +626,11 @@
 \subsection[PM]{Phasenmodulation}
 
 \begin{frame}
-    \frametitle{Phasenmodulation}
+  \frametitle{Phasenmodulation}
 
-    \dots ist wie die Frequenzmodulation eine Winkelmodulation und dieser sehr ähnlich. \\[4em]
+  \dots ist wie die Frequenzmodulation eine Winkelmodulation und dieser sehr ähnlich. \\[4em]
 
-    \emph{In der Prüfung spielt sie keine Rolle} -- Beispiel: PSK31
+  \emph{In der Prüfung spielt sie keine Rolle} -- Beispiel: PSK31
 
 \end{frame}
 
@@ -641,7 +641,7 @@
   \vspace{4em}
 
   Beispiel: \bigskip
-  
+
   1kHz Tonsignal mit Morsecode wird auf den Mikrofoneingang eines FM-Senders gelegt
   $\rightarrow$ \emph{Frequenzmodulation mit Tastung eines modulierten Hilfsträgers F2A}
 \end{frame}
@@ -700,22 +700,22 @@
 \footnotesize
 
 \begin{thebibliography}{}
-    \bibitem{darc}  DARC Online-Lehrgang Klasse A:
-                    \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a11/}
-    \bibitem{wc}    Wikimedia Commons: \\
-                    \url{http://commons.wikimedia.org/wiki/File:Waveforms_de.svg}\\
-                    \url{http://commons.wikimedia.org/wiki/File:Sine_cosine_one_period.svg}\\
-                    \url{http://commons.wikimedia.org/wiki/File:Sine_Cosine_Exponential_qtl1.svg}\\
-                    \url{http://commons.wikimedia.org/wiki/File:High_accuracy_settling_time_measurements_figure_1.png}
-  	\bibitem{wm}  Wikimedia:\\
-  	  \url{https://de.wikipedia.org/wiki/Effektivwert#/media/File:Sinusspannung.svg}\\
-  	  \url{https://de.wikipedia.org/wiki/Periodische_Funktion#/media/File:Sine.svg}\\
-  	  \url{https://en.wikipedia.org/wiki/Harmonic#/media/File:Moodswingerscale.svg}\\
-  	  \url{http://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}\\
-  	\bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
-  	\bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:\\
-  	  \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
+  \bibitem{darc}  DARC Online-Lehrgang Klasse A:
+    \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a11/}
+  \bibitem{wc}    Wikimedia Commons: \\
+    \url{http://commons.wikimedia.org/wiki/File:Waveforms_de.svg}\\
+    \url{http://commons.wikimedia.org/wiki/File:Sine_cosine_one_period.svg}\\
+    \url{http://commons.wikimedia.org/wiki/File:Sine_Cosine_Exponential_qtl1.svg}\\
+    \url{http://commons.wikimedia.org/wiki/File:High_accuracy_settling_time_measurements_figure_1.png}
+  \bibitem{wm}  Wikimedia:\\
+    \url{https://de.wikipedia.org/wiki/Effektivwert#/media/File:Sinusspannung.svg}\\
+    \url{https://de.wikipedia.org/wiki/Periodische_Funktion#/media/File:Sine.svg}\\
+    \url{https://en.wikipedia.org/wiki/Harmonic#/media/File:Moodswingerscale.svg}\\
+    \url{http://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}\\
+  \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
+  \bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:\\
+    \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
 
-\end{thebibliography} 
+\end{thebibliography}
 
 \input{texdata/postamble}
