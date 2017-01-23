@@ -18,6 +18,9 @@
     * http://www.dk0tu.de/blog/2012/11/27_Sporadic-E_QSO_mit_Spanien/
       "Buzzwords" raushören, Ablauf erklären
     * Kapitel muss eher dran sein für die Funkpraxis
+* E16:
+    * entschlacken -> Klasse A
+    * Praxis ins Skript
 
 # Kurskoffer
 
