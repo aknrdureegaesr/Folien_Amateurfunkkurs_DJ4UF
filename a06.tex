@@ -56,7 +56,7 @@
 
 \section*{FET}
 \begin{frame}
-  \frametitle{Feldeffekt Transistor (FET)}
+  \frametitle{Unipolarer Transistor: Feldeffekt Transistor (FET)}
   \begin{center}
     \begin{figure}
       \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{a06/FET-aufbau.png}
@@ -167,8 +167,12 @@
     \end{center}
     \column{.5\textwidth}
     \begin{itemize}
-      \item $U_e = 0 V \rightarrow$ Transistor sperrt\\ $\rightarrow U_a = U_B$\\ $\Rightarrow$ Eingang 0, Ausgang 1
-      \item $U_e \gg 0,6 V \rightarrow$ Transistor leitet\\ $\rightarrow U_a \approx 0.1 V$\\ $\Rightarrow$ Eingang 1, Ausgang 0
+      \item $U_e = 0 V \rightarrow$ Transistor sperrt\\
+        $\rightarrow U_a \approx +VDD$ (abzgl. Verlust über R1)\\
+        $\Rightarrow$ Eingang 0, Ausgang 1
+      \item $U_e \gg 0,6 V \rightarrow$ Transistor leitet\\
+        $\rightarrow U_a \approx 0.1 V$\\
+        $\Rightarrow$ Eingang 1, Ausgang 0
       \item Der Transistor erfüllt hier die Funktion eines \textbf{Inverters}
     \end{itemize}
   \end{columns}
@@ -519,9 +523,9 @@
   \end{exampleblock}
 \end{frame}
 
-\section*{Integierte Schaltung}
+\section*{Integrierte Schaltung}
 \begin{frame}
-  \frametitle{Integierte Schaltung}
+  \frametitle{Integrierte Schaltung}
   Heutzutage komplexe Schaltungen auf einem Halbleiterkristall
   \begin{columns}
     \column{.5\textwidth}
