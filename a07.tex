@@ -5,7 +5,7 @@
 
 \input{texdata/preamble}
 \subtitle{Technik A07: \\
-Oszillator und Hochfrequenzverstärker \\[2em]}
+  Oszillator und Hochfrequenzverstärker \\[2em]}
 \date{Stand 01.06.2016}
 \input{texdata/titlepage}
 
@@ -15,7 +15,10 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
   \frametitle{Verstärker Wiederholung}
   \begin{center}
     \large Um was für eine Transistorschaltung handelt es sich?
-    \includegraphics[width=0.7\textwidth,height=.8\textheight,keepaspectratio]{a07/Transistor_Verstaerker_emetter.png}
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.6\textheight,keepaspectratio]{a07/Transistor_Verstaerker_emitter.png}
+      \attribcaption{Transistorschaltung}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -24,7 +27,10 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
   \begin{center}
     \large Emitterschaltung, da der Emitter auf dem gemeinsamen potential liegt.\\
     Phasendrehung von $180^{\circ}$\\
-    \includegraphics[width=0.7\textwidth,height=.7\textheight,keepaspectratio]{a07/Transistor_Verstaerker_emetter.png}
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.6\textheight,keepaspectratio]{a07/Transistor_Verstaerker_emitter.png}
+      \attribcaption{Transistorschaltung}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -33,8 +39,10 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{Verstärkungsbandbreiteprodukt}
   \begin{center}
-    \includegraphics[width=0.7\textwidth,height=.6\textheight,keepaspectratio]{a07/Closed_loop_gain.png}
-    {\tiny \hyperlink{refs}{\cite{wm}}} \\[2em]
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.5\textheight,keepaspectratio]{a07/Closed_loop_gain.png}
+      \attribcaption{Frequenzgrenze eines OP-Verstärkers als Funktion der Verstärkung}{Herbertweidner}{https://commons.wikimedia.org/wiki/File:Closed_loop_gain.png}{\ccpd}
+    \end{figure}
     \begin{itemize}
       \item Aufgrund von Kapazitäten im Transistor geringer Welchselstromwiderstand und somit geringe Verstärkung
       \item Mit sinkender Verstärkung vergrößert sich die Bandbreite
@@ -45,17 +53,21 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{Ersatzschaltbild MOSFET mit Kapazitäten}
   \begin{center}
-    \includegraphics[width=0.7\textwidth,height=.6\textheight,keepaspectratio]{a07/HF_Ersatzschaltbild.png}
-    {\tiny \hyperlink{refs}{\cite{wm}}} \\[2em]
-    Probleme mit Kapazitäten im Mosfet (Gate und Drain/Source, wie Kapazitätsdioden)
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.6\textheight,keepaspectratio]{a07/HF_Ersatzschaltbild.png}
+      \attribcaption{Ersatzschaltbild eines HF Feldeffekttransistors}{Hubi, geändert von Markus Matern}{https://commons.wikimedia.org/wiki/File:HF-Ersatzschaltbild.svg}{\ccbysa}
+    \end{figure}
+    Probleme mit Kapazitäten im MOSFET (Gate und Drain/Source, wie Kapazitätsdioden)
   \end{center}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Breitband Verstärker}
+  \frametitle{Breitbandverstärker}
   \begin{center}
-    \includegraphics[width=0.7\textwidth]{a07/Breitbandverstarker.png}
-    {\tiny \hyperlink{refs}{\cite{wm}}} \\[3em]
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth]{a07/Breitbandverstarker.png}
+      \attribcaption{Breitbandverstärker mit Transistor}{Herbertweidner}{https://commons.wikimedia.org/wiki/File:Breitbandverstärker.GIF}{\ccpd}
+    \end{figure}
     Ausgangslast bei HF auch kaum noch Impedanz
   \end{center}
 \end{frame}
@@ -63,8 +75,10 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{Selektiver Verstärker\,/\,Schmalbandverstärker}
   \begin{center}
-    \includegraphics[width=0.7\textwidth,height=.6\textheight,keepaspectratio]{a07/Selektiver_Verstarker.png}
-    {\tiny \hyperlink{refs}{\cite{wm}}} \\[2em]
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.6\textheight,keepaspectratio]{a07/Selektiver_Verstarker.png}
+      \attribcaption{Selektiver Verstärker mit Transistor}{Herbertweidner}{https://commons.wikimedia.org/wiki/File:Selektiver_Verstärker.GIF}{\ccpd}
+    \end{figure}
     Ausgangslast Teil des Schwingkreises, somit bei Sperrfrequenz hoher Widerstand
   \end{center}
 \end{frame}
@@ -74,8 +88,10 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{Rückgekoppelte Systeme / Schwingbedingungen}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a07/Lawine.jpg}
-    {\tiny \hyperlink{refs}{\cite{wm}}} \\[2em]
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a07/Lawine.jpg}
+      \attribcaption{Lawine}{Ben-Zin}{https://commons.wikimedia.org/wiki/File:Lawine.jpg}{\ccpd}
+    \end{figure}
     Eine Mitkopplung des Schnees $\rightarrow$ Ein wenig Schnee beginnt und reißt immer mehr mit
   \end{center}
 \end{frame}
@@ -83,8 +99,10 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{Rückgekoppelte Systeme / Schwingbedingungen}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a07/Oszillator_Anschwingen.png}
-    {\tiny \hyperlink{refs}{\cite{wm}}} \\[2em]
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a07/Oszillator_Anschwingen.png}
+      \attribcaption{Oszillogramm: Exponentieller Amplitudenanstieg eines schwach rückgekoppelten Oszillators. Nach 40$\mu s$ setzt die Amplitudenbegrenzung wegen der nichtlinearen Kennlinie ein}{Herbertweidner}{https://commons.wikimedia.org/wiki/File:Oszillator_Anschwingen.png}{\ccpd}
+    \end{figure}
     Anschwingen eines Oszillators
   \end{center}
 \end{frame}
@@ -92,8 +110,10 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{Rückgekoppelte Systeme / Schwingbedingungen}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.5\textheight,keepaspectratio]{a07/Gegenkopplung.png}
-    {\tiny \hyperlink{refs}{\cite{wm}}} \\[2em]
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.45\textheight,keepaspectratio]{a07/Gegenkopplung.png}
+      \attribcaption{Blockschaltbild eines Rückkopplungskreises mit Gegenkopplung}{WolfgangS}{https://commons.wikimedia.org/wiki/File:Gegenkopplung.png}{\ccpd}
+    \end{figure}
   \end{center}
   \begin{itemize}
     \item Für Mitkopplung muss Signal phasengleich sein
@@ -117,8 +137,10 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{Meißner}
   \begin{center}
-    \includegraphics[width=0.67\textwidth,height=.5\textheight,keepaspectratio]{a07/Meissner_oszi.png}
-    {\tiny \hyperlink{refs}{\cite{wm}}} \\[1em]
+    \begin{figure}
+      \includegraphics[width=0.67\textwidth,height=.5\textheight,keepaspectratio]{a07/Meissner_oszi.png}
+      \attribcaption{Meißner Oszillator}{Appaloosa}{https://commons.wikimedia.org/wiki/File:Meissner_oszi.svg}{\ccbysa}
+    \end{figure}
     \begin{itemize}
       \item Benannt nach Alexander Meißner, der 1913 patentierte
       \item Rückkopplung über Transformator
@@ -130,12 +152,14 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{Hartley}
   \begin{center}
-    \includegraphics[width=0.67\textwidth,height=.5\textheight,keepaspectratio]{a07/Hartley_osc.png}
-    {\tiny \hyperlink{refs}{\cite{wm}}} \\[1em]
+    \begin{figure}
+      \includegraphics[width=0.67\textwidth,height=.5\textheight,keepaspectratio]{a07/Hartley_osc.png}
+      \attribcaption{Hartley Oszillator}{Omegatron, verändert durch ArdWar}{https://commons.wikimedia.org/wiki/File:Hartley_osc.svg}{\ccbysa}
+    \end{figure}
     \begin{itemize}
-      \item Benannt nach Ralph Hartley, der 1920 patentierte
+      \item Benajnt nach Ralph Hartley, der 1920 patentierte
       \item Rückkopplung über Spule die wie Trafo wirkt
-      \item Spannung am Gate bewirkt Strom aus Source 
+      \item Spannung am Gate bewirkt Strom aus Source
     \end{itemize}
   \end{center}
 \end{frame}
@@ -145,7 +169,10 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
   \begin{columns}
     \column{.35\textwidth}
     \begin{center}
-      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a07/Cc_colp2.png} \\[1em]
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a07/Cc_colp2.png}
+        \attribcaption{Colpitts Oszillator in Kollektorschaltung}{Radomir Sebek}{https://commons.wikimedia.org/wiki/File:Cc_colp2.png}{\ccbysa}
+      \end{figure}
     \end{center}
     \column{.55\textwidth}
     \begin{itemize}
@@ -159,10 +186,10 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{Colpitts Beispiel}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a07/NPN_Colpitts_oscillator_collector_coil.png} \\[1em]
-    \begin{itemize}
-      \item Hier Colpitts in Basisschaltung
-    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.7\textheight,keepaspectratio]{a07/NPN_Colpitts_oscillator_collector_coil.png} \\[1em]
+      \attribcaption{Colpitts in Basisschaltung}{Msiddalingaiah, verändert durch Redhatter}{https://commons.wikimedia.org/wiki/File:NPN_Colpitts_oscillator_collector_coil.svg}{\ccpd}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -179,7 +206,10 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
   \frametitle{Quarzoszillator}
   \begin{columns}
     \column[c]{.5\textwidth}
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a07/PIERCE_CRYSTAL_OSCILLATOR.jpg}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a07/PIERCE_CRYSTAL_OSCILLATOR.jpg}
+      \attribcaption{Quarzoszillator in Basis und Kollektorschaltung}{Almazi}{https://commons.wikimedia.org/wiki/File:PIERCE_CRYSTAL_OSCILLATOR.jpg}{\ccbysa}
+    \end{figure}
     \column{.45\textwidth}
     \begin{itemize}
       \item Quarzoszillator in Basis und Kollektorschaltung
@@ -195,10 +225,12 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
       \item Sehr frequenzstabil
       \item Betrieb in Oberschwingung mit Sperrkreis möglich
       \item Oberschwingungen sind ein Vielfaches der Grundfrequenz des Quarzes
-    \end{itemize}    
+    \end{itemize}
     \column{.75\textwidth}
-    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a07/TD606_quarz_Oberschwingung.png}\\
-    {\tiny TD606 \hyperlink{refs}{\cite{bna}}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a07/TD606_quarz_Oberschwingung.png}
+      \attribcaption{Oberschwingung (TD606)}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{columns}
 \end{frame}
 
@@ -219,7 +251,10 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{Blockschaltbild Verstärkung}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a07/paBsb.png}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.5\textheight,keepaspectratio]{a07/paBsb.png}
+      \caption{Verstärkung in einzelnen Stufen}
+    \end{figure}
     \begin{itemize}
       \item Verstärkung der Leistung in Stufen
       \item Meist höchstens $10dB$ Verstärkung in den Treiberstufen
@@ -230,9 +265,12 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{Wirkungsgrad}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.5\textheight,keepaspectratio]{a07/paBsb.png} \huge
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.5\textheight,keepaspectratio]{a07/paBsb.png}
+      \caption{TRX Stufen}
+    \end{figure}
     \begin{block}{Wirkungsgrad}
-      $\eta = \frac{P_{Ausgang}}{P_{Versorgung}}$
+      $\eta = \cfrac{P_{Ausgang}}{P_{Versorgung}}$
     \end{block}
   \end{center}
 \end{frame}
@@ -242,11 +280,13 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
   \begin{columns}[c]
     \column[c]{5cm}
     \begin{center}
-      \includegraphics[width=1\textwidth]{a07/TD419.png}\\
-      \tiny TD419 \hyperlink{refs}{\cite{bna}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.7\textheight,keepaspectratio]{a07/TD419.png}
+        \attribcaption{Betriebsarten eines Transistors (TD419)}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \end{figure}
     \end{center}
     \column{5cm} \Large
-    \begin{enumerate} 
+    \begin{enumerate}
       \item $P_1$: C-Betrieb
       \item $P_2$: B-Betrieb
       \item $P_3$: AB-Betrieb
@@ -258,8 +298,10 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{Betriebsart Röhre}
   \begin{center}
-    \includegraphics[width=0.54\textwidth,height=.8\textheight,keepaspectratio]{a07/Ia_Ug_Kennlinie_ECC40.png} \\
-    Kennlinie mit Arbeitspunkten bei der Röhre ECC40
+    \begin{figure}
+      \includegraphics[width=0.54\textwidth,height=.7\textheight,keepaspectratio]{a07/Ia_Ug_Kennlinie_ECC40.png}
+      \attribcaption{Kennlinie mit Arbeitspunkten bei der Röhre ECC40}{Poc}{https://commons.wikimedia.org/wiki/File:Ia-Ug-Kennlinie-ECC40.png}{\ccpd}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -268,12 +310,14 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a07/Electronic_Amplifier_Class_A.png}\\
-      {\tiny \hyperlink{refs}{\cite{wm}}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a07/Electronic_Amplifier_Class_A.png}
+        \attribcaption{Verstärker in A-Betrieb}{GRAHAMUK, verändert von Yves-Laurent Allaert}{https://commons.wikimedia.org/wiki/File:Electronic_Amplifier_Class_A.png}{\ccbysa}
+      \end{figure}
     \end{center}
     \column{.45\textwidth} \large
     \begin{block}{A-Betrieb}
-      \begin{enumerate} 
+      \begin{enumerate}
         \item Beide Halbwellen werden verstärkt
         \item Hoher Verluststrom
         \item Kaum Signalverzerrung
@@ -289,12 +333,14 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a07/Electronic_Amplifier_Class_B_fixed.png}\\
-      {\tiny \hyperlink{refs}{\cite{wm}}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a07/Electronic_Amplifier_Class_B_fixed.png}
+        \attribcaption{Verstärker in B-Betrieb}{Nitram cero}{https://commons.wikimedia.org/wiki/File:Electronic_Amplifier_Class_B_fixed.png}{\ccbysa}
+      \end{figure}
     \end{center}
     \column{.45\textwidth}
     \begin{block}{B-Betrieb}
-      \begin{enumerate} 
+      \begin{enumerate}
         \item Nur die obere Halbwelle wird verstärkt
         \item Geringer Verluststrom
         \item Signalverzerrung
@@ -310,12 +356,14 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a07/Electronic_Amplifier_Push-pull.png}\\
-      {\tiny \hyperlink{refs}{\cite{wm}}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a07/Electronic_Amplifier_Push-pull.png}
+        \attribcaption{Verstärker in AB-Betrieb (Push-pull amplifier)}{Lakkasuo}{https://commons.wikimedia.org/wiki/File:Electronic_Amplifier_Push-pull.svg}{\ccbysa}
+      \end{figure}
     \end{center}
     \column{.45\textwidth} \large
     \begin{block}{AB-Betrieb}
-      \begin{enumerate} 
+      \begin{enumerate}
         \item Ein Transistor pro Halbwelle
         \item Akzeptabler Verluststrom
         \item Minimale Signalverzerrung
@@ -331,12 +379,14 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
   \begin{columns}[c]
     \column[c]{.5\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a07/Electronic_Amplifier_Class_C.png}\\
-      {\tiny \hyperlink{refs}{\cite{wm}}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{a07/electronic_amplifier_class_c.png}
+        \attribcaption{Verstärker in C-Betrieb}{GRAHAMUK, verändert durch Yves-Laurent Allaert}{https://commons.wikimedia.org/wiki/File:Electronic_Amplifier_Class_C.png}{\ccbysa}
+      \end{figure}
     \end{center}
     \column{.45\textwidth} \large
     \begin{block}{C-Betrieb}
-      \begin{enumerate} 
+      \begin{enumerate}
         \item Nur Signalspitze wird verstärkt
         \item Quasi kein Verluststrom
         \item Starke Signalverzerrung
@@ -350,7 +400,7 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 % Uebungsaufgabe raus -> Skript
 % \begin{frame}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
-%     \textbf{TD419} & 
+%     \textbf{TD419} &
 %     \begin{tabular}{c}
 %       \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{a06/td419.png}
 %     \end{tabular}
@@ -384,113 +434,170 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{HF-Verstärkerschaltung}
   \begin{center}
-    \includegraphics[width=0.85\textwidth,height=.7\textheight,keepaspectratio]{a07/TG237.png}\\
-    {\tiny TG237--TG240 \hyperlink{refs}{\cite{bna}}}
-    \begin{itemize}
-      \item Breitband HF-Verstärker aus 2 Stufen
-    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=0.85\textwidth,height=.65\textheight,keepaspectratio]{a07/TG237.png}
+      \attribcaption{HF-Verstärkerschaltung (TG237--TG240)}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
+  Breitband HF-Verstärker aus 2 Stufen
 \end{frame}
 
 \begin{frame}
   \frametitle{HF-Verstärkerschaltung Fragen}
-  \begin{center}
-    \begin{exampleblock}{TG238}
-      \only<1>{Ist die Schaltung um den 2N3866 eine Basis, Emitter oder Kollektor Schaltung? Und wozu dient der Transformator?}
-      \only<2>{Es handelt sich um eine Emitterschaltung. Der Transformator dient der Anpassung des Ausgangswiderstandes an den Eingang der folgenden Schaltung.}
-    \end{exampleblock}
-    \includegraphics[width=0.7\textwidth,height=.5\textheight,keepaspectratio]{a07/TG237.png}\\
-    {\tiny TG237--TG240 \hyperlink{refs}{\cite{bna}}}
-  \end{center}
+  \begin{columns}
+    \column{.4\textwidth}
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.5\textheight,keepaspectratio]{a07/TG237.png}
+      \attribcaption{HF-Verstärkerschaltung (TG237--TG240)}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
+    \column{.6\textwidth}
+    \begin{center}
+      \begin{exampleblock}{TG238}
+        Ist die Schaltung um den 2N3866 eine Basis, Emitter oder Kollektor Schaltung? Und wozu dient der Transformator?
+      \end{exampleblock}
+    \end{center}
+  \end{columns}
+  \pause
+  \begin{exampleblock}{Antwort}
+    Es handelt sich um eine Emitterschaltung. Der Transformator dient der Anpassung des Ausgangswiderstandes an den Eingang der folgenden Schaltung.
+  \end{exampleblock}
 \end{frame}
 
 \begin{frame}
   \frametitle{HF-Verstärkerschaltung Fragen}
-  \begin{center}
-    \begin{exampleblock}{TG239}
-      \only<1>{Warum sind oft zwei Kondensatoren parallel gegen Masse geschaltet?}
-      \only<2>{Der Kondensator mit der geringen Kapazität dient zum Abblocken der hohen und der Kondensator mit der hohen Kapazität zum Abblocken der niedrigen Frequenzen.}
-    \end{exampleblock}
-    \includegraphics[width=0.7\textwidth,height=.5\textheight,keepaspectratio]{a07/TG237.png}\\
-    {\tiny TG237--TG240 \hyperlink{refs}{\cite{bna}}}
-  \end{center}
+  \begin{columns}
+    \column{.4\textwidth}
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.5\textheight,keepaspectratio]{a07/TG237.png}
+      \attribcaption{HF-Verstärkerschaltung (TG237--TG240)}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
+    \column{.6\textwidth}
+    \begin{center}
+      \begin{exampleblock}{TG239}
+        Warum sind oft zwei Kondensatoren parallel gegen Masse geschaltet?
+      \end{exampleblock}
+    \end{center}
+  \end{columns}
+  \pause
+  \begin{exampleblock}{Antwort}
+    Der Kondensator mit der geringen Kapazität dient zum Abblocken der hohen und der Kondensator mit der hohen Kapazität zum Abblocken der niedrigen Frequenzen.
+  \end{exampleblock}
 \end{frame}
 
 \begin{frame}
   \frametitle{FM-Verstärkerschaltung}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a07/TG222.png}\\
-    {\tiny TG222--TG225 \hyperlink{refs}{\cite{bna}}}
-    \begin{itemize}
-      \item $2m$ FM-Endstufe
-    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a07/TG222.png}
+      \attribcaption{FM-Verstärkerschaltung (TG222--TG225)}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
+  $2m$ FM-Endstufe
 \end{frame}
 
 \begin{frame}
   \frametitle{FM-Verstärkerschaltung Fragen}
-  \begin{center}
-    \begin{exampleblock}{TG224}
-      \only<1>{Welchem Zweck dient die Anzapfung an $L_1$ in der folgenden Schaltung?}
-      \only<2>{Sie dient zur Anpassung der Eingangsimpedanz der Stufe.}
-    \end{exampleblock}
-    \includegraphics[width=1\textwidth,height=.5\textheight,keepaspectratio]{a07/TG222.png}\\
-    {\tiny TG222--TG225 \hyperlink{refs}{\cite{bna}}}
-  \end{center}
+  \begin{columns}
+    \column{.5\textwidth}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.5\textheight,keepaspectratio]{a07/TG222.png}
+      \attribcaption{FM-Verstärkerschaltung (TG222--TG225)}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
+    \column{.5\textwidth}
+    \begin{center}
+      \begin{exampleblock}{TG224}
+        Welchem Zweck dient die Anzapfung an $L_1$ in der folgenden Schaltung?
+      \end{exampleblock}
+    \end{center}
+  \end{columns}
+  \pause
+  \begin{exampleblock}{Antwort}
+    Sie dient zur Anpassung der Eingangsimpedanz der Stufe.
+  \end{exampleblock}
 \end{frame}
 
 \begin{frame}
   \frametitle{FM-Verstärkerschaltung Fragen}
-  \begin{center}
-    \begin{exampleblock}{TG225}
-      \only<1>{Welchem Zweck dient $C_2$ in der Schaltung?}
-      \only<2>{Zur Festlegung der HF-Kopplung \\
-      \emph{Merke: Bei Fragen mit Kondensatoren immer die HF-Antwort}}
-    \end{exampleblock}
-    \includegraphics[width=1\textwidth,height=.5\textheight,keepaspectratio]{a07/TG222.png}\\
-    {\tiny TG222--TG225 \hyperlink{refs}{\cite{bna}}}
-  \end{center}
+  \begin{columns}
+    \column{.5\textwidth}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.5\textheight,keepaspectratio]{a07/TG222.png}
+      \attribcaption{FM-Verstärkerschaltung (TG222--TG225)}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
+    \column{.5\textwidth}
+    \begin{center}
+      \begin{exampleblock}{TG225}
+        Welchem Zweck dient $C_2$ in der Schaltung?
+      \end{exampleblock}
+    \end{center}
+  \end{columns}
+  \pause
+  \begin{exampleblock}{Antwort}
+    Zur Festlegung der HF-Kopplung \\
+    \emph{Merke: Bei Fragen mit Kondensatoren immer die HF-Antwort}
+  \end{exampleblock}
 \end{frame}
 
 \begin{frame}
   \frametitle{HF-Verstärker mit Röhren}
+
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.7\textheight,keepaspectratio]{a07/TG313.png}\\
-    {\tiny TG313--TG318 \hyperlink{refs}{\cite{bna}}}
-    \begin{itemize}
-      \item Röhrenendstufe mit Pi-Filter ($C_1$, $C_2$, $L_1$) am Ausgang zur Anpassung an die Antenne
-    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.55\textheight,keepaspectratio]{a07/TG313.png}
+      \attribcaption{HF-Verstärkerschaltung mit Röhren (TG313--TG318)}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
+  Röhrenendstufe mit Pi-Filter ($C_1$, $C_2$, $L_1$) am Ausgang zur Anpassung an die Antenne
 \end{frame}
 
 \begin{frame}
   \frametitle{Röhrenverstärker abstimmen}
-  \begin{center}
-    \begin{exampleblock}{TG315}
-      \only<1>{Welche Bedeutung und Funktion haben $C_1$, $C_2$ und $L_1$? Wie sind die Bedienknöpfe der beiden Kondensatoren an einer Endstufe wahrscheinlich beschriftet?}
-      \only<2>{An dem Drehknopf für $C_1$ steht $C_{Plate}$ oder ``Plate'', an dem für $C_2$ steht $C_{Load}$ oder ``Load''. Die drei Bauelemente $C_1$, $C_2$ und $L_1$ bilden zusammen einen so genannten Pi-Tankkreis zur Anpassung der Ausgangsimpedanz der Röhre an die Antennenimpedanz.}
-    \end{exampleblock}
-    \includegraphics[width=0.65\textwidth,height=.5\textheight,keepaspectratio]{a07/TG313.png}\\
-    {\tiny TG313--TG318 \hyperlink{refs}{\cite{bna}}}
-  \end{center}
+  \begin{columns}
+    \column{.5\textwidth}
+    \begin{figure}
+      \includegraphics[width=0.65\textwidth,height=.5\textheight,keepaspectratio]{a07/TG313.png}
+      \attribcaption{HF-Verstärkerschaltung mit Röhren (TG313--TG318)}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
+    \column{.5\textwidth}
+    \begin{center}
+      \begin{exampleblock}{TG315}
+        Welche Bedeutung und Funktion haben $C_1$, $C_2$ und $L_1$? Wie sind die Bedienknöpfe der beiden Kondensatoren an einer Endstufe wahrscheinlich beschriftet?
+      \end{exampleblock}
+    \end{center}
+  \end{columns}
+  \pause
+  \begin{exampleblock}{Antwort}
+    An dem Drehknopf für $C_1$ steht $C_{Plate}$ oder ``Plate'', an dem für $C_2$ steht $C_{Load}$ oder ``Load''. Die drei Bauelemente $C_1$, $C_2$ und $L_1$ bilden zusammen einen so genannten Pi-Tankkreis zur Anpassung der Ausgangsimpedanz der Röhre an die Antennenimpedanz.
+  \end{exampleblock}
 \end{frame}
 
 \begin{frame}
   \frametitle{Röhrenverstärker abstimmen}
-  \begin{center}
-    \begin{exampleblock}{TG316}
-      \only<1>{Wie wird die folgende Endstufe richtig auf die Sendefrequenz abgestimmt?}
-      \only<2>{Zum Abstimmen $C_1$ und $C_2$ auf maximale Kapazität stellen. $C_1$ auf Dip im Anodenstrom (Resonanz) stellen, dann mit $C_2$ einen etwas höheren Anodenstrom einstellen (Leistung auskoppeln). Vorgang mit $C_1$ und $C_2$ wechselweise mehrmals wiederholen bis die maximale Ausgangsleistung erreicht ist. Nach dem Abstimmvorgang sollte ein Dip von etwa $10\%$ verbleiben.}
-    \end{exampleblock}
-    \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{a07/TG313.png}\\
-    {\tiny TG313--TG318 \hyperlink{refs}{\cite{bna}}}
-  \end{center}
+  \begin{columns}
+    \column{.5\textwidth}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{a07/TG313.png}
+      \attribcaption{HF-Verstärkerschaltung mit Röhren (TG313--TG318)}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
+    \column{.5\textwidth}
+    \begin{center}
+      \begin{exampleblock}{TG316}
+        Wie wird die folgende Endstufe richtig auf die Sendefrequenz abgestimmt?
+      \end{exampleblock}
+    \end{center}
+  \end{columns}
+  \pause
+  \begin{exampleblock}{Antwort}
+    Zum Abstimmen $C_1$ und $C_2$ auf maximale Kapazität stellen. $C_1$ auf Dip im Anodenstrom (Resonanz) stellen, dann mit $C_2$ einen etwas höheren Anodenstrom einstellen (Leistung auskoppeln). Vorgang mit $C_1$ und $C_2$ wechselweise mehrmals wiederholen bis die maximale Ausgangsleistung erreicht ist. Nach dem Abstimmvorgang sollte ein Dip von etwa $10\%$ verbleiben.
+  \end{exampleblock}
 \end{frame}
 
 \begin{frame}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.95\textheight,keepaspectratio]{a07/Heathkit.jpg}\\
-    {\tiny eigene Aufnahme DC4LW}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a07/Heathkit.jpg}
+      \attribcaption{Röhrenverstärker}{DC4LW}{http://dc4lw.de}{\ccpd}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -535,9 +642,12 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{frame}
   \frametitle{Signalverzerrung}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{a07/splatter.jpg}\\[1em]
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.5\textheight,keepaspectratio]{a07/splatter.jpg}
+      \attribcaption{Splatter}{Quelle unbekannt}{}{}
+    \end{figure}
     Zu starke Verstärkung führt zu unlinearer Verstärkung, also Verzerrung des Signals und Splatter\\
-    $10dB$ pro Decade. Normales SSB-Signal $3kHz$, dieses $9kHz$
+    $10dB$ pro Dekade. Normales SSB-Signal $3kHz$, dieses $9kHz$
   \end{center}
 \end{frame}
 
@@ -551,29 +661,12 @@ Oszillator und Hochfrequenzverstärker \\[2em]}
 \begin{thebibliography}{}
   \bibitem{darc}  DARC Online-Lehrgang Lektion A07:
     \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a07/}
-  \bibitem{wm} 	Wikimedia:
-    \url{https://commons.wikimedia.org/wiki/File:Closed_loop_gain.png}
-    \url{http://commons.wikimedia.org/wiki/File:HF-Ersatzschaltbild.svg}
-    \url{https://commons.wikimedia.org/wiki/File:Lawine.jpg}
-    \url{https://commons.wikimedia.org/wiki/File:Gegenkopplung.png}
-    \url{https://commons.wikimedia.org/wiki/File:Meissner_oszi.svg}
-    \url{https://commons.wikimedia.org/wiki/File:Hartley_osc.svg}
-    \url{https://commons.wikimedia.org/wiki/File:NPN_Colpitts_oscillator_collector_coil.svg}
-    \url{https://commons.wikimedia.org/wiki/File:PIERCE_CRYSTAL_OSCILLATOR.jpg}
-    \url{https://commons.wikimedia.org/wiki/File:Electronic_Amplifier_Class_A.png}
-    \url{https://en.wikipedia.org/wiki/File:Electronic_Amplifier_Class_B_fixed.png}
-    \url{https://commons.wikimedia.org/wiki/File:Electronic_Amplifier_Push-pull.svg}
-    \url{https://en.wikipedia.org/wiki/File:Electronic_Amplifier_Class_C.png}
-    \url{}
-    \url{}
-    \url{}
-    \url{}
   \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
     \url{https://de.wikipedia.org/wiki/Gleichrichter}
-  \bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:                   
+  \bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:
     \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
   \bibitem{fi}    Freie Inhalte (DK0TU):
     \url{http://www.dk0tu.de/Projekte/Freie_Inhalte/}
-\end{thebibliography} 
+\end{thebibliography}
 
 \input{texdata/postamble}
