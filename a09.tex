@@ -6,7 +6,7 @@
 \input{texdata/preamble}
 \subtitle{Technik A09: \\
   Antennentechnik  \\[2em]}
-\date{Stand 01.06.2015}
+\date{Stand 06.02.2017}
 \input{texdata/titlepage}
 
 \section*{Wiederholung}
@@ -110,8 +110,8 @@
   \frametitle{Realer Dipol}
   \begin{center}
     \begin{itemize}
-      \item Da Antennendraht nicht unendlich dünn ist und immer Kapazitive Kopplung zum Erdboden besteht verstimmt sich die Antenne zu niedrigeren Frequenzen
-      \item Beim Bau einer Realen Antenne mit Verkürzungsfaktoren so um $0.90-0.98$ rechnen.
+      \item Da Antennendraht nicht unendlich dünn ist und immer kapazitive Kopplung zum Erdboden besteht, verstimmt sich die Antenne zu niedrigeren Frequenzen
+      \item Beim Bau einer realen Antenne mit Verkürzungsfaktoren so um $0.90-0.98$ rechnen.
     \end{itemize}
   \end{center}
 \end{frame}
@@ -144,13 +144,17 @@
 
 \begin{frame}
   \frametitle{Gewinn einer Antenne}
-  \begin{center}
-    \large Zum Messen Testaussendungen im Labor\\
-    Vergleich oft mit Dipol\\
-    \href{https://www.youtube.com/watch?v=gBqqp7rnZ64}{\ExternalLink Youtube-Video}\\[2em]
-    $$g_D = 20 \cdot lg(\frac{P_{test}}{P_{dipol}}) = g_D[dBd]$$
-    $$g_I = g_D + 2.5dB$$
-  \end{center}
+  \begin{itemize}
+    \item Zum werden Testaussendungen im Labor gemacht
+    \item Vergeich oft mit Dipol
+    \item \href{https://www.youtube.com/watch?v=gBqqp7rnZ64}{\ExternalLink Youtube-Video}\\[2em]
+  \end{itemize}
+  \begin{block}{Gewinn}
+    \begin{center}
+      $$g_D = 20 \cdot lg(\cfrac{P_{test}}{P_{dipol}}) = g_D[dBd]$$
+      $$g_I = g_D + 2.5dB$$
+    \end{center}
+  \end{block}
 \end{frame}
 
 \begin{frame}
@@ -158,7 +162,7 @@
   \begin{center}
     \begin{figure}
       \includegraphics[width=0.8\textwidth,height=.75\textheight,keepaspectratio]{a09/TH206.png}
-      \attribcaption{Was ist das Vor-Rück Verhältnis, dBd und dBi}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \attribcaption{Was ist das Vor-Rück Verhältnis, in dBd und dBi?}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
     \end{figure}
   \end{center}
 \end{frame}
@@ -168,11 +172,13 @@
 
 \begin{frame}
   \frametitle{ERP und EIRP}
-  \begin{center}
-    \Large $$P_{ERP} = g_{D} \cdot P_{sender}$$ \\
-    $$P_{EIRP} = g_{I} \cdot P_{sender}$$ \\
-    wobei $g_D + 2.15dB = g_I$
-  \end{center}
+  \begin{block}{ERP und EIRP}
+    \begin{center}
+      \Large $$P_{ERP} = g_{D} \cdot P_{sender}$$ \\
+      $$P_{EIRP} = g_{I} \cdot P_{sender}$$ \\
+      wobei $g_D + 2.15dB = g_I$
+    \end{center}
+  \end{block}
 \end{frame}
 
 \section*{Antennentypen}
@@ -224,9 +230,12 @@
   \begin{center}
     \begin{figure}
       \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a09/W3DZZ.png}
-      \attribcaption{TH134 -- Wenn man diese Mehrband-Antenne auf 3,5\,MHz erregt, dann wirken die LC-Resonanzkreise wie?}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \attribcaption{TH134}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
     \end{figure}
-    Wenn man diese Mehrband-Antenne auf 7,05 MHz erregt, dann wirken die LC-Resonanzkreise wie?
+    \begin{itemize}
+      \item Wenn man diese Mehrband-Antenne auf 3,5\,MHz erregt, dann wirken die LC-Resonanzkreise wie?
+      \item Wenn man diese Mehrband-Antenne auf 7,05\,MHz erregt, dann wirken die LC-Resonanzkreise wie?
+    \end{itemize}
   \end{center}
 \end{frame}
 
@@ -235,9 +244,10 @@
   \begin{center}
     \begin{figure}
       \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a09/WINDOM_TH130.png}
-      \attribcaption{TH130 -- Eindrehtspeiseleitung mit $500 \Omega$ Heutzutage kaum noch verwendet wegen zu vielen Umwelteinflüßen auf die Speiseleitung}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \attribcaption{TH130}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
     \end{figure}
   \end{center}
+  Eindrahtspeiseleitung mit $500 \Omega$; heutzutage kaum noch verwendet wegen zu vielen Umwelteinflüßen auf die Speiseleitung
 \end{frame}
 
 \begin{frame}
@@ -255,14 +265,18 @@
   \begin{center}
     \begin{figure}
       \includegraphics[width=.9\textwidth,height=.75\textheight,keepaspectratio]{a09/yagi.jpg}
-      \attribcaption{10M Yagi bei DK\O TU}{DK9GD}{}{}
+      \attribcaption{10m 5-Element-Yagi bei DK\O TU}{DK9GD}{}{}
     \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Mehrband Beam}
-  \begin{center} \large
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.9\textwidth,height=.6\textheight,keepaspectratio]{a09/P160924-1657050.jpg}
+      \attribcaption{FD53 Beam für 10-15-20-40m}{DH8GHH}{http://db0smg.afug.uni-goettingen.de/~dh8ghh/bilder/2016/fielddayd23-2016/}{}
+    \end{figure}
     \begin{itemize}
       \item Kreuzung aus dem Dipol mit Traps und der Yagi-Antenne
       \item Bereich mit guter Resonanz ist schmaler, aber Antenne kürzer.
