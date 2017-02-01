@@ -1,6 +1,7 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>
+% Korrekturen: Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik A09: \\
@@ -13,16 +14,20 @@
 \begin{frame}
   \frametitle{Antenne}
   \begin{center}
-    \includegraphics[width=.6\textwidth]{e11/Traqueur_acquisition.JPG}
-    \tiny \hyperlink{refs}{\cite{wm}}
+    \begin{figure}
+      \includegraphics[width=.6\textwidth,height=.75\textheight,keepaspectratio]{e11/Traqueur_acquisition.JPG}
+      \attribcaption{Satellite tracking-aquisition antenna}{Kingbastard}{https://commons.wikimedia.org/wiki/File:Traqueur_acquisition.JPG}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Strom und Spannungsverteilung}
   \begin{center}
-    \includegraphics[width=0.8\textwidth]{a09/Felder_um_Dipol.png}
-    \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.75\textheight,keepaspectratio]{a09/Felder_um_Dipol.png}
+      \attribcaption{Felder um Dipol}{Averse}{https://commons.wikimedia.org/wiki/File:Felder_um_Dipol.jpg}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -36,22 +41,26 @@
 \begin{frame}
   \frametitle{Strom und Spannungsverteilung}
   \begin{center}
-    \includegraphics[width=0.8\textwidth]{a09/DipolUI.png}
-    \tiny \hyperlink{refs}{\cite{wm}} \\[1em] \large
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.75\textheight,keepaspectratio]{a09/DipolUI.png}
+      \attribcaption{Strom- (rot) und Spannungsverlauf (blau) entlang der Stäbe eines Halbwellendipols}{Averse in Zusammenarbeit mit Ulfbastel}{https://commons.wikimedia.org/wiki/File:Lineare_antennen.svg}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Verschiedene Frequenzen}
   \begin{center}
-    \includegraphics[width=0.8\textwidth]{a09/TH108.png} \\
-    \tiny \hyperlink{refs}{\cite{bna}} TH108\\[1em] \large
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.75\textheight,keepaspectratio]{a09/TH108.png}
+      \attribcaption{TH108}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
     Die Wellen zeigen die Stromverteilung am Dipol. \\Welche Frequenz ist welcher Buchstabe?
   \end{center}
 \end{frame}
 
 
-\section*{Antennenimpedanz}
+\section*{Antennen"=impedanz}
 
 \begin{frame}
   \frametitle{Antennenimpedanz Dipol}
@@ -78,18 +87,20 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Antenne verlängern und Kürzen}
+  \frametitle{Antenne verlängern und kürzen}
   \begin{columns}[c]
     \column[c]{5cm}
     \begin{center}
-      \includegraphics[width=0.8\textwidth]{a09/Verkurzte_10m_Antenne.jpg}\\
-      \tiny Bild von DB4UM
+      \begin{figure}
+        \includegraphics[width=0.8\textwidth,height=.75\textheight,keepaspectratio]{a09/Verkurzte_10m_Antenne.jpg}
+        \attribcaption{verkürzte 10m Antenne}{DB4UM}{}{}
+      \end{figure}
     \end{center}
     \column{5cm} \large
     \begin{center}
       \begin{itemize}
         \item Mechanisch zu kurze Antennen können durch Induktivitäten verlängert werden.
-        \item Zu lange Antennen können durch Kapazitäten elektrisch verkürtzt werden.
+        \item Zu lange Antennen können durch Kapazitäten elektrisch verkürzt werden.
       \end{itemize}
     \end{center}
   \end{columns}
@@ -110,16 +121,20 @@
 \begin{frame}
   \frametitle{Richtdiagramme erkennen}
   \begin{center}
-    \includegraphics[width=0.95\textwidth]{a09/Abstrahl.png}
-    \tiny \hyperlink{refs}{\cite{bna}} \\[1em] \large Welches Richtdiagramm ist welche Antenne?
+    \begin{figure}
+      \includegraphics[width=0.95\textwidth,height=.75\textheight,keepaspectratio]{a09/Abstrahl.png}
+      \attribcaption{Welches Richtdiagramm ist welche Antenne?}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Halbwertsbreite}
   \begin{center}
-    \includegraphics[width=0.7\textwidth]{a09/TH213.png}\\
-    \tiny \hyperlink{refs}{\cite{bna}} TH213 \\[1em]
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.75\textheight,keepaspectratio]{a09/TH213.png}
+      \attribcaption{TH213}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
     \large Die Halbwertsbreite einer Antenne ist der Winkelbereich, innerhalb dem
     die Feldstärke auf nicht weniger als den 0,707-fachen Wert der maximalen Feldstärke absinkt.\\[1em] Wie viel Grad Öffnungswinkel hat dieser Richtstrahler?
   \end{center}
@@ -132,7 +147,7 @@
   \begin{center}
     \large Zum Messen Testaussendungen im Labor\\
     Vergleich oft mit Dipol\\
-    \url{https://www.youtube.com/watch?v=gBqqp7rnZ64}\\[2em]
+    \href{https://www.youtube.com/watch?v=gBqqp7rnZ64}{\ExternalLink Youtube-Video}\\[2em]
     $$g_D = 20 \cdot lg(\frac{P_{test}}{P_{dipol}}) = g_D[dBd]$$
     $$g_I = g_D + 2.5dB$$
   \end{center}
@@ -141,8 +156,10 @@
 \begin{frame}
   \frametitle{Vor-Rück Verhältnis, dBi, dBd}
   \begin{center}
-    \includegraphics[width=0.8\textwidth]{a09/TH206.png}
-    \tiny \hyperlink{refs}{\cite{bna}} \\[1em] \large Was ist das Vor-Rück Verhältnis, dBd und dBi ?
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.75\textheight,keepaspectratio]{a09/TH206.png}
+      \attribcaption{Was ist das Vor-Rück Verhältnis, dBd und dBi}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -163,8 +180,10 @@
 \begin{frame}
   \frametitle{Fuchskreis}
   \begin{center}
-    \includegraphics[width=1\textwidth]{a09/1000px-Endgespeiste_Antenne.png}
-    \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Endgespeiste_Antenne.svg}}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a09/1000px-Endgespeiste_Antenne.png}
+      \attribcaption{Dipol mit Anpassschaltung für Koaxkabel}{Herbertweidner}{https://commons.wikimedia.org/wiki/File:Endgespeiste_Antenne.svg}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -173,32 +192,40 @@
 \begin{frame}
   \frametitle{Multibanddipol}
   \begin{center}
-    \includegraphics[width=0.9\textwidth]{a09/Multiband.jpg}
-    \footnote{\tiny Antenne EA-1015204080 von EAntenna}
+    \begin{figure}
+      \includegraphics[width=0.9\textwidth,height=.75\textheight,keepaspectratio]{a09/Multiband.jpg}
+      \caption{Antenne EA-1015204080 von EAntenna}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{G5RV}
   \begin{center}
-    \includegraphics[width=0.9\textwidth]{a09/G5RV_Antenna.png}
-    \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:G5RV_Antenna.svg}}
+    \begin{figure}
+      \includegraphics[width=0.9\textwidth,height=.75\textheight,keepaspectratio]{a09/G5RV_Antenna.png}
+      \attribcaption{G5RV Antenne}{Gerolf Ziegenhain}{https://commons.wikimedia.org/wiki/File:G5RV_Antenna.svg}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{W3DZZ}
   \begin{center}
-    \includegraphics[width=1\textwidth]{a09/W3DZZ.png}
-    \tiny \hyperlink{refs}{\cite{bna}} TH134
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a09/W3DZZ.png}
+      \attribcaption{TH134}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Traps}
   \begin{center}
-    \includegraphics[width=1\textwidth]{a09/W3DZZ.png}
-    \tiny \hyperlink{refs}{\cite{bna}} TH134 \\[1em] \large Wenn man diese Mehrband-Antenne auf 3,5 MHz erregt, dann wirken die LC-Resonanzkreise wie? \\[2em]
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a09/W3DZZ.png}
+      \attribcaption{TH134 -- Wenn man diese Mehrband-Antenne auf 3,5\,MHz erregt, dann wirken die LC-Resonanzkreise wie?}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
     Wenn man diese Mehrband-Antenne auf 7,05 MHz erregt, dann wirken die LC-Resonanzkreise wie?
   \end{center}
 \end{frame}
@@ -206,24 +233,30 @@
 \begin{frame}
   \frametitle{Windom}
   \begin{center}
-    \includegraphics[width=1\textwidth]{a09/WINDOM_TH130.png}
-    \tiny \hyperlink{refs}{\cite{bna}} TH134 \\[1em] \large Eindrehtspeiseleitung mit $500 \Omega$ \\[2em] Heutzutage kaum noch verwendet wegen zu vielen Umwelteinflüßen auf die Speiseleitung
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a09/WINDOM_TH130.png}
+      \attribcaption{TH130 -- Eindrehtspeiseleitung mit $500 \Omega$ Heutzutage kaum noch verwendet wegen zu vielen Umwelteinflüßen auf die Speiseleitung}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Yagi}
   \begin{center}
-    \includegraphics[width=0.5\textwidth]{a09/Yagi_3_element.png}
-    \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Yagi_3_element.svg}}
+    \begin{figure}
+      \includegraphics[width=0.5\textwidth,height=.75\textheight,keepaspectratio]{a09/Yagi_3_element.png}
+      \attribcaption{3 Element Yagi-Uda Antenne}{Sankeytm}{https://commons.wikimedia.org/wiki/File:Yagi_3_element.svg}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Yagi - Richtung erkennen}
   \begin{center}
-    \includegraphics[width=.9\textwidth]{a09/yagi.jpg}
-    \footnote{\tiny 10M Yagi bei DK0TU von DK9GD}
+    \begin{figure}
+      \includegraphics[width=.9\textwidth,height=.75\textheight,keepaspectratio]{a09/yagi.jpg}
+      \attribcaption{10M Yagi bei DK\O TU}{DK9GD}{}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -237,21 +270,25 @@
   \end{center}
 \end{frame}
 
-\section*{Vertikalantennen}
+\section*{Vertikal"=antennen}
 
 \begin{frame}
   \frametitle{Groundplane oder Marconi-Antenne}
   \begin{center}
-    \includegraphics[width=0.7\textwidth]{a09/GP-DB4UM.png}
-    \footnote{\tiny DB4UM mit cocoaNec 2.0}
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.75\textheight,keepaspectratio]{a09/GP-DB4UM.png}
+      \attribcaption{Groundplane-Antenne}{DB4UM mit cocoaNec 2.0}{}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Dipol mit Ground}
   \begin{center}
-    \includegraphics[width=0.7\textwidth]{a09/A6-3EN.jpg}
-    \tiny \hyperlink{refs}{\cite{wm}} \\[2em] \large
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.75\textheight,keepaspectratio]{a09/A6-3EN.jpg}
+      \attribcaption{Viertelwellen Monopol Antenne durch Ground Plane reflektiert}{LP}{https://commons.wikimedia.org/wiki/File:A6-3EN.jpg}{\ccbysa}
+    \end{figure}
     Der Boden bewirkt wie eine Spiegelung elektrisch invertierte des Strahlers
   \end{center}
 \end{frame}
@@ -259,24 +296,30 @@
 \begin{frame}
   \frametitle{Spezille Antennen}
   \begin{center}
-    \includegraphics[width=1\textwidth]{a09/patch.png}
-
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a09/patch.png}
+      \attribcaption{Patch Antenne auf Platine}{Urheber unbekannt}{}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Magnetic Loop}
   \begin{center}
-    \includegraphics[width=1\textwidth]{a09/Magloop.jpg}
-    \footnote{\tiny Magloop bei DK0TU von DB4UM}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a09/Magloop.jpg}
+      \attribcaption{Magloop bei DK\O TU}{DB4UM}{}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Spiegel Antenne}
   \begin{center}
-    \includegraphics[width=0.4\textwidth]{a09/Parabolic_antenna_types.png}
-    \tiny \hyperlink{refs}{\cite{wm}}
+    \begin{figure}
+      \includegraphics[width=0.4\textwidth,height=.75\textheight,keepaspectratio]{a09/Parabolic_antenna_types.png}
+      \attribcaption{Verschiedene Arten von Parabolantennen}{Chetvorno}{https://commons.wikimedia.org/wiki/File:Parabolic_antenna_types2.svg}{\ccpd}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -284,8 +327,10 @@
 \begin{frame}
   \frametitle{Helix Antenne}
   \begin{center}
-    \includegraphics[width=0.6\textwidth]{a09/Traqueur_acquisition.JPG}
-    \tiny \hyperlink{refs}{\cite{wm}}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.75\textheight,keepaspectratio]{a09/Traqueur_acquisition.JPG}
+      \attribcaption{Satellite tracking-aquisition antenna}{Kingbastard}{https://commons.wikimedia.org/wiki/File:Traqueur_acquisition.JPG}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -294,13 +339,17 @@
   \begin{columns}[c]
     \column[c]{5cm}
     \begin{center}
-      \includegraphics[width=0.82\textwidth]{a09/db4um_dm1ri_portabel.jpg}\\
-      \tiny C-Pole im Springpfuhl Bild: DB4UM
+      \begin{figure}
+        \includegraphics[width=0.82\textwidth,height=.75\textheight,keepaspectratio]{a09/db4um_dm1ri_portabel.jpg}
+        \attribcaption{C-Pole im Springpfuhl}{DB4UM}{}{}
+      \end{figure}
     \end{center}
     \column{5cm} \large
     \begin{center}
-      \includegraphics[width=0.82\textwidth]{a09/db4um_Drachenberg.jpg}\\
-      \tiny Groundplane auf dem Drachenberg Bild: DB4UM
+      \begin{figure}
+        \includegraphics[width=0.82\textwidth,height=.75\textheight,keepaspectratio]{a09/db4um_Drachenberg.jpg}
+        \attribcaption{Groundplane auf dem Drachenberg}{DB4UM}{}{}
+      \end{figure}
     \end{center}
   \end{columns}
 \end{frame}
@@ -308,8 +357,10 @@
 \begin{frame}
   \frametitle{Kurzwellensender Nauen}
   \begin{center}
-    \includegraphics[width=0.93\textwidth]{a09/Nauen_Dipolarray.jpg}\\
-    \tiny Kurzwellensenderantennen in Nauen Bild: DB4UM
+    \begin{figure}
+      \includegraphics[width=0.93\textwidth,height=.75\textheight,keepaspectratio]{a09/Nauen_Dipolarray.jpg}
+      \attribcaption{Kurzwellensenderantennen in Nauen}{DB4UM}{}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -325,21 +376,6 @@
 \begin{thebibliography}{}
   \bibitem{darc}  DARC Online-Lehrgang Lektion A08:
     \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a09/}
-  \bibitem{wm}  Wikimedia:
-    \url{https://upload.wikimedia.org/wikipedia/commons/3/32/Traqueur_acquisition.JPG}
-    \url{https://commons.wikimedia.org/wiki/File:Felder_um_Dipol.jpg}
-    \url{https://commons.wikimedia.org/wiki/File:Lineare_antennen.svg}
-    \url{https://commons.wikimedia.org/wiki/File:Lineare_antennen.svg}
-    \url{https://commons.wikimedia.org/wiki/File:Dipole_Antenna.svg}
-    \url{https://commons.wikimedia.org/wiki/File:G5RV_Antenna.svg}
-    \url{https://commons.wikimedia.org/wiki/File:Endgespeiste_Antenne.svg}
-    \url{https://commons.wikimedia.org/wiki/File:Yagi_3_element.svg}
-    \url{https://commons.wikimedia.org/wiki/File:FWHM.svg}
-    \url{https://commons.wikimedia.org/wiki/File:Parabolic_antenna_types2.svg}
-    \url{https://commons.wikimedia.org/wiki/File:A6-3EN.jpg}
-    \url{}
-  \bibitem{beam}  Beamkarten Generator von NS6T:
-    \url{http://ns6t.net/azimuth/azimuth.html}
   \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
     \url{https://de.wikipedia.org/wiki/Dipolantenne}
   \bibitem{bna}   Fragenkatalog Bundesnetzargentur Technik Klasse A:
