@@ -9,41 +9,42 @@
 \date{Stand 03.06.2016}
 \input{texdata/titlepage}
 
-%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
-
 \section*{HF-Leitung}
 \begin{frame}
   \frametitle{Hochfrequenzleitungen}
   \begin{center}
-    %\begin{minipage}{0.4\textwidth}
-    \includegraphics[width=\textwidth,height=.35\textheight,keepaspectratio]{a10/parallel.png}\\
-    {\tiny Abb.1: Paralleldrahtleitung \cite{wp}}
-    %\end{minipage}\\
-    \\
-    %\begin{minipage}{0.4\textwidth}
-    \includegraphics[width=\textwidth,height=.35\textheight,keepaspectratio]{a10/coax.png}\\
-    {\tiny Abb.2: Koaxialkabel \cite{wm}}
-    %\end{minipage}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.25\textheight,keepaspectratio]{a10/parallel.png}
+      \attribcaption{Paralleldrahtleitung}{SpinningSpark, verändert durch Inductiveload und Wdwd}{https://commons.wikimedia.org/wiki/File:Twin-lead_cable_dimension.svg}{\ccbysa}
+    \end{figure}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.35\textheight,keepaspectratio]{a10/coax.png}
+      \attribcaption{Koaxialkabel Schnittmodell}{Tkgd2007, verändert durch Fleshgrinder}{https://commons.wikimedia.org/wiki/File:Coaxial_cable_cutaway_new.svg}{\ccby}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Hochfrequenzleitungen}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a10/hohl.jpg}\\
-    {\tiny Abb.3: Hohlleiter \cite{wp}}
-    %\end{minipage}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{a10/hohl.jpg}
+      \attribcaption{Elliptischer Hohlleiter für den Frequenzbereich von 3,8 bis 5,8 GHz. Zwischen dem gewellten Kupferrohr und dem schwarzen Mantel befindet sich eine klebrige Schicht, welche die Rillen des Kupferrohrs ausfüllt und somit eine bessere Biegsamkeit bewirkt. An der Luft härtet diese klebrige Schicht aus und bewirkt so einen gewissen Selbstheilungseffekt bei kleineren Defekten.}{Averse}{https://commons.wikimedia.org/wiki/File:Elli_holl.jpg}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \section*{Wellen"-widerstand}
 \begin{frame}
   \frametitle{Wellenwiderstand}
-  \includegraphics[width=\textwidth,height=.35\textheight,keepaspectratio]{a10/wellenesb.png}\\
-  {\tiny Abb.4: ESB}
-  \vspace{2em}\\
-  \includegraphics[width=\textwidth,height=.35\textheight,keepaspectratio]{a10/wellenesbex.png}\\
-  {\tiny Abb.5: Genaues Ersatzschaltbild eines Koxialkabels}
+  \begin{figure}
+    \includegraphics[width=\textwidth,height=.30\textheight,keepaspectratio]{a10/wellenesb.png}
+    \caption{Ersatzschaltbild}
+  \end{figure}
+  \begin{figure}
+    \includegraphics[width=\textwidth,height=.30\textheight,keepaspectratio]{a10/wellenesbex.png}
+    \caption{Genaues Ersatzschaltbild eines Koxialkabels}
+  \end{figure}
 \end{frame}
 
 \begin{frame}
@@ -95,8 +96,10 @@
 \begin{frame}
   \frametitle{Ursachen des Skin-Effektes}
   \begin{center}
-    \includegraphics[width=.4\textwidth,height=.35\textheight,keepaspectratio]{a02/Skineffect.png}\\
-    {\tiny Abb.5: Überlagerung von Wechsel- und Wirbelströmen \cite{wp}}
+    \begin{figure}
+      \includegraphics[width=.4\textwidth,height=.35\textheight,keepaspectratio]{a02/Skineffect.png}
+      \attribcaption{Überlagerung von Wechsel- und Wirbelströmen}{Biezl}{https://commons.wikimedia.org/wiki/File:Skineffect_reason.svg}{\ccpd}
+    \end{figure}
     \begin{itemize}
       \item Ursache des Skin-Effektes ist das magnetische Feld
       \item Es erzeugt Wirbelströme im Innern des Leiters
@@ -212,8 +215,10 @@
 \begin{frame}
   \frametitle{Lecherleitung}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{a10/Lecherkreis.png}\\
-    {\tiny Abb.6: Lecherkreis}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.2\textheight,keepaspectratio]{a10/Lecher_wires_and_oscillator_1932.png}
+      \attribcaption{Lecherleitung Vorführapparat mit Kurzschlussschieber und Lampe für den Resonanzpunkt}{D. L. Barr}{https://commons.wikimedia.org/wiki/File:Lecher_wires_and_oscillator_1932.png}{\ccpd}
+    \end{figure}
   \end{center}
   \begin{itemize}
     \item Ist ein Sonderfall einer Transformationsleitung mit einem Abschlusswiderstand von $0 \Omega$ oder $\infty \Omega$
@@ -262,27 +267,39 @@
 \begin{frame}
   \frametitle{Transformationsleitungen}
   \begin{itemize}
-    \item dienen der Anpassung von Antenne zum Sender, dazu \dots
+    \item Transformationsleitungen dienen der Anpassung von Antenne zum Sender zur \dots
       \begin{itemize}
-        \item Anpassung des Sender-Widerstandes an die HF-Leitung
-        \item Anpassung der Antennenimpedanz an das Kabel
+        \item Anpassung des Sender-Widerstandes an die HF-Leitung.
+        \item Anpassung der Antennenimpedanz an das Kabel.
       \end{itemize}
     \item $R_i = Z_w = Z_{Antenne}$
   \end{itemize}
 \end{frame}
 
 \begin{frame}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a10/800px-EingangswiderstandAusgangswiderstandA.png}
+      \attribcaption{Die Widerstände bzw. Impedanzen am Eingang und Ausgang von elektrischen Geräten}{Frank Murmann}{https://commons.wikimedia.org/wiki/File:EingangswiderstandAusgangswiderstandA.svg}{\ccpd}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
   \frametitle{Prinzip der Transformationsleitung}
   \begin{center}
-    \includegraphics[width=\textwidth,height=.35\textheight,keepaspectratio]{a10/Anpassung.png}\\
-    {\tiny Abb.7: Anpassung \cite{wp}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.25\textheight,keepaspectratio]{a10/800px-EingangswiderstandAusgangswiderstandA.png}
+      \attribcaption{Die Widerstände bzw. Impedanzen am Eingang und Ausgang von elektrischen Geräten}{Frank Murmann}{https://commons.wikimedia.org/wiki/File:EingangswiderstandAusgangswiderstandA.svg}{\ccpd}
+    \end{figure}
   \end{center}
   \begin{itemize}
-    \item Eine $\lambda /4$-Leitung kann Widerstände tranformieren
+    \item Eine $\lambda /4$-Leitung kann Widerstände transformieren
     \item Aber nur in einer begrenzten Bandbreite
     \item Leitung wirkt als Transformator
-    \item Eine solche Leitung bestimmter Länge auch als abgestimmte Speiseleitung bezeichnet
-    \item Leitungen die mit ihrem Wellenwiderstand abgeschlossen werden, um Stehwellen zu vermeiden, nennt man unabgestimmte Speiseleitung
+    \item Eine solche Leitung bestimmter Länge wird auch als abgestimmte Speiseleitung bezeichnet
+    \item Mit ihrem Wellenwiderstand abgeschlossenen Leitungen zur Vermeidung von Stehwellen, nennt man unabgestimmte Speiseleitung
   \end{itemize}
 \end{frame}
 
@@ -293,19 +310,19 @@
 
   \begin{itemize}
     \item Wellenwiderstand:\\
-      \vspace{2mm}
+      \vspace{1em}
       \begin{Large}
         $Z = \sqrt{Z_E \cdot Z_A}$
       \end{Large}
-      \vspace{2mm}
+      \vspace{1em}
     \item Länge: \\
-      \vspace{2mm}
+      \vspace{1em}
       \begin{Large}
         $\ell = (2n - 1) \cdot \frac{\lambda}{4} \cdot k$
       \end{Large}
-      \vspace{3mm}
+      \vspace{1em}
     \item Bei Koaxialkabeln sieht das Ganze wie folgt aus:
-      \vspace{3mm}
+      \vspace{1em}
       \begin{align*}
         Z &= \frac{60 \Omega}{\sqrt{\varepsilon_r}} \cdot ln(\frac{D}{d}) \\
         &= \frac{138 \Omega}{\sqrt{\varepsilon_r}} \cdot lg(\frac{D}{d})
@@ -316,12 +333,13 @@
 \section*{Symmetrierung}
 \begin{frame}
   \frametitle{Symmetrierung}
-  \begin{minipage}{0.3\textwidth}
-    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a10/balun.jpg}\\
-    {\tiny Abb.8: Balun \cite{wp}}
-  \end{minipage}
-  \hspace{2mm}
-  \begin{minipage}{0.5\textwidth}
+  \begin{columns}
+    \column{.4\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a10/balun.jpg}
+      \attribcaption{Balun 4:1, 13 Windungen auf T200A/2 Ringkern}{Giorgio Brida}{https://commons.wikimedia.org/wiki/File:T200A2.jpg}{\ccby}
+    \end{figure}
+    \column{.6\textwidth}
     \begin{itemize}
       \item Wird bei Verbindungen zwischen symmetrischen und unsymmetrischen Punkten verwendet
       \item Koaxialkabel ist unsymmetrisch
@@ -330,56 +348,68 @@
       \item Alle Antennen, die gegen Erde erregt werden sind unsymmetrisch
       \item Ohne Symmetrierung entstehen Mantelwellen
     \end{itemize}
-  \end{minipage}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
   \frametitle{Balun}
-  \begin{center}
-    \includegraphics[height=.6\textheight,width=\textwidth,keepaspectratio]{a10/balun.png}\\
-    {\tiny Abb.9: Spartrafo als Balun \cite{wm}}
-  \end{center}
-  \begin{itemize}
-    \item Balun kann symmetrieren und gleichzeitig die Impedanz anpassen
-    \item Wird der Eingang an halber Windungszahl des Ausganges angeschlossen, erhält man einen 1:4 Übertrager
-  \end{itemize}
+  \begin{columns}
+    \column{.4\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[height=.6\textheight,width=\textwidth,keepaspectratio]{a10/balun.png}
+        \attribcaption{Spartrafo als Balun}{Wolfmankurd}{https://commons.wikimedia.org/wiki/File:Cdbalun2.svg}{\ccbysa}
+      \end{figure}
+    \end{center}
+    \column{.6\textwidth}
+    \begin{itemize}
+      \item Balun kann symmetrieren und gleichzeitig die Impedanz anpassen
+      \item Wird der Eingang an halber Windungszahl des Ausganges angeschlossen, erhält man einen 1:4 Übertrager
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
   \frametitle{Die $\lambda /2$-Umwegleitung}
-  \begin{minipage}{0.3\textwidth}
-    \includegraphics[height=.8\textheight,width=\textwidth,keepaspectratio]{a10/Umwegleitung.jpg}\\
-    {\tiny Abb.10: $\lambda /2$-Umwegleitung \cite{wp}}
-  \end{minipage}
-  \hspace{2mm}
-  \begin{minipage}{0.5\textwidth}
+  \begin{columns}
+    \column{.4\textwidth}
+    \begin{figure}
+      \includegraphics[height=.7\textheight,width=\textwidth,keepaspectratio]{a10/Umwegleitung.jpg}
+      \attribcaption{$\lambda /2$-Umwegleitung}{Charly Whisky}{https://commons.wikimedia.org/wiki/File:Balun(semirigid).jpg}{\ccbysa}
+    \end{figure}
+    \column{.6\textwidth}
     \begin{itemize}
       \item An der Einspeisestelle teilt sich der Strom je zur Hälfte auf
-      \item Eine Hälfte geht direkt zum Strom, die andere in die Umwegleitung
+      \item Eine Hälfte geht direkt zur Antenne, die andere in die Umwegleitung
       \item Nach dem ohmschen Gesetz verdoppelt sich dadurch der Widerstand
       \item Bei $50 \Omega$ ergeben sich also $100 \Omega$
       \item Die Umwegleitung stellt den Widerstand auf der anderen Seite nochmal mit $100 \Omega$ zur Verfügung
       \item Somit ergeben sich insgesamt $200 \Omega$ Impedanz an der Antenne
     \end{itemize}
-  \end{minipage}
+  \end{columns}
 \end{frame}
 
 \section*{Topfkreis}
 \begin{frame}
   \frametitle{Der Topfkreis}
   \begin{columns}
-    \column[c]{.3\textwidth}
-    \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{a10/Topfkreis.png}\\
-    \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{a10/Topfkreis-ESB.png}\\
-    {\tiny Abb.11: Topfkreis und ESB}
+    \column{.35\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.25\textheight,keepaspectratio]{a10/500px-Topfkreis.png}
+      \attribcaption{Topfkreis}{Mik81}{https://commons.wikimedia.org/wiki/File:Topfkreis.svg}{\ccpd}
+    \end{figure}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.25\textheight,keepaspectratio]{a10/Topfkreis-ESB.png}
+      \caption{Ersatzschaltbild}
+    \end{figure}
     \column{.65\textwidth}
     \begin{itemize}
-      \item Im UHF-Bereich werden auch Aluminium- oder versilberte Messingbecher als Leiter genutzt
+      \item Im UHF-Bereich werden Aluminium- oder versilberte Messingbecher als Leiter genutzt
       \item Sie besitzen einen Mittelleiter, wodurch sie wie eine Koaxleitung wirken
       \item Sie lassen sich wie auch die Lecherleitung durch einen Kurzschlussschieber abstimmen
       \item Dieser Schwingkreis ist vollkommen abgestimmt und von außen nicht beeinflussbar
-      \item Versilbert man die Innenflächen, lassen sich die Verlust minimieren
-      \item Dadurch werden auch die elektrischen Eigenschaften für hohe Frequenzen verbessert
+      \item Versilbert man die Innenflächen, lassen sich die Verluste minimieren
+      \item Dadurch werden die elektrischen Eigenschaften für hohe Frequenzen verbessert
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -399,19 +429,8 @@
 \footnotesize
 
 \begin{thebibliography}{}
-  \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
-    \url{http://de.wikipedia.org/wiki/Datei:Twin-lead_cable_dimension.svg}
-    \url{http://de.wikipedia.org/wiki/Datei:Elli_holl.jpg}
-    \url{http://de.wikipedia.org/wiki/Datei:EingangswiderstandAusgangswiderstandA.svg}
-    \url{http://de.wikipedia.org/wiki/Datei:Topfkreis_filter.svg}
-    \url{http://de.wikipedia.org/wiki/Datei:EingangswiderstandAusgangswiderstandA.svg}
-    \url{http://de.wikipedia.org/wiki/Datei:T200A2.jpg}
-    \url{http://de.wikipedia.org/wiki/Datei:Balun(semirigid).jpg}
   \bibitem{darc}  DARC Online-Lehrgang Lektion A08:
     \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a10/}
-  \bibitem{wm}  Wikimedia:
-    \url{http://commons.wikimedia.org/wiki/File:Coaxial_cable_cutaway_new.svg}
-    \url{http://commons.wikimedia.org/wiki/File:Cdbalun2.svg}
   \bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:
     \mbox{\url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}}
 \end{thebibliography}
