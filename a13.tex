@@ -8,8 +8,6 @@ Frequenzaufbereitung \\[2em]}
 \date{Stand 17.06.2016}
 \input{texdata/titlepage}
 
-% FIXME Blockschaltbilder sollten in Klasse E schon irgendwo rein
-
 \section{Überblick}
 
 \begin{frame}
@@ -17,8 +15,19 @@ Frequenzaufbereitung \\[2em]}
   In dieser Lektion werden häufig Blockschaltsymbole verwendet. Diese stellen logisch ganze Baugruppen dar.
 
   \begin{center}
-    \includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{a13/IMG_4686.jpg}\\
-    {\small Hausanschlussverstärker des Kabelfernsehen mit Blockschaltbildern} {\tiny (Eigene Aufnahme DC4LW)}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{a13/IMG_4686.jpg}
+      \attribcaption{Hausanschlussverstärker des Kabelfernsehen mit Blockschaltbildern}{DC4LW (eigene Aufnahme)}{http://dc4lw.de}{}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.9\textheight,keepaspectratio]{e15/Blockschaltbild_Runfunksender_Zeesen.jpg}
+      \attribcaption{Blockschaltbild des Weltrundfunksenders Zeesen 1929 im Sender- und Rundfunkmuseum Königs~Wusterhausen}{DC4LW (eigene Aufnahme)}{http://dc4lw.de}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -67,8 +76,10 @@ Frequenzaufbereitung \\[2em]}
   \begin{columns}
     \column{.5\textwidth}
     \begin{center}
-      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a13/TG103a.png}
-      {\tiny (TG103)}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a13/TG103a.png}
+        \attribcaption{TG103}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+      \end{figure}
     \end{center}
     \column{.45\textwidth}
     \begin{itemize}
@@ -98,8 +109,10 @@ Frequenzaufbereitung \\[2em]}
   Bei FM darauf achten, dass sich auch der Hub vervielfacht!
 
   \begin{center}
-    \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TG102.png}
-    {\tiny (TG102)}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TG102.png}
+      \attribcaption{TG102}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 
   Abhilfe z.B. durch Antiparallelschaltung von Dioden.\footnote{Einstellung durch
@@ -117,8 +130,10 @@ Frequenzaufbereitung \\[2em]}
   Vervielfachung ist nur bei CW und FM sinnvoll. Hub zeigt, dass Modulation ``auseinandergezogen wird'' -- bei SSB würde das Seitenband auch entsprechend vervielfacht werden und der Abstand zum Träger gerät größer.
 
   \begin{center}
-    \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{a13/TG226.png}
-    {\tiny (TG226)}
+    \begin{figure}
+      \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{a13/TG226.png}
+      \attribcaption{TG226}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 
   Mischer sind bereits aus der Modulation bekannt. Anwendung hier:
@@ -141,8 +156,10 @@ Frequenzaufbereitung \\[2em]}
   \frametitle{Einfachmischer}
 
   \begin{center}
-    \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{a13/TG226.png}
-    {\tiny (TG226)}
+    \begin{figure}
+      \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{a13/TG226.png}
+      \attribcaption{TG226}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 
   \begin{itemize}
@@ -177,8 +194,10 @@ Frequenzaufbereitung \\[2em]}
   SSB-Aufbereitung mit einem 9-MHz-Quarzfilter (balancierter Ringmischer)
 
   \begin{center}
-    \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{a13/TG106.png}
-    {\tiny (TG106)}
+    \begin{figure}
+      \includegraphics[width=0.5\textwidth,height=.4\textheight,keepaspectratio]{a13/TG106.png}
+      \attribcaption{TG106}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 
   {\small CO LSB: $9,0015MHz$; CO USB: $8,9985MHz$}\\[.5em]
@@ -193,12 +212,14 @@ Frequenzaufbereitung \\[2em]}
   Der gesamte Sendepfad würde so aussehen:
 
   \begin{center}
-    \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TG101.png}
-    {\tiny (TG101)}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TG101.png}
+      \attribcaption{TG101}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 
   Was wird nach der SSB-Mischstufe benötigt?
-  \vspace{2em}
+  \vspace{1em}
   \pause
 
   Ein Quarzfilter als Seitenbandsperre.
@@ -233,15 +254,17 @@ Frequenzaufbereitung \\[2em]}
   \frametitle{VCO-PLL}
 
   \begin{center}
-    \includegraphics[width=0.8\textwidth,height=.4\textheight,keepaspectratio]{a13/TD701.png}
-    {\tiny (TD701)}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.35\textheight,keepaspectratio]{a13/TD701.png}
+      \attribcaption{TD701}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 
   \only<1>{
   \begin{itemize}
     \item VCO (voltage-controlled oscillator) ist das Herzstück
     \item Quarzgenerator erzeugt Referenzfrequenz
-    \item Teilerfunktion ``:n'' steuert die Ausgangsfrequenz (heutzutage oft von Mikroprozessor)
+    \item Mikroprozessor steuert Teilerfunktion ``:n'' für die Ausgangsfrequenz
     \item Phasenkomparator $\varphi$
     \item stabiler Zustand: Die Frequenzen an A und B sind gleich
     \item der Tiefpass erzeugt eine Gleichspannung vom Mittelwert des Pulses an C
@@ -287,8 +310,10 @@ Frequenzaufbereitung \\[2em]}
 
   \begin{columns}[c]
     \column[c]{.6\textwidth}
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a13/TG110.png}
-    {\tiny (TG110)}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{a13/TG110.png}
+      \attribcaption{TG110}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
     \column{.35\textwidth}
     \begin{itemize}
       \item Nur ein CO
@@ -316,7 +341,7 @@ Frequenzaufbereitung \\[2em]}
 \begin{frame}
   \frametitle{Empfängerprinzipien}
 
-  Doppelsuper: Niedrige zweite Zwischenfrequenz (ZF) gute Trennschärfe. \\[2em]
+  Doppelsuper: Niedrige zweite Zwischenfrequenz (ZF) für gute Trennschärfe. \\[2em]
 
   Bei heutigen TRX: Die 1.\,ZF liegt höher als das Doppelte der maximalen
   Empfangsfrequenz. Nach der Filterung im Roofing-Filter (1.\,ZF) wird auf die
@@ -360,13 +385,15 @@ Frequenzaufbereitung \\[2em]}
   \frametitle{Doppelsuper}
 
   \begin{center}
-    \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TF205b.png}
-    {\tiny (TF205b)}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TF205b.png}
+      \attribcaption{TF205b}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 
   \begin{itemize}
-    \item 1. ZF relativ hoch (oft um 10,7\,MHz) $\rightarrow$ gute Spiegelfrequenzunterdrückung
-    \item 2. ZF niedrig (oft um 460\,kHz) $\rightarrow$ hohe Trennschärfe
+    \item 1. ZF relativ hoch (oft um 10,8\,MHz) $\rightarrow$ gute Spiegelfrequenzunterdrückung
+    \item 2. ZF niedrig (oft bei 450 bis 470\,kHz) $\rightarrow$ hohe Trennschärfe
   \end{itemize}
 \end{frame}
 
@@ -395,8 +422,10 @@ Frequenzaufbereitung \\[2em]}
   \frametitle{Doppelsuper}
 
   \begin{center}
-    \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TF209b.png}
-    {\tiny (TF209b)}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{a13/TF209b.png}
+      \attribcaption{TF209b}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 
   Vorteil von Kurzwellen-Empfängern mit sehr hoher ZF (z.B. 50 MHz):
@@ -423,8 +452,10 @@ Frequenzaufbereitung \\[2em]}
   \frametitle{PLL}
 
   \begin{center}
-    \includegraphics[width=0.8\textwidth,height=.7\textheight,keepaspectratio]{a13/TF213.png}
-    {\tiny (TF213)}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.6\textheight,keepaspectratio]{a13/TF213.png}
+      \attribcaption{TF213}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 
   Prinzip wie beim Sender
@@ -449,8 +480,10 @@ Frequenzaufbereitung \\[2em]}
   \frametitle{Converter}
 
   \begin{center}
-    \includegraphics[width=0.8\textwidth,height=.7\textheight,keepaspectratio]{a13/TF204.png}
-    {\tiny (TF204)}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.7\textheight,keepaspectratio]{a13/TF204.png}
+      \attribcaption{TF204}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 
   2-m-Konverter für einen KW-Empfänger
@@ -463,8 +496,10 @@ Frequenzaufbereitung \\[2em]}
   \frametitle{Transverter (Transceiver-Konverter)}
 
   \begin{center}
-    \includegraphics[width=0.8\textwidth,height=.7\textheight,keepaspectratio]{a13/TF209.png}
-    {\tiny (TF209)}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.6\textheight,keepaspectratio]{a13/TF209.png}
+      \attribcaption{TF209}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 
   Transverter für das 2-m-Band
