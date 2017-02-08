@@ -38,23 +38,31 @@
   \frametitle{AM-Modulation}
 
   \begin{columns}
-    \column{.4\textwidth}
-    \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{a12/td503d.png}
-    \column{.5\textwidth}
+    \column{.3\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.25\textheight,keepaspectratio]{a12/td503d.png}
+      \attribcaption{TD503}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
+    \column{.7\textwidth}
     NF-Signal wird gemischt mit einem
   \end{columns}
   \begin{columns}
-    \column{.4\textwidth}
-    \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{a12/td503b.png}
-    \column{.5\textwidth}
-    HF-Signal. Beim resultierenden Signal (nicht dargestellt) wird durch
+    \column{.3\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.25\textheight,keepaspectratio]{a12/td503b.png}
+      \attribcaption{TD503}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
+    \column{.7\textwidth}
+    HF-Signal. Beim resultierenden Signal (nicht dargestellt) wird durch eine Diode eine Halbwelle entfernt. 
   \end{columns}
   \begin{columns}
-    \column{.4\textwidth}
-    \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{a12/td503a.png}\\
-    {\tiny TD503}
-    \column{.5\textwidth}
-    eine Diode eine Halbwelle entfernt. Mit einer Siebschaltung werden die fehlenden Halbwellen mit gleicher Größe der vorhandenen regeneriert.
+    \column{.3\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.25\textheight,keepaspectratio]{a12/td503a.png}
+      \attribcaption{TD503}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
+    \column{.7\textwidth}
+    Mit einer Siebschaltung werden die fehlenden Halbwellen mit gleicher Größe der vorhandenen regeneriert.
   \end{columns}
 \end{frame}
 
@@ -66,12 +74,14 @@
 
   \begin{block}{Modulationsgrad}
     Verhältnis der Amplitude der NF-Schwingung zur Amplitude der unmodulierten Trägerschwingung.\\
-    $m = \cfrac{\hat{U}_{mod}}{\hat{U}_T}$
+    $m = \cfrac{\skew{4}\hat{U}_{mod}}{\skew{4}\hat{U}_T}$
   \end{block}
 
   \begin{center}
-    \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{a12/TE111.png}
-    {\tiny TE111}
+    \begin{figure}
+      \includegraphics[width=0.4\textwidth,height=.5\textheight,keepaspectratio]{a12/TE111.png}
+      \attribcaption{TE111}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -81,8 +91,8 @@
 \begin{frame}
   \frametitle{Leistung bei AM}
   \begin{exampleblock}{Beispiel bei 100\% Modulationsgrad}
-    100\% Modulationsgrad $\equiv$ Trägerspannung und Modulationsspannung gleich\\[.5em]
-    z.B. Gesamtspannung 10V $\Rightarrow$ 5V Träger + 2 Mal 2,5V Seitenfrequenzen\\[.5em]
+    100\% Modulationsgrad $\equiv$ Trägerspannung und Modulationsspannung gleich\\
+    z.B. Gesamtspannung 10V $\Rightarrow$ 5V Träger + 2 Mal 2,5V Seitenfrequenzen\\
     Bei einem Widerstand von 50$\Omega$ ergibt sich für die Leistung $P = \frac{U^2}{R}$\\[.5em]
     \begin{align*}
       \text{Träger: } & P       &= \frac{5^2V^2}{50\Omega}   = 0,5W    \\
@@ -101,8 +111,10 @@
 
   \begin{columns}
     \column{.5\textwidth}
-    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{a12/td503.png}\\
-    {\tiny TD501}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{a12/td503.png}
+      \attribcaption{TD503}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
     \column{.45\textwidth}
     \textbf{Hüllkurvendemodulator}\\[.5em]
     Bestehend aus Gleichrichter, Diode, Ladekondensator, Entladungswiderstand und Koppelkondensator
@@ -185,8 +197,10 @@
   \frametitle{Ringmodulator}
   \begin{columns}
     \column{.5\textwidth}
-    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a12/td513.png}\\
-    {\tiny TD513}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a12/td513.png}
+      \attribcaption{TD513}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
     \column{.45\textwidth}
     \emph{Das ist keine Gleichrichterschaltung! Die Dioden sind anders angeordnet.}\\[1.5em]
     Je nach Polarität des NF-Signals wird ein anderes Dioden-Pärchen leitend. Bei Polaritätswechsel ergibt sich eine Phasendrehung des modulierten Signals.\\[2.5em]
@@ -201,7 +215,7 @@
 \subsection{Modulation}
 
 \begin{frame}
-  \frametitle{SSB}
+  \frametitle{Single Side Band}
 
   \begin{itemize}
     \item in beiden Seitenbändern steckt dieselbe Information
@@ -278,8 +292,10 @@
   \frametitle{Produktdetektor}
   \begin{columns}
     \column{.5\textwidth}
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td511.png}\\
-    {\tiny TD511}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td511.png}
+      \attribcaption{TD511}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
     \column{.45\textwidth}
     \begin{itemize}
       \item anderer Demodulator anstatt AM-Hüllkurvendemodulator
@@ -300,8 +316,10 @@
 
   \begin{columns}
     \column{.5\textwidth}
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td514.png}\\
-    {\tiny TD514}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td514.png}
+      \attribcaption{TD514}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
     \column{.45\textwidth}
     \begin{itemize}
       \item Kapazitätsdiode parallel zum Oszillator geschaltet
@@ -359,7 +377,7 @@
     \textbf{TG212} &
     \begin{tabular}[c]{lr}
       \includegraphics[width=.4\textwidth,height=.5\textheight,keepaspectratio]{a12/tg212.png} &
-      \parbox[c]{.4\textwidth}{\textbf{Dieser Schaltungsauszug ist Teil eines Senders.  Welche Funktion hat die Diode?}} \\
+      \parbox[b]{.35\textwidth}{\textbf{Dieser Schaltungsauszug ist Teil eines Senders.  Welche Funktion hat die Diode?}} \\
     \end{tabular} \\ \hline\hline
     A \only<2>\checkmark & Sie beeinflussst die Resonanzfrequenz des Schwingkreises in Abhängigkeit von den Frequenzen im Basisband und moduliert so die Oszillatorfrequenz. \\ \hline
     B & Sie richtet das Eingangssignal gleich und erzeugt so die Betriebsspannung für den Oszillator, um diesen von der Stromversorgung der anderen Stufen zu entkoppeln. \\ \hline
@@ -389,8 +407,10 @@
 
   \begin{columns}
     \column{.5\textwidth}
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td505.png}\\
-    {\tiny TD505}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td505.png}
+      \attribcaption{TD505}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
     \column{.45\textwidth}
     \begin{itemize}
       \item die meisten FM-Demodulatoren wandeln FM erst in AM oder PM um
@@ -417,8 +437,10 @@
 \begin{frame}
   \begin{columns}
     \column{.5\textwidth}
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td507.png}\\
-    {\tiny TD507}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td507.png}
+      \attribcaption{TD507}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
     \column{.45\textwidth}
     \begin{itemize}
       \item \textbf{Phasendiskriminator}
@@ -431,8 +453,10 @@
 \begin{frame}
   \begin{columns}
     \column{.5\textwidth}
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td508.png}\\
-    {\tiny TD508}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td508.png}
+      \attribcaption{TD508}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
     \column{.45\textwidth}
     \begin{itemize}
       \item \textbf{Verhältnisdiskriminator} oder \textbf{Ratiodetektor}
@@ -446,8 +470,10 @@
 \begin{frame}
   \begin{columns}
     \column{.5\textwidth}
-    \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td509.png}\\
-    {\tiny TD509}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{a12/td509.png}
+      \attribcaption{TD509}{BNetzA}{https://www.bundesnetzagentur.de/amateurfunk/}{}
+    \end{figure}
     \column{.45\textwidth}
     \begin{itemize}
       \item \textbf{PLL-FM-Demodulator}
