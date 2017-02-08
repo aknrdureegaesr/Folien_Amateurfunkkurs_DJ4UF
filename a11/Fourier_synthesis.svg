@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>File:Fourier synthesis.svg - Wikimedia Commons</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"File","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":6,"wgPageName":"File:Fourier_synthesis.svg","wgTitle":"Fourier synthesis.svg","wgCurRevisionId":142674718,"wgRevisionId":142674718,"wgArticleId":11197146,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Valid SVG","License migration redundant","GFDL","CC-BY-SA-3.0,2.5,2.0,1.0","Self-published work","Gnuplot diagrams","Fourier analysis"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"File:Fourier_synthesis.svg","wgRelevantArticleId":11197146,"wgRequestId":"WJsqmQpAMFsAAGE3Wc0AAABY","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRestrictionUpload":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgULSCurrentAutonym":"English","wgNoticeProject":"commons","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","filepage":"ready","mediawiki.action.view.filepage":"ready","ext.gadget.Long-Image-Names-in-Categories":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.pt":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.Slideshow","ext.gadget.ZoomViewer","ext.gadget.CollapsibleTemplates","ext.gadget.fastcci","ext.gadget.UploadWizard","ext.gadget.Stockphoto","ext.gadget.WatchlistNotice","ext.gadget.AjaxQuickDelete","ext.gadget.WikiMiniAtlas","ext.gadget.LanguageSelect","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.Long-Image-Names-in-Categories%7Cext.pygments%2CwikimediaBadges%7Cext.uls.pt%7Cext.visualEditor.desktopArticleTarget.noscript%7Cfilepage%7Cmediawiki.action.view.filepage%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<noscript><link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=noscript&amp;only=styles&amp;skin=vector"/></noscript>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.10"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=File:Fourier_synthesis.svg&amp;action=edit"/>
+<link rel="edit" title="Edit" href="/w/index.php?title=File:Fourier_synthesis.svg&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/commons.png"/>
+<link rel="shortcut icon" href="/static/favicon/commons.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikimedia Commons"/>
+<link rel="EditURI" type="application/rsd+xml" href="//commons.wikimedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Wikimedia Commons Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://commons.wikimedia.org/wiki/File:Fourier_synthesis.svg"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-6 ns-subject page-File_Fourier_synthesis_svg rootpage-File_Fourier_synthesis_svg skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">File:Fourier synthesis.svg</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikimedia Commons, the free media repository</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text"><ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage on Commons</a></li>
+<li><a href="#globalusage">File usage on other wikis</a></li></ul><div class="fullImageLink" id="file"><a href="https://upload.wikimedia.org/wikipedia/commons/f/fa/Fourier_synthesis.svg"><img alt="File:Fourier synthesis.svg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Fourier_synthesis.svg/748px-Fourier_synthesis.svg.png" width="748" height="517" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Fourier_synthesis.svg/1122px-Fourier_synthesis.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Fourier_synthesis.svg/1496px-Fourier_synthesis.svg.png 2x" data-file-width="748" data-file-height="517" /></a><div class="mw-filepage-resolutioninfo">Size of this PNG preview of this SVG file: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Fourier_synthesis.svg/748px-Fourier_synthesis.svg.png" class="mw-thumbnail-link">748 × 517 pixels</a>. <span class="mw-filepage-other-resolutions">Other resolutions: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Fourier_synthesis.svg/320px-Fourier_synthesis.svg.png" class="mw-thumbnail-link">320 × 221 pixels</a> | <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Fourier_synthesis.svg/640px-Fourier_synthesis.svg.png" class="mw-thumbnail-link">640 × 442 pixels</a> | <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Fourier_synthesis.svg/800px-Fourier_synthesis.svg.png" class="mw-thumbnail-link">800 × 553 pixels</a> | <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Fourier_synthesis.svg/1024px-Fourier_synthesis.svg.png" class="mw-thumbnail-link">1,024 × 708 pixels</a> | <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Fourier_synthesis.svg/1280px-Fourier_synthesis.svg.png" class="mw-thumbnail-link">1,280 × 885 pixels</a>.</span></div></div>
+<div class="fullMedia"><a href="https://upload.wikimedia.org/wikipedia/commons/f/fa/Fourier_synthesis.svg" class="internal" title="Fourier synthesis.svg">Original file</a> &#8206;<span class="fileInfo">(SVG file, nominally 748 × 517 pixels, file size: 344 KB)</span>
+</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-content-ltr plainlinks">
+<table cellspacing="0" style="color:#000;background:#EFE;border:1px solid #55B05A;margin:.1em;width:;">
+<tr>
+<td style="height:29px;line-height:2.1em;padding:0;vertical-align:middle"><a href="//validator.w3.org/" rel="nofollow"><img alt="W3C" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Valid_SVG_1.1_%28green%29.svg/88px-Valid_SVG_1.1_%28green%29.svg.png" width="88" height="30" style="vertical-align: top" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Valid_SVG_1.1_%28green%29.svg/132px-Valid_SVG_1.1_%28green%29.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Valid_SVG_1.1_%28green%29.svg/176px-Valid_SVG_1.1_%28green%29.svg.png 2x" data-file-width="512" data-file-height="174" /></a><span style="visibility:hidden; color:transparent;">i</span>The source code of this <a href="/wiki/Help:SVG" title="Help:SVG">SVG</a> is <a rel="nofollow" class="external text" href="//validator.w3.org/check?uri=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3AFilepath%2FFourier_synthesis.svg&amp;ss=1#source"><span style="background:">valid</span></a>.</td>
+</tr>
+</table>
+</div>
+<h2><span class="mw-headline" id="Summary">Summary</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=File:Fourier_synthesis.svg&amp;action=edit&amp;section=1" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="hproduct commons-file-information-table">
+<table class="fileinfotpl-type-information toccolours vevent mw-content-ltr" style="width: 100%; direction: ltr;" cellpadding="4">
+<tr style="vertical-align: top">
+<td id="fileinfotpl_desc" class="fileinfo-paramfield" lang="en">Description<span class="summary fn" style="display:none">Fourier synthesis.svg</span></td>
+<td class="description">
+<div class="description mw-content-ltr en" dir="ltr" lang="en" style=""><span class="language en" title=""><b>English:</b></span> Fourier analysis of a square wave.</div>
+<div class="description mw-content-ltr de" dir="ltr" lang="de" style=""><span class="language de" title="Deutsch"><b>Deutsch:</b></span> Fourieranalyse eines Rechtecksignals.</div>
+</td>
+</tr>
+<tr style="vertical-align: top">
+<td id="fileinfotpl_date" class="fileinfo-paramfield" lang="en">Date</td>
+<td lang="en"><span style="white-space:nowrap"><time class="dtstart" datetime="2010-08-16">16 August 2010</time></span></td>
+</tr>
+<tr style="vertical-align: top">
+<td id="fileinfotpl_src" class="fileinfo-paramfield" lang="en">Source</td>
+<td><span class="int-own-work" lang="en">Own work</span>, SVG Version of <a href="/wiki/File:Fouriersynthese.png" title="File:Fouriersynthese.png">File:Fouriersynthese.png</a></td>
+</tr>
+<tr style="vertical-align: top">
+<td id="fileinfotpl_aut" class="fileinfo-paramfield" lang="en">Author</td>
+<td><a href="/wiki/User:Ren%C3%A9_Schwarz" title="User:René Schwarz">René Schwarz</a></td>
+</tr>
+</table>
+</div>
+<p>Created with Gnuplot 4.4.0 -- and modified after export.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="k">reset</span>
+<span class="lineno"> 2 </span><span class="k">set</span> <span class="nb">terminal</span> <span class="n">svg</span> <span class="n">size</span> <span class="mi">1000</span><span class="o">,</span><span class="mi">618</span>
+<span class="lineno"> 3 </span><span class="k">set</span> <span class="nb">output</span> <span class="s">"Fouriersynthese.svg"</span>
+<span class="lineno"> 4 </span><span class="k">set</span> <span class="nb">multiplot</span> <span class="n">layout</span> <span class="mi">4</span><span class="o">,</span><span class="mi">4</span>
+<span class="lineno"> 5 </span><span class="k">unset</span> <span class="nb">key</span>
+<span class="lineno"> 6 </span><span class="k">set</span> <span class="nb">border</span> <span class="mi">3</span>
+<span class="lineno"> 7 </span><span class="k">set</span> <span class="nb">size</span> <span class="n">ratio</span> <span class="mf">0.6180339887</span>
+<span class="lineno"> 8 </span><span class="k">set</span> <span class="nb">zeroaxis</span> <span class="n">lt</span> <span class="mi">-1</span>
+<span class="lineno"> 9 </span><span class="k">set</span> <span class="nb">lmargin</span> <span class="mi">10</span>
+<span class="lineno">10 </span><span class="k">set</span> <span class="nb">rmargin</span> <span class="mi">2</span>
+<span class="lineno">11 </span><span class="k">set</span> <span class="nb">tmargin</span> <span class="mi">1</span>
+<span class="lineno">12 </span><span class="k">set</span> <span class="nb">bmargin</span> <span class="mi">3</span>
+<span class="lineno">13 </span><span class="k">set</span> <span class="nb">yr</span> <span class="p">[</span><span class="mi">-1</span><span class="mf">.5</span><span class="o">:</span><span class="mf">1.5</span><span class="p">]</span>
+<span class="lineno">14 </span><span class="k">set</span> <span class="nb">xr</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mi">7</span><span class="p">]</span>
+<span class="lineno">15 </span><span class="k">set</span> <span class="nb">samples</span> <span class="mi">10000</span>
+<span class="lineno">16 </span><span class="k">set</span> <span class="nb">xtics</span> <span class="n">out</span> <span class="mi">5</span>
+<span class="lineno">17 </span><span class="k">set</span> <span class="nb">mxtics</span> <span class="mi">5</span>
+<span class="lineno">18 </span><span class="k">set</span> <span class="nb">ytics</span> <span class="n">out</span> <span class="mi">1</span>
+<span class="lineno">19 </span><span class="k">set</span> <span class="nb">mytics</span> <span class="mi">4</span>
+<span class="lineno">20 </span>
+<span class="lineno">21 </span><span class="c"># row 1</span>
+<span class="lineno">22 </span><span class="c">#set xlabel "t"</span>
+<span class="lineno">23 </span><span class="c">#set ylabel "U"</span>
+<span class="lineno">24 </span><span class="k">plot</span> <span class="mi">4</span><span class="o">/</span><span class="n">pi</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">25 </span><span class="k">plot</span> <span class="mi">4</span><span class="o">/</span><span class="n">pi</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">26 </span><span class="k">plot</span> <span class="mi">4</span><span class="o">/</span><span class="n">pi</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">27 </span><span class="k">set</span> <span class="nb">yr</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mf">1.5</span><span class="p">]</span>
+<span class="lineno">28 </span><span class="k">set</span> <span class="nb">xr</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mi">8</span><span class="p">]</span>
+<span class="lineno">29 </span><span class="c">#set xlabel "f"</span>
+<span class="lineno">30 </span><span class="k">plot</span> <span class="s">'-'</span> <span class="nb">with</span> <span class="n">impulses</span> <span class="n">lw</span> <span class="mi">2</span>
+<span class="lineno">31 </span><span class="err">1</span> <span class="err">1.273239545</span>
+<span class="lineno">32 </span><span class="err">e</span>
+<span class="lineno">33 </span><span class="k">set</span> <span class="nb">yr</span> <span class="p">[</span><span class="mi">-1</span><span class="mf">.5</span><span class="o">:</span><span class="mf">1.5</span><span class="p">]</span>
+<span class="lineno">34 </span><span class="k">set</span> <span class="nb">xr</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mi">7</span><span class="p">]</span>
+<span class="lineno">35 </span>
+<span class="lineno">36 </span><span class="c"># row 2</span>
+<span class="lineno">37 </span><span class="c">#set xlabel "t"</span>
+<span class="lineno">38 </span><span class="k">plot</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">39 </span><span class="k">plot</span> <span class="mi">4</span><span class="o">/</span><span class="n">pi</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">,</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">40 </span><span class="k">plot</span> <span class="mi">4</span><span class="o">/</span><span class="n">pi</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">41 </span><span class="k">set</span> <span class="nb">yr</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mf">1.5</span><span class="p">]</span>
+<span class="lineno">42 </span><span class="k">set</span> <span class="nb">xr</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mi">8</span><span class="p">]</span>
+<span class="lineno">43 </span><span class="c">#set xlabel "f"</span>
+<span class="lineno">44 </span><span class="k">plot</span> <span class="s">'-'</span> <span class="nb">with</span> <span class="n">impulses</span> <span class="n">lw</span> <span class="mi">2</span>
+<span class="lineno">45 </span><span class="err">1</span> <span class="err">1.273239545</span>
+<span class="lineno">46 </span><span class="err">3</span> <span class="err">0.424413182</span>
+<span class="lineno">47 </span><span class="err">e</span>
+<span class="lineno">48 </span><span class="k">set</span> <span class="nb">yr</span> <span class="p">[</span><span class="mi">-1</span><span class="mf">.5</span><span class="o">:</span><span class="mf">1.5</span><span class="p">]</span>
+<span class="lineno">49 </span><span class="k">set</span> <span class="nb">xr</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mi">7</span><span class="p">]</span>
+<span class="lineno">50 </span>
+<span class="lineno">51 </span><span class="c"># row 3</span>
+<span class="lineno">52 </span><span class="c">#set xlabel "t"</span>
+<span class="lineno">53 </span><span class="k">plot</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">54 </span><span class="k">plot</span> <span class="mi">4</span><span class="o">/</span><span class="n">pi</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">,</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="p">)</span><span class="o">,</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">55 </span><span class="k">plot</span> <span class="mi">4</span><span class="o">/</span><span class="n">pi</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">+</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">56 </span><span class="k">set</span> <span class="nb">yr</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mf">1.5</span><span class="p">]</span>
+<span class="lineno">57 </span><span class="k">set</span> <span class="nb">xr</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mi">8</span><span class="p">]</span>
+<span class="lineno">58 </span><span class="c">#set xlabel "f"</span>
+<span class="lineno">59 </span><span class="k">plot</span> <span class="s">'-'</span> <span class="nb">with</span> <span class="n">impulses</span> <span class="n">lw</span> <span class="mi">2</span>
+<span class="lineno">60 </span><span class="err">1</span> <span class="err">1.273239545</span>
+<span class="lineno">61 </span><span class="err">3</span> <span class="err">0.424413182</span>
+<span class="lineno">62 </span><span class="err">5</span> <span class="err">0.254647909</span>
+<span class="lineno">63 </span><span class="err">e</span>
+<span class="lineno">64 </span><span class="k">set</span> <span class="nb">yr</span> <span class="p">[</span><span class="mi">-1</span><span class="mf">.5</span><span class="o">:</span><span class="mf">1.5</span><span class="p">]</span>
+<span class="lineno">65 </span><span class="k">set</span> <span class="nb">xr</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mi">7</span><span class="p">]</span>
+<span class="lineno">66 </span>
+<span class="lineno">67 </span><span class="c"># row 4</span>
+<span class="lineno">68 </span><span class="c">#set xlabel "t"</span>
+<span class="lineno">69 </span><span class="k">plot</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">7</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">7</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">70 </span><span class="k">plot</span> <span class="mi">4</span><span class="o">/</span><span class="n">pi</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">,</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="p">)</span><span class="o">,</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="p">)</span><span class="o">,</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">7</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">7</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">71 </span><span class="k">plot</span> <span class="mi">4</span><span class="o">/</span><span class="n">pi</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">+</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mi">4</span><span class="o">/</span><span class="p">(</span><span class="mi">7</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="nf">sin</span><span class="p">(</span><span class="mi">7</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">72 </span><span class="k">set</span> <span class="nb">yr</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mf">1.5</span><span class="p">]</span>
+<span class="lineno">73 </span><span class="k">set</span> <span class="nb">xr</span> <span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="mi">8</span><span class="p">]</span>
+<span class="lineno">74 </span><span class="c">#set xlabel "f"</span>
+<span class="lineno">75 </span><span class="k">plot</span> <span class="s">'-'</span> <span class="nb">with</span> <span class="n">impulses</span> <span class="n">lw</span> <span class="mi">2</span>
+<span class="lineno">76 </span><span class="err">1</span> <span class="err">1.273239545</span>
+<span class="lineno">77 </span><span class="err">3</span> <span class="err">0.424413182</span>
+<span class="lineno">78 </span><span class="err">5</span> <span class="err">0.254647909</span>
+<span class="lineno">79 </span><span class="err">7</span> <span class="err">0.181891364</span>
+<span class="lineno">80 </span><span class="err">e</span>
+<span class="lineno">81 </span>
+<span class="lineno">82 </span><span class="k">unset</span> <span class="nb">multiplot</span>
+<span class="lineno">83 </span><span class="k">set</span> <span class="nb">terminal</span> <span class="n">windows</span>
+<span class="lineno">84 </span><span class="k">reset</span>
+<span class="lineno">85 </span><span class="k">clear</span>
+</pre></div>
+<h2><span class="mw-headline" id="Licensing">Licensing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=File:Fourier_synthesis.svg&amp;action=edit&amp;section=2" title="Edit section: Licensing">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table cellspacing="8" cellpadding="0" style="clear:both; margin:0.5em auto; background-color:#f0f0f0; border:2px solid #e0e0e0; direction: ltr;" class="licensetpl_wrapper">
+<tr>
+<td>
+<div class="center"><b><span lang="en" class="description en">I, the copyright holder of this work, hereby publish it under the following licenses:</span></b></div>
+<table cellspacing="8" cellpadding="0" style="width:100%; clear:both; margin:0.5em auto; background-color:#f9f9f9; border:2px solid #e0e0e0; direction: ltr;" lang="en" class="layouttemplate licensetpl">
+<tr>
+<td><a href="/wiki/File:Heckert_GNU_white.svg" class="image" title="GNU head"><img alt="GNU head" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Heckert_GNU_white.svg/64px-Heckert_GNU_white.svg.png" width="64" height="63" class="noviewer" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Heckert_GNU_white.svg/96px-Heckert_GNU_white.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Heckert_GNU_white.svg/128px-Heckert_GNU_white.svg.png 2x" data-file-width="535" data-file-height="523" /></a></td>
+<td>Permission is granted to copy, distribute and/or modify this document under the terms of the <b><a href="https://en.wikipedia.org/wiki/en:GNU_Free_Documentation_License" class="extiw" title="w:en:GNU Free Documentation License">GNU Free Documentation License</a></b>, Version 1.2 or any later version published by the <a href="https://en.wikipedia.org/wiki/en:Free_Software_Foundation" class="extiw" title="w:en:Free Software Foundation">Free Software Foundation</a>; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled <i><a href="/wiki/Commons:GNU_Free_Documentation_License,_version_1.2" title="Commons:GNU Free Documentation License, version 1.2">GNU Free Documentation License</a></i>.<span class="licensetpl_link" style="display:none;">http://www.gnu.org/copyleft/fdl.html</span><span class="licensetpl_short" style="display:none;">GFDL</span><span class="licensetpl_long" style="display:none;">GNU Free Documentation License</span><span class="licensetpl_link_req" style="display:none;">true</span><span class="licensetpl_attr_req" style="display:none;">true</span></td>
+</tr>
+</table>
+<table style="width:100%; clear:both; text-align:center; margin:0.5em auto; background-color:#f9f9f9; border:2px solid #e0e0e0; padding: 0; border-spacing: 8px;" class="layouttemplate licensetpl mw-content-ltr" lang="en">
+<tr>
+<td style="width:90px;" rowspan="3"><img alt="w:en:Creative Commons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/90px-CC_some_rights_reserved.svg.png" title="w:en:Creative Commons" width="90" height="36" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/135px-CC_some_rights_reserved.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/180px-CC_some_rights_reserved.svg.png 2x" data-file-width="744" data-file-height="300" /><br />
+<img alt="attribution" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/24px-Cc-by_new_white.svg.png" title="attribution" width="24" height="24" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/36px-Cc-by_new_white.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/48px-Cc-by_new_white.svg.png 2x" data-file-width="64" data-file-height="64" /> <img alt="share alike" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/24px-Cc-sa_white.svg.png" title="share alike" width="24" height="24" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/36px-Cc-sa_white.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/48px-Cc-sa_white.svg.png 2x" data-file-width="64" data-file-height="64" /></td>
+<td lang="en">This file is licensed under the <a href="https://en.wikipedia.org/wiki/en:Creative_Commons" class="extiw" title="w:en:Creative Commons">Creative Commons</a> Attribution-Share Alike <a rel="nofollow" class="external text" href="//creativecommons.org/licenses/by-sa/3.0/deed.en">3.0 Unported</a>, <a rel="nofollow" class="external text" href="//creativecommons.org/licenses/by-sa/2.5/deed.en">2.5 Generic</a>, <a rel="nofollow" class="external text" href="//creativecommons.org/licenses/by-sa/2.0/deed.en">2.0 Generic</a> and <a rel="nofollow" class="external text" href="//creativecommons.org/licenses/by-sa/1.0/deed.en">1.0 Generic</a> license.</td>
+<td style="width:90px;" rowspan="3"></td>
+</tr>
+<tr style="text-align:center;">
+<td></td>
+</tr>
+<tr style="text-align:left;" lang="en">
+<td>
+<dl>
+<dd>You are free:
+<ul>
+<li><b>to share</b> – to copy, distribute and transmit the work</li>
+<li><b>to remix</b> – to adapt the work</li>
+</ul>
+</dd>
+<dd>Under the following conditions:
+<ul>
+<li><b>attribution</b> – You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work).</li>
+<li><b>share alike</b> – If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one.</li>
+</ul>
+</dd>
+</dl>
+<p><span class="licensetpl_link" style="display:none;">http://creativecommons.org/licenses/by-sa/3.0</span> <span class="licensetpl_short" style="display:none;">CC BY-SA 3.0</span> <span class="licensetpl_long" style="display:none;">Creative Commons Attribution-Share Alike 3.0</span> <span class="licensetpl_link_req" style="display:none;">true</span><span class="licensetpl_attr_req" style="display:none;">true</span></p>
+</td>
+</tr>
+</table>
+<div class="center"><span lang="en" class="description en"><i>You may select the license of your choice.</i></span></div>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1256
+Cached time: 20170208142633
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.068 seconds
+Real time usage: 0.105 seconds
+Preprocessor visited node count: 1509/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 20914/2097152 bytes
+Template argument size: 2839/2097152 bytes
+Highest expansion depth: 19/40
+Expensive parser function count: 1/500
+Lua time usage: 0.008/10.000 seconds
+Lua memory usage: 861 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   81.537      1 -total
+ 43.10%   35.144      1 Template:Information
+ 30.28%   24.691      1 Template:Self
+ 25.40%   20.711      1 Template:ValidSVG
+ 15.94%   12.994      1 Template:Valid_SVG/en
+ 12.88%   10.502      1 Template:GFDL
+ 11.02%    8.988      1 Template:ISOdate
+  7.86%    6.412      1 Template:Cc-by-sa-3.0,2.5,2.0,1.0
+  7.38%    6.018      1 Template:License_migration
+  7.00%    5.710      1 Template:Years_since
+-->
+
+<!-- Saved in parser cache with key commonswiki:pcache:idhash:11197146-0!*!0!!en!4!* and timestamp 20170208142633 and revision id 142674718
+ -->
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="https://upload.wikimedia.org/wikipedia/commons/f/fa/Fourier_synthesis.svg">12:54, 16 August 2010</a></td><td><a href="https://upload.wikimedia.org/wikipedia/commons/f/fa/Fourier_synthesis.svg"><img alt="Thumbnail for version as of 12:54, 16 August 2010" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Fourier_synthesis.svg/120px-Fourier_synthesis.svg.png" width="120" height="83" data-file-width="748" data-file-height="517" /></a></td><td>748 × 517 <span style="white-space: nowrap;">(344 KB)</span></td><td><a href="/wiki/User:Ren%C3%A9_Schwarz" class="mw-userlink" title="User:René Schwarz"><bdi>René Schwarz</bdi></a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Ren%C3%A9_Schwarz" title="User talk:René Schwarz">talk</a> | <a href="/wiki/Special:Contributions/Ren%C3%A9_Schwarz" title="Special:Contributions/René Schwarz">contribs</a>)</span></span></td><td dir="ltr">{{Information |Description={{en|1=Fourier analysis of a square wave.}} {{de|1=Fourieranalyse eines Rechtecksignals.}} |Source={{own}}, SVG Version of <a href="/wiki/File:Fouriersynthese.png" title="File:Fouriersynthese.png">File:Fouriersynthese.png</a> |Author=<a href="/wiki/User:Ren%C3%A9_Schwarz" title="User:René Schwarz">René Schwarz</a> |Date=2010-08-16 |Permission= </td></tr>
+</table>
+
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage on Commons</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following page links to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns6"><a href="/wiki/File:Fouriersynthese.png" title="File:Fouriersynthese.png">File:Fouriersynthese.png</a></li>
+</ul>
+</div>
+<h2 id="globalusage">File usage on other wikis</h2>
+<div id="mw-imagepage-section-globalusage"><p>The following other wikis use this file:
+</p><ul>
+<li class='mw-gu-onwiki-ar_wikipedia_org'>Usage on ar.wikipedia.org
+<ul>	<li><a class="external" href="//ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%84_%D9%88%D8%A7%D9%84%D8%AB%D9%88%D8%A7%D8%A8%D8%AA_%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9">الدوال والثوابت الرياضية</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-de_wikipedia_org'>Usage on de.wikipedia.org
+<ul>	<li><a class="external" href="//de.wikipedia.org/wiki/Fourierreihe">Fourierreihe</a></li>
+	<li><a class="external" href="//de.wikipedia.org/wiki/Rechteckschwingung">Rechteckschwingung</a></li>
+	<li><a class="external" href="//de.wikipedia.org/wiki/Benutzer:Ren%C3%A9_Schwarz">Benutzer:René Schwarz</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-en_wikipedia_org'>Usage on en.wikipedia.org
+<ul>	<li><a class="external" href="//en.wikipedia.org/wiki/Mathematical_constants_and_functions">Mathematical constants and functions</a></li>
+	<li><a class="external" href="//en.wikipedia.org/wiki/User:RazrRekr201/Table_of_constants">User:RazrRekr201/Table of constants</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-eo_wikipedia_org'>Usage on eo.wikipedia.org
+<ul>	<li><a class="external" href="//eo.wikipedia.org/wiki/Vico_de_Fourier">Vico de Fourier</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-es_wikipedia_org'>Usage on es.wikipedia.org
+<ul>	<li><a class="external" href="//es.wikipedia.org/wiki/Anexo:Constantes_matem%C3%A1ticas">Anexo:Constantes matemáticas</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-fr_wikipedia_org'>Usage on fr.wikipedia.org
+<ul>	<li><a class="external" href="//fr.wikipedia.org/wiki/Constantes_et_fonctions_math%C3%A9matiques">Constantes et fonctions mathématiques</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-hak_wikipedia_org'>Usage on hak.wikipedia.org
+<ul>	<li><a class="external" href="//hak.wikipedia.org/wiki/Fourier_Kip-s%C3%BA">Fourier Kip-sú</a></li>
+</ul></li>
+</ul>
+</div><noscript><img src="//commons.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://commons.wikimedia.org/w/index.php?title=File:Fourier_synthesis.svg&amp;oldid=142674718">https://commons.wikimedia.org/w/index.php?title=File:Fourier_synthesis.svg&amp;oldid=142674718</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/Category:Gnuplot_diagrams" title="Category:Gnuplot diagrams">Gnuplot diagrams</a></li><li><a href="/wiki/Category:Fourier_analysis" title="Category:Fourier analysis">Fourier analysis</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-user-shown">Hidden categories: <ul><li><a href="/wiki/Category:Valid_SVG" title="Category:Valid SVG">Valid SVG</a></li><li><a href="/wiki/Category:License_migration_redundant" title="Category:License migration redundant">License migration redundant</a></li><li><a href="/wiki/Category:GFDL" title="Category:GFDL">GFDL</a></li><li><a href="/wiki/Category:CC-BY-SA-3.0,2.5,2.0,1.0" title="Category:CC-BY-SA-3.0,2.5,2.0,1.0">CC-BY-SA-3.0,2.5,2.0,1.0</a></li><li><a href="/wiki/Category:Self-published_work" title="Category:Self-published work">Self-published work</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-uls" class="active"><a href="#" class="uls-trigger autonym">English</a></li><li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=File%3AFourier+synthesis.svg" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=File%3AFourier+synthesis.svg" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-image" class="selected"><span><a href="/wiki/File:Fourier_synthesis.svg"  title="View the file page [c]" accesskey="c">File</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="/w/index.php?title=File_talk:Fourier_synthesis.svg&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/File:Fourier_synthesis.svg" >View</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=File:Fourier_synthesis.svg&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=File:Fourier_synthesis.svg&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikimedia Commons" title="Search Wikimedia Commons [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigate</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-welcome"><a href="/wiki/Commons:Welcome">Welcome</a></li><li id="n-portal"><a href="/wiki/Commons:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-village-pump"><a href="/wiki/Commons:Village_pump">Village pump</a></li><li id="n-help"><a href="/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help center</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-participate' aria-labelledby='p-participate-label'>
+			<h3 id='p-participate-label'>Participate</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-uploadbtn"><a href="/wiki/Commons:Upload">Upload file</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-latestfiles"><a href="/wiki/Special:NewFiles">Latest files</a></li><li id="n-randomimage"><a href="/wiki/Special:Random/File" title="Load a random file [x]" accesskey="x">Random file</a></li><li id="n-contact"><a href="/wiki/Commons:Contact_us">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/File:Fourier_synthesis.svg" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/File:Fourier_synthesis.svg" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=File:Fourier_synthesis.svg&amp;oldid=142674718" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=File:Fourier_synthesis.svg&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 14 December 2014, at 06:36.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Commons:Welcome" title="Commons:Welcome">About Wikimedia Commons</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Commons:General_disclaimer" title="Commons:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//commons.m.wikimedia.org/w/index.php?title=File:Fourier_synthesis.svg&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.068","walltime":"0.105","ppvisitednodes":{"value":1509,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":20914,"limit":2097152},"templateargumentsize":{"value":2839,"limit":2097152},"expansiondepth":{"value":19,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   81.537      1 -total"," 43.10%   35.144      1 Template:Information"," 30.28%   24.691      1 Template:Self"," 25.40%   20.711      1 Template:ValidSVG"," 15.94%   12.994      1 Template:Valid_SVG/en"," 12.88%   10.502      1 Template:GFDL"," 11.02%    8.988      1 Template:ISOdate","  7.86%    6.412      1 Template:Cc-by-sa-3.0,2.5,2.0,1.0","  7.38%    6.018      1 Template:License_migration","  7.00%    5.710      1 Template:Years_since"]},"scribunto":{"limitreport-timeusage":{"value":"0.008","limit":"10.000"},"limitreport-memusage":{"value":881196,"limit":52428800}},"cachereport":{"origin":"mw1256","timestamp":"20170208142633","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":187,"wgHostname":"mw1256"});});</script>
+	</body>
+</html>
