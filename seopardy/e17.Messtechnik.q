@@ -7,8 +7,8 @@
       Type: Image
 
     - Name: Question 2
-      Question: Parallaxe
-      Answer: Wodurch kann ein Ablesefehler entstehen?
+      Question: Parallaxefehler
+      Answer: Was ist ein Fehler bei Zeigerinstrumenten mit geneigtem Display?
       Type: Text
 
     - Name: Question 3

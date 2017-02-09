@@ -7,8 +7,8 @@
       Type: Text
 
     - Name: Question 2
-      Question: Uplink/Downlink-Bereiche
-      Answer: Was ist für Satellitenbetrieb freizuhalten?
+      Question: Uplink/Downlink-Bereiche freihalten
+      Answer: Was ist alleinig für den Satellitenbetrieb vorgesehen?
       Type: Text
 
     - Name: Question 3

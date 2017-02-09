@@ -3,7 +3,7 @@
 
     - Name: Question 1
       Question: 2.7kHz
-      Answer: Was ist die bandbreite von SSB?
+      Answer: Was ist die Bandbreite von SSB?
       Type: Text
 
     - Name: Question 2

@@ -18,7 +18,7 @@
 
     - Name: Question 4
       Question: "Reduzierungsfaktor 1 : 6"
-      Answer: Wie ist der Reduzierungsfaktor bei sicherheitsberechnung SSB?
+      Answer: Wie ist der Reduzierungsfaktor bei Sicherheitsberechnung SSB?
       Type: Text
 
     - Name: Question 5
