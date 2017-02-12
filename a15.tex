@@ -17,8 +17,10 @@
 \begin{frame}{Analog-Digital-Wandlung (ADC)}
   \begin{columns}
     \column{.5\textwidth}
-    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a15/Uebersicht_kontinuierliche_und_diskrete_Signale.png}\\
-    {\tiny Kontinuierliche und diskrete Signale \hyperlink{refs}{\cite{wm}}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a15/Uebersicht_kontinuierliche_und_diskrete_Signale.png}
+      \attribcaption{Übersicht kontinuierliche und diskrete Signale}{wdwd}{https://commons.wikimedia.org/wiki/File:Übersicht_kontinuierliche_und_diskrete_Signale.svg}{\ccby}
+    \end{figure}
     \column{.45\textwidth}
     Ein analoges Signal wird in ein digitales Signal über zwei Schritte umgewandelt
     \begin{description}
@@ -54,20 +56,22 @@
 \begin{frame}{Frequenzumtastung\,/\,Frequency Shift Keying (FSK)}
   \begin{columns}
     \column{.4\textwidth}
-    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a15/Fsk.png}\\
-    {\tiny Frequenzumtastung \hyperlink{refs}{\cite{wm}}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a15/Fsk.png}
+      \attribcaption{Bildung eines binären FSK Signals}{Ktims}{https://commons.wikimedia.org/wiki/File:Fsk.svg}{\ccbysa}
+    \end{figure}
     \column{.55\textwidth}
     \begin{itemize}
       \item ähnlich zu FM
       \item unempfindlich gegenüber Störungen
-      \item einfachste Umsetzung: mittels zweier Frequenzen übertragen
+      \item einfachste Umsetzung: zwei Frequenzen zum übertragen
     \end{itemize}
   \end{columns}
 \end{frame}
 
 \subsection{AFSK}
 \begin{frame}{Audio Frequency Shift Keying (AFSK)}
-  Modulation zweier Töne, je nach Zustand
+  Modulation von zwei Tönen, je nach Zustand
   \begin{exampleblock}{RTTY}
     \begin{description}
       \item[logisch 0] 1200\,Hz (oder 2100\,Hz bei ``high tones'')
@@ -82,8 +86,10 @@
 \begin{frame}{Phase Shift Keying (PSK)}
   \begin{columns}
     \column{.5\textwidth}
-    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a15/Phase_modulation_(PHM).png}\\
-    {\tiny BPSK mit harter Umtastung \hyperlink{refs}{\cite{wm}}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a15/Phase_modulation_(PHM).png}
+      \attribcaption{BPSK mit harter Umtastung}{L31n42}{https://commons.wikimedia.org/wiki/File:Phase_modulation_(PHM).svg}{\cczero}
+    \end{figure}
     \column{.45\textwidth}
     \begin{itemize}
       \item Welle wird um $180^\circ$ gedreht
@@ -96,8 +102,10 @@
 \begin{frame}{Quadraturphasenumtastung}
   \begin{columns}
     \column{.5\textwidth}
-    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a15/QPSK_Gray_Coded.png}\\
-    {\tiny Konstellationsdiagramm QPSK (``4-QAM'')}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a15/QPSK_Gray_Coded.png}
+      \attribcaption{Konstellationsdiagramm QPSK (``4-QAM'')}{Splash}{https://commons.wikimedia.org/wiki/File:QPSK_Gray_Coded.svg}{\ccbysa}
+    \end{figure}
     \column{.45\textwidth}
     \begin{itemize}
       \item QPSK nutzt Phasensprünge alle $90^\circ$ (quadrature)
@@ -112,14 +120,16 @@
 \begin{frame}{Quadraturamplitudenmodulation}
   \begin{columns}
     \column{.5\textwidth}
-    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{a15/Circular_16QAM.png}\\
-    {\tiny Circular 16QAM}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{a15/Circular_16QAM.png}
+      \attribcaption{Circular 16QAM}{Life of Riley}{https://commons.wikimedia.org/wiki/File:Circular_16QAM.svg}{\ccpd}
+    \end{figure}
     \column{.45\textwidth}
     \begin{itemize}
       \item Kombination von Phase und Amplitude für Datenübertragung
       \item Mehrere Bits können zur gleichen Zeit übertragen werden
       \item Anwendung bei Modems, DSL, DVB etc.
-      \item \emph{Beispiel: \href{https://upload.wikimedia.org/wikipedia/commons/9/90/QAM16_Demonstration.gif}{$\Rightarrow$ 4 Bit 16-QAM Demo}}
+      \item \emph{Beispiel: \href{https://upload.wikimedia.org/wikipedia/commons/9/90/QAM16_Demonstration.gif}{\ExternalLink 4 Bit 16-QAM Demo}}
       \item DVB-C2 G.hn (HomeGrid) nutzen 12 Bit 4096-QAM
     \end{itemize}
   \end{columns}
@@ -184,7 +194,7 @@
     \item sendet kurze Datenpakete ohne Bestätigung
     \item Inhalte sind Wetterdaten, Positionsmeldungen und andere Messwerte
     \item ganz häufig GPS-Koordinaten des eigenen Fahrzeugs mit Rufzeichen
-    \item Darstellung mit Karte unter \url{http://aprs.fi/\#!addr=berlin}
+    \item \href{http://aprs.fi/\#!addr=berlin}{\ExternalLink Darstellung mit Karte von Berlin}
     \item QRG ist 144,800\,MHz
   \end{itemize}
 \end{frame}
@@ -236,14 +246,6 @@
 \begin{thebibliography}{}
   \bibitem{darc}  DARC Online-Lehrgang Lektion A15:\\
     \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a15/}
-  \bibitem{wm}  Wikimedia:\\
-    \href{https://de.wikipedia.org/wiki/Digitalsignal#/media/File:\%C3\%9Cbersicht_kontinuierliche_und_diskrete_Signale.svg}{\mbox{Übersicht kontinuierliche und diskrete Signale, By wdwd (Own work) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY 3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons}}\\
-    \href{https://commons.wikimedia.org/wiki/Category:Quantized_QAM?uselang=de#/media/File:Circular_16QAM.svg}{\mbox{von Life of Riley (Eigenes Werk) [Public domain], via Wikimedia Commons}}\\
-    \href{https://de.wikipedia.org/wiki/Phasenmodulation#/media/File:Phase_modulation_(PHM).svg}{\mbox{By L31n42 (Own work) [CC0], via Wikimedia Commons}}\\
-    \href{https://de.wikipedia.org/wiki/Quadraturphasenumtastung#/media/File:QPSK_Gray_Coded.svg}{\mbox{By No machine-readable author provided. Splash assumed (based on copyright claims). [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY-SA 2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/2.5-2.0-1.0)], via Wikimedia Commons}}\\
-    \href{https://de.wikipedia.org/wiki/Frequenzumtastung#/media/File:Fsk.svg}{\mbox{Bildung eines binären FSK Signals, By No machine-readable author provided. Ktims assumed (based on copyright claims). [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY-SA 2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/2.5-2.0-1.0)], via Wikimedia Commons}}
-
-  \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:\\
   \bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:\\
     \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
 \end{thebibliography}
