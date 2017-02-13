@@ -7,7 +7,7 @@
 \input{texdata/preamble}
 \subtitle{Technik A19: \\
   EMV und Sicherheit \\[2em]}
-\date{Stand 12.07.2016}
+\date{Stand 13.03.2017}
 \input{texdata/titlepage}
 
 \section*{Störungen}
@@ -15,8 +15,10 @@
 \begin{frame}
   \frametitle{Funkwagen der Bundesnetzagentur}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a19/FunkwagenBNetz.jpg}\\
-    {\tiny \hyperlink{refs}{\cite{wm}} \\[1em]}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a19/FunkwagenBNetz.jpg}
+      \attribcaption{Servicewagen der RegTP}{Christian "VisualBeo" Horvat}{https://commons.wikimedia.org/wiki/File:Regtp_Antennenwagen.jpg}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -49,16 +51,20 @@
 \begin{frame}
   \frametitle{Oberwelle}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.80\textheight,keepaspectratio]{a19/oberwelle.png}\\
-    {\tiny von DB4UM mit Audacity}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{a19/oberwelle.png}
+      \caption{von DB4UM mit Audacity}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Oberwelle}
   \begin{center}
-    \includegraphics[width=0.8\textwidth,height=.65\textheight,keepaspectratio]{a19/oberwelle.png}\\[2em]
-    Abhilfe bei zu starken Oberwellen schafft ein Tiefpass oder noch besser ein Bandpassfilter.
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.75\textheight,keepaspectratio]{a19/oberwelle.png}
+      \caption{Abhilfe bei zu starken Oberwellen schafft ein Tiefpass oder noch besser ein Bandpassfilter.}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -76,8 +82,10 @@
 \begin{frame}
   \frametitle{EMV Probleme}
   \begin{center}
-    \includegraphics[width=1\textwidth,height=.85\textheight,keepaspectratio]{a19/EMI_coupling_modes.png}\\
-    {\tiny \hyperlink{refs}{\cite{wm}}}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.7\textheight,keepaspectratio]{a19/EMI_coupling_modes.png}
+      \attribcaption{Die vier Arten von EMV Störungen}{Steelpillow}{https://commons.wikimedia.org/wiki/File:EMI_coupling_modes.svg}{\ccbysa}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -107,8 +115,10 @@
 \begin{frame}
   \frametitle{Beseitigung von Störungen}
   \begin{center}
-    \includegraphics[width=\textwidth,height=0.80\textheight,keepaspectratio]{a19/2Filter.jpg}\\
-    {\tiny Lautsprecher im Shack von DK0TU}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{a19/2Filter.jpg}
+      \caption{Lautsprecher im Shack von DK0TU}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -147,8 +157,10 @@
 \begin{frame}
   \frametitle{DIN VDE 0100 auch DIN 57100}
   \begin{center}
-    \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{a19/ElectricWireGrounded.jpg}\\
-    {\tiny \hyperlink{refs}{\cite{wm}}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{a19/ElectricWireGrounded.jpg}
+      \attribcaption{Grüngelbes Erdungskabel}{KVDP}{https://commons.wikimedia.org/wiki/File:ElectricWireGrounded.jpg}{\ccpd}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -177,8 +189,10 @@
 \begin{frame}
   \frametitle{Erdungsschelle}
   \begin{center}
-    \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{a19/AntenneErden.jpg}\\
-    \tiny Erdungsschelle \url{http://www.kabel-kusch.de/ERDUNG/erdung.htm} \\[1em]
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{a19/AntenneErden.jpg}
+      \attribcaption{Erdungsschelle}{Kabel Kusch}{http://www.kabel-kusch.de/ERDUNG/erdung.htm}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -203,28 +217,39 @@
       Die StVO §23 Abs. 1a (Verbot der Handybenutzung während der Fahrt ohne Freisprecheinrichtung) bezieht sich nur auf Mobilfunkbenutzer und auf öffentliche Netze. Gemäß aktuellen deutschen Telekommunikationsgesetzen zählen Benutzer von Betriebsfunksystemen wie auch Funkamateure nicht zu diesem Personenkreis. Die StVO §23 Abs. 1a ist somit nicht auf Amateurfunkgeräte anwendbar.
     \end{block}
   \end{center}
+  Eingeleitete \href{http://www.dl7vdx.com/amateurfunk-im-auto-teil1/}{\ExternalLink Verfahren} werden in der Regel ohne Angabe von Gründen \href{http://www.dl7vdx.com/teil-2-funk-im-auto/}{\ExternalLink eingestellt}.
 \end{frame}
 
 \section*{Personenschutz}
 
 \begin{frame}
   \frametitle{Sicherheitsabstand}
+  \begin{block}{Sicherheitsabstand}
+    \begin{LARGE}
+      $r = \frac{\sqrt{30 \cdot P_{EIRP}[W]}}{E[\frac{V}{m}]}$
+    \end{LARGE}
+  \end{block}
+  \vspace{1em}
   \begin{center}
-    \begin{block}{Sicherheitsabstand zu Antennen in $m$}
-      $$d = \frac{\sqrt{30\Omega \cdot P_{EIRP}}}{E}$$ \\[3em]
-      \begin{center}
-        $E$ nach ICNIRP DIN VDE 0848 \\[1em]
-        \begin{tabular}{c|c}
-          Frequenz & $E$ in $\frac{V}{m}$ \\ \hline \hline
-          unter 10\,MHz & $E = 87 / \sqrt{f_{MHz}}$ \\ \hline
-          10\,MHz--400\,MHz & $E = 27,5$ \\ \hline
-          400\,MHz--2\,GHz & $E = 1,375 \cdot \sqrt{f_{MHz}}$ \\ \hline
-          über 2\,GHz & $E = 61$
-        \end{tabular}
-      \end{center}
-    \end{block}
+    \begin{tabular}{|c|c|}
+      \hline
+      \multicolumn{2}{|l|}{\textbf{Grenzwerte für Personenschutz}} \\ \hline
+      \textbf{Frequenzbereich} & \textbf{Elektrische Feldstärke} \\ \hline
+      0,1 - 1 MHz & $E = 87 \frac{V}{m}$ \\ \hline
+      1 - 10 MHz & $E = \frac{87}{\sqrt{f}} \frac{V}{m}$ \\ \hline
+      10 - 400 MHz & $E = 28 \frac{V}{m}$ \\ \hline
+      400 - 2000 MHz & $E = 1,375 \cdot \sqrt{f} \frac{V}{m}$ \\ \hline
+      über 2000 MHz & $E = 61 \frac{V}{m}$ \\ \hline
+    \end{tabular}
   \end{center}
-  Siehe auch \url{http://emf3.bundesnetzagentur.de/grenzwerte.html}
+  Grenzwerte aus \href{https://www.gesetze-im-internet.de/bimschv\_26/anhang\_1.html}{\ExternalLink 26. BImSchV}
+\end{frame}
+
+\begin{frame}
+  \begin{figure}
+    \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{e18/E_grenzkurve_gr.png}
+    \attribcaption{Grenzwerte der Elektrischen Feldstärke}{Bundesnetzagentur}{http://emf3.bundesnetzagentur.de/Grenzwerte.html}{}
+  \end{figure}
 \end{frame}
 
 \begin{frame}
@@ -249,8 +274,10 @@
 \begin{frame}
   \frametitle{Blockschaltbild}
   \begin{center}
-    \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{a19/BsB.png}\\
-    {\tiny Tromelin DX FT4TA \url{https://twitter.com/DX_World/status/527936113197858817?s=03}}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{a19/BsB.png}
+      \attribcaption{Tromelin DX}{FT4TA}{https://twitter.com/DX_World/status/527936113197858817?s=03}{}
+    \end{figure}
   \end{center}
 \end{frame}
 
@@ -264,11 +291,7 @@
 \begin{thebibliography}{}
   \bibitem{darc}  DARC Online-Lehrgang Lektion A19:
     \url{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a19/}
-  \bibitem{wm}  Wikimedia:
-    \url{https://commons.wikimedia.org/wiki/File:Regtp_Antennenwagen.jpg}
-    \url{https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/EMI_coupling_modes.svg/1024px-EMI_coupling_modes.svg.png}
-    \url{https://commons.wikimedia.org/wiki/File:ElectricWireGrounded.jpg}
-  \bibitem{beam}  Youtube:
+  \bibitem{beam}  Blitz in Kirchturm -- ``Where is your God?'':
     \url{https://www.youtube.com/watch?v=yLpVnguqwLY}
   \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
     \url{https://de.wikipedia.org/wiki/Elektrisches_Feld}
