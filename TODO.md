@@ -2,17 +2,21 @@
 
 * Grafiken etc. aus den Slides ruhig in der Praxis nutzen und andersherum
 * Lernvorlagen der Landekenner/Q-Gruppen etc. ins Skript
+* Experimente A Ideen -> teilw. Überführen in Projekte
 
 # Slides
 
 * Designrules festlegen
     * Prüfungsfragen nur noch, wenn sie exemplarisch wichtig sind
     * ...
+* Quellen überall ordentlich machen
 * Diff & Merge Chaoswelle -> DK0TU, Stand:
     * e01 e02 e04 e05
     * bv01, bv02, bv03, bv07, bv13, bv10
 * frametitle-Systematik / Nicht ganz einheitlich
 * Texte entschlacken bzw. auf mehrere Folien verteilen
+    * in dem Zuge viele Dinge in Klasse A verschieben
+* Abkürzungen in Slides
 * BV10
     * Bandplan mit einpflegen
     * http://www.dk0tu.de/blog/2012/11/27_Sporadic-E_QSO_mit_Spanien/
@@ -22,6 +26,8 @@
     * entschlacken -> Klasse A
     * Praxis ins Skript
     * http://www.sigidwiki.com/
+* Oszi
+    * https://xkcd.com/165/
 
 # Kurskoffer
 
@@ -31,6 +37,7 @@
 
 # Skript
 
+* freie Grafiken? ... mit Quellen.
 * Prüfungskatalogfragen mit Box drum herum
 * Nummerierungssystem der Aufgaben mit arabischen Ziffern
 * FM-QSO.tex ins Skript integrieren
@@ -57,6 +64,18 @@
 * Diode Klasse E
     * Praxis hinzufügen?
     * Aufgaben teilweise nach Klasse A verschieben - geht schon zu weit
+* Kondensator Klasse E
+    * Aufgabenteile: C berechnen/messen/eintragen, L ebenso
+    * max. Kapa? Parallel.
+    * min. Kapa? Reihe.
+    * 530 pF vs 550 pF?
+* Fritzing mit optionalem KiCad
+* Anlagen
+    * Anleitungen
+    * Datenblätter
+    * Formelsammlung
+    * Koffercontent
+    * Installationsanleitungen
 
 # Folien
 - Gegentaktmodulator müsste eingeführt werden A12
