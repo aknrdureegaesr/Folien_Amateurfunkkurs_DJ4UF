@@ -8,6 +8,8 @@
 
 * Designrules festlegen
     * Prüfungsfragen nur noch, wenn sie exemplarisch wichtig sind
+    * https://www.python.org/dev/peps/pep-0008/#tabs-or-spaces
+    * http://www.deic.uab.es/~iblanes/beamer_gallery/index_by_theme_and_color.html
     * ...
 * Quellen überall ordentlich machen
 * Diff & Merge Chaoswelle -> DK0TU, Stand:
@@ -17,6 +19,7 @@
 * Texte entschlacken bzw. auf mehrere Folien verteilen
     * in dem Zuge viele Dinge in Klasse A verschieben
 * Abkürzungen in Slides
+* https://xkcd.com/1604/
 * BV10
     * Bandplan mit einpflegen
     * http://www.dk0tu.de/blog/2012/11/27_Sporadic-E_QSO_mit_Spanien/
