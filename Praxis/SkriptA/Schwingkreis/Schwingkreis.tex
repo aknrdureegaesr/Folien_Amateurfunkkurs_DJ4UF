@@ -71,29 +71,34 @@
 {318$kHz$}%D
 {B \hspace{3em} $f_g = \frac{1}{2 \pi R C}$}%Lösung
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Praxis
+
 \section*{Praxis}
 
 \subsection*{Vorbereitung}
 
-Seht euch die Pin-Belegung des Raspberry Pi (siehe Abbildung \ref{rpi}) sowie
-die zu layoutende Schaltung für den 70cm-Tiefpassfilter (siehe Abbildung
-\ref{70cmLP}) an. Wir benötigen GPIO18 und GND.
+Seht euch die Pin-Belegung des Raspberry Pi (siehe Abbildung \ref{fig:rpi})
+sowie die zu layoutende Schaltung für den 30m-Tiefpassfilter (siehe Abbildung
+\ref{fig:30mLP}) an. Wir benötigen 3,3 V für den Verstärker, GPIO4 für das
+Signal und GND (Masse).
 
 \begin{figure}[H]
     \centering
     \includegraphics[height=0.4\textheight]{Schwingkreis/Bilder/B_plus_hdr_sm.jpg}
     \includegraphics[height=0.4\textheight]{Schwingkreis/Bilder/Pi-GPIO-header.png}
     \caption{Connector pinout (P1 Header) -- Models B+, B2}
-    \label{rpi}
+    \label{fig:rpi}
     %FIXME Abbildungs-Quellenverzeichnis \url{http://elinux.org/RPi_Low-level_peripherals#Model_A.2B.2C_B.2B_and_B2}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{Schwingkreis/Bilder/70cmLP500Ohm.jpg}
-    \caption{Schaltung des 70cm-Tiefpassfilters aus Qucs}
-    \label{70cmLP}
+    \includegraphics[width=1\textwidth]{Schwingkreis/Bilder/30mRaspiAmpLP.jpg}
+    \caption{Schaltung des 30m-Tiefpassfilters aus Qucs}
+    \label{fig:30mLP}
 \end{figure}
+
 
 \subsection*{Fritzing}
 
@@ -137,12 +142,12 @@ folgende Belegung:
 \subsubsection{PCB View}
 
 \begin{itemize}
-    \item PCB ändern auf \textbf{One Layer} \& Fäche ca. $30x30mm$
+    \item PCB ändern auf \textbf{One Layer} \& Fäche ca. $40x30mm$
     \item Bauteile anordnen (THT-Bauteile auf Vorderseite, SMD auf Unterseite)
     \item Leitungen ziehen (es sollten nur die orangen Leitungen des unteren Layers zu sehen sein)
-    \item Silkscreen Text der Bauteilebezeichnungen auf Sichtbare Bereiche schieben
-    \item Silkscreen Text mit dem Gruppennamen auf eine freie Fläche \\
-          optional: Copper Fill Blocker \& Copper Text
+    \item optional: Silkscreen Text der Bauteilebezeichnungen auf sichtbare Bereiche schieben
+    \item Copper Text mit dem Gruppennamen auf eine freie Fläche und Copper Fill
+      Blocker drüberlegen
     \item Rechtsklick auf einen Bauteile-Pin, der an Ground angeschlossen ist: "`Set Ground Fill Seed"'
     \item Menü $\rightarrow$ Routing $\rightarrow$ Ground Fill
     \item abschließend noch einmal die Leiterbahnenverläufe mit dem Schaltbild
