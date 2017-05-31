@@ -109,11 +109,12 @@
 {A}%Lösung
 
 
-\section*{Praxisteil}
+\section*{Praxis}
 
-\subsection*{PCB mit 70cm-LPF: Bestücken \& Löten}
+\subsection*{PCB mit 30m-LPF: Bestücken \& Löten}
 
-Bestückt und verlötet die Bauteile auf der 70cm-Platine! Beachtet beim Löten des SMDs:
+Bestückt und verlötet die Bauteile auf der 30m-Platine! Die Schaltung ist noch
+einmal in Abbildung \ref{fig:30mLP} dargestellt. Beachtet beim Löten des SMDs:
 
 \begin{itemize}
     \item als erstes ein Lötpad etwas verzinnen
@@ -121,10 +122,18 @@ Bestückt und verlötet die Bauteile auf der 70cm-Platine! Beachtet beim Löten 
     \item wenn das Bauteil plan aufliegt, abschließend das andere Pad verlöten
 \end{itemize}
 
-Berechnet eine einfache Groundplane-Antenne ($\lambda/4$) für das Band von $430
-MHz$ bis $440 MHz$ und schneidet die entsprechende Länge aus einem starren
-Draht. Dieser wird nun so auf das Antennenpad aufgelötet, dass die Antenne
-gegenüber von der Buchsenleiste steht -- sprich: auf der Leiterbahnseite.
+% Berechnet eine einfache Groundplane-Antenne ($\lambda/4$) für das Band von $430
+% MHz$ bis $440 MHz$ und schneidet die entsprechende Länge aus einem starren
+% Draht. Dieser wird nun so auf das Antennenpad aufgelötet, dass die Antenne
+% gegenüber von der Buchsenleiste steht -- sprich: auf der Leiterbahnseite.
+
+% Baut einen weiteren Tiefpassfilter auf einer Lochrasterplatine auf. Beachtet,
+% dass diesmal \textbf{TX via GPIO 4 (Pin 7)} und ein beliebiger GND verdrahtet
+% werden muss (siehe Abbildung \ref{rpi}).
+
+Die Spule dient später zum Abstimmen und soll von Hand auf einen
+$8mm$-Durchmesser auf ca. $1cm$ Länge gewickelt werden -- wieviele Windungen
+müssen das sein?
 
 \textbf{Hinweis}: Als Vorwiderstand verbauen wir im Kurs $470 \Omega$ um unsere
 \emph{Raspberry Pi}s gegen versehentliches Kurzschließen zu schützen. Später kann dieser
@@ -143,20 +152,19 @@ ungefähr?
          $15 mA$: $3,3 V \cdot 0.015 A \approx 50 mW$ \\
          $30 mA$: $3,3 V \cdot 0.030 A \approx 100 mW$}
 
-\subsection*{Perfboard mit 30m-LPF: Bestücken \& Löten}
-
-Baut einen weiteren Tiefpassfilter auf einer Lochrasterplatine auf. Beachtet,
-dass diesmal \textbf{TX via GPIO 4 (Pin 7)} und ein beliebiger GND verdrahtet
-werden muss (siehe Abbildung \ref{rpi}). Die Spule dient später zum Abstimmen
-und soll von Hand auf einen $8mm$-Durchmesser auf ca. $1cm$ Länge gewickelt
-werden -- wieviele Windungen müssen das sein?
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{Messtechnik/Bilder/30mRaspiAmpLP.jpg}
     \caption{Schaltung des 30m-Tiefpassfilters aus Qucs}
-    \label{30mLP}
+    \label{fig:30mLP}
 \end{figure}
+
+\subsection*{Kalibrierung}
+
+Erzeuge mit dem Frequenzgenerator am Eingang der Filterschaltung ein
+10-MHz-Signal. Miss mit dem Oszilloskop oder Spektrum-Analyzer oder RTL-SDR die
+Amplitude am Ausgang. Nun wird das Filter durch Strecken oder Stauchen der Spule
+auf maximale Ausgangsleistung abgestimmt.
 
 \subsection*{Messprotokoll}
 
@@ -171,7 +179,7 @@ werden -- wieviele Windungen müssen das sein?
     		\item Miss mit Hilfe des Tischmultimeters die Ausgangsspannung des Tiefpassfilters (Siehe Abbildung \ref{block1}).
     		\item Notiere die Messwerte direkt in Scilab, Octave oder einer Tabellekalkulation.
 			\item Plotte den Verlauf der Ausgangsspannung in Abhängigkeit der Eingangsspannung.
-			\item \textbf{Zusatz:} Plotten Sie den idealen Kennlinienverlauf mit in den selben Plott.
+			\item \textbf{Zusatz:} Plotte den idealen Kennlinienverlauf mit in den selben Plott.
 			\end{itemize}	
 	\item Das Messen des Amplitudenganges eines Tiefpassfilters mit Hilfe des Oszilloskops.
 		\begin{itemize}
@@ -180,7 +188,7 @@ werden -- wieviele Windungen müssen das sein?
 			\item Miss mit Hilfe des Oszilloskops die Eingangs- und die Ausgangsspannung des Tiefpassfilters (Siehe Abbildung \ref{block2}).
 			\item Erhöhe schrittweise die Frequenz .
 			\item Nimm insgesamt 20 Messwerte auf.
-			\item Verteile die Messwerte über einen Bereich von $10^1~Hz$ bis $10^4~Hz$.
+			\item Verteile die Messwerte über einen Bereich von $10^6~Hz$ bis $10^8~Hz$.
 			\item Verwende \texttt{$V_{RMS}$} der \texttt{Measure}-Funktion zur Messung der Amplitude
 			\item Notiere die Messwerte direkt in Scilab, Octave oder einer Tabellekalkulation.
 			\item Plotte den Verlauf der Amplitude (Ausgangsspannung) in Abhängigkeit der Frequenz.
@@ -195,7 +203,9 @@ werden -- wieviele Windungen müssen das sein?
 			\item Hinweise zum Umgang mit dem Oszilloskop:
 				\begin{itemize}
 					\item Achte darauf, dass bei den einzelnen Kanälen (\textbf{CH1}, \textbf{CH2}) bei \textbf{Kopplung}: \textbf{DC} eingestellt ist.
-					\item Um einwandfrei messen zu können, verwenden Sie die Trigger-Funktion des Oszilloskops. Drücken Sie die Taste \textbf{Mode/Coupling} in der Trigger-Sektion. Wählen Sie beim oberen \textbf{Modus}: \textbf{Flanke}, bei \textbf{Quelle}: \textbf{CH2}, beim unteren \textbf{Modus}: \textbf{Normal} und bei der \textbf{Kopplung}: \textbf{AC} aus.
+					\item Um einwandfrei messen zu können, verwendet die Trigger-Funktion
+            des Oszilloskops. Drückt die Taste \textbf{Mode/Coupling} in der
+            Trigger-Sektion. Wählt beim oberen \textbf{Modus}: \textbf{Flanke}, bei \textbf{Quelle}: \textbf{CH2}, beim unteren \textbf{Modus}: \textbf{Normal} und bei der \textbf{Kopplung}: \textbf{AC} aus.
 					\end{itemize}
 			\end{itemize}
  	\end{enumerate} 
