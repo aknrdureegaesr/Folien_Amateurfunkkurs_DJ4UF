@@ -6,7 +6,7 @@
 \input{texdata/preamble}
 \subtitle{Technik Klasse A 10: \\
   HF-Leitungen \& Kabel \\[2em]}
-\date{Stand 13.02.2017}
+\date{Stand 08.06.2017}
 \input{texdata/titlepage}
 
 \section{HF-Leitung}
@@ -159,7 +159,7 @@
 \begin{frame}
   \frametitle{Kabeldämpfung Beispiel 2}
 
-  % FIXME Musterloesungen mit rein!
+  % FIXME Musterloesungen mit rein! Dämpfungsdiagramm
   \begin{exampleblock}{Löse mit Hilfe des Dämpfungsdiagramms aus der Formelsammlung:}
     \begin{minipage}{0.3\textwidth}
       \begin{itemize}
@@ -248,14 +248,12 @@
 \end{frame}
 
 \begin{frame}
-  \begin{tabular}{l||p{.8\textwidth}}\hline
-    \textbf{TH326} & \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{a10/th326.png}\\
-    & \textbf{Was zeigt diese Darstellung?}\\ \hline\hline
-    A & Sie zeigt die Strom- und Spannungsverteilung an einer Antennenspeiseleitung. Die Antenne arbeitet als Serienresonanzkreis. \\ \hline
-    B & Sie zeigt die Strom- und Spannungsverteilung an den Radialen einer Groundplane. Die Antenne arbeitet mit Verlängerungsspule zur Resonanzanpassung.\\ \hline
-    C & Sie zeigt die Strom- und Spannungsverteilung an einer Antenne. Die Antenne arbeitet als Groundplane mit Verkürzungskondensator. \\ \hline
-    D \only<2>\checkmark & Sie zeigt die Strom- und Spannungsverteilung an einer offenen $\lambda/4$-Lecherleitung. Sie wirkt als Reihenschwingkreis. \\ \hline
-  \end{tabular}
+\begin{center}
+   
+ \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a10/th326.png}\\
+     \textbf{TH326} \textbf{Was zeigt diese Darstellung?}\\ 
+    \only<2>{ Sie zeigt die Strom- und Spannungsverteilung an einer offenen $\lambda/4$-Lecherleitung. Sie wirkt als Reihenschwingkreis. }
+\end{center}
 \end{frame}
 
 \section{Trans"-formations"-leitungen}
