@@ -138,16 +138,16 @@ mm$-Durchmesser auf ca. $1 cm$ Länge gewickelt werden -- wieviele Windungen
 müssen das sein? Teste das Resultat mit dem LC-Messgerät.
 
 \textbf{Hinweis}: Als Vorwiderstand verbauen wir im Kurs $470 \Omega$ um unsere
-\emph{Raspberry Pi}s gegen versehentliches Kurzschließen zu schützen. Später kann dieser
-gegen einen geringeren Widerstand oder sogar eine Drahtbrücke ausgetauscht
-werden, um mehr Leistung an der Antenne zu erhalten. Erklärung: Der Stromfluss
-wird durch den Widerstand begrenzt ($I = \frac{U}{R} = \frac{3,3 V}{470 \Omega}
-\approx 7 mA$). Mit $220 \Omega$ auf $15 mA$ sollte man aber auch noch auf der
-sicheren Seite sein -- "`das Internet"' berichtet von $30 mA$ am GPIO ohne
-bleibende Schäden. ;-) Ist sichergestellt, dass der Filter und die Abstrahlung
-an der Antenne funktionieren, kann der Widerstand auch wie gesagt weggelassen
-werden. \textbf{Frage:} Welche Leistungen ergeben sich je nach Vorwiderstand
-ungefähr?
+\emph{Raspberry Pi}s gegen versehentliches Kurzschließen zu schützen. Später
+kann dieser gegen einen geringeren Widerstand oder sogar eine Drahtbrücke
+ausgetauscht werden, um mehr Leistung an der Antenne zu erhalten. Erklärung: Der
+Stromfluss wird durch den Widerstand begrenzt ($I = \frac{U}{R} = \frac{3,3
+V}{470 \Omega} \approx 7 mA$). Mit $220 \Omega$ auf $15 mA$ sollte man aber auch
+noch auf der sicheren Seite sein -- "`das Internet"' berichtet von $30 mA$ am
+GPIO ohne bleibende Schäden. ;-) Ist sichergestellt, dass der Filter und die
+Abstrahlung an der Antenne funktionieren, kann der Widerstand auch wie gesagt
+weggelassen werden. \textbf{Frage:} Welche Leistungen ergeben sich je nach
+Vorwiderstand ungefähr?
 
 \loesung{$P = U \cdot I$ \\
          $7 mA$: $3,3 V \cdot 0.007 A \approx 23 mW$ \\
@@ -171,17 +171,22 @@ Ausgangsleistung abgestimmt.
 
 \subsection*{Messprotokoll}
 
+% FIXME Aufgaben so generisch gestaltet, dass es auch mit einfachen Mitteln
+% umsetzbar ist. Z.B. Messung mit den RTL-Dongles.
 % FIXME Es fehlt eine Auswertung der Ergebnisse
+% TODO ggf. Sprungantwort durch Bodediagramm ersetzen
 
 \begin{enumerate}
-% FIXME Nochmal Aufgabe umformulieren, durch die DC-Entkopplung tut sich natürlich nichts.
-%      stole nochmal fragen, was er sich dabei gedacht hat.
-% 	\item Das lineare Verhalten eines Tiefpassfilters.
+    \item Das lineare Verhalten eines allgemeinen Tiefpassfilters: Welches
+      Ergebnis würde theoretisch bei der Aufnahme einer DC-Kennlinie
+      (Eingangsspannung zwischen $-5~V$ und $+5~V$) auftreten?
+      \loesung{Es entsteht eine Gerade mit Offsetfehler (Realwiderstand). Hier
+      würde gar nichts zu sehen sein, da der Koppelkondensator C8 DC blockt.}
 % 		\begin{itemize}
 % 			\item Nutze die Gleichspannungsquelle und das Tischmultimeter.
 % 			\item Lege eine Gleichspannung an den Eingang des Tiefpassfilters und messe die Ausgangsspannung.
 %     		\item Die Eingangspannung soll zwischen $-5~V$ und $+5~V$ liegen.
-%     		\item Die Eingangsspannung soll in $2~V$-Schritten geändert werden.
+%     		\item Die Eingangsspannung soll in $1~V$-Schritten geändert werden.
 %     		\item Um eine negative Gleichspannung mit der Gleichspannungsquelle zu realisieren, muss umgepolt werden.
 %     		\item Miss mit Hilfe des Tischmultimeters die Ausgangsspannung des Tiefpassfilters (Siehe Abbildung \ref{block1}).
 %     		\item Notiere die Messwerte direkt in Scilab, Octave oder einer Tabellekalkulation.
@@ -192,7 +197,7 @@ Ausgangsleistung abgestimmt.
 		\begin{itemize}
 			\item Nutze den Frequenzgenerator und das Oszilloskop.
 			\item Stelle am Frequenzgenerator ein Sinus-Signal mit einer Amplitude von
-        $5~V$ ein und lege diese an den Eingang des Tiefpassfilters.
+        $3~V$ ein und lege diese an den Eingang des Tiefpassfilters.
 			\item Miss mit Hilfe des Oszilloskops die Eingangs- und die Ausgangsspannung des Tiefpassfilters (Siehe Abbildung \ref{block2}).
 			\item Erhöhe schrittweise die Frequenz .
 			\item Nimm insgesamt 20 Messwerte auf.
