@@ -3,7 +3,7 @@
 FILE=*
 EXPORT_DIR="Kurs-Material"
 EXPORT_ARCHIVE="${EXPORT_DIR}_DK0TU_r`date --utc +%Y-%m-%dT%H%MZ`"
-PUBLISH_DIR="/home/webgit/dk0tu.underlay/download"
+PUBLISH_DIR="/var/www/git/www.underlay/download"
 
 all: slides skript
 
