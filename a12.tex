@@ -325,79 +325,86 @@
       \item Kapazitätsdiode parallel zum Oszillator geschaltet
       \item bei Amplitudenänderung der NF ändert sich die Sperrspannung des Varicaps
       \item dieses ändert die Frequenz des Oszillators
-      \item die Amplitude des Oszillators bleibt gleich
+      \item die Amplitude des Oszillators bleibt gleich -> konstante Ausgangsleistung
       \item Empfindlichkeit wird in kHz/V angegeben
     \end{itemize}
   \end{columns}
 \end{frame}
 
+%\begin{frame}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TD514} & \textbf{Bei dieser Schaltung handelt es sich um einen Modulator zur Erzeugung von}
+%    \includegraphics[width=.7\textwidth,height=.85\textheight,keepaspectratio]{a12/td514.png}\\ \hline\hline
+%    A & phasenmodulierten Signalen. \\ \hline
+%    B \only<2>\checkmark & frequenzmodulierten Signalen. \\ \hline
+%    C & AM-Signalen mit unterdrücktem Träger. \\ \hline
+%    D & AM-Signalen. \\ \hline
+%  \end{tabular}
+%\end{frame}
+
+%\begin{frame}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TE208} & \textbf{Die Änderung der Kapazität einer über einen Quarzoszillator geschalteten Varicap-Diode stellt eine Möglichkeit dar} \\ \hline\hline
+%    A \only<2>\checkmark & Frequenzmodulation zu erzeugen. \\ \hline
+%    B & Zweiseitenbandmodulation zu erzeugen. \\ \hline
+%    C & CW-Signale zu erzeugen. \\ \hline
+%    D & Amplitudenmodulation zu erzeugen. \\ \hline
+%  \end{tabular}
+%\end{frame}
+
+%\begin{frame}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TE216} & \textbf{Wie wird die Empfindlichkeit eines FM-Modulators angegeben?} \\ \hline\hline
+%    A & in Rad/s \\ \hline
+%    B & Als Modulationsindex \\ \hline
+%    C & Als Hub. \\ \hline
+%    D \only<2>\checkmark & In kHz/V \\ \hline
+%  \end{tabular}
+%\end{frame}
+
+%\begin{frame}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TG301} & \textbf{Was kann man bezüglich der Ausgangsleistung eines FM-Senders in Abhängigkeit von der Modulation aussagen?}\\ \hline\hline
+%    A & Sie reduziert sich um 50\%, wenn der Sender moduliert wird. \\ \hline
+%    B & Sie variiert mit der Modulationsleistung, wenn der Sender moduliert wird. \\ \hline
+%    C \only<2>\checkmark & Sie ist unabhängig von der Modulation. \\ \hline
+%    D & Sie geht gegen Null, wenn der Sender nicht moduliert wird. \\ \hline
+%  \end{tabular}
+%\end{frame}
+
+%\begin{frame}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TG212} &
+%    \begin{tabular}[c]{lr}
+%      \includegraphics[width=.4\textwidth,height=.5\textheight,keepaspectratio]{a12/tg212.png} &
+%      \parbox[b]{.35\textwidth}{\textbf{Dieser Schaltungsauszug ist Teil eines Senders.  Welche Funktion hat die Diode?}} \\
+%    \end{tabular} \\ \hline\hline
+%    A \only<2>\checkmark & Sie beeinflussst die Resonanzfrequenz des Schwingkreises in Abhängigkeit von den Frequenzen im Basisband und moduliert so die Oszillatorfrequenz. \\ \hline
+%    B & Sie richtet das Eingangssignal gleich und erzeugt so die Betriebsspannung für den Oszillator, um diesen von der Stromversorgung der anderen Stufen zu entkoppeln. \\ \hline
+%    C & Sie begrenzt die Amplituden des Eingangssignals und vermeidet so die Übersteuerung der Oszillatorstufe. \\ \hline
+%    D & Sie dient zur Erzeugung von Amplitudenmodulation und zur Abstimmung der Oszillatorfrequenz. \\ \hline
+%  \end{tabular}
+%\end{frame}
+
+
+\subsubsection{Preemphasis und Deemphasis}
 \begin{frame}
-  \begin{tabular}{l||p{.8\textwidth}}\hline
-    \textbf{TD514} & \textbf{Bei dieser Schaltung handelt es sich um einen Modulator zur Erzeugung von}
-    \includegraphics[width=.7\textwidth,height=.85\textheight,keepaspectratio]{a12/td514.png}\\ \hline\hline
-    A & phasenmodulierten Signalen. \\ \hline
-    B \only<2>\checkmark & frequenzmodulierten Signalen. \\ \hline
-    C & AM-Signalen mit unterdrücktem Träger. \\ \hline
-    D & AM-Signalen. \\ \hline
-  \end{tabular}
+  \frametitle{Preemphasis und Deemphasis}
+     \begin{itemize}
+     	 \item Preemphasis (senderseitig): Anhebung der Lautsträke von hohen Frequenzen
+	 \item Deemphasis (empfängerseitig): Absenken dieser Frequenzen
+	 \item Rauschgeräusche werden dadurch verringert, da diese im höherfrequenten Bereich liegen
+    	\end{itemize}
 \end{frame}
-
-\begin{frame}
-  \begin{tabular}{l||p{.8\textwidth}}\hline
-    \textbf{TE208} & \textbf{Die Änderung der Kapazität einer über einen Quarzoszillator geschalteten Varicap-Diode stellt eine Möglichkeit dar} \\ \hline\hline
-    A \only<2>\checkmark & Frequenzmodulation zu erzeugen. \\ \hline
-    B & Zweiseitenbandmodulation zu erzeugen. \\ \hline
-    C & CW-Signale zu erzeugen. \\ \hline
-    D & Amplitudenmodulation zu erzeugen. \\ \hline
-  \end{tabular}
-\end{frame}
-
-\begin{frame}
-  \begin{tabular}{l||p{.8\textwidth}}\hline
-    \textbf{TE216} & \textbf{Wie wird die Empfindlichkeit eines FM-Modulators angegeben?} \\ \hline\hline
-    A & in Rad/s \\ \hline
-    B & Als Modulationsindex \\ \hline
-    C & Als Hub. \\ \hline
-    D \only<2>\checkmark & In kHz/V \\ \hline
-  \end{tabular}
-\end{frame}
-
-\begin{frame}
-  \begin{tabular}{l||p{.8\textwidth}}\hline
-    \textbf{TG301} & \textbf{Was kann man bezüglich der Ausgangsleistung eines FM-Senders in Abhängigkeit von der Modulation aussagen?}\\ \hline\hline
-    A & Sie reduziert sich um 50\%, wenn der Sender moduliert wird. \\ \hline
-    B & Sie variiert mit der Modulationsleistung, wenn der Sender moduliert wird. \\ \hline
-    C \only<2>\checkmark & Sie ist unabhängig von der Modulation. \\ \hline
-    D & Sie geht gegen Null, wenn der Sender nicht moduliert wird. \\ \hline
-  \end{tabular}
-\end{frame}
-
-\begin{frame}
-  \begin{tabular}{l||p{.8\textwidth}}\hline
-    \textbf{TG212} &
-    \begin{tabular}[c]{lr}
-      \includegraphics[width=.4\textwidth,height=.5\textheight,keepaspectratio]{a12/tg212.png} &
-      \parbox[b]{.35\textwidth}{\textbf{Dieser Schaltungsauszug ist Teil eines Senders.  Welche Funktion hat die Diode?}} \\
-    \end{tabular} \\ \hline\hline
-    A \only<2>\checkmark & Sie beeinflussst die Resonanzfrequenz des Schwingkreises in Abhängigkeit von den Frequenzen im Basisband und moduliert so die Oszillatorfrequenz. \\ \hline
-    B & Sie richtet das Eingangssignal gleich und erzeugt so die Betriebsspannung für den Oszillator, um diesen von der Stromversorgung der anderen Stufen zu entkoppeln. \\ \hline
-    C & Sie begrenzt die Amplituden des Eingangssignals und vermeidet so die Übersteuerung der Oszillatorstufe. \\ \hline
-    D & Sie dient zur Erzeugung von Amplitudenmodulation und zur Abstimmung der Oszillatorfrequenz. \\ \hline
-  \end{tabular}
-\end{frame}
-
-
-\subsubsection{Preemphasis}
-
-\begin{frame}
-  \begin{tabular}{l||p{.8\textwidth}}\hline
-    \textbf{TB804} & \textbf{Warum wird bei FM senderseitig eine Preemphasis eingesetzt?} \\ \hline\hline
-    A & Um das FM Kanalraster von 25 kHz auf 12,5 kHz durch Reduzierung der Bandbreite zu ermöglichen. \\ \hline
-    B & Um das breibandige FM-Signal durch Anheben der Amplituden der höheren Modulationsfrequenzen auf Schmalband FM zu reduzieren. \\ \hline
-    C & Um die Ausgangsleistung durch Verdichtung des Spektrums der Modulationsfrequenzen zu erhöhen. \\ \hline
-    D \only<2>\checkmark & Um das Signal/Rausch-Verhältnis durch Anheben der Amplituden der höheren Modulationsfrequenzen zu verbessern. \\ \hline
-  \end{tabular}
-\end{frame}
+%\begin{frame}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TB804} & \textbf{Warum wird bei FM senderseitig eine Preemphasis eingesetzt?} \\ \hline\hline
+%    A & Um das FM Kanalraster von 25 kHz auf 12,5 kHz durch Reduzierung der Bandbreite zu ermöglichen. \\ \hline
+%    B & Um das breibandige FM-Signal durch Anheben der Amplituden der höheren Modulationsfrequenzen auf Schmalband FM zu reduzieren. \\ \hline
+%    C & Um die Ausgangsleistung durch Verdichtung des Spektrums der Modulationsfrequenzen zu erhöhen. \\ \hline
+%    D \only<2>\checkmark & Um das Signal/Rausch-Verhältnis durch Anheben der Amplituden der höheren Modulationsfrequenzen zu verbessern. \\ \hline
+%  \end{tabular}
+%\end{frame}
 
 
 \subsection{Demodulation}
