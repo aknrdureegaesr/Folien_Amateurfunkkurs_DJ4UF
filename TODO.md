@@ -40,6 +40,7 @@
 
 # Skript
 
+* Vorbereitungsaufgaben mit ins Skript
 * freie Grafiken? ... mit Quellen.
 * Prüfungskatalogfragen mit Box drum herum
 * Nummerierungssystem der Aufgaben mit arabischen Ziffern
