@@ -1,29 +1,28 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Felix Baum <baum@campus.tu-berlin.de>, Lars Weiler <dc4lw@darc.de>
+% Autoren: Felix Baum <baum@campus.tu-berlin.de>
+% Korrekturen: Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 04: \\
-          Der Widerstand und seine Schaltungsarten \\[2em]}
-\date{Stand 27.10.2016}
+  Der Widerstand und seine Schaltungsarten \\[2em]}
+\date{Stand 17.10.2016}
 \input{texdata/titlepage}
 
-%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
-
 \section*{Einleitung}
+\subsection*{Widerstand}
 
 \begin{frame}
-    \frametitle{Einleitung / Widerstand}
-    \begin{center}
-        \Large{Was ist das?} \\
-        \Large{Wie sieht er aus?}
-    \end{center}
+  \frametitle{Widerstand}
+  \begin{center}
+    \Large{Was ist das?} \\
+    \Large{Wie sieht er aus?}
+  \end{center}
 \end{frame}
 
 
 \begin{frame}
-    \frametitle{Einleitung / Widerstand}
-
+  \frametitle{Bauelement}
 
   \begin{center}
     \begin{figure}
@@ -32,29 +31,27 @@
     \end{figure}
   \end{center}
 
- 	
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Einleitung / Widerstand}
+  \frametitle{Schaltbild}
 
-    \begin{center}
-           \begin{figure}
+  \begin{center}
+    \begin{figure}
       \includegraphics[width=.3\textwidth,height=.3\textheight,keepaspectratio]{e04/Resistor_symbol_IEC.png}
       \attribcaption{Widerstandssymbol nach IEC}{Markus Kuhn}{https://commons.wikimedia.org/wiki/File:Resistor_symbol_IEC.svg}{\ccpd}
     \end{figure}
-    \end{center}
+  \end{center}
 
-    \begin{center}
-         \begin{figure}
+  \begin{center}
+    \begin{figure}
       \includegraphics[width=.4\textwidth,height=.4\textheight,keepaspectratio]{e04/R_LTspice.png}
       \caption{aus LTspice, Freeware zur Schaltungssimulation \ExternalLink~\url{http://www.linear.com/designtools/software/\#Spice}}
     \end{figure}
-    \end{center}
- 	
-\end{frame}
+  \end{center}
 
+\end{frame}
 
 
 \section*{Spezifischer Widerstand}
@@ -62,10 +59,10 @@
 \begin{frame}
   \frametitle{Leitende Materialien}
   \begin{columns}
-    \column{.5\textwidth}
+    \column{.6\textwidth}
     \begin{tabular}{lr}
-      Material & Spezifischer Widerstand\footnotemark \\ 
-      "" & $\rho \text{ in } \frac{\Omega\cdot mm^2}{m}$\\ \hline
+      Material & Spezifischer Widerstand\footnotemark $\rho$ \\
+        & $\text{ in } \frac{\Omega\cdot mm^2}{m}$ \\ \hline
       Silber & $1,587 \cdot 10^{-2}$ \\
       Kupfer & $1,721 \cdot 10^{-2}$ \\
       Gold & $2,214 \cdot 10^{-2}$ \\
@@ -77,7 +74,7 @@
       Porzellan & \only<2>{$\leftarrow$ \textbf{Isolator} \hspace{2pc}} $1 \cdot 10^{18}$ \\
     \end{tabular}
 
-    \column{.25\textwidth}
+    \column{.35\textwidth}
     \only<3>{
     \begin{block}{Berechnung des Widerstands}
       $$R = \rho \cdot \frac{\ell}{A}$$
@@ -87,121 +84,185 @@
   \footnotetext[1]{\tiny \ExternalLink \url{http://de.wikipedia.org/wiki/Spezifischer_Widerstand}}
 \end{frame}
 
-\section*{Widerstandswerte}
+\section*{Wider\-stands\-werte}
 
 \begin{frame}
-	\begin{center}
-        \begin{figure}
+  \begin{center}
+    \begin{figure}
       \includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e04/4-Ringe.png}
       \attribcaption{Farbkodierung von Widerständen mit 4 Ringen}{Screenshot}{https://de.wikipedia.org/wiki/Widerstand_(Bauelement)}{\ccbysa}
     \end{figure}
-\end{center}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-	\begin{center}
-       \begin{figure}
+  \begin{center}
+    \begin{figure}
       \includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e04/5-Ringe.png}
       \attribcaption{Farbkodierung von Widerständen mit 5 Ringen}{Screenshot}{https://de.wikipedia.org/wiki/Widerstand_(Bauelement)}{\ccbysa}
     \end{figure}
-\end{center}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{SMD Widerstände}
-    \begin{center}
-        \begin{figure}
+  \frametitle{SMD Widerstände}
+  \begin{center}
+    \begin{figure}
       \includegraphics[width=\textwidth,height=.2\textheight,keepaspectratio]{e04/Rsistor_SMD.jpg}
       \attribcaption{SMD Widerstand}{Haragayato}{https://commons.wikimedia.org/wiki/File:Register3.jpg}{\ccbysa}
     \end{figure}
-    \end{center}
-    \begin{center}
+  \end{center}
+
+  \begin{center}
     \begin{tabular}{l||l|l|l|l|l|l|l|l|l|l}\hline
-        1.Ziffer & - & 1 &2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
-        2.Ziffer & 0 & 1 &2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
-        3.Ziffer & 0 & 1 &2 & 3 & 4 & 5 & 6 & 7 &  &  \\ \hline
+      1.Ziffer & - & 1 &2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
+      2.Ziffer & 0 & 1 &2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
+      3.Ziffer & 0 & 1 &2 & 3 & 4 & 5 & 6 & 7 &  &  \\ \hline
     \end{tabular}
-    \end{center}
-    Zum Beispiel:
+  \end{center}
+  \pause
+  \begin{exampleblock}{Beispiel}
+    \scriptsize
     \begin{center}
-    \begin{tabular}{l||l}\hline
-	Aufdruck & Widerstandswert \\ \hline
-        470 & $47 \cdot 10^{0} \Omega$ \\ \hline
-        223 & $22 \cdot 10^{3} \Omega$ \\ \hline
-        4R7 & $4,7 \Omega$ \\ \hline
-    \end{tabular}
+      \begin{tabular}{l|l}
+        Aufdruck & Widerstandswert \\ \hline
+        470 & $47 \cdot 10^{0} \Omega$ \\
+        223 & $22 \cdot 10^{3} \Omega$ \\
+        4R7 & $4,7 \Omega$ \\
+      \end{tabular}
     \end{center}
+  \end{exampleblock}
 
 \end{frame}
+
 \section*{Besondere Widerstandsarten}
 \begin{frame}
-    \frametitle{Drehpotentiometer}
+  \frametitle{Potentiometer}
 
-    \begin{center}
-      \begin{figure}
+  \begin{center}
+    \begin{figure}
       \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e04/Potenziometer.jpg}
       \attribcaption{Zwei Trimmpotentiometer und ein Schiebepotentiometer}{Honina}{https://commons.wikimedia.org/wiki/File:Potenziometer.JPG}{\ccbysa}
     \end{figure}
-    \end{center}
- 	
-\end{frame}
-\begin{frame}
-    \frametitle{Besondere Widerstände}
+  \end{center}
 
-    \begin{center}
-      \begin{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Besondere Widerstände}
+
+  \begin{center}
+    \begin{figure}
       \includegraphics[width=.6\textwidth,height=.5\textheight,keepaspectratio]{e04/bild-TC106.png}
       \caption{Technik Fragenkatalog Klasse E 2006-09 Frage TC106}
     \end{figure}
- 	
- 	\begin{tabular}{l||l}\hline
-        A & NTC - Negativer Temperaturkoeffizient \\ \hline
-        B & PTC - Positiver Temperaturkoeffizient \\ \hline
-        C & Lichteinfallgesteuerter Widerstand (Lichtsensor) \\ \hline
-        D & Spannungsgesteuerter Widerstand \\ \hline
+
+    \begin{tabular}{l||l}\hline
+      A & NTC - Negativer Temperaturkoeffizient \\ \hline
+      B & PTC - Positiver Temperaturkoeffizient \\ \hline
+      C & Lichteinfallgesteuerter Widerstand (Lichtsensor) \\ \hline
+      D & Spannungsgesteuerter Widerstand \\ \hline
     \end{tabular}
- 	    \end{center}
+  \end{center}
 \end{frame}
 
-\section*{Rechnen mit Widerständen}
+
+\section*{Schaltungen}
 
 \begin{frame}
-    \frametitle{Reihenschaltung}
-        
-    $$R_{gesamt} = R_1 + R_2 + R_3 + ...$$
+  \frametitle{Reihenschaltung}
 
-	\begin{center}
-        \begin{figure}
+  \begin{columns}
+    \column{.4\textwidth}
+    \begin{center}
+      \begin{figure}
         \includegraphics[width=.4\textwidth,height=.75\textheight,keepaspectratio]{e04/Reihe.png}
         \caption{aus LTspice}
       \end{figure}
     \end{center}
+    \pause
+    \column{.55\textwidth}
+    \begin{block}{Berechnung}
+      $$R_{gesamt} = R_1 + R_2 + R_3 + ...$$
+    \end{block}
+  \end{columns}
+
 \end{frame}
 
 \begin{frame}
-    \frametitle{Parallelschaltung}
-        $$\frac{1}{R_{gesamt}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...$$
-        
-	\begin{center}
-    \begin{figure}
+  \frametitle{Parallelschaltung}
+  \begin{columns}
+    \column{.4\textwidth}
+    \begin{center}
+      \begin{figure}
         \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e04/Parallel.png}
         \caption{aus LTspice}
       \end{figure}
     \end{center}
-    
-
+    \pause
+    \column{.55\textwidth}
+    \begin{block}{Berechnung}
+      $$\frac{1}{R_{gesamt}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...$$
+    \end{block}
+  \end{columns}
 \end{frame}
-
-
-\section*{Übung}
 
 \begin{frame}
-
-	\begin{center}
-        Widerstandswerte aus Farbcode ablesen
-    \end{center}
-    
+  \frametitle{Ersatzwiderstand}
+  \begin{columns}
+    \column{.47\textwidth}
+    \begin{figure}
+      \includegraphics[width=.75\textwidth,height=.3\textheight,keepaspectratio]{e04/Ersatzwiderstand1.png}
+      \caption{aus dem Fragenkatalog}
+    \end{figure}
+    \column{.47\textwidth}
+    \begin{figure}
+      \includegraphics[width=.75\textwidth,height=.3\textheight,keepaspectratio]{e04/Ersatzwiderstand2.png}
+      \caption{aus dem Fragenkatalog}
+    \end{figure}
+  \end{columns}
+  \begin{columns}
+    \column{.47\textwidth}
+    \pause
+    \begin{exampleblock}{Berechnung}
+      $R_1 + (R_2 \parallel R_3)$ \\[1.5em]
+      $\Rightarrow R_1 + \cfrac{1}{\cfrac{1}{R_2} + \cfrac{1}{R_3}}$
+    \end{exampleblock}
+    \column{.47\textwidth}
+    \pause
+    \begin{exampleblock}{Berechnung}
+      $(R_1 + R_2) \parallel R_3$\\[1.5em]
+      $\Rightarrow \cfrac{1}{\cfrac{1}{R_1 + R_2} + \cfrac{1}{R_3}}$
+    \end{exampleblock}
+  \end{columns}
 \end{frame}
+
+\begin{frame}
+  \frametitle{Spannungsteiler}
+  \begin{columns}
+    \column{.4\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=.6\textwidth,height=.75\textheight,keepaspectratio]{e04/Spannungsteiler.png}
+        \caption{aus dem Fragenkatalog}
+      \end{figure}
+    \end{center}
+    \column{.55\textwidth}
+    \begin{block}{Berechnung}
+      $\cfrac{U}{R_1 + R_2} = \cfrac{U_2}{R_2} = \cfrac{U_1}{R_1}$
+    \end{block}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+  \begin{alertblock}{Hausaufgabe}
+    Aus Fragenkatalog Klasse E Kapitel 1.3.1 ``Widerstand'' (TC101--TC111) durcharbeiten.\\
+    Aus Fragenkatalog Klasse E Kapitel TD101--TD104, TD108--TD110 berechnen.
+  \end{alertblock}
+\end{frame}
+
+\section*{Übungen}
 
 \begin{frame}
   \frametitle{Übungen}
@@ -216,7 +277,9 @@
   \begin{columns}
     \column{0.4\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth]{e04/Uebung1_Schaltplan.pdf}
+      \begin{figure}
+        \includegraphics[width=1\textwidth]{e04/Uebung1_Schaltplan.pdf}
+      \end{figure}
     \end{center}
     \column{0.55\textwidth}
     \begin{alertblock}{Aufgabe 1}
@@ -227,7 +290,7 @@
       Berechne die Spannung über $R_1$, $R_2$, $R_3$ und $R_4$. Miss zur Überprüfung nach.\\
       Miss und erkläre die Spannungen über $A$---$B$, $A$---$C$ und $A$---$D$.
     \end{alertblock}
-   \end{columns}
+  \end{columns}
   \begin{alertblock}{Aufgabe 3}
     Berechne die Ströme durch $R_1$, $R_2$, $R_3$, $R_4$ und den Gesamtstrom. Miss zur Überprüfung nach.
   \end{alertblock}
@@ -238,7 +301,9 @@
   \begin{columns}
     \column{0.4\textwidth}
     \begin{center}
-      \includegraphics[width=1\textwidth]{e04/Uebung2_Schaltplan.pdf}
+      \begin{figure}
+        \includegraphics[width=1\textwidth]{e04/Uebung2_Schaltplan.pdf}
+      \end{figure}
     \end{center}
     \column{0.55\textwidth}
     \begin{alertblock}{Aufgabe 1}
@@ -260,29 +325,25 @@
   \begin{alertblock}{Aufgabe 1}
     Die rote Leuchtdiode benötigt einen Strom von $20mA$. Für die Aufgabe sei erstmal angenommen, dass keine Spannung über die Leuchtdiode abfällt. Dimensioniere einen Spannungsteiler so, dass mit der gegebenen Batterie von 6V an der Leuchtdiode eine Spannung von 3V bis 5V anliegt. Gegeben sind die Widerstände in der Größe $4\times100\Omega$, $2\times180\Omega$, $4\times470\Omega$ und $2\times510\Omega$. Berechne zuerst den Spannungsteiler und zeichne einen Schaltplan.
   \end{alertblock}
+  \begin{alertblock}{Aufgabe 2}
+    Baue die Schaltung auf. Die abgeflachte Seite der Leuchtdiode zeigt zu Minus. Miss den Strom durch die Leuchtdiode. Miss die Spannung über die Widerstände. Wie lautet die Gesamtsumme der Spannungen über die Widerstände? Erkläre.
+  \end{alertblock}
+  \begin{alertblock}{Aufgabe 3}
+    Die Leuchtdiode soll dunkler leuchten. Muss dazu mehr oder weniger Strom fließen? Wie sind die Widerstände zu dimensionieren?
+  \end{alertblock}
 \end{frame}
 
-\begin{frame}
-
-	\begin{center}
-	\begin{figure}
-        \includegraphics[width=.5\textwidth]{e04/URI.png}
-        \caption{\tiny TU Wien \url{http://www.fet.at/twiki/pub/Homepage/OnlineFetzn/fetzn_ausgabe_maerz-2013_online.pdf}}
-	\end{figure}
-    \end{center}
-    
-\end{frame}
 
 \section*{Referenzen}
 
 \begin{frame}
-    \frametitle{Referenzen/Links}
-    
-    \footnotesize
-    \begin{itemize}
-        \item Moltrecht E 04: \\
-              \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e04/}
-    \end{itemize}
+  \frametitle{Referenzen/Links}
+
+  \footnotesize
+  \begin{itemize}
+    \item Moltrecht E 04: \\
+      \url{https://www.darc.de/der-club/referate/ajw/lehrgang-te/e04/}
+  \end{itemize}
 
 \end{frame}
 
