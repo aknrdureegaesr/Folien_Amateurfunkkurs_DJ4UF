@@ -1,65 +1,81 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Felix Baum <baum@campus.tu-berlin.de>
-% Test
+% Korrekturen: Lars Weiler <dc4lw@darc.de>
+
 
 \input{texdata/preamble}
 \subtitle{Technik 12: \\
-           Halbleiter, Diode \\[2em]}
-\date{Stand 17.11.2016}
+  Halbleiter, Diode \\[2em]}
+\date{Stand 28.11.2016}
 \input{texdata/titlepage}
-
-%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
 
 \section*{Einleitung}
 
 \begin{frame}
-    \frametitle{Halbleiter}
-      	\begin{itemize}
-			\item Was ist ein Halbleiter? (Erinnern aus alter Technik)
-    \end{itemize}
+  \frametitle{Halbleiter}
+  \begin{itemize}
+    \item Was ist ein Halbleiter? (Erinnern aus alter Technik)
+  \end{itemize}
 \end{frame}
-  
+
 \section*{Bohr}
 
 \begin{frame}
   \frametitle{Bohr Atommodell}
-    \begin{center}
-      \begin{figure}
-        \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{e12/Bohr.png}
-        \attribcaption{Bohr'sches Atommodell}{BriceBlaus}{https://en.wikipedia.org/wiki/File:Blausen_0342_ElectronEnergyLevels.png}{\ccby}
-      \end{figure}
-	\end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e12/Bohr.png}
+      \attribcaption{Electron Energy Levels}{BruceBlaus}{https://en.wikipedia.org/wiki/File:Blausen_0342_ElectronEnergyLevels.png}{\ccby}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Halbleiter}
-    \begin{center}
+  \frametitle{Halbleiter}
+  \begin{center}
     \begin{itemize}
-			\item Heutzutage meist Silizium
-			\item 4 Elektronen auf äußerer Schale
-			\item Elektronen auf der äußersten Schale nennt man Valenzelektronen
+      \item Heutzutage meist Silizium oder Germanium
+      \item 4 Elektronen auf äußerer Schale
+      \item Elektronen auf der äußersten Schale nennt man Valenzelektronen
     \end{itemize}
-	\end{center}
+  \end{center}
 \end{frame}
 
 \section*{Dotierung}
 
 \begin{frame}
-    \frametitle{p-Dotierung}
-
-	 \begin{figure}
-         \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{e12/p-dot.png}       
-	 \attribcaption{mit Aluminium p-dotiertes Silizium (3-Valenzelektronen in äußerster Schale)}{Markus A. Henning}{https://commons.wikimedia.org/wiki/File:Schema_-_p-dotiertes_Silicium.svg}{GNU Free Documentation License}
-    	 \end{figure}
+  \frametitle{Dotierung}
+  \begin{columns}
+    \column{.5\textwidth}
+    \begin{figure}
+      \includegraphics[height=.6\textheight,width=\textwidth,keepaspectratio]{e12/p-dot.png}
+      \attribcaption{p-dotiertes Silizium}{Markus A. Hennig; SVG-Umsetzung: Cepheiden}{https://commons.wikimedia.org/wiki/File:Schema_-_p-dotiertes_Silicium.svg}{\href{https://www.gnu.org/licenses/fdl.html}{GNU Free Documentation License}}
+    \end{figure}
+    \column{.5\textwidth}
+    p-dotiert
+    \begin{itemize}
+      \item Element mit 3 Valenzelektronen in äußerster Schale
+      \item z.B. Aluminium
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
-    \frametitle{n-Dotierung}
+  \frametitle{Dotierung}
+  \begin{columns}
+    \column{.5\textwidth}
     \begin{figure}
-	\includegraphics[height=.7\textheight]{e12/n-dot}
-       \attribcaption{mit Phosphor n-dotiertes Silizium (5-Valenzelektronen in äußerster Schale)}{Markus A. Henning}{https://commons.wikimedia.org/wiki/File:Schema_-_n-dotiertes_Silicium.svg}{\ccbysa}
+      \includegraphics[height=.6\textheight,width=\textwidth,keepaspectratio]{e12/n-dot.png}
+      \attribcaption{n-dotiertes Silizium}{Markus A. Hennig; SVG-Umsetzung: Cepheiden}{https://commons.wikimedia.org/wiki/File:Schema_-_n-dotiertes_Silicium.svg}{\href{https://www.gnu.org/licenses/fdl.html}{GNU Free Documentation License}}
     \end{figure}
+    \column{.5\textwidth}
+    n-dotiert
+    \begin{itemize}
+      \item Element mit 5 Valenzlektronen in äußerster Schale
+      \item z.B. Phosphor
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 
@@ -94,230 +110,217 @@
 % 	Video: \url{https://www.youtube.com/watch?v=IcrBqCFLHIY}
 %\end{frame}
 
-\section*{pn Übergang}
-
-%\begin{frame}
-%  \frametitle{pn Übergang}
-%   \begin{center}
-%Video: \url{https://www.youtube.com/watch?v=IcrBqCFLHIY}
-%	\end{center}
-%\end{frame}
+\section*{p-n-Übergang}
 
 \begin{frame}
-    \frametitle{pn Übergang}
-    \begin{center}
+  \frametitle{p-n-Übergang}
+  \begin{center}
+    Video: \url{https://www.youtube.com/watch?v=IcrBqCFLHIY}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{p-n-Übergang}
+  \begin{center}
     \begin{figure}
-        \includegraphics[width=\textwidth,height=.8\textheight, keepaspectratio]{e12/pn-Diagram.png}
-        \attribcaption{pn-Übergang}{TheNoise}{https://commons.wikimedia.org/wiki/File:Pn-junction-equilibrium-graphs.png}{\ccbysa}
+      \includegraphics[height=.75\textheight,width=\textwidth,keepaspectratio]{e12/pn-Diagram.png}
+      \attribcaption{pn-Diagramm}{TheNoise}{https://commons.wikimedia.org/wiki/File:Pn-junction-equilibrium-graphs.png}{\ccbysa}
     \end{figure}
-	\end{center}
+  \end{center}
 \end{frame}
 
 \section*{Diode}
 
 \begin{frame}
-    \frametitle{Diode}
-    \begin{center}
+  \frametitle{Diode}
+  \begin{center}
     \begin{itemize}
-			\item Strom nur von P nach N, nicht andersherum
-			\item In Gegenrichtung erst bei sehr großen Spannungen
-			\item Durchlass bei Germanium ca $0.3V$
-			\item Durchlass bei Silizium ca $0.7V$
-    \end{itemize} " "\\
-	\begin{figure}
-        \includegraphics[width=.7\textwidth,height=.8\textheight,keepaspectratio]{e12/diode_with_electrical_symbol.png}
-        \attribcaption{pn-Diode}{Raffamaiden}{https://en.wikipedia.org/wiki/File:PN_diode_with_electrical_symbol.svg}{\ccbysa}
-        \end {figure}
-	\end{center}
+      \item Strom nur von p-dotiertem nach n-dotiertem Material, nicht andersherum
+      \item In Gegenrichtung erst bei sehr großen Spannungen
+      \item Durchlass bei Germanium ca $0.3V$
+      \item Durchlass bei Silizium ca $0.7V$
+    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=.7\textwidth,height=.5\textheight,keepaspectratio]{e12/diode_with_electrical_symbol.png}
+      \attribcaption{pn-Diode}{Raffamaiden}{https://en.wikipedia.org/wiki/File:PN_diode_with_electrical_symbol.svg}{\ccbysa}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Diode Aufgeschnitten}
-    \begin{center}
-	\begin{figure}
-        \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{e12/Schottky_Diode_Section.jpg}
-        \attribcaption{aufgeschnittene Schottky-Diode}{Laeman}{https://de.wikipedia.org/wiki/Datei:Schottky_Diode_Section.JPG}{\ccby}
-	\end{figure}
-	\end{center}
+  \frametitle{Aussehen}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.9\textwidth,height=.75\textheight,keepaspectratio]{e12/Diodenalt2.png}
+      \attribcaption{Weitere, auch ältere Bauformen von (Gleichrichter-)Dioden}{PeterFrankfurt}{https://de.wikipedia.org/wiki/Datei:Diodenalt2.png}{\ccpd}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Aussehen}
-    \begin{center}
-	\begin{figure}
-        \includegraphics[width=.8\textwidth,height=.8\textheight,keepaspectratio]{e12/Diodenalt2.png}
-        \attribcaption{Dioden}{PeterFrankfurt}{https://de.wikipedia.org/wiki/Datei:Diodenalt2.png}{\ccpd}
-     \end{figure}
-	\end{center}
+  \frametitle{Diode aufgeschnitten}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.9\textwidth,height=.75\textheight,keepaspectratio]{e12/Schottky_Diode_Section.jpg}
+      \attribcaption{Schnitt durch eine Schottky-Diode}{Laeman}{https://de.wikipedia.org/wiki/Datei:Schottky_Diode_Section.JPG}{\ccby}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Kennlinie}
-    \begin{center}
-        \begin{figure}
-        \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{e12/Kennlinie_1N4001.png}
-        \attribcaption{Kennlinie einer Diode}{Cepheiden}{https://commons.wikimedia.org/wiki/File:Dioden-Kennlinie_1N4001.svg}{\ccpd}
-	\end{figure}
-	\end{center}
+  \frametitle{Kennlinie Diode}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[height=.75\textheight,width=\textwidth,keepaspectratio]{e12/Kennlinie_1N4001.png}
+      \attribcaption{Kennlinie aus Messdaten einer 1N4001 Diode}{Cepheiden}{https://commons.wikimedia.org/wiki/File:Dioden-Kennlinie_1N4001.svg}{\ccpd}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Leitet die Diode?}
-    \begin{center}
-        \begin{figure}
-        \includegraphics[width=1\textwidth,height=.6\textheight]{e12/Leit_Diode.png}
-        \caption{Welche Diode leite? DB4UM}
-	\end{figure}
-	\end{center}
+  \frametitle{Leitet die Diode?}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e12/Leit_Diode.png}
+      \caption{von DB4UM}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 
-\section*{Z - Diode}
+\subsection*{Z - Diode}
 
 \begin{frame}
-    \frametitle{Schaltzeichen}
+  \frametitle{Schaltzeichen Z-Diode}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.8\textwidth,height=.75\textheight,keepaspectratio]{e12/z-diode.png}
+      \caption{Z-Diode}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Kennlinie Z-Diode}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[height=.8\textheight,height=.75\textheight,keepaspectratio]{e12/Kennlinie_Z-Diode.png}
+      \attribcaption{Kennlinie Z-Diode}{Biezl}{https://commons.wikimedia.org/wiki/File:Kennlinie_Z-Diode.svg}{\ccpd}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Anwendung}
+  \begin{itemize}
+    \item für Squelch (benötigt ein einstellbares Offset)
+  \end{itemize}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{e12/U-Stab-Z-Diode.jpg}
+      \attribcaption{Z-Diode für Squelch}{Pmehrwald}{https://commons.wikimedia.org/wiki/File:U-Stab-Z-Diode.JPG}{\ccbysa}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Anwendung}
+  \begin{itemize}
+    \item zur Spannungsstabilisierung
+  \end{itemize}
+  \begin{center}
+    \begin{figure}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{e12/Spannungsstabilisierung.png}
+        \attribcaption{Z-Diode zur Spannungsstabilisierung}{MovGP0}{https://de.wikipedia.org/wiki/Datei:Spannungsstabilisierung.png}{\ccpd}
+      \end{figure}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\subsection*{Fotodiode}
+\begin{frame}
+  \frametitle{Fotodiode}
+  \begin{columns}[c]
+    \column[c]{4cm}
     \begin{center}
       \begin{figure}
-        \includegraphics[width=.8\textwidth, height=.8\textheight, keepaspectratio]{e12/z-diode.png}
-        \caption{Z-Diode}
+        \includegraphics[width=1\textwidth,height=.25\textheight,keepaspectratio]{e12/Symbol_Photodiode.png}
+        \caption{Fotodiode}
       \end{figure}
-	\end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Kennlinie Z-Diode}
-    \begin{center}
-	\begin{figure}
-        \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{e12/Kennlinie_Z-Diode.png}
-        \attribcaption{Kennlinie einer Z-Diode}{Biezl}{https://commons.wikimedia.org/wiki/File:Kennlinie_Z-Diode.svg}{\ccpd}
-	\end{figure}
-	\end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Nutzen}
-      	\begin{itemize}
-			\item Als Squelch (benötigt ein einstellbares Offset)
-    \end{itemize}    
-    \begin{center}
-	\begin{figure}
-        \includegraphics[width=.8\textwidth,height=.8\textheight,keepaspectratio]{e12/U-Stab-Z-Diode.jpg}
-        \attribcaption{Vewendung einer Z-Diode}{Pmehrwald}{https://commons.wikimedia.org/wiki/File:U-Stab-Z-Diode.JPG}{\ccbysa}
-	\end{figure}
-	\end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Nutzen}
-      	\begin{itemize}
-			\item Als Spannungsstabilisierung
-    \end{itemize}    
-    \begin{center}
-	\begin{figure}
-        \includegraphics[width=.8\textwidth,height=.6\textheight,keepaspectratio]{e12/Spannungsstabilisierung.png}
-        \attribcaption{Spannungsstabilisierung}{MovGP0}{https://de.wikipedia.org/wiki/Datei:Spannungsstabilisierung.png}{\ccpd}
-	\end{figure}
-	\end{center}
-\end{frame}
-\section*{Varicap}
-\begin{frame}
-\frametitle{Kapazitätsdiode - Varicap}
- \begin{columns}[c]
-        \column[c]{5cm}
-\begin{center}
-\begin{figure}
-            \includegraphics[width=.8\textwidth, height=.2\textheight, keepaspectratio]{e12/Varicap_Schaltzeichen.png}\\
-	    \attribcaption{Schaltungszeichen Varicap}{Omegatron}{https://commons.wikimedia.org/wiki/File:Varicap_symbol.svg}{\ccbysa}
-            \includegraphics[width=0.8\textwidth,height=.4\textheight, keepaspectratio]{e12/Varicap_PN}
-            \attribcaption{Varicap - PN-Übergang}{Ellol }{https://commons.wikimedia.org/wiki/File:Pn-junction_in_varicap_when_it\%27s_used_reverse-biased(plain_scheme).PNG?uselang=de}{\ccpd}
-	\end{figure}
-      \end{center}
-        \column{5cm}
- \begin{itemize}
-			\item Diode wird in Sperrrichtung betrieben
-			\item Raumladungszone wird zu einer Kapazität
-			\item $C=\frac{\epsilon_0\cdot\epsilon_r\cdot A}{l}$
-
-    \end{itemize}
-    \end{columns}
-\end{frame}
-
-\section*{Fotodiode}
-\begin{frame}
-    \frametitle{Fotodiode}
-    \begin{columns}[c]
-        \column[c]{5cm}
-        \begin{center}
-	\begin{figure}
-            \includegraphics[width=.8\textwidth, height=.2\textheight, keepaspectratio]{e12/Symbol_Photodiode.png}\\
-	    \attribcaption{Schaltungszeichen Fotodiode}{MovGP0}{https://commons.wikimedia.org/wiki/File:Symbol_Photodiode.svg}{\ccbysa}
-            \includegraphics[width=0.8\textwidth,height=.4\textheight, keepaspectratio]{e12/Fotodio.jpg}
-            \attribcaption{verschiedene Fotodioden}{Ulfbastel}{https://commons.wikimedia.org/wiki/File:Fotodio.jpg}{\ccbysa}
-	\end{figure}
-        \end{center}
-        \column{5cm}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.25\textheight,keepaspectratio]{e12/Fotodio.jpg}
+        \attribcaption{Fotodioden}{Ulfbastel}{https://commons.wikimedia.org/wiki/File:Fotodio.jpg}{\ccbysa}
+      \end{figure}
+    \end{center}
+    \column{5cm}
     \begin{itemize}
-			\item Ändert Widerstand abhängig von Lichteinfall 
-			\item Wird z.B. als Helligkeitssensor verwendet
-	\end{itemize}
-    \end{columns}
-\end{frame}
-
-\section*{LED}
-
-\begin{frame}
-    \frametitle{LED}
-      	\begin{itemize}
-			\item LED - light-emitting diode
-			\item Leuchtet wenn in Durchlassrichtung betrieben
-			\item Betriebsspannung je nach LED-Farbe von etwa $1.5V$ - $3.2V$
-            \item Nobelpreis 2014: galium nitrid (blaues Licht)
-    \end{itemize}    
-    \begin{center}
-	\begin{figure}
-        \includegraphics[width=1.0\textwidth,height=.5\textheight, keepaspectratio]{e12/Symbol_LED.png}
-	\attribcaption{Symbol LED}{MovGP0, wdwd} {https://commons.wikimedia.org/wiki/File:Symbol_LED_\%2B-.svg}{\ccpd}
-	\end{figure}
-	\end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Diode Aufbau}
-    \begin{columns}[c]
-        \column[c]{5cm}
-        \begin{center}
-	\begin{figure}
-            \includegraphics[width=0.7\textwidth, height=.8\textheight, keepaspectratio]{e12/Uvled_highres_macro.jpg}\\
-           \attribcaption{UV-LED}{Grapetonix}{https://commons.wikimedia.org/wiki/File:Uvled_highres_macro.jpg}{\ccby}
-	\end{figure}
-        \end{center}
-        \column{5cm}
-            Halbleiter nur ganz klein im Reflektor. Der Rest ist "Verpackung"\\ 
-	 \begin{figure}
-            \includegraphics[width=0.7\textwidth, height=.8\textheight, keepaspectratio]{e12/Led_reflector.jpg}
-	    \attribcaption{Reflektor einer LED}{Thomas Wydra}{https://commons.wikimedia.org/wiki/File:Led_reflector.jpg}{\ccpd}
-	\end{figure}
-    \end{columns}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Optokoppler}
-    \begin{columns}[c]
-        \column[c]{5cm}
-        \begin{center}
-	\begin{figure}
-            \includegraphics[width=1\textwidth, height=.4\textheight, keepaspectratio]{e12/Optokoppler_Aus.png}\\
-            \includegraphics[width=1\textwidth, height=.4\textheight, keepaspectratio]{e12/Optokoppler_An.png}
-            \attribcaption{Optokoppler}{Stefan Riepl}{https://commons.wikimedia.org/wiki/File:Optokoppler.gif}{\ccbysa}
-	\end{figure}
-        \end{center}
-        \column{5cm}
-    \begin{itemize}
-			\item LED und Phototransistor in einem Bauelement
-			\item Galvanische Trennung von 2 Schaltkreisen
-			\item Probleme bei Hochfrequenzschaltungen
+      \item Ändert Widerstand abhängig von Lichteinfall
+      \item Wird z.B. als Helligkeitssensor verwendet
     \end{itemize}
-    \end{columns}
+  \end{columns}
+\end{frame}
+
+\subsection*{LED}
+
+\begin{frame}
+  \frametitle{LED}
+  \begin{itemize}
+    \item LED -- light-emitting diode
+    \item Leuchtet, wenn in Durchlassrichtung betrieben
+    \item Betriebsspannung je nach LED-Farbe von etwa $1.5V$ -- $3.2V$
+    \item Nobelpreis 2014: Galliumnitrid (blaues und damit weißes Licht)
+  \end{itemize}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[height=.5\textheight,width=\textwidth,keepaspectratio]{e12/Symbol_LED.png}
+      \caption{LED}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Aufbau LED}
+  \begin{columns}[c]
+    \column[c]{5cm}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=.9\textwidth,height=.75\textheight,keepaspectratio]{e12/Uvled_highres_macro.jpg}\\
+        \attribcaption{Macro image of an ultraviolet (UVA) LED}{Grapetonix}{https://commons.wikimedia.org/wiki/File:Uvled_highres_macro.jpg}{\ccby}
+      \end{figure}
+    \end{center}
+    \column{5cm}
+    Halbleiter nur ganz klein im Reflektor. Der Rest ist ``Verpackung''\\[1.5em]
+    \begin{figure}
+      \includegraphics[width=.75\textwidth,height=.6\textheight,keepaspectratio]{e12/Led_reflector.jpg}
+      \attribcaption{Reflektor einer grünen Standard-LED}{Thomas Wydra}{https://commons.wikimedia.org/wiki/File:Led_reflector.jpg}{\ccpd}
+    \end{figure}
+  \end{columns}
+\end{frame}
+
+\subsection*{Optokoppler}
+\begin{frame}
+  \frametitle{Optokoppler}
+  \begin{columns}[c]
+    \column[c]{5cm}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.25\textheight,keepaspectratio]{e12/Optokoppler_Aus.png}
+        \caption{Optokoppler Aus}
+      \end{figure}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.25\textheight,keepaspectratio]{e12/Optokoppler_An.png}
+        \caption{Optokoppler An}
+      \end{figure}
+    \end{center}
+    \column{5cm}
+    \begin{itemize}
+      \item LED und Photodiode in einem Bauelement
+      \item Galvanische Trennung von 2 Schaltkreisen
+      \item Probleme bei Hochfrequenzschaltungen
+      \item Glasfaser ist ein ``lang gezogener'' Optokoppler
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 
@@ -329,24 +332,17 @@
 \footnotesize
 
 \begin{thebibliography}{}
-    \bibitem{darc}  DARC Online-Lehrgang Lektion E12:
-                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e12/}
-    \bibitem{wm} 	Wikimedia:
-                    \url{https://en.wikipedia.org/wiki/File:PN_diode_with_electrical_symbol.svg}
-                    \url{https://commons.wikimedia.org/wiki/File:Pn_Junction_Diffusion_and_Drift.svg}
-                    \url{http://commons.wikimedia.org/wiki/File:AusfuerungsformenSchottkyDiode.png}
-                    \url{http://de.wikipedia.org/wiki/Datei:Diode-Schottky-EN_A-K.svg}
-                    \url{https://commons.wikimedia.org/wiki/File:Uvled_highres_macro.jpg}
-                    \url{}
-    \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
-                    \url{https://de.wikipedia.org/wiki/Gleichrichter}
-	\bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:                   
-                    \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
-    \bibitem{fi}    Freie Inhalte (DK0TU):
-                    \url{http://www.dk0tu.de/Projekte/Freie_Inhalte/}
-     \bibitem{yu}    Youtube Video:                   
-                    \url{https://www.youtube.com/watch?v=IcrBqCFLHIY}
+  \bibitem{darc}  DARC Online-Lehrgang Lektion E12:
+    \url{https://www.darc.de/der-club/referate/ajw/lehrgang-te/e12/}
+  \bibitem{wp}    Wikipedia - Die freie Enzyklopädie:
+    \url{https://de.wikipedia.org/wiki/Gleichrichter}
+  \bibitem{bna}   Fragenkatalog Bundesnetzagentur Technik Klasse A:
+    \url{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseAf252rId9014pdf.pdf?__blob=publicationFile&v=3}
+  \bibitem{fi}    Freie Inhalte (DK0TU):
+    \url{http://www.dk0tu.de/Projekte/Freie_Inhalte/}
+  \bibitem{yu}    Youtube Video:
+    \url{https://www.youtube.com/watch?v=IcrBqCFLHIY}
 
-\end{thebibliography} 
+\end{thebibliography}
 
 \input{texdata/postamble}
