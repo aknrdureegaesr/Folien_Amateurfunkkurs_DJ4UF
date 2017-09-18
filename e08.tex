@@ -1,113 +1,76 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Sebastian Lange <dl7bst@dk0tu.de>, Lars Weiler <dc4lw@darc.de>
+% Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+% Korrekturen: Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 08: \\
-          Elektromagnetisches Feld \\[2em]}
-\date{Stand 01.12.2016}
+  Elektromagnetisches Feld \\[2em]}
+\date{Stand 07.11.2016}
 \input{texdata/titlepage}
-
-%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
 
 \section*{Elektrisches Feld}
 \begin{frame}
-\frametitle{Das elektrische Feld}
-	\begin{center}
-        \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e08/PlattenkondensatorFeld.png}\\
-        {\scriptsize Abb. 1: elektrisches Feld zwischen zwei leitenden Platten\\
-         (CC-BY 3.0 \url{https://de.wikipedia.org/wiki/Benutzer:Wfstb})}
-		\begin{itemize}
-			\item wird durch Spannung erzeugt
-			\item ist homogen zwischen zwei parallelen Platten
-		\end{itemize}
-	\end{center}
+  \frametitle{Das elektrische Feld}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e08/PlattenkondensatorFeld.png}
+      \attribcaption{Elektrisches Feld zwischen zwei leitenden Platten}{wdwd}{https://commons.wikimedia.org/wiki/File:PlattenkondensatorFeld.svg}{\ccby}
+    \end{figure}
+    \begin{itemize}
+      \item wird durch Spannung erzeugt
+      \item ist homogen zwischen zwei parallelen Platten
+    \end{itemize}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-	\begin{center}
-        \begin{block}{Elektrisches Feld}
-            \huge$E = \cfrac{U}{d} \text{ in } [\cfrac{V}{m}]$\\
-        \end{block}
-
-%		\begin{small}
-%		\begin{tabular}{|c|c|c|}
-%		\hline
-%		\multicolumn{3}{|c|}{\textbf{Berechnen sie das elektrische Feld eines 9V-Blockes}}\\
-%		\multicolumn{3}{|c|}{\textbf{mit U = 9V und einem Klemmenabstand von 12,7mm}}\\
-%		\hline
-%		A & $ 70,87 V/m $    & ??? \\ \hline
-%		B & $ 238,19 V/m $   & ??? \\ \hline
-%		C & $ 708,66 V/m $   & ??? \\ \hline
-%		D & $ 2430,19 V/m $  & ??? \\ \hline
-%	\end{tabular}
-%	\end{small}		
-	\end{center}
+  \begin{block}{Elektrisches Feld}
+    \begin{center}
+      \huge$E = \cfrac{U}{d} \text{ in } [\frac{V}{m}]$\\
+    \end{center}
+  \end{block}
 \end{frame}
-
-%\begin{frame}
-%	\begin{center}
-%	\begin{small}
-%	\begin{tabular}{|c|c|c|}
-%		\hline
-%		\multicolumn{3}{|c|}{\textbf{Berechnen sie das elektrische Feld eines 9V-Blockes}}\\
-%		\multicolumn{3}{|c|}{\textbf{mit U = 9V und einem Klemmenabstand von 12,7mm}}\\
-%		\hline
-%		A & $ 70,87 V/m $    & ??? \\ \hline
-%		B & $ 238,19 V/m $   & ??? \\ \hline
-%		C & $ 708,66 V/m $   & Richtig \\ \hline
-%		D & $ 2430,19 V/m $  & ??? \\ \hline
-%	\end{tabular}
-%	\end{small}		
-%	\end{center}
-%\end{frame}
 
 % von e06 übernommen
 \begin{frame}
-    \frametitle{Das magnetische Feld}
+  \frametitle{Das magnetische Feld}
 
-    \begin{center}
-        \begin{minipage}{0.45\textwidth}
-            \begin{center}
-               \begin{figure}
+  \begin{center}
+    \begin{minipage}{0.45\textwidth}
+      \begin{center}
+        \begin{figure}
           \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{e08/RechteHand.png}
           \attribcaption{Magnetisches Feld um einen Leiter}{Smial}{https://commons.wikimedia.org/wiki/File:RechteHand.png}{\ccbysa}
         \end{figure}
-            \end{center}
-        \end{minipage}
-        \begin{minipage}{0.45\textwidth}
-            \begin{center}
-                \begin{figure}
+      \end{center}
+    \end{minipage}
+    \begin{minipage}{0.45\textwidth}
+      \begin{center}
+        \begin{figure}
           \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{e08/VFPt_cylindrical_coil_real.png}\\
           \attribcaption{magnetisches Feld in einer Spule}{Geek3}{https://commons.wikimedia.org/wiki/File:VFPt_cylindrical_coil_real.svg}{\ccbysa}
         \end{figure}
-            \end{center}
-        \end{minipage}
-       
-        \bigskip
+      \end{center}
+    \end{minipage}
 
-        \begin{itemize}
-            \item um jeden stromdurchflossenen Leiter baut sich ein konzentrisches, magnetisches Feld auf
-            \item magnetische Felder summieren sich in einer Spule
-            \item magnetische Felder in einer Spule sind homogen
-            \item wird mit zunehmendem Strom stärker
-            \item nimmt mit zunehmendem Abstand ab
-        \end{itemize}
+    \bigskip
 
-    \end{center}
+    \begin{itemize}
+      \item um jeden stromdurchflossenen Leiter baut sich ein konzentrisches, magnetisches Feld auf
+      \item magnetische Felder summieren sich in einer Spule
+      \item magnetische Felder in einer Spule sind homogen
+      \item wird mit zunehmendem Strom stärker
+      \item nimmt mit zunehmendem Abstand ab
+    \end{itemize}
+
+  \end{center}
 \end{frame}
 
 \section*{Elektro\-magnetisches Feld}
+
 \begin{frame}
-\frametitle{Das elektromagnetische Feld}
- %   \begin{center}
- %       \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{a08/dipol_entstehung.png}\\
-        % FIXME Animationen in TeX
-        %\animategraphics[loop,width=\textwidth,height=0.5\textheight,keepaspectratio,controls]{3}{e08/Dipolentstehung-}{0}{21}\\
-%            {\scriptsize Abb. 4: elektromagnetisches Feld
-            %{\tiny CC-BY-SA 3.0 \url{https://commons.wikimedia.org/wiki/File:Dipolentstehung.gif}}
-%            }
-%    \end{center}
+  \frametitle{Das elektromagnetische Feld}
 
   \begin{center}
     \begin{figure}
@@ -126,16 +89,19 @@
       \attribcaption{Dipolentstehung}{Averse}{https://commons.wikimedia.org/wiki/File:Dipolentstehung.gif}{\ccbysa}
     \end{figure}
   \end{center}
-    \begin{itemize}
-        \item elektromagnetisches Feld bildet sich durch ein sich änderndes
-              elektrisches und ein sich änderndes magnetisches Feld
-    	\item zieht man die Kondensatorplatten auseinander und streckt die Spule, erhält man eine Dipolantenne 
-    \end{itemize}
+
+  \begin{itemize}
+    \item elektromagnetisches Feld bildet sich durch ein sich änderndes
+      elektrisches und ein sich änderndes magnetisches Feld
+    \item zieht man die Kondensatorplatten auseinander und streckt die Spule,
+      erhält man eine Dipolantenne
+  \end{itemize}
+
 \end{frame}
 
 \begin{frame}
-    \centering
-    \begin{figure}
+  \centering
+  \begin{figure}
     \includegraphics[width=\textwidth,height=1.5\textheight,keepaspectratio,angle=270]{e08/AntSchwingkreis-crop.pdf}\\[1em]
     \caption{Elektromagnetisches Feld im geschlossenen und offenen Schwingreis}
   \end{figure}
@@ -144,122 +110,120 @@
 \section*{Polarisation}
 
 \begin{frame}
-    \frametitle{Polarisation}
+  \frametitle{Polarisation}
 
-    \begin{center}
-        \begin{minipage}{0.45\textwidth}
-           \begin{figure}
-            %\animategraphics[loop,width=\textwidth,height=.6\textheight,keepaspectratio,controls]{8}{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-}{0}{7}
-            \only<1>{\includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-0.png}\\}
-            \only<2>{\includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-1.png}\\}
-            \only<3>{\includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-2.png}\\}
-            \only<4>{\includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-3.png}\\}
-            \only<5>{\includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-4.png}\\}
-            \only<6>{\includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-5.png}\\}
-            \only<7>{\includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-6.png}\\}
-            \only<8>{\includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-7.png}\\}
-             \attribcaption{Elektromagnetisches Feld einer Antenne}{Chetvorno}{https://commons.wikimedia.org/wiki/File:Dipole_xmting_antenna_animation_4_408x318x150ms.gif}{\cczero}
-           \end{figure}
-                %{\tiny (CC0) \url{https://de.wikipedia.org/wiki/Antennentechnik/media/File:Dipole_xmting_antenna_animation_4_408x318x150ms.gif}}}
-	    \end{minipage}
-        \begin{minipage}{0.45\textwidth}
-          \begin{figure}
-            \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{e08/Onde_electromagnetique.png}\\
-            \attribcaption{Polarisation einer Antenne}{SuperManu}{https://commons.wikimedia.org/wiki/File:Onde_electromagnetique.svg}{\ccbysa}
-          \end{figure}
-        \end{minipage}\\[1.5em]
+  \begin{center}
+    \begin{minipage}{0.45\textwidth}
+      \begin{figure}
+        \only<1>{\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-0.png}}
+        \only<2>{\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-1.png}}
+        \only<3>{\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-2.png}}
+        \only<4>{\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-3.png}}
+        \only<5>{\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-4.png}}
+        \only<6>{\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-5.png}}
+        \only<7>{\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-6.png}}
+        \only<8>{\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e08/Dipole_xmting_antenna_animation_4_408x318x150ms-7.png}}
+        \attribcaption{Elektromagnetisches Feld einer Antenne}{Chetvorno}{https://commons.wikimedia.org/wiki/File:Dipole_xmting_antenna_animation_4_408x318x150ms.gif}{\cczero}
+      \end{figure}
+    \end{minipage}
+    \begin{minipage}{0.45\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{e08/Onde_electromagnetique.png}
+        \attribcaption{Polarisation einer Antenne}{SuperManu}{https://commons.wikimedia.org/wiki/File:Onde_electromagnetique.svg}{\ccbysa}
+      \end{figure}
+    \end{minipage}\\[1.5em]
 
-	    \begin{itemize}
-	    	\item E-Feld bestimmt die Richtung der Polarisation 
-	    	\item magnetisches Feld ist um $90^\circ$ gedreht
-	    \end{itemize}
-    
-    \end{center}
+    \begin{itemize}
+      \item E-Feld bestimmt die Richtung der Polarisation
+      \item magnetisches Feld ist um $90^\circ$ gedreht
+    \end{itemize}
+
+  \end{center}
 
 \end{frame}
 
 \section*{Wellenlänge}
 
 \begin{frame}
-    \frametitle{Wellenlänge}
+  \frametitle{Wellenlänge}
 
-    \begin{center}
-        \begin{block}{Wellenlänge $\lambda$}
-            \begin{center}
-                {\Huge$ \lambda [m] = \cfrac{c}{f [Hz]} \Rightarrow
-                c = f \cdot \lambda $} \\[1em]
-                mit $c$: Lichtgeschwindigkeit $299\,792\,458 \frac{m}{s} \approx
-                300\cdot10^6\frac{m}{s}$
-            \end{center}
-        \end{block}
+  \begin{center}
+    \begin{block}{Wellenlänge $\lambda$}
+      \begin{center}
+        {\Huge$ \lambda [m] = \cfrac{c}{f [Hz]} \Rightarrow
+        c = f \cdot \lambda $} \\[1em]
+        mit $c$: Lichtgeschwindigkeit $299\,792\,458 \frac{m}{s} \approx
+        300\cdot10^6\frac{m}{s}$
+      \end{center}
+    \end{block}
 
-	    \begin{normalsize}		
-	        \begin{itemize}
-		        \item elektromagnetische Wellen breiten sich im Freiraum fast mit Lichtgeschwindigkeit aus
-		        \item Beispiel: in einer Sekunde bewegt sich eine elektromagnetische Welle mehr als sieben mal um die Erde
-	        \end{itemize}
-	    \end{normalsize}
-    \end{center}
+    \begin{normalsize}
+      \begin{itemize}
+        \item elektromagnetische Wellen breiten sich im Freiraum fast mit Lichtgeschwindigkeit aus
+        \item Beispiel: in einer Sekunde bewegt sich eine elektromagnetische Welle mehr als sieben mal um die Erde
+      \end{itemize}
+    \end{normalsize}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-	\begin{center}
-	    \begin{Large}
-	        \begin{tabular}{|l|l|l|}
-	        	\hline
-                Frequenz & Wellenlänge & Abkürzung\\
-	        	\hline \hline
-                3 - 30 kHz     & $10^{4}m$    & VLF \\ \hline
-                \textbf{30 - 300 kHz}   & \textbf{$10^{3}m$}      & \textbf{LF}  \\ \hline
-                \textbf{300 - 3000 kHz} & \textbf{$10^{2}m$}     & \textbf{MF}  \\ \hline
-                \textbf{3 - 30 MHz}     & \textbf{$10^{1}m$}      & \textbf{HF}  \\ \hline
-                \textbf{30 - 300 MHz}   & \textbf{$10^{0}m$}          & \textbf{VHF} \\ \hline
-                \textbf{300 - 3000 MHz} & \textbf{$10^{-1}m$}      & \textbf{UHF} \\ \hline
-                \textbf{3 - 30 GHz}     & \textbf{$10^{-2}m$}     & \textbf{SHF} \\ \hline
-                30 - 300 GHz   & $10^{-3}m$     & EHF \\ \hline
-                300 - 3000 GHz & $10^{-4}m$ & " " \\ \hline
-            \end{tabular}\\[1em]
-            {\scriptsize Tabelle 1: Wellenbereiche (fett: Bereiche des Amateurfunks)}
-        \end{Large}		
-	\end{center}
+  \begin{center}
+    \begin{Large}
+      \begin{tabular}{|l|l|l|}
+        \hline
+        Frequenz & Wellenlänge & Abkürzung\\
+        \hline \hline
+        3 - 30 kHz     & $10^{4}m$    & VLF \\ \hline
+        \textbf{30 - 300 kHz}   & \textbf{$10^{3}m$}      & \textbf{LF}  \\ \hline
+        \textbf{300 - 3000 kHz} & \textbf{$10^{2}m$}     & \textbf{MF}  \\ \hline
+        \textbf{3 - 30 MHz}     & \textbf{$10^{1}m$}      & \textbf{HF}  \\ \hline
+        \textbf{30 - 300 MHz}   & \textbf{$10^{0}m$}          & \textbf{VHF} \\ \hline
+        \textbf{300 - 3000 MHz} & \textbf{$10^{-1}m$}      & \textbf{UHF} \\ \hline
+        \textbf{3 - 30 GHz}     & \textbf{$10^{-2}m$}     & \textbf{SHF} \\ \hline
+        30 - 300 GHz   & $10^{-3}m$     & EHF \\ \hline
+        300 - 3000 GHz & $10^{-4}m$ & " " \\ \hline
+      \end{tabular}\\[1em]
+      {\scriptsize Tabelle 1: Wellenbereiche (fett: Bereiche des Amateurfunks)}
+    \end{Large}
+  \end{center}
 \end{frame}
 
 %\section*{Übung}
 %
 %\begin{frame}
-%	\begin{center}
+%  \begin{center}
 %        \begin{tabular}{l||p{.8\textwidth}}\hline
 %            \textbf{TB403} & \textbf{Wenn Strom durch einen gestreckten Leiter fließt, entsteht ein \ldots} \\\hline\hline
 %            A & elektrisches Feld aus konzentrischen Kreisen um den Leiter. \\ \hline
 %            B \only<2>\checkmark & Magnetfeld aus konzentrischen Kreisen um den Leiter. \\ \hline
 %            C & homogenes Magnetfeld um den Leiter. \\ \hline
 %            D & homogenes elektrisches Feld um den Leiter. \\ \hline
-%	    \end{tabular}
-%	\end{center}
+%      \end{tabular}
+%  \end{center}
 %\end{frame}
 %
 %\begin{frame}
-%	\begin{center}
+%  \begin{center}
 %        \begin{tabular}{l||p{.8\textwidth}}\hline
 %           \textbf{TB301} & \textbf{Welche Einheit wird für die elektrische Feldstärke verwendet?} \\\hline\hline
 %           A & Watt pro Quadratmeter ($W/m^2$) \\ \hline
 %           B & Ampere pro Meter ($A/m$) \\ \hline
 %           C & Henry pro Meter ($H/m$) \\ \hline
 %           D \only<2>\checkmark & Volt pro Meter ($V/m$) \\ \hline
-%	    \end{tabular}
+%      \end{tabular}
 %    \end{center}
 %\end{frame}
 %
 %\begin{frame}
-%	\begin{center}
+%  \begin{center}
 %        \begin{tabular}{l||p{.8\textwidth}}\hline
 %           \textbf{TB401} & \textbf{Welche Einheit wird für die magnetische Feldstärke verwendet?} \\\hline\hline
 %           A & Watt pro Quadratmeter ($W/m^2$) \\ \hline
 %           B \only<2>\checkmark & Ampere pro Meter ($A/m$) \\ \hline
 %           C & Henry pro Meter ($H/m$) \\ \hline
 %           D & Volt pro Meter ($V/m$) \\ \hline
-%	    \end{tabular}
-%	\end{center}
+%      \end{tabular}
+%  \end{center}
 %\end{frame}
 %
 %\begin{frame}
@@ -276,60 +240,60 @@
 %                Länge mindestens 1/100 der Wellenlänge ist. \\ \hline
 %            D & wenn an einem elektrischen Leiter, dessen Länge mindestens
 %                1/100 der Wellenlänge ist, eine konstante Spannung angelegt wird. \\ \hline
-%	    \end{tabular}
-%	\end{center}
+%      \end{tabular}
+%  \end{center}
 %\end{frame}
 %
 %\begin{frame}
-%	\begin{center}
+%  \begin{center}
 %        \begin{tabular}{l||p{.8\textwidth}}\hline
 %            \textbf{TB504} & \textbf{Der Winkel zwischen den elektrischen und magnetischen Feldkomponenten eines elektromagnetischen Feldes beträgt im Fernfeld}\\ \hline\hline
 %            A & $45^\circ$. \\ \hline
 %            B \only<2>\checkmark & $90^\circ$. \\ \hline
 %            C & $180^\circ$. \\ \hline
 %            D & $360^\circ$. \\ \hline
-%	    \end{tabular}
-%	\end{center}
+%      \end{tabular}
+%  \end{center}
 %\end{frame}
 %
 %\begin{frame}
-%	\begin{center}
+%  \begin{center}
 %        \begin{tabular}{l||p{.8\textwidth}}\hline
 %            \textbf{TI201} & \textbf{Die Ausbreitungsgeschwindigkeit freier elektromagnetischer Wellen beträgt etwa \ldots}\\ \hline\hline
 %            A & $3\,000\,000\,km/s$. \\ \hline
 %            B & $30\,000\,km/s$. \\ \hline
 %            C \only<2>\checkmark & $300\,000\,km/s$. \\ \hline
 %            D & $3\,000\,km/s$. \\ \hline
-%	    \end{tabular}
+%      \end{tabular}
 %    \end{center}
 %\end{frame}
 %
 %\begin{frame}
-%	\begin{center}
+%  \begin{center}
 %        \begin{tabular}{l||p{.8\textwidth}}\hline
 %            \textbf{TB602} & \textbf{Welcher Wellenlänge $\lambda$ entspricht die Frequenz 1,84MHz?} \\ \hline\hline
 %            A & 16,3m \\ \hline
 %            B \only<2>\checkmark & 163m \\ \hline
 %            C & 0,613m \\ \hline
 %            D & 61,3m \\ \hline
-%	    \end{tabular}
-%	\end{center}
+%      \end{tabular}
+%  \end{center}
 %\end{frame}
 %
 %\begin{frame}
-%	\begin{center}
+%  \begin{center}
 %       \begin{tabular}{l||p{.8\textwidth}}\hline
 %         \textbf{TB604} & \textbf{Eine Wellenlänge von 2,06m entspricht einer Frequenz von~\ldots} \\ \hline\hline
 %           A & 135,754 MHz \\ \hline
 %           B & 148,927 MHz \\ \hline
 %           C & 150,247 MHz \\ \hline
 %           D \only<2>\checkmark & 145,631 MHz \\ \hline
-%	    \end{tabular}
-%	\end{center}
+%      \end{tabular}
+%  \end{center}
 %\end{frame}
 %
 %\begin{frame}
-%	\begin{center}
+%  \begin{center}
 %       \begin{tabular}{l||p{.8\textwidth}}\hline
 %         \textbf{TB609} & \textbf{Das 70-cm-Band befindet sich im \ldots} \\ \hline\hline
 %           A & VHF-Bereich. \\ \hline
@@ -337,18 +301,18 @@
 %           C & SHF-Bereich. \\ \hline
 %           D & EHF-Bereich. \\ \hline
 %        \end{tabular}
-%	\end{center}
+%  \end{center}
 %\end{frame}
 
 \section*{Referenzen}
 \begin{frame}
-    \frametitle{Referenzen/Links}
-    
-    \footnotesize
-    \begin{itemize}
-        \item Moltrecht E 08 : \\
-              \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e08/}      
-    \end{itemize}
+  \frametitle{Referenzen/Links}
+
+  \footnotesize
+  \begin{itemize}
+    \item Moltrecht E 08 : \\
+      \url{https://www.darc.de/der-club/referate/ajw/lehrgang-te/e08/}
+  \end{itemize}
 
 \end{frame}
 
