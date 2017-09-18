@@ -1,14 +1,15 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: 
+% Autoren:
 % (Martin Deutschmann)
 % Sebastian Lange <dl7bst@dk0tu.de>
+% Korrekturen:
 % Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 10: \\
           Dezibel, Dämpfung \& Kabel \\[2em]}
-\date{Stand 10.12.2015}
+\date{Stand 14.11.2016}
 \input{texdata/titlepage}
 
 %fixme Referenzen/Fußnoten-Systematik vereinheitlichen
@@ -16,32 +17,31 @@
 \section*{Dämpfung}
 
 \begin{frame}
-\frametitle{Dämpfungsfaktor}
-\begin{center}
-\begin{minipage}{0.3\textwidth}
-	\huge{$ D = \cfrac{P_{in}}{P_{out}}$}
-\end{minipage}
-\begin{minipage}{0.6\textwidth}
-\begin{itemize}
-	\item Dämpfungsfaktor D gibt Verhältnis zwischen Eingangsleistung $P_{in}$
+  \frametitle{Dämpfungsfaktor}
+  \begin{center}
+    \begin{minipage}{0.3\textwidth}
+      \huge{$ D = \cfrac{P_{in}}{P_{out}}$}
+    \end{minipage}
+    \begin{minipage}{0.6\textwidth}
+      \begin{itemize}
+        \item Dämpfungsfaktor D gibt Verhältnis zwischen Eingangsleistung $P_{in}$
           und der Ausgangsleistung $P_{out}$.
-\end{itemize}	
-\end{minipage}
-\vspace{1cm}	
-\begin{figure}
-% FIXME Uebertragungsstrecke von Martin war totaler Quatsch - korrigiert wie im Moltrecht, muss aber neu
-\includegraphics[scale=0.7]{e10/ubertragung.png}
-\caption{Übertragungswege einer Funkstation}
-\end{figure}
-\end{center}
+      \end{itemize}
+    \end{minipage}
+    \vspace{1cm}
+    \begin{figure}
+      % FIXME Uebertragungsstrecke von Martin war totaler Quatsch - korrigiert wie im Moltrecht, muss aber neu
+      \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{e10/ubertragung.png}
+      \caption{Übertragungswege einer Funkstation}
+    \end{figure}
+  \end{center}
 \end{frame}
 
-
 \begin{frame}
-\frametitle{Dämpfungsmaß dB}
+  \frametitle{Dämpfungsmaß dB}
   \begin{itemize}
     \item Dämpfungsmaß ist die Logarithmierung des Dämpfungsfaktors
-    \item Einheit Bel $\rightarrow dB$ 
+    \item Einheit Bel $\rightarrow dB$
     \item durch Logarithmusgesetze: Multiplikation $\rightarrow$ Addition
   \end{itemize}
   \vspace{0.5cm}
@@ -51,7 +51,7 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Verstärkung in dB}
+  \frametitle{Verstärkung in dB}
   \begin{itemize}
     \item generell wird eher mit Verstärkung und nicht mit Dämpfung gerechnet
     \item Dämpfung ist eine negative Verstärkung
@@ -63,368 +63,348 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Verstärkung in dB}
-\begin{center}
-	\begin{Large}
-	\begin{tabular}{|c|c|}
-		\hline
-		dB & $\approx$ Leistungsfaktor \\
-		\hline \hline
-		0    & 1                 \\ \hline
-		1,5  & $\sqrt{2}$ = 1,41 \\ \hline
-		2,15 & 1,64              \\ \hline
-		3    & 2                 \\ \hline
-		6    & 4                 \\ \hline
-		10   & 10                \\ \hline
-		20   & 100               \\ \hline
-	\end{tabular}
-	\end{Large}		
-	\end{center}
+  \frametitle{Verstärkung in dB}
+  \begin{center}
+    \begin{Large}
+      \begin{tabular}{|c|c|}
+        \hline
+        dB & $\approx$ Leistungsfaktor \\
+        \hline \hline
+        0    & 1                 \\ \hline
+        1,5  & $\sqrt{2}$ = 1,41 \\ \hline
+        2,15 & 1,64              \\ \hline
+        3    & 2                 \\ \hline
+        6    & 4                 \\ \hline
+        10   & 10                \\ \hline
+        20   & 100               \\ \hline
+      \end{tabular}
+    \end{Large}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Spannungs\-dämpfungs\-maß}
+  \frametitle{Spannungs\-dämpfungs\-maß}
   \begin{block}{Spannungsdämpfungsmaß}
-      \Huge{$a_{U} = 20 \cdot log(\frac{U_{1}}{U_{2}})$ dB}
+    \Huge{$a_{U} = 20 \cdot log(\frac{U_{1}}{U_{2}})$ dB}
   \end{block}
-\vspace{2cm}
-Wird in der A-Technik näher erläutert.
+  \vspace{2cm}
+  Wird in der A-Technik näher erläutert.
 \end{frame}
 
 \begin{frame}
-\frametitle{Spannungsfaktor \& Leistungsfaktor}
-\begin{center}
-\begin{Huge}
-\begin{minipage}{0.3\textwidth}
-	\begin{tabular}{|c|c|}
-		\hline
-		\textbf{dB} & $a_{U}$ \\
-		\hline \hline
-		\alert{6dB}  & \alert{2}  \\ \hline
-		12dB & 4  \\ \hline
-		\alert{20dB} & \alert{10} \\ \hline
-	\end{tabular}
-\end{minipage}
-\hspace{2cm}
-\begin{minipage}{0.3\textwidth}
-	\begin{tabular}{|c|c|}
-		\hline
-		\textbf{dB} & $a_{P}$ \\
-		\hline \hline
-		\alert{3dB}  & \alert{2}  \\ \hline
-		6dB  & 4  \\ \hline
-		\alert{10dB} & \alert{10} \\ \hline
-	\end{tabular}
-\end{minipage}
-\end{Huge}
-\end{center}
+  \frametitle{Spannungsfaktor \& Leistungsfaktor}
+  \begin{center}
+    \begin{Huge}
+      \begin{minipage}{0.3\textwidth}
+        \begin{tabular}{|c|c|}
+          \hline
+          \textbf{dB} & $a_{U}$ \\
+          \hline \hline
+          \alert{6dB}  & \alert{2}  \\ \hline
+          12dB & 4  \\ \hline
+          \alert{20dB} & \alert{10} \\ \hline
+        \end{tabular}
+      \end{minipage}
+      \hspace{2cm}
+      \begin{minipage}{0.3\textwidth}
+        \begin{tabular}{|c|c|}
+          \hline
+          \textbf{dB} & $a_{P}$ \\
+          \hline \hline
+          \alert{3dB}  & \alert{2}  \\ \hline
+          6dB  & 4  \\ \hline
+          \alert{10dB} & \alert{10} \\ \hline
+        \end{tabular}
+      \end{minipage}
+    \end{Huge}
+  \end{center}
 \end{frame}
 
 \section*{S-Stufen}
 \begin{frame}
-\frametitle{S-Stufen}
-\begin{center}
-\begin{figure}
-\includegraphics[scale=1.2]{e10/S-Meter.jpg}
- \attribcaption{S-Meter}{Cqdx}{https://commons.wikimedia.org/wiki/File:S-Meter.jpg}{\ccbysa}
-\end{figure}
-\begin{itemize}
-	\item eine S-Stufe entspricht $6 dB \rightarrow$ Faktor?
-	\item Wird beim RST-System verwendet
-	\item gibt einen bestimmten Spannungswert an einem $50\Omega$ Widerstand an
-	\item Kurzwelle: S9 = $50\mu V$ bei $50\Omega$
-	\item UKW: S9 = $5\mu V$ bei $50\Omega$
-\end{itemize}
-\end{center}
+  \frametitle{S-Stufen}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{e10/S-Meter.jpg}
+      \attribcaption{S-Meter}{Cqdx}{https://commons.wikimedia.org/wiki/File:S-Meter.jpg}{\ccbysa}
+    \end{figure}
+    \begin{itemize}
+      \item eine S-Stufe entspricht $6 dB \rightarrow$ Faktor?
+      \item Wird beim RST-System verwendet
+      \item gibt einen bestimmten Spannungswert an einem $50\Omega$ Widerstand an
+      \item Kurzwelle: S9 = $50\mu V$ bei $50\Omega$
+      \item UKW: S9 = $5\mu V$ bei $50\Omega$
+    \end{itemize}
+  \end{center}
 \end{frame}
 
 \section{Pegel}
 
 \begin{frame}
-    \frametitle{Pegel}
+  \frametitle{Pegel}
 
     \begin{itemize}
-        \item Pegel ist auf einen Grundwert $P_0$ bezogen
-        \item Grundwert wird auch Normal oder Nullwert genannt
+      \item Pegel ist auf einen Grundwert $P_0$ bezogen
+      \item Grundwert wird auch Normal oder Nullwert genannt
     \end{itemize}
 
     \begin{block}{Leistungspegel}
-        \centering \Large $L_P = 10 lg \frac{P}{P_0} dB$\alert{x}
+      \centering \Large $L_P = 10 lg \frac{P}{P_0} dB$\alert{x}
     \end{block}
 
-\begin{center}
-\begin{minipage}{0.3\textwidth}
-	\begin{tabular}{|c|c|}
-		\hline
-		$dBm$ & $P_0 = 1 mW$ \\
-		\hline \hline
-		20dBm  & 100mW  \\ \hline
-		10dBm  & 10mW   \\ \hline
-		0dBm   & 1mW    \\ \hline
-		-10dBm & 0,1mW  \\ \hline
-	\end{tabular}
-\end{minipage}
-\hspace{2cm}
-\begin{minipage}{0.3\textwidth}
-	\begin{tabular}{|c|c|}
-		\hline
-		$dBW$ & $P_0 = 1 W$ \\
-		\hline \hline
-		20dBW  & 100W  \\ \hline
-		10dBW  & 10W   \\ \hline
-		0dBW   & 1W    \\ \hline
-		-10dBW & 0,1W  \\ \hline
-	\end{tabular}
-\end{minipage}
-\vspace{0.5cm}
-\end{center}
+  \begin{center}
+    \begin{minipage}{0.3\textwidth}
+      \begin{tabular}{|c|c|}
+        \hline
+        $dBm$ & $P_0 = 1 mW$ \\
+        \hline \hline
+        20dBm  & 100mW  \\ \hline
+        10dBm  & 10mW   \\ \hline
+        0dBm   & 1mW    \\ \hline
+        -10dBm & 0,1mW  \\ \hline
+      \end{tabular}
+    \end{minipage}
+    \hspace{2cm}
+    \begin{minipage}{0.3\textwidth}
+      \begin{tabular}{|c|c|}
+        \hline
+        $dBW$ & $P_0 = 1 W$ \\
+        \hline \hline
+        20dBW  & 100W  \\ \hline
+        10dBW  & 10W   \\ \hline
+        0dBW   & 1W    \\ \hline
+        -10dBW & 0,1W  \\ \hline
+      \end{tabular}
+    \end{minipage}
+    \vspace{0.5cm}
+  \end{center}
 \end{frame}
 
 
 \section*{Leiter}
 \begin{frame}
-\frametitle{Hochfrequenzleitungen}
-%FIXME Erläuterungen der Bilder fehlen
-\begin{center}
-  \begin{columns}
-    \column{.55\textwidth}
+  \frametitle{Hochfrequenzleitungen}
+  %FIXME Erläuterungen der Bilder fehlen
+  \begin{center}
+    \begin{columns}
+      \column{.55\textwidth}
       \begin{center}
-	\begin{figure}
-	\includegraphics[width=1\textwidth,height=.5\textwidth,keepaspectratio]{e10/parallel.png}
-	       \attribcaption{Paralleldrahtleitung}{SpinningSpark, Inductiveload, Wdwd}
+        \begin{figure}
+          \includegraphics[width=1\textwidth,height=.5\textwidth,keepaspectratio]{e10/parallel.png}
+          \attribcaption{Paralleldrahtleitung}{SpinningSpark, Inductiveload, Wdwd}
                         {https://commons.wikimedia.org/wiki/File:Twin-lead_cable_dimension.svg}{\ccbysa}
-      \end{figure}
+        \end{figure}
       \end{center}
-    \column{.4\textwidth}
+      \column{.4\textwidth}
       \begin{center}
-	\begin{figure}
-	\includegraphics[width=1\textwidth,height=.5\textwidth,keepaspectratio]{e10/coax.png}
-	 \attribcaption{Koaxialkabel}{Tkgd2007, Fleshgrinder}
+        \begin{figure}
+          \includegraphics[width=1\textwidth,height=.5\textwidth,keepaspectratio]{e10/coax.png}
+          \attribcaption{Koaxialkabel}{Tkgd2007, Fleshgrinder}
                   {https://commons.wikimedia.org/wiki/File:Coaxial_cable_cutaway_new.svg}{\ccby}
-      \end{figure}
+        \end{figure}
       \end{center}
-  \end{columns}
-\end{center}
+    \end{columns}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Hochfrequenzleitungen}
-\begin{center}
-\begin{figure}
-\includegraphics[width=1\textwidth,height=.7\textheight,keepaspectratio]{e10/hohl.jpg}
-  \attribcaption{Hohlleiter}{Averse}{https://commons.wikimedia.org/wiki/File:Elli_holl.jpg}{\ccbysa}
-\end{figure}
-%\end{minipage}
+  \frametitle{Hochfrequenzleitungen}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.7\textheight,keepaspectratio]{e10/hohl.jpg}
+      \attribcaption{Hohlleiter}{Averse}{https://commons.wikimedia.org/wiki/File:Elli_holl.jpg}{\ccbysa}
+    \end{figure}
+    %\end{minipage}
 \end{center}
 \end{frame}
 
 \subsection*{Wellen\-widerstand}
 \begin{frame}
-\frametitle{Wellenwiderstand}
-\begin{figure}
-\includegraphics[width=1\textwidth,height=.3\textheight,keepaspectratio]{e10/wellenesb.png}
-\caption{Ersatzschaltbild}
-\end{figure}
-%\vspace{1cm}\\
-\begin{figure}
-\includegraphics[width=1\textwidth,height=.3\textheight,keepaspectratio]{e10/wellenesbex.png}
-\caption{Genaues Ersatzschaltbild eines Koxialkabels}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{Wellenwiderstand}
-\begin{itemize}
-	\item \Huge{ $Z_W = \sqrt{\frac{L'}{C'}}$}
-	 \normalsize \item Paralleldrahtleitungen: $Z_W = 150 \Omega \cdots 600 \Omega$
-	\item Koaxialleitungen: $Z_W =  50 \Omega \cdots 95 \Omega$ -- verbreitet:
-    \begin{itemize}
-        \item $50 \Omega$ !
-        \item $60 \Omega$
-        \item $75 \Omega$
-    \end{itemize}
-	\item Wellenwiderstand entspricht dem Abschlusswiderstand einer Leitung, bei
-          dem keine stehenden Wellen auftreten $\rightarrow SWR$
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Dämpfungsberechnung}
-\begin{Large}
-Formelsammlung, Diagramm auf der letzten Seite.
-\end{Large}
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{Gemeinsame Rechnung (optional)}
-\begin{exampleblock}{Übung 1}
-  \begin{description}
- 	\item[Kabel] RG58
- 	\item[Länge] 10 m
- 	\item[Frequenz] 145 MHz
-  \end{description}
-\end{exampleblock}
-\end{frame}
-
-\begin{frame}
+  \frametitle{Wellenwiderstand}
   \begin{figure}
-    \includegraphics[width=1\textwidth,height=1.0\textheight,keepaspectratio]{e10/Kabeldaempfung.png}
-    \attribcaption{Kabeldämpfungsdiagramm}{Bundesnetzagentur}{https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Amateurfunk/Fragenkatalog/TechnikFragenkatalogKlasseEf252rId7637pdf.pdf?__blob=publicationFile&v=3}{}
+    \includegraphics[width=1\textwidth,height=.3\textheight,keepaspectratio]{e10/wellenesb.png}
+    \caption{Ersatzschaltbild}
+  \end{figure}
+  %\vspace{1cm}\\
+  \begin{figure}
+    \includegraphics[width=1\textwidth,height=.3\textheight,keepaspectratio]{e10/wellenesbex.png}
+    \caption{Genaues Ersatzschaltbild eines Koxialkabels}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Gemeinsame Rechnung (optional)}
-\begin{exampleblock}{Übung 2}
-  \begin{description}
- 	\item[Kabel] Aircell7
- 	\item[Länge] 40 m
- 	\item[Frequenz] 29 MHz
-  \end{description}
-\end{exampleblock}
+  \frametitle{Wellenwiderstand}
+  \begin{block}{Wellenwiderstand}
+    \Huge{$Z_W = \sqrt{\frac{L'}{C'}}$}
+  \end{block}
+  \begin{itemize}
+    \normalsize \item Paralleldrahtleitungen: $Z_W = 150 \Omega \cdots 600 \Omega$
+    \item Koaxialleitungen: $Z_W =  50 \Omega \cdots 95 \Omega$ -- verbreitet:
+      \begin{itemize}
+        \item $50 \Omega$ !
+        \item $60 \Omega$
+        \item $75 \Omega$
+      \end{itemize}
+    \item Wellenwiderstand entspricht dem Abschlusswiderstand einer Leitung, bei
+      dem keine stehenden Wellen auftreten $\rightarrow SWR$
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Gemeinsame Rechnung (optional)}
-\begin{exampleblock}{Übung 3}
-  \begin{description}
- 	\item[Kabel] RG174
- 	\item[Länge] 5 m
- 	\item[Frequenz] 1296 MHz
-  \end{description}
-\end{exampleblock}
+  \frametitle{Dämpfungsberechnung}
+  \begin{Large}
+    Formelsammlung, Diagramm auf der letzten Seite.
+  \end{Large}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Gemeinsame Rechnung (optional)}
+  \begin{exampleblock}{Übung 1}
+    \begin{description}
+      \item[Kabel] RG58
+      \item[Länge] 10 m
+      \item[Frequenz] 145 MHz
+    \end{description}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Gemeinsame Rechnung (optional)}
+  \begin{exampleblock}{Übung 2}
+    \begin{description}
+      \item[Kabel] Aircell7
+      \item[Länge] 40 m
+      \item[Frequenz] 29 MHz
+    \end{description}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Gemeinsame Rechnung (optional)}
+  \begin{exampleblock}{Übung 3}
+    \begin{description}
+      \item[Kabel] RG174
+      \item[Länge] 5 m
+      \item[Frequenz] 1296 MHz
+    \end{description}
+  \end{exampleblock}
 \end{frame}
 
 
 \subsection*{Anpassung}
 \begin{frame}
-\frametitle{Anpassung}
-\begin{center}
-\begin{figure}
-\includegraphics[width=1\textwidth,height=.7\textheight,keepaspectratio]{e10/Anpassung.png}
-\attribcaption{Anpassung}{Frank Murmann}
+  \frametitle{Anpassung}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.7\textheight,keepaspectratio]{e10/Anpassung.png}
+      \attribcaption{Anpassung}{Frank Murmann}
                     {https://commons.wikimedia.org/wiki/File:EingangswiderstandAusgangswiderstandA.svg}{\ccpd}
-\end{figure}
-\end{center}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Stehwellenverhältnis}
-\begin{itemize}
-	\item ist ein Maß für die Anpassung
-	\item ist das Verhältnis von vorlaufender zu zurücklaufender Welle
-\end{itemize}
-\begin{block}{}
-  \centering $SWR = \cfrac{u_{vorlaufend}+u_{ruecklaufend}}{u_{vorlaufend}-u_{ruecklaufend}}$ 
-\end{block}
-\begin{center}
-  \begin{figure}
-  %\animategraphics[loop,width=\textwidth,height=0.3\textheight,keepaspectratio,controls]{10}{e10/Stehwelle-}{0}{80}
-  \includegraphics[width=\textwidth,height=0.3\textheight,keepaspectratio]{e10/Stehwelle-10.png}
-  \footnote{Animation: Stehwelle.gif\cite{stehwelle}}
-   \attribcaption{\centering Stehwelle mit SWR 4 \newline
+  \frametitle{Stehwellenverhältnis}
+  \begin{itemize}
+    \item ist ein Maß für die Anpassung
+    \item ist das Verhältnis von vorlaufender zu zurücklaufender Welle
+  \end{itemize}
+  \begin{block}{}
+    \centering $SWR = \cfrac{u_{vorlaufend}+u_{ruecklaufend}}{u_{vorlaufend}-u_{ruecklaufend}}$
+  \end{block}
+  \begin{center}
+    \begin{figure}
+      %\animategraphics[loop,width=\textwidth,height=0.3\textheight,keepaspectratio,controls]{10}{e10/Stehwelle-}{0}{80}
+      \includegraphics[width=\textwidth,height=0.3\textheight,keepaspectratio]{e10/Stehwelle-10.png}
+      \attribcaption{\centering Stehwelle mit SWR 4 \newline
            {\footnotesize (blau: vorlaufende Welle, grün: reflektierte Welle,
            rot: Überlagerung)}}{Pyrometer}
            {https://commons.wikimedia.org/wiki/File:Standing_wave_SWR_4_(forward,_reflected)_open.gif}{\cczero}
-  \end{figure}
-\end{center}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Symmetrierung}
-\begin{minipage}{0.3\textwidth}
-  \begin{figure}
-	\includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{e10/balun.png}
-	 \attribcaption{Balun}{Wolfmankurd}{https://commons.wikimedia.org/wiki/File:Cdbalun2.svg}{\ccbysa}
-      \end{figure}
+  \frametitle{Symmetrierung}
+  \begin{minipage}{0.3\textwidth}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.8\textheight,keepaspectratio]{e10/balun.png}
+      \attribcaption{Balun}{Wolfmankurd}{https://commons.wikimedia.org/wiki/File:Cdbalun2.svg}{\ccbysa}
+    \end{figure}
 
-\end{minipage}
-\begin{minipage}{0.6\textwidth}
-	\begin{itemize}
-		\item Wird bei Verbindungen zwischen symmetrischen und unsymmetrischen Punkten verwendet
-		\item Koaxialkabel ist unsymmetrisch
-		\item Paralleldraht ist symmetrisch
-		\item Alle Dipole sind symmetrisch
-		\item Alle Antennen die gegen Erde erregt werden sind unsymmetrisch
-	\end{itemize}
-\end{minipage}
+  \end{minipage}
+  \begin{minipage}{0.6\textwidth}
+    \begin{itemize}
+      \item Wird bei Verbindungen zwischen symmetrischen und unsymmetrischen Punkten verwendet
+      \item Koaxialkabel ist unsymmetrisch
+      \item Paralleldraht ist symmetrisch
+      \item Alle Dipole sind symmetrisch
+      \item Alle Antennen die gegen Erde erregt werden sind unsymmetrisch
+    \end{itemize}
+  \end{minipage}
 \end{frame}
 
 \section*{Stecker und Adapter}
 \begin{frame}
-\frametitle{Stecker und Adapter}
-\begin{center}
-  \begin{figure}
-	\includegraphics[width=.6\textwidth,height=.6\textheight,keepaspectratio]{e10/pl.jpg}
-	\attribcaption{UHF- oder PL-Stecker}{Appaloosa}
+  \frametitle{Stecker und Adapter}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.6\textwidth,height=.55\textheight,keepaspectratio]{e10/pl.jpg}
+      \attribcaption{UHF- oder PL-Stecker}{Appaloosa}
                     {https://commons.wikimedia.org/wiki/File:UHF_PL_Connector.jpg}{\ccbysa}
-      \end{figure}
-	\begin{itemize}
-		\item UHF im Namen, aber ungeeignet dafür
-		\item Kurzwelle, auch 2-Meter-Band
-        \item ``geschirmte Banane''
-	\end{itemize}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Stecker und Adapter}
-\begin{center}
-  \begin{figure}
-	\includegraphics[width=.6\textwidth,height=.6\textheight,keepaspectratio]{e10/n.jpg}
-	 \attribcaption{N-Stecker}{Swift.Hg}
-                    {https://commons.wikimedia.org/wiki/File:Male_type_N_connector.jpg}{\ccbysa}
-      \end{figure}
-	\begin{itemize}
-		\item N
-		\item HF \dots 70-cm und höher
-	\end{itemize}	 
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Stecker und Adapter}
-\begin{center}
-  \begin{figure}
-	\includegraphics[width=.6\textwidth,height=.7\textheight,keepaspectratio]{e10/bnc.jpg}
-	    \attribcaption{BNC-Stecker und -Buchse}{Kaback}
-                    {https://commons.wikimedia.org/wiki/File:BNC_50_75_Ohm.jpg}{\ccbysa}
-      \end{figure}
-	\begin{itemize}
-		\item BNC
-		\item HF \dots 70-cm und höher
-	\end{itemize}	
-
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Stecker und Adapter}
-\begin{center}
-  \begin{figure}
-	\includegraphics[width=.6\textwidth,height=.6\textheight,keepaspectratio]{e10/sma.jpg}
-	      \attribcaption{RP-SMA-Stecker}{Peter Trieb}
-                    {https://commons.wikimedia.org/wiki/File:BNC_50_75_Ohm.jpg}{\ccpd}
-      \end{figure}
-	\begin{itemize}
-		\item SMA
-		\item VHF-/UHF-Handfunkgeräte
-	\end{itemize}	 
-\end{center}
-\end{frame}
-
-\section*{Referenzen}
-\begin{frame}
-    \frametitle{Referenzen/Links}
-    
-    \footnotesize
+    \end{figure}
     \begin{itemize}
-        \item Moltrecht E 08 : \\
-              \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e08/}      
+      \item UHF im Namen, aber ungeeignet dafür
+      \item Kurzwelle, auch 2-Meter-Band
+      \item ``geschirmter Bananenstecker''
+    \end{itemize}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Stecker und Adapter}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.6\textwidth,height=.6\textheight,keepaspectratio]{e10/n.jpg}
+      \attribcaption{N-Stecker}{Swift.Hg}
+                    {https://commons.wikimedia.org/wiki/File:Male_type_N_connector.jpg}{\ccbysa}
+    \end{figure}
+    \begin{itemize}
+      \item N
+      \item HF \dots 70-cm und höher
+    \end{itemize}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Stecker und Adapter}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.6\textwidth,height=.7\textheight,keepaspectratio]{e10/bnc.jpg}
+      \attribcaption{BNC-Stecker und -Buchse}{Kaback}
+                    {https://commons.wikimedia.org/wiki/File:BNC_50_75_Ohm.jpg}{\ccbysa}
+    \end{figure}
+    \begin{itemize}
+      \item BNC
+      \item HF \dots 70-cm und höher
     \end{itemize}
 
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Stecker und Adapter}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.6\textwidth,height=.6\textheight,keepaspectratio]{e10/sma.jpg}
+      \attribcaption{RP-SMA-Stecker}{Peter Trieb}
+                    {https://commons.wikimedia.org/wiki/File:BNC_50_75_Ohm.jpg}{\ccpd}
+    \end{figure}
+    \begin{itemize}
+      \item SMA
+      \item VHF-/UHF-Handfunkgeräte
+    \end{itemize}
+  \end{center}
 \end{frame}
 
 \section*{Referenzen}
