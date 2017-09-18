@@ -1,139 +1,169 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Martin Deutschmann, Lars Weiler <dc4lw@darc.de>, Felix Baum <baumfelix@gmail.com>
+% Autoren: Martin Deutschmann
+% Korrekturen: Lars Weiler <dc4lw@darc.de>, Felix Baum <baumfelix@gmail.com>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 07: \\
-          Schwingkreise \& Filter \\[2em]}
-\date{Stand 10.11.2015}
+  Schwingkreise \& Filter \\[2em]}
+\date{Stand 07.11.2016}
 \input{texdata/titlepage}
 
 \section*{Schwingungs\-vorgang}
 % TODO Tabelle
 
 \begin{frame}
-\frametitle{Schwingungen, wo gibt es denn sowas?}
-	\begin{center}
-		\includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{e07/Schwingkreise.png}\\
-		Abb.1: Reihen- \& Parallelschwingkreise
-	\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Reihenschwingkreis}
-  \begin{columns}
-    \column{0.37\textwidth}{
-	\includegraphics[width=1\textwidth]{e07/Serirenschw.png}\\
-	\tiny{Abb: Reihenschwingkreis}
-    }
-    \column{0.62\textwidth}
-    {      
-    \begin{tabular}{l|llll}
-        $f$ & $X_C$ & $X_L$ & $Z_g$ & $I_{ges}$ \\ \hline
-		\hline
-		$0$ & \only<1>{}\only<2>{$\infty$}\only<3>{$\infty$}  & \only<1>{}\only<2>{$0$}\only<3>{$0$} & \only<1>{}\only<2>{}\only<3>{$\infty$}  & \only<1>{}\only<2>{}\only<3>{$0$} \\
-		$\infty$ & \only<1>{}\only<2>{$0$}\only<3>{$0$}   & \only<1>{}\only<2>{$\infty$}\only<3>{$\infty$} & \only<1>{}\only<2>{}\only<3>{$\infty$} & \only<1>{}\only<2>{}\only<3>{$0$}  \\
-		$f_{res}$  & \only<1>{}\only<2>{$\frac{1}{j \omega C} =$}\only<3>{$\frac{1}{j \omega C} =$} & \only<1>{}\only<2>{$j \omega L$}\only<3>{$j \omega L$}  & \only<1>{}\only<2>{}\only<3>{Min}  & \only<1>{}\only<2>{}\only<3>{Max} \\
-	\end{tabular}
-    }
-    \end{columns}
-\end{frame}
-
-\begin{frame}
-\frametitle{Parallelschwingkreis}
-  \begin{columns}
-    \column{0.37\textwidth}{
-		\includegraphics[width=1\textwidth]{e07/Parallelschw.png}\\
-		\tiny{Abb: Parallelschwingkreis}
-    }
-    \column{0.62\textwidth}
-    {      
-    \begin{tabular}{l|llll}
-        $f$ & $X_C$ & $X_L$ & $Z_g$ & $I_{ges}$ \\ \hline
-		\hline
-		$0$ & \only<1>{}\only<2>{$\infty$}\only<3>{$\infty$}  & \only<1>{}\only<2>{$0$}\only<3>{$0$} & \only<1>{}\only<2>{}\only<3>{$0$}  & \only<1>{}\only<2>{}\only<3>{Max} \\
-		$\infty$ & \only<1>{}\only<2>{$0$}\only<3>{$0$}   & \only<1>{}\only<2>{$\infty$}\only<3>{$\infty$} & \only<1>{}\only<2>{}\only<3>{$0$} & \only<1>{}\only<2>{}\only<3>{Max}  \\
-		$f_{res}$  & \only<1>{}\only<2>{$\frac{1}{j \omega C} =$}\only<3>{$\frac{1}{j \omega C} =$} & \only<1>{}\only<2>{$j \omega L$}\only<3>{$j \omega L$}  & \only<1>{}\only<2>{}\only<3>{Max}  & \only<1>{}\only<2>{}\only<3>{Min} \\
-	\end{tabular}
-   }
-   \end{columns}
-\end{frame}
-
-\begin{frame}
-\frametitle{Aber warum schwingt das denn jetzt?}
-\begin{center}
-	\includegraphics[width=.8\textwidth,height=.8\textheight,keepaspectratio]{e07/Schwingkreis.png}\\
-	Abb.2: Energie in einem LC-Schwingkreis \cite{wmde} \\
-\end{center}
-\end{frame}
-
-\begin{frame}
-  % XXX klappt nur in bestimmten PDF Readern
+  \frametitle{Schwingungen, wo gibt es denn sowas?}
   \begin{center}
- % \animategraphics[loop,width=\textwidth,height=.85\textheight,keepaspectratio,controls]{2}{e07/Tuned_circuit_animation_3-}{0}{11}
-  \tiny{animierte Darstellung (\url{http://en.wikipedia.org/wiki/File:Tuned_circuit_animation_3.gif})}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e07/Schwingkreise.png}
+      \caption{Reihen- \& Parallelschwingkreise}
+    \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Schwingung in der Realität?}
-    \begin{center}
-	    \includegraphics[width=.8\textwidth,height=.8\textheight,keepaspectratio]{e07/Damped_oscillation_graph.png}\\
-	    Abb: Gedämpfte Schwingung \\
-    \end{center}
-    \begin{block}{\"Ubung}
-        Wodurch wird die Schwingung gedämpft? \\ Was müsste getan werden um die Schwingung aufrecht zu erhalten?
-    \end{block}
+  \frametitle{Reihenschwingkreis}
+  \begin{columns}
+    \column{0.45\textwidth}{
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e07/Serirenschw.png}
+      \attribcaption{Reihenschwingkreis}{V4711}{http://commons.wikimedia.org/wiki/File:RLC_series_circuit_v1.svg}{\ccbysa}
+    \end{figure}
+    }
+    \column{0.55\textwidth}
+    {
+    \begin{tabular}{l|llll}
+      $f$ & $X_C$ & $X_L$ & $Z_g$ & $I_{ges}$ \\ \hline
+      \hline
+      $0$ & \only<1>{}\only<2>{$\infty$}\only<3>{$\infty$}  & \only<1>{}\only<2>{$0$}\only<3>{$0$} & \only<1>{}\only<2>{}\only<3>{$\infty$}  & \only<1>{}\only<2>{}\only<3>{$0$} \\
+      $\infty$ & \only<1>{}\only<2>{$0$}\only<3>{$0$}   & \only<1>{}\only<2>{$\infty$}\only<3>{$\infty$} & \only<1>{}\only<2>{}\only<3>{$\infty$} & \only<1>{}\only<2>{}\only<3>{$0$}  \\
+      $f_{0}$  & \only<1>{}\only<2>{$\frac{1}{2\pi\cdot f \cdot C} =$}\only<3>{$\frac{1}{2\pi\cdot f \cdot C} =$} & \only<1>{}\only<2>{$2\pi\cdot f \cdot L$}\only<3>{$2\pi \cdot f \cdot L$}  & \only<1>{}\only<2>{}\only<3>{Min}  & \only<1>{}\only<2>{}\only<3>{Max} \\
+    \end{tabular}
+    }
+  \end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{Resonanzfrequenz}
-\begin{center}
+  \frametitle{Parallelschwingkreis}
+  \begin{columns}
+    \column{0.37\textwidth}{
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e07/Parallelschw.png}
+      \caption{Parallelschwingkreis}
+    \end{figure}
+    }
+    \column{0.62\textwidth}
+    {
+    \begin{tabular}{l|llll}
+      $f$ & $X_C$ & $X_L$ & $Z_g$ & $I_{ges}$ \\ \hline
+      \hline
+      $0$ & \only<1>{}\only<2>{$\infty$}\only<3>{$\infty$}  & \only<1>{}\only<2>{$0$}\only<3>{$0$} & \only<1>{}\only<2>{}\only<3>{$0$}  & \only<1>{}\only<2>{}\only<3>{Max} \\
+      $\infty$ & \only<1>{}\only<2>{$0$}\only<3>{$0$}   & \only<1>{}\only<2>{$\infty$}\only<3>{$\infty$} & \only<1>{}\only<2>{}\only<3>{$0$} & \only<1>{}\only<2>{}\only<3>{Max}  \\
+      $f_{0}$  & \only<1>{}\only<2>{$\frac{1}{2\pi\cdot f \cdot C} =$}\only<3>{$\frac{1}{2\pi\cdot f \cdot C} =$} & \only<1>{}\only<2>{$2\pi \cdot f \cdot L$}\only<3>{$2\pi \cdot f \cdot L$}  & \only<1>{}\only<2>{}\only<3>{Max}  & \only<1>{}\only<2>{}\only<3>{Min} \\
+    \end{tabular}
+    }
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Aber warum schwingt das denn jetzt?}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.8\textwidth,height=.75\textheight,keepaspectratio]{e07/Schwingkreis.png}
+      \attribcaption{Energie in einem LC-Schwingkreis}{X3ntar}{http://commons.wikimedia.org/wiki/File:LC_circuit_4_times_new_version.svg}{\ccpd}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \begin{figure}
+      \only<1>{\includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e07/Tuned_circuit_animation_3-0.png}}
+      \only<2>{\includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e07/Tuned_circuit_animation_3-1.png}}
+      \only<3>{\includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e07/Tuned_circuit_animation_3-2.png}}
+      \only<4>{\includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e07/Tuned_circuit_animation_3-3.png}}
+      \only<5>{\includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e07/Tuned_circuit_animation_3-4.png}}
+      \only<6>{\includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e07/Tuned_circuit_animation_3-5.png}}
+      \only<7>{\includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e07/Tuned_circuit_animation_3-6.png}}
+      \only<8>{\includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e07/Tuned_circuit_animation_3-7.png}}
+      \only<9>{\includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e07/Tuned_circuit_animation_3-8.png}}
+      \only<10>{\includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e07/Tuned_circuit_animation_3-9.png}}
+      \only<11>{\includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e07/Tuned_circuit_animation_3-10.png}}
+      \only<12>{\includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e07/Tuned_circuit_animation_3-11.png}}
+      \attribcaption{Energie in einem LC-Schwingkreis}{Chetvorno}{http://en.wikipedia.org/wiki/File:Tuned_circuit_animation_3.gif}{\cczero}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Schwingung in der Realität?}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.8\textwidth,height=.75\textheight,keepaspectratio]{e07/Damped_oscillation_graph.png}
+      \caption{Gedämpfte Schwingung}
+    \end{figure}
+  \end{center}
+  \begin{block}{Übung}
+    Wodurch wird die Schwingung gedämpft? \\
+    Was müsste getan werden um die Schwingung aufrecht zu erhalten?
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Resonanzfrequenz}
   \begin{block}{Frequenz mit der sich die Schwingung wiederholt}
-	\Huge{$ f_{res} = \cfrac{1}{2 \cdot \pi \cdot \sqrt{L \cdot C}} $}
+    \begin{center}
+      \Huge{$ f_{0} = \cfrac{1}{2 \cdot \pi \cdot \sqrt{L \cdot C}} $}
+    \end{center}
   \end{block}
   \pause
   Durch Verluste (insbesondere Widerstand) kommt es zur gedämpften Schwingung.
-\end{center}
 \end{frame}
 
 \section*{Reihen\-schwing\-kreis}
 \begin{frame}
-\frametitle{Reihenschwingkreis}
-\begin{center}
-	\begin{minipage}{0.4\textwidth}
-	\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/Serirenschw.png}\\
-	\tiny{Abb.3: Reihenschwingkreis \cite{wmen}}
-	\end{minipage}
-	\begin{minipage}{0.4\textwidth}
-	\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/SerirenschwSig.png}\\
-	\tiny{Abb.4: Resonanzwiderstand \cite{wmen}} 
-	\end{minipage}
-\end{center}
-\begin{itemize}
-	\item Im Verlauf der Frequenzänderung ändert sich der Gesamtwellenwiderstand $Z$ des Schwingkreises
-	\item Der Schwingkreis hat als minimale Impedanz seinen ohmschen Wert, da sich bei der Resonanzfrequenz $f_R$ die induktiven und kapazitiven Anteile gegenseitig aufheben
-\end{itemize}
+  \frametitle{Reihenschwingkreis}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{e07/Serirenschw.png}
+      \attribcaption{Reihenschwingkreis}{V4711}{http://commons.wikimedia.org/wiki/File:RLC_series_circuit_v1.svg}{\ccbysa}
+    \end{figure}
+    \column{0.5\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{e07/SerirenschwSig.png}
+      \attribcaption{Resonanzwiderstand}{Unknown}{https://commons.wikimedia.org/wiki/File:Resonanzwiderstand_serie.svg}{\ccpd}
+    \end{figure}
+  \end{columns}
+  \begin{itemize}
+    \item Im Verlauf der Frequenzänderung ändert sich der Gesamtwellenwiderstand $Z$ des Schwingkreises
+    \item Der Schwingkreis hat als minimale Impedanz seinen ohmschen Wert, da sich bei der Resonanzfrequenz $f_{0}$ die induktiven und kapazitiven Anteile gegenseitig aufheben
+  \end{itemize}
 \end{frame}
 
 \section*{Parallel\-schwing\-kreis}
 \begin{frame}
-\frametitle{Parallelschwingkreis}
-\begin{center}
-	\begin{minipage}{0.4\textwidth}
-	\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/Parallelschw.png}\\
-	\tiny{Abb.5: Parallelschwingkreis \cite{wmen}}
-	\end{minipage}
-	\begin{minipage}{0.4\textwidth}
-	\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/ParallelschwSig.png}\\
-	\tiny{Abb.6: Resonanzwiderstand \cite{wmen}} 
-	\end{minipage}
-\end{center}
-\begin{itemize}
-	\item Der Parallelschwingkreis verhält sich genau entgegen gesetzt zum Reihenschwingkreis
-	\item Dieser zeigt bei niedrigen und hohen Frequenzen das Verhalten eines Leiters
-	\item Bei der Resonanzfrequenz hingegen steigt der Wellenwiderstand an, da hier nur noch der ohmsche Widerstand wirkt
-\end{itemize}
+  \frametitle{Parallelschwingkreis}
+  \begin{center}
+    \begin{columns}
+      \column{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{e07/Parallelschw.png}
+        \attribcaption{Parallelschwingkreis}{Tillmann Walther}{http://commons.wikimedia.org/wiki/File:KondiSpuleWiderstandParallel.svg}{\ccpd}
+      \end{figure}
+      \column{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.35\textheight,keepaspectratio]{e07/ParallelschwSig.png}
+        \attribcaption{Resonanzwiderstand}{Unknown}{http://commons.wikimedia.org/wiki/File:Resonanzwiderstand_parallel.svg}{\ccpd}
+      \end{figure}
+    \end{columns}
+  \end{center}
+  \begin{itemize}
+    \item Der Parallelschwingkreis verhält sich genau entgegen gesetzt zum Reihenschwingkreis
+    \item Dieser zeigt bei niedrigen und hohen Frequenzen das Verhalten eines Leiters
+    \item Bei der Resonanzfrequenz hingegen steigt der Wellenwiderstand an, da hier nur noch der ohmsche Widerstand wirkt
+  \end{itemize}
 \end{frame}
 
 
@@ -143,14 +173,23 @@
 \begin{frame}
   \frametitle{Saugkreis}
   \begin{center}
-    % https://upload.wikimedia.org/wikipedia/commons/c/c9/Saugkreis.png
-    \includegraphics<1>[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/Saugkreis.png}
-    \includegraphics<2>[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/SerirenschwSig.png}
+    \begin{columns}
+      \column{.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.45\textheight,keepaspectratio]{e07/Saugkreis.png}
+        \attribcaption{Saugkreis}{Herbertweidner}{https://commons.wikimedia.org/wiki/File:Saugkreis.png}{\ccpd}
+      \end{figure}
+      \column{.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.45\textheight,keepaspectratio]{e07/SerirenschwSig.png}
+        \attribcaption{Resonanzwiderstand}{Unknown}{https://commons.wikimedia.org/wiki/File:Resonanzwiderstand_serie.svg}{\ccpd}
+      \end{figure}
+    \end{columns}
   \end{center}
   \pause
   \begin{itemize}
     \item vor und nach der Resonanzfrequenz hoher Widerstand
-    \item nur Wechselspannungen mit Frequenzen in der Nähe der Resoanzfrequenz werden durchgelassen
+    \item nur Wechselspannungen mit Frequenzen in der Nähe der Resonanzfrequenz werden durchgelassen
     \item Anwendung: Audiotechnik
   \end{itemize}
 \end{frame}
@@ -159,9 +198,18 @@
 \begin{frame}
   \frametitle{Sperrkreis}
   \begin{center}
-    % https://upload.wikimedia.org/wikipedia/commons/e/ef/Sperrkreis.png
-    \includegraphics<1>[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/Sperrkreis.png}
-    \includegraphics<2>[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/ParallelschwSig.png}
+    \begin{columns}
+      \column{.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.45\textheight,keepaspectratio]{e07/Sperrkreis.png}
+        \attribcaption{Sperrkreis}{Herbertweidner}{https://commons.wikimedia.org/wiki/File:Sperrkreis.png}{\ccpd}
+      \end{figure}
+      \column{.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.45\textheight,keepaspectratio]{e07/ParallelschwSig.png}
+        \attribcaption{Parallelschwingkreis}{Tillmann Walther}{http://commons.wikimedia.org/wiki/File:KondiSpuleWiderstandParallel.svg}{\ccpd}
+      \end{figure}
+    \end{columns}
   \end{center}
   \pause
   \begin{itemize}
@@ -173,30 +221,34 @@
 
 \subsection*{Tiefpass}
 \begin{frame}
-\frametitle{Tiefpass}
-\begin{center}
-	\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/LC-Tiefpass.png}\\
-	Abb.8: LC-Tiefpass
-\end{center}
-\begin{itemize}
-	\item Bei steigender Frequenz sinkt der Blindwiderstand $X_L$ und der Blindwiderstand $X_C$ steigt
-	\item Bei sinkender Frequenz hingegen steigt $X_L$ und $X_C$ sinkt
-	\item Dadurch werden nur niedrige Frequenzen durchgelassen 
-\end{itemize}
+  \frametitle{Tiefpass}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.45\textheight,keepaspectratio]{e07/LC-Tiefpass.png}
+      \caption{LC-Tiefpass}
+    \end{figure}
+  \end{center}
+  \begin{itemize}
+    \item Bei steigender Frequenz steigt der Blindwiderstand $X_L$ und der Blindwiderstand $X_C$ sinkt
+    \item Bei sinkender Frequenz hingegen sinkt $X_L$ und $X_C$ steigt
+    \item Dadurch werden nur niedrige Frequenzen durchgelassen
+  \end{itemize}
 \end{frame}
 
 \subsection*{Hochpass}
 \begin{frame}
-\frametitle{Hochpass}
-\begin{center}
-	\includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e07/LC-Hochpass.png}\\
-	Abb.9: LC-Hochpass
-\end{center}
-\begin{itemize}
-	\item Bei steigender Frequenz steigt der Blindwiderstand $X_L$ und der Blindwiderstand $X_C$ sinkt
-	\item Bei sinkender Frequenz hingegen sinkt $X_L$ und $X_C$ steigt
-	\item Dadurch werden nur hohe Frequenzen durchgelassen 
-\end{itemize}
+  \frametitle{Hochpass}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.45\textheight,keepaspectratio]{e07/LC-Hochpass.png}
+      \caption{LC-Hochpass}
+    \end{figure}
+  \end{center}
+  \begin{itemize}
+    \item Bei steigender Frequenz steigt der Blindwiderstand $X_L$ und der Blindwiderstand $X_C$ sinkt
+    \item Bei sinkender Frequenz hingegen sinkt $X_L$ und $X_C$ steigt
+    \item Dadurch werden nur hohe Frequenzen durchgelassen
+  \end{itemize}
 \end{frame}
 
 
@@ -210,22 +262,13 @@
 \footnotesize
 
 \begin{thebibliography}{}
-    \bibitem{e03}   Moltrecht E 07: \\
-                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e07/}
-    \bibitem{wp}    Wikipedia DE: \\
-                    \url{http://de.wikipedia.org/wiki/Ohmsches_Gesetz}\\ 
-                    \url{http://de.wikipedia.org/wiki/Elektrische_Leistung}\\ 
-                    \url{http://de.wikipedia.org/wiki/lektrische_Energie#Elektrische_Energie_in_einem_elektrischen_Feld}\\ 
-    \bibitem{wmde}	Wikimedia DE:\\
-    				\url{http://commons.wikimedia.org/wiki/File:LC_circuit_4_times_new_version.svg?uselang=de}\\
-   	\bibitem{wmen}	Wikimedia EN:\\
-   					\url{http://en.wikipedia.org/wiki/File:Tuned_circuit_animation_3.gif}\\
-   					\url{http://commons.wikimedia.org/wiki/File:RLC_series_circuit_v1.svg}\\
-   					\url{http://commons.wikimedia.org/wiki/File:Resonanzwiderstand_serie.svg}\\
-   					\url{http://commons.wikimedia.org/wiki/File:KondiSpuleWiderstandParallel.svg}\\
-   					\url{http://commons.wikimedia.org/wiki/File:Resonanzwiderstand_parallel.svg}\\
-   					\url{http://commons.wikimedia.org/wiki/File:Bandlimited_3dB_LP.svg}\\
-   					
+  \bibitem{e07}   Moltrecht E 07: \\
+    \url{https://www.darc.de/der-club/referate/ajw/lehrgang-te/e07/}
+  \bibitem{wp}    Wikipedia DE: \\
+    \url{http://de.wikipedia.org/wiki/Ohmsches_Gesetz}\\
+    \url{http://de.wikipedia.org/wiki/Elektrische_Leistung}\\
+    \url{http://de.wikipedia.org/wiki/Elektrische_Energie#Elektrische_Energie_in_einem_elektrischen_Feld}\\
+
 \end{thebibliography}
 
 \input{texdata/postamble}
