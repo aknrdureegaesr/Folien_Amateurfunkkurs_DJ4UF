@@ -5,479 +5,540 @@
 
 \input{texdata/preamble}
 \subtitle{Betriebstechnik/Vorschriften 13: \\
-          RST-System, UTC, Logbuch, QSL-Karte \\[2em]}
-\date{Stand 17.12.2015}
+RST-System, UTC, Logbuch, QSL-Karte \\[2em]}
+\date{Stand 31.10.2016}
 \input{texdata/titlepage}
 
 \section{Einleitung}
 
 \begin{frame}
-    \frametitle{Einleitung}
+  \frametitle{Einleitung}
 
-    Für den eigentlichen Spaß des Funkbetriebes braucht es etwas ``back
-    office'': 
+  Für den eigentlichen Spaß des Funkbetriebes braucht es etwas ``back
+  office'':
 
-    \begin{itemize}
-        \item Logbuchführung
-        \item QSL-Karten
-    \end{itemize}
+  \begin{itemize}
+    \item Logbuchführung
+    \item QSL-Karten
+  \end{itemize}
 
-    \vspace{1cm}
+  \vspace{1cm}
 
-    Benötigt: \emph{RST}-System und Umgang mit \emph{UTC}.
+  Benötigt: \emph{RST}-System und Umgang mit \emph{UTC}.
 
 \end{frame}
 
 \section{RST-System}
 
 \begin{frame}
-    \frametitle{RST-System}
+  \frametitle{RST-System}
 
-    \textbf{R}eadability, Signal \textbf{S}trength, \textbf{T}one
+  \textbf{R}eadability, Signal \textbf{S}trength, \textbf{T}one
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth]{e10/S-Meter.jpg}
-        \tiny \hyperlink{refs}{\cite{wc}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.45\textheight,keepaspectratio]{e10/S-Meter.jpg}
+      \attribcaption{S-Meter}{Cqdx}{https://commons.wikimedia.org/wiki/File:S-Meter.jpg}{\ccbysa}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Zweck: Empfangsbeurteilung
-        \item \emph{T} nur in Telegrafie
-        \item Verwendung seit 1930er
-    \end{itemize}
+  \begin{itemize}
+    \item Zweck: Empfangsbeurteilung
+    \item \emph{T} nur in Telegrafie
+    \item Verwendung seit 1930er
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{RST-System / Tabelle}
+  \frametitle{RST-System / Tabelle}
 
-    \begin{center}
+  \begin{center}
     \footnotesize
     \begin{tabular}{|l|l|l|l|}\hline
-          & \textbf{R}eadability        & \textbf{S}trength & \textbf{T}one \\ \hline \hline
-        1 & nicht lesbar                & $-48 dB$          & äußerst roh   \\ \hline
-        2 & zeitweise lesbar            & $-42 dB$          & sehr roh      \\ \hline
-        3 & mit Schwierigkeiten lesbar  & $-36 dB$          & roh           \\ \hline
-        4 & ohne Schwierigkeiten lesbar & $-30 dB$          & leicht roh    \\ \hline
-        5 & einwandfrei lesbar          & $-24 dB$          & musikalisch   \\ \hline
-        6 &                             & $-18 dB$          & moduliert     \\ \hline
-        7 &                             & $-12 dB$          & instabil      \\ \hline
-        8 &                             & $-6 dB$           & etwas Brumm   \\ \hline
-        9 &                             & $0dB$             & rein          \\ \hline
-        9+x &                           & $+x dB$ über S9   &               \\ \hline
+      & \textbf{R}eadability        & \textbf{S}trength & \textbf{T}one \\ \hline \hline
+      1 & nicht lesbar                & $-48 dB$          & äußerst roh   \\ \hline
+      2 & zeitweise lesbar            & $-42 dB$          & sehr roh      \\ \hline
+      3 & mit Schwierigkeiten lesbar  & $-36 dB$          & roh           \\ \hline
+      4 & ohne Schwierigkeiten lesbar & $-30 dB$          & leicht roh    \\ \hline
+      5 & einwandfrei lesbar          & $-24 dB$          & musikalisch   \\ \hline
+      6 &                             & $-18 dB$          & moduliert     \\ \hline
+      7 &                             & $-12 dB$          & instabil      \\ \hline
+      8 &                             & $-6 dB$           & etwas Brumm   \\ \hline
+      9 &                             & $0dB$             & rein          \\ \hline
+      9+x &                           & $+x dB$ über S9   &               \\ \hline
     \end{tabular}
-    \end{center}
+  \end{center}
 
-    S-Stufe 9 als Referenzspannung am $50 \Omega$-Antenneneingang:
-    \begin{itemize}
-        \item KW: $50\mu V$
-        \item UKW: $5\mu V$
-    \end{itemize}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{RST-System / Abgeleitete Systeme}
-
-    \begin{itemize}
-        \item R: Sprechfunk (Relais)
-        \item RS: Sprechfunk (p2p)
-        \item RSV: \textbf{V}ideo - SSTV/ATV
-        \item RSQ: \textbf{Q}uality - digitalen Betriebsarten
-        \item RSA: \textbf{A}urora - Tonrapport wäre quatsch $\rightarrow$ ``A'' geben
-    \end{itemize}
+  S-Stufe 9 als Referenzspannung am $50 \Omega$-Antenneneingang:
+  \begin{itemize}
+    \item KW: $50\mu V$
+    \item UKW: $5\mu V$
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{RST-System / S-Stufe}
+  \frametitle{RST-System / Abgeleitete Systeme}
 
-    Bedenke: Eine S-Stufe = $6 dB$
-
-    \begin{itemize}
-        \item gemessen an Spannung (Feldgröße) $\rightarrow$ Verdopplung
-        \item Leistungsgröße $\rightarrow$ Vervierfachung!
-    \end{itemize}
-
-    \vspace{1cm}
-
-    Beispiel\footnote{Prüfungskatalog Frage BB303}:    
-
-    \begin{exampleblock}{Um wie viel S-Stufen müsste die S-Meter-Anzeige Ihres
-                  Empfängers steigen, wenn Ihr Partner die Sendeleistung von 100
-                  Watt auf 400 Watt erhöht?}
-        \only<1>{\vspace{1pc}}\only<2>{$\rightarrow$ Um eine S-Stufe}
-    \end{exampleblock}
+  \begin{itemize}
+    \item R: Sprechfunk (Relais)
+    \item RS: Sprechfunk (p2p)
+    \item RSV: \textbf{V}ideo - SSTV/ATV
+    \item RSQ: \textbf{Q}uality - digitalen Betriebsarten
+    \item RSA: \textbf{A}urora - Tonrapport wäre quatsch $\rightarrow$ ``A'' geben
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{RST-System / S-Stufe}
+  \frametitle{RST-System / S-Stufe}
 
-    Noch ein Beispiel\footnote{Prüfungskatalog Frage BB307}:    
+  Bedenke: Eine S-Stufe = $6 dB$
 
-    \begin{exampleblock}{Durch ``Fading'' sinkt die S-Meter-Anzeige von S9 auf S8. Auf
-                  welchen Wert sinkt dabei die Empfänger-Eingangsspannung ab,
-                  wenn bei S9 am Empfängereingang $50\mu V$ anliegen? Die
-                  Empfänger-Eingangsspannung sinkt auf}
-        \only<1>{\vspace{1pc}}\only<2>{$\rightarrow 25\mu V$}
-    \end{exampleblock}
+  \begin{itemize}
+    \item gemessen an Spannung (Feldgröße) $\rightarrow$ Verdopplung
+    \item Leistungsgröße $\rightarrow$ Vervierfachung!
+  \end{itemize}
+
+  \vspace{1cm}
+
+  Beispiel\footnote{Prüfungskatalog Frage BB303}:
+
+  \begin{exampleblock}{Um wie viel S-Stufen müsste die S-Meter-Anzeige Ihres
+    Empfängers steigen, wenn Ihr Partner die Sendeleistung von 100
+    Watt auf 400 Watt erhöht?}
+    \only<1>{\vspace{1pc}}\only<2>{$\rightarrow$ Um eine S-Stufe}
+  \end{exampleblock}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{RST-System / S-Stufe}
+
+  Noch ein Beispiel\footnote{Prüfungskatalog Frage BB307}:
+
+  \begin{exampleblock}{Durch ``Fading'' sinkt die S-Meter-Anzeige von S9 auf S8. Auf
+    welchen Wert sinkt dabei die Empfänger-Eingangsspannung ab,
+    wenn bei S9 am Empfängereingang $50\mu V$ anliegen? Die
+    Empfänger-Eingangsspannung sinkt auf}
+    \only<1>{\vspace{1pc}}\only<2>{$\rightarrow 25\mu V$}
+  \end{exampleblock}
 
 \end{frame}
 
 \section{UTC}
 
 \begin{frame}
-    \frametitle{UTC}
+  \frametitle{\textbf{U}niversal \textbf{T}ime, \textbf{C}oordinated}
 
-    \textbf{U}niversal \textbf{T}ime, \textbf{C}oordinated
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.55\textheight,keepaspectratio]{bv13/Standard_time_zones_of_the_world.png}
+      \attribcaption{Zeitzonen der Welt seit dem 20.09.2011}{TimeZonesBoy}{https://commons.wikimedia.org/wiki/File:Standard_time_zones_of_the_world.png}{\ccbysa}
+    \end{figure}
+  \end{center}
 
-    \begin{center}
-        \includegraphics[width=0.7\textwidth]{bv13/Standard_time_zones_of_the_world.png}
-        \tiny \hyperlink{refs}{\cite{wc}}
-    \end{center}
-
-    \begin{itemize}
-        \item Bezugsachse: lokale ``Sonnenzeit'' am Nullmeridian durch
-              London-Greenwich\footnote{früher übliche Bezeichnung
-              \emph{Greenwich Mean Time (GMT)}}
-    \end{itemize}
+  Bezugsachse: lokale ``Sonnenzeit'' am Nullmeridian durch
+    London-Greenwich\footnote{früher übliche Bezeichnung
+    \emph{Greenwich Mean Time (GMT)}}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{UTC}
+  \frametitle{UTC}
 
-    \begin{center}
-        \includegraphics[width=0.5\textwidth]{bv13/Standard_time_zones_of_the_world.png}
-        \tiny \hyperlink{refs}{\cite{wc}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.5\textwidth,height=.35\textheight,keepaspectratio]{bv13/Standard_time_zones_of_the_world.png}
+      \attribcaption{Zeitzonen der Welt seit dem 20.09.2011}{TimeZonesBoy}{https://commons.wikimedia.org/wiki/File:Standard_time_zones_of_the_world.png}{\ccbysa}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item weit mehr als 24 Zeitzonen: UTC-12 bis UTC+14 (Kartenzoom lohnt sich)
-              - nicht immer volle Stunden
-        \item Deutschland:
-        \begin{itemize}
-            \item UTC+1 = CET/MEZ
-            \item UTC+2 = CEST/MESZ
-        \end{itemize}
-    \end{itemize}
+  \begin{itemize}
+    \item weit mehr als 24 Zeitzonen: UTC-12 bis UTC+14 (Kartenzoom lohnt sich)
+      - nicht immer volle Stunden
+    \item Deutschland:
+      \begin{itemize}
+        \item UTC+1 = CET/MEZ
+        \item UTC+2 = CEST/MESZ
+      \end{itemize}
+  \end{itemize}
 
-    Da AFu international $\rightarrow$ alleinige Verwendung von UTC!
+  Da AFu international $\rightarrow$ alleinige Verwendung von UTC!
 
 \end{frame}
 
 \section{Logbook}
 
 \begin{frame}
-    \frametitle{Logbook}
+  \frametitle{Logbook}
 
-    ``Stationstagebuch, das ein Funkamateur freiwillig führt oder in besonderen
-    Fällen führen muss.''
+  ``Stationstagebuch, das ein Funkamateur freiwillig führt oder in besonderen
+  Fällen führen muss.''
 
-    %todo aktuelles Papierlogbild?
-    \begin{center}
-        \includegraphics[width=0.55\textwidth]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
-        \tiny \footnote{DK0TU Kurzwellenlog Feb. 1972 (Auszug, nach Wasserschaden)}
-    \end{center}
+  %todo aktuelles Papierlogbild?
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.55\textwidth,height=.7\textheight,keepaspectratio]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
+      \caption{DKØTU Kurzwellenlog Feb. 1972 (Auszug, nach Wasserschaden)}
+    \end{figure}
+  \end{center}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Logbook}
+  \frametitle{Logbook}
 
+  \begin{columns}
+    \column{.4\textwidth}
     \begin{center}
-        \includegraphics[width=0.3\textwidth]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
+        \caption{DKØTU Kurzwellenlog Feb. 1972 (Auszug, nach Wasserschaden)}
+      \end{figure}
     \end{center}
 
+  \column{.6\textwidth}
     Je Aussendung:
-    
+
     \begin{itemize}
-        \item Tag, Uhrzeit (immer UTC!)
-        \item Frequenz
-        \item Rufzeichen
-        \item Rapporte
-        \item ggf. Aufzeichnungen über Bedingungen, Sendeleistung, Antenne, ...
+      \item Tag, Uhrzeit (immer UTC!)
+      \item Frequenz
+      \item Rufzeichen
+      \item Rapporte
+      \item ggf. Aufzeichnungen über Bedingungen, Sendeleistung, Antenne, ...
     \end{itemize}
 
     Praktisch für sich selbst oder auch einen \emph{EMV}-Fall.
+  \end{columns}
 
 \end{frame}
 
 \subsection{Digitallog}
 
 \begin{frame}
-    \frametitle{Logbook / Digitallog}
+  \frametitle{Logbook / Digitallog}
 
-    Papierlog oder Computerlog: Minimalistisch vs. einfache Handhabung und
-    Katalogisierung:
+  Papierlog oder Computerlog: Minimalistisch vs. einfache Handhabung und
+  Katalogisierung:
 
-    \begin{center}
-        \includegraphics[width=1\textwidth]{bv13/tucnak_Hf-10.png}
-        \tiny \footnote{Tucnak Contest-Log \hyperlink{refs}{\cite{tucn}}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{bv13/tucnak_Hf-10.png}
+      \caption{Tucnak Contest-Log \hyperlink{refs}{\cite{tucn}}}
+    \end{figure}
+  \end{center}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Logbook / Digitallog}
+  \frametitle{Logbook / Digitallog}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{bv13/rumlogng.jpg}
+      \caption{Aktuelle MacOS Applikation RUMlogNG \hyperlink{refs}{\cite{rumlog}}}
+    \end{figure}
+  \end{center}
+\end{frame}
 
+\begin{frame}
+  \frametitle{Logbook / Digitallog}
+
+  \begin{columns}
+    \column{.45\textwidth}
     \begin{center}
-        \includegraphics[height=0.25\textheight]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
-        \hspace{2pc}$\rightarrow$\hspace{1pc}
-        \includegraphics[height=0.25\textheight]{bv13/tucnak_Hf-10.png}
-        \tiny \hyperlink{refs}{\cite{tucn}}
+      \begin{figure}
+        \includegraphics[height=0.25\textheight,width=\textwidth,keepaspectratio]{bv13/DK0TU_LOG_KW_1972-02_Auszug.jpg}
+        \caption{DKØTU Kurzwellenlog Feb. 1972}
+      \end{figure}
     \end{center}
+    \column{.1\textwidth}
+    \hspace{2pc}$\rightarrow$\hspace{1pc}
+    \column{.45\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[height=0.25\textheight,width=\textwidth,keepaspectratio]{bv13/tucnak_Hf-10.png}
+        \caption{Tucknak Contest-Log}
+      \end{figure}
+    \end{center}
+  \end{columns}
 
+  \begin{center}
     \begin{itemize}
-        \item Uhrzeit automatisch
-        \item QRG vom TRX übertragen
-        \item QTF\footnote{Antennenrichtung}-Anzeige oder -Steuerung
-        \item Call-Datenbanken
-        \item DX-Cluster
-        \item Sync im LAN/WAN für Multi-Op
-        \item je nach Logprogramm weitere Optionen
+      \item Uhrzeit automatisch
+      \item QRG vom TRX übertragen
+      \item QTF\footnote{Antennenrichtung}-Anzeige oder -Steuerung
+      \item Call-Datenbanken
+      \item DX-Cluster
+      \item Sync im LAN/WAN für Multi-Op
+      \item je nach Logprogramm weitere Optionen
     \end{itemize}
+  \end{center}
 
 \end{frame}
 
 \subsection{Beispiele}
 
 \begin{frame}
-    \frametitle{Beispiel: Papierlog}
+  \frametitle{Beispiel: Papierlog}
 
-    \begin{center}
-        \includegraphics[height=.9\textheight]{bv13/dk0tu_log_kw.png}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[height=.75\textheight]{bv13/dk0tu_log_kw.png}
+      \caption{Kurzwellenlogbuch bei DKØTU}
+    \end{figure}
+  \end{center}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Beispiele: Software}
- 
-    \begin{center}
+  \frametitle{Beispiele: Software}
+
+  \begin{center}
 
     \Large Demo... \\[3em]
 
-    \normalsize $\Rightarrow$ Export: \url{http://www.dk0tu.de/Logbook}
+    \normalsize $\Rightarrow$ Export: \ExternalLink\url{http://www.dk0tu.de/Logbook}
 
-    \end{center}
+  \end{center}
 
 \end{frame}
 
 \subsection{Angeordnete Logbuchführung}
 
 \begin{frame}
-    \frametitle{Logbuchführung / Angeordnete Logbuchführung}
+  \frametitle{Logbuchführung / Angeordnete Logbuchführung}
 
-    Heutzutage ist die Logbuchführung freiwillig -- im Falle einer Störung nicht.
-    Die ``zuständigen Behörde'' (\emph{BNetzA}) kann das anordnen.
+  Heutzutage ist die Logbuchführung freiwillig -- im Falle einer Störung nicht.
+  Die ``zuständige Behörde'' (\emph{BNetzA}) kann das anordnen.
 
-    \begin{center}
-        \includegraphics[width=0.3\textwidth]{bv13/Bundesnetzagentur_logo_709px.png}
-        \tiny \hyperlink{refs}{\cite{wp}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.3\textwidth,height=.3\textheight,keepaspectratio]{bv13/Bundesnetzagentur_logo_709px.png}
+      \attribcaption{Bundesnetzagentur}{Bundesnetzagentur}{https://de.wikipedia.org/wiki/Datei:Bundesnetzagentur_logo.svg}{\ccpd}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Log muss angeordnete Zeit aufgehoben werden
-        \item digitales Log zulässig
-        \item bei Softwarewechsel muss die alte verfügbar bleiben
-    \end{itemize}
+  \begin{itemize}
+    \item Log muss angeordnete Zeit aufgehoben werden
+    \item digitales Log zulässig
+    \item bei Softwarewechsel muss die alte verfügbar bleiben
+    \item Export in maschinenlesbares Logbuchformat
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Logbuchführung / Angeordnete Logbuchführung}
+  \frametitle{Logbuchführung / Angeordnete Logbuchführung}
 
-    \begin{exampleblock}{Ausbildungsfunkbetrieb}
-      AfuV §12
-      \begin{quote}
-       (4) Beim Ausbildungsfunkbetrieb sind von dem Auszubildenden Angaben über den Funkbetrieb schriftlich festzuhalten und vom Ausbilder zu bestätigen. Dieser hat die Aufzeichnungen ein Jahr aufzubewahren.
-      \end{quote}
-    \end{exampleblock}
+  \begin{exampleblock}{Ausbildungsfunkbetrieb}
+    AfuV §12
+    \begin{quote}
+      (4) Beim Ausbildungsfunkbetrieb sind von dem Auszubildenden Angaben über den Funkbetrieb schriftlich festzuhalten und vom Ausbilder zu bestätigen. Dieser hat die Aufzeichnungen ein Jahr aufzubewahren.
+    \end{quote}
+  \end{exampleblock}
 \end{frame}
 
 
 \section{QSL-Karte}
 
 \begin{frame}
-    \frametitle{QSL-Karte}
+  \frametitle{QSL-Karte}
 
-    \emph{QSL} - wir erinnern uns aus \texttt{BV03} - Empfangsbestätigung \\[1em]
+  \emph{QSL} - wir erinnern uns aus \texttt{BV03} - Empfangsbestätigung \\[1em]
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth]{bv13/DK0TU_1.jpg}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.6\textheight,keepaspectratio]{bv13/DK0TU_1.jpg}
+      \caption{Historische QSL-Karte}
+    \end{figure}
+  \end{center}
 
-	$\rightarrow$ traditionell auch mit einer ``Ansichtskarte'' bei KW oder UKW-DX
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{QSL-Karte}
-
-    \begin{center}
-        \includegraphics[width=0.5\textwidth]{bv13/DK0TU_0.jpg}
-    \end{center}
-
-    \begin{itemize}
-        \item für SWL lange Zeit einziger Rückkanal
-        \item schriftl. Bestätigung der Angaben
-        %\item Beantragung Amateurfunk-Diplome
-        \item individuell sehr verschieden gestaltet
-    \end{itemize}
+  $\rightarrow$ traditionell auch mit einer ``Ansichtskarte'' bei KW oder UKW-DX
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{QSL-Karte / Informationen}
+  \frametitle{QSL-Karte}
 
-    \begin{exampleblock}{Welche Angaben sollten mind. enthalten sein?}
-        \only<1>{$\rightarrow$ Tafel} 
-        \only<2>{
-        Im Prinzip Daten aus dem \textbf{Logbook}:
-        \begin{itemize}
-            \item Rufzeichen
-            \item Rufzeichen der Gegenstation
-            \item Datum
-            \item Uhrzeit (UTC)
-            \item Frequenz
-            \item Betriebsart
-            \item Signal-Rapport
-            \item Unterschrift des Op
-        \end{itemize}
-        }
-    \end{exampleblock}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.5\textwidth,height=.5\textheight,keepaspectratio]{bv13/DK0TU_0.jpg}
+      \caption{Historische QSL-Karte}
+    \end{figure}
+  \end{center}
 
+  \begin{itemize}
+    \item für SWL lange Zeit einziger Rückkanal
+    \item schriftl. Bestätigung der Angaben
+    %\item Beantragung Amateurfunk-Diplome
+    \item individuell sehr verschieden gestaltet
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{QSL-Karte / Informationen}
+
+  \begin{exampleblock}{Welche Angaben sollten mind. enthalten sein?}
+    \only<1>{$\rightarrow$ Tafel}
     \only<2>{
-		\footnotesize{Besonderheit\footnote{z.B. bei \emph{DXpeditionen}}:
-		\emph{``QSL via [Call]''} $\rightarrow$ QSL-Manager}
+    Im Prinzip Daten aus dem \textbf{Logbook}:
+    \begin{itemize}
+      \item Rufzeichen
+      \item Rufzeichen der Gegenstation
+      \item Datum
+      \item Uhrzeit (UTC)
+      \item Frequenz
+      \item Betriebsart
+      \item Signal-Rapport
+      \item Unterschrift des Op
+    \end{itemize}
     }
+  \end{exampleblock}
+
+  \only<2>{
+  \footnotesize{Besonderheit\footnote{z.B. bei \emph{DXpeditionen}}:
+  \emph{``QSL via [Call]''} $\rightarrow$ QSL-Manager}
+  }
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{QSL-Karte / Informationen}
+  \frametitle{QSL-Karte / Informationen}
 
-    \begin{center}
-		\includegraphics[width=0.9\textwidth]{bv13/dk0tu_qsl2.pdf}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.9\textwidth,height=.75\textheight,keepaspectratio]{bv13/dk0tu_qsl2.pdf}
+      \caption{Aktuelle QSL-Karte}
+    \end{figure}
+  \end{center}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{QSL-Karte / Versand}
+  \frametitle{QSL-Karte / Versand}
 
-    \begin{itemize}
-		\item kostenfrei \emph{``via bureau''}
-        \item direkte Zusendung durch Adresse aus \emph{int. Callbook} oder Internet
-    \end{itemize}
+  \begin{itemize}
+    \item kostenfrei \emph{``via bureau''}
+    \item direkte Zusendung durch Adresse aus \emph{int. Callbook} oder Internet
+  \end{itemize}
 
-    Für besonders Eilige oder Länder ohne Radio Clubs: Mit Versand der Karte
-    Antwortbriefumschlag (\emph{SAE}\footnote{Self-Addressed Envelope}) und
-    \emph{IRC}\footnote{International Reply Coupon}s zwei 1\$-Noten beilegen. \\[2em]
+  Für besonders Eilige oder Länder ohne Radio Clubs: Mit Versand der Karte
+  Antwortbriefumschlag (\emph{SAE}\footnote{Self-Addressed Envelope}) und
+  \emph{IRC}\footnote{International Reply Coupon}s zwei 1\$-Noten beilegen. \\[2em]
 
-    \pause
+  \pause
 
-    Noch eiliger: Online-QSL-Karten
-    \begin{itemize}
-      \item eQSL \url{https://www.eqsl.cc/}
-      \item LoTW \url{https://lotw.arrl.org/}
-    \end{itemize}
+  Noch eiliger: Online-QSL-Karten
+  \begin{itemize}
+    \item eQSL \ExternalLink\url{https://www.eqsl.cc/}
+    \item LoTW \ExternalLink\url{https://lotw.arrl.org/}
+  \end{itemize}
 
 \end{frame}
 
 \subsection{eQSL}
 
 \begin{frame}
-    \frametitle{QSL-Karte / eQSL}
+  \frametitle{QSL-Karte / eQSL}
 
-    im Prinzip wie \textbf{e}Mail
+  im Prinzip wie \textbf{e}Mail
 
-    \begin{center}
-		\includegraphics[width=0.4\textwidth]{bv13/eQSL_DK0TU-EA3ARE.jpg}
-        \tiny \hyperlink{refs}{\cite{wc}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.4\textwidth,height=.4\textheight,keepaspectratio]{bv13/eQSL_DK0TU-EA3ARE.jpg}
+      \caption{Empfangene eQSL-Karte}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item minimaler Kostenaufwand
-        \item Ausdruck nur bei Bedarf
-		\item weniger ``Flair''
-    \end{itemize}
+  \begin{itemize}
+    \item minimaler Kostenaufwand
+    \item Ausdruck nur bei Bedarf
+    \item weniger ``Flair''
+  \end{itemize}
 
-    Wie bei E-Mail gibt es diverse Webdienste oder Programme.
+  Wie bei E-Mail gibt es diverse Webdienste oder Programme.
 
 \end{frame}
 
 \subsection{SSTV}
 
 \begin{frame}
-    \frametitle{QSL-Karte / SSTV}
+  \frametitle{QSL-Karte / SSTV}
 
-	Keine QSL-Karte, aber manchmal wird einfach das empfangene SSTV-Bild zur
-	Bestätigung per E-Mail zurückgesendet.
+  Keine QSL-Karte, aber manchmal wird einfach das empfangene SSTV-Bild zur
+  Bestätigung per E-Mail zurückgesendet.
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth]{bv13/QSL_SSTV_2014-11-24_162753.png}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.6\textheight,keepaspectratio]{bv13/QSL_SSTV_2014-11-24_162753.png}
+      \caption{Empfangenes SSTV-Bild}
+    \end{figure}
+  \end{center}
 
 \end{frame}
 
 \section{Sonderstationen}
 
 \begin{frame}
-    \frametitle{Sonderstationen}
+  \frametitle{Sonderstationen}
 
-    Einige HAMs sammeln besondere Stationen:
+  Einige HAMs sammeln besondere Stationen:
 
-    \begin{center}
-		\includegraphics[width=0.4\textwidth]{bv13/DK0TU_SDOK_FSB13.jpg}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.4\textwidth,height=.35\textheight,keepaspectratio]{bv13/DK0TU_SDOK_FSB13.jpg}
+      \caption{Limitierte QSL-Karte von DKØTU mit Sonder-DOK FSB13}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Calls zu bestimmten Veranstaltungen, z.B.
-              \emph{DK0IFA}\footnote{zur Internationale Funkausstellung (IFA)}
-        \item Sonder-DOK\footnote{Distrikts-Ortsverbands-Kenner}s, z.B.
-              \emph{FSB13}\footnote{zum Jubiläum der ehemaligen Field Station
-              Berlin (Teufelsberg)}
-    \end{itemize}
+  \begin{itemize}
+    \item Calls zu bestimmten Veranstaltungen, z.B.
+      \emph{DKØIFA}\footnote{zur Internationale Funkausstellung (IFA)}
+    \item Sonder-DOK\footnote{Distrikts-Ortsverbands-Kenner}s, z.B.
+      \emph{FSB13}\footnote{zum Jubiläum der ehemaligen Field Station
+      Berlin (Teufelsberg)}
+  \end{itemize}
 
 \end{frame}
 
 \section{Diplome}
 
 \begin{frame}
-    \frametitle{Diplome}
+  \frametitle{Diplome}
 
-    %todo Foto ARRL Diplom
+  %todo Foto ARRL Diplom
 
-    Auszeichnung\footnote{meist Urkundenpapier, aber auch diverse andere
-    Gegenstände} für besondere Leistungen im Amateurfunk.
+  Auszeichnung\footnote{meist Urkundenpapier, aber auch diverse andere
+  Gegenstände} für besondere Leistungen im Amateurfunk.
 
-    Herausgeber z.B.
+  Herausgeber z.B.
 
-    \begin{itemize}
-        \item Radioclubs
-        \item Ortsverbände
-        \item Länder
-    \end{itemize}
-    
+  \begin{itemize}
+    \item Radioclubs
+    \item Ortsverbände
+    \item Länder
+  \end{itemize}
+
 \end{frame}
 
 \begin{frame}
-    \frametitle{Diplome / Beispiele}
+  \frametitle{Diplome / Beispiele}
 
-    Bekannteste Diplome z.B.
+  Bekannteste Diplome z.B.
 
-    \begin{itemize}
-        \item DXCC\footnote{DX century club}-Diplom für $>100$ Länder
-        \item DLD\footnote{Deutschland Diplom} für $>100$ \emph{OV}s
-		\item Berlin-Diplom\footnote{\url{http://www.darc.de/distrikte/d/berlin-diplom/}}
-		\item ... ``All \$Achievement Award''
-    \end{itemize}
+  \begin{itemize}
+    \item DXCC\footnote{DX century club}-Diplom für $>100$ Länder
+    \item DLD\footnote{Deutschland Diplom} für $>100$ \emph{OV}s
+    \item Berlin-Diplom\footnote{\ExternalLink\url{http://www.darc.de/distrikte/d/berlin-diplom/}}
+    \item JO62-Diplom\footnote{\ExternalLink\url{http://www.ov-d20.de/diplom_jo62.htm}}
+    \item ... ``All \$Achievement Award''
+  \end{itemize}
 
-    Beantragung vom Operator selbst. Nachweis: QSL-Karten, relevante
-    Logbuchauszüge oder Bestätigung durch andere \emph{HAM}s.
+  Beantragung vom Operator selbst. Nachweis: QSL-Karten, relevante
+  Logbuchauszüge oder Bestätigung durch andere \emph{HAM}s.
 
 \end{frame}
 
@@ -490,18 +551,16 @@
 
 \begin{thebibliography}{}
 
-    \bibitem{dj4uf} Moltrecht B/V 13: \\
-                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/betriebstechnikvorschriften/kapitel-bv13/}
-    \bibitem{wp}    Wikipedia DE: \\
-                    \url{https://de.wikipedia.org/wiki/RST-System}\\
-                    \url{https://de.wikipedia.org/wiki/RSQ-System}\\
-                    \url{https://de.wikipedia.org/wiki/Koordinierte_Weltzeit}\\
-                    \url{https://de.wikipedia.org/wiki/Bundesnetzagentur}\\
-    %\bibitem{we}    Wikipedia EN: \\
-    \bibitem{wc}    Wikimedia Commons: \\
-                    \url{https://commons.wikimedia.org/wiki/File:S-Meter.jpg}\\
-                    \url{https://commons.wikimedia.org/wiki/File:Standard_time_zones_of_the_world.png}\\
-    \bibitem{tucn}  \url{http://tucnak.nagano.cz/wiki/File:Hf-10.png}\\
-\end{thebibliography} 
+  \bibitem{dj4uf} Moltrecht B/V 13: \\
+    \url{https://www.darc.de/der-club/referate/ajw/lehrgang-bv/bv13/}
+  \bibitem{wp}    Wikipedia DE: \\
+    \url{https://de.wikipedia.org/wiki/RST-System}\\
+    \url{https://de.wikipedia.org/wiki/RSQ-System}\\
+    \url{https://de.wikipedia.org/wiki/Koordinierte_Weltzeit}\\
+    \url{https://de.wikipedia.org/wiki/Bundesnetzagentur}\\
+  %\bibitem{we}    Wikipedia EN: \\
+  \bibitem{tucn}  \url{http://tucnak.nagano.cz/wiki/File:Hf-10.png}\\
+  \bibitem{rumlog} \url{http://www.dl2rum.de/rumsoft/RUMLog.html}\\
+\end{thebibliography}
 
 \input{texdata/postamble}
