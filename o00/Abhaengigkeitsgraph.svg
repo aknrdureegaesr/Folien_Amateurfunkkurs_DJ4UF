@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="80cm" height="40cm" viewBox="-302 -42 1583 783" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #f0f0f0" x="-300" y="200" width="580" height="210"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-300" y="200" width="580" height="210"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-10" y="308.9">
+      <tspan x="-10" y="308.9"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-280" y="320" width="540" height="80"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-280" y="320" width="540" height="80"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-10" y="363.9">
+      <tspan x="-10" y="363.9"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-280" y="230" width="540" height="80"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-280" y="230" width="540" height="80"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-10" y="273.9">
+      <tspan x="-10" y="273.9"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="-280" y="-40" width="180" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-280" y="-40" width="180" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-190" y="-14.1">
+      <tspan x="-190" y="-14.1">Mathematische Grundl.</tspan>
+      <tspan x="-190" y="1.9">und Einheiten (E01)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="-280" y="40" width="180" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-280" y="40" width="180" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-190" y="65.9">
+      <tspan x="-190" y="65.9">Spannung und Strom,</tspan>
+      <tspan x="-190" y="81.9">Wechselspannung (E02)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="-280" y="120" width="180" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-280" y="120" width="180" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-190" y="145.9">
+      <tspan x="-190" y="145.9">Ohmsches Gesetz,</tspan>
+      <tspan x="-190" y="161.9">Leistung, Arbeit (E03)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="-270" y="260" width="140" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-270" y="260" width="140" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-200" y="282.9">
+      <tspan x="-200" y="282.9">Widerstand (E04)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="-110" y="260" width="140.9" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-110" y="260" width="140.9" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-39.55" y="282.9">
+      <tspan x="-39.55" y="282.9">Kondensator (E05)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="50" y="260" width="193.95" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="50" y="260" width="193.95" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="146.975" y="282.9">
+      <tspan x="146.975" y="282.9">Spule, Transformator (E06)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="320" y="400" width="200" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="400" width="200" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="420" y="423.9">
+      <tspan x="420" y="423.9">Schwingkreis, Filter (E07)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="440" y="480" width="240" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="440" y="480" width="240" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="560" y="503.9">
+      <tspan x="560" y="503.9">Elektromagnetisches Feld (E08)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="460" y="580" width="200" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="460" y="580" width="200" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="560" y="603.9">
+      <tspan x="560" y="603.9">Wellenausbreitung (E09)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="320" y="120" width="160" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="120" width="160" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="400" y="145.9">
+      <tspan x="400" y="145.9">Dezibel, Dämpfung,</tspan>
+      <tspan x="400" y="161.9">Kabel, S-Stufen (E10)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="560" y="360" width="169.5" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="560" y="360" width="169.5" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="644.75" y="382.9">
+      <tspan x="644.75" y="382.9">Antennentechnik (E11)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="-270" y="350" width="180" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-270" y="350" width="180" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-180" y="372.9">
+      <tspan x="-180" y="372.9">Halbleiter, Diode (E12)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="-50" y="350" width="200" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-50" y="350" width="200" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="50" y="372.9">
+      <tspan x="50" y="372.9">Transistor, Verstärker (E13)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="40" y="460" width="240" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="40" y="460" width="240" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="160" y="482.9">
+      <tspan x="160" y="482.9">Modulation, Demodulation (E14)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="120" y="520" width="180" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="120" y="520" width="180" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="210" y="545.9">
+      <tspan x="210" y="545.9">Sender- und</tspan>
+      <tspan x="210" y="561.9">Empfängertechnik (E15)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="-40" y="40" width="101.35" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-40" y="40" width="101.35" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="10.675" y="65.9">
+      <tspan x="10.675" y="65.9">Messtechnik</tspan>
+      <tspan x="10.675" y="81.9">(E17-DC)</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="25.5791" y1="298.983" x2="342.225" y2="396.137"/>
+    <polygon style="fill: #000000" points="349.395,398.337 338.369,400.184 342.225,396.137 341.302,390.624 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="349.395,398.337 338.369,400.184 342.225,396.137 341.302,390.624 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="185.669" y1="298.983" x2="370.672" y2="394.525"/>
+    <polygon style="fill: #000000" points="377.336,397.967 366.157,397.821 370.672,394.525 370.745,388.936 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="377.336,397.967 366.157,397.821 370.672,394.525 370.745,388.936 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-40.988" y1="70" x2="-89.2718" y2="70"/>
+    <polygon style="fill: #000000" points="-96.7718,70 -86.7718,65 -89.2718,70 -86.7718,75 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-96.7718,70 -86.7718,65 -89.2718,70 -86.7718,75 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-190" y1="100.977" x2="-190" y2="109.287"/>
+    <polygon style="fill: #000000" points="-190,116.787 -195,106.787 -190,109.287 -185,106.787 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-190,116.787 -195,106.787 -190,109.287 -185,106.787 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-190" y1="20.9766" x2="-190" y2="29.2874"/>
+    <polygon style="fill: #000000" points="-190,36.7874 -195,26.7874 -190,29.2874 -185,26.7874 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-190,36.7874 -195,26.7874 -190,29.2874 -185,26.7874 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="103.945" y1="498.539" x2="54.4566" y2="515.789"/>
+    <polygon style="fill: #000000" points="47.3745,518.258 55.1716,510.245 54.4566,515.789 58.4631,519.688 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="47.3745,518.258 55.1716,510.245 54.4566,515.789 58.4631,519.688 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="174.075" y1="498.986" x2="182.562" y2="511.038"/>
+    <polygon style="fill: #000000" points="186.88,517.17 177.034,511.873 182.562,511.038 185.21,506.115 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="186.88,517.17 177.034,511.873 182.562,511.038 185.21,506.115 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-88.9981" y1="369" x2="-60.7261" y2="369"/>
+    <polygon style="fill: #000000" points="-53.2261,369 -63.2261,374 -60.7261,369 -63.2261,364 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-53.2261,369 -63.2261,374 -60.7261,369 -63.2261,364 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="-160" y="220">
+    <tspan x="-160" y="220">Bauelemente und ihre Grundschaltungen</tspan>
+  </text>
+  <g>
+    <rect style="fill: #80c0ff" x="300" y="260" width="101.35" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="300" y="260" width="101.35" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="350.675" y="285.9">
+      <tspan x="350.675" y="285.9">Messtechnik</tspan>
+      <tspan x="350.675" y="301.9">(E17-AC)</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="367.202" y1="320.992" x2="404.231" y2="390.43"/>
+    <polygon style="fill: #000000" points="407.76,397.048 398.643,390.577 404.231,390.43 407.467,385.871 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="407.76,397.048 398.643,390.577 404.231,390.43 407.467,385.871 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="456.709" y1="440.977" x2="514.838" y2="474.193"/>
+    <polygon style="fill: #000000" points="521.35,477.914 510.186,477.294 514.838,474.193 515.148,468.611 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="521.35,477.914 510.186,477.294 514.838,474.193 515.148,468.611 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="560" y1="521.002" x2="560" y2="569.262"/>
+    <polygon style="fill: #000000" points="560,576.762 555,566.762 560,569.262 565,566.762 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="560,576.762 555,566.762 560,569.262 565,566.762 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffff80" x="620" y="240" width="200" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="620" y="240" width="200" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="720" y="265.9">
+      <tspan x="720" y="265.9">RST-System, UTC,</tspan>
+      <tspan x="720" y="281.9">Logbuch, QSL-Karte (BV13)</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="480.977" y1="180.366" x2="628.208" y2="235.578"/>
+    <polygon style="fill: #000000" points="635.231,238.211 624.112,239.382 628.208,235.578 627.623,230.019 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="635.231,238.211 624.112,239.382 628.208,235.578 627.623,230.019 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="433.118" y1="180.987" x2="616.309" y2="352.389"/>
+    <polygon style="fill: #000000" points="621.785,357.513 611.067,354.332 616.309,352.389 617.899,347.03 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="621.785,357.513 611.067,354.332 616.309,352.389 617.899,347.03 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="574.701" y1="479.011" x2="625.152" y2="406.981"/>
+    <polygon style="fill: #000000" points="629.454,400.838 627.813,411.897 625.152,406.981 619.622,406.16 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="629.454,400.838 627.813,411.897 625.152,406.981 619.622,406.16 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-98.9919" y1="150" x2="309.267" y2="150"/>
+    <polygon style="fill: #000000" points="316.767,150 306.767,155 309.267,150 306.767,145 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="316.767,150 306.767,155 309.267,150 306.767,145 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="186.217" y1="258.993" x2="330.525" y2="185.42"/>
+    <polygon style="fill: #000000" points="337.207,182.014 330.569,191.01 330.525,185.42 326.027,182.101 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="337.207,182.014 330.569,191.01 330.525,185.42 326.027,182.101 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="28.62" y1="258.993" x2="309.657" y2="176.514"/>
+    <polygon style="fill: #000000" points="316.854,174.402 308.667,182.016 309.657,176.514 305.851,172.42 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="316.854,174.402 308.667,182.016 309.657,176.514 305.851,172.42 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="69.9939" y1="388.994" x2="133.122" y2="452.122"/>
+    <polygon style="fill: #000000" points="138.425,457.425 127.818,453.889 133.122,452.122 134.889,446.818 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="138.425,457.425 127.818,453.889 133.122,452.122 134.889,446.818 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-270" y="334.45">
+    <tspan x="-270" y="334.45">aktiv</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="260.337" y1="580.977" x2="281.371" y2="593.921"/>
+    <polygon style="fill: #000000" points="287.759,597.852 276.622,596.869 281.371,593.921 281.863,588.352 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="287.759,597.852 276.622,596.869 281.371,593.921 281.863,588.352 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-192.403" y1="180.998" x2="-197.697" y2="249.286"/>
+    <polygon style="fill: #000000" points="-198.276,256.764 -202.488,246.407 -197.697,249.286 -192.518,247.18 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-198.276,256.764 -202.488,246.407 -197.697,249.286 -192.518,247.18 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="327.515" y1="440.987" x2="257.632" y2="456.845"/>
+    <polygon style="fill: #000000" points="250.318,458.505 258.963,451.416 257.632,456.845 261.176,461.168 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="250.318,458.505 258.963,451.416 257.632,456.845 261.176,461.168 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-270" y="244.45">
+    <tspan x="-270" y="244.45">passiv</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="-300" y="700" width="200" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="-300" y="700" width="200" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-200" y="723.9">
+      <tspan x="-200" y="723.9">DL7BST, Stand 2015-10-22</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff80" x="820" y="-40" width="200" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="820" y="-40" width="200" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="920" y="-16.1">
+      <tspan x="920" y="-16.1">Rechte/Pflichten (BV01)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff80" x="940" y="440" width="220" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="940" y="440" width="220" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1050" y="465.9">
+      <tspan x="1050" y="465.9">Internationales</tspan>
+      <tspan x="1050" y="481.9">Buchstabieralphabet (BV02)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff80" x="1000" y="340" width="160" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1000" y="340" width="160" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1080" y="363.9">
+      <tspan x="1080" y="363.9">Q-Schlüssel (BV03)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff80" x="940" y="660" width="220" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="940" y="660" width="220" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1050" y="685.9">
+      <tspan x="1050" y="685.9">Wiederholung &amp; Betriebliche</tspan>
+      <tspan x="1050" y="701.9">Abkürzungen (BV04)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff80" x="820" y="20" width="200" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="820" y="20" width="200" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="920" y="45.9">
+      <tspan x="920" y="45.9">Gesetze, Vorschriften</tspan>
+      <tspan x="920" y="61.9">und Regelungen (BV05)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff80" x="820" y="100" width="200" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="820" y="100" width="200" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="920" y="125.9">
+      <tspan x="920" y="125.9">Rufzeichen -</tspan>
+      <tspan x="920" y="141.9">Landeskenner (BV06)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff80" x="1080" y="100" width="120.65" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1080" y="100" width="120.65" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1140.33" y="125.9">
+      <tspan x="1140.33" y="125.9">Funkbetrieb im</tspan>
+      <tspan x="1140.33" y="141.9">Ausland (BV07)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff80" x="820" y="180" width="200" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="820" y="180" width="200" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="920" y="203.9">
+      <tspan x="920" y="203.9">Amateurfunkstellen (BV08)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff80" x="1080" y="240" width="200" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1080" y="240" width="200" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1180" y="265.9">
+      <tspan x="1180" y="265.9">Betriebsarten, Sendearten,</tspan>
+      <tspan x="1180" y="281.9">Frequenzen (BV09)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff80" x="720" y="440" width="180" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="720" y="440" width="180" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="810" y="465.9">
+      <tspan x="810" y="465.9">Betriebsabwicklung auf</tspan>
+      <tspan x="810" y="481.9">Kurzwelle (BV10)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff80" x="740" y="560" width="180" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="740" y="560" width="180" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="830" y="585.9">
+      <tspan x="830" y="585.9">Betriebsabwicklung auf</tspan>
+      <tspan x="830" y="601.9">VHF/UHF (BV11)</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="920" y1="80.9766" x2="920" y2="89.2874"/>
+    <polygon style="fill: #000000" points="920,96.7874 915,86.7874 920,89.2874 925,86.7874 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="920,96.7874 915,86.7874 920,89.2874 925,86.7874 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1020.96" y1="130" x2="1069.26" y2="130"/>
+    <polygon style="fill: #000000" points="1076.76,130 1066.76,135 1069.26,130 1066.76,125 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1076.76,130 1066.76,135 1069.26,130 1066.76,125 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="920" y1="160.984" x2="920" y2="169.269"/>
+    <polygon style="fill: #000000" points="920,176.769 915,166.769 920,169.269 925,166.769 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="920,176.769 915,166.769 920,169.269 925,166.769 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="733.942" y1="300.981" x2="792.063" y2="430.14"/>
+    <polygon style="fill: #000000" points="795.141,436.979 786.477,429.912 792.063,430.14 795.597,425.808 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="795.141,436.979 786.477,429.912 792.063,430.14 795.597,425.808 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="911.443" y1="221.003" x2="826.302" y2="429.986"/>
+    <polygon style="fill: #000000" points="823.472,436.931 822.615,425.784 826.302,429.986 831.876,429.557 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="823.472,436.931 822.615,425.784 826.302,429.986 831.876,429.557 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1028.52" y1="380.974" x2="895.119" y2="435.322"/>
+    <polygon style="fill: #000000" points="888.173,438.152 895.548,429.748 895.119,435.322 899.321,439.009 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="888.173,438.152 895.548,429.748 895.119,435.322 899.321,439.009 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="939.009" y1="470" x2="910.739" y2="470"/>
+    <polygon style="fill: #000000" points="903.239,470 913.239,465 910.739,470 913.239,475 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="903.239,470 913.239,465 910.739,470 913.239,475 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="815.167" y1="501.003" x2="823.232" y2="549.393"/>
+    <polygon style="fill: #000000" points="824.465,556.791 817.889,547.749 823.232,549.393 827.753,546.105 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="824.465,556.791 817.889,547.749 823.232,549.393 827.753,546.105 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="920" y1="0.994873" x2="920" y2="9.28005"/>
+    <polygon style="fill: #000000" points="920,16.78 915,6.78005 920,9.28005 925,6.78005 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="920,16.78 915,6.78005 920,9.28005 925,6.78005 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="997.981" y1="220.995" x2="1069.6" y2="240.277"/>
+    <polygon style="fill: #000000" points="1076.84,242.227 1065.89,244.455 1069.6,240.277 1068.49,234.799 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1076.84,242.227 1065.89,244.455 1069.6,240.277 1068.49,234.799 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-14.875,600.977 -14.875,740 1180,740 1180,310.732 "/>
+    <polygon style="fill: #000000" points="1180,303.232 1185,313.232 1180,310.732 1175,313.232 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1180,303.232 1185,313.232 1180,310.732 1175,313.232 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="960" y="260" width="55.75" height="45.2833"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="960" y="260" width="55.75" height="45.2833"/>
+    <text font-size="6.20889" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="987.875" y="276.75">
+      <tspan x="987.875" y="276.75">Locator</tspan>
+      <tspan x="987.875" y="284.511">BV11</tspan>
+      <tspan x="987.875" y="292.272">vorziehen?</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="968.487" y1="259.036" x2="943.422" y2="228.517"/>
+    <polygon style="fill: #000000" points="938.661,222.721 948.872,227.276 943.422,228.517 941.144,233.622 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="938.661,222.721 948.872,227.276 943.422,228.517 941.144,233.622 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="965.445" y1="306.267" x2="846.103" y2="431.972"/>
+    <polygon style="fill: #000000" points="840.939,437.411 844.198,426.716 846.103,431.972 851.451,433.602 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="840.939,437.411 844.198,426.716 846.103,431.972 851.451,433.602 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="660" y1="600" x2="766.882" y2="507.369"/>
+    <polygon style="fill: #000000" points="772.55,502.457 768.267,512.785 766.882,507.369 761.718,505.228 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="772.55,502.457 768.267,512.785 766.882,507.369 761.718,505.228 "/>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #80c0ff" x="-120" y="520" width="210" height="40"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-120" y="520" width="210" height="40"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-15" y="543.9">
+        <tspan x="-15" y="543.9">Betriebsarten (E16)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffff80" x="-120" y="560" width="210.25" height="40"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-120" y="560" width="210.25" height="40"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-14.875" y="583.9">
+        <tspan x="-14.875" y="583.9">Digitale Betriebsarten (BV12)</tspan>
+      </text>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #80c0ff" x="240" y="600" width="200" height="60"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="240" y="600" width="200" height="60"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="340" y="633.9">
+        <tspan x="340" y="633.9">EMV und Sicherheit (E18)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffff80" x="240" y="660" width="200" height="60"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="240" y="660" width="200" height="60"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="340" y="685.9">
+        <tspan x="340" y="685.9">Störungen, EMV und</tspan>
+        <tspan x="340" y="701.9">EMVU, Sicherheit (BV14)</tspan>
+      </text>
+    </g>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="440" y="300" width="101.35" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="440" y="300" width="101.35" height="60"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="490.675" y="325.9">
+      <tspan x="490.675" y="325.9">Messtechnik</tspan>
+      <tspan x="490.675" y="341.9">(E17-SWR)</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 3; stroke-dasharray: 4; stroke: #000000" x1="1020" y1="620" x2="1032.45" y2="649.04"/>
+    <polygon style="fill: #000000" points="1035.4,655.933 1026.87,648.711 1032.45,649.04 1036.06,644.772 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 3; stroke: #000000" points="1035.4,655.933 1026.87,648.711 1032.45,649.04 1036.06,644.772 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="542.322" y1="346.425" x2="572.728" y2="356.095"/>
+    <polygon style="fill: #000000" points="579.876,358.368 568.831,360.102 572.728,356.095 571.861,350.573 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="579.876,358.368 568.831,360.102 572.728,356.095 571.861,350.573 "/>
+  </g>
+</svg>

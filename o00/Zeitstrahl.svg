@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="39cm" height="9cm" viewBox="-13 138 776 163" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" points="320,140 390,140 320,230 "/>
+  <polygon style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" points="390,230 390,140 320,230 "/>
+  <g>
+    <polygon style="fill: #ffffbf" points="320,140 390,140 320,230 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" points="320,140 390,140 320,230 "/>
+  </g>
+  <g>
+    <polygon style="fill: #bfe0ff" points="390,230 390,140 320,230 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" points="390,230 390,140 320,230 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffd280" points="730,230 730,140 660,230 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" points="730,230 730,140 660,230 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffff80" points="660,140 730,140 660,230 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" points="660,140 730,140 660,230 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="40" y1="240" x2="40" y2="253.333"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="160" y1="240" x2="160" y2="253.333"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="280" y1="240" x2="280" y2="253.333"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="400" y1="240" x2="400" y2="253.333"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="520" y1="240" x2="520" y2="253.333"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="640" y1="240" x2="640" y2="253.333"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="40" y1="240" x2="700" y2="240"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 3; stroke: #000000" x1="30" y1="240" x2="748.5" y2="240"/>
+    <polygon style="fill: #000000" points="748.5,245 758.5,240 748.5,235 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 3; stroke: #000000" points="748.5,245 758.5,240 748.5,235 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="70" y="254.45">
+    <tspan x="100" y="254.45">Oktober</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="310" y="254.45">
+    <tspan x="340" y="254.45">Dezember</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="430" y="254.45">
+    <tspan x="460" y="254.45">Januar</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="670" y="254.45">
+    <tspan x="700" y="254.45">März</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffff80" x="70" y="140" width="240" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="70" y="140" width="240" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="190" y="163.9">
+      <tspan x="190" y="163.9">Betriebstechnik/Vorschriften</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #80c0ff" x="70" y="190" width="240" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="70" y="190" width="240" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="190" y="213.9">
+      <tspan x="190" y="213.9">Technik Klasse E</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffd280" x="430" y="140" width="220" height="90"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="430" y="140" width="220" height="90"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="520" y="188.9">
+      <tspan x="540" y="188.9">Technik Klasse A</tspan>
+    </text>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="220" y="274.45">
+    <tspan x="220" y="274.45">Klasse E</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="580" y="274.45">
+    <tspan x="580" y="274.45">Upgrade Klasse A</tspan>
+  </text>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="320" y="140" width="70" height="90"/>
+    <text font-size="9.59556" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="355" y="175.908">
+      <tspan x="355" y="175.908">optional</tspan>
+      <tspan x="355" y="187.903">Prüfung</tspan>
+      <tspan x="355" y="199.897">Klasse E</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="660" y="140" width="70" height="90"/>
+    <text font-size="9.59556" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="655" y="181.906">
+      <tspan x="695" y="181.906">Prüfung</tspan>
+      <tspan x="695" y="193.9">Klasse A</tspan>
+    </text>
+  </g>
+  <text font-size="12.8" style="fill: #bfbfbf;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="190" y="254.45">
+    <tspan x="220" y="254.45">November</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #bfbfbf;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="550" y="254.45">
+    <tspan x="580" y="254.45">Februar</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 3; stroke: #000000" x1="400" y1="240" x2="400" y2="270"/>
+</svg>
