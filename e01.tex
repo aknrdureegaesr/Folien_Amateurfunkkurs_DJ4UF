@@ -1,20 +1,21 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Sebastian Lange <dl7bst@dk0tu.de>, Lars Weiler <dc4lw@darc.de>
+% Autoren: Sebastian Lange <dl7bst@dk0tu.de>
+% Korrekturen: Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 01: \\
-          Mathematische Grundlagen und Einheiten \\[2em]}
-\date{Stand 22.10.2015}
+  Mathematische Grundlagen und Einheiten \\[2em]}
+\date{Stand 10.10.2016}
 \input{texdata/titlepage}
 
 \section{Einleitung}
 
 \begin{frame}
-    \frametitle{Einleitung}
+  \frametitle{Einleitung}
 
-    Zu Beginn eine kurze Wiederholung der benötigten mathematischen Grundlagen
-    um das Schulwissen kurz aufzufrischen.
+  Zu Beginn eine kurze Wiederholung der benötigten mathematischen Grundlagen,
+  um das Schulwissen kurz aufzufrischen.
 
 \end{frame}
 
@@ -23,211 +24,187 @@
 \subsection{SI-Basissystem}
 
 \begin{frame}
-    \frametitle{SI-Basissystem}
+  \frametitle{SI-Basissystem}
 
-    SI\footnote{Système international d’unités, ab 1790 von franz. Akademie der
-    Wissenschaften entwickelt, immer wieder erweitert}-Einheiten: Weitest
-    verbreitetes System seit \emph{Meterkonvention} 1875 durch 17~Staaten.
-    \\[1em]
+  SI\footnote{Système international d’unités, ab 1790 von franz. Akademie der
+  Wissenschaften entwickelt, immer wieder erweitert}-Einheiten: Weitest
+  verbreitetes System seit \emph{Meterkonvention} 1875 durch 17~Staaten.
+  \\[1em]
 
-    Eigenschaften:
+  Eigenschaften:
 
-    \begin{itemize}
-        \item basiert auf metrischen Größen
-        \item dezimal (Basis 10)
-        \item kohärentes Einheitensystem\footnote{alles aus Basiseinheiten
-              ableitbar ohne zusätzliche Faktoren}
-        \item sieben Basiseinheiten
-    \end{itemize}
+  \begin{itemize}
+    \item basiert auf metrischen Größen
+    \item dezimal (Basis 10)
+    \item kohärentes Einheitensystem\footnote{alles aus Basiseinheiten
+      ableitbar ohne zusätzliche Faktoren}
+    \item sieben Basiseinheiten -- Welche?
+  \end{itemize}
 
-    \bigskip \pause
-    Welche Einheiten gibt es und welche Größen beschreiben sie?
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{SI-Basissystem}
-
-    \begin{center}
-        \includegraphics[height=0.75\textheight]{e01/SI_base_unit.png}
-        \tiny \hyperlink{refs}{\cite{wc}}
-    \end{center}
+  \bigskip \pause
+  Welche Einheiten gibt es und welche Größen beschreiben sie?
 
 \end{frame}
 
 \begin{frame}
+  \frametitle{SI-Basissystem}
 
-    \begin{block}{Beschreibung der Einheiten}
-      \begin{description}
-        \item[m/Meter] Länge
-        \item[A/Ampere] Stromstärke
-        \item[mol/Mol] Stoffmenge/Substanzmenge
-        \item[kg/Kilogramm] Masse
-        \item[K/Kelvin] Temperatur
-        \item[cd/Candela] Lichtstärke    
-        \item[s/Sekunde] Zeit    
-      \end{description}
-    \end{block}
-  
-    \pause
-    Kleiner Ausflug: SI vs. Imperial System...
+  \begin{center}
+    \begin{figure}
+      \includegraphics[height=0.75\textheight]{e01/SI_base_unit.png}
+      \attribcaption{SI Basiseinheiten}{Dono}{https://commons.wikimedia.org/wiki/File:SI_base_unit.svg}{\ccbysa}
+    \end{figure}
+  \end{center}
 
 \end{frame}
 
 \begin{frame}
+  \begin{block}{Beschreibung der Einheiten}
+    \begin{description}
+      \item[m/Meter] Länge
+      \item[A/Ampere] Stromstärke
+      \item[mol/Mol] Stoffmenge/Substanzmenge
+      \item[kg/Kilogramm] Masse
+      \item[K/Kelvin] Temperatur
+      \item[cd/Candela] Lichtstärke
+      \item[s/Sekunde] Zeit
+    \end{description}
+  \end{block}
 
-    \begin{center}
-        \includegraphics[height=1\textheight]{e01/imperial_vs_metric.jpeg}
-        \tiny \hyperlink{refs}{\cite{soup}}
-    \end{center}
+  \pause
+  Kleiner Ausflug: SI vs. Imperial System...
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[height=.9\textheight]{e01/imperial_vs_metric.jpeg}
+      \attribcaption{Imperial units vs. Metrical units}{n/a}{http://asset-f.soup.io/asset/2816/7317_fb37.jpeg}{}
+    \end{figure}
+  \end{center}
 
 \end{frame}
 
 \subsection{Abgeleitete Einheiten}
 
 \begin{frame}
-    \frametitle{Abgeleitete Einheiten}
+  \frametitle{Abgeleitete Einheiten}
 
-    \begin{center}
-    \footnotesize
-    \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|c|l|c|}\hline
-        \textbf{Formelzeichen} & \textbf{Maßeinheit} & \textbf{Größe} \\ \hline \hline
-        $Q$ & $C = A\cdot s$            & \textbf{?} \\ \hline
-        $U$ & $V$                       & \textbf{?} \\ \hline
-        $P$ & $W = V\cdot A$            & \textbf{?} \\ \hline
-        $E$ & $\frac{V}{m}$             & \textbf{?} \\ \hline
-        $H$ & $\frac{A}{m}$             & \textbf{?} \\ \hline
-        $f$ & $Hz = \frac{1}{s}$        & \textbf{?} \\ \hline
-        $R$ & $\Omega = \frac{V}{A}$    & \textbf{?} \\ \hline
-        $G$ & $S = \frac{1}{\Omega}$    & \textbf{?} \\ \hline
-        $C$ & $F = \frac{A\cdot s}{V}$  & \textbf{?} \\ \hline
-        $L$ & $H = \frac{V\cdot s}{A}$  & \textbf{?} \\ \hline
-    \end{tabular}
-    \end{center}
-
-    Vorsicht: Einheit vs. Formelzeichen vs. Zehnerpotenzen!
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Abgeleitete Einheiten}
-
-    \begin{center}
+  \begin{center}
     \footnotesize
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|c|l|l|}\hline
-        \textbf{Formelzeichen} & \textbf{Maßeinheit} & \textbf{Größe} \\ \hline \hline
-        $Q$ & $C = A\cdot s$            & Ladung          \\ \hline
-        $U$ & $V$                       & Spannung        \\ \hline
-        $P$ & $W = V\cdot A$            & Leistung        \\ \hline
-        $E$ & $\frac{V}{m}$             & El. Feldstärke  \\ \hline
-        $H$ & $\frac{A}{m}$             & Magn. Feldstärke\\ \hline
-        $f$ & $Hz = \frac{1}{s}$        & Frequenz        \\ \hline
-        $R$ & $\Omega = \frac{V}{A}$    & Widerstand      \\ \hline
-        $G$ & $S = \frac{1}{\Omega}$    & Leitwert        \\ \hline
-        $C$ & $F = \frac{A\cdot s}{V}$  & Kapazität       \\ \hline
-        $L$ & $H = \frac{V\cdot s}{A}$  & Induktivität    \\ \hline
+      \textbf{Formelzeichen} & \textbf{Maßeinheit} & \textbf{Größe} \\ \hline \hline
+      $Q$ & $C = A\cdot s$            & \only<2>{Ladung}           \\ \hline
+      $U$ & $V$                       & \only<2>{Spannung}         \\ \hline
+      $P$ & $W = V\cdot A$            & \only<2>{Leistung}         \\ \hline
+      $E$ & $\frac{V}{m}$             & \only<2>{El. Feldstärke}   \\ \hline
+      $H$ & $\frac{A}{m}$             & \only<2>{Magn. Feldstärke} \\ \hline
+      $f$ & $Hz = \frac{1}{s}$        & \only<2>{Frequenz}         \\ \hline
+      $R$ & $\Omega = \frac{V}{A}$    & \only<2>{Widerstand}       \\ \hline
+      $G$ & $S = \frac{1}{\Omega}$    & \only<2>{Leitwert}         \\ \hline
+      $C$ & $F = \frac{A\cdot s}{V}$  & \only<2>{Kapazität}        \\ \hline
+      $L$ & $H = \frac{V\cdot s}{A}$  & \only<2>{Induktivität}     \\ \hline
     \end{tabular}
-    \end{center}
 
-    %todo ggf. Frage/Antwort-Spiel mit Beispielen
-
-    Und weil es so schön war ein weiterer Ausflug: SI vs. Imperial System...
+    Vorsicht: Einheit vs. Formelzeichen vs. Zehnerpotenzen!
+  \end{center}
 
 \end{frame}
 
 \begin{frame}
 
-    \begin{center}
-        \includegraphics[height=1\textheight]{e01/imperial_vs_metric++.png}
-        \tiny \hyperlink{refs}{\cite{devi}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[height=.9\textheight]{e01/imperial_vs_metric++.png}
+      \attribcaption{Noch ein Ausflug zu SI vs. Imperial System}{n/a}{http://th03.deviantart.net/fs70/PRE/i/2012/358/1/f/imperial_vs__metric_by_nekit1234007-d5p0ou5.png}{}
+    \end{figure}
+  \end{center}
 
 \end{frame}
 
 \section{Zehnerpotenzen}
 
 \begin{frame}
-    \frametitle{Zehnerpotenzen}
+  \frametitle{Zehnerpotenzen}
 
-    Zur einfacheren Anwendung: Verwendung von Einheitenpräfixe als Potenzen zur Basis 10
+  Zur einfacheren Anwendung: Verwendung von Einheitenpräfixe als Potenzen zur Basis 10
 
-    \begin{center}
+  \begin{center}
     \footnotesize
-
     \begin{tabular}{|c|l|l|}\hline
-        \textbf{Symbol} & \textbf{Name} & \textbf{Potenz} \\ \hline \hline
-        $P$   & Peta  & $10^{15}$  \\ \hline
-        $T$   & Tera  & $10^{12}$  \\ \hline
-        $G$   & Giga  & $10^{09}$  \\ \hline
-        $M$   & Mega  & $10^{06}$  \\ \hline
-        $k$   & Kilo  & $10^{03}$  \\ \hline
-        $h$   & Hekto & $10^{02}$  \\ \hline
-        $da$  & Deka  & $10^{01}$  \\ \hline
-        $d$   & Dezi  & $10^{-01}$ \\ \hline
-        $c$   & Zenti & $10^{-02}$ \\ \hline
-        $m$   & Milli & $10^{-03}$ \\ \hline
-        $\mu$ & Mikro & $10^{-06}$ \\ \hline
-        $n$   & Nano  & $10^{-09}$ \\ \hline
-        $p$   & Piko  & $10^{-12}$ \\ \hline
-        $f$   & Femto & $10^{-15}$ \\ \hline
+      \textbf{Symbol} & \textbf{Name} & \textbf{Potenz} \\ \hline \hline
+      $P$   & Peta  & $10^{15}$  \\ \hline
+      $T$   & Tera  & $10^{12}$  \\ \hline
+      $G$   & Giga  & $10^{09}$  \\ \hline
+      $M$   & Mega  & $10^{06}$  \\ \hline
+      $k$   & Kilo  & $10^{03}$  \\ \hline
+      $h$   & Hekto & $10^{02}$  \\ \hline
+      $da$  & Deka  & $10^{01}$  \\ \hline
+      $d$   & Dezi  & $10^{-01}$ \\ \hline
+      $c$   & Zenti & $10^{-02}$ \\ \hline
+      $m$   & Milli & $10^{-03}$ \\ \hline
+      $\mu$ & Mikro & $10^{-06}$ \\ \hline
+      $n$   & Nano  & $10^{-09}$ \\ \hline
+      $p$   & Piko  & $10^{-12}$ \\ \hline
+      $f$   & Femto & $10^{-15}$ \\ \hline
     \end{tabular}
-    \end{center}
+  \end{center}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Zehnerpotenzen / Zum Nachdenken}
+  \frametitle{Zehnerpotenzen / Zum Nachdenken}
 
-    Sind alle Einheiten und ihre Präfixe ``case insensitive'' und zur Basis 10?
+  Sind alle Einheiten und ihre Präfixe ``case insensitive'' und zur Basis 10?
 
-    \begin{block}{\begin{center}\Large Mb vs. MB vs. MiB vs. mb\end{center}}
-        \only<2>{
-        \begin{itemize}
-            \item Mb = Megabit, Basis $10$
-            \item MB = Megabyte, Basis $10$
-            \item MiB = Mebibyte, Basis $2^{(10)}$
-            \item mb = Millibit!? ;-)
-        \end{itemize}
-        }
-    \end{block}
+  \begin{block}{\begin{center}\Large Mb vs. MB vs. MiB vs. mb\end{center}}
+    \only<2>{
+    \begin{itemize}
+      \item Mb = Megabit, Basis $10$
+      \item MB = Megabyte, Basis $10$
+      \item MiB = Mebibyte, Basis $2^{(10)}$
+      \item mb = Millibit!? ;-)
+    \end{itemize}
+    }
+  \end{block}
 
-    \vspace{2em}
+  \vspace{2em}
 
-    \only<2>{Auch nochmal zur Erinnerung: Einheiten, Formelzeichen und Präfixe nicht
-    durcheinanderwürfeln!}
+  \only<2>{Auch nochmal zur Erinnerung: Einheiten, Formelzeichen und Präfixe nicht
+  durcheinanderwürfeln!}
 
-    % todo ggf. Beispiele mit Zehnerpotenzen
+  % todo ggf. Beispiele mit Zehnerpotenzen
 
 \end{frame}
 
 \begin{frame}
+  \begin{alertblock}{Fakultative Hausaufgabe}
+    Zehnerpotenzen mit Name und Potenz auswendig lernen!
 
-    \begin{alertblock}{Fakultative Hausaufgabe}
-        Zehnerpotenzen mit Name und Potenz auswendig lernen!
-
-        \bigskip \tiny (Praktisch für den Alltag - notwendige stehen allerdings
-        in der Formelsammlung)
-    \end{alertblock}
-
+    \bigskip \tiny (Praktisch für den Alltag - notwendige stehen allerdings
+    in der Formelsammlung)
+  \end{alertblock}
 \end{frame}
+
 
 \section{Formeln umstellen}
 
 \begin{frame}
-    \frametitle{Formeln umstellen}
+  \frametitle{Formeln umstellen}
 
-    ...sollte grob beherrscht werden. \\[2em]
-    
-    Für \emph{Klasse E} geht es nicht über einfache Umstellungen\footnote{es
-    gibt eine umfangreiche Formelsammlung für die Prüfung} heraus, die man sich
-    über ein $U = R\cdot I$- oder $P = U\cdot I$-Dreieck herleiten kann.
+  ...sollte grob beherrscht werden. \\[2em]
 
-    \begin{center}
-      \includegraphics[scale=0.25]{e01/Ohm_law_triangle.png}
-      \footnote{das ohmsche Dreieck \cite{wmen}}
-    \end{center}
+  Für \emph{Klasse E} geht es nicht über einfache Umstellungen\footnote{es
+  gibt eine umfangreiche Formelsammlung für die Prüfung} heraus, die man sich über ein
+  $U = R\cdot I$- oder $P = U\cdot I$-Dreieck herleiten kann.
+
+  \begin{center}
+    \begin{figure}
+      \includegraphics[height=.4\textheight]{e03/Ohm_law_triangle.png}
+      \attribcaption{das ohmsche Dreieck}{Eirik}{https://commons.wikimedia.org/wiki/File:Ohm's_law_triangle.PNG}{\ccpd}
+    \end{figure}
+  \end{center}
 
 \end{frame}
 
@@ -239,16 +216,10 @@
 \footnotesize
 
 \begin{thebibliography}{}
-    \bibitem{dj4uf} Moltrecht E 01: \\
-                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e01/}
-    \bibitem{wp}    Wikipedia DE: \\
-                    \url{https://de.wikipedia.org/wiki/Internationales_Einheitensystem}\\
-    \bibitem{wc}    Wikimedia Commons \\
-                    \url{https://commons.wikimedia.org/wiki/File:SI_base_unit.svg}\\
-    \bibitem{soup}  \url{http://asset-f.soup.io/asset/2816/7317_fb37.jpeg}
-    \bibitem{devi}  \url{http://th03.deviantart.net/fs70/PRE/i/2012/358/1/f/imperial_vs__metric_by_nekit1234007-d5p0ou5.png}
-    \bibitem{wmen}  Wikimedia EN:\\
-                    \url{http://commons.wikimedia.org/wiki/File:Ohm\%27s_law_triangle.PNG}\\
-\end{thebibliography} 
+  \bibitem{dj4uf} Moltrecht E 01: \\
+    \url{https://www.darc.de/der-club/referate/ajw/lehrgang-te/e01/}
+  \bibitem{wp}    Wikipedia DE: \\
+    \url{https://de.wikipedia.org/wiki/Internationales_Einheitensystem}\\
+\end{thebibliography}
 
 \input{texdata/postamble}
