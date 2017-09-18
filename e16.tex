@@ -5,8 +5,8 @@
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 16 \& Betriebstechnik/Vorschriften 12: \\
-          (Digitale) Betriebsarten \\[2em]}
-\date{Stand 14.01.2016}
+  (Digitale) Betriebsarten \\[2em]}
+\date{Stand 12.12.2016}
 \input{texdata/titlepage}
 
 % todo Gern noch mehr Bilder - es ist ein schönes praktisches Thema.
@@ -20,55 +20,57 @@
 \section{Einleitung}
 
 \begin{frame}
-    \frametitle{Einleitung / Umleitung}
+  \frametitle{Einleitung / Umleitung}
 
-    Aufgrund sehr großer inhaltlicher Überschneidungen der beiden
-    \emph{Moltrecht}-Lektionen, ist die Lektion
-    \texttt{BV12}\hyperlink{refs}{\cite{bv12}} in diesen Foliensatz der Lektion
-    \texttt{Technik E16}\hyperlink{refs}{\cite{e16}} integriert. \\[2em]
+  Aufgrund sehr großer inhaltlicher Überschneidungen der beiden
+  \emph{Moltrecht}-Lektionen, ist die Lektion
+  \texttt{BV12}\hyperlink{refs}{\cite{bv12}} in diesen Foliensatz der Lektion
+  \texttt{Technik E16}\hyperlink{refs}{\cite{e16}} integriert. \\[2em]
 
-    Freut euch auf eine Lektion ``Klingeln in den Ohren'' :-)
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Einleitung / Betriebsarten}
-
-    Grundsätzlich unterscheidet man zwischen:
-
-    \begin{itemize}
-		\item analoge Betriebsarten
-		\item digitale Betriebsarten (Digimodes)
-    \end{itemize}
-
-    Vorweg: In der \emph{Klasse E} liegt der Fokus auf das Kennenlernen und
-    betriebstechnische Grundlagen. Die technischen Grundlagen werden dann im
-    Technikteil der \emph{Klasse A} ausgebaut.
+  Freut euch auf eine Lektion ``Klingeln in den Ohren'' :-)
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Einleitung / MODEM}
+  \frametitle{Einleitung / Betriebsarten}
 
-    Heute im Mittelpunkt: Das MODEM -- was ist das?
+  Grundsätzlich unterscheidet man zwischen:
+
+  \begin{itemize}
+    \item analoge Betriebsarten
+    \item digitale Betriebsarten (Digimodes)
+  \end{itemize}
+
+  Vorweg: In der \emph{Klasse E} liegt der Fokus auf das Kennenlernen und
+  betriebstechnische Grundlagen. Die technischen Grundlagen werden dann im
+  Technikteil der \emph{Klasse A} ausgebaut.
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Einleitung / MODEM}
+  \frametitle{Einleitung / MODEM}
 
-    Kofferwort: \textbf{MOD}ulate, \textbf{DEM}odulate.
+  Heute im Mittelpunkt: Das MODEM -- was ist das?
 
-    \begin{columns}[c]
-        \column[c]{8cm}
-            Meist denkt man an ein 56k- bzw. ITU-T Rec. V.90/V.92-Modem (PCM-codiert):\\[1em]
-            \centering \href{https://www.youtube.com/watch?v=abapFJN6glo}{[YouTube]}
-        \column{5cm}
-        \begin{center}
-            \includegraphics[width=.9\textwidth]{e16/Modems.jpg}
-            \tiny \hyperlink{refs}{\cite{wc}}
-        \end{center}
-    \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Einleitung / MODEM}
+
+  Kofferwort: \textbf{MOD}ulate, \textbf{DEM}odulate.
+
+  \begin{columns}[c]
+    \column[c]{.6\textwidth}
+    Meist denkt man an ein 56k- bzw. ITU-T Rec. V.90/V.92-Modem (PCM-codiert):\\[1em]
+    \centering \href{https://www.youtube.com/watch?v=abapFJN6glo}{\ExternalLink YouTube}
+    \column{.4\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=.9\textwidth,height=.7\textheight,keepaspectratio]{e16/Modems.jpg}
+        \attribcaption{Ein Stapel Modems}{Szumyk}{https://commons.wikimedia.org/wiki/File:Modems.jpg}{\ccPublicDomain}
+      \end{figure}
+    \end{center}
+  \end{columns}
 
 \end{frame}
 
@@ -77,34 +79,33 @@
 \subsection{Modulation (Wdh.)}
 
 \begin{frame}
-    \frametitle{Grundlegende Modulationsprinzipien}
+  \frametitle{Grundlegende Modulationsprinzipien}
+
+  \begin{columns}
+    \column[c]{.5\textwidth}
 
     Nochmal ein kurzer Blick auf:
-    \begin{equation*}
-        u_{mod} = A \cdot cos(\omega t + \varphi)
-    \end{equation*}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e14/modulationen.jpg}\\
+        \attribcaption{verschiedene Arten der Modulation}{Berserkerus}{https://commons.wikimedia.org/wiki/File:Amfm3-en-de.gif}{\ccbysa}
+      \end{figure}
+    \end{center}
 
-    Was kann hier moduliert werden?
+    \href{https://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}{\ExternalLink Animation}
 
-\end{frame}
+    \column[c]{.5\textwidth}
 
-\begin{frame}
-    \frametitle{Grundlegende Modulationsprinzipien}
+    \bigskip
 
-    \begin{equation*}
-        u_{mod} = A \cdot cos(\omega t + \varphi), ~ \omega = 2 \pi f
-    \end{equation*}
+    Heutige Verfahren kombinieren die Grundarten.
 
     \bigskip
 
     $\rightarrow$ Amplitudenmodulation \\
     $\rightarrow$ Winkelmodulation (FM, PM)
 
-    \bigskip
-
-    \href{https://upload.wikimedia.org/wikipedia/commons/a/a4/Amfm3-en-de.gif}{[Animation]}
-
-    \bigskip Heutige Verfahren kombinieren die Grundarten.
+  \end{columns}
 
 \end{frame}
 
@@ -112,231 +113,262 @@
 \subsection[Sprechfunk (Wdh.)]{Sprechfunk (Wiederholung)}
 
 \begin{frame}
-    \frametitle{Sprechfunk (Wiederholung)}
+  \frametitle{Sprechfunk (Wiederholung)}
 
-    In Lektion \texttt{E14} wurde das Thema bereits besprochen.
+  In Lektion \texttt{E14} wurde das Thema bereits besprochen.
 
-    Der Vollständigkeit halber seien sie noch einmal erwähnt - auch weil die
-    meisten Digimodes im Amateurfunk \emph{SSB} oder \emph{FM} als Hauptträger
-    benutzen.
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Sprechfunk (Wdh.)\,/\,SSB}
-
-
-    \begin{center}
-        $B_{SSB} ~ < ~ \frac{1}{2} B_{DSB} ~ = ~ \frac{1}{2} B_{AM}$ \\
-        \includegraphics[width=0.8\textwidth,height=.65\textheight,keepaspectratio]{e16/Ssb-de.png}
-        \tiny \hyperlink{refs}{\cite{wc}}
-    \end{center}
-
-    \centering
-    $\sim 2,7 kHz$ durchgängiges (da analoges) Spektrum ca. $300 Hz$ bis $3 kHz$
+  Der Vollständigkeit halber seien sie noch einmal erwähnt - auch weil die
+  meisten Digimodes im Amateurfunk \emph{SSB} oder \emph{FM} als Hauptträger
+  benutzen.
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Sprechfunk (Wdh.) / FM}
+  \frametitle{Sprechfunk (Wdh.)\,/\,SSB}
 
-    \begin{center}
-        \includegraphics[width=0.8\textwidth,height=.55\textheight,keepaspectratio]{e16/Dpx-fm-radio.png}
-        \tiny \hyperlink{refs}{\cite{wc}}
-    \end{center}
 
-    \centering Durchgängiges Spektrum -- für NBFM: \\
-    Je $2x$ Hub ($3 kHz$) + NF-Signal ($2,7 kHz$) um Träger herum \\[1em]
-    
-    $\rightarrow$ Gesamtbandbreite ca. $12 kHz$ ($12,5 kHz$ Kanalraster)
+  \begin{center}
+    $B_{SSB} ~ < ~ \frac{1}{2} B_{DSB} ~ = ~ \frac{1}{2} B_{AM}$ \\
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.65\textheight,keepaspectratio]{e16/Ssb-de.png}
+      \attribcaption{Verfahren zur Erzeugung eines SSB-Signals nach der Filtermethode. (Stark vereinfacht).}{DB1BMN}{https://commons.wikimedia.org/wiki/File:Ssb-de.png}{\ccPublicDomain}
+    \end{figure}
+  \end{center}
+
+  \centering
+  $\sim 2,7 kHz$ durchgängiges (da analoges) Spektrum ca. $300 Hz$ bis $3 kHz$
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Sprechfunk (Wdh.) / FM}
+
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.5\textheight,keepaspectratio]{e16/Dpx-fm-radio.png}
+      \attribcaption{A DPX graph of an FM-radio transmission. It's like a spectrum, but the colour shows how many times a certain level has been reached at a certain frequency.}{Casandro}{https://commons.wikimedia.org/wiki/File:Dpx-fm-radio.png}{\ccbysa}
+    \end{figure}
+  \end{center}
+
+  \centering Durchgängiges Spektrum -- für NBFM: \\
+  Je $2x$ Hub ($3 kHz$) + NF-Signal ($2,7 kHz$) um Träger herum \\[1em]
+
+  $\rightarrow$ Gesamtbandbreite ca. $12 kHz$ ($12,5 kHz$ Kanalraster)
 
 \end{frame}
 
 \subsection[Hell]{Hellschreiber}
 
 \begin{frame}
-    \frametitle{Hellschreiber aka Typenbildfernschreiber}
+  \frametitle{Hellschreiber aka Typenbildfernschreiber}
 
-    \begin{itemize}
-        \item 1929 von Rudolf Hell patentiert
-        \item Fernschreibgerät für störanfällige Übertragungen
-        \item Verwendung bis in die 1980er Jahre
-    \end{itemize}
+  \begin{itemize}
+    \item 1929 von Rudolf Hell patentiert
+    \item Fernschreibgerät für störanfällige Übertragungen
+    \item Verwendung bis in die 1980er Jahre
+  \end{itemize}
 
-    \begin{center}
+  \begin{center}
+    \begin{figure}
       \includegraphics[width=.6\textwidth,height=.4\textheight,keepaspectratio]{e16/Hell_cq.png}
-    \end{center}
+      \caption{Selbst erstellt mit \texttt{fldigi}}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Schriftzeichen im Raster von 7x7 Pixeln
-        \item 8,5 Zeichen (in einer Spalte) pro Sekunde (420bit/s)
-    \end{itemize}
+  \begin{itemize}
+    \item Schriftzeichen im Raster von 7x7 Pixeln
+    \item 8,5 Zeichen (in einer Spalte) pro Sekunde (420bit/s)
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Hellschreiber aka Typenbildfernschreiber}
+  \frametitle{Hellschreiber aka Typenbildfernschreiber}
 
-    \begin{center}
-        \includegraphics[width=.6\textwidth,height=.4\textheight,keepaspectratio]{e16/Hell_ans.png}
-        \footnote{unverrauschtes \& synchrones Bild}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.6\textwidth,height=.4\textheight,keepaspectratio]{e16/Hell_ans.png}
+      \caption{unverrauschtes \& synchrones Bild}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Bei der Decodiderung wird eine Schneckenwalze auf Papierband gedrückt
-        \item zwei Zeilen pro Schnecke; bei Asynchronität verläuft das Schriftbild
-    \end{itemize}
+  \begin{itemize}
+    \item Bei der Decodiderung wird eine Schneckenwalze auf Papierband gedrückt
+    \item zwei Zeilen pro Schnecke; bei Asynchronität verläuft das Schriftbild
+  \end{itemize}
 
-    \bigskip
+  \bigskip
 
-    $\rightarrow$ in Hardware: \url{https://www.youtube.com/watch?v=luc6QmNyPZ4} \\
-    $\rightarrow$ in Sofware: \emph{fldigi}-Demo
+  $\rightarrow$ in Hardware: \url{https://www.youtube.com/watch?v=luc6QmNyPZ4} \\
+  $\rightarrow$ in Sofware: \emph{fldigi}-Demo
 
 \end{frame}
 
 \subsection[SSTV]{Slow Scan Television (SSTV)}
 
 \begin{frame}
-    \frametitle{SSTV / Historie}
+  \frametitle{SSTV / Historie}
 
-    \textbf{S}low \textbf{S}can \textbf{T}elevision\\[1.5em]
+  \textbf{S}low \textbf{S}can \textbf{T}elevision\\[1.5em]
 
-    \begin{columns}[c]
-        \column[c]{7cm}
-        \begin{itemize}
-            \item 1958 durch US-HAMs veröffentlicht
-            \item Übertragung von Bildern in $3 kHz$ SSB-Kanal
-            \item damals Darstellung auf Katodenstrahlröhre mit hoher Nachleuchtdauer
-            \begin{itemize}
-                \item 120x120 px (b/w) in acht Sekunden
-                \item \emph{elektromechanischer SSTV-Empfänger} siehe \texttt{GIF}
-                      \href{https://upload.wikimedia.org/wikipedia/commons/1/1e/Mechanical_glow_drum_slow_scan_television_monitor.gif}{[Link]}
-            \end{itemize}
-        \end{itemize}
-        \column{6cm}
-        \begin{center}
-            \includegraphics[width=.9\textwidth]{e16/Mechanical_glow_drum_slow_scan_television_monitor.jpg}
-            \tiny \hyperlink{refs}{\cite{wc}}
-        \end{center}
-    \end{columns}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{SSTV / Technik}
-
-    \begin{center}
-        \includegraphics[width=0.4\textwidth]{e16/Sstv_frequences.png}
-        \includegraphics[width=0.4\textwidth]{e16/SSTV_signal.jpg}
-        \tiny \hyperlink{refs}{\cite{wc}}
-    \end{center}
-
-    \begin{itemize}%[<+->]
-        \item heute Software-MODEM via Soundkarte
-        \begin{itemize}
-            \item Quasi-Standard: 320x240(x zeilenweises RGB) Bildpunkt in 120s
-            \item zunehmend ziehen digitale Verfahren mit Fehlerkorrektur ein,
-                  z.B. \emph{MT63}\hyperlink{refs}{\cite{wp}}
-        \end{itemize}
-        \item SSTV-Norm: NF-Frequenz $2300 Hz$ weiß, $1500 Hz$ schwarz, $1200 Hz$ Sync
-        \item an Prä-/Postambel \& Bildsynchronisierimpuls kann man Modulation erkennen \\
-              \centering \Large $\rightarrow$ Demo: \texttt{qsstv}
-    \end{itemize}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{SSTV / Betriebstechnik}
-
-    \begin{center}
-        \includegraphics[width=0.7\textwidth,height=.7\textheight,keepaspectratio]{e16/Transmittingtubes.jpg}
-    \end{center}
-
-    %todo ordentliche QSL-Karte (Kontrast, Textgröße etc) und Antwort einfügen
-
+  \begin{columns}[c]
+    \column[c]{.5\textwidth}
     \begin{itemize}
-        \item Nachricht meist Fotos von der Funkstation und Text im Bild codiert
+      \item 1958 durch US-HAMs veröffentlicht
+      \item Übertragung von Bildern in $3 kHz$ SSB-Kanal
+      \item damals Darstellung auf Katodenstrahlröhre mit hoher Nachleuchtdauer
+        \begin{itemize}
+          \item 120x120 px (b/w) in acht Sekunden
+          \item \emph{elektromechanischer SSTV-Empfänger} siehe \texttt{GIF}
+            \href{https://upload.wikimedia.org/wikipedia/commons/1/1e/Mechanical_glow_drum_slow_scan_television_monitor.gif}{\ExternalLink Link}
+        \end{itemize}
     \end{itemize}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{SSTV / Betriebstechnik}
-
-    Nach der Übertragung:
-
+    \column{.4\textwidth}
     \begin{center}
-        \includegraphics[width=0.45\textwidth,height=.45\textheight,keepaspectratio]{e16/sstv_cq.png}
-        ~
-        \includegraphics[width=0.45\textwidth,height=.45\textheight,keepaspectratio]{e16/sstv_cq_201411241627.png}
+      \begin{figure}
+        \includegraphics[width=.9\textwidth,height=.75\textheight,keepaspectratio]{e16/Mechanical_glow_drum_slow_scan_television_monitor.jpg}
+        \attribcaption{SSTV Monitor (als Animation in verlinktem GIF)}{Dalkmoore2007}{https://commons.wikimedia.org/wiki/File:Mechanical_glow_drum_slow_scan_television_monitor.gif}{\ccPublicDomain}
+      \end{figure}
     \end{center}
+  \end{columns}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{SSTV / Betriebstechnik}
+  \frametitle{SSTV / Technik}
 
-    \begin{center}
-        \includegraphics[width=0.35\textwidth,height=.35\textheight,keepaspectratio]{e16/sstv_qso_201306141504-F4GIS.jpg}
-        ~
-        \includegraphics[width=0.35\textwidth,height=.35\textheight,keepaspectratio]{e16/sstv_qso_201306141947-JP7BNO.jpg}
-        \\[1em]
-        \includegraphics[width=0.35\textwidth,height=.35\textheight,keepaspectratio]{e16/sstv_qso_201307141440-F4FRG.jpg}
-        ~
-        \includegraphics[width=0.35\textwidth,height=.35\textheight,keepaspectratio]{e16/sstv_qso_201307151417-F6APZ.jpg}
-    \end{center}
+  \begin{columns}
+    \column[c]{.4\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.25\textheight,keepaspectratio]{e16/Sstv_frequences.png}
+      \attribcaption{SSTV Frequenzen}{Zot}{https://commons.wikimedia.org/wiki/File:Sstv_frequences.svg}{\href{https://www.gnu.org/copyleft/gpl-3.0.html}{GPL}}
+    \end{figure}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.25\textheight,keepaspectratio]{e16/SSTV_signal.jpg}
+      \attribcaption{SSTV Signal}{Mysid}{https://commons.wikimedia.org/wiki/File:SSTV_signal.jpg}{\ccPublicDomain}
+    \end{figure}
 
-    \centering QSO-Beispiele. RST $\rightarrow$ RSV...
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{SSTV / Rapportsystem}
-   
-    %todo Anmerkung: Rapportsystem kommt erst in BV13 dran - Foto einfügen?
-
-    Rapportsystem \textbf{RSV}\hyperlink{refs}{\cite{bv12}}: Readability, Signal Strength, Video
-
+    \column[c]{.6\textwidth}
     \begin{itemize}
-        \item V1 = Nur Synchronisation zu sehen
-        \item V2 = Großes Call lesbar
-        \item V3 = Große Details zu erkennen
-        \item V4 = Kleine Details zu erkennen
-        \item V5 = rauschfreies Bild
+      \item heute Software-MODEM via Soundkarte
+        \begin{itemize}
+          \item Quasi-Standard: 320x240 (x zeilenweises RGB) Bildpunkt in 120s
+          \item zunehmend ziehen digitale Verfahren mit Fehlerkorrektur ein,
+            z.B. \emph{MT63} \hyperlink{refs}{\cite{wp}}
+        \end{itemize}
+      \item SSTV-Norm: NF-Frequenz $2300 Hz$ weiß, $1500 Hz$ schwarz, $1200 Hz$ Sync
+      \item an Prä-/Postambel \& Bildsynchronisierimpuls kann man Modulation erkennen \\
+        \centering $\rightarrow$ Demo: \texttt{qsstv}
     \end{itemize}
-
-    \bigskip
-
-    Rapport wird ebenfalls im Bild eingefügt \dots
+  \end{columns}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{SSTV / Rapportsystem}
+  \frametitle{SSTV / Betriebstechnik}
 
-    Übertragung der ISS, empfangen mit einem HFG (Gummiwurst) \& Smartphone:
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth,height=.6\textheight,keepaspectratio]{e16/Transmittingtubes.jpg}
+      \caption{zu übertragendes SSTV Bild}
+    \end{figure}
+  \end{center}
 
-    \begin{center}
-        \includegraphics[width=0.45\textwidth,height=.45\textheight,keepaspectratio]{e16/SSTV-RS0ISS.jpg}
-        \footnote{RSV 594 (einwandfrei lesbar, S?, kleine Details zu erkennen)}
-        ~
-        \includegraphics[width=0.45\textwidth,height=.45\textheight,keepaspectratio]{e16/SSTV-RS0ISS_2015-07-19.jpg}
-        \footnote{RSV 292 (zeitweise lesbar, S?, großes Call lesbar)}
-    \end{center}
+  %todo ordentliche QSL-Karte (Kontrast, Textgröße etc) und Antwort einfügen
 
-    Da starkes Signal, Demodulation sehr einfach -- mehr Infos: \url{http://ariss-sstv.blogspot.de/}
+  Nachricht meist Fotos von der Funkstation und Text im Bild codiert
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{SSTV / ``NF over Ackerschnacker''}
+  \frametitle{SSTV / Betriebstechnik}
 
-    \begin{center}
-        \includegraphics[width=0.5\textwidth,height=.8\textheight,keepaspectratio]{e16/SSTV-over-Ackerschnacker_LNDW2014.jpg}
-        \footnote{SSTV über Feldtelefon \emph{Lange Nacht der Wissenschaften} 2014, \\
-                  Ebenfalls gestestet: Rohrpostsystem ``Seidenstraße'' auf dem
-                  Chaos Communication Congress}
-    \end{center}
+  Nach der Übertragung:
+
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.45\textwidth,height=.45\textheight,keepaspectratio]{e16/sstv_cq.png}
+      ~
+      \includegraphics[width=0.45\textwidth,height=.45\textheight,keepaspectratio]{e16/sstv_cq_201411241627.png}
+      \caption{Empfangene SSTV Bilder}
+    \end{figure}
+  \end{center}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{SSTV / Betriebstechnik}
+
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.35\textwidth,height=.35\textheight,keepaspectratio]{e16/sstv_qso_201306141504-F4GIS.jpg}
+      ~
+      \includegraphics[width=0.35\textwidth,height=.35\textheight,keepaspectratio]{e16/sstv_qso_201306141947-JP7BNO.jpg}
+      \\[1em]
+      \includegraphics[width=0.35\textwidth,height=.35\textheight,keepaspectratio]{e16/sstv_qso_201307141440-F4FRG.jpg}
+      ~
+      \includegraphics[width=0.35\textwidth,height=.35\textheight,keepaspectratio]{e16/sstv_qso_201307151417-F6APZ.jpg}
+      %\caption{Empfangene SSTV Bilder}
+    \end{figure}
+  \end{center}
+
+  \centering QSO-Beispiele. RST $\rightarrow$ RSV...
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{SSTV / Rapportsystem}
+
+  %todo Anmerkung: Rapportsystem kommt erst in BV13 dran - Foto einfügen?
+
+  Rapportsystem \textbf{RSV}\hyperlink{refs}{\cite{bv12}}: Readability, Signal Strength, Video
+
+  \begin{itemize}
+    \item V1 = Nur Synchronisation zu sehen
+    \item V2 = Großes Call lesbar
+    \item V3 = Große Details zu erkennen
+    \item V4 = Kleine Details zu erkennen
+    \item V5 = rauschfreies Bild
+  \end{itemize}
+
+  \bigskip
+
+  Rapport wird ebenfalls im Bild eingefügt \dots
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{SSTV / Rapportsystem}
+
+  Übertragung der ISS, empfangen mit einem HFG (Gummiwurst) \& Smartphone:
+
+  \begin{columns}
+    \column[c]{.45\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e16/SSTV-RS0ISS.jpg}
+      \caption{RSV 594 (einwandfrei lesbar, S?, kleine Details zu erkennen)}
+    \end{figure}
+
+    \column[c]{.45\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e16/SSTV-RS0ISS_2015-07-19.jpg}
+      \caption{RSV 292 (zeitweise lesbar, S?, großes Call lesbar)}
+    \end{figure}
+  \end{columns}
+
+  Da starkes Signal, Demodulation sehr einfach -- mehr Infos: \url{http://ariss-sstv.blogspot.de/}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{SSTV / ``NF over Ackerschnacker''}
+
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.5\textwidth,height=.6\textheight,keepaspectratio]{e16/SSTV-over-Ackerschnacker_LNDW2014.jpg}
+      \caption{SSTV über Feldtelefon \emph{Lange Nacht der Wissenschaften} 2014; Ebenfalls gestestet: Rohrpostsystem ``Seidenstraße'' auf dem Chaos Communication Congress}
+    \end{figure}
+  \end{center}
 
 \end{frame}
 
@@ -350,235 +382,247 @@
 \subsection[ATV]{Amateurfunk-Fernsehen, analog ATV}
 
 \begin{frame}
-    \frametitle{ATV}
+  \frametitle{ATV}
 
-    Amateurfunk-Fernsehen, analog ATV
+  Amateurfunk-Fernsehen, analog ATV
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth,height=.45\textheight,keepaspectratio]{e16/SVECS-atv16.jpg}
-        \tiny \hyperlink{refs}{\cite{atv}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.4\textheight,keepaspectratio]{e16/SVECS-atv16.jpg}
+      \caption{Bild von \ExternalLink\url{http://www.svecs.net/SVECS-atv16.JPG}}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item technisch wie klassisches analoges Fernsehen
-        \item $BW = 6,5 MHz$ -- logischerweise nichts für HF und VHF
-        \item auch hier liegt der Fokus inzwischen auf digitaler Übertragung
-        \begin{itemize}
-            \item Schmalband ATV (\emph{SATV}, $1 MHz$) im Prinzip $\equiv$ \emph{DVB}
-        \end{itemize}
-    \end{itemize}
+  \begin{itemize}
+    \item technisch wie klassisches analoges Fernsehen
+    \item $BW = 6,5 MHz$ -- logischerweise nichts für HF und VHF
+    \item auch hier liegt der Fokus inzwischen auf digitaler Übertragung
+      \begin{itemize}
+        \item Schmalband ATV (\emph{SATV}, $1 MHz$) im Prinzip $\equiv$ \emph{DVB}
+      \end{itemize}
+  \end{itemize}
 
 \end{frame}
 
 \section{digital}
 
 \begin{frame}
-    \frametitle{Digitale Betriebsarten}
+  \frametitle{Digitale Betriebsarten}
 
-    \centering Digital bedeutet die Verwendung quantisierter bzw. diskreter Werte.
+  \centering Digital bedeutet die Verwendung quantisierter bzw. diskreter Werte.
 
 \end{frame}
 
 \subsection[CW]{Morsetelegrafie (CW)}
 
 \begin{frame}
-    \frametitle{Morsetelegrafie (CW)}
+  \frametitle{Morsetelegrafie (CW)}
 
-    \begin{center}
-        \includegraphics[width=1\textwidth]{e16/CQWW_2013_CW_Waterfall.png}
-        \footnote{Wasserfalldiagramm \emph{CQ WW Contest} 2013}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.5\textheight,keepaspectratio]{e16/CQWW_2013_CW_Waterfall.png}
+      \caption{Wasserfalldiagramm \emph{CQ WW Contest} 2013}
+    \end{figure}
+  \end{center}
 
-    \emph{A1A} aka \emph{ASK (amplitude shift keying)} -- die Mutter aller
-    Betriebsarten -- ja, digital!
+  \emph{A1A} aka \emph{ASK (amplitude shift keying)} -- die Mutter aller
+  Betriebsarten -- ja, digital!
 
-    \begin{itemize}
-        \item ``menschenlesbarer'' Digimode mit ausreichend Training
-        \item Bandbreite je nach Geschwindigkeit \& Qualität ca. $200-500 Hz$
-              \footnote{Interessante Ausführungen zu Bandbreite und SNR von
-              DK5KE: \url{http://www.qsl.net/dk5ke/a1a.html}}
-              $\rightarrow$ besserer $SNR$ bei gleicher Leistung als z.B. \emph{SSB}
-        %\item durch bekannte Abkürzungen einfache QSOs ohne
-        %      Fremdsprachenkenntnisse möglich 
-    \end{itemize}
+  \begin{itemize}
+    \item ``menschenlesbarer'' Digimode mit ausreichend Training
+    \item Bandbreite je nach Geschwindigkeit \& Qualität ca. $200-500 Hz$
+      \footnote{Interessante Ausführungen zu Bandbreite und SNR von
+      DK5KE: \url{http://www.qsl.net/dk5ke/a1a.html}}
+      $\rightarrow$ besserer $SNR$ bei gleicher Leistung als z.B. \emph{SSB}
+    %\item durch bekannte Abkürzungen einfache QSOs ohne
+    %      Fremdsprachenkenntnisse möglich
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{CW / Demo}
+  \frametitle{CW / Demo}
 
-    \Large{Ohren gespitzt... es spricht für Sie: \emph{Fldigi}}
+  \Large{Ohren gespitzt... es spricht für Sie: \emph{Fldigi}}
 
 \end{frame}
 
 \subsection[RTTY]{Funkfernschreib-Telegrafie (RTTY)}
 
 \begin{frame}
-    \frametitle{Funkfernschreib-Telegrafie (RTTY)}
+  \frametitle{Funkfernschreib-Telegrafie (RTTY)}
 
-    \textbf{R}adio \textbf{T}ele\textbf{TY}pe
+  \textbf{R}adio \textbf{T}ele\textbf{TY}pe
 
-    \begin{center}
-        \includegraphics[width=0.5\textwidth,height=.35\textheight,keepaspectratio]{e16/RTTY_LNDW2014.jpg}
-        \footnote{RTTY-RX \emph{Lange Nacht der Wissenschaften} 2014}
-    \end{center}
+  \begin{columns}
+    \column[c]{.5\textwidth}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{e16/RTTY_LNDW2014.jpg}
+      \caption{RTTY-RX \emph{Lange Nacht der Wissenschaften} 2014}
+    \end{figure}
 
-    %todo Bild Fernschreiber
+  %todo Bild Fernschreiber
 
+    \column[c]{.5\textwidth}
     \begin{itemize}
-        \item simplex oder semiduplex auf einer Frequenz
-        \item früher:
-            \begin{itemize}
-                \item TX: elektromechanische Fernschreiber mit kontaktierter
-                      Schreibmaschinentastatur
-                \item RX: Fernschreibdrucker
-            \end{itemize}
-        \item heute: Software - klar.
+      \item simplex oder semiduplex auf einer Frequenz
+      \item früher:
+        \begin{itemize}
+          \item TX: elektromechanische Fernschreiber mit kontaktierter
+            Schreibmaschinentastatur
+          \item RX: Fernschreibdrucker
+        \end{itemize}
+      \item heute: Software - klar.
     \end{itemize}
+  \end{columns}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{RTTY / Technik}
+  \frametitle{RTTY / Technik}
 
-    \begin{itemize}
-        \item fünf Kontakte $\rightarrow$ Baudot 5-Bit-Code\footnote{später
-              CCITT-1 bzw. Baudot-Murray-Code CCITT-2}: \\
-              $2^5 = 32 Bit$ -- mehr
-              Zeichen durch umschaltbare Register möglich
-        \item \emph{AFSK}\footnote{Audio Frequency Shift Keying}:
-              $1$ und $0$ $\rightarrow$ Mark- und Space-Frequenz
-        \item Abstand = Shift = 2x Hub
-        \item Kurzwellenshift 170 Hz, UKW 850 Hz
-              % todo Skizze bzw. Screenshot Spektrum
-        \item mehr technische Details: Technik Klasse A (A15)
-    \end{itemize}
+  \begin{itemize}
+    \item fünf Kontakte $\rightarrow$ Baudot 5-Bit-Code\footnote{später
+      CCITT-1 bzw. Baudot-Murray-Code CCITT-2}: \\
+      $2^5 = 32$ Zeichen -- mehr
+      Zeichen durch umschaltbare Register möglich
+    \item \emph{AFSK}\footnote{Audio Frequency Shift Keying}:
+      $1$ und $0$ $\rightarrow$ Mark- und Space-Frequenz
+    \item Abstand = Shift = 2x Hub
+    \item Kurzwellenshift 170 Hz, UKW 850 Hz
+      % todo Skizze bzw. Screenshot Spektrum
+    \item mehr technische Details: Technik Klasse A (A15)
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{RTTY / Demo}
+  \frametitle{RTTY / Demo}
 
-    \Large{Ohren gespitzt... es spricht für Sie: \emph{Fldigi}}\\[2em]
-    \pause
-    \bigskip
-    \normalsize
-    Für Interessierte:
-    Teletype mit Dampf -- ``Steam Powered Telegraphy (24C3)''\hyperlink{refs}{\cite{steam}}
+  \Large{Ohren gespitzt... es spricht für Sie: \emph{Fldigi}}\\[2em]
+  \pause
+  \bigskip
+  \normalsize
+  Für Interessierte:
+  \href{https://media.ccc.de/v/24c3-2338-en-steam_powered_telegraphy}{\ExternalLink Teletype mit Dampf -- ``Steam Powered Telegraphy (24C3)''}
 
 \end{frame}
- 
+
 \subsection{PSK31}
 
 \begin{frame}
-    \frametitle{PSK31: (\textbf{B}inary) \textbf{P}hase \textbf{S}hift \textbf{K}eying (31)}
+  \frametitle{PSK31: (\textbf{B}inary) \textbf{P}hase \textbf{S}hift \textbf{K}eying (31)}
 
-    Kurzer Ausflug: Zweiwertige Phasenmodulation (BPSK aka 2-PSK)
+  Kurzer Ausflug: Zweiwertige Phasenmodulation (BPSK aka 2-PSK)
 
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.9\textwidth,height=.5\textheight,keepaspectratio]{e16/Phase_modulation_x800.png}
+      \attribcaption{Phasenmodulation}{L31n42}{https://commons.wikimedia.org/wiki/File:Phase_modulation_(PHM).svg}{\cczero}
+    \end{figure}
+  \end{center}
+
+  Andere Abbildungen wie IQ-Diagramm dann in \emph{Klasse A}.
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{(B)PSK31}
+
+  \begin{columns}[c]
+    \column[c]{.7\textwidth}
+    \begin{itemize}
+      \item BPSK31 eine der Standard-QRP-Betriebsarten
+        \begin{itemize}
+          \item zwei Phasenlagen ($0^{\circ}$, $180^{\circ}$)
+          \item Bitrate von $31,25 Bit/s$
+          \item Bandbreite entspricht ca. Bitrate pro Sekunde, $31Hz$
+        \end{itemize}
+      \item im Vgl. zu CW ca. $\frac{1}{10}$ Bandbreite $\rightarrow$ \\
+        $SNR \approx +10dB$ (Filterung \& selbe Leistung)
+      \item Modulation/Demodulation mit Software (Soundcard SDR)
+      \item auch QPSK (Quadratur), 8-PSK, ...
+    \end{itemize}
+
+    \column[c]{.3\textwidth}
     \begin{center}
-        \includegraphics[width=.9\textwidth,height=.7\textheight,keepaspectratio]{e16/Phase_modulation_x800.png}
-        \tiny \hyperlink{refs}{\cite{wc}}
+      \begin{figure}
+        \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{e16/BPSK_31_63_125.jpg}
+        \attribcaption{spectrum diagram of BPSK 31, 63 and 125 signal (from 3584.9 bo 3585.1 kHz)}{Cqdx}{https://commons.wikimedia.org/wiki/File:BPSK_31_63_125.jpg}{\ccbysa}
+      \end{figure}
     \end{center}
-
-    Andere Abbildungen wie IQ-Diagramm dann in \emph{Klasse A}.
-
-\end{frame}
-
-
-\begin{frame}
-    \frametitle{(B)PSK31}
-
-    \begin{columns}[c]
-        \column[c]{8cm}
-            \begin{itemize}
-                \item BPSK31 eine der Standard-QRP-Betriebsarten
-                \begin{itemize}
-                    \item zwei Phasenlagen ($0^{\circ}$, $180^{\circ}$)
-                    \item Bitrate von $31,25 Bit/s$
-                    \item Bandbreite entspricht ca. Bitrate pro Sekunde, $31Hz$
-                \end{itemize}
-                \item im Vgl. zu CW ca. $\frac{1}{10}$ Bandbreite $\rightarrow$ \\
-                      $SNR \approx +10dB$ (Filterung \& selbe Leistung)
-                \item Modulation/Demodulation mit Software (Soundcard SDR)
-                \item auch QPSK (Quadratur), 8-PSK, ...
-            \end{itemize}
-        \column{2cm}
-        \begin{center}
-            \includegraphics[width=1\textwidth,height=.7\textheight,keepaspectratio]{e16/BPSK_31_63_125.jpg}
-            \tiny \hyperlink{refs}{\cite{wc}}
-            \scriptsize BPSK31/63/125
-        \end{center}
-    \end{columns}
+  \end{columns}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{PSK31 / Demo}
+  \frametitle{PSK31 / Demo}
 
-    \Large{Ohren gespitzt... es spricht für Sie: \emph{Fldigi}}
+  \Large{Ohren gespitzt... es spricht für Sie: \emph{Fldigi}}
 
 \end{frame}
 
 \subsection{Baudrate}
 
 \begin{frame}
-    \frametitle{Baudrate}
+  \frametitle{Baudrate}
 
-    Der Vollständigkeit halber: \\[2em]
+  Der Vollständigkeit halber: \\[2em]
 
-    \begin{center}
-        $1 Bd = 1 \frac{Symbol}{s} = Symboldauer^{-1}$
-    \end{center}
+  \begin{center}
+    $1 Bd = 1 \frac{Symbol}{s} = Symboldauer^{-1}$
+  \end{center}
 
-    Bei binären Modulationsverfahren entspricht das der Bitrate. Gibt es mehr
-    als zwei Symbole ist die Bitrate höher als die Baudrate. Beispiele:
+  Bei binären Modulationsverfahren entspricht das der Bitrate. Gibt es mehr
+  als zwei Symbole ist die Bitrate höher als die Baudrate. Beispiele:
 
-    \begin{itemize}
-        \item RTTY: Bitrate = \only<1>?\only<2>1x Baudrate
-        \item BPSK31: Bitrate = \only<1>?\only<2>1x Baudrate
-        \item BPSK63: Bitrate = \only<1>?\only<2>1x Baudrate
-        \item QPSK: Bitrate = \only<1>?\only<2>2x Baudrate
-    \end{itemize}
+  \begin{itemize}
+    \item RTTY: Bitrate = \only<1>?\only<2>1x Baudrate
+    \item BPSK31: Bitrate = \only<1>?\only<2>1x Baudrate
+    \item BPSK63: Bitrate = \only<1>?\only<2>1x Baudrate
+    \item QPSK: Bitrate = \only<1>?\only<2>2x Baudrate
+  \end{itemize}
 
 \end{frame}
 
 \subsection{WSJT}
 
 \begin{frame}
-    \frametitle{WSJT (FSK441, JT65, JT9)}
+  \frametitle{WSJT (FSK441, JT65, JT9)}
 
-    \textbf{W}eak \textbf{S}ignal communication by K1\textbf{JT} \\[2em]
+  \textbf{W}eak \textbf{S}ignal communication by K1\textbf{JT} \\[2em]
 
-    Soundcard SDR ($\rightarrow SSB$) Open-Source-Projekt für Gruppe von
-    Übertragungsprotokollen, z.B.:
+  Soundcard SDR ($\rightarrow SSB$) Open-Source-Projekt für Gruppe von
+  Übertragungsprotokollen, z.B.:
 
-    \begin{itemize}
-        \item Meteorscatter (schnell): FSK441\footnote{Vierton Frequenzumtastung
-              (\emph{FSK}) mit 441 Baud}
-        \item EME, Troposcatter (schwache Signale): JT65\footnote{\emph{MFSK
-              (Multiple Frequency Shift Keying)} mit 65 Tönen}
-        \item Mittel- und Langwelle (schmalbandig): JT9\footnote{ähnlich JT65}
-    \end{itemize}
+  \begin{itemize}
+    \item Meteorscatter (schnell): FSK441\footnote{Vierton Frequenzumtastung
+      (\emph{FSK}) mit 441 Baud}
+    \item EME, Troposcatter (schwache Signale): JT65\footnote{\emph{MFSK
+      (Multiple Frequency Shift Keying)} mit 65 Tönen}
+    \item Mittel- und Langwelle (schmalbandig): JT9\footnote{ähnlich JT65}
+  \end{itemize}
 
-    \bigskip
+  \bigskip
 
-    Für mehr Infos Vortrag von DC4LW\hyperlink{refs}{\cite{wsjt}}.
+  Für mehr Infos Vortrag von DC4LW\hyperlink{refs}{\cite{wsjt}}.
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{WSJT / FSK441}
+  \frametitle{WSJT / FSK441}
 
-    Beispiel FSK441:
+  Beispiel FSK441:
 
-    \begin{itemize}
-        \item Zeichen besteht aus nacheinandergesendeten drei von den vier Tönen
-        \item Übertragungsgeschwindigkeit 147 Buchstaben/s $\rightarrow$
-              \textbf{Meteorscatter}
-        \item Pong ca. $\frac{1}{10}s$ (100km über der Erde) $\rightarrow$ 15 Zeichen
-        \item 144,370 MHz Anruf-QRG, ab Kontaktaufnahme QSY
-        \item Rapporte nach speziellem Kurzzystem
-    \end{itemize}
+  \begin{itemize}
+    \item Zeichen besteht aus nacheinandergesendeten drei von den vier Tönen
+    \item Übertragungsgeschwindigkeit 147 Buchstaben/s $\rightarrow$
+      \textbf{Meteorscatter}
+    \item Pong ca. $\frac{1}{10}s$ (100km über der Erde) $\rightarrow$ 15 Zeichen
+    \item 144,370 MHz Anruf-QRG, ab Kontaktaufnahme QSY
+    \item Rapporte nach speziellem Kurzzystem
+  \end{itemize}
 
 \end{frame}
 
@@ -587,401 +631,420 @@
 \subsubsection{Verfahren}
 
 \begin{frame}
-    \frametitle{ARQ-Protokolle / Verfahren}
+  \frametitle{ARQ-Protokolle / Verfahren}
 
-    \textbf{A}utomatic \textbf{R}epeat re\textbf{Q}uest
+  \textbf{A}utomatic \textbf{R}epeat re\textbf{Q}uest
 
-    zuverlässige Datenübertragung durch Sendewiederholungen:
+  zuverlässige Datenübertragung durch Sendewiederholungen:
 
-    \begin{itemize}
-        \item erfordert ein Verfahren zur Fehlererkennung, z.B. Checksummen
-        \item Feedback: \emph{ACK/NAK}-Signale\footnote{\emph{Acknowledgement} /
-              {Negative Acknowledgement}}
-        \item ggf. Wiederholung der Nachricht
-    \end{itemize}
+  \begin{itemize}
+    \item erfordert ein Verfahren zur Fehlererkennung, z.B. Checksummen
+    \item Feedback: \emph{ACK/NAK}-Signale\footnote{\emph{Acknowledgement} /
+      {Negative Acknowledgement}}
+    \item ggf. Wiederholung der Nachricht
+  \end{itemize}
 
-    In Kombination mit Kanalcodierung (Hinzufügen von Redundanz, wie z.B.
-    \emph{FEC}\footnote{Forward Error Correction}) genauer: Hybride \emph{ARQ-Protokolle}.
+  In Kombination mit Kanalcodierung (Hinzufügen von Redundanz, wie z.B.
+  \emph{FEC}\footnote{Forward Error Correction}) genauer: Hybride \emph{ARQ-Protokolle}.
 
 \end{frame}
 
 \subsubsection{AMTOR}
 
 \begin{frame}
-    \frametitle{AMTOR}
+  \frametitle{AMTOR}
 
-    \textbf{A}mateur \textbf{T}eleprinting \textbf{O}ver \textbf{R}adio
+  \textbf{Am}ateur \textbf{T}eleprinting \textbf{O}ver \textbf{R}adio
 
-    \begin{itemize}
-        \item 1978 veröffentlicht, in der Seefahrt wurden ähnliche Verfahren benutzt
-        \item erstes einfaches ARQ-Protokoll nach Schema ``Stop-and-Wait''
-        \begin{itemize}
-            \item hohe Übertragungssicherheit: in $450ms$-Sendelücke TX von drei
-                  Kontrollzeichen ($240ms$) Quittung
-            \item ergo: Halbduplexbetrieb auf einer ``Simplex-QRG'' unter
-                  Berücksichtigung vom \emph{TX Delay}
-        \end{itemize}
-        \item Modulation sonst im Prinzip wie RTTY: FSK mit gleichen Tönen und gleicher Shift
-        \item allerdings 7-Bit-Code und Geschwindigkeit 100 Baud
-        \item implementiert auch bereits eine \emph{FEC}
-    \end{itemize}
+  \begin{itemize}
+    \item 1978 veröffentlicht, in der Seefahrt wurden ähnliche Verfahren benutzt
+    \item erstes einfaches ARQ-Protokoll nach Schema ``Stop-and-Wait''
+      \begin{itemize}
+        \item hohe Übertragungssicherheit: in $450ms$-Sendelücke TX von drei
+          Kontrollzeichen ($240ms$) Quittung
+        \item ergo: Halbduplexbetrieb auf einer ``Simplex-QRG'' unter
+          Berücksichtigung vom \emph{TX Delay}
+      \end{itemize}
+    \item Modulation sonst im Prinzip wie RTTY: FSK mit gleichen Tönen und gleicher Shift
+    \item allerdings 7-Bit-Code und Geschwindigkeit 100 Baud
+    \item implementiert auch bereits eine \emph{FEC}
+  \end{itemize}
 
 \end{frame}
 
 \subsubsection{AX.25}
 
 \begin{frame}
-    \frametitle{AX.25}
+  \frametitle{AX.25}
 
-    8-Bit-Standard\footnote{1984 v2.0 standardisiert} für Pakete (Frames) mit Adressierung und Prüfsumme:
+  8-Bit-Standard\footnote{1984 v2.0 standardisiert} für Pakete (Frames) mit Adressierung und Prüfsumme:
 
-    \begin{center}
-        \includegraphics[width=1\textwidth]{e16/Ax25-US-Paket.png}
-        \tiny \hyperlink{refs}{\cite{wc}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.4\textheight,keepaspectratio]{e16/Ax25-US-Paket.png}
+      \attribcaption{Ax25-US-Paket}{Itlift}{https://commons.wikimedia.org/wiki/File:Ax25-US-Paket.png}{\ccbysa}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Sicherungsschicht (Data Link Layer)
-              \footnote{\emph{OSI (Open Systems Interconnection Model)}-Layer 2}
-        \item Anpassung des  \emph{ITU-T X.25}-Standards (Layer
-              1-3)\footnote{Bitübertragungsschicht, Sicherungsschicht,
-              Vermittlungsschicht} aus den 1970ern
-        \item verbindungsorientiert, aber Übertragung von verbindungslosen Daten zulässig
-    \end{itemize}
+  \begin{itemize}
+    \item Sicherungsschicht (Data Link Layer)
+      \footnote{\emph{OSI (Open Systems Interconnection Model)}-Layer 2}
+    \item Anpassung des  \emph{ITU-T X.25}-Standards (Layer
+      1-3)\footnote{Bitübertragungsschicht, Sicherungsschicht,
+      Vermittlungsschicht} aus den 1970ern
+    \item verbindungsorientiert; Übertragung von verbindungslosen Daten zulässig
+  \end{itemize}
 
 \end{frame}
 
 \subsubsection {Packet Radio (PR)}
 
 \begin{frame}
-    \frametitle{Packet Radio (PR)}
+  \frametitle{Packet Radio (PR)}
 
-    Paketbasiertes ``Radio'' - Grundlage: \emph{AX.25}
-        
+  Paketbasiertes ``Radio'' - Grundlage: \emph{AX.25}
+
+  \begin{itemize}
+    \item Kennt einer (noch) \emph{GPRS}?
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Packet Radio / Technische Grundlagen (Duplex)}
+
+  Duplex (Zeit- und ggf. Frequenzduplex), mit Fehlerkorrektur
+  %todo http://de.wikipedia.org/wiki/Duplex_%28Nachrichtentechnik%29
+  %todo Wiederholung Kapitel BV11: Simplex, HD, Duplex mit Skizze
+
+  \begin{itemize}
+    \item mehrere Stationen auf einer \emph{QRG} (Timeslots)
+    \item verschiedene Hin- und Rückfrequenzen möglich \\ $\rightarrow$
+      Unterscheidung:
+      \begin{itemize}
+        \item Simplex\footnote{Afu-Simplex ``Senden bzw. Empfangen auf
+          der gleichen Frequenz''!}-Digipeater (Halbduplex, selbe QRG)
+        \item Duplex-Digipeater (2 QRGs\footnote{70-cm: Ablage $7,6 MHz$
+          oder $9,4 MHz$ höher})
+      \end{itemize}
+    \item Digipeater-``User'' im Halbduplex:
+      \begin{itemize}
+        \item RX (Ausgabefrq.)
+        \item TX (Eingabefrq.)
+      \end{itemize}
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Packet Radio / Technische Grundlagen (Baudraten)}
+
+  Viel höhere Datenraten als RTTY:
+
+  \begin{itemize}
+    \item \textbf{1k2 Bd}: AFSK\footnote{$1200$ \& $2200 Hz$}-Subträger \\
+      (Bandbreite 1x $12,5kHz$-Kanal, NF-BW $3000 Hz$)
+    \item \textbf{9k6 Bd}: FSK direkt aufmoduliert
+      \footnote{Leitungscodierung ist auch anders (Manchester-Code?)} \\
+      (Bandbreite 20kHz $\rightarrow$ 1x $25kHz$-Kanal)
+      %todo Skizzen der Bandbreiten von DJ4UF?
+      %     http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e16/#Packet-Radio
+  \end{itemize}
+
+  $\rightarrow$ VHF/UHF (eher unüblich: HF $300 Bd$)
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Packet Radio / Packaging}
+
+  Zusammensetzen der Pakete am Ziel zur Nachricht \\[1em]
+
+  \begin{itemize}
+    \item Leerzeiten ohne Aussendung, kann von anderen Stationen genutzt werden
+      \begin{itemize}
+        \item eine Übertragungsstrecke für viele gleichzeitige Verbindungen
+      \end{itemize}
+    \item Problem: Kollisionen verschiedener Pakete trotz
+      ``sensing''\footnote{wenn QRG frei: TX}
+    \item Lösungen:
+      \begin{itemize}
+        \item zufällige Wartezeit beider TX
+        \item DAMA\footnote{Demand Assigned Multiple Access}: Digipeater fragt Stationen ab
+          \begin{itemize}
+            \item Overhead, aber Kollisionen werden vollständig vermieden
+          \end{itemize}
+      \end{itemize}
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Packet Radio / Vernetzung \& Routing}
+
+  Netzstruktur durch Digipeater\footnote{``unbesetzte, fernbediente feste
+  Amateurfunkstellen für Packet Radio''} (Digital Repeater), digitale
+  Zwischenstationen/Relais
+
+  \begin{itemize}
+    \item teilweise mit ``Linkstrecken''\footnote{Prüfungsfrage:
+      ``Linkstrecken sind fest eingerichtete Funkverbindungen zur
+      Vernetzung von Relaisfunkstellen oder Digipeatern.''} oder
+      weltweit (Internet \& Co) untereinander vernetzt
+    \item Datenpakete von Sender zu Empfänger und ggf weiter im Verbindungsnetz
+    \item es gibt z.B.
+      \begin{itemize}
+        \item Speicher für Nachrichten (Mailboxen)
+        \item DX-Cluster via \texttt{telnet}
+        \item IRC Channel
+      \end{itemize}
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Packet Radio / Vernetzung \& Routing}
+
+  Fragen an unsere ``Digital Natives'': \\[2em]
+
+  \begin{exampleblock}{Wozu dient ein ``Auto-Router'' im Packet-Radio-Betrieb?}
+    \only<1>{\vspace{1em}}
+    \only<2>{Eine Einrichtung, die es ermöglicht automatisch ein Zielrufzeichen zu erreichen.}
+  \end{exampleblock}
+  \begin{exampleblock}{Was versteht man unter ``Forwarding'' im
+    Packet-Radio-Betrieb?}
+    \only<1>{\vspace{1em}}
+    \only<2>{Automatisches Weiterleiten von Nachrichten an andere Mailboxen}
+  \end{exampleblock}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Packet Radio / Begriffe}
+
+  \begin{block}{Zum Merken: Begriffe im Amateurfunk-Sprachgebrauch}
+    \begin{description}
+      \item[Repeater] \only<2>{unbesetzte, fernbediente feste
+        Amateurfunkstellen für Telefoniebetrieb}
+      \item[Digipeater] \only<2>{unbesetzte, fernbediente feste
+        Amateurfunkstellen für Packet Radio}
+      \item[Mailbox] \only<2>{Datenbank mit allgemeinen Zugriff zum
+        Abspeichern und Auslesen von Informationen}
+      \item[Relais] \only<2>{Funkstelle zur Umsetzung von Funksignalen}
+    \end{description}
+  \end{block}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Packet Radio / Praxis}
+
+  Man braucht: PTT, TX, RX -- Hardware-MODEM und Controller, ein \emph{TNC
+  (Terminal Node Controller)} oder Software-\emph{TNC} \\[2em]
+
+  %todo Bild TNC bzw. Blockschaltbild Setup - interaktiv an Tafel ging aber bisher
+
+  \begin{block}{TX-Delay des PTT $50$ bis $250ms$ - Wozu?}
+    \only<1>{\vspace{3em}}
+    \only<2>{
     \begin{itemize}
-        \item Kennt einer (noch) \emph{GPRS}?
+      \item so kurz wie möglich, sonst wird Übertragungszeit verschwendet --
+        ökonomische Nutzung der Kanalkapazität auf der Frequenz
+      \item so lang wie nötig, da sonst Daten bei der Umschaltung ``verschluckt''
+        werden
     \end{itemize}
-   
-\end{frame}
-
-\begin{frame}
-    \frametitle{Packet Radio / Technische Grundlagen (Duplex)}
-
-    Duplex (Zeit- und ggf. Frequenzduplex), mit Fehlerkorrektur
-    %todo http://de.wikipedia.org/wiki/Duplex_%28Nachrichtentechnik%29
-    %todo Wiederholung Kapitel BV11: Simplex, HD, Duplex mit Skizze
-
-    \begin{itemize}
-        \item mehrere Stationen auf einer \emph{QRG} (Timeslots)
-        \item verschiedene Hin- und Rückfrequenzen möglich \\ $\rightarrow$
-              Unterscheidung:
-        \begin{itemize}
-            \item Simplex\footnote{Afu-Simplex ``Senden bzw. Empfangen auf
-                  der gleichen Frequenz''!}-Digipeater (Halbduplex, selbe QRG)
-            \item Duplex-Digipeater (2 QRGs\footnote{70-cm: Ablage $7,6 MHz$
-                  oder $9,4 MHz$ höher})
-        \end{itemize}
-        \item Digipeater-``User'' im Halbduplex:
-        \begin{itemize}
-            \item RX (Ausgabefrq.)
-            \item TX (Eingabefrq.)
-        \end{itemize}
-    \end{itemize}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Packet Radio / Technische Grundlagen (Baudraten)}
-
-    Viel höhere Datenraten als RTTY:
-
-    \begin{itemize}
-        \item \textbf{1k2 Bd}: AFSK\footnote{$1200$ \& $2200 Hz$}-Subträger \\
-              (Bandbreite 1x $12,5kHz$-Kanal, NF-BW $3000 Hz$)
-        \item \textbf{9k6 Bd}: FSK direkt aufmoduliert
-              \footnote{Leitungscodierung ist auch anders (Manchester-Code?)} \\
-              (Bandbreite 20kHz $\rightarrow$ 1x $25kHz$-Kanal)
-              %todo Skizzen der Bandbreiten von DJ4UF?
-              %     http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e16/#Packet-Radio
-    \end{itemize}
-
-    $\rightarrow$ VHF/UHF (eher unüblich: HF $300 Bd$)
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Packet Radio / Packaging}
-
-    Zusammensetzen der Pakete am Ziel zur Nachricht \\[1em]
-
-    \begin{itemize}
-        \item Leerzeiten ohne Aussendung, kann von anderen Stationen genutzt werden
-        \begin{itemize}      
-            \item eine Übertragungsstrecke für viele gleichzeitige Verbindungen
-        \end{itemize}
-        \item Problem: Kollisionen verschiedener Pakete trotz
-              ``sensing''\footnote{wenn QRG frei: TX}
-        \item Lösungen:
-        \begin{itemize}
-            \item zufällige Wartezeit beider TX
-            \item DAMA\footnote{Demand Assigned Multiple Access}: Digipeater fragt Stationen ab
-            \begin{itemize}
-                \item Overhead, aber Kollisionen werden vollständig vermieden
-            \end{itemize}
-        \end{itemize}
-    \end{itemize}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Packet Radio / Vernetzung \& Routing}
-
-    Netzstruktur durch Digipeater\footnote{``unbesetzte, fernbediente feste
-    Amateurfunkstellen für Packet Radio''} (Digital Repeater), digitale
-    Zwischenstationen/Relais
-
-    \begin{itemize}
-        \item teilweise mit ``Linkstrecken''\footnote{Prüfungsfrage:
-              ``Linkstrecken sind fest eingerichtete Funkverbindungen zur
-              Vernetzung von Relaisfunkstellen oder Digipeatern.''} oder
-              weltweit (Internet \& Co) untereinander vernetzt
-        \item Datenpakete von Sender zu Empfänger und ggf weiter im Verbindungsnetz
-        \item es gibt z.B.
-        \begin{itemize}
-            \item Speicher für Nachrichten (Mailboxen)
-            \item DX-Cluster via \texttt{telnet}
-            \item IRC Channel
-        \end{itemize}
-    \end{itemize}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Packet Radio / Vernetzung \& Routing}
-
-    Fragen an unsere ``Digital Natives'': \\[2em]
-
-    \begin{exampleblock}{Wozu dient ein ``Auto-Router'' im Packet-Radio-Betrieb?}
-      \only<1>{\vspace{1em}}
-      \only<2>{Eine Einrichtung, die es ermöglicht automatisch ein Zielrufzeichen zu erreichen.}
-    \end{exampleblock}
-    \begin{exampleblock}{Was versteht man unter ``Forwarding'' im
-      Packet-Radio-Betrieb?}
-      \only<1>{\vspace{1em}}
-      \only<2>{Automatisches Weiterleiten von Nachrichten an andere Mailboxen}
-    \end{exampleblock}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Packet Radio / Begriffe}
-
-    \begin{block}{Zum Merken: Begriffe im Amateurfunk-Sprachgebrauch}
-        \begin{description}
-            \item[Repeater] \only<2>{unbesetzte, fernbediente feste
-                                     Amateurfunkstellen für Telefoniebetrieb}
-            \item[Digipeater] \only<2>{unbesetzte, fernbediente feste
-                                       Amateurfunkstellen für Packet Radio}
-            \item[Mailbox] \only<2>{Datenbank mit allgemeinen Zugriff zum
-                                    Abspeichern und Auslesen von Informationen}
-            \item[Relais] \only<2>{Funkstelle zur Umsetzung von Funksignalen}
-        \end{description}
-    \end{block}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Packet Radio / Praxis}
-
-    Man braucht: PTT, TX, RX -- Hardware-MODEM und Controller, ein \emph{TNC
-    (Terminal Node Controller)} oder Software-\emph{TNC} \\[2em]
-
-    %todo Bild TNC bzw. Blockschaltbild Setup - interaktiv an Tafel ging aber bisher
-
-    \begin{block}{TX-Delay des PTT $50$ bis $250ms$ - Wozu?}
-      \only<1>{\vspace{3em}}
-        \only<2>{
-        \begin{itemize}
-            \item so kurz wie möglich, sonst wird Übertragungszeit verschwendet --
-                  ökonomische Nutzung der Kanalkapazität auf der Frequenz
-            \item so lang wie nötig, da sonst Daten bei der Umschaltung ``verschluckt''
-                  werden
-        \end{itemize}
-        }
-    \end{block}
+    }
+  \end{block}
 
 \end{frame}
 
 \subsubsection{APRS}
 
 \begin{frame}
-    \frametitle{APRS}
+  \frametitle{APRS}
 
-    \textbf{A}utomatic \textbf{P}acket \textbf{R}eporting \textbf{S}ystem
+  \textbf{A}utomatic \textbf{P}acket \textbf{R}eporting \textbf{S}ystem
 
-    \begin{center}
-        \includegraphics[width=0.5\textwidth,height=.4\textheight,keepaspectratio]{e16/APRS.png}
-        \footnote{\url{http://aprs.fi} Screenshot vom 22.01.2015}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.5\textwidth,height=.4\textheight,keepaspectratio]{e16/APRS.png}
+      \caption{\ExternalLink\url{http://aprs.fi} Screenshot vom 22.01.2015}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Positionsmeldungen, Wetterdaten, Messwerte, ...
-        \item Modulation Packet Radio, in ``echtes Simplex''
-        \item Backbone: Packet Radio Digipeater-Netzwerk bis zum erreichen eines
-              APRS-Digipeaters
-    \end{itemize}
+  \begin{itemize}
+    \item Positionsmeldungen, Wetterdaten, Messwerte, ...
+    \item Modulation Packet Radio, in ``echtes Simplex''
+    \item Backbone: Packet Radio Digipeater-Netzwerk bis zum erreichen eines
+      APRS-Digipeaters
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{APRS}
-
-    \begin{center}
-        \includegraphics[width=0.8\textwidth,height=.8\textheight,keepaspectratio]{e16/APRS.png} \\
-        \Large Demo!
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.8\textwidth,height=.8\textheight,keepaspectratio]{e16/APRS.png}
+      \caption{\ExternalLink\url{http://aprs.fi} Screenshot vom 22.01.2015}
+    \end{figure}
+    \Large Demo!
+  \end{center}
 
 \end{frame}
 
 \subsubsection{ARQ Heute}
 
 \begin{frame}
-    \frametitle{ARQ Heute}
+  \frametitle{ARQ Heute}
 
-    Hervorgegangen aus \emph{AMTOR} und \emph{Packet Radio}, auf Kurzwelle z.B.
-    \emph{PACTOR}\footnote{\textbf{PAC}ket \textbf{T}eleprinting \textbf{O}ver
-    \textbf{R}adio} und \emph{WINMOR}\footnote{\textbf{Win}Link \textbf{M}ail
-    \textbf{O}ver \textbf{R}adio}
+  Hervorgegangen aus \emph{AMTOR} und \emph{Packet Radio}, auf Kurzwelle z.B.
+  \emph{PACTOR}\footnote{\textbf{PAC}ket \textbf{T}eleprinting \textbf{O}ver
+  \textbf{R}adio} und \emph{WINMOR}\footnote{\textbf{Win}Link \textbf{M}ail
+  \textbf{O}ver \textbf{R}adio}
 
-    \begin{itemize}
-        \item 8 Bit als Basis für alle Betriebsarten
-        \item + verschiedene Fehlerkorrekturverfahren
-        \item + verschiedene Modulationsarten je nach Kanaleigenschaften
-        \item auch bei sehr schwachen Signalen im Rauschen noch nutzbar
-    \end{itemize}
+  \begin{itemize}
+    \item 8 Bit als Basis für alle Betriebsarten
+    \item + verschiedene Fehlerkorrekturverfahren
+    \item + verschiedene Modulationsarten je nach Kanaleigenschaften
+    \item auch bei sehr schwachen Signalen im Rauschen noch nutzbar
+  \end{itemize}
 
-    \vspace{0.5cm}
+  \vspace{0.5cm}
 
-    \emph{PACTOR} Rant: Man braucht einen teuren TNC, der
-    gebrauchsmustergeschützt ist -- Selbstbau nicht (mehr) möglich.
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{ARQ Heute / Netzwerke}
-
-    \begin{itemize}
-        \item globales HF-Mailboxsysteme mit der Möglichkeit Forwarding per
-              Internet-E-Mail, z.B. \emph{WinLink2000}
-        \item \emph{HAMNET (Highspeed Amateurradio Multimedia NETwork)} benutzt
-              \emph{IEEE 802.11}-Technologie im $GHz$-Bereich
-    \end{itemize}
-
-    \begin{center}
-        \includegraphics[width=0.6\textwidth,height=.55\textheight,keepaspectratio]{e16/db0fuz.png}
-        \tiny \hyperlink{refs}{\cite{db0fuz}}
-    \end{center}
+  \emph{PACTOR} Rant: Man braucht einen teuren TNC, der
+  gebrauchsmustergeschützt ist -- Selbstbau nicht (mehr) möglich.
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{ARQ Heute / WinLink2000}
+  \frametitle{ARQ Heute / Netzwerke}
 
-    \begin{center}
-        \includegraphics[width=.8\textwidth,height=.85\textheight,keepaspectratio]{e16/WinLink_Topology.jpg}
-        \tiny \hyperlink{refs}{\cite{wl2k}}
-    \end{center}
+  \begin{itemize}
+    \item globales HF-Mailboxsysteme mit der Möglichkeit Forwarding per
+      Internet-E-Mail, z.B. \emph{WinLink2000}
+    \item \emph{HAMNET (Highspeed Amateurradio Multimedia NETwork)} benutzt
+      \emph{IEEE 802.11}-Technologie im $GHz$-Bereich
+  \end{itemize}
+
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{e16/db0fuz.png}
+      \caption{Grafik von \ExternalLink\url{http://hamnet.funkzentrum.de/berliner-hamnet/backbone/hamnet-knoten.html}}
+    \end{figure}
+  \end{center}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{ARQ Heute / HAMNET}
+  \frametitle{ARQ Heute / WinLink2000}
 
-    \begin{center}
-        \includegraphics[width=.8\textwidth,height=.75\textheight,keepaspectratio]{e16/backbone_berlin1201.jpg}
-        \footnote{\url{http://hamnet.funkzentrum.de} (Stand 24.03.2012)}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.8\textwidth,height=.75\textheight,keepaspectratio]{e16/WinLink_Topology.jpg}
+      \caption{Grafik von \ExternalLink\url{http://letarc.org/main/2011/06/08/packet-modes-and-winlink-2000/}}
+    \end{figure}
+  \end{center}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{ARQ Heute / HAMNET}
+
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.8\textwidth,height=.65\textheight,keepaspectratio]{e16/backbone_berlin1201.jpg}
+      \caption{Grafik von \ExternalLink\url{http://hamnet.funkzentrum.de/berliner-hamnet/backbone.html} (Stand 24.03.2012)}
+    \end{figure}
+  \end{center}
+
+  Aktueller Ausbau in der \href{https://hamnetdb.net/lsp_map.cgi}{\ExternalLink Hamnet-DB Map}
 
 \end{frame}
 
 \subsection{Sprechfunk}
 
 \begin{frame}
-    \frametitle{Sprechfunk (digital)}
+  \frametitle{Sprechfunk (digital)}
 
-    %todo ausbauen
+  %todo ausbauen
 
-    Der Vollständigkeit halber: Digitale Betriebsarten für den Sprechfunk gibt
-    es zunehmend, z.B. \emph{FreeDV}\footnote{Free Digital Voice} für Kurzwelle oder \emph{DMR}\footnote{Digital Mobile Radio} für UHF/VHF.
-
-\end{frame}
-
-\subsection{Zusammenfassung}
-
-\begin{frame}
-    \frametitle{Zusammenfassung}
-
-    \begin{center}
-        \includegraphics[width=.85\textwidth,height=.85\textheight,keepaspectratio]{e16/Digital_Rosetta_Stone.jpg}
-        \footnote{``Digital Rosetta Stone'' by K2NCC}
-    \end{center}
+  Der Vollständigkeit halber: Digitale Betriebsarten für den Sprechfunk gibt
+  es zunehmend, z.B. \emph{FreeDV}\footnote{Free Digital Voice} für Kurzwelle oder \emph{DMR}\footnote{Digital Mobile Radio} für UHF/VHF.
 
 \end{frame}
 
-\section{Quiz}
+\subsection[]{Zusammenfassung}
 
 \begin{frame}
-    \frametitle{Quiz: Verständnis}
+  \frametitle{Zusammenfassung}
 
-    \begin{exampleblock}{Welche Betriebsarten sind für QRP-DX-Betrieb auf Kurzwelle am
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{e16/Digital_Rosetta_Stone.jpg}
+      \caption{``Digital Rosetta Stone'' by K2NCC}
+    \end{figure}
+    Oder \href{http://www.sigidwiki.com/wiki/Signal_Identification_Guide}{\ExternalLink Signal Identification Guide}
+  \end{center}
+
+\end{frame}
+
+\section[]{Quiz}
+
+\begin{frame}
+  \frametitle{Quiz: Verständnis}
+
+  \begin{exampleblock}{Welche Betriebsarten sind für QRP-DX-Betrieb auf Kurzwelle am
     besten geeignet?}
     \only<1>{\vspace{3em}}
-        \only<2>{In den Prüfungsantworten: CW, Pactor, PSK31
-        \begin{itemize}
-            \item Bandbreiten?
-            \item Wie viele habt ihr herausgefunden?
-        \end{itemize}
-        }
-    \end{exampleblock}
+    \only<2>{In den Prüfungsantworten: CW, Pactor, PSK31
+    \begin{itemize}
+      \item Bandbreiten?
+      \item Wie viele habt ihr herausgefunden?
+    \end{itemize}
+    }
+  \end{exampleblock}
 
-% todo Aufgabe Nach Bandbreite sortieren?
-%     * Telegrafie benötigt u.U. weniger als 200 Hz Bandbreite
-%     * PSK31, MSK63, JT65                                    
-%     *alle die vorher dran waren
+  % todo Aufgabe Nach Bandbreite sortieren?
+  %     * Telegrafie benötigt u.U. weniger als 200 Hz Bandbreite
+  %     * PSK31, MSK63, JT65
+  %     *alle die vorher dran waren
 
-% todo Jeopardy Sektion zu Betriebsarten (Spektrum und Bandbreiten) machen
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Quiz: Akkustisch}
-
-\end{frame}
-
-\section{NF-QSOs}
-
-\begin{frame}
-    \frametitle{NF-QSOs: Fldigi, QSSTV, ...}
-
-    \Large \textbf{Pause.}
-    \normalsize Anschließend Erklärung der Bedienung. \\[2em]
-
-    %todo Screenshots der Programme
-
-    Wer die Tools nicht installiert hat, nutzt die Zeit. ;-)
-
-    %todo WSJT, ARQ-Protokolle und FreeDV via NF testen?
-    %     ... Vielleicht bei Klasse A dann.
+  % todo Jeopardy Sektion zu Betriebsarten (Spektrum und Bandbreiten) machen
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Fldigi-Setup}
+  \frametitle{Quiz: Akustisch}
 
-    \begin{center}
-        \only<1>{\includegraphics[width=.85\textwidth,height=.85\textheight,keepaspectratio]{e16/fldigi_opconf.png}}
-        \only<2>{\includegraphics[width=.85\textwidth,height=.85\textheight,keepaspectratio]{e16/fldigi_audioconf.png}}
-    \end{center}
+\end{frame}
+
+\section[]{NF-QSOs}
+
+\begin{frame}
+  \frametitle{NF-QSOs: Fldigi, QSSTV, ...}
+
+  \Large \textbf{Pause.}
+  \normalsize Anschließend Erklärung der Bedienung. \\[2em]
+
+  %todo Screenshots der Programme
+
+  Wer die Tools nicht installiert hat, nutzt die Zeit. ;-)
+
+  %todo WSJT, ARQ-Protokolle und FreeDV via NF testen?
+  %     ... Vielleicht bei Klasse A dann.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Fldigi-Setup}
+
+  \begin{center}
+    \begin{figure}
+      \only<1>{\includegraphics[width=.85\textwidth,height=.75\textheight,keepaspectratio]{e16/fldigi_opconf.png}}
+      \only<2>{\includegraphics[width=.85\textwidth,height=.75\textheight,keepaspectratio]{e16/fldigi_audioconf.png}}
+      \caption{Setup von \texttt{fldigi}}
+    \end{figure}
+  \end{center}
 
 \end{frame}
 
@@ -994,39 +1057,25 @@
 
 \begin{thebibliography}{}
     \setbeamertemplate{bibliography item}[online]
-    \bibitem{bv12}  Moltrecht B/V 12: \\
-                    \url{http://www.amateurfunkpruefung.de/lehrg/bv12/bv12.html}
-    \bibitem{e16}   Moltrecht E 16: \\
-                    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e16/}
-    \bibitem{wp}    Wikipedia DE: \\
-                    \url{https://de.wikipedia.org/wiki/Einseitenbandmodulation}\\
-                    \url{http://de.wikipedia.org/wiki/Slow_Scan_Television}\\
-                    \url{http://de.wikipedia.org/wiki/MT63}\\
-                    \url{http://de.wikipedia.org/wiki/Amateurfunk-Fernsehen}\\
-                    \url{http://de.wikipedia.org/wiki/PSK31}\\
-                    \url{https://de.wikipedia.org/wiki/Baud}\\
-                    \url{https://de.wikipedia.org/wiki/WSJT}\\
-                    \url{http://de.wikipedia.org/wiki/ARQ-Protokoll}\\
-                    \url{http://de.wikipedia.org/wiki/AMTOR}\\
-                    \url{http://de.wikipedia.org/wiki/AX.25}
-    \bibitem{we}    Wikipedia EN: \\
-                    \url{https://en.wikipedia.org/wiki/Terminal_node_controller}
-    \bibitem{wc}    Wikimedia Commons \\
-                    \url{https://commons.wikimedia.org/wiki/File:Modems.jpg}\\
-                    \url{http://commons.wikimedia.org/wiki/File:Ssb-de.png}\\
-                    \url{http://commons.wikimedia.org/wiki/File:Dpx-fm-radio.png}\\
-                    \url{http://commons.wikimedia.org/wiki/File:Mechanical_glow_drum_slow_scan_television_monitor.gif}\\
-                    \url{http://commons.wikimedia.org/wiki/File:Sstv_frequences.svg}\\
-                    \url{http://commons.wikimedia.org/wiki/File:SSTV_signal.jpg}\\
-                    \url{https://commons.wikimedia.org/wiki/File:Phase_modulation_\%28PHM\%29.svg}\\
-                    \url{http://commons.wikimedia.org/wiki/File:BPSK_31_63_125.jpg}\\
-                    \url{http://commons.wikimedia.org/wiki/File:Ax25-US-Paket.png}
-    \bibitem{atv}   \url{http://www.svecs.net/SVECS-atv16.JPG}
-    \bibitem{wl2k}  \url{http://letarc.org/main/2011/06/08/packet-modes-and-winlink-2000/}
-    \bibitem{db0fuz}\url{http://hamnet.funkzentrum.de/berliner-hamnet/backbone/hamnet-knoten.html}
-    \bibitem{snd}   \url{http://www.nonstopsystems.com/radio/radio-sounds.html}
-    \bibitem{steam} \url{https://media.ccc.de/v/24c3-2338-en-steam_powered_telegraphy}
-    \bibitem{wsjt}  \url{https://media.ccc.de/v/eh15_-_11_-_de_-_saal_-_201504051730_-_wspr_und_wsjt_-_pylon}
-\end{thebibliography} 
+  \bibitem{bv12}  Moltrecht B/V 12: \\
+    \url{http://www.amateurfunkpruefung.de/lehrg/bv12/bv12.html}
+  \bibitem{e16}   Moltrecht E 16: \\
+    \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e16/}
+  \bibitem{wp}    Wikipedia DE: \\
+    \url{https://de.wikipedia.org/wiki/Einseitenbandmodulation}\\
+    \url{http://de.wikipedia.org/wiki/Slow_Scan_Television}\\
+    \url{http://de.wikipedia.org/wiki/MT63}\\
+    \url{http://de.wikipedia.org/wiki/Amateurfunk-Fernsehen}\\
+    \url{http://de.wikipedia.org/wiki/PSK31}\\
+    \url{https://de.wikipedia.org/wiki/Baud}\\
+    \url{https://de.wikipedia.org/wiki/WSJT}\\
+    \url{http://de.wikipedia.org/wiki/ARQ-Protokoll}\\
+    \url{http://de.wikipedia.org/wiki/AMTOR}\\
+    \url{http://de.wikipedia.org/wiki/AX.25}
+  \bibitem{we}    Wikipedia EN: \\
+    \url{https://en.wikipedia.org/wiki/Terminal_node_controller}
+  \bibitem{snd}   \url{http://www.nonstopsystems.com/radio/radio-sounds.html}
+  \bibitem{wsjt}  \url{https://media.ccc.de/v/eh15_-_11_-_de_-_saal_-_201504051730_-_wspr_und_wsjt_-_pylon}
+\end{thebibliography}
 
 \input{texdata/postamble}
