@@ -1,223 +1,211 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
 % Autoren: Felix Baum <baum@campus.tu-berlin.de>
-% Korrekturen: Sebastian Lange <dl7bst@dk0tu.de>
+% Korrekturen: Sebastian Lange <dl7bst@dk0tu.de>, Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik 09: \\
-           Die Wellenausbreitung \\[2em]}
-\date{Stand 01.12.2016}
+  Die Wellenausbreitung \\[2em]}
+\date{Stand 02.12.2015}
 \input{texdata/titlepage}
-
-%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
 
 \section*{Einleitung}
 
 \begin{frame}
-    \frametitle{Wie kommen die Wellen um die Welt?}
-    \begin{center}
-       \begin{figure}
-          \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e09/cqww-kontakte-2015.png}
-          \caption{Funkkontakte beim CQWW-SSB 2015 von DK\O TU}
-       \end{figure}
-    \end{center}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Raum und Bodenwelle}
-    \begin{center}
-      \begin{figure}
-         \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e09/Ionospheric_reflectionpng.png}
-         \attribcaption{Reflektion an der Ionosphäre}{Sebastian Janke}{https://commons.wikimedia.org/wiki/File:Ionospheric_reflection-de.svg}{\ccbysa}
-       \end{figure}
-    \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Boden- und Raumwelle}
-    \textbf{Bodenwelle}
-    \begin{itemize}
-	    \item Folgt der Erdkrümmung
-	    \item Stark vorhanden bei Langwelle und Mittelwelle
-	    \item Viele Verluste durch Berge, Wälder und Städte
-    \end{itemize}
-    \textbf{Raumwelle}
-    \begin{itemize}
-	    \item Meist genutzt bei Kurzwelle (manchmal auch UHF, VHF)
-	    \item Reflektion an der Ionosphäre 
-	    \item Nicht zuverlässig für Überreichweiten
-    \end{itemize}
-\end{frame}
-
-\section*{Bodenwelle}
-\begin{frame}
-    \frametitle{Bodenwelle}
-    \begin{itemize}
-      \item Bei LF über $400km$
-      \item $80m$ Wellenlänge ($3.5MHz$) $\rightarrow~\thicksim150km$ Reichweite
-      \item $10m$ Wellenlänge ($28MHz$) $\rightarrow~\thicksim30km$ Reichweite
-      \item Reichweite hängt auch stark vom Untergrund ab
-    \end{itemize}
-\end{frame}
-
-\section*{Raumwelle}
-    
-\begin{frame}
-    \frametitle{Raumwelle}
-    \begin{center}
-      \begin{figure}
-        \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e09/schichten_behelf_43.png}
-        \caption{Amateurfunkbehelf S.43 \ExternalLink \url{http://ham.granjow.net/builds/Amateurfunkbehelf.pdf}}
-      \end{figure}
-    \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Sonnenflecken-Zyklus}
-    \begin{itemize}
-    			\item Bei Sonneneinstrahlung werden Moleküle in der Ionosphäre durch EUV-Strahlung ionisiert
-			\item Maximum ungefähr alle 11 Jahre
-                        \item HF Frequenzen ab $\thicksim20MHz$ sind bei einem Minimum nicht verwendbar
-       		 	\item Bei einem Maximum quasi täglich DX-Verbindungen mit weniger als $10W$ machbar 
-        		\item Nächstes Maximum vermutlich 2022
-    \end{itemize}
-	\begin{center}
-         \begin{figure}
-      \includegraphics[width=.8\textwidth,height=.3\textheight,keepaspectratio]{e09/Predictions_sunspot.png}
-      \attribcaption{Sonnenflecken Vorhersage}{Scientific data, based on prediction by David Hathaway}{https://commons.wikimedia.org/wiki/File_3APredictions3_strip.jpg}{\ccpd}
-    \end{figure}
-    \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{D-Schicht}
-    \begin{itemize}
-    			\item Tagsüber und verschwindet nach Sonnenuntergang sehr schnell
-			\item Dämpft Frequenzen unter $5MHz$ (160m und 80m unbenutzbar)
-                        \item HF Frequenzen ab $\thicksim20MHz$ sind bei einem Minimum nicht verwendbar
-       		 	\item Bei hoher Sonnenaktivität Mögel-Dellinger-Effekt (Kurzzeitig ganzes KW-Band unbenutzbar)
-    \end{itemize}
-    \begin{center}
-       \begin{figure}
-      \includegraphics[width=.6\textwidth,height=.4\textheight,keepaspectratio]{e09/schichten_behelf_43.png}
-      \caption{Amateurfunkbehelf s.43 \ExternalLink \url{http://ham.granjow.net/builds/Amateurfunkbehelf.pdf}}
-    \end{figure}
-    \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{E-Schicht}
-    \begin{itemize}
-    	  \item Manchmal Tagsüber
-	   \item Reflektiert HF-Bänder 10m, 6m
-            \item Reflektiert gelegentlich 2m (Sporadic-E) \footnote{\tiny \url{http://www.dk0tu.de/blog/2012/11/27_Sporadic-E_QSO_mit_Spanien/}}
-            \item mit sehr starken Signalen zwischen 750km und 2200 km (Short-Skip)
-    \end{itemize}
-    \begin{center}
-      \begin{figure}
-        \includegraphics[width=.8\textwidth,height=.4\textheight,keepaspectratio]{e09/schichten_behelf_43.png}
-       \caption{Amateurfunkbehelf s.43 \ExternalLink \url{http://ham.granjow.net/builds/Amateurfunkbehelf.pdf}}
-      \end{figure}
-    \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{F-Schichten}
-    \begin{itemize}
-        \item $F_1$- und $F_2$-Schicht
-        \item $F_2$-Schicht besteht auch nachts (langsame Rekombination)
-        \item Für KW wichtig, da beständige Schichten
-        \item mit sehr starken Signalen zwischen 750km und 2200 km (Short-Skip)
-    \end{itemize}
-	\begin{center}
-          \begin{figure}
-            \includegraphics[width=.8\textwidth,height=.4\textheight,keepaspectratio]{e09/schichten_behelf_43.png}
-              \caption{Amateurfunkbehelf s.43 \ExternalLink \url{http://ham.granjow.net/builds/Amateurfunkbehelf.pdf}}
-          \end{figure}
-    \end{center}
-\end{frame}
-
-\section*{DX-Propergation}
-
-\begin{frame}
-  \frametitle{Einige Einflüsse auf die Ionosphere}
+  \frametitle{Wie kommen die Wellen um die Welt?}
   \begin{center}
-  \begin{figure}
-    \includegraphics[width=.8\textwidth,height=.8\textheight,keepaspectratio]{e09/Ionosphere-Thermosphere_Processes.jpg}
-    \attribcaption{Thermische Einflüsse auf die Ionosphäre}{NASA}{https://commons.wikimedia.org/wiki/File:Ionosphere-Thermosphere_Processes.jpg}{\ccpd}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e09/cqww-kontakte-2015.png}
+      \caption{Funkkontakte beim CQWW-SSB 2015 von DK\O TU}
     \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Aurora}
-	\begin{center}
-        \begin{block}{DX-Propergation}
-        \item Einige Seiten bieten eine Vorschau oder aktuelle Infos über die Ausbreitungsbedingungen.
-        \item \url{http://www.dr1a.com/pages/en/dx-propagation.php}
-        \item \url{https://dxheat.com/dxc/}
-        \item \url{https://www.youtube.com/watch?v=TQkzzJqMA3g}
-        \end{block}
-    \end{center}
+  \frametitle{Raum und Bodenwelle}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e09/Ionospheric_reflectionpng.png}
+      \attribcaption{Reflektion an der Ionosphäre}{Sebastian Janke}{https://commons.wikimedia.org/wiki/File:Ionospheric_reflection-de.svg}{\ccbysa}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Boden- und Raumwelle}
+  \textbf{Bodenwelle}
+  \begin{itemize}
+    \item Folgt der Erdkrümmung
+    \item Stark vorhanden bei Langwelle und Mittelwelle
+    \item Viele Verluste durch Berge, Wälder und Städte
+  \end{itemize}
+  \textbf{Raumwelle}
+  \begin{itemize}
+    \item Meist genutzt bei Kurzwelle (manchmal auch UHF, VHF)
+    \item Reflektion an der Ionosphäre
+    \item Nicht zuverlässig für Überreichweiten
+  \end{itemize}
+\end{frame}
+
+\section*{Bodenwelle}
+\begin{frame}
+  \frametitle{Bodenwelle}
+  \begin{itemize}
+    \item Bei LF über $400km$
+    \item $80m$ Wellenlänge ($3.5MHz$) $\rightarrow~\thicksim150km$ Reichweite
+    \item $10m$ Wellenlänge ($28MHz$) $\rightarrow~\thicksim30km$ Reichweite
+    \item Reichweite hängt auch stark vom Untergrund ab
+  \end{itemize}
+\end{frame}
+
+\section*{Raumwelle}
+
+\begin{frame}
+  \frametitle{Raumwelle}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e09/schichten_behelf_43.png}
+      \caption{Amateurfunkbehelf S.43 \ExternalLink \url{http://ham.granjow.net/builds/Amateurfunkbehelf.pdf}}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Sonnenflecken-Zyklus}
+  \begin{itemize}
+    \item Bei Sonneneinstrahlung werden Moleküle in der Ionosphäre durch EUV-Strahlung ionisiert
+    \item Maximum ungefähr alle 11 Jahre
+    \item HF Frequenzen ab $\thicksim20MHz$ sind bei einem Minimum nicht verwendbar
+    \item Bei einem Maximum quasi täglich DX-Verbindungen mit weniger als $10W$ machbar
+    \item Nächstes Maximum vermutlich 2022
+  \end{itemize}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.8\textwidth,height=.3\textheight,keepaspectratio]{e09/Predictions_sunspot.png}
+      \attribcaption{Sonnenflecken Vorhersage}{Scientific data, based on prediction by David Hathaway}{https://commons.wikimedia.org/wiki/File_3APredictions3_strip.jpg}{\ccpd}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{D-Schicht}
+  \begin{itemize}
+    \item Tagsüber und verschwindet nach Sonnenuntergang sehr schnell
+    \item Dämpft Frequenzen unter $5MHz$ (160m und 80m unbenutzbar)
+    \item HF Frequenzen ab $\thicksim20MHz$ sind bei einem Minimum nicht verwendbar
+    \item Bei hoher Sonnenaktivität Möbel-Dellinger-Effekt (Kurzzeitig ganzes KW-Band unbenutzbar)
+  \end{itemize}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.6\textwidth,height=.4\textheight,keepaspectratio]{e09/schichten_behelf_43.png}
+      \caption{Amateurfunkbehelf s.43 \ExternalLink \url{http://ham.granjow.net/builds/Amateurfunkbehelf.pdf}}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{E-Schicht}
+  \begin{itemize}
+    \item Manchmal Tagsüber
+    \item Reflektiert HF-Bänder 10m, 6m
+    \item Reflektiert gelegentlich 2m (Sporadic-E) \footnote{\tiny \url{http://www.dk0tu.de/blog/2012/11/27_Sporadic-E_QSO_mit_Spanien/}}
+    \item mit sehr starken Signalen zwischen 750km und 2200 km (Short-Skip)
+  \end{itemize}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.8\textwidth,height=.4\textheight,keepaspectratio]{e09/schichten_behelf_43.png}
+      \caption{Amateurfunkbehelf s.43 \ExternalLink \url{http://ham.granjow.net/builds/Amateurfunkbehelf.pdf}}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{F-Schichten}
+  \begin{itemize}
+    \item $F_1$- und $F_2$-Schicht
+    \item $F_2$-Schicht besteht auch nachts (langsame Rekombination)
+    \item Für KW wichtig, da beständige Schichten
+    \item mit sehr starken Signalen zwischen 750km und 2200 km (Short-Skip)
+  \end{itemize}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.8\textwidth,height=.4\textheight,keepaspectratio]{e09/schichten_behelf_43.png}
+      \caption{Amateurfunkbehelf s.43 \ExternalLink \url{http://ham.granjow.net/builds/Amateurfunkbehelf.pdf}}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\section*{DX-Propagation}
+
+\begin{frame}
+  \frametitle{Einige Einflüsse auf die Ionosphere}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.8\textwidth,height=.75\textheight,keepaspectratio]{e09/Ionosphere-Thermosphere_Processes.jpg}
+      \attribcaption{Thermische Einflüsse auf die Ionosphäre}{NASA}{https://commons.wikimedia.org/wiki/File:Ionosphere-Thermosphere_Processes.jpg}{\ccpd}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Aurora}
+  \begin{center}
+    \begin{block}{DX-Propagation}
+    \item Einige Seiten bieten eine Vorschau oder aktuelle Infos über die Ausbreitungsbedingungen.
+    \item \url{http://www.dr1a.com/pages/en/dx-propagation.php}
+    \item \url{https://dxheat.com/dxc/}
+    \item \url{https://www.youtube.com/watch?v=TQkzzJqMA3g}
+    \end{block}
+  \end{center}
 \end{frame}
 
 \section*{Besonderes}
 
 \begin{frame}
-    \frametitle{Sonstiges}
-    \begin{description}
-      \item[MUF] maximum usable frequency bei welcher die Wellen noch reflektiert werden
-      \item[Tote Zone] Bereich, bei dem ein Signal nicht zu hören ist, da keine Welle dort niederschlägt
-      \item[Fading] Schicht baut sich ab und das Signal schwindet oder destruktive Interferenz von Raum und Bodenwelle
-      \item[Grey Line] Zone des Sonnenauf- und -untergangs mit besonderen Ausbreitungsbedingungen
-    \end{description}
+  \frametitle{Sonstiges}
+  \begin{description}
+    \item[MUF] maximum usable frequency bei welcher die Wellen noch reflektiert werden
+    \item[Tote Zone] Bereich, bei dem ein Signal nicht zu hören ist, da keine Welle dort niederschlägt
+    \item[Fading] Schicht baut sich ab und das Signal schwindet oder destruktive Interferenz von Raum und Bodenwelle
+    \item[Grey Line] Zone des Sonnenauf- und -untergangs mit besonderen Ausbreitungsbedingungen
+  \end{description}
 \end{frame}
 
 \begin{frame}
   \frametitle{Fading bei Sonnensturm}
   \begin{center}
     \begin{figure}
-    \includegraphics[width=.8\textwidth,height=.55\textheight,keepaspectratio]{e09/planetary-k-index.png}
-    \caption{Space Weather Prediction Center \ExternalLink \url{http://www.swpc.noaa.gov/impacts/hf-radio-communications}}
+      \includegraphics[width=.8\textwidth,height=.55\textheight,keepaspectratio]{e09/planetary-k-index.png}
+      \caption{Space Weather Prediction Center \ExternalLink \url{http://www.swpc.noaa.gov/impacts/hf-radio-communications}.  Planetary K-Index gibt Stärke des Sonnensturms an.}
     \end{figure}
-    \begin{itemize}
-    \item Planetary K-Index gibt Stärke des Sonnensturms an. 
-    \item Beim Funken in JT65/JT9 auf 20m verschwand das Signal binnen einer Minute im Wasserfall und war danach komplett tot.
-    \end{itemize}
+    Beim Funken in JT65/JT9 auf 20m verschwand das Signal binnen einer Minute im Wasserfall und war danach komplett tot.
   \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Aurora}
-	\begin{center}
-        \begin{figure}
+  \frametitle{Aurora}
+  \begin{center}
+    \begin{figure}
       \includegraphics[width=.9\textwidth,height=.75\textheight,keepaspectratio]{e09/Aurora_Seen_From_Space_by_NASA.jpg}
       \attribcaption{Aurora vom Weltall aus}{NASA}{https://commons.wikimedia.org/wiki/File:Aurora_Seen_From_Space_by_NASA.jpg}{\ccpd}
     \end{figure}
-    \end{center}
+  \end{center}
 \end{frame}
+
 \begin{frame}
-  \frametitle{Aurora}
+  \frametitle{Troposphärische Überreichweiten}
   \begin{itemize}
-    \item Überreichweite durch Reflexion an Polarlichtern
-    \item geladene Teilchen dringen in die Atmosphäre ein
-    \item CW-Signale flatternd und verbrummt
-  \end{itemize}  
-\end{frame}
-\begin{frame}
-    \frametitle{Troposphärische Überreichweiten}
-    \begin{itemize}
-      \item Beugt UKW (dadurch Überreichweite)
-      \item bekannt als Tropo da nicht Ionosphäre sondern Troposphäre (15km Höhe)
-      \item Kalte Luft unten, warme Luft oben sorgt für Brechung der UKW Wellen
-      \item Entfernungen bis ca 700km
-    \end{itemize}
-    	\begin{center}
-        \begin{figure}
+    \item Beugt UKW (dadurch Überreichweite)
+    \item bekannt als Tropo da nicht Ionosphäre sondern Troposphäre (15km Höhe)
+    \item Kalte Luft unten, warme Luft oben sorgt für Brechung der UKW Wellen
+    \item Entfernungen bis ca 700km
+  \end{itemize}
+  \begin{center}
+    \begin{figure}
       \includegraphics[width=.65\textwidth,height=.5\textheight,keepaspectratio]{e09/tropo.jpg}
       \attribcaption{Inversionswetterlage}{Adam Hauner}{https://commons.wikimedia.org/wiki/File:Kašperské Hory od Liščího vrchu.jpg}{\ccby}
     \end{figure}
-    \end{center}
+  \end{center}
 \end{frame}
 
 %\begin{frame}
@@ -226,12 +214,12 @@
 %    \begin{center}
 %    \begin{tabular}{l||p{.8\textwidth}}\hline
 %      \textbf{TI101} & \textbf{Welche ionosphärischen Schichten bestimmen die Wellenausbreitung am Tage?} \\\hline\hline
-%         A 	  & Die E- und D-Schicht \\\hline
-%         B 	  & Die F\textsubscript{1}- und F\textsubscript{2}-Schicht \\\hline
-%         C	  & Die E- und F-Schicht \\\hline
-%         D \only<2>\checkmark 	  & Die D-, E-, F\textsubscript{1}- und F\textsubscript{2}-Schicht\\\hline
+%         A     & Die E- und D-Schicht \\\hline
+%         B     & Die F\textsubscript{1}- und F\textsubscript{2}-Schicht \\\hline
+%         C    & Die E- und F-Schicht \\\hline
+%         D \only<2>\checkmark     & Die D-, E-, F\textsubscript{1}- und F\textsubscript{2}-Schicht\\\hline
 %    \end{tabular}
-% 	\end{center}
+%   \end{center}
 %\end{frame}
 %
 %\begin{frame}
@@ -240,12 +228,12 @@
 %   \begin{center}
 %   \begin{tabular}{l||p{.8\textwidth}}\hline
 %      \textbf{TI102} & \textbf{Welche ionosphärischen Schichten bestimmen die Wellenausbreitung in der Nacht?} \\\hline\hline
-%         A 	  & Die D-, E- und F\textsubscript{2}-Schicht \\\hline
-%         B \only<2>\checkmark 	  & Die F\textsubscript{2}-Schicht \\\hline
-%         C	  & Die F\textsubscript{1}- und F\textsubscript{2}-Schicht \\\hline
-%         D 	  & Die D- und E-Schicht\\\hline
+%         A     & Die D-, E- und F\textsubscript{2}-Schicht \\\hline
+%         B \only<2>\checkmark     & Die F\textsubscript{2}-Schicht \\\hline
+%         C    & Die F\textsubscript{1}- und F\textsubscript{2}-Schicht \\\hline
+%         D     & Die D- und E-Schicht\\\hline
 %    \end{tabular}
-% 	\end{center}
+%   \end{center}
 %\end{frame}
 
 
@@ -253,19 +241,19 @@
 \section*{Referenzen}
 
 \begin{frame}
-    \frametitle{Referenzen/Links}
-    
-    \footnotesize
-    \begin{itemize}
-        \item Moltrecht E 09: \\
-              \url{http://www.dj4uf.de/lehrg/e09/e09.html}
-        \item Aurora (Youtube): \\
-              \url{https://www.youtube.com/watch?v=izYiDDt6d8s}
-        \item Spradic E QSO \\
-              \url{http://www.dk0tu.de/blog/2012/11/27_Sporadic-E_QSO_mit_Spanien/}
-	\item Space Weather Prediction Center -- HF Radio Communications \\
-	      \url{http://www.swpc.noaa.gov/impacts/hf-radio-communications}
-    \end{itemize}
+  \frametitle{Referenzen/Links}
+
+  \footnotesize
+  \begin{itemize}
+    \item Moltrecht E 09: \\
+      \url{https://www.darc.de/der-club/referate/ajw/lehrgang-te/e09/}
+    \item Aurora (Youtube): \\
+      \url{https://www.youtube.com/watch?v=izYiDDt6d8s}
+    \item Spradic E QSO \\
+      \url{http://www.dk0tu.de/blog/2012/11/27_Sporadic-E_QSO_mit_Spanien/}
+    \item Space Weather Prediction Center -- HF Radio Communications \\
+      \url{http://www.swpc.noaa.gov/impacts/hf-radio-communications}
+  \end{itemize}
 
 \end{frame}
 
