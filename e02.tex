@@ -1,64 +1,63 @@
 % Foliensatz: "AFu-Kurs nach DJ4UF" von DK0TU, Amateurfunkgruppe der TU Berlin
 % Lizenz: CC BY-NC-SA 3.0 de (http://creativecommons.org/licenses/by-nc-sa/3.0/de/)
-% Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>, Lars Weiler <dc4lw@darc.de>
+% Autoren: Felix Baum DB4UM <baum@campus.tu-berlin.de>
 % Überarbeitung: Hendrik Boerma
+% Korrekturen: Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik 02: \\
           Spannung und Strom, Wechselspannung \\[2em]}
-\date{Stand 27.10.2016}
+\date{Stand 10.10.2016}
 \input{texdata/titlepage}
-
-%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
 
 \section*{Einleitung}
 
 \begin{frame}
-    \frametitle{Strom -- Spannung}
-    \begin{itemize}
-		\item Was ist Spannung/Strom (elektrische)?
-		\item Woher bekommt man Spannung/Strom?
-    \end{itemize}
+  \frametitle{Strom -- Spannung}
+  \begin{itemize}
+    \item Was ist Spannung/Strom (elektrische)?
+    \item Woher bekommt man Spannung/Strom?
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Spannung}
-    \begin{center}
-      \begin{figure}
- 	    \includegraphics[width=.6\textwidth,height=.75\textheight,keepaspectratio]{e02/ladung.png}      
-	    \attribcaption{Elektrische Spannung wird durch die Trennung von Ladungen erzeugt}{Geek3}{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}{\ccbysa}     
-      \end{figure}    
-    \end{center}
+  \frametitle{Spannung}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.6\textwidth,height=.75\textheight,keepaspectratio]{e02/ladung.png}
+      \attribcaption{Elektrische Spannung wird erzeugt durch die Trennung von Ladungen}{Geek3}{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}{\ccbysa}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 
 \section*{Spannung}
 
 \begin{frame}
-    \frametitle{Spannung}
-    \begin{center}
-        Elektrische Spannung $U$ wird in [$V$] Volt angegeben
-    \end{center}
+  \frametitle{Spannung}
+  \begin{center}
+    Elektrische Spannung $U$ wird in [$V$] Volt angegeben
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Batterie}
-    \begin{center}
- \begin{figure}
-	\includegraphics[width=.7\textwidth]{e02/batterieEagle.png}
-	 \caption{Schaltungszeichen einer Batterie}
-\end{figure}
-    \end{center}
+  \frametitle{Batterie}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e02/batterieEagle.png}
+      \caption{Schaltungszeichen einer Batterie / Batteriezelle}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{9V Batterie}
-    \begin{center}
-	 \begin{figure}
-	\includegraphics[width=.99\textwidth]{e02/9vBatEagle.png}
-    	\caption{Schaltungszeichen einer 9V Batterie. Pro Zelle $1,8V$. Werden bei Reihenschaltung addiert.}
-    	\end{figure}
-    \end{center}
+  \frametitle{9V Batterie}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.5\textheight,keepaspectratio]{e02/9vBatEagle.png}
+      \caption{Schaltungszeichen einer 9V Batterie. Pro Zelle $1,8V$. Werden bei Reihenschaltung addiert.}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
@@ -80,6 +79,7 @@
     \end{figure}
   \end{center}
 \end{frame}
+
 \begin{frame}
   \frametitle{Was wo anschließen?}
   \begin{minipage}{0.4\textwidth}
@@ -99,55 +99,55 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Spannung bestimmen}
-    \begin{center}
-  \begin{figure}
+  \frametitle{Spannung bestimmen}
+  \begin{center}
+    \begin{figure}
       \includegraphics[width=.4\textwidth,height=.75\textheight,keepaspectratio]{e02/SpannungMess.png}
-      \caption{Frage Welchen Betrag der Spannung zeigt das Messgerät beim Messen von $A$ nach $C$ an?}
-    \end{figure}-
-    \end{center}
+      \caption{Zusatzfrage: Welchen Betrag zeigt das Messgerät beim Messen von $A$ nach $C$ an?}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Potential}
-    \begin{block}{}
-      Spannung ist der Potentialunterschied an zwei Punkten.
-    \end{block}
-    \begin{block}{}
-      Ein Multimeter misst den Potentialunterschied.
-    \end{block}
-    \begin{block}{}
-      Nullpotential ist ein theoretisches Modell.
-    \end{block}
+  \frametitle{Potential}
+  \begin{block}{}
+    Spannung ist der Potentialunterschied an zwei Punkten.
+  \end{block}
+  \begin{block}{}
+    Ein Multimeter misst den Potentialunterschied.
+  \end{block}
+  \begin{block}{}
+    Nullpotential ist ein theoretisches Modell.
+  \end{block}
 \end{frame}
 
 \section*{Strom}
 
 \begin{frame}
-    \frametitle{Strom}
-    \begin{center}
+  \frametitle{Strom}
+  \begin{center}
     \begin{block}{}
-        Elektrischer Strom ist die gerichtete Bewegung von Ladungsträgern.
+      Elektrischer Strom ist die gerichtete Bewegung von Ladungsträgern.
     \end{block}
     \begin{block}{}
-        Elektrischer Strom $I$ wird in [$A$] Ampere angegeben
+      Elektrischer Strom $I$ wird in [$A$] Ampere angegeben
     \end{block}
-    \end{center}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Physikalische vs. Technische Stromrichtung}
-  		\begin{center}
-   		 \begin{figure}
-      			\includegraphics[width=.7\textwidth,height=.75\textheight,keepaspectratio]{e02/Current_notation.png}
-     		 	\attribcaption{Nur Elektronen können sich bewegen}{User:Flekstro (Conventional\_Current.png by User:Romtobbi)}{https://commons.wikimedia.org/wiki/File:Current_notation.svg}{\ccby}
- 			\end{figure}
-       		\end{center}
+  \frametitle{Physikalische vs. Technische Stromrichtung}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=.7\textwidth,height=.75\textheight,keepaspectratio]{e02/Current_notation.png}
+      \attribcaption{Nur Elektronen können sich bewegen}{User:Flekstro (Conventional\_Current.png by User:Romtobbi)}{https://commons.wikimedia.org/wiki/File:Current_notation.svg}{\ccby}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Strom Messen}
-    \begin{center}
+  \frametitle{Strom Messen}
+  \begin{center}
     \begin{figure}
       \includegraphics[width=.5\textwidth,height=.75\textheight,keepaspectratio]{e02/reiheAmpare.png}
       \caption{Strom wird in Reihe gemessen}
@@ -156,8 +156,8 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Wie sollte gemessen werden?}
-         \begin{figure}
+  \frametitle{Wie sollte gemessen werden?}
+  \begin{figure}
     \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e02/stromSpannung.png}
     \caption{Fragenkatalog Bundesnetzagentur Klasse E TJ201}
   \end{figure}
@@ -166,8 +166,8 @@
 \section*{Ladung}
 
 \begin{frame}
-    \frametitle{Ladung}
-     \begin{center}
+  \frametitle{Ladung}
+  \begin{center}
     \begin{figure}
       \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e02/ladung.png}
       \attribcaption{$Q = I \cdot t$}{Geek3}{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}{\ccbysa}
@@ -176,119 +176,40 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Prüfungsfrage}
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TB205 & Wie lange könnte man mit einem voll geladenen\\
-        " " & Akku mit 55 Ah einen Amateurfunk-Empfänger\\ 
-        " " & betreiben, der einen Strom von\\ 
-        " " & 0,8 Ampere aufnimmt?\\ \hline\hline
-         A & 68 Stunden und 75 Minuten \\ \hline
-         B & Genau 44 Stunden \\ \hline
-         C & 6 Stunden 52 min und 30 s \\\hline
-         D & 68 Stunden und 45 Minuten \\\hline
-    \end{tabular}
- 	\end{center}
+  \frametitle{Prüfungsfrage}
+  \begin{tabular}{l||p{.8\textwidth}}\hline
+    \textbf{TB205} & \textbf{Wie lange könnte man mit einem voll geladenen Akku mit 55\,Ah einen Amateurfunk-Empfänger betreiben, der einen Strom von 0,8\,Ampere aufnimmt?} \\ \hline\hline
+    A & 68 Stunden und 75\,Minuten \\ \hline
+    B & Genau 44\,Stunden \\ \hline
+    C & 6 Stunden 52\,min und 30\,s \\\hline
+    D \only<2>\checkmark & 68\,Stunden und 45\,Minuten \\\hline
+  \end{tabular}
+  \pause
+  \begin{align}
+    t = \frac{Q}{I} = \frac{55 Ah}{0,8 A} = 68,75 h = 68 h 45 min
+  \end{align}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Prüfungsfrage}
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TB205 & Wie lange könnte man mit einem voll geladenen\\
-        " " & Akku mit 55 Ah einen Amateurfunk-Empfänger\\ 
-        " " & betreiben, der einen Strom von\\ 
-        " " & 0,8 Ampere aufnimmt?\\ \hline\hline
-         " " & 68 Stunden und 75 Minuten \\ \hline
-         " " & Genau 44 Stunden \\ \hline
-         " " & 6 Stunden 52 min und 30 s \\\hline
-         X & 68 Stunden und 45 Minuten \\\hline
-    \end{tabular}
-      \begin{align} 
-	t = \frac{Q}{I} = \frac{55 Ah}{0,8 A} = 68,75 h = 68 h 45 min
-      \end{align}
- 	\end{center}
- 	
-\end{frame}
 
 \section*{Wechsel\-spannung}
-\begin{frame}
-  \frametitle{Wechselspannung und Frequenz}
-  \begin{minipage}{0.4\textwidth}
-    \begin{figure}
-      \includegraphics[width=.8\textwidth]{e02/Wechselspannung.png}
-      \attribcaption{Wechselspannung}{Saure}{https://commons.wikimedia.org/wiki/File:Sinusspannung.svg}{\ccbysa}
-      \end{figure}
-  \end{minipage}
-  \begin{minipage}{0.4\textwidth}
-    \begin{itemize}
-      \item 1.) Amplitude $u_{spitze}$ 
-      \item 2.) Spitze-Spitze-Wert $U_{SS}$
-      \item 3.) Effektivwert $U_{eff}$
-      \item 4.) Periodendauer $T$ in $s$
-      \item Frequenz $f=\frac{1}{T}$ in $Hz = \frac{1}{s}$
-    \end{itemize}
-  \end{minipage}
-\end{frame}
-\begin{frame}
-  \frametitle{Frage zur Frequenz}
-  \begin{minipage}{0.6\textwidth}
-    \begin{tabular}{l||l}\hline
-        TB610& Welche Frequenz hat die\\
-        " " &  in diesem Oszillogramm\\
-        " " & dargestellte Spannung?\\ \hline\hline
-         A & $833,3 kHz$ \\ \hline
-         B & $83,3kHz$\\ \hline
-         C & $8,3MHz$ \\\hline
-         D & $83,3MHz$ \\\hline
-      \end{tabular}
-  \end{minipage}
-  \begin{minipage}{0.3\textwidth}
-    \begin{figure}
-       \includegraphics[width=.9\textwidth]{e02/TB610}{}
-     \end{figure}
-    \end{minipage}
-\end{frame}
-\begin{frame}
-  \frametitle{Frage zur Frequenz}
-  \begin{minipage}{0.6\textwidth}
-    \begin{tabular}{l||l}\hline
-        TB610& Welche Frequenz hat die\\
-        " " &  in diesem Oszillogramm\\
-        " " & dargestellte Spannung?\\ \hline\hline
-         " " & $833,3 kHz$ \\ \hline
-         X & $83,3kHz$\\ \hline
-         " "& $8,3MHz$ \\\hline
-         " " & $83,3MHz$ \\\hline
-      \end{tabular}
-  \end{minipage}
-  \begin{minipage}{0.3\textwidth}
-    \begin{figure}
-       \includegraphics[width=.9\textwidth]{e02/TB610}
-     \end{figure}
-    \end{minipage}
-      \begin{align} 
-        f=\frac{1}{T}=\frac{1}{12 \cdot 10^{-6}s}=83,3 \cdot 10^{3} Hz= 83,3 kHz
-\end{align}
-\end{frame}
 
 \begin{frame}
   \frametitle{Wechselspannungen}
-    \begin{minipage}{0.4\textwidth}
-      \begin{figure}
-	\includegraphics[width=.5\textwidth]{e02/Wechselspannungsformen.png}
-	\attribcaption{Formen von Wechselspannung}{Saure}{https://commons.wikimedia.org/wiki/File:Wechselspannungsformen.svg}{\ccbysa}
-     \end{figure}
-    \end{minipage}
-    \begin{minipage}{0.4\textwidth}	
-      \begin{itemize}
-        \item Verschiedene Formen von Wechselspannung
-        \item Beim Morsen bestenfalls ein Sinus
-        \item Ganz verschiedene Frequenzen
-        \item Stromnetz im Hause: $50Hz$ 
-        \item $70cm$ AFu Band $435.000.000Hz$
-      \end{itemize}
-    \end{minipage}
+  \begin{minipage}{0.4\textwidth}
+    \begin{figure}
+      \includegraphics[width=.5\textwidth,height=.75\textheight,keepaspectratio]{e02/Wechselspannungsformen.png}
+      \attribcaption{Wechselspannungsformen}{Saure}{https://commons.wikimedia.org/wiki/File:Wechselspannungsformen.svg}{\ccbysa}
+    \end{figure}
+  \end{minipage}
+  \begin{minipage}{0.4\textwidth}
+    \begin{itemize}
+      \item Verschiedene Formen von Wechselspannung
+      \item Beim Morsen bestenfalls ein Sinus
+      \item Ganz verschiedene Frequenzen
+      \item Stromnetz im Hause: $50Hz$
+      \item $70cm$ AFu Band $435.000.000Hz$
+    \end{itemize}
+  \end{minipage}
 \end{frame}
 
 \begin{frame}
@@ -307,25 +228,25 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Effektivwert vs. Spitzenwert}
-    \begin{align} 
-		U_{eff} & = \frac{1}{\sqrt{2}} u_{spitze}
-	\end{align}
-	\begin{alertblock}{Hausaufgabe}
-	    Aufgabe: Berechne den Spitzenwert des ``Hausstroms'' mit $U_{eff} = 240V$
-	\end{alertblock}
+  \frametitle{Effektivwert vs. Spitzenwert}
+  \begin{align}
+    U_{eff} & = \frac{1}{\sqrt{2}} u_{spitze}
+  \end{align}
+  \begin{alertblock}{Hausaufgabe}
+    Aufgabe: Berechne den Spitzenwert des ``Hausstroms'' mit $U_{eff} = 240V$
+  \end{alertblock}
 \end{frame}
 
 \section*{Referenzen}
 
 \begin{frame}
-    \frametitle{Referenzen/Links}
-    
-    \footnotesize
-    \begin{itemize}
-        \item Moltrecht E 02: \\
-              \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e02/}
-    \end{itemize}
+  \frametitle{Referenzen/Links}
+
+  \footnotesize
+  \begin{itemize}
+    \item Moltrecht E 02: \\
+      \url{https://www.darc.de/der-club/referate/ajw/lehrgang-te/e02/}
+  \end{itemize}
 
 \end{frame}
 
