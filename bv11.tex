@@ -5,8 +5,8 @@
 
 \input{texdata/preamble}
 \subtitle{Betriebstechnik/Vorschriften 11: \\
-          Betriebsabwicklung auf VHF/UHF \\[2em]}
-\date{Stand 21.01.2016}
+Betriebsabwicklung auf VHF/UHF \\[2em]}
+\date{Stand 05.12.2016}
 \input{texdata/titlepage}
 
 %FIXME Quellen aus den Slides ins Verzeichnis
@@ -16,36 +16,36 @@
 \section*{Einleitung}
 
 \begin{frame}
-    \frametitle{Einleitung}
+  \frametitle{Einleitung}
 
-    \begin{block}{Von welchen Frequenzbereichen reden wir bei VHF und UHF?}
-      \only<1>{\vspace{1em}}
-      \only<2>{Richtig, $30-300MHz$ (VHF) und $300-3000MHz$ (UHF)}
-    \end{block}
+  \begin{block}{Von welchen Frequenzbereichen reden wir bei VHF und UHF?}
+    \only<1>{\vspace{1em}}
+    \only<2>{Richtig, $30-300MHz$ (VHF) und $300-3000MHz$ (UHF)}
+  \end{block}
 
 \end{frame}
 
 \section[UKW]{UKW-Eigenschaften}
 
 \begin{frame}
-    \frametitle{UKW-Eigenschaften}
+  \frametitle{UKW-Eigenschaften}
 
-    \begin{itemize}
-        \item Freiraumausbreitung, eine quasi-optische Ausbreitung, ähnlich dem
-              Licht
-        \item Reichweite normalerweise ca. 10 bis 250km -- was sind die Faktoren?
+  \begin{itemize}
+    \item Freiraumausbreitung, eine quasi-optische Ausbreitung, ähnlich dem
+      Licht
+    \item Reichweite normalerweise ca. 10 bis 250km -- was sind die Faktoren?
 
-        \pause
+      \pause
 
-        \begin{itemize}
-            \item Frequenzbereich
-            \item Gelände
-            \item Antennenhöhe
-            \item Sendeleistung
-            \item Betriebsart
-            \item abwarten... Überreichweiten bis über 2000km
-        \end{itemize}
-    \end{itemize}
+      \begin{itemize}
+        \item Frequenzbereich
+        \item Gelände
+        \item Antennenhöhe
+        \item Sendeleistung
+        \item Betriebsart
+        \item abwarten... Überreichweiten bis über 2000km
+      \end{itemize}
+  \end{itemize}
 
 \end{frame}
 
@@ -54,184 +54,204 @@
 \subsection{SX}
 
 \begin{frame}
-    \frametitle{Simplex (SX)}
+  \frametitle{Simplex (SX)}
 
-    SX, auch \emph{Richtungsverkehr}, eigentlich reine
-    ``one-way''-Kommunikation: Daten können in nur eine Richtung übertragen
-    werden, diese Technik ermöglicht keine Antwort.
+  SX, auch \emph{Richtungsverkehr}, eigentlich reine
+  ``one-way''-Kommunikation: Daten können in nur eine Richtung übertragen
+  werden, diese Technik ermöglicht keine Antwort.
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth]{bv11/Simplex.jpg}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:Simplex.jpg}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth]{bv11/Simplex.jpg}
+      \attribcaption{Simplex}{SImedioP}{http://commons.wikimedia.org/wiki/File:Simplex.jpg}{\ccbysa}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Beispiele:
-        \begin{itemize}
-            \item Broadcast: Hörfunk, Fernsehen, Funk-Baken, GPS, ...
-            \item Funkmikro, Babyfon
-            \item Pager
-        \end{itemize}
-    \end{itemize}
+  \begin{itemize}
+    \item Beispiele:
+      \begin{itemize}
+        \item Broadcast: Hörfunk, Fernsehen, Funk-Baken, GPS, ...
+        \item Funkmikro, Babyfon
+        \item Pager
+      \end{itemize}
+  \end{itemize}
 
 \end{frame}
 
 \subsection{HX}
 
 \begin{frame}
-    \frametitle{Halbduplex (HX)}
+  \frametitle{Halbduplex (HX)}
 
-    Beim Halb- oder Semiduplex, auch \emph{Wechselverkehr} oder \emph{Bedingter
-    Gegenverkehr} können Daten abwechselnd, aber nicht gleichzeitig, in beide
-    Richtungen fließen.
+  Beim Halb- oder Semiduplex, auch \emph{Wechselverkehr} oder \emph{Bedingter
+  Gegenverkehr} können Daten abwechselnd, aber nicht gleichzeitig, in beide
+  Richtungen fließen.
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth,height=.6\textheight,keepaspectratio]{bv11/HalfDuplex.jpg}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/http://commons.wikimedia.org/wiki/File:HalfDuplex.JPG}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.6\textheight,keepaspectratio]{bv11/HalfDuplex.jpg}
+      \attribcaption{Half Duplex}{Greggreggreg}{http://commons.wikimedia.org/wiki/File:HalfDuplex.JPG}{\ccpd}
+    \end{figure}
+  \end{center}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Halbduplex (HX)}
+  \frametitle{Halbduplex (HX)}
 
-    \begin{itemize}
-        \item Simplex ITU-T definition: One way signaling at a time
-        \item SX im AFu oft auch stellvertretend für Kommunikation, die nur eine Frequenz
-              zum Senden und Empfangen nutzt, anstatt einen Repeater zu nutzen
-        \item gemeint ist aber Halbduplex bzw. Semiduplex
-    \end{itemize}
+  \begin{itemize}
+    \item Simplex ITU-T definition: One way signaling at a time
+    \item SX im AFu oft auch stellvertretend für Kommunikation, die nur eine Frequenz
+      zum Senden und Empfangen nutzt, anstatt einen Repeater zu nutzen
+    \item gemeint ist aber Halbduplex bzw. Semiduplex
+  \end{itemize}
 
-    \begin{center}
-        \includegraphics[width=0.25\textwidth,height=.25\textheight,keepaspectratio]{bv11/HalfDuplex.jpg}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:HalfDuplex.JPG}}
-    \end{center}
-
-    \begin{itemize}
-      \item zum Vergleich:
+  \begin{columns}
+    \column{.6\textwidth}
       \begin{itemize}
-         \item AFu-Handfunkbetrieb
-         \item Intercom/Türsprechanlage
-         \item CB-Funk
-         \item PMR-Funk
+        \item zum Vergleich:
+          \begin{itemize}
+            \item AFu-Handfunkbetrieb
+            \item Intercom/Türsprechanlage
+            \item CB-Funk
+            \item PMR-Funk
+          \end{itemize}
       \end{itemize}
-    \end{itemize}
+
+    \column{.4\textwidth}
+    \begin{center}
+      \begin{figure}
+        \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{bv11/HalfDuplex.jpg}
+        \attribcaption{Half Duplex}{Greggreggreg}{http://commons.wikimedia.org/wiki/File:HalfDuplex.JPG}{\ccpd}
+      \end{figure}
+    \end{center}
+  \end{columns}
 
 \end{frame}
 
 \subsection{DX}
 
 \begin{frame}
-    \frametitle{Vollduplex (DX)}
+  \frametitle{Vollduplex (DX)}
 
-    Beim DX\footnote{nicht verwechseln mit weite Entfernung}, auch
-    \emph{Gegenverkehr}, können Daten in beide Richtungen gleichzeitig
-    übertragen werden. \\[1em]
+  Beim DX\footnote{nicht verwechseln mit weite Entfernung}, auch
+  \emph{Gegenverkehr}, können Daten in beide Richtungen gleichzeitig
+  übertragen werden. \\[1em]
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth]{bv11/FullDuplex.jpg}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:FullDuplex.JPG}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.25\textheight,keepaspectratio]{bv11/FullDuplex.jpg}
+      \attribcaption{Full Duplex}{Greggreggreg}{http://commons.wikimedia.org/wiki/File:FullDuplex.JPG}{\ccpd}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Beispiele:
-        \begin{itemize}
-            \item Telefon
-            \item Ethernet
-            \item ''Datenfunk'' via Satelliten oder HamNet
-        \end{itemize}
-    \end{itemize}
+  \begin{itemize}
+    \item Beispiele:
+
+      \begin{itemize}
+        \item Telefon
+        \item Ethernet
+        \item ``Datenfunk'' via Satelliten oder HamNet
+      \end{itemize}
+  \end{itemize}
 
 \end{frame}
 
 \section[FM-Funkbetrieb]{Einfacher FM-Funkbetrieb}
 
 \begin{frame}
-    \frametitle{Einfacher FM-Funkbetrieb}
+  \frametitle{Einfacher FM-Funkbetrieb}
 
-    In den so genannten Simplex-Bereichen\footnote{NBFM (Narrow-Band FM) mit ca. 12~kHz
-    Bandbreite, Kanalraster 12,5~kHz} finden lokale ``Runden'' statt.
-    Ein \emph{QSO} startet z.B. mit: \\[2em]
+  In den so genannten Simplex-Bereichen\footnote{NBFM (Narrow-Band FM) mit ca. 12~kHz
+  Bandbreite, Kanalraster 12,5~kHz} finden lokale ``Runden'' statt.
+  Ein \emph{QSO} startet z.B. mit: \\[2em]
 
-    \begin{center}
-        \Large \emph{``[Hier ist ein] Allgemeiner Anruf von DKØTU''} \\[1em]
-        \normalsize oder \\[1em]
-        \Large \emph{``[CQ] DKØTU von DL7BST''}
-    \end{center}
+  \begin{center}
+    \Large \emph{``[Hier ist ein] Allgemeiner Anruf von DKØTU''} \\[1em]
+    \normalsize oder \\[1em]
+    \Large \emph{``[CQ] DKØTU von DL7BST''}
+  \end{center}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Einfacher FM-Funkbetrieb}
+  \frametitle{Einfacher FM-Funkbetrieb}
 
-    \begin{itemize}[<+->]
-        \item es folgen so genannte Durchgänge in die man sich reinhängen kann --
-              nicht brachial, sondern vorsichtig
-        \item lockere Gesprächsathmosphäre ohne Q-Codes
-        \item mitschreiben der Gegenstationen und ihre Rapporte hilft
-        \item QTH nennen, Rig vorstellen
-        \item außerhalb von Runden freie QRG suchen oder entsprechende
-              Anruffrequenz nutzen
-    \end{itemize}
+  \begin{itemize}
+    \item es folgen so genannte Durchgänge in die man sich reinhängen kann --
+      nicht brachial, sondern vorsichtig
+    \item lockere Gesprächsathmosphäre ohne Q-Codes
+    \item mitschreiben der Gegenstationen und ihre Rapporte hilft
+    \item QTH nennen, Rig vorstellen
+    \item außerhalb von Runden freie QRG suchen oder entsprechende
+      Anruffrequenz nutzen
+  \end{itemize}
 
 \end{frame}
 
 \subsection{Relaisbetrieb}
 
 \begin{frame}
-    \frametitle{Relaisbetrieb}
+  \frametitle{Relaisbetrieb}
 
-    \begin{center}
-        \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{bv11/Relaisstelle.png}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:Relaisstelle.svg}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.6\textheight,keepaspectratio]{bv11/Relaisstelle.png}
+      \attribcaption{Relaisstelle}{$\aleph$ (Aleph)}{http://commons.wikimedia.org/wiki/File:Relaisstelle.svg}{Beerware Licence}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Umsetzerstationen, normalerweise exponiert -- warum?
-        \item unterschiedliche Ein-/Ausgabe-Frequenz im gleichen Band (Duplex)
-    \end{itemize}
+  \begin{itemize}
+    \item Umsetzerstationen, normalerweise exponiert -- warum?
+    \item unterschiedliche Ein-/Ausgabe-Frequenz im gleichen Band (Duplex)
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Relaisfunkbetrieb}
+  \frametitle{Relaisfunkbetrieb}
 
-    \begin{center}
-        \includegraphics[width=0.5\textwidth,height=.35\textheight,keepaspectratio]{bv11/Relaisstelle.png}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:Relaisstelle.svg}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.5\textwidth,height=.3\textheight,keepaspectratio]{bv11/Relaisstelle.png}
+      \attribcaption{Relaisstelle}{$\aleph$ (Aleph)}{http://commons.wikimedia.org/wiki/File:Relaisstelle.svg}{Beerware Licence}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item QRGs werden abgestimmt und bei \emph{BNetzA} angemeldet
-        \item Ablage:
-        \begin{itemize}
-            \item 2-m-Band: $600 kHz$
-            \item 70-cm-Band: $7,6 MHz$
-            \item 23-cm-Band: $35 MHz$
-            \item MERKE: Das Relais sendet ``von oben''!
-        \end{itemize}
-        \item Öffnung meist mit 1750-Hz-Ton -- bei Erfolg hört man die Kennung
-    \end{itemize}
+  \begin{itemize}
+    \item QRGs werden abgestimmt und bei \emph{BNetzA} angemeldet
+    \item Ablage oder Shift (abweichend in anderen Ländern):
+      \begin{itemize}
+        \item 2-m-Band: $600 kHz$
+        \item 70-cm-Band: $7,6 MHz$
+        \item 23-cm-Band: $35 MHz$
+        \item MERKE: Das Relais sendet ``von oben''!
+      \end{itemize}
+    \item Öffnung meist mit 1750-Hz-Ton -- bei Erfolg hört man die Kennung
+    \item manche Relais verwenden CTCSS/DTS
+  \end{itemize}
 
 \end{frame}
 
 \subsection{Echolink}
 
 \begin{frame}
-    \frametitle{Echolink}
+  \frametitle{Echolink}
 
-    Betriebsart, die Repeater über das Internet verbindet.
+  Betriebsart, die Repeater über das Internet verbindet.
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{bv11/Echolink.jpg}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:Echolink.jpg}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.45\textheight,keepaspectratio]{bv11/Echolink.jpg}
+      \attribcaption{Echolink}{Stahlecker}{http://commons.wikimedia.org/wiki/File:Echolink.jpg}{Copyrighted free use}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Ziel-Knotennummern können mit DTMF\footnote{Dual-tone multi-frequency
-              (Mehrfrequenzwahlverfahren)}-Tönen gewählt werden
-        \item außer zusätzliches Delay kaum Unterschied zum Relais
-    \end{itemize}
+  \begin{itemize}
+    \item Ziel-Knotennummern können mit DTMF\footnote{Dual-tone multi-frequency
+      (Mehrfrequenzwahlverfahren)}-Tönen gewählt werden
+    \item außer zusätzliches Delay kaum Unterschied zum Relais
+  \end{itemize}
 
 \end{frame}
 
@@ -240,317 +260,365 @@
 \subsection[Tropo DX]{Troposphärische Überreichweiten (Tropo DX)}
 
 \begin{frame}
-    \frametitle{Troposphärische Überreichweiten (Tropo DX)}
+  \frametitle{Troposphärische Überreichweiten (Tropo DX)}
 
-    \begin{center}
-        \includegraphics[width=0.5\textwidth,height=.6\textheight,keepaspectratio]{bv11/Atmosphaere_Stufen.png}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:Atmosph\%C3\%A4re_Stufen.svg}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.5\textwidth,height=.6\textheight,keepaspectratio]{bv11/Atmosphaere_Stufen.png}
+      \attribcaption{Atmosphäre Stufen}{Niko Lang (original image), Ladyt (vector version)}{http://commons.wikimedia.org/wiki/File:Atmosphäre_Stufen.svg}{\ccbysa}
+    \end{figure}
+  \end{center}
 
-    Troposphäre: Unterste Schicht der Erdatmosphäre AKA \emph{Wetterschicht}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Troposphärische Überreichweiten (Tropo DX)}
-
-    \begin{center}
-        \includegraphics[width=0.6\textwidth,height=.6\textheight,keepaspectratio]{bv11/Inversionswetterlage.jpg}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:Kasperske_Hory_od_Lisciho_vrchu.jpg}}
-    \end{center}
-
-    \begin{itemize}
-        \item größter Teil der Wärme wird vom Erdboden aufgenommen, weswegen die
-              Lufttemperatur im Schnitt um etwa 6,5$^\circ$C pro Kilometer Höhe abnimmt
-        \item Metereologische Vorgänge können für Inversionen sorgen
-    \end{itemize}
+  Troposphäre: Unterste Schicht der Erdatmosphäre AKA \emph{Wetterschicht}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Troposphärische Überreichweiten (Tropo DX)}
+  \frametitle{Troposphärische Überreichweiten (Tropo DX)}
 
-    \begin{center}
-        \includegraphics[width=0.4\textwidth,height=.5\textheight,keepaspectratio]{bv11/Absinkinversion.png}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:Absinkinversion.png}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{bv11/Inversionswetterlage.jpg}
+      \attribcaption{Inversionswetterlage}{Adam Hauner}{https://commons.wikimedia.org/wiki/File:Kašperské Hory od Liščího vrchu.jpg}{\ccby}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
+  \begin{itemize}
+    \item größter Teil der Wärme wird vom Erdboden aufgenommen, weswegen die
+      Lufttemperatur im Schnitt um etwa 6,5$^\circ$C pro Kilometer Höhe abnimmt
+    \item Metereologische Vorgänge können für Inversionen sorgen
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Troposphärische Überreichweiten (Tropo DX)}
+
+  \begin{columns}
+    \column{.5\textwidth}
+      \begin{center}
+        \begin{figure}
+          \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{bv11/Absinkinversion.png}
+          \attribcaption{Absinkinversion}{Saperaud}{http://commons.wikimedia.org/wiki/File:Absinkinversion.png}{\ccpd}
+        \end{figure}
+      \end{center}
+    \column{.5\textwidth}
+      \begin{itemize}
         \item an den Sprüngen kann UKW gebrochen werden, 100 bis 1000km Reichweite
         \item meist Herbst und Frühling
         \item kurze Durchgänge: Rapport, Locator und eventuell noch Namen
-    \end{itemize}
+        \item Beispiel: QSO zwischen DC4LW in Berlin und DO1DAN mit 10W in Dannenberg (200km) via DB0BLO (70cm) an einem Septembermorgen
+      \end{itemize}
+\end{columns}
 
 \end{frame}
 
 \subsection{Aurora borealis}
 
 \begin{frame}
-    \frametitle{Aurora borealis}
+  \frametitle{Aurora borealis}
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{bv11/Aurora_Seen_From_Space_by_NASA.jpg}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:Aurora_Seen_From_Space_by_NASA.jpg}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{bv11/Aurora_Seen_From_Space_by_NASA.jpg}
+      \attribcaption{Aurora Seen from Space by NASA}{NASA}{http://commons.wikimedia.org/wiki/File:Aurora_Seen_From_Space_by_NASA.jpg}{\ccpd}
+    \end{figure}
+  \end{center}
 
-    Um das Sonnenfleckenmaximum (ca. 11-Jahres-Zyklus) herum gibt es starke
-    Sonnenwinde als kurzzeitige Erscheinungen.
+  Um das Sonnenfleckenmaximum (ca. 11-Jahres-Zyklus) herum gibt es starke
+  Sonnenwinde als kurzzeitige Erscheinungen.
 
-    \begin{itemize}
-        \item Erdmagnetfeld zieht diese auf die Polkappen, ionisiert diese (Polarlicht).
-    \end{itemize}
+  \begin{itemize}
+    \item Erdmagnetfeld zieht diese auf die Polkappen, ionisiert diese (Polarlicht).
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{Aurora borealis}
+  \frametitle{Aurora borealis}
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{bv11/Structure_of_the_magnetosphere-en.png}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:Structure_of_the_magnetosphere-en.svg}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{bv11/Structure_of_the_magnetosphere-en.png}
+      \attribcaption{Structure of the Magnetosphere}{Original bitmap from NASA. SVG rendering by Aaron Kaase}{http://commons.wikimedia.org/wiki/File:Structure_of_the_magnetosphere-en.svg}{\ccpd}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item VHF wird stark verzerrt (verrauscht und verbrummt) reflektiert
-        \item kein SSB/FM, nur Telegrafie
-        \item Antennenrichtung: Null +/- 30 Grad
-    \end{itemize}
+  \begin{itemize}
+    \item VHF wird stark verzerrt (verrauscht und verbrummt) reflektiert
+    \item kein SSB/FM, nur Telegrafie
+    \item Antennenrichtung: Null +/- 30 Grad
+  \end{itemize}
 
 \end{frame}
 
 \subsection{Sporadic-E}
 
 \begin{frame}
-    \frametitle{Sporadic-E}
+  \frametitle{Sporadic-E}
+  \begin{columns}
+    \column{.4\textwidth}
+      \begin{center}
+        \begin{figure}
+          \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{bv11/SporadicE-NPS.png}
+          \attribcaption{Sporadic E. {\color{red} Rot: Normale KW} {\color{blue} Blau: KW bei Sporadic E}}{Naval Postgraduate School}{http://commons.wikimedia.org/wiki/File:SporadicE-NPS.gif}{\ccpd}
+        \end{figure}
+      \end{center}
+    \column{.6\textwidth}
+      $E_S$-Schicht: In Frühsommermonaten sporadisch stark ionisierte Bereiche am
+      unteren Rand der E-Schicht.
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth,height=.4\textheight,keepaspectratio]{bv11/SporadicE-NPS.png}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:SporadicE-NPS.gif}}
-        % FIXME Legende für rot und blau
-    \end{center}
-
-    $E_S$-Schicht: In Frühsommermonaten sporadisch stark ionisierte Bereiche am
-    unteren Rand der E-Schicht.
-
-    \begin{itemize}
+      \begin{itemize}
         \item Entstehung ist nicht geklärt
-        \item keine stetige Verbindung, Schichten ändern sich innerhalb weniger Minuten
+        \item Bei KW Ausbreitung und Empfang der “toten Zone” möglich, aber kein DX
+        \item Aber auch UKW wird gebrochen $\rightarrow$ Reichweitensteigerung
         \item 1000 bis 2000km Hops mit QRP
+        \item keine stetige Verbindung, Schichten ändern sich innerhalb weniger Minuten
         \item kurze Durchgänge: Rapport, Locator und eventuell noch Namen
-    \end{itemize}
-
+      \end{itemize}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Vergleich der Überreichweiten}
+  \frametitle{Vergleich der Überreichweiten}
 
-    \begin{center}
-        \includegraphics[width=0.9\textwidth,height=.75\textheight,keepaspectratio]{bv11/df0yy_2m-karte.jpg}
-        \footnote{\tiny \url{http://www.df0yy.de/workingus.htm}}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.9\textwidth,height=.65\textheight,keepaspectratio]{bv11/df0yy_2m-karte.jpg}
+      \attribcaption{2m Karte bei Überreichweiten}{DFØYY}{http://www.df0yy.de/workingus.htm}{}
+    \end{figure}
 
-        Gearbeitete Großfelder von \emph{DFØYY} auf dem 2 Meter Band
-    \end{center}
+    Gearbeitete Großfelder von \emph{DFØYY} auf dem 2 Meter Band
+  \end{center}
 
 \end{frame}
 
 \subsection[Meteorscatter]{Meteorscatter (MS)}
 
 \begin{frame}
-    \frametitle{Meteorscatter (MS)}
+  \frametitle{Meteorscatter (MS)}
 
-    In die Atmosphäre eintretende Meteoritenschauer ionisieren die
-    Luftschichten.
+  In die Atmosphäre eintretende Meteoritenschauer ionisieren die
+  Luftschichten.
 
-    \begin{center}
-        \includegraphics[width=0.3\textwidth,height=.3\textheight,keepaspectratio]{bv11/Bolide.jpg}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:Bolide.jpg}}
-    \end{center}
-
-    \begin{itemize}
+  \begin{columns}
+    \column{.4\textwidth}
+      \begin{center}
+        \begin{figure}
+          \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{bv11/Bolide.jpg}
+          \attribcaption{Meteor}{Thomas Grau derivative work: Basilicofresco}{http://commons.wikimedia.org/wiki/File:Bolide.jpg}{\ccpd}
+        \end{figure}
+      \end{center}
+    \column{.6\textwidth}
+      \begin{itemize}
         \item ca. 100 km Höhe
         \item Sekundenbruchteile (Ping), wenige Sekunden (Burst), sehr selten
-              mehrere Minuten
+          mehrere Minuten
         \item Hops von ca. 800 bis 2500 km
         \item High-Speed-Telegrafie (Computer- bzw. Tonbandgestützt) oder Digimodes wie FSK441
         \item extrem verkürzte SSB-Kontakte selten möglich
-    \end{itemize}
+      \end{itemize}
+  \end{columns}
 
-    %todo Der Pro schaut sich das mal an: "Determining the radiant of a meteor"
-    %     http://ea4eoz.blogspot.com.es/2015/05/determining-radiant-of-meteor-using.html
+  %todo Der Pro schaut sich das mal an: "Determining the radiant of a meteor"
+  %     http://ea4eoz.blogspot.com.es/2015/05/determining-radiant-of-meteor-using.html
 
 \end{frame}
 
 \subsection[EME]{Erde-Mond-Erde (EME)}
 
 \begin{frame}
-    \frametitle{Erde-Mond-Erde (EME)}
+  \frametitle{Erde-Mond-Erde (EME)}
 
-    Mondoberfläche als Reflektor für UKW
+  Mondoberfläche als Reflektor für UKW
 
-    \begin{center}
-        \includegraphics[width=0.4\textwidth,height=.4\textheight,keepaspectratio]{bv11/Lunar_crater_Daedalus.jpg}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:Lunar_crater_Daedalus.jpg}}
-    \end{center}
-
-    \begin{itemize}
-        \item Mond ca. 0,5\% der Himmelsoberfläche % FIXME º ?
-        \item vom Mond aus Erde auch nur ca. 2\% % FIXME º ?
+  \begin{columns}
+    \column{.5\textwidth}
+      \begin{center}
+        \begin{figure}
+          \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{bv11/Lunar_crater_Daedalus.jpg}
+          \attribcaption{Lunar Crater Daedalus}{NASA}{http://commons.wikimedia.org/wiki/File:Lunar_crater_Daedalus.jpg}{\ccpd}
+        \end{figure}
+      \end{center}
+    \column{.5\textwidth}
+      \begin{itemize}
+        % Die Angabe º ist korrekt, da hier die Größe am Himmel angegeben wird
+        \item Mond ca. 0,5º der Himmelsoberfläche
+        \item vom Mond aus Erde auch nur ca. 2º
         \item extrem schlechter Reflektor (10\%, diffus), 250dB Dämpfung bei 2m-Band
         \item ergo: gute Richtwirkung, QRO und Schmalbandbetriebsarten (CW, Digimodes wie JT65)
-    \end{itemize}
+      \end{itemize}
+  \end{columns}
 
 \end{frame}
 
 \begin{frame}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.9\textheight,keepaspectratio]{bv11/IMG_2898.jpg}
+      \attribcaption{DFØMU in Schöppingen}{DC4LW}{http://dc4lw.de}{}
+    \end{figure}
+  \end{center}
+\end{frame}
 
-    \begin{center}
-        %\includegraphics[width=1\textwidth,height=.9\textheight,keepaspectratio]{bv11/IMG_2898.jpg}
-        %\footnote{\tiny eigene Aufnahme von DC4LW bei DFØMU in Schöppingen}
-        \includegraphics[width=1\textwidth,height=.9\textheight,keepaspectratio]{bv11/1988+89_UKW-Gruppen_G8VHI.jpg}
-        \footnote{\tiny \url{http://www.dk0tu.de/chronicle/1988+89_UKW-Gruppen_G8VHI.jpg}}
-    \end{center}
-
+\begin{frame}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.9\textheight,keepaspectratio]{bv11/1988+89_UKW-Gruppen_G8VHI.jpg}
+      \attribcaption{UKW-Gruppen bei DKØTU im Jahr 1988/89}{DKØTU}{http://www.dk0tu.de/chronicle/1988+89_UKW-Gruppen_G8VHI.jpg}{}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \section{Transponder}
 
 \begin{frame}
-    \frametitle{Transponder}
+  \frametitle{Transponder}
 
-    Kofferwort aus Transmitter und Responder -- im Prinzip ein Breitbandrelais.
+  Kofferwort aus Transmitter und Responder -- im Prinzip ein Breitbandrelais.
 
-    \begin{center}
-        \includegraphics[width=0.5\textwidth,height=.3\textheight,keepaspectratio]{bv11/Transponder.png}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:Transponderp.svg}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.5\textwidth,height=.3\textheight,keepaspectratio]{bv11/Transponder.png}
+      \attribcaption{Transponder}{Dantor}{http://commons.wikimedia.org/wiki/File:Transponderp.svg}{\ccbysa}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Meist sind Lineartransponder gemeint, die einen Frequenzbereich
-              duplex auf einen anderen umsetzen -- unabhängig von der Betriebsart
-        \item oftmals verschiedene Bänder
-        \item RX, Amplify, TX
-        \item geringe Leistung verwenden, da \emph{AGC} nach stärkstem Signal regelt
-        \item einige Transponder können diese \emph{Krokodile} ausnotchen
-    \end{itemize}
+  \begin{itemize}
+    \item Meist sind Lineartransponder gemeint, die einen Frequenzbereich
+      duplex auf einen anderen umsetzen -- unabhängig von der Betriebsart
+    \item oftmals verschiedene Bänder
+    \item RX, Amplify, TX
+    \item geringe Leistung verwenden, da \emph{AGC} nach stärkstem Signal regelt
+    \item einige Transponder können diese \emph{Krokodile} ausnotchen
+  \end{itemize}
 
 \end{frame}
 
 \subsection{ARTOB}
 
 \begin{frame}
-    \frametitle{ARTOB}
+  \frametitle{ARTOB}
 
-    \textbf{A}mateur \textbf{R}adio \textbf{T}ransponder \textbf{O}n \textbf{B}aloon
+  \textbf{A}mateur \textbf{R}adio \textbf{T}ransponder \textbf{O}n \textbf{B}aloon
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{bv11/Wetterballon_Nutzlast.jpg}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:800px-Wetterballon_Nutzlast_Start_2004-09-10.jpg}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{bv11/Wetterballon_Nutzlast.jpg}
+      \attribcaption{Wetterballon Nutzlast}{Harald Linden O28 Lennestadt}{https://commons.wikimedia.org/wiki/File:Wetterballon_Nutzlast_Start_2004-09-10.jpg}{GPL}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Möglichkeit einen Transponder für günstige Ausbreitung zu nutzen
-        \item Höhe bis zu 30 km
-    \end{itemize}
+  \begin{itemize}
+    \item Möglichkeit einen Transponder für günstige Ausbreitung zu nutzen
+    \item Höhe bis zu 30 km
+  \end{itemize}
 
-    % www.aatis.org 
+  % www.aatis.org
 
 \end{frame}
 
 \subsection{OSCAR}
 
 \begin{frame}
-    \frametitle{OSCAR}
+  \frametitle{OSCAR}
 
-    %todo Geschichte, Fotos, Videos?
+  %todo Geschichte, Fotos, Videos?
 
-    \textbf{O}rbiting \textbf{S}atellite \textbf{C}arrying \textbf{A}mateur \textbf{R}adio
+  \textbf{O}rbiting \textbf{S}atellite \textbf{C}arrying \textbf{A}mateur \textbf{R}adio
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{bv11/OSCAR1.jpg}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:800px-OSCAR_1_Communications_Satellite_model_-_Udvar-Hazy_Center.JPG}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.5\textheight,keepaspectratio]{bv11/OSCAR1.jpg}
+      \attribcaption{OSCAR1}{Daderot}{https://commons.wikimedia.org/wiki/File:OSCAR_1_Communications_Satellite_model_-_Udvar-Hazy_Center.JPG}{\ccpd}
+    \end{figure}
+  \end{center}
 
-    \begin{itemize}
-        \item Satellitenfunkbetrieb
-        \item bereits 12/1961 \emph{OSCAR 1} (vgl. \emph{Sputnik 1} 10/1957)
-    \end{itemize}
+  \begin{itemize}
+    \item Satellitenfunkbetrieb
+    \item bereits 12/1961 \emph{OSCAR 1} (vgl. \emph{Sputnik 1} 10/1957)
+  \end{itemize}
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{OSCAR}
+  \frametitle{OSCAR}
 
-    \begin{itemize}
-        \item meist auf elliptische Umlaufbahnen, Parameter:
-        \begin{itemize}
-            \item Azimut
-            \item Elevation
-            \item Apogäum (max. Entfernung)
-            \item Perigäum (min. Entf.)
-        \end{itemize}
-        \item Up- und Downlink\footnote{2-m-Band: 145,300-146,500 MHz; 70-cm-Band: 438,000-440,000 MHz}
-              oft in verschiedenen Bändern (Transponderfahrplan)
-        \item teilweise SSB mit LSB im Uplink und USB im Downlink
-        \item old and busted coming up: geostationär (35.786 km)
-        \item new hotness coming up: Kleinsatelliten (CubeSat und kleiner)
-    \end{itemize}
+  \begin{itemize}
+    \item meist auf elliptische Umlaufbahnen, Parameter:
+      \begin{itemize}
+        \item Azimut
+        \item Elevation
+        \item Apogäum (max. Entfernung)
+        \item Perigäum (min. Entf.)
+      \end{itemize}
+    \item Up- und Downlink\footnote{2-m-Band: 145,300-146,500 MHz; 70-cm-Band: 438,000-440,000 MHz}
+      oft in verschiedenen Bändern (Transponderfahrplan)
+    \item teilweise SSB mit LSB im Uplink und USB im Downlink
+    \item old and busted coming up: geostationär (35.786 km)
+    \item new hotness coming up: Kleinsatelliten (CubeSat und kleiner)
+  \end{itemize}
 
 \end{frame}
 
 \section[QTH-Locator]{QTH-Locator (Maidenhead Locator)}
 
 \begin{frame}
-    \frametitle{QTH-Locator (Maidenhead Locator)}
+  \frametitle{QTH-Locator (Maidenhead Locator)}
 
-    \begin{center}
-        \includegraphics[width=0.6\textwidth,height=.65\textheight,keepaspectratio]{bv11/Maidenhead_grid_over_Europe.png}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:729px-Maidenhead_grid_over_Europe.svg}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.6\textwidth,height=.65\textheight,keepaspectratio]{bv11/Maidenhead_grid_over_Europe.png}
+      \attribcaption{Maidenhead Grid}{Oona Räisänen (Mysid)}{https://commons.wikimedia.org/wiki/File:Maidenhead_grid_over_Europe.svg}{\ccbysa}
+    \end{figure}
+  \end{center}
 
-    Von \emph{IARU} entwickelter Standortkenner durch Aufteilung der Erde in Felder.
+  Von \emph{IARU} entwickelter Standortkenner durch Aufteilung der Erde in Felder.
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{QTH-Locator (Maidenhead Locator)}
+  \frametitle{QTH-Locator (Maidenhead Locator)}
 
-    \begin{center}
-        \includegraphics[width=0.5\textwidth,height=.3\textheight,keepaspectratio]{bv11/Maidenhead_grid_over_Europe.png}
-        \footnote{\tiny \url{http://commons.wikimedia.org/wiki/File:729px-Maidenhead_grid_over_Europe.svg}}
-    \end{center}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.5\textwidth,height=.3\textheight,keepaspectratio]{bv11/Maidenhead_grid_over_Europe.png}
+      \attribcaption{Maidenhead Grid}{Oona Räisänen (Mysid)}{https://commons.wikimedia.org/wiki/File:Maidenhead_grid_over_Europe.svg}{\ccbysa}
+    \end{figure}
+  \end{center}
 
-    \begin{description}
-        \item[324 Fields (Größtfelder)\footnote{20 Längengrade, 10 Breitengrade}] AA (links unten) bis RR (rechts oben)
-        \item[100 Squares (Großfelder) \footnote{2 Längengrade, 1 Breitengrad}] 00 (l.u.) bis 99 (r.o.)
-        \item[576 Subsquares (Kleinfelder) \footnote{ca. 7x5 km in unseren Breitengraden}] AA (l.u.) bis XX (r.o.)
-    \end{description}
+  \begin{description}
+    \item[324 Fields (Größtfelder)\footnote{20 Längengrade, 10 Breitengrade}] AA (links unten) bis RR (rechts oben)
+    \item[100 Squares (Großfelder) \footnote{2 Längengrade, 1 Breitengrad}] 00 (l.u.) bis 99 (r.o.)
+    \item[576 Subsquares (Kleinfelder) \footnote{ca. 7x5 km in unseren Breitengraden}] AA (l.u.) bis XX (r.o.)
+  \end{description}
 
 \end{frame}
 
 \section{Baken}
 
 \begin{frame}
-    \frametitle{Baken im VHF/UHF-Bereich}
+  \frametitle{Baken im VHF/UHF-Bereich}
 
-    Angemeldete automatisch arbeitende Sender zur Bestimmung der
-	Ausbreitungsbedingungen -- wie bei HF.
+  Angemeldete automatisch arbeitende Sender zur Bestimmung der
+  Ausbreitungsbedingungen -- wie bei HF.
 
-    \begin{itemize}
-        \item im Unterschied zur HF-Bake auch Aussendung des Locators und ggf.
-              zusätzliche Infos
-        \item auch hier: Sendeverbot auf den QRGs
-    \end{itemize}
+  \begin{itemize}
+    \item im Unterschied zur HF-Bake auch Aussendung des Locators und ggf.
+      zusätzliche Infos
+    \item auch hier: Sendeverbot auf den QRGs
+  \end{itemize}
 
 \end{frame}
 
 \section{Bandpläne}
 
 \begin{frame}
-    \frametitle{Bandpläne}
+  \frametitle{Bandpläne}
 
-    Schauen wir nun mit dem erworbenen Wissen auf die Bandpläne: \\[2em]
+  Schauen wir nun mit dem erworbenen Wissen auf die Bandpläne: \\[2em]
 
-    \url{http://www.darc.de/referate/vus/bandplaene/}
+  \url{http://www.darc.de/referate/vus/bandplaene/}
 
 \end{frame}
 
@@ -558,30 +626,30 @@
 \renewcommand{\refname}{Referenzen}
 
 \begin{frame}
-    \frametitle{Referenzen/Links}
-    \hypertarget{refs}{}
-    \footnotesize
+  \frametitle{Referenzen/Links}
+  \hypertarget{refs}{}
+  \footnotesize
 
-    \begin{thebibliography}{}
-        \bibitem{dj4uf} Moltrecht B/V 11: \\
-                        \url{http://www.amateurfunkpruefung.de/lehrg/bv11/bv11.html}
-        \bibitem{wp}    Wikipedia DE: \\
-                        \url{http://de.wikipedia.org/wiki/Duplex_\%28Nachrichtentechnik\%29} \\
-                        \url{http://de.wikipedia.org/wiki/Echolink} \\
-                        \url{http://de.wikipedia.org/wiki/Troposph\%C3\%A4re} \\
-                        \url{http://de.wikipedia.org/wiki/Sporadic-E} \\
-                        \url{http://de.wikipedia.org/wiki/Transponder} \\
-                        \url{http://de.wikipedia.org/wiki/OSCAR} \\
-                        \url{http://de.wikipedia.org/wiki/Kleinsatellit} \\
-                        \url{http://de.wikipedia.org/wiki/QTH-Locator} \\
-                        \url{http://de.wikipedia.org/wiki/\%C3\%9Cberreichweite}
-        \bibitem{we}    Wikipedia EN: \\
-                        \url{http://en.wikipedia.org/wiki/Simplex_communication} \\
-                        \url{http://en.wikipedia.org/wiki/Duplex_\%28telecommunications\%29}
-        \bibitem{darc}  UKW-Bandpläne des DARC: \\
-                        \url{http://www.darc.de/referate/vus/bandplaene/}
-    \end{thebibliography} 
-   
+  \begin{thebibliography}{}
+    \bibitem{dj4uf} Moltrecht B/V 11: \\
+      \url{https://www.darc.de/der-club/referate/ajw/lehrgang-bv/bv11/}
+    \bibitem{wp}    Wikipedia DE: \\
+      \url{http://de.wikipedia.org/wiki/Duplex_\%28Nachrichtentechnik\%29} \\
+      \url{http://de.wikipedia.org/wiki/Echolink} \\
+      \url{http://de.wikipedia.org/wiki/Troposph\%C3\%A4re} \\
+      \url{http://de.wikipedia.org/wiki/Sporadic-E} \\
+      \url{http://de.wikipedia.org/wiki/Transponder} \\
+      \url{http://de.wikipedia.org/wiki/OSCAR} \\
+      \url{http://de.wikipedia.org/wiki/Kleinsatellit} \\
+      \url{http://de.wikipedia.org/wiki/QTH-Locator} \\
+      \url{http://de.wikipedia.org/wiki/\%C3\%9Cberreichweite}
+    \bibitem{we}    Wikipedia EN: \\
+      \url{http://en.wikipedia.org/wiki/Simplex_communication} \\
+      \url{http://en.wikipedia.org/wiki/Duplex_\%28telecommunications\%29}
+    \bibitem{darc}  UKW-Bandpläne des DARC: \\
+      \url{http://www.darc.de/referate/vus/bandplaene/}
+  \end{thebibliography}
+
 \end{frame}
 
 \input{texdata/postamble}
