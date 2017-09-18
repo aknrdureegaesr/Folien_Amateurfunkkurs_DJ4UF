@@ -5,19 +5,18 @@
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 06: \\
-          Spule und Transformator \\[2em]}
-\date{Stand 12.11.2015}
+  Spule und Transformator \\[2em]}
+\date{Stand 07.11.2016}
 \input{texdata/titlepage}
 
-%FIXME Referenzen/Fußnoten-Systematik vereinheitlichen
 
 \section*{Einleitung}
 
 \begin{frame}
-    \frametitle{Einleitung / Spule}
-    \begin{center}
-        \Large{Wofür braucht man Spulen?} \\
-    \end{center}
+  \frametitle{Einleitung / Spule}
+  \begin{center}
+    \Large{Wofür braucht man Spulen?} \\
+  \end{center}
 \end{frame}
 
 \begin{frame}
@@ -40,257 +39,286 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Einleitung / Spulen-Beispiele}
-
-    \begin{center}
-        \includegraphics[height=0.8\textheight]{e06/Spule.jpg}
-        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Electronic_component_inductors.jpg}}
-    \end{center}
- 	
+  \frametitle{Einleitung / Spulen-Beispiele}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[height=0.75\textheight,width=\textwidth,keepaspectratio]{e06/Spule.jpg}
+      \attribcaption{Spulen}{FDominec}{https://commons.wikimedia.org/wiki/File:Electronic_component_inductors.jpg}{\ccbysa}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Einleitung / SMD-Spule}
-
-    \begin{center}
-        \includegraphics[height=0.8\textheight]{e06/smd-Spule.png}
-        \footnote{\tiny \url{https://de.wikipedia.org/wiki/Datei:Planar_core_assembly_exploded.png}}
-    \end{center}
- 	
+  \frametitle{Einleitung / SMD-Spule}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[height=0.75\textheight,width=\textwidth,keepaspectratio]{e06/smd-Spule.png}
+      \attribcaption{Spule in SMD}{Cyril BUTTAY}{https://de.wikipedia.org/wiki/Datei:Planar_core_assembly_exploded.png}{\ccbysa}
+    \end{figure}
+  \end{center}
 \end{frame}
 
+
+% XXX von e08 übernommen, da es besser von der Reihenfolge passt
 \section*{Induktivitäten}
+
 \begin{frame}
-    \frametitle{Induktivität}
-	
-	\begin{center}
-        \includegraphics[width=1\textwidth]{e06/H-Feld.png}
-        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:VFPt_Solenoid_correct2.svg}}
-    \end{center}
-    
+  \frametitle{Das magnetische Feld}
+  \begin{center}
+    \begin{minipage}{0.45\textwidth}
+      \begin{center}
+        \begin{figure}
+          \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{e08/RechteHand.png}
+          \attribcaption{Magnetisches Feld um einen Leiter}{Smial}{https://commons.wikimedia.org/wiki/File:RechteHand.png}{\ccbysa}
+        \end{figure}
+      \end{center}
+    \end{minipage}
+    \begin{minipage}{0.45\textwidth}
+      \begin{center}
+        \begin{figure}
+          \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{e06/seopardy2.png}\\
+          \attribcaption{Magnetisches Feld in einer Spule}{Geek3}{https://commons.wikimedia.org/wiki/File:VFPt_Solenoid_correct2.svg}{\ccbysa}
+        \end{figure}
+      \end{center}
+    \end{minipage}
+    \vspace{0.5cm}
+    \begin{itemize}
+      \item um jeden stromdurchflossenen Leiter baut sich ein konzentrisches, magnetisches Feld auf
+      \item magnetische Felder summieren sich in einer Spule
+      \item magnetische Felder in einer Spule sind homogen
+      \item wird mit zunehmendem Strom stärker
+      \item nimmt mit zunehmendem Abstand ab
+    \end{itemize}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{3D Magnetisches Feld}
-    \begin{center}
-        \includegraphics[width=1\textwidth]{e06/3-D_HFeld.png}
-        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Solenoid.png}}
-    \end{center}
-
+  \frametitle{3D Magnetisches Feld}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e06/3-D_HFeld.png}
+      \attribcaption{Zeigt die B-Feldstärke als eine Funktion des Ortes in einer Zylinderspule mit zehn Windungen. Die Schnittebene geht durch das Zentrum in axialer Richtung.}{Tou-x}{https://commons.wikimedia.org/wiki/File:Solenoid.png}{\ccbysa}
+    \end{figure}
+  \end{center}
 \end{frame}
+
 
 \section*{Zylinderspule}
 
 \begin{frame}
-    \frametitle{Berechnung der Induktivität}
+  \frametitle{Zylinderspule}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth]{e06/Luftspule.png}
+      \caption{Luftspule}  % FIXME Quelle?
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Berechnung der Induktivität}
+  \begin{block}{}
     \begin{center}
-      $$L = \frac{\mu \cdot A}{l}\cdot N^2$$
-        \includegraphics[width=1\textwidth]{e06/Luftspule.png}
+      \huge{$L = \cfrac{\mu \cdot A}{\ell_m}\cdot N^2$}\\[1em]
+      \small{mit
+      \begin{description}
+        \item[$\mu$] $= \mu_0 \cdot \mu_r$
+        \item[$\mu_{0}$] $= 1,25666 \cdot 10^{-6}\frac{H}{m}$: magnetische Feldkonstante
+        \item[$\mu_{r}$] relative Permeabilität
+        \item[$A$] Querschnitt der Spule
+        \item[$N$] Windungszahl
+        \item[$\ell_{m}$] mittlere Feldlinienlänge
+      \end{description}
+      }
     \end{center}
+  \end{block}
+\end{frame}
+
+%\begin{frame}
+%  \frametitle{Prüfungsfrage}
+%  \begin{center}
+%    \begin{tabular}{l||p{.8\textwidth}}
+%      \textbf{TC302} & \textbf{Wie ändert sich die Induktivität einer Spule von $12 \mu H$ wenn die Wicklung auf dem  Wickelkörper bei gleicher Windungszahl auf den doppelten Wert auseinander gezogen wird?} \\\hline\hline
+%      A & Die Induktivität sinkt auf $3 \mu H$. \\ \hline
+%      B & Die Induktivität steigt auf $48 \mu H$. \\ \hline
+%      C & Die Induktivität steigt auf $24 \mu H$. \\ \hline
+%      D \only<2>\checkmark & Die Induktivität sinkt auf $6 \mu H$. \\ \hline
+%    \end{tabular}
+%  \end{center}
+%\end{frame}
+%
+%\begin{frame}
+%  \frametitle{Prüfungsfrage}
+%  \begin{center}
+%    \begin{tabular}{l||p{.8\textwidth}}
+%      \textbf{TC303} & \textbf{Wie kann man die Induktivität einer Spule vergrößern?} \\\hline\hline
+%      A & Durch Auseinanderziehen der Spule (Vergrößerung der Spulenlänge). \\ \hline
+%      B \only<2>\checkmark & Durch Stauchen der Spule (Verkürzen der Spulenlänge). \\ \hline
+%      C & Durch Einführen eines Kupferkerns in die Spule. \\ \hline
+%      D & Durch Einbau der Spule in einen Abschirmbecher. \\ \hline
+%    \end{tabular}
+%  \end{center}
+%\end{frame}
+
+
+\section*{Wechsel\-strom\-kreis}
+
+\begin{frame}
+  \frametitle{Funktionsprinzip im Wechselstromkreis}
+  \begin{columns}
+    \column{0.3\textwidth}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e06/800px-Phasenverschiebung_induktiv.png}
+      \attribcaption{Phasverschiebung induktiv}{Hyperstryke}{https://commons.wikimedia.org/wiki/File:Phasenverschiebung_induktiv.svg}{\ccpd}
+    \end{figure}
+    \column{0.65\textwidth}
+    {\small
+    \begin{itemize}
+      \item Magnetisches Feld wird ständig umgepolt
+      \item Selbstinduktionsspannung entsteht
+      \item Diese ist dem Strom entgegengerichtet
+      \item Strom wird ``gebremst''
+    \end{itemize}
+    }
+  \end{columns}
+  \begin{block}{Merksatz}
+    [Bei] Induktivitäten: Ströme sich verspäten
+  \end{block}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Prüfungsfrage}
+  \frametitle{Induktiver Widerstand}
 
+  Abhängig von der Frequenz $f$.
+
+  \begin{block}{Induktivität als Blindwiderstand}
     \begin{center}
-    \begin{tabular}{l||l}\hline
-        TC302 & Wie ändert sich die Induktivität einer Spule \\
-         " "  & von $12 \mu H$ wenn die Wicklung auf dem \\ 
-         " "  & Wickelkörper bei gleicher Windungszahl auf\\
-           " "  & den doppelten Wert auseinander gezogen wird? \\\hline\hline
-        A & Die Induktivität sinkt auf $3 \mu H$. \\ \hline
-        B & Die Induktivität steigt auf $48 \mu H$. \\ \hline
-        C & Die Induktivität steigt auf $24 \mu H$. \\ \hline
-        D & Die Induktivität sinkt auf $6 \mu H$. \\ \hline
-    \end{tabular}
- 	    \end{center}
+      \huge{$X_L = 2 \cdot \pi \cdot f \cdot L$}
+    \end{center}
+  \end{block}
+
+  \pause
+  Der Blindwiderstand steigt bei zunehmender Frequenz.\\
+  Der Blindwiderstand steigt bei größerer Induktivität.
 \end{frame}
 
-\begin{frame}
-    \frametitle{Prüfungsfrage}
+%\begin{frame}
+%  \frametitle{Prüfungsfrage}
+%  \begin{center}
+%    \begin{tabular}{l||p{.8\textwidth}}\hline
+%      \textbf{TC306} & \textbf{Mit zunehmender Frequenz} \\\hline\hline
+%      A & sinkt der Wechselstromwiderstand der Spule bis zu einem Minimum und steigt dann wieder. \\ \hline
+%      B & steigt der Wechselstromwiderstand der Spule bis zu einem Maximum und sinkt dann wieder. \\ \hline
+%      C \only<2>\checkmark & steigt der Wechselstromwiderstand der Spule. \\ \hline
+%      D & sinkt der Wechselstromwiderstand der Spule. \\ \hline
+%    \end{tabular}
+%  \end{center}
+%\end{frame}
 
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TC302 & Wie ändert sich die Induktivität einer Spule \\
-         " "  & von $12 \mu H$ wenn die Wicklung auf dem \\ 
-         " "  & Wickelkörper bei gleicher Windungszahl auf\\
-           " "  & den doppelten Wert auseinander gezogen wird? \\\hline\hline
-        " " & Die Induktivität sinkt auf $3 \mu H$. \\ \hline
-        " " & Die Induktivität steigt auf $48 \mu H$. \\ \hline
-        " " & Die Induktivität steigt auf $24 \mu H$. \\ \hline
-        X & Die Induktivität sinkt auf $6 \mu H$. \\ \hline
-    \end{tabular}
- 	    \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Prüfungsfrage}
-
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TC303 & Wie kann man die Induktivität\\
-         " "  & einer Spule vergrößern?\\\hline\hline
-        A & Durch Auseinanderziehen der Spule \\
-        " " & (Vergrößerung der Spulenlänge). \\ \hline
-    	B & Durch Stauchen der Spule \\
-        " " & (Verkürzen der Spulenlänge). \\ \hline
-        C &  Durch Einführen eines Kupferkerns in die Spule. \\ \hline
-        D & Durch Einbau der Spule in einen Abschirmbecher. \\ \hline
-    \end{tabular}
- 	    \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Prüfungsfrage}
-
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TC303 & Wie kann man die Induktivität\\
-         " "  & einer Spule vergrößern?\\\hline\hline
-        " " & Durch Auseinanderziehen der Spule \\
-        " " & (Vergrößerung der Spulenlänge). \\ \hline
-    	X & Durch Stauchen der Spule \\
-        " " & (Verkürzen der Spulenlänge). \\ \hline
-        " " &  Durch Einführen eines Kupferkerns in die Spule. \\ \hline
-        " " & Durch Einbau der Spule in einen Abschirmbecher. \\ \hline
-    \end{tabular}
- 	    \end{center}
-\end{frame}
 
 \section*{Schaltungen mit Spulen}
 
 \begin{frame}
-    \frametitle{Schaltzeichen}
-    \begin{center}
-        \includegraphics[width=1\textwidth]{e06/Spule-schaltZ.png}
-    \end{center}
+  \frametitle{Schaltzeichen}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e06/Spule-schaltZ.png}
+      \caption{Schaltzeichen einer Spule}
+    \end{figure}
+  \end{center}
 \end{frame}
+
+
+\subsection*{Reihen\-schaltung}
 
 \begin{frame}
-    \frametitle{Reihenschaltung}
-    
-    $$L_{gesamt} = L_1 + L_2 + L_3 + ...$$
-
-    
-    \begin{center}
-        \includegraphics[width=1\textwidth]{e06/L_Reihe.png}
-    \end{center}
-	
+  \frametitle{Reihenschaltung}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.5\textheight,keepaspectratio]{e06/L_Reihe.png}
+      \caption{Spulen in einer Reihenschaltung}
+    \end{figure}
+  \end{center}
+  \begin{block}{Reihenschaltung}
+    $L_{gesamt} = L_1 + L_2 + L_3 + ...$
+  \end{block}
 \end{frame}
+
+
+\subsection*{Parallel\-schaltung}
 
 \begin{frame}
-    \frametitle{Parallelschaltung}
-    $$\frac{1}{L_{gesamt}} = \frac{1}{L_1} + \frac{1}{L_2} + \frac{1}{L_3} + ...$$
-    \begin{center}
-        \includegraphics[width=1\textwidth]{e06/L_Parallel.png}
-    \end{center}
+  \frametitle{Parallelschaltung}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=1\textwidth,height=.35\textheight,keepaspectratio]{e06/L_Parallel.png}
+      \caption{Spulen in einer Parallelschatung}
+    \end{figure}
+  \end{center}
+  \begin{block}{Parallelschaltung}
+    $\frac{1}{L_{gesamt}} = \frac{1}{L_1} + \frac{1}{L_2} + \frac{1}{L_3} + \cdots$\\
+    $L_{ges} = \cfrac{1}{\frac{1}{L_1} + \frac{1}{L_2} + \frac{1}{L_3} + \cdots}$
+  \end{block}
 \end{frame}
 
-\section*{Blindwiderstand}
-
-\begin{frame}
-    \frametitle{Spule bei Wechselspannung (Blindwiderstand)}
-    Für komplexe Widerstände gilt allgemein:
-    $$Z = R + iX$$
-    
-    Das X berechnet sich bei der Spule durch:
-    $$X_L = 2\cdot \pi \cdot f\cdot L $$
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Prüfungsfrage}    
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TC306 & Mit zunehmender Frequenz\\\hline\hline
-        A & sinkt der Wechselstromwiderstand der Spule bis \\
-        " " & zu einem Minimum und steigt dann wieder. \\ \hline
-    	B & steigt der Wechselstromwiderstand der Spule bis\\
-        " " & zu einem Maximum und sinkt dann wieder. \\ \hline
-        C &  steigt der Wechselstromwiderstand der Spule. \\ \hline
-        D & sinkt der Wechselstromwiderstand der Spule. \\ \hline
-    \end{tabular}
- 	    \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Prüfungsfrage}    
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TC306 & Mit zunehmender Frequenz\\\hline\hline
-        " " & sinkt der Wechselstromwiderstand der Spule bis \\
-        " " & zu einem Minimum und steigt dann wieder. \\ \hline
-    	" " & steigt der Wechselstromwiderstand der Spule bis\\
-        " " & zu einem Maximum und sinkt dann wieder. \\ \hline
-        X &  steigt der Wechselstromwiderstand der Spule. \\ \hline
-        " " & sinkt der Wechselstromwiderstand der Spule. \\ \hline
-    \end{tabular}
- 	\end{center}
-\end{frame}
 
 \section*{Transformator}
+
 \begin{frame}
-    \frametitle{Transformator}
-        \begin{center}
-        \includegraphics[width=0.9\textwidth]{e06/trafo-Real.jpg}
-        \footnote{\tiny \url{https://commons.wikimedia.org/wiki/File:Trafo_6.jpg}}
-         \end{center}
+  \frametitle{Transformator}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e06/trafo-Real.jpg}
+      \attribcaption{Transformator}{Zátonyi Sándor (ifj.), Fizped}{https://commons.wikimedia.org/wiki/File:Trafo_6.jpg}{\ccbysa}
+    \end{figure}
+  \end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Transformator}
-    $$\text{\"u} = \frac{N_1}{N_2} = \frac{U_1}{U_2}$$
+  \frametitle{Transformator}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=\textwidth,height=.3\textheight,keepaspectratio]{e06/Trafo.png}
+      \caption{Transformator}
+    \end{figure}
+  \end{center}
+  \begin{block}{Übertrager}
     \begin{center}
-        \includegraphics[width=.7\textwidth]{e06/Trafo.png}
+      $\cfrac{N_1}{N_2} = \cfrac{U_1}{U_2}$
     \end{center}
+  \end{block}
+  Die Spannungen verhalten sich analog zu den Windungszahlen der Spulen eines Transformators.
 \end{frame}
 
-\begin{frame}
-    \frametitle{Prüfungsfrage}
-    
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TC306 & Ein Trafo liegt an 230 Volt und gibt $11,5V$\\
-        " "  & ab. Seine Primärwicklung hat 600 Windungen. \\ 
-         " "  & Wie groß ist seine Sekundärwindungszahl?\\\hline\hline
-        A & 20 Windungen\\ \hline
-    	B & 180 Windungen \\ \hline
-        C &  30 Windungen \\ \hline
-        D & 520 Windungen \\ \hline
-    \end{tabular}
- 	    \end{center}
-\end{frame}
+%\begin{frame}
+%  \frametitle{Prüfungsfrage}
+%
+%  \begin{center}
+%    \begin{tabular}{l||p{.8\textwidth}}
+%      \textbf{TC306} & \textbf{Ein Trafo liegt an 230 Volt und gibt $11,5V$ ab. Seine Primärwicklung hat 600 Windungen. Wie groß ist seine Sekundärwindungszahl?} \\\hline\hline
+%      A & 20 Windungen\\ \hline
+%      B & 180 Windungen \\ \hline
+%      C \only<2>\checkmark &  30 Windungen \\ \hline
+%      D & 520 Windungen \\ \hline
+%    \end{tabular}
+%  \end{center}
+%\end{frame}
 
-\begin{frame}
-    \frametitle{Prüfungsfrage}
-    
-    \begin{center}
-    \begin{tabular}{l||l}\hline
-        TC306 & Ein Trafo liegt an 230 Volt und gibt $11,5V$\\
-        " "  & ab. Seine Primärwicklung hat 600 Windungen. \\ 
-         " "  & Wie groß ist seine Sekundärwindungszahl?\\\hline\hline
-        " " & 20 Windungen\\ \hline
-    	" " & 180 Windungen \\ \hline
-        X &  30 Windungen \\ \hline
-        " " & 520 Windungen \\ \hline
-    \end{tabular}
- 	    \end{center}
-\end{frame}
 
 \section*{Referenzen}
 
 \begin{frame}
-    \frametitle{Referenzen/Links}
-    
-    \footnotesize
-    \begin{itemize}
-        \item Moltrecht E 06: \\
-              \url{http://www.darc.de/referate/ajw/ausbildung/darc-online-lehrgang/technik-klasse-e/technik-e06/}
-         \item WP Trafo: \\
-              \url{https://de.wikipedia.org/wiki/Transformator}
- 		\item WP Spule: \\
-              \url{https://de.wikipedia.org/wiki/Spule_(Elektrotechnik)}
-    \end{itemize}
+  \frametitle{Referenzen/Links}
+
+  \footnotesize
+  \begin{itemize}
+    \item Moltrecht E 06: \\
+      \url{https://www.darc.de/der-club/referate/ajw/lehrgang-te/e06/}
+    \item WP Trafo: \\
+      \url{https://de.wikipedia.org/wiki/Transformator}
+    \item WP Spule: \\
+      \url{https://de.wikipedia.org/wiki/Spule_(Elektrotechnik)}
+  \end{itemize}
 
 \end{frame}
 
