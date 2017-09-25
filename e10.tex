@@ -3,18 +3,122 @@
 % Autoren:
 % (Martin Deutschmann)
 % Sebastian Lange <dl7bst@dk0tu.de>
+% Andreas Krüger (DJ3EI) (Dezibel-Erklärung)
 % Korrekturen:
 % Lars Weiler <dc4lw@darc.de>
 
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 10: \\
           Dezibel, Dämpfung \& Kabel \\[2em]}
-\date{Stand 18.09.2017}
+\date{Stand 25.09.2017}
 \input{texdata/titlepage}
 
-%fixme Referenzen/Fußnoten-Systematik vereinheitlichen
+\newcommand{\amplifytriangle}{% 
+  \tikz{%
+    \draw[very thick, fill=blue!60] (0,2) node {}
+                                 -- (0,0) node {}
+                                 -- (2,1) node[anchor=east,inner sep=2pc] {\Huge{$\times$}}
+                                 -- cycle;
+  }
+}
+
+
+\section*{Dezibel}
+
+\begin{frame}
+  \frametitle{Einschub: Dezibel einfach erklärt}
+
+  \only<1>{%
+    \begin{block}{Große und kleine Leistungen}
+      Wir haben es im Amateurfunk mit großen und kleinen Leistungen zu tun.
+    \end{block}
+  }
+  \only<2>{%
+    \begin{block}{Nullen zählen}
+      Zählen wir die Nullen (und nennen das Ergebnis ``Bel'', nach Alexander Graham Bell).
+    \end{block}
+  }
+  \only<3>{%
+    \begin{block}{dBm = Dezibel bezogen auf mW}
+      Die Bel-Zahl mit 10 malgenommen gibt ``Dezibel'' dB.
+    \end{block}
+  }
+  \only<4>{%
+    \begin{block}{dbW = Dezibel bezogen auf W}
+      Man kann auch Nullen von Watt-Zahlen zählen. Logischer, aber unüblicher.
+    \end{block}
+  }
+  \only<5>{%
+    \begin{block}{``log'' ist die ``Bel''-Taste des Taschenrechners}
+      Da wir uns nicht für Bel, sondern für dB interessieren: Noch mit 10 malnehmen.
+    \end{block}
+  }
+
+
+  \begin{center}
+    \begin{tabular}{p{12pc}|rrr}
+      \textbf{Was} & \textbf{Leistung in \only<1-3,5>{m}W} & \only<2-5>{\textbf{Bel}} & \only<3,5>{\textbf{dBm}}\only<4>{\textbf{dbW}} \\ \hline
+      effektive Leistung EME-Station & \only<1-3,5>{100\,000\,000}\only<4>{100\,000} & \only<2-3,5>{8}\only<4>{5} & \only<3,5>{80}\only<4>{50} \\
+      Standard-Transceiver & \only<1-3,5>{100\,000}\only<4>{100} & \only<2-3,5>{5}\only<4>{2} & \only<3,5>{50}\only<4>{20} \\
+      kleine Handfunke & \only<1-3,5>{1\,000}\only<4>{1} & \only<2-3,5>{3}\only<4>{0} & \only<3,5>{30}\only<4>{0} \\
+      Lautsprechersignal (Zimmerlautstärke) & \only<1-3,5>{100}\only<4>{0,4} & \only<2-3,5>{2}\only<4>{-1} & \only<3,5>{20}\only<4>{-10} \\
+      Kopfhörersignal & \only<1-3,5>{1}\only<4>{0,001} & \only<2-3,5>{0}\only<4>{-3} & \only<3,5>{0}\only<4>{-30} \\
+      Lautes KW-Signal & \only<1-3,5>{0,000\,001}\only<4>{0,000\,000\,001} & \only<2-3,5>{-6}\only<4>{-9} & \only<3,5>{-60}\only<4>{-90} \\
+      Leises KW-Signal (Antenneneingang RX) & \only<1-3,5>{0,000\,000\,000\,001}\only<4>{0,000\,000\,000\,000\,001} & \only<2-3,5>{-12}\only<4>{-15} & \only<3,5>{-120}\only<4>{-150} \\ \hline
+    \end{tabular}
+  \end{center}
+
+  \only<1>{Wer mit diesen Zahlen umgeht, fängt automatisch an, die Nullen zu zählen.}
+  \only<2>{Von ``mW'' als Basis auszugehen ist willkürlich, aber in der Funktechnik üblich.}
+  \only<3>{Man schreibt hinter dem ``dB'' noch ein ``m'', wenn man die Nullen von mW-Zahlen zählt.}
+  \only<4>{Man schreibt hinter dem ``dB'' noch ein ``W'', wenn man Nullen von W-Zahlen zählt.}
+
+\end{frame}
 
 \section*{Dämpfung}
+
+\begin{frame}
+  \frametitle{Bei Verstärkungen haben wir dasselbe Problem mit vielen Nullen}
+
+  \begin{block}{Empfänger}
+    Eingangssignal: 0,000\,000\,000\,001 mW
+    Ausgangssignal: 100mW
+
+    Benötigte Verstärkung: 100\,000\,000\,000\,000.
+  \end{block}
+
+  \begin{block}{Sender}
+    Frequenzerzeugende Stufe (Oszillator): 10 mW
+    Ausgangssignal: 100\,000 mW
+
+    Benötigte Verstärkung: 10\,000.
+  \end{block}
+
+  Die Verstärkung ist der Faktor, mit dem ich das eine Signal multiplizieren muss, um das andere zu erhalten. Sie hat keine Maßeinheit.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Mit dB wird's einfacher!}
+
+  \begin{block}{Empfänger}
+    Eingangssignal: 0,000\,000\,000\,001 mW = -120 dBm
+    Ausgangssignal: 100 mW = 20 dBm
+
+    Benötigte Verstärkung: 100\,000\,000\,000\,000 = 140 dB.
+  \end{block}
+
+  \begin{block}{Sender}
+    Frequenzerzeugende Stufe (Oszillator): 10 mW = 10 dBm
+    Ausgangssignal: 100\,000 mW = 50 dBm
+
+    Benötigte Verstärkung: 10\,000 = 40 dB
+    Verstärkung in dB ohne ``m''.
+  \end{block}
+
+  Verstärkung in dB lässt sich durch Subtraktion ausrechnen:\\
+  $50 - 10 = 40$\\
+  $20 - (-120) = 140$
+\end{frame}
 
 \begin{frame}
   \frametitle{Dämpfungsfaktor}
@@ -63,23 +167,59 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Verstärkung in dB}
+  \frametitle{Verstärkungen verketten}
   \begin{center}
-    \begin{Large}
-      \begin{tabular}{|c|c|}
-        \hline
-        dB & $\approx$ Leistungsfaktor \\
-        \hline \hline
-        0    & 1                 \\ \hline
-        1,5  & $\sqrt{2}$ = 1,41 \\ \hline
-        2,15 & 1,64              \\ \hline
-        3    & 2                 \\ \hline
-        6    & 4                 \\ \hline
-        10   & 10                \\ \hline
-        20   & 100               \\ \hline
-      \end{tabular}
-    \end{Large}
+    \begin{tabular}{ccc}
+      \amplifytriangle & \amplifytriangle& \amplifytriangle \\
+      $\times 100$ & $\times 10$ & $\times 1000$ \\
+      \multicolumn{3}{c}{Gesamtverstärkung: 1\,000\,000 (multipliziert)}\\ \\
+      $20 dB$ & $10 dB$ & $30 dB$ \\
+      \multicolumn{3}{c}{Gesamtverstärkung: 60dB (addiert)}\\
+    \end{tabular}
   \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{``Krumme'' Bel-Werte\footnote{für mathematisch Interessierte}}
+
+  \begin{itemize}
+    \item 10 Verstärker je $\times 2$ ergeben zusammen $1024 \approx 30dB$.
+    \item Also muss die passende dB-Zahl für 2 etwa 3dB sein.\\[1.5em]
+    \item Zwei Verstärker je $x\sqrt{10}$ ergeben zusammen 10, also genau 10 dB.
+    \item Die passende dB-Zahl für $\sqrt{10}$ muss deshalb \emph{genau} 5 dB sein.\\[1.5em]
+    \item Analog $\sqrt{\sqrt{10}} \Rightarrow 2,5dB$, $\sqrt{\sqrt{\sqrt{10}}} \Rightarrow 1,25dB$ und so weiter.\\[1.5em]
+    \item Man kann auf dieser Basis tatsächlich ein Programm schreiben, das dB-Werte ausrechnet. Taschenrechner nutzen geschicktere Methoden, die aber nicht so leicht zu erklären sind.
+  \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Verstärkung in dB}
+  \begin{columns}
+    \column{.5\textwidth}
+    \begin{center}
+      \begin{Large}
+        \begin{tabular}{c|c}
+          dB & $\approx$ Leistungsfaktor \\
+          \hline \hline
+          0    & 1                  \\
+          1,5  & $\sqrt{2}$ = 1,41  \\
+          2,15 & 1,64               \\
+          3    & 2                  \\
+          5    & $\sqrt{10}$ = 3,16 \\
+          6    & 4                  \\
+          10   & 10                 \\
+          20   & 100                \\
+        \end{tabular}
+      \end{Large}
+    \end{center}
+    \column{.5\textwidth}
+    \begin{block}{Taschenrechner}
+      Verstärkung $\rightarrow$ $log$-Taste $\rightarrow$ $\times 10$\\[1.5em]
+      dB $\rightarrow$ $\div 10$ $\rightarrow$ $10^x$-Taste
+    \end{block}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
