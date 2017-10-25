@@ -8,6 +8,7 @@
 
 * Designrules festlegen
     * Prüfungsfragen nur noch, wenn sie exemplarisch wichtig sind
+    * feste Pausen einfügen?
     * https://www.python.org/dev/peps/pep-0008/#tabs-or-spaces
     * http://www.deic.uab.es/~iblanes/beamer_gallery/index_by_theme_and_color.html
     * ...
@@ -31,6 +32,7 @@
     * http://www.sigidwiki.com/
 * Oszi
     * https://xkcd.com/165/
+* A12: Gegentaktmodulator müsste eingeführt werden
 
 # Kurskoffer
 
@@ -81,5 +83,14 @@
     * Koffercontent
     * Installationsanleitungen
 
-# Folien
-- Gegentaktmodulator müsste eingeführt werden A12
+# Workshop vor WS 2017/18
+
+* Stand Merge der Branches?
+* Default Layout
+* Quellenverzeichnisse
+* Klasse E entschlacken
+* Aufgaben aus Slides raus und mit Skript abgleichen
+* Skript
+    * BV ergänzen
+    * Lernblätter ergänzen
+* Internationalisierung? Z.B. Compileroption oder gleich auf EN?
