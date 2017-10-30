@@ -6,7 +6,6 @@
 \input{texdata/preamble}
 \subtitle{Technik Klasse E 01: \\
   Mathematische Grundlagen und Einheiten \\[2em]}
-\date{Stand 18.09.2017}
 \input{texdata/titlepage}
 
 \section{Einleitung}
@@ -16,6 +15,8 @@
 
   Zu Beginn eine kurze Wiederholung der benötigten mathematischen Grundlagen,
   um das Schulwissen kurz aufzufrischen.
+  
+  \pnote{Einheiten - SI-System - Abgeleitete Einheiten - Zehnerpotenzen - einfache Algebra ;-)}
 
 \end{frame}
 
@@ -38,12 +39,13 @@
     \item dezimal (Basis 10)
     \item kohärentes Einheitensystem\footnote{alles aus Basiseinheiten
       ableitbar ohne zusätzliche Faktoren}
-    \item sieben Basiseinheiten -- Welche?
+    \item sieben Basiseinheiten
   \end{itemize}
 
   \bigskip \pause
   Welche Einheiten gibt es und welche Größen beschreiben sie?
 
+	\pnote{Sekunde/Zeit, Meter/Länge, Ampere/Strom, Kilo/Masse, mol/Stoffmenge, Kelvin/Temperatur, Candela/Lichtstärke}
 \end{frame}
 
 \begin{frame}
@@ -52,7 +54,9 @@
   \begin{center}
     \begin{figure}
       \includegraphics[height=0.75\textheight]{e01/SI_base_unit.png}
-      \attribcaption{SI Basiseinheiten}{Dono}{https://commons.wikimedia.org/wiki/File:SI_base_unit.svg}{\ccbysa}
+      \caption{SI Basiseinheiten \cite{dj4uf}}
+      \label{fig_si_basis}
+      %\attribcaption{SI Basiseinheiten}{Dono}{https://commons.wikimedia.org/wiki/File:SI_base_unit.svg}{\ccbysa}
     \end{figure}
   \end{center}
 
@@ -79,7 +83,9 @@
   \begin{center}
     \begin{figure}
       \includegraphics[height=.9\textheight]{e01/imperial_vs_metric.jpeg}
-      \attribcaption{Imperial units vs. Metrical units}{n/a}{http://asset-f.soup.io/asset/2816/7317_fb37.jpeg}{}
+      \caption{Imperial units vs. metric units \cite{si_ausflug}}
+      \label{fig_si_ausflug}
+      %\attribcaption{Imperial units vs. Metrical units}{n/a}{http://asset-f.soup.io/asset/2816/7317_fb37.jpeg}{}
     \end{figure}
   \end{center}
 
@@ -106,10 +112,11 @@
       $C$ & $F = \frac{A\cdot s}{V}$  & \only<2>{Kapazität}        \\ \hline
       $L$ & $H = \frac{V\cdot s}{A}$  & \only<2>{Induktivität}     \\ \hline
     \end{tabular}
-
+	\newline
+	\newline
     Vorsicht: Einheit vs. Formelzeichen vs. Zehnerpotenzen!
   \end{center}
-
+	\pnote{Ladung, Spannung, Leistung, El. Feldstärke, Magn. Feldstärke, Frequenz, Widerstand, Leitwert, Kapazität, Induktivität}
 \end{frame}
 
 \begin{frame}
@@ -117,7 +124,9 @@
   \begin{center}
     \begin{figure}
       \includegraphics[height=.9\textheight]{e01/imperial_vs_metric++.png}
-      \attribcaption{Noch ein Ausflug zu SI vs. Imperial System}{n/a}{http://th03.deviantart.net/fs70/PRE/i/2012/358/1/f/imperial_vs__metric_by_nekit1234007-d5p0ou5.png}{}
+      \caption{Noch ein Ausflug zu SI vs. Imperial System \cite{si_rollercoaster}}
+      \label{fig_si_rollercoaster}
+      %\attribcaption{Noch ein Ausflug zu SI vs. Imperial System}{n/a}{http://th03.deviantart.net/fs70/PRE/i/2012/358/1/f/imperial_vs__metric_by_nekit1234007-d5p0ou5.png}{}
     \end{figure}
   \end{center}
 
@@ -136,16 +145,16 @@
       \textbf{Symbol} & \textbf{Name} & \textbf{Potenz} \\ \hline \hline
       $P$   & Peta  & $10^{15}$  \\ \hline
       $T$   & Tera  & $10^{12}$  \\ \hline
-      $G$   & Giga  & $10^{09}$  \\ \hline
-      $M$   & Mega  & $10^{06}$  \\ \hline
-      $k$   & Kilo  & $10^{03}$  \\ \hline
-      $h$   & Hekto & $10^{02}$  \\ \hline
-      $da$  & Deka  & $10^{01}$  \\ \hline
-      $d$   & Dezi  & $10^{-01}$ \\ \hline
-      $c$   & Zenti & $10^{-02}$ \\ \hline
-      $m$   & Milli & $10^{-03}$ \\ \hline
-      $\mu$ & Mikro & $10^{-06}$ \\ \hline
-      $n$   & Nano  & $10^{-09}$ \\ \hline
+      $G$   & Giga  & $10^{9}$  \\ \hline
+      $M$   & Mega  & $10^{6}$  \\ \hline
+      $k$   & Kilo  & $10^{3}$  \\ \hline
+      $h$   & Hekto & $10^{2}$  \\ \hline
+      $da$  & Deka  & $10^{1}$  \\ \hline
+      $d$   & Dezi  & $10^{-1}$ \\ \hline
+      $c$   & Zenti & $10^{-2}$ \\ \hline
+      $m$   & Milli & $10^{-3}$ \\ \hline
+      $\mu$ & Mikro & $10^{-6}$ \\ \hline
+      $n$   & Nano  & $10^{-9}$ \\ \hline
       $p$   & Piko  & $10^{-12}$ \\ \hline
       $f$   & Femto & $10^{-15}$ \\ \hline
     \end{tabular}
@@ -178,21 +187,21 @@
 
 \end{frame}
 
-\begin{frame}
-  \begin{alertblock}{Fakultative Hausaufgabe}
-    Zehnerpotenzen mit Name und Potenz auswendig lernen!
-
-    \bigskip \tiny (Praktisch für den Alltag - notwendige stehen allerdings
-    in der Formelsammlung)
-  \end{alertblock}
-\end{frame}
+%\begin{frame}
+%  \begin{alertblock}{Fakultative Hausaufgabe}
+%    Zehnerpotenzen mit Name und Potenz auswendig lernen!
+%
+%    \bigskip \tiny (Praktisch für den Alltag - notwendige stehen allerdings
+%    in der Formelsammlung)
+%  \end{alertblock}
+%\end{frame}
 
 
 \section{Formeln umstellen}
 
 \begin{frame}
   \frametitle{Formeln umstellen}
-
+	\vspace{5mm}
   ...sollte grob beherrscht werden. \\[2em]
 
   Für \emph{Klasse E} geht es nicht über einfache Umstellungen\footnote{es
@@ -202,7 +211,9 @@
   \begin{center}
     \begin{figure}
       \includegraphics[height=.4\textheight]{e03/Ohm_law_triangle.png}
-      \attribcaption{das ohmsche Dreieck}{Eirik}{https://commons.wikimedia.org/wiki/File:Ohm's_law_triangle.PNG}{\ccpd}
+      \caption{Das Ohm'sche Dreieck \cite{ohm_dreieck}}
+      \label{fig_ohm_dreieck}
+      %\attribcaption{das ohmsche Dreieck}{Eirik}{https://commons.wikimedia.org/wiki/File:Ohm's_law_triangle.PNG}{\ccpd}
     \end{figure}
   \end{center}
 
@@ -216,10 +227,19 @@
 \footnotesize
 
 \begin{thebibliography}{}
-  \bibitem{dj4uf} Moltrecht E 01: \\
-    \url{https://www.darc.de/der-club/referate/ajw/lehrgang-te/e01/}
-  \bibitem{wp}    Wikipedia DE: \\
-    \url{https://de.wikipedia.org/wiki/Internationales_Einheitensystem}\\
+    \bibitem{dj4uf} Moltrecht E 01: \\
+        \url{https://www.darc.de/der-club/referate/ajw/lehrgang-te/e01/}
+    \bibitem{wp}    Wikipedia DE: \\
+	    \url{https://de.wikipedia.org/wiki/Internationales_Einheitensystem}\\
+	\bibitem{si_basis} Abbildung \ref{fig_si_basis}: SI Basiseinheiten\\
+		\url{https://commons.wikimedia.org/wiki/File:SI_base_unit.svg}
+	\bibitem{si_ausflug} Abbildung \ref{fig_si_ausflug}: Imperial units vs. metric units\\
+		\url{https://commons.wikimedia.org/wiki/File:SI_base_unit.svg}
+	\bibitem{si_rollercoaster} Abbildung \ref{fig_si_rollercoaster}: Noch ein Ausflug zu SI vs. Imperial System\\
+		\url{https://commons.wikimedia.org/wiki/File:SI_base_unit.svg}
+	\bibitem{ohm_dreieck} Abbildung \ref{fig_ohm_dreieck}: Das Ohm'sche Dreieck\\
+		\url{https://commons.wikimedia.org/wiki/File:Ohm's_law_triangle.PNG}
+	  
 \end{thebibliography}
 
 \input{texdata/postamble}
