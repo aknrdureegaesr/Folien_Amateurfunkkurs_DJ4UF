@@ -4,7 +4,8 @@
 
 # Patches
 
-Änderungsvorschläge bitte als Patchfile per E-Mail an kurs@dk0tu.de -- Beispielbfehl für die Konsole:
+Änderungsvorschläge bitte als Patchfile per E-Mail an <kurs@dk0tu.de> --
+Beispielbfehl für die Konsole:
 
     git diff > Verbesserung.patch
 
