@@ -1,7 +1,5 @@
 # Create pdf from tex
 
-FILE=Skript_Praxis*
-
 all: aufgaben loesung
 
 aufgaben:
@@ -15,7 +13,8 @@ loesung:
 	$(MAKE) temp-clean
 
 temp-clean:
-	rm -f ${FILE}.aux ${FILE}.lof ${FILE}.log ${FILE}.out ${FILE}.toc
+	rm -f *.aux *.lof *.log *.out *.toc
 
 clean: temp-clean
-	rm -f ${FILE}.pdf
+	rm -f Skript.pdf
+	rm -f Skript-Handout.pdf
