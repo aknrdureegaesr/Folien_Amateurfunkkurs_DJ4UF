@@ -21,7 +21,9 @@ Ohmsches Gesetz, Leistung \& Arbeit \\[2em]}
   \begin{center}
     \begin{figure}
       \includegraphics[width=\textwidth,height=.7\textheight,keepaspectratio]{e03/Ohm_law_triangle.png}
-      \attribcaption{Das ohmsche Dreieck}{Eirik}{https://commons.wikimedia.org/wiki/File:Ohm's_law_triangle.PNG}{\ccpd}
+      \caption{Das Ohm'sche Dreieck \cite{dreieck}}
+      \label{fig_dreieck}
+      %\attribcaption{Das ohmsche Dreieck}{Eirik}{https://commons.wikimedia.org/wiki/File:Ohm's_law_triangle.PNG}{\ccpd}
     \end{figure}
   \end{center}
   \begin{itemize}
@@ -60,14 +62,12 @@ Ohmsches Gesetz, Leistung \& Arbeit \\[2em]}
 
 \begin{frame}
   \frametitle{Wie funktioniert das Ohmsche Dreieck?}
-  \begin{itemize}
-    \item Nun wollen wir wissen, wie viel Strom in beiden Fällen unseres Gedankenexperimentes fließt
-    \item Dazu nehmen wir uns das Ohmsche Dreieck zu Hilfe
-  \end{itemize}
   \begin{center}
     \begin{figure}
-      \includegraphics[width=\textwidth,height=.2\textheight,keepaspectratio]{e03/Ohm_law_triangle.png}
-      \attribcaption{Das ohmsche Dreieck}{Eirik}{https://commons.wikimedia.org/wiki/File:Ohm's_law_triangle.PNG}{\ccpd}
+      \includegraphics[width=\textwidth,height=.4\textheight,keepaspectratio]{e03/Ohm_law_triangle.png}
+      \caption{Das Ohm'sche Dreieck \cite{dreieck}}
+      \label{fig_dreieck}
+      %\attribcaption{Das ohmsche Dreieck}{Eirik}{https://commons.wikimedia.org/wiki/File:Ohm's_law_triangle.PNG}{\ccpd}
     \end{figure}
   \end{center}
   \begin{itemize}
@@ -128,39 +128,39 @@ Ohmsches Gesetz, Leistung \& Arbeit \\[2em]}
   \end{itemize}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Prüfungsfrage}
-  \begin{tabular}{l||p{.8\textwidth}}\hline
-    \textbf{TD302} & \textbf{Die Leerlaufspannung einer Gleichspannungsquelle beträgt 13,5\,V. Wenn die Spannungsquelle einen Strom von 1\,A abgibt, sinkt die Klemmenspannung auf 12,4\,V. Wie groß ist der Innenwiderstand der Spannungsquelle?}\\ \hline \hline
-    A \only<2>\checkmark & $1,1 \Omega$ \\ \hline
-    B & $1,2 \Omega$ \\ \hline
-    C & $12,4 \Omega$ \\ \hline
-    D & $13,5 \Omega$ \\ \hline
-  \end{tabular}
-  \pause
-  \begin{align}
-    R = \frac{\Delta U}{\Delta I} = \frac{13,5V - 12,4V}{1A} = \frac{1,1V}{1A} = 1,1\Omega
-  \end{align}
-\end{frame}
+%\begin{frame}
+%  \frametitle{Prüfungsfrage}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TD302} & \textbf{Die Leerlaufspannung einer Gleichspannungsquelle beträgt 13,5\,V. Wenn die Spannungsquelle einen Strom von 1\,A abgibt, sinkt die Klemmenspannung auf 12,4\,V. Wie groß ist der Innenwiderstand der Spannungsquelle?}\\ \hline \hline
+%    A \only<2>\checkmark & $1,1 \Omega$ \\ \hline
+%    B & $1,2 \Omega$ \\ \hline
+%    C & $12,4 \Omega$ \\ \hline
+%    D & $13,5 \Omega$ \\ \hline
+%  \end{tabular}
+%  \pause
+%  \begin{align}
+%    R = \frac{\Delta U}{\Delta I} = \frac{13,5V - 12,4V}{1A} = \frac{1,1V}{1A} = 1,1\Omega
+%  \end{align}
+%\end{frame}
 
-\begin{frame}
-  \frametitle{Prüfungsfrage}
-  \begin{tabular}{l||p{.8\textwidth}}\hline
-    \textbf{TD301} & \textbf{Welche Eigenschaften sollten Strom- und Spannungsquellen aufweisen?}\\ \hline\hline
-    A &  Strom- und Spannungsquellen sollten einen möglichst niedrigen Innenwiderstand haben. \\ \hline
-    B &  Strom- und Spannungsquellen sollten einen möglichst hohen Innenwiderstand haben. \\ \hline
-    C & Spannungsquellen sollten einen möglichst hohen Innenwiderstand und Stromquellen einen möglichst niedrigen Innenwiderstand haben. \\ \hline
-    D \only<2>\checkmark & Spannungsquellen sollten einen möglichst niedrigen Innenwiderstand und Stromquellen einen möglichst hohen Innenwiderstand haben. \\ \hline
-  \end{tabular}
-\end{frame}
+%\begin{frame}
+%  \frametitle{Prüfungsfrage}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TD301} & \textbf{Welche Eigenschaften sollten Strom- und Spannungsquellen aufweisen?}\\ \hline\hline
+%    A &  Strom- und Spannungsquellen sollten einen möglichst niedrigen Innenwiderstand haben. \\ \hline
+%    B &  Strom- und Spannungsquellen sollten einen möglichst hohen Innenwiderstand haben. \\ \hline
+%    C & Spannungsquellen sollten einen möglichst hohen Innenwiderstand und Stromquellen einen möglichst niedrigen Innenwiderstand haben. \\ \hline
+%    D \only<2>\checkmark & Spannungsquellen sollten einen möglichst niedrigen Innenwiderstand und Stromquellen einen möglichst hohen Innenwiderstand haben. \\ \hline
+%  \end{tabular}
+%\end{frame}
 
 \section{Die elektrische Leistung}
 \begin{frame}
   \frametitle{Die elektrische Leistung}
   \begin{itemize}
     \item Fließt ein Strom durch einen Widerstand, so entsteht Verlustleistung in Form von Wärme an dem Widerstand
-    \item Dies findet Anwendung bei Heizspiralen im Elektroherd oder im Bügeleisen
-    \item In einer elektronischen Schaltung sollte diese Wärmeleistung aber so gering wie möglich sein
+    %\item Dies findet Anwendung bei Heizspiralen im Elektroherd oder im Bügeleisen
+    %\item In einer elektronischen Schaltung sollte diese Wärmeleistung aber so gering wie möglich sein
     \item Um die Leistung zu ermitteln nutzen wir folgende Formel:
   \end{itemize}
   \begin{align}
@@ -175,16 +175,27 @@ Ohmsches Gesetz, Leistung \& Arbeit \\[2em]}
 \end{frame}
 
 \begin{frame}
+	\frametitle{Elektrizität nach M.C. Escher}
+\begin{figure}
+	\includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{e03/electricity_crop.jpg}\\
+	\caption{Elektrizität nach M.C. Escher \cite{escher}}
+	\label{fig_escher}
+	%\attribcaption{Electricity explained the Escher way}{swocket}{https://twitter.com/swocket/status/646649716869046272}{}
+\end{figure}	
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Elektrizität nach M.C. Escher}
   \begin{columns}
     \column{.43\textwidth}
     \begin{center}
       \begin{figure}
-        \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{e03/electricity.jpg}\\
-        \attribcaption{Electricity explained the Escher way}{swocket}{https://twitter.com/swocket/status/646649716869046272}{}
+        \includegraphics[width=\textwidth,height=.8\textheight,keepaspectratio]{e03/electricity_crop.jpg}\\
+        %\attribcaption{Electricity explained the Escher way}{swocket}{https://twitter.com/swocket/status/646649716869046272}{}
       \end{figure}
     \end{center}
     \column{.57\textwidth}
-    \pause
     \begin{exampleblock}{Widerstand}
       Was passiert bei Änderung von $\ell$ oder $a$? Was bei $\rho$\footnote{\tiny spezifischer elektrischer Widerstand}?
     \end{exampleblock}
@@ -203,20 +214,20 @@ Ohmsches Gesetz, Leistung \& Arbeit \\[2em]}
   \end{columns}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Prüfungsfrage}
-  \begin{tabular}{l||p{.8\textwidth}}\hline
-    \textbf{TB906} & \textbf{Eine Glühlampe hat einen Nennwert von 12\,V und 48\,W. Bei einer 12-V-Versorgung beträgt die Stromentnahme}\\ \hline\hline
-    A & $36 A $ \\ \hline
-    B & $250 mA $ \\ \hline
-    C & $750 mA $ \\ \hline
-    D \only<2>\checkmark & $4 A $ \\ \hline
-  \end{tabular}
-  \pause
-  \begin{align}
-    I = \frac{P}{U} = \frac{48W}{12V} = 4A
-  \end{align}
-\end{frame}
+%\begin{frame}
+%  \frametitle{Prüfungsfrage}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TB906} & \textbf{Eine Glühlampe hat einen Nennwert von 12\,V und 48\,W. Bei einer 12-V-Versorgung beträgt die Stromentnahme}\\ \hline\hline
+%    A & $36 A $ \\ \hline
+%    B & $250 mA $ \\ \hline
+%    C & $750 mA $ \\ \hline
+%    D \only<2>\checkmark & $4 A $ \\ \hline
+%  \end{tabular}
+%  \pause
+%  \begin{align}
+%    I = \frac{P}{U} = \frac{48W}{12V} = 4A
+%  \end{align}
+%\end{frame}
 
 \section{Die elektrische Arbeit}
 
@@ -240,26 +251,26 @@ Ohmsches Gesetz, Leistung \& Arbeit \\[2em]}
   \end{itemize}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Prüfungsfrage}
-  \begin{tabular}{l||p{.8\textwidth}}\hline
-    \textbf{TB905} & \textbf{Eine Stromversorgung nimmt bei 230\,Volt einen Strom von 0,63\,Ampere auf. Welche elektrische Arbeit  wird bei einer Betriebsdauer von 7\,Stunden verbraucht?} \\ \hline\hline
-    A \only<2>\checkmark & $1,01 kWh$ \\ \hline
-    B & $0,1 kWh $ \\ \hline
-    C & $2,56 kWh$ \\ \hline
-    D & $20,7 kWh$ \\ \hline
-  \end{tabular}
-  \pause
-  \begin{align}
-    W = P \cdot t = U \cdot I \cdot t = 230V \cdot 0,63A \cdot 7h = 1,01kWh
-  \end{align}
-\end{frame}
+%\begin{frame}
+%  \frametitle{Prüfungsfrage}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TB905} & \textbf{Eine Stromversorgung nimmt bei 230\,Volt einen Strom von 0,63\,Ampere auf. Welche elektrische Arbeit  wird bei einer Betriebsdauer von 7\,Stunden verbraucht?} \\ \hline\hline
+%    A \only<2>\checkmark & $1,01 kWh$ \\ \hline
+%    B & $0,1 kWh $ \\ \hline
+%    C & $2,56 kWh$ \\ \hline
+%    D & $20,7 kWh$ \\ \hline
+%  \end{tabular}
+%  \pause
+%  \begin{align}
+%    W = P \cdot t = U \cdot I \cdot t = 230V \cdot 0,63A \cdot 7h = 1,01kWh
+%  \end{align}
+%\end{frame}
 
-\begin{frame}
-  \begin{alertblock}{Hausaufgabe}
-    Aus Fragenkatalog Klasse E Kapitel 1.2.9 ``Ohmsches Gesetz, Leistung und Energie'' (TB901--TB911) durcharbeiten.
-  \end{alertblock}
-\end{frame}
+%\begin{frame}
+%  \begin{alertblock}{Hausaufgabe}
+%    Aus Fragenkatalog Klasse E Kapitel 1.2.9 ``Ohmsches Gesetz, Leistung und Energie'' (TB901--TB911) durcharbeiten.
+%  \end{alertblock}
+%\end{frame}
 
 \renewcommand{\refname}{Referenzen}
 
@@ -275,6 +286,11 @@ Ohmsches Gesetz, Leistung \& Arbeit \\[2em]}
     \url{http://de.wikipedia.org/wiki/Ohmsches_Gesetz}\\
     \url{http://de.wikipedia.org/wiki/Elektrische_Leistung}\\
     \url{http://de.wikipedia.org/wiki/Elektrische_Energie#Elektrische_Energie_in_einem_elektrischen_Feld}\\
+    
+    \bibitem{dreieck}  Abbildung \ref{fig_dreieck}: Das Ohm'sche Dreieck\\
+	    \url{https://commons.wikimedia.org/wiki/File:Ohm's_law_triangle.PNG}\\
+	\bibitem{escher}  Abbildung \ref{fig_escher}: Elektrizität nach M.C. Escher\\
+		\url{https://twitter.com/swocket/status/646649716869046272}\\
 \end{thebibliography}
 
 \input{texdata/postamble}

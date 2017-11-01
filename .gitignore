@@ -12,6 +12,9 @@
 Praxis/SkriptE/Skript_Praxis.pdf
 Praxis/SkriptE/Skript_Praxis_Loesung.pdf
 
+#pdfpc note files
+*.pdfpc
+
 # LaTeX tmp files
 *.aux
 *.log

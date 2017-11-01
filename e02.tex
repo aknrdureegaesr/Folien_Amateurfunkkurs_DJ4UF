@@ -25,9 +25,12 @@
   \begin{center}
     \begin{figure}
       \includegraphics[width=.6\textwidth,height=.75\textheight,keepaspectratio]{e02/ladung.png}
-      \attribcaption{Elektrische Spannung wird erzeugt durch die Trennung von Ladungen}{Geek3}{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}{\ccbysa}
+      \caption{Elektrische Spannung wird erzeugt durch die Trennung von Ladungen \cite{charge}}
+      \label{fig_charge}
+      %\attribcaption{Elektrische Spannung wird erzeugt durch die Trennung von Ladungen}{Geek3}{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}{\ccbysa}
     \end{figure}
   \end{center}
+\pnote{Statisch vs. Quelle: Aufrechterhaltung}
 \end{frame}
 
 
@@ -75,27 +78,32 @@
   \begin{center}
     \begin{figure}
       \includegraphics[width=.25\textwidth,height=.75\textheight,keepaspectratio]{e02/digitalmultimeter.jpg}
-      \attribcaption{Digitales Multimeter}{MichaelHaeckel}{https://commons.wikimedia.org/wiki/File:Digitalmultimeter.jpg}{\ccpd}
+      \caption{Digitales Multimeter \cite{multimeter}}
+      \label{fig_multimeter}
+      %\attribcaption{Digitales Multimeter}{MichaelHaeckel}{https://commons.wikimedia.org/wiki/File:Digitalmultimeter.jpg}{\ccpd}
     \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{Was wo anschließen?}
-  \begin{minipage}{0.4\textwidth}
+  \begin{minipage}{0.5\textwidth}
     \begin{figure}
       \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e02/digitalmultimeterMess.jpg}
-      \attribcaption{Digitales Multimeter}{MichaelHaeckel (modifiziert)}{https://commons.wikimedia.org/wiki/File:Digitalmultimeter.jpg}{\ccpd}
+      \caption{Digitales Multimeter (Ausschnitt) \cite{multimeter}}
+	  \label{fig_multimeter_crop}
+      %\attribcaption{Digitales Multimeter}{MichaelHaeckel (modifiziert)}{https://commons.wikimedia.org/wiki/File:Digitalmultimeter.jpg}{\ccpd}
     \end{figure}
   \end{minipage}
-  \begin{minipage}{0.4\textwidth}
+$   \begin{minipage}{0.4\textwidth}
     \begin{itemize}
       \item Was kann alles gemessen werden?
       \item Wo zum Strom messen anschließen?
       \item Wo zum Spannung messen anschließen?
       \item Welcher Messbereich?
     \end{itemize}
-  \end{minipage}
+  \end{minipage} $
+  \pnote{Beliebter Fehler: Spannung messen mit Testleitung am Stromeingang}
 \end{frame}
 
 \begin{frame}
@@ -140,13 +148,15 @@
   \begin{center}
     \begin{figure}
       \includegraphics[width=.7\textwidth,height=.75\textheight,keepaspectratio]{e02/Current_notation.png}
-      \attribcaption{Nur Elektronen können sich bewegen}{User:Flekstro (Conventional\_Current.png by User:Romtobbi)}{https://commons.wikimedia.org/wiki/File:Current_notation.svg}{\ccby}
+      \caption{Nur Elektronen können sich bewegen \cite{stromrichtung}}
+      \label{fig_stromrichtung}
+      %\attribcaption{Nur Elektronen können sich bewegen}{User:Flekstro (Conventional\_Current.png by User:Romtobbi)}{https://commons.wikimedia.org/wiki/File:Current_notation.svg}{\ccby}
     \end{figure}
   \end{center}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Strom Messen}
+  \frametitle{Strom messen}
   \begin{center}
     \begin{figure}
       \includegraphics[width=.5\textwidth,height=.75\textheight,keepaspectratio]{e02/reiheAmpare.png}
@@ -161,34 +171,43 @@
     \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e02/stromSpannung.png}
     \caption{Fragenkatalog Bundesnetzagentur Klasse E TJ201}
   \end{figure}
+	\pnote{Nicht ganz korrket: Spannungsabfall Amperemeter}
 \end{frame}
 
 \section*{Ladung}
 
 \begin{frame}
   \frametitle{Ladung}
-  \begin{center}
-    \begin{figure}
-      \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e02/ladung.png}
-      \attribcaption{$Q = I \cdot t$}{Geek3}{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}{\ccbysa}
-    \end{figure}
-  \end{center}
+	  \begin{minipage}{0.4\textwidth}
+	    \begin{figure}
+	      \includegraphics[width=\textwidth,height=.85\textheight,keepaspectratio]{e02/ladung.png}
+	      \caption{Geladene Teilchen \cite{charge}}
+	      %\attribcaption{$Q = I \cdot t$}{Geek3}{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}{\ccbysa}
+	    \end{figure}
+	  \end{minipage}
+  \begin{minipage}{0.5\textwidth}
+  	\begin{itemize}
+  		\item Ladung des Elektrons: Elementarladung
+  		\item Einheit: Coulomb [C], Formelzeichen Q
+  		\item Bei konstantem Strom: $Q = I*t$
+  	\end{itemize}
+  \end{minipage}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Prüfungsfrage}
-  \begin{tabular}{l||p{.8\textwidth}}\hline
-    \textbf{TB205} & \textbf{Wie lange könnte man mit einem voll geladenen Akku mit 55\,Ah einen Amateurfunk-Empfänger betreiben, der einen Strom von 0,8\,Ampere aufnimmt?} \\ \hline\hline
-    A & 68 Stunden und 75\,Minuten \\ \hline
-    B & Genau 44\,Stunden \\ \hline
-    C & 6 Stunden 52\,min und 30\,s \\\hline
-    D \only<2>\checkmark & 68\,Stunden und 45\,Minuten \\\hline
-  \end{tabular}
-  \pause
-  \begin{align}
-    t = \frac{Q}{I} = \frac{55 Ah}{0,8 A} = 68,75 h = 68 h 45 min
-  \end{align}
-\end{frame}
+%\begin{frame}
+%  \frametitle{Prüfungsfrage}
+%  \begin{tabular}{l||p{.8\textwidth}}\hline
+%    \textbf{TB205} & \textbf{Wie lange könnte man mit einem voll geladenen Akku mit 55\,Ah einen Amateurfunk-Empfänger betreiben, der einen Strom von 0,8\,Ampere aufnimmt?} \\ \hline\hline
+%    A & 68 Stunden und 75\,Minuten \\ \hline
+%    B & Genau 44\,Stunden \\ \hline
+%    C & 6 Stunden 52\,min und 30\,s \\\hline
+%    D \only<2>\checkmark & 68\,Stunden und 45\,Minuten \\\hline
+%  \end{tabular}
+%  \pause
+%  \begin{align}
+%    t = \frac{Q}{I} = \frac{55 Ah}{0,8 A} = 68,75 h = 68 h 45 min
+%  \end{align}
+%\end{frame}
 
 
 \section*{Wechsel\-spannung}
@@ -196,45 +215,65 @@
 \begin{frame}
   \frametitle{Wechselspannungen}
   \begin{minipage}{0.4\textwidth}
-    \begin{figure}
-      \includegraphics[width=.5\textwidth,height=.75\textheight,keepaspectratio]{e02/Wechselspannungsformen.png}
-      \attribcaption{Wechselspannungsformen}{Saure}{https://commons.wikimedia.org/wiki/File:Wechselspannungsformen.svg}{\ccbysa}
-    \end{figure}
+  	\begin{itemize}
+  		\item Verschiedene Formen von Wechselspannung
+  		\item Beim Morsen bestenfalls ein Sinus
+  		\item Stromnetz im Hause: $50Hz$
+  		\item $70cm$ AFu Band $435.000.000Hz$
+  	\end{itemize}
   \end{minipage}
   \begin{minipage}{0.4\textwidth}
-    \begin{itemize}
-      \item Verschiedene Formen von Wechselspannung
-      \item Beim Morsen bestenfalls ein Sinus
-      \item Ganz verschiedene Frequenzen
-      \item Stromnetz im Hause: $50Hz$
-      \item $70cm$ AFu Band $435.000.000Hz$
-    \end{itemize}
-  \end{minipage}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Effektivwert vs Spitzen Wert}
-  \begin{align}
-    \int \! sin^2(\omega t) \, \mathrm{d}t & = \frac{t}{2} - \frac{1}{4\omega}sin^2(2\omega t) + c \\
-    U_{eff}^2 \cdot \int_0^T \! sin^2(\omega t) \, \mathrm{d}t & = \frac{T}{2} \cdot \frac{u_{spitze}^2}{T} \\
-    U_{eff} & = \frac{1}{\sqrt{2}} u_{spitze}
-  \end{align}
-  \begin{center}
     \begin{figure}
-      \includegraphics[width=.6\textwidth,height=.3\textheight,keepaspectratio]{e02/EffektivwertSinus.png}\\
-      \attribcaption{Effektivwert-Sinus}{Saure}{https://de.wikipedia.org/wiki/Datei:Effektivwert-Sinus.svg}{\ccbysa}
+      \includegraphics[height=0.85\textheight,keepaspectratio]{e02/Wechselspannungsformen_trunc.png}
+      \caption{Wechselspannungsformen \cite{ac}}
+      \label{fig_ac}
+      %\attribcaption{Wechselspannungsformen}{Saure}{https://commons.wikimedia.org/wiki/File:Wechselspannungsformen.svg}{\ccbysa}
     \end{figure}
-  \end{center}
+  \end{minipage}
+  
 \end{frame}
 
 \begin{frame}
-  \frametitle{Effektivwert vs. Spitzenwert}
+	\frametitle{Charakteristika einer Sinusschwingung}
+	\begin{minipage}{0.4\textwidth}
+		\begin{figure}
+			\includegraphics[height=0.75\textheight,keepaspectratio]{e02/Wechselspannung.png}
+			\caption{Sinusschwingung \cite{sinus}}
+			\label{fig_sinus}
+		\end{figure}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+			\begin{itemize}
+				\item 1: Scheitelwert
+				\item 2: Spitze-Spitze-Spannung
+				\item 3: Effektivwert
+				\item 4: Periodendauer
+			\end{itemize}
+	\end{minipage}
+\end{frame}
+%\begin{frame}
+%  \frametitle{Effektivwert vs Scheitelwert}
+%  \begin{align}
+%    \int \! sin^2(\omega t) \, \mathrm{d}t & = \frac{t}{2} - \frac{1}{4\omega}sin^2(2\omega t) + c \\
+%    U_{eff}^2 \cdot \int_0^T \! sin^2(\omega t) \, \mathrm{d}t & = \frac{T}{2} \cdot \frac{u_{spitze}^2}{T} \\
+%    U_{eff} & = \frac{1}{\sqrt{2}} u_{spitze}
+%  \end{align}
+%  \begin{center}
+%    \begin{figure}
+%      \includegraphics[width=.6\textwidth,height=.3\textheight,keepaspectratio]{e02/EffektivwertSinus.png}\\
+      %\attribcaption{Effektivwert-Sinus}{Saure}{https://de.wikipedia.org/wiki/Datei:Effektivwert-Sinus.svg}{\ccbysa}
+%    \end{figure}
+%  \end{center}
+%\end{frame}
+
+\begin{frame}
+  \frametitle{Umrechnung Effektivwert/Scheitelwert}
   \begin{align}
-    U_{eff} & = \frac{1}{\sqrt{2}} u_{spitze}
+    U_{eff} & = \frac{1}{\sqrt{2}} u_{s}
   \end{align}
-  \begin{alertblock}{Hausaufgabe}
-    Aufgabe: Berechne den Spitzenwert des ``Hausstroms'' mit $U_{eff} = 240V$
-  \end{alertblock}
+  %\begin{alertblock}{Hausaufgabe}
+  %  Aufgabe: Berechne den Spitzenwert des ``Hausstroms'' mit $U_{eff} = 240V$
+  %\end{alertblock}
 \end{frame}
 
 \section*{Referenzen}
@@ -243,10 +282,28 @@
   \frametitle{Referenzen/Links}
 
   \footnotesize
-  \begin{itemize}
-    \item Moltrecht E 02: \\
-      \url{https://www.darc.de/der-club/referate/ajw/lehrgang-te/e02/}
-  \end{itemize}
+
+	\begin{thebibliography}{}
+		\bibitem{dj4uf} Moltrecht E 02: \\
+		\url{https://www.darc.de/der-club/referate/ajw/lehrgang-te/e02/}
+		
+		\bibitem{charge}  Abbildung \ref{fig_charge}: Elektrisches Feld zwischen Ladungen \\
+		\url{https://commons.wikimedia.org/wiki/File:VFPt_charges_plus_minus_thumb.svg}\\
+		
+		\bibitem{multimeter}  Abbildung \ref{fig_multimeter}: Digitales Multimeter \\
+		\url{https://commons.wikimedia.org/wiki/File:Digitalmultimeter.jpg}\\
+		
+		\bibitem{stromrichtung}  Abbildung \ref{fig_stromrichtung}: Stromrichtung \\
+		\url{https://commons.wikimedia.org/wiki/File:Current_notation.svg}\\
+		
+		\bibitem{ac}  Abbildung \ref{fig_ac}: Wechselspannungsformen (Ausschnitt)\\
+		\url{https://commons.wikimedia.org/wiki/File:Wechselspannungsformen.svg}\\
+		
+		\bibitem{sinus}  Abbildung \ref{fig_sinus}: Charakteristika einer Sinusspannung\\
+		\url{https://commons.wikimedia.org/wiki/File:Sinusspannung.svg}\\
+
+		
+	\end{thebibliography}
 
 \end{frame}
 
