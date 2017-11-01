@@ -54,10 +54,10 @@ $(all_pdfs): texdata/preamble.tex texdata/titlepage.tex texdata/*.tex texdata/*.
 # You decide which to use by copying or setting a link on your box.
 # If you don't decide, you get the DK0TU version:
 texdata/preamble.tex:
-	cp preamble.dk0tu.tex texdata/preamble.tex
+	cp texdata/preamble.dk0tu.tex texdata/preamble.tex
 
 texdata/titlepage.tex:
-	cp titlepage.dk0tu.tex texdata/titlepage.tex
+	cp texdata/titlepage.dk0tu.tex texdata/titlepage.tex
 
 # If you do decide, make will not interfere.
 .PRECIOUS: texdata/preamble.tex texdata/titlepage.tex
