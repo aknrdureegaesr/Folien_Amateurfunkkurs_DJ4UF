@@ -129,7 +129,7 @@ Material:
     \item 9V-Blockbatterie
     \item Steckbrücken-/kabel
     \item LED
-    \item 2x Widerstand (unbekannt) \loesung{47 \& FIXME $\Omega$}
+    \item 2x Widerstand (unbekannt) \loesung{470 $\Omega$ \& 1k $\Omega$}
 \end{itemize}
 
 Hinweis: Achtet darauf die Pole des Batteriepacks nicht kurzzuschließen -- wird
@@ -147,21 +147,24 @@ Aufgaben:
     gleich}
   \item Ihr habt zwei Widerstände zur Verfügung. Bestimmt die Bauteilwerte
     anhand der Ringe und messt sie nach. \\
-    R1 = \dots \loesung{47} $\Omega$ \\
-    R2 = \dots \loesung{470} $\Omega$
+    R1 = \loesung{470} $\Omega$ \\
+    R2 = \loesung{1k} $\Omega$ \\
+    Toleranz: 5\%
   \item Baut einen Stromkreis mit einer LED und den beiden Vorwiderständen
     (einmal seriell, einmal parallel) auf dem Breadboard auf. Was ändert sich?
     Berechnet und messt jeweils den Gesamtvorwiderstand! \\
-    \loesung{FIXME: Musterlösung}
+    \loesung{Parallel: 213 $\Omega$, Serie 1470 $\Omega$}
   \item Verwendet die parallele Gesamtschaltung für die weiteren Messungen
     \begin{enumerate}
       \item Messt die Einzelströme durch die Widerstände! Rechnet nach! \\
-        \loesung{FIXME: Musterlösung \& Wirkungsgrad schlecht}
+        \loesung{Messung: 470 $\Omega$: $\approx$ 20-30mA, 1k $\Omega$: $\approx$ 10 mA, $U_r$ = 6,6 V, $I_{ges}$ = 30 mA}\\
+        \loesung{Rechnung: 470 $\Omega$: $\approx$ 14 mA, 1k $\Omega$: $\approx$ 6,6 mA, $I_{ges}$ = 20,6 mA}
       \item Messt die notwendigen Spannungen um die Leistungsaufnahme der
         Gesamtschaltung sowie der LED zu berechnen! Was fällt euch auf? \\
-        \loesung{FIXME: Musterlösung \& Wirkungsgrad schlecht}
+        \loesung{$I_{ges}$ = 30 mA, $U_{ges}$ = 9,11 V, $U_{LED}$ = 2,45 V, $P_{LED}$ = 73 mW, $P_{ges}$ = 273 mW, $\eta$ = 27\%}
     \end{enumerate}
-  \item TODO: Zusatzaufgabe: Spannungsteiler LED
+  \item Zusatzaufgabe: Spannungsteiler LED\\
+
 \end{enumerate}
 
 % FIXME Mit Folien von Lars zusammenführen: Zusatzaufgabe Spannungsteiler.
