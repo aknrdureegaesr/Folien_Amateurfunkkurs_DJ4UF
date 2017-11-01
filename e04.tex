@@ -27,7 +27,9 @@
   \begin{center}
     \begin{figure}
       \includegraphics[width=1\textwidth,height=.75\textheight,keepaspectratio]{e04/Widerstaende.jpg}
-      \attribcaption{Widerstände}{Honina}{https://commons.wikimedia.org/wiki/File:Widerstände.JPG}{\ccbysa}
+      \caption{Drahtwiderstände \cite{wdst}}
+      \label{fig_wdst}
+      %\attribcaption{Widerstände}{Honina}{https://commons.wikimedia.org/wiki/File:Widerstände.JPG}{\ccbysa}
     \end{figure}
   \end{center}
 
@@ -40,14 +42,16 @@
   \begin{center}
     \begin{figure}
       \includegraphics[width=.3\textwidth,height=.3\textheight,keepaspectratio]{e04/Resistor_symbol_IEC.png}
-      \attribcaption{Widerstandssymbol nach IEC}{Markus Kuhn}{https://commons.wikimedia.org/wiki/File:Resistor_symbol_IEC.svg}{\ccpd}
+      \caption{Schaltsymbol nach IEC \cite{wdst_iec}}
+      \label{fig_wdst_iec}
+      %\attribcaption{Widerstandssymbol nach IEC}{Markus Kuhn}{https://commons.wikimedia.org/wiki/File:Resistor_symbol_IEC.svg}{\ccpd}
     \end{figure}
   \end{center}
 
   \begin{center}
     \begin{figure}
       \includegraphics[width=.4\textwidth,height=.4\textheight,keepaspectratio]{e04/R_LTspice.png}
-      \caption{aus LTspice, Freeware zur Schaltungssimulation \ExternalLink~\url{http://www.linear.com/designtools/software/\#Spice}}
+      %\caption{aus LTspice, Freeware zur Schaltungssimulation %\ExternalLink~\url{http://www.linear.com/designtools/software/\#Spice}}
     \end{figure}
   \end{center}
 
@@ -90,7 +94,9 @@
   \begin{center}
     \begin{figure}
       \includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e04/4-Ringe.png}
-      \attribcaption{Farbkodierung von Widerständen mit 4 Ringen}{Screenshot}{https://de.wikipedia.org/wiki/Widerstand_(Bauelement)}{\ccbysa}
+      \caption{Farbcodierung von Widerständen mit 4 Ringen \cite{ringe4}}
+      \label{fig_ringe4}
+      %\attribcaption{Farbkodierung von Widerständen mit 4 Ringen}{Screenshot}{https://de.wikipedia.org/wiki/Widerstand_(Bauelement)}{\ccbysa}
     \end{figure}
   \end{center}
 \end{frame}
@@ -99,7 +105,9 @@
   \begin{center}
     \begin{figure}
       \includegraphics[width=\textwidth,height=.9\textheight,keepaspectratio]{e04/5-Ringe.png}
-      \attribcaption{Farbkodierung von Widerständen mit 5 Ringen}{Screenshot}{https://de.wikipedia.org/wiki/Widerstand_(Bauelement)}{\ccbysa}
+      \caption{Farbcodierung von Widerständen mit 5 Ringen \cite{ringe5}}
+      \label{fig_ringe5}
+      %\attribcaption{Farbkodierung von Widerständen mit 5 Ringen}{Screenshot}{https://de.wikipedia.org/wiki/Widerstand_(Bauelement)}{\ccbysa}
     \end{figure}
   \end{center}
 \end{frame}
@@ -109,7 +117,9 @@
   \begin{center}
     \begin{figure}
       \includegraphics[width=\textwidth,height=.2\textheight,keepaspectratio]{e04/Rsistor_SMD.jpg}
-      \attribcaption{SMD Widerstand}{Haragayato}{https://commons.wikimedia.org/wiki/File:Register3.jpg}{\ccbysa}
+      \caption{SMD-Widerstand \cite{smd}}
+      \label{fig_smd}
+      %\attribcaption{SMD Widerstand}{Haragayato}{https://commons.wikimedia.org/wiki/File:Register3.jpg}{\ccbysa}
     \end{figure}
   \end{center}
 
@@ -142,7 +152,9 @@
   \begin{center}
     \begin{figure}
       \includegraphics[width=\textwidth,height=.75\textheight,keepaspectratio]{e04/Potenziometer.jpg}
-      \attribcaption{Zwei Trimmpotentiometer und ein Schiebepotentiometer}{Honina}{https://commons.wikimedia.org/wiki/File:Potenziometer.JPG}{\ccbysa}
+      \caption{Potentiometer \cite{potentiometer}}
+      \label{fig_potentiometer}
+      %\attribcaption{Zwei Trimmpotentiometer und ein Schiebepotentiometer}{Honina}{https://commons.wikimedia.org/wiki/File:Potenziometer.JPG}{\ccbysa}
     \end{figure}
   \end{center}
 
@@ -254,83 +266,100 @@
   \end{columns}
 \end{frame}
 
-
 \begin{frame}
-  \begin{alertblock}{Hausaufgabe}
-    Aus Fragenkatalog Klasse E Kapitel 1.3.1 ``Widerstand'' (TC101--TC111) durcharbeiten.\\
-    Aus Fragenkatalog Klasse E Kapitel TD101--TD104, TD108--TD110 berechnen.
-  \end{alertblock}
+	\frametitle{Stromteiler}
+	\begin{columns}
+		\column{.4\textwidth}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[width=.6\textwidth,height=.75\textheight,keepaspectratio]{e04/Stromteiler.png}
+				\caption{Stromteiler \cite{stromteiler}}
+				\label{fig_stromteiler}
+			\end{figure}
+		\end{center}
+		\column{.55\textwidth}
+		\begin{block}{Berechnung}
+			$\cfrac{I_1}{I_2} = \cfrac{R_2}{R_1}$
+		\end{block}
+	\end{columns}
 \end{frame}
+
+%\begin{frame}
+%  \begin{alertblock}{Hausaufgabe}
+%    Aus Fragenkatalog Klasse E Kapitel 1.3.1 ``Widerstand'' (TC101--TC111) durcharbeiten.\\
+%    Aus Fragenkatalog Klasse E Kapitel TD101--TD104, TD108--TD110 berechnen.
+%  \end{alertblock}
+%\end{frame}
 
 \section*{Übungen}
 
 \begin{frame}
   \frametitle{Übungen}
-  \pause
+%  \pause
   \begin{center}
     Einführung Steckbrett
   \end{center}
 \end{frame}
 
-\subsection*{Übung 1}
-\begin{frame}
-  \begin{columns}
-    \column{0.4\textwidth}
-    \begin{center}
-      \begin{figure}
-        \includegraphics[width=1\textwidth]{e04/Uebung1_Schaltplan.pdf}
-      \end{figure}
-    \end{center}
-    \column{0.55\textwidth}
-    \begin{alertblock}{Aufgabe 1}
-      Baue die Schaltung auf dem Steckbrett auf.\\
-      Berechne den Ersatzwiderstand. Miss zur Überprüfung den Gesamtwiderstand.
-    \end{alertblock}
-    \begin{alertblock}{Aufgabe 2}
-      Berechne die Spannung über $R_1$, $R_2$, $R_3$ und $R_4$. Miss zur Überprüfung nach.\\
-      Miss und erkläre die Spannungen über $A$---$B$, $A$---$C$ und $A$---$D$.
-    \end{alertblock}
-  \end{columns}
-  \begin{alertblock}{Aufgabe 3}
-    Berechne die Ströme durch $R_1$, $R_2$, $R_3$, $R_4$ und den Gesamtstrom. Miss zur Überprüfung nach.
-  \end{alertblock}
-\end{frame}
+%\subsection*{Übung 1}
+%\begin{frame}
+%  \begin{columns}
+%    \column{0.4\textwidth}
+%    \begin{center}
+%      \begin{figure}
+%        \includegraphics[width=1\textwidth]{e04/Uebung1_Schaltplan.pdf}
+%      \end{figure}
+%    \end{center}
+%    \column{0.55\textwidth}
+%    \begin{alertblock}{Aufgabe 1}
+%      Baue die Schaltung auf dem Steckbrett auf.\\
+%      Berechne den Ersatzwiderstand. Miss zur Überprüfung den Gesamtwiderstand.
+%    \end{alertblock}
+%    \begin{alertblock}{Aufgabe 2}
+%      Berechne die Spannung über $R_1$, $R_2$, $R_3$ und $R_4$. Miss zur Überprüfung nach.\\
+%      Miss und erkläre die Spannungen über $A$---$B$, $A$---$C$ und $A$---$D$.
+%    \end{alertblock}
+%  \end{columns}
+%  \begin{alertblock}{Aufgabe 3}
+%    Berechne die Ströme durch $R_1$, $R_2$, $R_3$, $R_4$ und den Gesamtstrom. Miss zur %Überprüfung nach.
+%  \end{alertblock}
+%\end{frame}
 
-\subsection*{Übung 2}
-\begin{frame}
-  \begin{columns}
-    \column{0.4\textwidth}
-    \begin{center}
-      \begin{figure}
-        \includegraphics[width=1\textwidth]{e04/Uebung2_Schaltplan.pdf}
-      \end{figure}
-    \end{center}
-    \column{0.55\textwidth}
-    \begin{alertblock}{Aufgabe 1}
-      Baue die Schaltung auf dem Steckbrett auf.
-      Berechne den Ersatzwiderstand. Miss zur Überprüfung den Gesamtwiderstand.
-    \end{alertblock}
-    \begin{alertblock}{Aufgabe 2}
-      Berechne die Spannung über $R_1$, $R_2$ und $R_3$. Miss zur Überprüfung nach.\\
-      Miss und erkläre die Spannungen über $A$---$B$, $A$---$C$ und $B$---$C$.
-    \end{alertblock}
-  \end{columns}
-  \begin{alertblock}{Aufgabe 3}
-    Berechne die Ströme durch $R_1$, $R_2$, $R_3$ und den Gesamtstrom. Miss zur Überprüfung nach.
-  \end{alertblock}
-\end{frame}
+%\subsection*{Übung 2}
+%\begin{frame}
+%  \begin{columns}
+%    \column{0.4\textwidth}
+%    \begin{center}
+%      \begin{figure}
+%        \includegraphics[width=1\textwidth]{e04/Uebung2_Schaltplan.pdf}
+%      \end{figure}
+%    \end{center}
+%    \column{0.55\textwidth}
+%    \begin{alertblock}{Aufgabe 1}
+%      Baue die Schaltung auf dem Steckbrett auf.
+%      Berechne den Ersatzwiderstand. Miss zur Überprüfung den Gesamtwiderstand.
+%    \end{alertblock}
+%    \begin{alertblock}{Aufgabe 2}
+%      Berechne die Spannung über $R_1$, $R_2$ und $R_3$. Miss zur Überprüfung nach.\\
+%      Miss und erkläre die Spannungen über $A$---$B$, $A$---$C$ und $B$---$C$.
+%    \end{alertblock}
+%  \end{columns}
+%  \begin{alertblock}{Aufgabe 3}
+%    Berechne die Ströme durch $R_1$, $R_2$, $R_3$ und den Gesamtstrom. Miss zur Überprüfung %nach.
+%  \end{alertblock}
+%\end{frame}
 
 \subsection*{Übung 3}
 \begin{frame}
-  \begin{alertblock}{Aufgabe 1}
+  \begin{alertblock}{Zusatzaufgabe}
     Die rote Leuchtdiode benötigt einen Strom von $20mA$. Für die Aufgabe sei erstmal angenommen, dass keine Spannung über die Leuchtdiode abfällt. Dimensioniere einen Spannungsteiler so, dass mit der gegebenen Batterie von 6V an der Leuchtdiode eine Spannung von 3V bis 5V anliegt. Gegeben sind die Widerstände in der Größe $4\times100\Omega$, $2\times180\Omega$, $4\times470\Omega$ und $2\times510\Omega$. Berechne zuerst den Spannungsteiler und zeichne einen Schaltplan.
   \end{alertblock}
-  \begin{alertblock}{Aufgabe 2}
-    Baue die Schaltung auf. Die abgeflachte Seite der Leuchtdiode zeigt zu Minus. Miss den Strom durch die Leuchtdiode. Miss die Spannung über die Widerstände. Wie lautet die Gesamtsumme der Spannungen über die Widerstände? Erkläre.
-  \end{alertblock}
-  \begin{alertblock}{Aufgabe 3}
-    Die Leuchtdiode soll dunkler leuchten. Muss dazu mehr oder weniger Strom fließen? Wie sind die Widerstände zu dimensionieren?
-  \end{alertblock}
+%  \begin{alertblock}{Aufgabe 2}
+%    Baue die Schaltung auf. Die abgeflachte Seite der Leuchtdiode zeigt zu Minus. Miss den %Strom durch die Leuchtdiode. Miss die Spannung über die Widerstände. Wie lautet die %Gesamtsumme der Spannungen über die Widerstände? Erkläre.
+%  \end{alertblock}
+%  \begin{alertblock}{Aufgabe 3}
+%    Die Leuchtdiode soll dunkler leuchten. Muss dazu mehr oder weniger Strom fließen? Wie %sind die Widerstände zu dimensionieren?
+%  \end{alertblock}
 \end{frame}
 
 
@@ -343,6 +372,22 @@
   \begin{itemize}
     \item Moltrecht E 04: \\
       \url{https://www.darc.de/der-club/referate/ajw/lehrgang-te/e04/}
+      
+    \bibitem{wdst}  Abbildung \ref{fig_wdst}: Drahtwiderstände\\
+	    \url{https://commons.wikimedia.org/wiki/File:Widerstande.JPG}\\
+	\bibitem{wdst_iec}  Abbildung \ref{fig_wdst_iec}: Schaltsymbol nach IEC\\
+		\url{https://commons.wikimedia.org/wiki/File:Resistor\_symbol\_IEC.svg}\\
+    \bibitem{ringe4}  Abbildung \ref{fig_ringe4}: Farbcodierungstafel\\
+		\url{https://de.wikipedia.org/wiki/Widerstand\_(Bauelement)}\\
+	\bibitem{ringe5}  Abbildung \ref{fig_ringe5}: Farbcodierungstafel\\
+		\url{https://de.wikipedia.org/wiki/Widerstand\_(Bauelement)}\\
+    \bibitem{smd}  Abbildung \ref{fig_smd}: SMD-Widerstand\\
+		\url{https://commons.wikimedia.org/wiki/File:Register3.jpg}\\
+	\bibitem{potentiometer}  Abbildung \ref{fig_potentiometer}: Potentiometer\\
+		\url{https://commons.wikimedia.org/wiki/File:Potenziometer.JPG}\\
+	\bibitem{stromteiler}  Abbildung \ref{fig_stromteiler}: Stromteiler\\
+		\url{https://commons.wikimedia.org/wiki/File:Stromteiler.svg}\\
+
   \end{itemize}
 
 \end{frame}
