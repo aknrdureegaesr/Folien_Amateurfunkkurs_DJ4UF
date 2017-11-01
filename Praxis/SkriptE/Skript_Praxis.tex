@@ -1,6 +1,5 @@
-\documentclass[ngerman,openany, twoside]{Script}
+\documentclass[ngerman, openany, twoside]{Script}
 \usepackage{amsmath}
-
 
 % Aufgabentext ein-/ausschalten
 \newboolean{aufgabentext}
@@ -10,7 +9,7 @@
 % Wenn aufgabentext auch true ist, dann wird der Lösungstext etwas abgesetzt und kursiv geschrieben
 \newboolean{mitloesung}
 \setboolean{mitloesung}{false}
-\newcommand{\loesung}[1]{\ifthenelse{\boolean{mitloesung}}{\ifthenelse{\boolean{aufgabentext}}{{~\\\itshape{#1}}}{#1}}{}}
+\newcommand{\loesung}[1]{\ifthenelse{\boolean{mitloesung}}{\ifthenelse{\boolean{aufgabentext}}{{\itshape{#1}}}{#1}}{}}
 
 % Für die Strukturierung
 \newcommand{\Thema}[1]{\chapter{#1}}
@@ -30,8 +29,8 @@
 		\item[B] #5
 		\item[C] #6
 		\item[D] #7
-		\loesung{Lösung: #8}
 		\end{enumerate}
+		\loesung{Lösung: #8}
 	\end{enumerate}
 	}}
 
@@ -110,5 +109,3 @@
 \input{Foot.tex}
 
 \end{document}
-
-
