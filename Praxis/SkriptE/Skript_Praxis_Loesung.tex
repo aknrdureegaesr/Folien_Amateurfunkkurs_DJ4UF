@@ -11,7 +11,7 @@
 % Wenn aufgabentext auch true ist, dann wird der Lösungstext etwas abgesetzt und kursiv geschrieben
 \newboolean{mitloesung}
 \setboolean{mitloesung}{true}
-\newcommand{\loesung}[1]{\ifthenelse{\boolean{mitloesung}}{\ifthenelse{\boolean{aufgabentext}}{{~\\\itshape{#1}}}{#1}}{}}
+\newcommand{\loesung}[1]{\ifthenelse{\boolean{mitloesung}}{\ifthenelse{\boolean{aufgabentext}}{{\itshape{#1}}}{#1}}{}}
 
 % Für die Strukturierung
 \newcommand{\Thema}[1]{\chapter{#1}}
@@ -31,8 +31,8 @@
 		\item[B] #5
 		\item[C] #6
 		\item[D] #7
-		\loesung{Lösung: #8}
 		\end{enumerate}
+		\loesung{Lösung: #8}
 	\end{enumerate}
 	}}
 
@@ -44,7 +44,7 @@
 %------------------
 
 \chapter{Spannung, Strom und Widerstand}
-\input{SSW/SSW.tex}
+\input{SSW.tex}
 
 \chapter{Der Kondensator}
 \input{Kondensator/Kondensator.tex}

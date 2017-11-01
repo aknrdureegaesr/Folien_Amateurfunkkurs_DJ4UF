@@ -112,7 +112,7 @@ $R_1 = 500\Omega$, $R_2 = 500\Omega$ und $R_3 = 1k\Omega$\\ \includegraphics[sca
     messen. Ablauf:
 
     \begin{enumerate}
-        \item Vorstellung des Kurskoffers
+        \item Vorstellung des Kurskofferskonzepts und der Werkzeugtaschen
         \item Grundlagen Breadboard/Messtechnik: U, I, R, P 
     \end{enumerate}
 
@@ -126,10 +126,10 @@ Material:
 \begin{itemize}
     \item Breadboard
     \item Batteriefach
+    \item 9V-Blockbatterie
     \item Steckbrücken-/kabel
     \item LED
-    \item Widerstand \dots $\Omega$
-    \item Widerstand \dots $\Omega$
+    \item 2x Widerstand (unbekannt) \loesung{47 \& FIXME $\Omega$}
 \end{itemize}
 
 Hinweis: Achtet darauf die Pole des Batteriepacks nicht kurzzuschließen -- wird
@@ -141,13 +141,27 @@ Aufgaben:
 % FIXME Tabelle mit 5/6-Ringe-Farbsystem
 
 \begin{enumerate}
-    \item Wie ist das Batteriefach aufgebaut und wie verhalten sich Spannung und Strom?
-    \item Ihr habt zwei Widerstände zur Verfügung. Bestimmt die Bauteilwerte
-          anhand der Ringe und messt sie nach.
-    \item Baut einen Stromkreis mit einer LED und den beiden Vorwiderständen
-          (einmal seriell, einmal parallel) auf dem Breadboard auf. Was ändert
-          sich? Berechnet und messt jeweils den Gesamtvorwiderstand!
-    \item Messt die Leistungsaufnahme der LED!
+  \item Wie ist das Batteriefach aufgebaut und wie verhalten sich Spannung und
+    Strom? \\
+    \loesung{Spannungen der Zellen addieren sich in Reihe, Strom überall
+    gleich}
+  \item Ihr habt zwei Widerstände zur Verfügung. Bestimmt die Bauteilwerte
+    anhand der Ringe und messt sie nach. \\
+    R1 = \dots \loesung{47} $\Omega$ \\
+    R2 = \dots \loesung{470} $\Omega$
+  \item Baut einen Stromkreis mit einer LED und den beiden Vorwiderständen
+    (einmal seriell, einmal parallel) auf dem Breadboard auf. Was ändert sich?
+    Berechnet und messt jeweils den Gesamtvorwiderstand! \\
+    \loesung{FIXME: Musterlösung}
+  \item Verwendet die parallele Gesamtschaltung für die weiteren Messungen
+    \begin{enumerate}
+      \item Messt die Einzelströme durch die Widerstände! Rechnet nach! \\
+        \loesung{FIXME: Musterlösung \& Wirkungsgrad schlecht}
+      \item Messt die notwendigen Spannungen um die Leistungsaufnahme der
+        Gesamtschaltung sowie der LED zu berechnen! Was fällt euch auf? \\
+        \loesung{FIXME: Musterlösung \& Wirkungsgrad schlecht}
+    \end{enumerate}
+  \item TODO: Zusatzaufgabe: Spannungsteiler LED
 \end{enumerate}
 
 % FIXME Mit Folien von Lars zusammenführen: Zusatzaufgabe Spannungsteiler.
