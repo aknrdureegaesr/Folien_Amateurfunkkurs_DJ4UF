@@ -7,9 +7,18 @@
 \newcommand{\aufgabentext}[1]{\ifthenelse{\boolean{aufgabentext}}{#1}{}}
 
 % Wenn aufgabentext auch true ist, dann wird der Lösungstext etwas abgesetzt und kursiv geschrieben
+
+%\newboolean{mitloesung}
+%\setboolean{mitloesung}{false}
+
 \newboolean{mitloesung}
-\setboolean{mitloesung}{true}
-\newcommand{\loesung}[1]{\ifthenelse{\boolean{mitloesung}}{\ifthenelse{\boolean{aufgabentext}}{{\itshape{#1}}}{#1}}{}}
+\ifdefined\ishandout
+  \setboolean{mitloesung}{false}
+  \newcommand{\loesung}[1]{\ifthenelse{\boolean{mitloesung}}{\ifthenelse{\boolean{aufgabentext}}{{\itshape{#1}}}{#1}}{}}
+\else
+  \setboolean{mitloesung}{true}
+  \newcommand{\loesung}[1]{\ifthenelse{\boolean{mitloesung}}{\ifthenelse{\boolean{aufgabentext}}{{\itshape{#1}}}{#1}}{}}
+\fi
 
 % Für die Strukturierung
 \newcommand{\Thema}[1]{\chapter{#1}}
