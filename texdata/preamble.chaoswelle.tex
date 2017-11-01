@@ -184,7 +184,8 @@
 % \includedia command to generate png out of a dia file
 % NEEDS installed dia and pdflatex option --shell-escape
 \newcommand{\includedia}[1]{
-    \immediate\write18{/Applications/Dia.app/Contents/Resources/bin/dia-cmd #1.svg -e #1.png -t png}
+  % delegated to make: \immediate\write18{/Applications/Dia.app/Contents/Resources/bin/dia-cmd #1.svg -e #1.png -t png}
+  \relax
 }
 
 % RICHIG GROẞER FONT!

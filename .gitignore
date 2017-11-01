@@ -34,3 +34,10 @@ texdata/titlepage.tex
 
 # macOS folder foo
 .DS_Store
+
+# Make temp files
+*.diadep
+dia
+
+# dia temp files
+*/*_diatmp.png

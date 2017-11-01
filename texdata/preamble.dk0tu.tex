@@ -181,7 +181,7 @@
 % \includedia command to generate png out of a dia file
 % NEEDS installed dia and pdflatex option --shell-escape
 \newcommand{\includedia}[1]{
-    \immediate\write18{/usr/bin/dia #1.dia -e #1_diatmp.png -t png}
+    \relax % Delegated to make: \immediate\write18{/usr/bin/dia #1.dia -e #1_diatmp.png -t png}
 }
 
 % RICHIG GROẞER FONT!
