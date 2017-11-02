@@ -137,4 +137,18 @@
   \input{appendix.tex}
 \end{appendix}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Literatur- und Abbildungsverzeichnis
+
+\clearpage\newpage
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures
+
+\clearpage\newpage
+\addcontentsline{toc}{chapter}{Literatur- und Quellenverzeichnis}
+\renewcommand*\bibname{Literatur- und Quellenverzeichnis}
+\bibliographystyle{texdata/myapalike}
+%\bibliographystyle{plain}
+\bibliography{texdata/uniThesis}
+
 \end{document}
