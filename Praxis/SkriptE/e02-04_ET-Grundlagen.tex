@@ -22,8 +22,6 @@
 %\end{figure}
 %}
 
-% TODO Loesungswege?
-
 \mucho{1}{TB903}
 {Welche Spannung lässt einen Strom von $2A$ durch einen Widerstand von
 $50\Omega$ fließen?}%Frage
@@ -126,35 +124,59 @@ vertraut zu machen und erste Schaltungen zu bauen und zu messen.
 
     \begin{enumerate}
         \item Vorstellung des Kurskofferskonzepts und der Werkzeugtaschen
+        \item Einführung Steckbrett
         \item Grundlagen Breadboard/Messtechnik: U, I, R, P 
     \end{enumerate}
 
     Besondere Vorbereitungen: \emph{keine}
 }
 
-\paragraph{Vorbereitungsaufgabe}
+{
+  \begin{wrapfigure}{r}{0.4\textwidth}
+    \includegraphics[width=0.38\textwidth]{Breadboard_complex.jpg}
+  \end{wrapfigure}
 
-\emph{-- keine --}
+  \paragraph{Vorbereitungsaufgabe}
 
-\paragraph{Material}
+  \emph{-- keine --}
 
-\begin{itemize}
+  \paragraph{Material}
+
+  \begin{itemize}
     \item Breadboard
     \item 9V-Blockbatterie oder 6--9V-Batteriefach
     \item Steckbrücken-/kabel
     \item LED
     \item 2x Widerstand (unbekannt) \loesung{470 $\Omega$ \& 1k $\Omega$}
-\end{itemize}
+  \end{itemize}
+}
 
 \paragraph{Hinweise}
 
 Achtet darauf die Pole des Batteriepacks nicht kurzzuschließen -- wird sehr heiß
 und blubbert!
 
-\paragraph{Aufgaben}
+\begin{figure}[htbp]
+  \centering
+  \subfigure[Leeres Breadboard]{
+    \label{fig:breadboard_leer}
+    \includegraphics[width=0.3\textwidth]{Leeres_Board.jpg}
+  }
+  \subfigure[Verbindungen im Breadboard]{
+    \label{fig:breadboard_lanes}
+    \includegraphics[width=0.3\textwidth]{Leeres_Board_verbindungen.jpg}
+  }
+  \subfigure[Bestückt mit Bauteilen]{
+    \label{fig:breadboard_parts}
+    \includegraphics[width=0.3\textwidth]{Wiederstand_eingebaut.jpg}·
+  }
+  \caption{How to Breadboard \cite{afutub}}
+  \label{fig:breadboard}
+\end{figure}
 
-% FIXME Lars Aufgaben aus den Slides e04 einpflgen
-% FIXME e99 einpflegen
+% TODO e99/Steckbrett_ersteUebung.png selber/gemeinsam stecken oder weglassen?
+
+\paragraph{Aufgaben}
 
 % DONE Schaltpläne einfügen? Nein, das muss so gehen.
 
@@ -184,6 +206,70 @@ und blubbert!
         Gesamtschaltung sowie der LED zu berechnen! Was fällt euch auf? \\
         \loesung{$I_{ges}$ = 30 mA, $U_{ges}$ = 9,11 V, $U_{LED}$ = 2,45 V, $P_{LED}$ = 73 mW, $P_{ges}$ = 273 mW, $\eta$ = 27\%}
     \end{enumerate}
-  \item Zusatzaufgabe: Spannungsteiler LED\\
+  \item Zusatzaufgabe: Spannungsteiler LED\\ % siehe Zusatzaufgabe unten
 
 \end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Archiv: Aufgaben von DC4LW aus den alten Folien e04
+
+%\subsection*{Übung 1}
+%\begin{frame}
+%  \begin{columns}
+%    \column{0.4\textwidth}
+%    \begin{center}
+%      \begin{figure}
+%        \includegraphics[width=1\textwidth]{e04/Uebung1_Schaltplan.pdf}
+%      \end{figure}
+%    \end{center}
+%    \column{0.55\textwidth}
+%    \begin{alertblock}{Aufgabe 1}
+%      Baue die Schaltung auf dem Steckbrett auf.\\
+%      Berechne den Ersatzwiderstand. Miss zur Überprüfung den Gesamtwiderstand.
+%    \end{alertblock}
+%    \begin{alertblock}{Aufgabe 2}
+%      Berechne die Spannung über $R_1$, $R_2$, $R_3$ und $R_4$. Miss zur Überprüfung nach.\\
+%      Miss und erkläre die Spannungen über $A$---$B$, $A$---$C$ und $A$---$D$.
+%    \end{alertblock}
+%  \end{columns}
+%  \begin{alertblock}{Aufgabe 3}
+%    Berechne die Ströme durch $R_1$, $R_2$, $R_3$, $R_4$ und den Gesamtstrom. Miss zur %Überprüfung nach.
+%  \end{alertblock}
+%\end{frame}
+
+%\subsection*{Übung 2}
+%\begin{frame}
+%  \begin{columns}
+%    \column{0.4\textwidth}
+%    \begin{center}
+%      \begin{figure}
+%        \includegraphics[width=1\textwidth]{e04/Uebung2_Schaltplan.pdf}
+%      \end{figure}
+%    \end{center}
+%    \column{0.55\textwidth}
+%    \begin{alertblock}{Aufgabe 1}
+%      Baue die Schaltung auf dem Steckbrett auf.
+%      Berechne den Ersatzwiderstand. Miss zur Überprüfung den Gesamtwiderstand.
+%    \end{alertblock}
+%    \begin{alertblock}{Aufgabe 2}
+%      Berechne die Spannung über $R_1$, $R_2$ und $R_3$. Miss zur Überprüfung nach.\\
+%      Miss und erkläre die Spannungen über $A$---$B$, $A$---$C$ und $B$---$C$.
+%    \end{alertblock}
+%  \end{columns}
+%  \begin{alertblock}{Aufgabe 3}
+%    Berechne die Ströme durch $R_1$, $R_2$, $R_3$ und den Gesamtstrom. Miss zur Überprüfung %nach.
+%  \end{alertblock}
+%\end{frame}
+
+%\subsection*{Übung 3}
+%\begin{frame}
+%  \begin{alertblock}{Zusatzaufgabe}
+%    Die rote Leuchtdiode benötigt einen Strom von $20mA$. Für die Aufgabe sei erstmal angenommen, dass keine Spannung über die Leuchtdiode abfällt. Dimensioniere einen Spannungsteiler so, dass mit der gegebenen Batterie von 6V an der Leuchtdiode eine Spannung von 3V bis 5V anliegt. Gegeben sind die Widerstände in der Größe $4\times100\Omega$, $2\times180\Omega$, $4\times470\Omega$ und $2\times510\Omega$. Berechne zuerst den Spannungsteiler und zeichne einen Schaltplan.
+%  \end{alertblock}
+%%  \begin{alertblock}{Aufgabe 2}
+%%    Baue die Schaltung auf. Die abgeflachte Seite der Leuchtdiode zeigt zu Minus. Miss den %Strom durch die Leuchtdiode. Miss die Spannung über die Widerstände. Wie lautet die %Gesamtsumme der Spannungen über die Widerstände? Erkläre.
+%%  \end{alertblock}
+%%  \begin{alertblock}{Aufgabe 3}
+%%    Die Leuchtdiode soll dunkler leuchten. Muss dazu mehr oder weniger Strom fließen? Wie %sind die Widerstände zu dimensionieren?
+%%  \end{alertblock}
+%\end{frame}
