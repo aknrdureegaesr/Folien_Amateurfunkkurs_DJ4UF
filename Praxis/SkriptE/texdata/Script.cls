@@ -79,8 +79,8 @@
 }{%\else
     \RequirePackage[dvips]{graphicx}
 }%\fi
-\graphicspath{{logos/}{Bilder/}}
-\newcommand{\linkeslogo}{\includegraphics[height=2cm]{DK0TU}}
+\graphicspath{{logos/}{images/}}
+\newcommand{\linkeslogo}{\includegraphics[height=3cm]{dk0tu_2017_web.png}}
 \newcommand{\TUlogo}{\includegraphics[height=2cm]{TU-logo}}
 \ifpdfoutput{
     \if@print
@@ -94,10 +94,10 @@
         \if@print\renewcommand{\TUlogo}{\includegraphics[height=2cm]{TU-logo_sw}}\else\fi
 }%\fi
 \ifpdfoutput{}{%
-    \IfFileExists{Bilder/DK0TU}%
+    \IfFileExists{dk0tu_2017_web.png}%
         {}%
         {\renewcommand{\linkeslogo}{\fbox{\parbox[b][2cm][c]{2cm}{Logo\\}}}}%
-    \IfFileExists{Bilder/TU-logo}%
+    \IfFileExists{TU-logo}%
         {}%
         {\renewcommand{\TUlogo}{\fbox{\parbox[b][2cm][c]{2cm}{Logo\\TU Berlin}}}}%
 }%
@@ -177,7 +177,7 @@
         {\ifpdfoutput%
             {\mbox{\includegraphics[#3]{#1}}}%
             {\IfFileExists%
-                {Bilder/#1.eps}%
+                {images/#1.eps}%
                 {\mbox{\includegraphics[#3]{#1}}}%
                 {\fbox{\parbox[b][5cm][c]{0.7\textwidth}{%
                     \begin{center}%
@@ -263,7 +263,7 @@
           \\[6ex]
     \end{spacing}%
             %{\Large #1}\\
-            \includegraphics[scale=0.8]{Bilder/shack}
+            \includegraphics[scale=1]{shack}
         \vfill
             {\LARGE #4}
                 \vfill
@@ -276,8 +276,9 @@
                     \else
                         \textbf{Technische Universität Berlin\\%
                         Fakultät IV -- Elektrotechnik und Informatik\\%
-                        Institut für Hochfrequenz- und Halbleiter-Systemtechnologien\\%
-                        Fachgebiet Hochfrequenztechnik}\\%
+                        Fakultät V -- Verkehrs- und Maschinensysteme\\%
+                        %Institut für Hochfrequenz- und Halbleiter-Systemtechnologien\\%
+                        Fachgebiete Hochfrequenztechnik \& Raumfahrttechnik}\\%
                      \fi%
                     }%
         \end{center}%
