@@ -1,5 +1,6 @@
 \documentclass[ngerman, openany, twoside]{Script}
 \usepackage{amsmath}
+\usepackage{pdfpages} % PDFs einbinden
 
 % Aufgabentext ein-/ausschalten
 \newboolean{aufgabentext}
@@ -120,6 +121,20 @@
 \chapter{EMV}
 \input{EMV/EMV.tex}
 
-\input{Foot.tex}
+% Literaturverzeichnis
+%\bibliographystyle{natdin}
+%\addcontentsline{toc}{section}{Literaturverzeichnis}
+%\bibliography{Literaturverzeichnis}
+% Abbildungsverzeichnis
+%\newpage
+%\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+%\listoffigures	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Anhänge
+
+\begin{appendix}
+  \input{appendix.tex}
+\end{appendix}
 
 \end{document}
