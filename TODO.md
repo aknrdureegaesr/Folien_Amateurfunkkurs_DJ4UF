@@ -1,16 +1,22 @@
 # Insgesamt
 
-* Grafiken etc. aus den Slides ruhig in der Praxis nutzen und andersherum
+* mehr LaTeX Makros für reused Code verwenden
+* References richtig bauen ohne attribcaption
+* keine Hausaufgaben -> fakultativ oder als Empfehlung markieren
+    * Hausaufgaben/Nachbereitung ins Skrip?
 * Lernvorlagen der Landekenner/Q-Gruppen etc. ins Skript
 * Experimente A Ideen -> teilw. Überführen in Projekte
+* gemeinsames Logo in Ecke? AfuTUB-Kurs unter Unterstützung durch
+  Chaoswelle? Auf jeden Fall kein Gelb! :-D
+* Slides in Unterordner sortieren bzw. gemeinsame Ordner für Skript?
+    * Grafiken etc. aus den Slides ruhig in der Praxis nutzen und
+      andersherum
+* Maintenance-Verantwortung Slides/Skript (auch bei ext. Eingaben): jeder
+  das was er zuletzt bearbeitet hat
 
 # Slides
 
-* Designrules festlegen
-    * Prüfungsfragen nur noch, wenn sie exemplarisch wichtig sind
-    * feste Pausen einfügen?
-    * http://www.deic.uab.es/~iblanes/beamer_gallery/index_by_theme_and_color.html
-    * ...
+* QRA in folien
 * Quellen überall ordentlich machen
 * Diff & Merge Chaoswelle -> DK0TU, Stand:
     * e01 e02 e04 e05
@@ -75,6 +81,7 @@
     * min. Kapa? Reihe.
     * 530 pF vs 550 pF?
 * Fritzing mit optionalem KiCad
+* Idee DL1TL: Troubleshooting-Praxis mit defekten Schaltungen
 * Anlagen
     * Anleitungen
     * Datenblätter
@@ -93,3 +100,8 @@
     * BV ergänzen
     * Lernblätter ergänzen
 * Internationalisierung? Z.B. Compileroption oder gleich auf EN?
+
+# Witzige Comics
+
+* https://imgs.xkcd.com/comics/feedback.png
+* http://m.ruthe.de/1684/ (Lizenz?)
