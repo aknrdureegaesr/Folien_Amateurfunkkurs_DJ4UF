@@ -117,7 +117,7 @@ a00.dodia: e00.dodia
 
 
 skript:
-	$(MAKE) -C Praxis/SkriptE all
+	$(MAKE) -C Skript all
 	$(MAKE) -C Praxis/SkriptA all
 
 .PHONY: skript

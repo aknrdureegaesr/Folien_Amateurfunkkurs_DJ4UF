@@ -9,7 +9,6 @@
 * Designrules festlegen
     * Prüfungsfragen nur noch, wenn sie exemplarisch wichtig sind
     * feste Pausen einfügen?
-    * https://www.python.org/dev/peps/pep-0008/#tabs-or-spaces
     * http://www.deic.uab.es/~iblanes/beamer_gallery/index_by_theme_and_color.html
     * ...
 * Quellen überall ordentlich machen
