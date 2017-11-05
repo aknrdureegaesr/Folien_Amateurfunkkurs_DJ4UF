@@ -1,4 +1,14 @@
-# Create pdf from tex
+##
+##  AfuTUB-Kurs -- Amateurfunkkurs der Amateurfunkgruppe der TU Berlin
+##  Kontakt: AfuTUB (DK0TU) <kurs@dk0tu.de>
+##  Lizenz:  CC BY-NC-SA (Attribution-NonCommercial-ShareAlike 4.0)
+##           https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+##
+##  01.11.2017 (V.02) DL7BST, DJ3EI
+##
+##  Makefile: Create PDF from TeX
+##
+########################################################################
 
 EXPORT_DIR="Kurs-Material"
 EXPORT_ARCHIVE="${EXPORT_DIR}_DK0TU_r`date --utc +%Y-%m-%dT%H%MZ`"
