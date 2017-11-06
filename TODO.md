@@ -13,6 +13,7 @@
       andersherum
 * Maintenance-Verantwortung Slides/Skript (auch bei ext. Eingaben): jeder
   das was er zuletzt bearbeitet hat
+* CW: Ihr müsst da selbst durch
 
 # Slides
 

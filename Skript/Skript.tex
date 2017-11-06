@@ -21,6 +21,7 @@
 \newcommand{\Unteraufgabe}[1]{\subsubsection{#1}}
 \newcommand{\Lernziele}[1]{\subsection*{Lernziele}{#1}}
 %\graphicspath{{./Bilder/}}
+\setcounter{secnumdepth}{0}     % only parts and chapters numbered
 
 \newcommand{\mucho}[8]{
 	\aufgabentext{
@@ -44,8 +45,9 @@
 
 % TODO Schicker machen & Leerseite danach
 
-\titelseite[Christian Stoll\\ Sebastian Lange]{Skript AfuTUB-Kurs}%
-  {Lizenzkurs der Amateurfunkgruppe der TU Berlin (AfuTUB/DK0TU)}%
+\titelseite[Christian Stoll\\ Sebastian Lange]{AfuTUB-Kurs}%
+  {\hspace{1em} Kurs der "`Amateurfunkgruppe der TU Berlin"' (DK0TU) \newline
+   -- Ausbildungshandbuch \& Skriptum --}
   {WiSe 2017/18}%
 
 \newpage
@@ -58,14 +60,41 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Inhalt
 
+\section{Vorwort}
+%\addcontentsline{toc}{section}{Vorwort}
+
+Dieses Dokument entstand aus den mehrjährigen Erfahrungen zur Durchführung von
+Amateurfunkkursen an der Technischen Universität Berlin. Es versucht in einem
+Spagat zwischen Ausbildungshandbuch und Skriptum die Ansprüche aus Perspektive
+der Lehrenden sowie der Lernenden zu bedienen. Um das Rad nicht komplett neu zu
+erfinden stützt sich das vorliegende Werk lose auf die Lehrbücher von Eckart K.
+W. Moltrecht (DJ4UF). Die entsprechenden Originalkapitel wurden umstrukturiert,
+jedoch entsprechend referenziert und insbesondere im Bezug auf praktische
+Übungen wesentlich erweitert.
+
+Insgesamt handelt es sich um ein Konzept, welches weder einen reinen
+"`Lizenzkurs"' -- das alleinige Ziel das Amateurfunkzeugnis zu erlangen -- noch
+einen "`Funkkurs"' -- das generelle Verständis von Funkanwendungen -- darstellt.
+Vielmehr geht es in einer Kombination von Theorie und Praxis, neben den beiden
+zuvor genannten Schwerpunkten, darum konkrete Einblicke in die Amateurfunkwelt
+zu erhalten und gegebenenfalls die persönlichen Schwerpunkte auszumachen.
+
 % TODO Aufteilung nach Technik und BV oder nach Lektionen?
 
+% FIXME Nummerierung ändern (PE X, PA X, PB X)? Ggf. in Sections gliedern?
+\setcounter{chapter}{10}
 \part{Ausbildungskonzept}
 
 \chapter{Curriculum}
 
 % TODO Curriculum mit Beschreibung wie z.B. BV alle ~2 Wochen etc.
 
+\setcounter{chapter}{20}
+\part{Betriebstechnik/Vorschriften}
+
+    \input{bv02_Buchstabieren+Funken.tex}
+
+\setcounter{chapter}{30}
 \part{Technik Klasse E}
 
     % FIXME More Vorwort
@@ -152,6 +181,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Anhänge
+
+\part{Anhänge}
 
 \begin{appendix}
   \input{appendix.tex}
