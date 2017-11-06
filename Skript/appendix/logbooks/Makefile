@@ -1,6 +1,6 @@
 # Create pdf from tex
 
-FILE=qso
+FILE=first-qso
 
 all: ${FILE}.tex
 	pdflatex ${FILE}.tex

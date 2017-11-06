@@ -2,15 +2,20 @@
 
 all: aufgaben loesung
 
-aufgaben:
+aufgaben: appendix
 	pdflatex Skript-Handout.tex
 	pdflatex Skript-Handout.tex
 	$(MAKE) temp-clean
 
-loesung:
+loesung: appendix
 	pdflatex Skript.tex
 	pdflatex Skript.tex
 	$(MAKE) temp-clean
+
+appendix:
+	$(MAKE) -C appendix/logbooks all
+
+.PHONY: appendix
 
 temp-clean:
 	rm -f *.aux *.lof *.log *.out *.toc
